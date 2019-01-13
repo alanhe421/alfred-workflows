@@ -2,15 +2,15 @@ const cheerio = require('cheerio');
 const axios = require('axios');
 const fs = require('fs');
 const url = 'http://ly6080.com.cn'
-var keyword = process.argv[2];
+const keyword = process.argv[2];
 console.error(keyword);
 
 async function searchMovies() {
     const res = await axios.get(url + '/index.php?m=vod-search&wd=' + encodeURI(keyword));
-    var $ = cheerio.load(res.data);
-    var arr = $('.index-area').find('li');
-    var result_array = [];
-    for (var i = 0; i < arr.length; i++) {
+    const $ = cheerio.load(res.data);
+    const arr = $('.index-area').find('li');
+    const result_array = [];
+    for (let i = 0; i < arr.length; i++) {
         const item = arr.eq(i);
         const actors = [];
         item.find('.actor').each(function (i, elem) {
