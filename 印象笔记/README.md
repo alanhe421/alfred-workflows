@@ -7,4 +7,4 @@ Code snippets from:
 http://dev.evernote.com/documentation/local/chapters/mac.php
 
 
-![](./印象笔记.gif)
+![](./evernote-workflow.gif)
