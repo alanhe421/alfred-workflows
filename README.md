@@ -10,3 +10,4 @@
 - 印象笔记一键检索
 - new-file 一键创建文件【JS，CSS，HTML】，并用VSC打开
 - mac-enhancer - 一键开关内置trackpad
+- rgb-hex-converter - 快速转换RGB，Hex颜色值
