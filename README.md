@@ -15,6 +15,6 @@
 
 ## Any Question
 
-热爱Alfred的人，欢迎交流。微信加友-备注Alfred
+热爱Alfred的人，欢迎交流。微信加友-备注-Alfred
 
-![](./webchat.JPG)
+![](./webchat.png)
