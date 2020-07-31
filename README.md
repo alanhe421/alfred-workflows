@@ -12,3 +12,9 @@
 - mac-enhancer - 一键开关内置trackpad
 - rgb-hex-converter - 快速转换RGB，Hex颜色值
 - airdrop - 一键唤起Airdrop，发送选中文件到目标设备
+
+## Any Question
+
+热爱Alfred的人，欢迎交流。微信加友-备注Alfred
+
+![](./webchat.JPG)
