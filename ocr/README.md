@@ -1,6 +1,6 @@
 > 使用百度文本识别API实现
 > 
-> Get the text in the screenshot to the clipboard
+> Get the text in the screenshot to the clipboard，support multi languages
 
 First run this command on a terminal:
 
