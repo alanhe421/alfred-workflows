@@ -13,8 +13,14 @@
 - rgb-hex-converter - 快速转换RGB，Hex颜色值
 - airdrop - 一键唤起Airdrop，发送选中文件到目标设备
 
-## Any Question
+## Alfred常见问题
 
-热爱Alfred的人，欢迎交流。微信加友-备注-Alfred
+这里我记录了平时遇到的一些小技巧，小问题。
+
+[戳这里](https://github.com/alanhg/others-note/issues?q=is%3Aissue+is%3Aopen+label%3AAlfred)
+
+## 交流
+
+热爱*Alfred*的人，欢迎交流。微信加友-备注-Alfred
 
 ![](./webchat.png)
