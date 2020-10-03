@@ -7,6 +7,7 @@
 - git 循环拉取项目
 - 快速连接和断开蓝牙设备
 - 文本识别OCR
+- 百度翻译
 - 印象笔记一键检索
 - new-file 一键创建文件【JS，CSS，HTML】，并用VSC打开
 - mac-enhancer - 一键开关内置trackpad
