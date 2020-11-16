@@ -16,6 +16,7 @@
 12. airdrop - 一键唤起Airdrop，发送选中文件到目标设备
 13. appid - 快速获取App Bundle ID
 14. apple script - 批量替换scpt文件b内容
+15. surge - 快速操作Surge
 
 ## Alfred常见问题
 
