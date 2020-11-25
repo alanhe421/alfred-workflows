@@ -36,4 +36,4 @@
 
 - star/打赏均可。
 
-![](./award.png)
+![](./award.jpg)
