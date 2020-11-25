@@ -37,12 +37,14 @@ function getUserInfo() {
  * @returns {{data, canonicalUrl: string, title, tags: *}}
  */
 function extractMeta(data) {
-    const title = data.match(/(?<=title:\s)\S+(?=\n)/)[0];
-    const abbrlink = data.match(/(?<=abbrlink:\s)(\s|\S)*(?=date)/)[0];
-    const tags = data.match(/(?<=tags:\n)(\s|\S)*(?=(abbrlink|---))/)[0].match(/(?<=-\s)\S+(?=(\n|$))/g);
-    const createDate = new Date(data.match(/(?<=date:\s)(\s|\S)*(?=\n---)/)[0]);
+    const MetaBlockRegex = /^---(\s|\S)*---\n/;
+    const metaData = data.match(MetaBlockRegex)[0];
+    data = data.replace(MetaBlockRegex, '');
+    const title = metaData.match(/(?<=title:\s)[\u4e00-\u9fa5\s\w]*\S(?=\n\S)/)[0];
+    const abbrlink = metaData.match(/(?<=\s{3}-\s)([\u4e00-\u9fa5\s\w]*)(?=\n)/);
+    const tags = metaData.match(/(?<=\s{3}-\s)[\u4e00-\u9fa5\s\w]*(?=\n)/);
+    const createDate = new Date(metaData.match(/(?<=date:\s)\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}:\d{2}/)[0]);
     const canonicalUrl = `https://1991421.cn/${createDate.getFullYear()}/${createDate.getMonth() + 1}/${createDate.getDate()}/${abbrlink}`;
-    data = data.replace(/^---(\s|\S)*---\n/, '')
     return {data, title, tags, canonicalUrl};
 }
 
