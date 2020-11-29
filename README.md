@@ -13,7 +13,7 @@
 9. new-file 一键创建文件【JS，CSS，HTML】，并用VSC打开
 10. mac-enhancer - 一键开关内置trackpad
 11. rgb-hex-converter - 快速转换RGB，Hex颜色值
-12. airdrop - 一键唤起Airdrop，发送选中文件到目标设备
+12. airdrop - 一键唤起Airdrop，发送选中文件或链接到目标设备
 13. appid - 快速获取App Bundle ID
 14. apple script - 批量替换scpt文件b内容
 15. surge - 快速操作Surge
