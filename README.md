@@ -18,7 +18,7 @@
 14. apple script - 批量替换scpt文件b内容
 15. surge - 快速操作Surge
 16. Medium Tools - 一键发布hexo-MD文档到Medium
-17. Switch Audio - 一键切换Mac声音输入输出设备
+17. Switch Audio - 一键切换Mac上声音输入输出设备
 
 ## Alfred常见问题
 
