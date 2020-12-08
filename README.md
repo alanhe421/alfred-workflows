@@ -7,7 +7,7 @@
 3. movie-searcher 检索电影
 4. git 循环拉取项目
 5. 快速连接和断开蓝牙设备
-6. 文本识别OCR
+6. 文本识别OCR``
 7. 百度翻译
 8. 印象笔记一键检索
 9. new-file 一键创建文件【JS，CSS，HTML】，并用VSC打开
@@ -19,6 +19,7 @@
 15. surge - 快速操作Surge
 16. Medium Tools - 一键发布hexo-MD文档到Medium
 17. Switch Audio - 一键切换Mac上声音输入输出设备
+18. File Enhancer - 一键Copy文件名称`无后缀`
 
 ## Alfred常见问题
 
