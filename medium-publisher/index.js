@@ -1,34 +1,12 @@
 const axios = require('axios');
 const fs = require('fs');
 const [, , TOKEN, AUTHOR_ID, FILE] = process.argv;
+const {extractMeta} = require("./hexo-parser");
 
 function main() {
     const fileData = fs.readFileSync(FILE, 'utf8');
     const res = extractMeta(fileData);
-    console.log(res);
-}
-
-/**
- * 解析MD文件内容，获取元数据
- * @param data
- * @returns {{data, canonicalUrl: string, title, tags: *}}
- */
-function extractMeta(data) {
-    const MetaBlockRegex = /^---(\s|\S)*---\n/;
-    const metaData = data.match(MetaBlockRegex)[0];
-    data = data.replace(MetaBlockRegex, '');
-    const title = metaData.match(
-        /(?<=title:\s)[\u4e00-\u9fa5\s\w-]*\S(?=\n\S)/
-    )[0];
-    const abbrlink = metaData.match(/(?<=\s{3}-\s)([\u4e00-\u9fa5\s\w]*)(?=\n)/);
-    const tags = metaData.match(/(?<=\s{3}-\s)[\u4e00-\u9fa5\s\w]*(?=\n)/);
-    const createDate = new Date(
-        metaData.match(/(?<=date:\s)\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}:\d{2}/)[0]
-    );
-    const canonicalUrl = `https://1991421.cn/${createDate.getFullYear()}/${
-        createDate.getMonth() + 1
-    }/${createDate.getDate()}/${abbrlink}`;
-    return {data, title, tags, canonicalUrl};
+    createPost(res);
 }
 
 /**
