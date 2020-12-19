@@ -17,8 +17,7 @@ https://1991421.cn/2020/11/16/a12a6619/
 ## 安装
 
 1. install node
-2. install yarn
-3. cd workflow dir, and yarn install
+3. cd workflow dir, and npm install
 4. Surge开启httpAPI, Alfred workflow配置httpAPI
 
 
