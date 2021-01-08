@@ -2,6 +2,8 @@
 
 ![](./screenshot.gif)
 
+![](./screenshot2.gif)
+
 ## Install
 
 ```
