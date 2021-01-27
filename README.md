@@ -30,14 +30,13 @@
 
 ## 交流
 
-热爱*Alfred*的人，欢迎交流。微信加友-备注-Alfred
+热爱*Alfred*的人，欢迎关注公微
 
-![](./webchat.png)
+![](./wechat.png)
 
 ## 支持
 
 - 社畜码字不易，你的支持也是一种动力。
 
-- star/打赏均可。
-
-![](./award.jpg)
+- Star /[Paypal](https://www.paypal.com/paypalme/alanhe421)
+/ [微信打赏](./award.jpg)
