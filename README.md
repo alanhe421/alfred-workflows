@@ -21,6 +21,7 @@
 17. Switch Audio - 一键切换Mac上声音输入输出设备
 18. File Enhancer - 一键Copy文件名称`无后缀`
 19. Giphy - 表情包检索
+20. Paste into files - 剪贴板内容存储为文件，比如图片
 
 ## Alfred常见问题
 
