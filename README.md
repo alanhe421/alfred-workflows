@@ -22,6 +22,7 @@
 18. File Enhancer - 一键Copy文件名称`无后缀`
 19. Giphy - 表情包检索
 20. Paste into files - 剪贴板内容存储为文件，比如图片
+20. About Mac - 显示Mac基本信息
 
 ## Alfred常见问题
 
