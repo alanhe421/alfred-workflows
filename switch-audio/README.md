@@ -4,12 +4,4 @@ just input `sound` or `voice`
 
 ![](./screenshot.gif)
 
-## Requirement
-
-- brew install node
-- brew install switchaudio-osx
-
-## TODO
-
-support switch airplay
-
+support switch to airplay
