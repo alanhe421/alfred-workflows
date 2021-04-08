@@ -24,9 +24,7 @@ http-api = examplekey@0.0.0.0:6171
 ## 安装
 
 1. install node
-3. cd workflow dir, and npm install
 4. Surge开启httpAPI, Alfred workflow配置httpAPI
-
 
 ## 注意
 Surge Mac 4.0.0、Surge iOS 4.4.0开始提供HTTP API, 也就是该版本之前的均不支持
