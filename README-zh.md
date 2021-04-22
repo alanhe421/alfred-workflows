@@ -24,6 +24,7 @@
 20. Paste into files - 剪贴板内容存储为文件，比如图片
 20. About Mac - 显示Mac基本信息
 21. Progress bar - 显示时间进度
+22. Do not disturb - 一键开关勿扰模式
 
 ## Alfred常见问题
 
