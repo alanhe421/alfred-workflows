@@ -25,6 +25,7 @@
 20. About Mac - 显示Mac基本信息
 21. Progress bar - 显示时间进度
 22. Do not disturb - 一键开关勿扰模式
+23. Compress GIF - 一键GIF压缩
 
 ## Alfred常见问题
 
