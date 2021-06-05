@@ -28,6 +28,7 @@
 23. Compress GIF - 一键GIF压缩
 24. Batch import workflows - 一键导入多个workflow
 25. My iPhones - 展示个人iPhone购买历史
+26. Whistle - Rules快速切换选择
 
 ## Alfred常见问题
 
