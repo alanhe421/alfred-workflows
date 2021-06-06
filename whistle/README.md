@@ -16,5 +16,6 @@
 
 1. install node
 2. npm install -g whistle
-3. w2 start
-4。 alfred workflow配置whistle服务地址
+3. w2 start 
+4. alfred workflow环境变量配置服务地址
+    ![](./screenshot2.png)
