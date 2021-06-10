@@ -2,7 +2,7 @@
 
 name: CI
 
-# Controls when the action will run. 
+# Controls when the action will run.
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
   watch:
@@ -20,10 +20,14 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+      - name: Star Count
+        run:  ｜
+          star=`curl -s 'https://api.github.com/repos/alanhg/alfred-workflows?page=$i&per_page=100' | jq .stargazers_count`
+          echo "repoStars=$star" >> $GITHUB_ENV
       - name: Notify
         uses: appleboy/telegram-action@master
         with:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
-          message: Someone stars **${{env.REPO_NAME}}** repository, see here(https://github.com/${{github.repository}}).
+          message: Someone stars **${{env.REPO_NAME}}** repository, see here(https://github.com/${{github.repository}}).There are currently ${{env.repoStars}} :star:, come on!
           format: markdown
