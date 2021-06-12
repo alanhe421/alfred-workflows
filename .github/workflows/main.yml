@@ -21,7 +21,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: Repo Star Count
-        uses: alanhg/repo-star-count-action@0.1
+        uses: alanhg/repo-star-count-action@0.2
       - name: Notify
         uses: appleboy/telegram-action@master
         with:
