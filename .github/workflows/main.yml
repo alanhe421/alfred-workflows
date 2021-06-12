@@ -20,10 +20,8 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: Star Count
-        run: |
-          star=`curl -s 'https://api.github.com/repos/${{github.repository}}?page=$i&per_page=100' | jq .stargazers_count`
-          echo "repoStars=$star" >> $GITHUB_ENV
+      - name: Repo Star Count
+        uses: alanhg/repo-star-count-action
       - name: Notify
         uses: appleboy/telegram-action@master
         with:
