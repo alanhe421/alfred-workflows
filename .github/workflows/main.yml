@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Star Notify
+name: Repo Star Notify
 
 # Controls when the action will run.
 on:
@@ -20,14 +20,15 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: Repo Star Count
-        uses: alanhg/repo-star-count-action@0.2
+      - name: Star Count
+        id: repo-stars
+        uses: alanhg/repo-star-count-action@master
       - name: Notify
         uses: appleboy/telegram-action@master
         with:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
           message: |
-            Someone stars **${{env.REPO_NAME}}** repository, see here(https://github.com/${{github.repository}}).
-            There are currently ${{env.repoStars}} :star:, come on!
+            Someone stars *${{env.REPO_NAME}}* repository, see here(https://github.com/${{github.repository}}).
+            There are currently ${{steps.repo-stars.outputs.stars}}:star:, come on!
           format: markdown
