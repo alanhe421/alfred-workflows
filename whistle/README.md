@@ -3,6 +3,7 @@
 - ⌥ ⏎ 访问WEB管理页面
 - ⏎ 切换rule选择状态
 - ⌘ C拷贝当前Rule具体配置项
+- ⌘ Y或者⌘ L进行Rule预览
 
 ### Whistle官方文档
 
