@@ -34,11 +34,11 @@ jobs:
       - name: Refresh Workflow Version
         run:  node ./refresh_workflow_version.js
       - name: Build
-          run: |
-            git config --global user.email "alan@1991421.cn"
-            git config --global user.name "Alan He"
-            git add .
-            git commit -m 'Update workflow version'
+        run: |
+          git config --global user.email "alan@1991421.cn"
+          git config --global user.name "Alan He"
+          git add .
+          git commit -m 'Update workflow version'
       - name: Deploy GitHub
         uses: ad-m/github-push-action@master
         with:
