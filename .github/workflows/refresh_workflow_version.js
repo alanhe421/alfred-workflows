@@ -2,6 +2,7 @@ const fs = require('fs');
 const {execSync} = require('child_process');
 const path = require('path');
 const plist = require('plist');
+const querystring = require('querystring');
 const targetFolder = '.';
 
 /**
@@ -9,10 +10,10 @@ const targetFolder = '.';
  */
 function updateVersion(workflowFolder, version, workflow) {
     const readmeFile = workflowFolder + '/README.md';
-    const filename = path.basename(workflow);
+    const filename = querystring.escape(path.basename(workflow));
     try {
         let readmeContent = fs.readFileSync(readmeFile, 'utf8');
-        if (!readmeContent.match(/shields/)){
+        if (!readmeContent.match(/shields/)) {
             readmeContent = `[![](https://img.shields.io/badge/version-v${version}-green)](./${filename})` + readmeContent;
         } else {
             readmeContent.replace(/(?<=version-v)(\d\.(\d\.)?\d)/, version);
