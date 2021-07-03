@@ -5,7 +5,7 @@ name: refresh_workflow_version
 
 on:
   push:
-    branches: [ test-ci ]
+    branches: [ master ]
     paths:
       - '*/*.alfredworkflow'
   workflow_dispatch:
@@ -43,4 +43,4 @@ jobs:
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.DEPLOY_4_GITHUB_KEY }}
-          branch: test-ci
+          branch: master
