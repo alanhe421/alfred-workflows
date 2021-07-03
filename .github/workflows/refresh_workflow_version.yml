@@ -6,6 +6,8 @@ name: refresh_workflow_version
 on:
   push:
     branches: [ test-ci ]
+    paths:
+      - '*/*.alfredworkflow'
   workflow_dispatch:
     inputs:
       logLevel:
