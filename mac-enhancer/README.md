@@ -1,5 +1,7 @@
 # mac-enhancer
 
+[![](https://img.shields.io/badge/version-v1.0-green)](./Mac Enhancer.alfredworkflow)
+
 ## Toggle Trackpad on/off
 
 ![](./screenshot.png)
