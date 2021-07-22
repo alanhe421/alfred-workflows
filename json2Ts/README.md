@@ -5,3 +5,6 @@
 
 
 ![](./screenshot.gif)
+
+
+Very appreciate for http://www.json2ts.com/ support.
