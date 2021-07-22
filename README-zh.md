@@ -29,6 +29,7 @@
 24. Batch import workflows - 一键导入多个workflow
 25. My iPhones - 展示个人iPhone购买历史
 26. Whistle - Rules快速切换选择
+27. Json2Ts - JSON生成TS接口定义
 
 ## Alfred常见问题
 
