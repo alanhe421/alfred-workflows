@@ -30,6 +30,7 @@
 25. My iPhones - 展示个人iPhone购买历史
 26. Whistle - Rules快速切换选择
 27. Json2Ts - JSON生成TS接口定义
+28. Mount Volume - 快速挂载网络硬盘，支持SMB，FTP等
 
 ## Alfred常见问题
 
