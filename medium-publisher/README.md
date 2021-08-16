@@ -1,5 +1,7 @@
 > 选中MD文件，一键发布到Medium平台
 
+[![](https://img.shields.io/badge/version-v1.1-green)](./Medium%20Tools.alfredworkflow)
+
 当前解析MD文档中的元数据，面向的是Hexo MD文件，其它MD文件解析，需要改造解析函数。
 
 ## 功能

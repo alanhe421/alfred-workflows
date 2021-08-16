@@ -1,5 +1,8 @@
 > 使用百度翻译API实现
 
+
+[![](https://img.shields.io/badge/version-v1.0-green)](./Translate.alfredworkflow)
+
 First run this command on a terminal:
  
  1. npm install

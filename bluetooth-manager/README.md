@@ -1,5 +1,7 @@
 > Connect or disconnect a specific device
 
+[![](https://img.shields.io/badge/version-v1.0.1-green)](./Bluetooth%20Manager.alfredworkflow)
+
 _支持AirPods电量信息展示_
 
 ![](./bluetooth.gif)
