@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>cn.alanhe.switch-audio</string>
+	<key>category</key>
+	<string>Self-Dev</string>
+	<key>connections</key>
+	<dict>
+		<key>1450496C-74BC-4EDE-930B-ADC6027C5449</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>FCE19CD4-E3AE-4361-8B59-F357914A629C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>3AE8EB58-5F7D-49B6-98C1-4BAE5E79FC2E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>39B059B1-CD01-4C2D-8907-1E2F9262CD04</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>B066EEAB-4F3C-4516-9F00-E8FD7A5439B6</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3AE8EB58-5F7D-49B6-98C1-4BAE5E79FC2E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>FCE19CD4-E3AE-4361-8B59-F357914A629C</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>39B059B1-CD01-4C2D-8907-1E2F9262CD04</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Alan He</string>
+	<key>description</key>
+	<string>Quickly switch sound output or input</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Switch Audio</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string></string>
+				<key>title</key>
+				<string>Switch to {query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>39B059B1-CD01-4C2D-8907-1E2F9262CD04</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>on run argv
+  set theQuery to item 1 of argv
+
+tell application "System Preferences"	reveal pane id "com.apple.preference.sound"end telltell application "System Events"	tell application process "System Preferences"		tell tab group 1 of window "Sound"			click radio button "Output"			tell table 1 of scroll area 1				select (row 1 where value of text field 1 is theQuery)							end tell		end tell	end tellend tellif application "System Preferences" is running then	tell application "System Preferences" to quitend if
+
+return theQuery
+end run</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>3AE8EB58-5F7D-49B6-98C1-4BAE5E79FC2E</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>sound</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>waiting</string>
+				<key>script</key>
+				<string>set devices to {}tell application "System Preferences"	reveal pane id "com.apple.preference.sound"end telltell application "System Events"	tell application process "System Preferences"		tell tab group 1 of window "Sound"			click radio button "Output"			tell table 1 of scroll area 1				set selected_row to (first UI element whose selected is true)				set currentOutput to value of text field 1 of selected_row as text								repeat with r in rows					try						set deviceName to value of text field 1 of r as text						set end of devices to deviceName					end try				end repeat			end tell		end tell	end tellend tellif application "System Preferences" is running then	tell application "System Preferences" to quitend if
+
+set text item delimiters to "‡"set devicesStr to devices as text
+
+set comm to "bash ./main.sh" &amp; " \"" &amp; devicesStr &amp; "\""&amp; " \"" &amp; currentOutput &amp; "\""&amp;" output"
+
+do shell script comm
+</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>select a device to sound output</string>
+				<key>title</key>
+				<string>sound</string>
+				<key>type</key>
+				<integer>6</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>B066EEAB-4F3C-4516-9F00-E8FD7A5439B6</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>on run argv
+  set theQuery to item 1 of argv
+
+tell application "System Preferences"	reveal pane id "com.apple.preference.sound"end telltell application "System Events"	tell application process "System Preferences"		tell tab group 1 of window "Sound"			click radio button "Input"			tell table 1 of scroll area 1				select (row 1 where value of text field 1 is theQuery)							end tell		end tell	end tellend tellif application "System Preferences" is running then	tell application "System Preferences" to quitend if
+
+return theQuery
+end run</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>FCE19CD4-E3AE-4361-8B59-F357914A629C</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>voice</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>waiting</string>
+				<key>script</key>
+				<string>set devices to {}tell application "System Preferences"	reveal pane id "com.apple.preference.sound"end telltell application "System Events"	tell application process "System Preferences"		tell tab group 1 of window "Sound"			click radio button "Input"			tell table 1 of scroll area 1				set selected_row to (first UI element whose selected is true)				set currentOutput to value of text field 1 of selected_row as text								repeat with r in rows					try						set deviceName to value of text field 1 of r as text						set end of devices to deviceName					end try				end repeat			end tell		end tell	end tellend tellif application "System Preferences" is running then	tell application "System Preferences" to quitend if
+
+set text item delimiters to "‡"set devicesStr to devices as text
+
+set comm to "bash ./main.sh" &amp; " \"" &amp; devicesStr &amp; "\""&amp; " \"" &amp; currentOutput &amp; "\"" &amp;" input"
+
+do shell script comm
+</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>select a device to sound input</string>
+				<key>title</key>
+				<string>voice</string>
+				<key>type</key>
+				<integer>6</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>1450496C-74BC-4EDE-930B-ADC6027C5449</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>Easy to switch audio.
+
+AppleScript combined with Shell implementation, no need to install any dependencies.
+
+
+Supports 10.15.7 and has not been tested under the latest system.</string>
+	<key>uidata</key>
+	<dict>
+		<key>1450496C-74BC-4EDE-930B-ADC6027C5449</key>
+		<dict>
+			<key>xpos</key>
+			<integer>35</integer>
+			<key>ypos</key>
+			<integer>435</integer>
+		</dict>
+		<key>39B059B1-CD01-4C2D-8907-1E2F9262CD04</key>
+		<dict>
+			<key>xpos</key>
+			<integer>685</integer>
+			<key>ypos</key>
+			<integer>120</integer>
+		</dict>
+		<key>3AE8EB58-5F7D-49B6-98C1-4BAE5E79FC2E</key>
+		<dict>
+			<key>note</key>
+			<string>setAudio</string>
+			<key>xpos</key>
+			<integer>340</integer>
+			<key>ypos</key>
+			<integer>125</integer>
+		</dict>
+		<key>B066EEAB-4F3C-4516-9F00-E8FD7A5439B6</key>
+		<dict>
+			<key>xpos</key>
+			<integer>35</integer>
+			<key>ypos</key>
+			<integer>125</integer>
+		</dict>
+		<key>FCE19CD4-E3AE-4361-8B59-F357914A629C</key>
+		<dict>
+			<key>note</key>
+			<string>setAudio</string>
+			<key>xpos</key>
+			<integer>335</integer>
+			<key>ypos</key>
+			<integer>430</integer>
+		</dict>
+	</dict>
+	<key>variablesdontexport</key>
+	<array/>
+	<key>version</key>
+	<string>2.0</string>
+	<key>webaddress</key>
+	<string>https://1991421.cn</string>
+</dict>
+</plist>

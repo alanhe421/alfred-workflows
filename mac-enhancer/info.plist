@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>cn.alanhe.mac-enhancer</string>
+	<key>category</key>
+	<string>Self-Dev</string>
+	<key>connections</key>
+	<dict>
+		<key>91417F9B-F3F5-4A48-9A04-80DC5B1DB101</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>C51C0769-A94F-406E-80EC-F4B635F47C86</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>A8008FB3-73D5-4264-9B1E-597592344FC8</key>
+		<array/>
+		<key>B8BFA086-1B2F-4728-9976-2D4F4EBB5086</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>A8008FB3-73D5-4264-9B1E-597592344FC8</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Alan He</string>
+	<key>description</key>
+	<string>enhance Mac</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Mac Enhancer</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>trackpad</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Toggle Trackpad on/off</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>B8BFA086-1B2F-4728-9976-2D4F4EBB5086</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>if running of application "System Preferences" then	try		tell application "System Preferences" to quit	on error		do shell script "killall 'System Preferences'"	end tryend ifrepeat while running of application "System Preferences" is true	delay 0.1end repeattell application "System Preferences"	reveal anchor "Mouse" of pane id "com.apple.preference.universalaccess"	delay 1	tell application "System Events"		click checkbox 2 of tab group 1 of group 1 of window 1 of application process "System Preferences"	end tell	quitend tell</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>A8008FB3-73D5-4264-9B1E-597592344FC8</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>count</key>
+				<integer>1</integer>
+				<key>keychar</key>
+				<string>⎋</string>
+				<key>keycode</key>
+				<integer>53</integer>
+				<key>keymod</key>
+				<integer>1310720</integer>
+				<key>overridewithargument</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.dispatchkeycombo</string>
+			<key>uid</key>
+			<string>C51C0769-A94F-406E-80EC-F4B635F47C86</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>22</integer>
+				<key>hotmod</key>
+				<integer>1179648</integer>
+				<key>hotstring</key>
+				<string>6</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>91417F9B-F3F5-4A48-9A04-80DC5B1DB101</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>Mac enhancer</string>
+	<key>uidata</key>
+	<dict>
+		<key>91417F9B-F3F5-4A48-9A04-80DC5B1DB101</key>
+		<dict>
+			<key>xpos</key>
+			<integer>85</integer>
+			<key>ypos</key>
+			<integer>325</integer>
+		</dict>
+		<key>A8008FB3-73D5-4264-9B1E-597592344FC8</key>
+		<dict>
+			<key>xpos</key>
+			<integer>320</integer>
+			<key>ypos</key>
+			<integer>125</integer>
+		</dict>
+		<key>B8BFA086-1B2F-4728-9976-2D4F4EBB5086</key>
+		<dict>
+			<key>xpos</key>
+			<integer>90</integer>
+			<key>ypos</key>
+			<integer>125</integer>
+		</dict>
+		<key>C51C0769-A94F-406E-80EC-F4B635F47C86</key>
+		<dict>
+			<key>note</key>
+			<string>Stop capture</string>
+			<key>xpos</key>
+			<integer>330</integer>
+			<key>ypos</key>
+			<integer>325</integer>
+		</dict>
+	</dict>
+	<key>variablesdontexport</key>
+	<array/>
+	<key>version</key>
+	<string>1.0</string>
+	<key>webaddress</key>
+	<string>https://1991421.cn</string>
+</dict>
+</plist>

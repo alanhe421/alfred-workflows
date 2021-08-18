@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>cn.alanhe.newFile</string>
+	<key>category</key>
+	<string>Tools</string>
+	<key>connections</key>
+	<dict>
+		<key>458C1FE9-A3AD-41D9-8926-0F97FA216ADC</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>9A20A032-933D-4233-8EC2-EFB99EA98B8D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>EAA17DEF-82DB-4167-9961-5D74779CE60D</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>F8311E67-09DD-43B4-B9AE-530CA2D3D59A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>5635650A-AEF9-4054-9F31-6287354A74E5</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>458C1FE9-A3AD-41D9-8926-0F97FA216ADC</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>9A20A032-933D-4233-8EC2-EFB99EA98B8D</key>
+		<array/>
+		<key>F8311E67-09DD-43B4-B9AE-530CA2D3D59A</key>
+		<array/>
+	</dict>
+	<key>createdby</key>
+	<string>Alan He</string>
+	<key>description</key>
+	<string>Quickly create file</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>New File</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>script</key>
+				<string>cd ${destination/#\~/$HOME}
+
+ls | grep -E '^[0-9]{4}-[0-9]{2}-[0-9]{2}-[0-9]{6}\.' | xargs rm</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>9A20A032-933D-4233-8EC2-EFB99EA98B8D</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>fixedorder</key>
+				<false/>
+				<key>items</key>
+				<string>[{"imagefile":"f765e6e4772c3f4125d661d2065172f4bf74b0f3.png","title":"JSON","arg":"json","subtitle":"open with vsc"},{"imagefile":"7b90fa5863ef5d8b989646974d777fa57ed69fa3.png","title":"HTML","arg":"html","subtitle":"open with vsc"},{"imagefile":"c176314d44eedc53a3dc96934bda336dd93983e9.png","title":"JavaScript","arg":"js","subtitle":"open with vsc"},{"title":"Shell","arg":"sh"},{"imagefile":"8ee2f1b0bb2f74be6df053013548a37f4695daca.png","title":"Empty Files","arg":"empty"}]</string>
+				<key>keyword</key>
+				<string>new</string>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>subtext</key>
+				<string>select file type</string>
+				<key>title</key>
+				<string></string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.listfilter</string>
+			<key>uid</key>
+			<string>5635650A-AEF9-4054-9F31-6287354A74E5</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>empty</string>
+						<key>outputlabel</key>
+						<string></string>
+						<key>uid</key>
+						<string>EAA17DEF-82DB-4167-9961-5D74779CE60D</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>458C1FE9-A3AD-41D9-8926-0F97FA216ADC</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>d=`date +%F-%H%M%S`
+
+
+filename=${destination/#\~/$HOME}/${d}.{query}
+
+touch $filename
+
+open -a Visual\ Studio\ Code $filename</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>F8311E67-09DD-43B4-B9AE-530CA2D3D59A</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>Quickly create target type file
+
+You can configure the file generation path in environment variables</string>
+	<key>uidata</key>
+	<dict>
+		<key>458C1FE9-A3AD-41D9-8926-0F97FA216ADC</key>
+		<dict>
+			<key>xpos</key>
+			<integer>265</integer>
+			<key>ypos</key>
+			<integer>215</integer>
+		</dict>
+		<key>5635650A-AEF9-4054-9F31-6287354A74E5</key>
+		<dict>
+			<key>xpos</key>
+			<integer>50</integer>
+			<key>ypos</key>
+			<integer>200</integer>
+		</dict>
+		<key>9A20A032-933D-4233-8EC2-EFB99EA98B8D</key>
+		<dict>
+			<key>note</key>
+			<string>Delete previously created files</string>
+			<key>xpos</key>
+			<integer>475</integer>
+			<key>ypos</key>
+			<integer>110</integer>
+		</dict>
+		<key>F8311E67-09DD-43B4-B9AE-530CA2D3D59A</key>
+		<dict>
+			<key>note</key>
+			<string>New File</string>
+			<key>xpos</key>
+			<integer>470</integer>
+			<key>ypos</key>
+			<integer>310</integer>
+		</dict>
+	</dict>
+	<key>variables</key>
+	<dict>
+		<key>destination</key>
+		<string>~/Desktop</string>
+	</dict>
+	<key>variablesdontexport</key>
+	<array/>
+	<key>version</key>
+	<string>1.0</string>
+	<key>webaddress</key>
+	<string>https://1991421.cn</string>
+</dict>
+</plist>
