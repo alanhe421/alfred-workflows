@@ -3,7 +3,6 @@ const {execSync} = require('child_process');
 const path = require('path');
 const plist = require('plist');
 const querystring = require('querystring');
-const targetFolder = '.';
 
 /**
  * 更新readme中version版本
@@ -35,12 +34,14 @@ function getVersion(workflowFolder, workflow) {
     execSync(`unzip -o ${workFlowZipFile} -d ${workFlowUnzipFolder}`);
     execSync(`rm -rf ${workFlowZipFile}`);
     const plistObj = plist.parse(fs.readFileSync(`${workFlowUnzipFolder}/info.plist`, 'utf8'));
+    execSync(`mv ${workFlowUnzipFolder}/info.plist ${workflowFolder}/`);
     const version = plistObj.version;
     execSync(`rm -rf ${workFlowUnzipFolder}`);
     return version;
 }
 
 function readAllWorkflows() {
+    const targetFolder = path.resolve(__dirname, '../../');
     const folders = fs.readdirSync(targetFolder);
     folders.forEach((folder) => {
         const workflowFolder = targetFolder + '/' + folder;
