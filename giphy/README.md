@@ -15,9 +15,5 @@
 ## 注意
 - 因为已知原因，中国大陆需要走代理才可正常使用
 
-## TODO 
-
-- [x] 升级Giphy key到生产令牌，否则频率等受限
-
 ## Install
 - install node
