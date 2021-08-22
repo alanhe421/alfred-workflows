@@ -1,6 +1,6 @@
 > Surge Mac 4.0提供了HTTP API支持，因此终于可以打通外部App调用了。这里实现了Alfred的打通，比如快速切换代理模式等。
 
-[![](https://img.shields.io/badge/version-v1.12-green)](./Surge.alfredworkflow)
+[![](https://img.shields.io/badge/version-v1.13-green)](./Surge.alfredworkflow)
 
 ##  如何开启Surge API支持
 

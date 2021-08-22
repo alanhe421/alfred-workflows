@@ -138,6 +138,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>82C5845C-72B1-4A59-8F88-A73D1A4C77E4</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>5468E8DA-D6EE-46E4-B944-F358BFBB350A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>A205BD55-D9B0-44B8-A796-D824FF9D0CD5</key>
 		<array>
 			<dict>
@@ -216,6 +229,18 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
+				<string>82C5845C-72B1-4A59-8F88-A73D1A4C77E4</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>B094556D-7E5F-4164-B13E-9BB4ED4E4CB8</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
 				<string>184429E5-5B99-4D80-8741-ACC0B6820475</string>
 				<key>modifiers</key>
 				<integer>0</integer>
@@ -223,18 +248,6 @@
 				<string></string>
 				<key>sourceoutputuid</key>
 				<string>E933A172-0BB9-448B-A033-1E0AC7512B93</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>5468E8DA-D6EE-46E4-B944-F358BFBB350A</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>B094556D-7E5F-4164-B13E-9BB4ED4E4CB8</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -661,6 +674,23 @@
 			<key>type</key>
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
+			<string>82C5845C-72B1-4A59-8F88-A73D1A4C77E4</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
 			<string>184429E5-5B99-4D80-8741-ACC0B6820475</string>
 			<key>version</key>
 			<integer>1</integer>
@@ -677,7 +707,7 @@
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
-				<integer>2</integer>
+				<integer>1</integer>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>queuedelaycustom</key>
@@ -691,7 +721,7 @@
 				<key>runningsubtext</key>
 				<string></string>
 				<key>script</key>
-				<string>/usr/local/bin/node policy-groups.js $HTTP_API</string>
+				<string>/usr/local/bin/node policy-groups.js {query}</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -703,7 +733,7 @@
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
-				<false/>
+				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.scriptfilter</string>
@@ -948,9 +978,9 @@
 			<key>note</key>
 			<string>Profiles</string>
 			<key>xpos</key>
-			<integer>500</integer>
+			<integer>485</integer>
 			<key>ypos</key>
-			<integer>845</integer>
+			<integer>850</integer>
 		</dict>
 		<key>0B781B29-1B66-4F9C-8B61-8477E02878CD</key>
 		<dict>
@@ -1029,6 +1059,13 @@
 			<integer>470</integer>
 			<key>ypos</key>
 			<integer>535</integer>
+		</dict>
+		<key>82C5845C-72B1-4A59-8F88-A73D1A4C77E4</key>
+		<dict>
+			<key>xpos</key>
+			<integer>355</integer>
+			<key>ypos</key>
+			<integer>550</integer>
 		</dict>
 		<key>A205BD55-D9B0-44B8-A796-D824FF9D0CD5</key>
 		<dict>
@@ -1109,7 +1146,7 @@
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.12</string>
+	<string>1.13</string>
 	<key>webaddress</key>
 	<string>https://1991421.cn</string>
 </dict>
