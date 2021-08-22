@@ -131,6 +131,18 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
+				<string>A700346D-23C4-4082-B08E-5310676FC7B1</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>8F22E5F9-D68C-4D1A-BDDD-E0D6FBE8F0F9</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
 				<string>3477EA17-4B07-418B-B4D8-B4D74D4ECF96</string>
 				<key>modifiers</key>
 				<integer>0</integer>
@@ -143,18 +155,6 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
-				<string>B53E08CC-23B2-4106-BDA3-E59F7963BB1C</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>F593F692-F916-42BB-99B7-140B87623C13</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
 				<string>0B781B29-1B66-4F9C-8B61-8477E02878CD</string>
 				<key>modifiers</key>
 				<integer>0</integer>
@@ -162,6 +162,18 @@
 				<string></string>
 				<key>sourceoutputuid</key>
 				<string>BAF32485-BCE3-4162-A461-73BF076974E5</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>B53E08CC-23B2-4106-BDA3-E59F7963BB1C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>F593F692-F916-42BB-99B7-140B87623C13</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -265,39 +277,12 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>fixedorder</key>
-				<false/>
-				<key>items</key>
-				<string>[{"title":"Direct Outbound","arg":"direct","subtitle":"All requests will be sent to the target server directly"},{"title":"Global Proxy","arg":"proxy","subtitle":"All requests will be forwarded to a proxy server"},{"title":"Rule-based Proxy","arg":"rule","subtitle":"Using rule system to determine how to process requests"}]</string>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>subtext</key>
-				<string></string>
-				<key>title</key>
-				<string></string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.listfilter</string>
-			<key>uid</key>
-			<string>D8F3DDB1-79D5-455B-BF8C-022F6FBFECB7</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>/usr/local/bin/node ./outbound.js $HTTP_API {query}</string>
+				<string>/Users/alanhe/.nvm/versions/node/v12.20.0/bin/node node_modules/@stacker/alfred-utils/dist/alfred-cli-download.js</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -308,32 +293,29 @@
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>D7FC2694-B93F-4F59-A2DF-BB59ACDA7200</string>
+			<string>A700346D-23C4-4082-B08E-5310676FC7B1</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argument</key>
-				<string></string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>3477EA17-4B07-418B-B4D8-B4D74D4ECF96</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>conditions</key>
 				<array>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>update_workflow</string>
+						<key>outputlabel</key>
+						<string></string>
+						<key>uid</key>
+						<string>8F22E5F9-D68C-4D1A-BDDD-E0D6FBE8F0F9</string>
+					</dict>
 					<dict>
 						<key>inputstring</key>
 						<string></string>
@@ -481,17 +463,67 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>paths</key>
-				<array>
-					<string>/Applications/Surge.app</string>
-				</array>
-				<key>toggle</key>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>fixedorder</key>
+				<false/>
+				<key>items</key>
+				<string>[{"title":"Direct Outbound","arg":"direct","subtitle":"All requests will be sent to the target server directly"},{"title":"Global Proxy","arg":"proxy","subtitle":"All requests will be forwarded to a proxy server"},{"title":"Rule-based Proxy","arg":"rule","subtitle":"Using rule system to determine how to process requests"}]</string>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string></string>
+				<key>withspace</key>
 				<false/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.launchfiles</string>
+			<string>alfred.workflow.input.listfilter</string>
 			<key>uid</key>
-			<string>B53E08CC-23B2-4106-BDA3-E59F7963BB1C</string>
+			<string>D8F3DDB1-79D5-455B-BF8C-022F6FBFECB7</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>/usr/local/bin/node ./outbound.js $HTTP_API {query}</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>D7FC2694-B93F-4F59-A2DF-BB59ACDA7200</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>3477EA17-4B07-418B-B4D8-B4D74D4ECF96</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -509,6 +541,23 @@
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
 			<string>0B781B29-1B66-4F9C-8B61-8477E02878CD</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>paths</key>
+				<array>
+					<string>/Applications/Surge.app</string>
+				</array>
+				<key>toggle</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.launchfiles</string>
+			<key>uid</key>
+			<string>B53E08CC-23B2-4106-BDA3-E59F7963BB1C</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -612,6 +661,40 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>184429E5-5B99-4D80-8741-ACC0B6820475</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>A205BD55-D9B0-44B8-A796-D824FF9D0CD5</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -659,19 +742,25 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argument</key>
-				<string></string>
-				<key>passthroughargument</key>
+				<key>concurrently</key>
 				<false/>
-				<key>variables</key>
-				<dict/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>/usr/local/bin/node ./do.js $HTTP_API "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
+			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>184429E5-5B99-4D80-8741-ACC0B6820475</string>
+			<string>BBB56AB5-5DF6-4763-8504-006F8B6066C9</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -693,46 +782,6 @@
 			<string>32F87F30-C084-443C-8A7F-43B9F5588E2A</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string></string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>A205BD55-D9B0-44B8-A796-D824FF9D0CD5</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>/usr/local/bin/node ./do.js $HTTP_API "{query}"</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>BBB56AB5-5DF6-4763-8504-006F8B6066C9</string>
-			<key>version</key>
-			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -795,9 +844,9 @@
 			<key>note</key>
 			<string>Profiles</string>
 			<key>xpos</key>
-			<integer>455</integer>
+			<integer>530</integer>
 			<key>ypos</key>
-			<integer>705</integer>
+			<integer>885</integer>
 		</dict>
 		<key>0B781B29-1B66-4F9C-8B61-8477E02878CD</key>
 		<dict>
@@ -816,25 +865,25 @@
 		<key>32F87F30-C084-443C-8A7F-43B9F5588E2A</key>
 		<dict>
 			<key>xpos</key>
-			<integer>1105</integer>
+			<integer>1180</integer>
 			<key>ypos</key>
-			<integer>760</integer>
+			<integer>940</integer>
 		</dict>
 		<key>3477EA17-4B07-418B-B4D8-B4D74D4ECF96</key>
 		<dict>
 			<key>xpos</key>
-			<integer>425</integer>
+			<integer>500</integer>
 			<key>ypos</key>
-			<integer>75</integer>
+			<integer>255</integer>
 		</dict>
 		<key>5468E8DA-D6EE-46E4-B944-F358BFBB350A</key>
 		<dict>
 			<key>note</key>
 			<string>Policy Groups</string>
 			<key>xpos</key>
-			<integer>400</integer>
+			<integer>475</integer>
 			<key>ypos</key>
-			<integer>525</integer>
+			<integer>705</integer>
 		</dict>
 		<key>55101303-A2F4-4FCE-8085-F6E1E1CEDE14</key>
 		<dict>
@@ -848,18 +897,18 @@
 			<key>note</key>
 			<string>dns</string>
 			<key>xpos</key>
-			<integer>615</integer>
+			<integer>690</integer>
 			<key>ypos</key>
-			<integer>380</integer>
+			<integer>560</integer>
 		</dict>
 		<key>7F8E5ABB-8E12-4EE8-A537-9C6C8884222A</key>
 		<dict>
 			<key>note</key>
 			<string>DNS mode</string>
 			<key>xpos</key>
-			<integer>390</integer>
+			<integer>465</integer>
 			<key>ypos</key>
-			<integer>375</integer>
+			<integer>555</integer>
 		</dict>
 		<key>A205BD55-D9B0-44B8-A796-D824FF9D0CD5</key>
 		<dict>
@@ -868,14 +917,21 @@
 			<key>ypos</key>
 			<integer>840</integer>
 		</dict>
+		<key>A700346D-23C4-4082-B08E-5310676FC7B1</key>
+		<dict>
+			<key>xpos</key>
+			<integer>430</integer>
+			<key>ypos</key>
+			<integer>45</integer>
+		</dict>
 		<key>B53E08CC-23B2-4106-BDA3-E59F7963BB1C</key>
 		<dict>
 			<key>note</key>
 			<string>warning for turn on http-api</string>
 			<key>xpos</key>
-			<integer>395</integer>
+			<integer>470</integer>
 			<key>ypos</key>
-			<integer>185</integer>
+			<integer>365</integer>
 		</dict>
 		<key>BBB56AB5-5DF6-4763-8504-006F8B6066C9</key>
 		<dict>
@@ -896,18 +952,18 @@
 		<key>D7FC2694-B93F-4F59-A2DF-BB59ACDA7200</key>
 		<dict>
 			<key>xpos</key>
-			<integer>745</integer>
+			<integer>820</integer>
 			<key>ypos</key>
-			<integer>45</integer>
+			<integer>225</integer>
 		</dict>
 		<key>D8F3DDB1-79D5-455B-BF8C-022F6FBFECB7</key>
 		<dict>
 			<key>note</key>
 			<string>outbound mode</string>
 			<key>xpos</key>
-			<integer>565</integer>
+			<integer>640</integer>
 			<key>ypos</key>
-			<integer>40</integer>
+			<integer>220</integer>
 		</dict>
 		<key>E9460C86-1ECB-4B7A-AC26-9E3C9217A842</key>
 		<dict>
@@ -923,11 +979,17 @@
 	<dict>
 		<key>HTTP_API</key>
 		<string>examplekey@127.0.0.1:6171</string>
+		<key>check_update</key>
+		<string>true</string>
+		<key>remote_info_list_url</key>
+		<string>https://raw.githubusercontent.com/alanhg/alfred-workflows/master/surge/info.plist</string>
+		<key>remote_workflow_url</key>
+		<string>https://raw.githubusercontent.com/alanhg/alfred-workflows/master/surge/Surge.alfredworkflow</string>
 	</dict>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.10</string>
+	<string>1.11</string>
 	<key>webaddress</key>
 	<string>https://1991421.cn</string>
 </dict>
