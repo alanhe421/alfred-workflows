@@ -2,5 +2,6 @@
 
 [![](https://img.shields.io/badge/version-v1.3-green)](./Pic%20Uploader.alfredworkflow)
 
-![](./2020-04-04-221152.gif)
+注意：截图生成的图片格式为`JPEG`
 
+![](./2020-04-04-221152.gif)
