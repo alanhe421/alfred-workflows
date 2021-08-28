@@ -25,6 +25,16 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
+				<string>68D6AFE6-235B-4EEF-A904-B9358FF8B94C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
 				<string>8AD996E2-9A53-464F-8B4D-E19327553B53</string>
 				<key>modifiers</key>
 				<integer>0</integer>
@@ -32,16 +42,6 @@
 				<string></string>
 				<key>sourceoutputuid</key>
 				<string>7FEDB0FF-5A72-413E-A312-A467178412A1</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>68D6AFE6-235B-4EEF-A904-B9358FF8B94C</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -89,16 +89,6 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>141F8961-7B89-4BC5-9746-E8D86A3850A8</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
 				<string>6DDA8B25-8BA3-44A7-9108-60CC23C7CD94</string>
 				<key>modifiers</key>
 				<integer>0</integer>
@@ -106,6 +96,16 @@
 				<string></string>
 				<key>sourceoutputuid</key>
 				<string>02019F76-5359-48A2-A207-EED16BD84A24</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>141F8961-7B89-4BC5-9746-E8D86A3850A8</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -162,23 +162,71 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>lastpathcomponent</key>
+				<key>concurrently</key>
 				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>d=`date +%F-%H%M%S`
+
+query="{query}"
+
+extension="${query##*.}"
+
+filename="$d.$extension"
+
+cp "$query" ./temp/$filename
+
+echo -n $filename</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
 				<string></string>
-				<key>title</key>
-				<string>Please take a pic first</string>
+				<key>type</key>
+				<integer>0</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
+			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>8AD996E2-9A53-464F-8B4D-E19327553B53</string>
+			<string>6DDA8B25-8BA3-44A7-9108-60CC23C7CD94</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>year=`date +%Y`
+
+ssh $user@$server "mkdir -p $destination/$year"
+
+scp ./temp/{query} $user@$server:$destination/$year
+
+if [ $? -eq 0 ];
+then
+  echo -n "![]($url/$year/{query})"
+else
+  echo -n 1
+fi
+
+rm -rf ./temp/*</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>68D6AFE6-235B-4EEF-A904-B9358FF8B94C</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -235,65 +283,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>conditions</key>
-				<array>
-					<dict>
-						<key>inputstring</key>
-						<string></string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>4</integer>
-						<key>matchstring</key>
-						<string>^1</string>
-						<key>outputlabel</key>
-						<string></string>
-						<key>uid</key>
-						<string>7FEDB0FF-5A72-413E-A312-A467178412A1</string>
-					</dict>
-				</array>
-				<key>elselabel</key>
-				<string>else</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.conditional</string>
-			<key>uid</key>
-			<string>4971FE38-3798-4A8B-B69D-1990D65C4816</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>d=`date +%F-%H%M%S`
-
-filename="$d.jpeg"
-
-/usr/local/bin/pngpaste ./temp/$filename || (echo "1"; exit 1);
-
-echo -n $filename</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>141F8961-7B89-4BC5-9746-E8D86A3850A8</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
@@ -301,7 +290,7 @@ echo -n $filename</string>
 				<key>removeextension</key>
 				<false/>
 				<key>text</key>
-				<string>something wrong</string>
+				<string>something wrong, maybe ssh-key missing.</string>
 				<key>title</key>
 				<string>Upload fail</string>
 			</dict>
@@ -311,25 +300,6 @@ echo -n $filename</string>
 			<string>E58A61CC-C85B-499A-9040-E5F9AEE54595</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>autopaste</key>
-				<false/>
-				<key>clipboardtext</key>
-				<string>{query}</string>
-				<key>ignoredynamicplaceholders</key>
-				<false/>
-				<key>transient</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
-			<key>uid</key>
-			<string>BE3C48D7-BC03-406A-ADA3-9C484051F827</string>
-			<key>version</key>
-			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -364,38 +334,42 @@ echo -n $filename</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
+				<key>lastpathcomponent</key>
 				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>year=`date +%Y`
-
-ssh $user@$server "mkdir -p $destination/$year"
-
-scp ./temp/{query} $user@$server:$destination/$year
-
-if [ $? -eq 0 ];
-then
-  echo -n "![]($url/$year/{query})"
-else
-  echo -n 1
-fi
-
-rm -rf ./temp/*</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
 				<string></string>
-				<key>type</key>
-				<integer>0</integer>
+				<key>title</key>
+				<string>Please take a pic first</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.script</string>
+			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
-			<string>68D6AFE6-235B-4EEF-A904-B9358FF8B94C</string>
+			<string>8AD996E2-9A53-464F-8B4D-E19327553B53</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>BE3C48D7-BC03-406A-ADA3-9C484051F827</string>
+			<key>version</key>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -437,17 +411,13 @@ rm -rf ./temp/*</string>
 				<key>script</key>
 				<string>d=`date +%F-%H%M%S`
 
-query="{query}"
+filename="$d.jpeg"
 
-extension="${query##*.}"
-
-filename="$d.$extension"
-
-cp "$query" ./temp/$filename
+./pngpaste/pngpaste ./temp/$filename || (echo "1"; exit 1);
 
 echo -n $filename</string>
 				<key>scriptargtype</key>
-				<integer>0</integer>
+				<integer>1</integer>
 				<key>scriptfile</key>
 				<string></string>
 				<key>type</key>
@@ -456,13 +426,55 @@ echo -n $filename</string>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>6DDA8B25-8BA3-44A7-9108-60CC23C7CD94</string>
+			<string>141F8961-7B89-4BC5-9746-E8D86A3850A8</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>4</integer>
+						<key>matchstring</key>
+						<string>^1</string>
+						<key>outputlabel</key>
+						<string></string>
+						<key>uid</key>
+						<string>7FEDB0FF-5A72-413E-A312-A467178412A1</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>4971FE38-3798-4A8B-B69D-1990D65C4816</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
-	<string>Upload pictures with one click</string>
+	<string>Upload pictures with one click
+
+1. ssh keygen
+    ```
+
+	$ ssh-keygen -t rsa -C "youremail"
+
+	```
+2. copy public rsa to the target server
+	
+   copy to ~/.ssh/authorized_keys 
+
+3. configure the alfred environment variable</string>
 	<key>uidata</key>
 	<dict>
 		<key>141F8961-7B89-4BC5-9746-E8D86A3850A8</key>
@@ -470,9 +482,9 @@ echo -n $filename</string>
 			<key>note</key>
 			<string>create pic from clipboard</string>
 			<key>xpos</key>
-			<integer>295</integer>
+			<integer>285</integer>
 			<key>ypos</key>
-			<integer>220</integer>
+			<integer>535</integer>
 		</dict>
 		<key>4971FE38-3798-4A8B-B69D-1990D65C4816</key>
 		<dict>
@@ -481,25 +493,25 @@ echo -n $filename</string>
 			<key>xpos</key>
 			<integer>470</integer>
 			<key>ypos</key>
-			<integer>105</integer>
+			<integer>585</integer>
 		</dict>
 		<key>68D6AFE6-235B-4EEF-A904-B9358FF8B94C</key>
 		<dict>
 			<key>note</key>
-			<string>upload to server</string>
+			<string>upload to server by SCP</string>
 			<key>xpos</key>
-			<integer>500</integer>
+			<integer>645</integer>
 			<key>ypos</key>
-			<integer>345</integer>
+			<integer>10</integer>
 		</dict>
 		<key>6DDA8B25-8BA3-44A7-9108-60CC23C7CD94</key>
 		<dict>
 			<key>note</key>
 			<string>create pic path from selection</string>
 			<key>xpos</key>
-			<integer>320</integer>
+			<integer>255</integer>
 			<key>ypos</key>
-			<integer>460</integer>
+			<integer>10</integer>
 		</dict>
 		<key>7F06D968-A68C-481E-83C0-7B45F509D2D1</key>
 		<dict>
@@ -509,50 +521,50 @@ echo -n $filename</string>
 			<string>1. upload copy pic to target server
 2. set markdown url to clipboard</string>
 			<key>xpos</key>
-			<integer>35</integer>
+			<integer>25</integer>
 			<key>ypos</key>
-			<integer>95</integer>
+			<integer>40</integer>
 		</dict>
 		<key>8AD996E2-9A53-464F-8B4D-E19327553B53</key>
 		<dict>
 			<key>note</key>
 			<string>exception</string>
 			<key>xpos</key>
-			<integer>655</integer>
+			<integer>485</integer>
 			<key>ypos</key>
-			<integer>50</integer>
+			<integer>355</integer>
 		</dict>
 		<key>A37E6EF4-A477-441C-B264-ACFC58B138E0</key>
 		<dict>
 			<key>xpos</key>
-			<integer>130</integer>
+			<integer>140</integer>
 			<key>ypos</key>
-			<integer>335</integer>
+			<integer>260</integer>
 		</dict>
 		<key>BE3C48D7-BC03-406A-ADA3-9C484051F827</key>
 		<dict>
 			<key>xpos</key>
-			<integer>835</integer>
+			<integer>940</integer>
 			<key>ypos</key>
-			<integer>315</integer>
+			<integer>370</integer>
 		</dict>
 		<key>D06D3C5F-4081-47FD-BA59-59EDAC4441C7</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>850</integer>
+			<integer>1050</integer>
 			<key>ypos</key>
-			<integer>90</integer>
+			<integer>30</integer>
 		</dict>
 		<key>E58A61CC-C85B-499A-9040-E5F9AEE54595</key>
 		<dict>
 			<key>note</key>
 			<string>upload error</string>
 			<key>xpos</key>
-			<integer>680</integer>
+			<integer>830</integer>
 			<key>ypos</key>
-			<integer>225</integer>
+			<integer>210</integer>
 		</dict>
 		<key>F4B7CED6-DF9C-4269-B412-93E048D0AE4E</key>
 		<dict>
@@ -581,8 +593,8 @@ echo -n $filename</string>
 		<string>user</string>
 	</array>
 	<key>version</key>
-	<string>1.3</string>
+	<string>1.4</string>
 	<key>webaddress</key>
-	<string>https://1991421.cn</string>
+	<string>https://github.com/alanhg/alfred-workflows/tree/master/pic-uploader</string>
 </dict>
 </plist>
