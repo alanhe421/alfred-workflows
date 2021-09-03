@@ -22,15 +22,16 @@
 18. File Enhancer - 一键Copy文件名称`无后缀`
 19. Giphy - 表情包检索
 20. Paste into files - 剪贴板内容存储为文件，比如图片
-20. About Mac - 显示Mac基本信息
-21. Progress bar - 显示时间进度
-22. Do not disturb - 一键开关勿扰模式
-23. Compress GIF - 一键GIF压缩
-24. Batch import workflows - 一键导入多个workflow
-25. My iPhones - 展示个人iPhone购买历史
-26. Whistle - Rules快速切换选择
-27. Json2Ts - JSON生成TS接口定义
-28. Mount Volume - 快速挂载网络硬盘，支持SMB，FTP等
+21. About Mac - 显示Mac基本信息
+22. Progress bar - 显示时间进度
+23. Do not disturb - 一键开关勿扰模式
+24. Compress GIF - 一键GIF压缩
+25. Batch import workflows - 一键导入多个workflow
+26. My iPhones - 展示个人iPhone购买历史
+27. Whistle - Rules快速切换选择
+28. Json2Ts - JSON生成TS接口定义
+29. Mount Volume - 快速挂载网络硬盘，支持SMB，FTP等
+30. String Manipulation - 文本格式切换
 
 ## Alfred常见问题
 
