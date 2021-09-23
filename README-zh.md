@@ -32,6 +32,7 @@
 28. Json2Ts - JSON生成TS接口定义
 29. Mount Volume - 快速挂载网络硬盘，支持SMB，FTP等
 30. String Manipulation - 文本格式切换
+31. Type Search - 类型搜索
 
 ## Alfred常见问题
 
