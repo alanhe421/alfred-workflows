@@ -1,1 +1,1 @@
-[![](https://img.shields.io/badge/version-v0.1-green)](./String%20Manipulation.alfredworkflow)
+[![](https://img.shields.io/badge/version-v0.2-green)](./String%20Manipulation.alfredworkflow)
