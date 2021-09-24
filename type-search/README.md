@@ -1,4 +1,4 @@
-> 快速搜索包类型
+[![](https://img.shields.io/badge/version-v0.1-green)](./Type%20Search.alfredworkflow)> 快速搜索包类型
 
 回车即可将安装命令拷贝到系统剪贴板
 
