@@ -20,8 +20,20 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>B7E942A3-2E29-4015-80C3-904F280B08ED</string>
+				<key>modifiers</key>
+				<integer>524288</integer>
+				<key>modifiersubtext</key>
+				<string>open repositoy url</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
 		</array>
 		<key>66141B0B-A8EA-4609-A3F2-E561B1F6EEDB</key>
+		<array/>
+		<key>B7E942A3-2E29-4015-80C3-904F280B08ED</key>
 		<array/>
 	</dict>
 	<key>createdby</key>
@@ -34,25 +46,6 @@
 	<string>Type Search</string>
 	<key>objects</key>
 	<array>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>autopaste</key>
-				<false/>
-				<key>clipboardtext</key>
-				<string>{query}</string>
-				<key>ignoredynamicplaceholders</key>
-				<false/>
-				<key>transient</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
-			<key>uid</key>
-			<string>66141B0B-A8EA-4609-A3F2-E561B1F6EEDB</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -102,6 +95,44 @@
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>66141B0B-A8EA-4609-A3F2-E561B1F6EEDB</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>B7E942A3-2E29-4015-80C3-904F280B08ED</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>Find npm packages that have type declarations, either bundled or on Definitely Typed.
@@ -121,15 +152,22 @@ based on https://www.typescriptlang.org/dt/search</string>
 		<key>66141B0B-A8EA-4609-A3F2-E561B1F6EEDB</key>
 		<dict>
 			<key>xpos</key>
-			<integer>375</integer>
+			<integer>400</integer>
 			<key>ypos</key>
-			<integer>90</integer>
+			<integer>105</integer>
+		</dict>
+		<key>B7E942A3-2E29-4015-80C3-904F280B08ED</key>
+		<dict>
+			<key>xpos</key>
+			<integer>385</integer>
+			<key>ypos</key>
+			<integer>360</integer>
 		</dict>
 	</dict>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>0.1</string>
+	<string>0.2</string>
 	<key>webaddress</key>
 	<string>https://1991421.cn</string>
 </dict>
