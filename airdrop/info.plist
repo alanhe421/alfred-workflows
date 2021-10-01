@@ -538,7 +538,7 @@ end alfred_script</string>
 			<key>config</key>
 			<dict>
 				<key>acceptsmulti</key>
-				<false/>
+				<integer>0</integer>
 				<key>filetypes</key>
 				<array/>
 				<key>name</key>
@@ -589,17 +589,22 @@ end alfred_script</string>
 	<string>One click to evoke airdrop and send the selected something to the target device
 
 - Currently only supports English and Simplified Chinese
-- You can share file、photo、url.</string>
+- You can share file、photo、url.
+
+
+
+Support Catalina、Big Sur</string>
 	<key>uidata</key>
 	<dict>
 		<key>06157B6F-144E-4DB2-A3ED-97A0231C6BA2</key>
 		<dict>
 			<key>note</key>
-			<string>Considering the i18n of the GUI</string>
+			<string>file
+Considering the i18n of the GUI</string>
 			<key>xpos</key>
-			<integer>740</integer>
+			<integer>640</integer>
 			<key>ypos</key>
-			<integer>390</integer>
+			<integer>395</integer>
 		</dict>
 		<key>06AE249A-313F-494E-8291-3DCDB8A98D78</key>
 		<dict>
@@ -637,18 +642,18 @@ share files</string>
 		<key>5F497DB5-C783-41DC-BC77-32AEAB33287D</key>
 		<dict>
 			<key>note</key>
-			<string>EN share url</string>
+			<string>url</string>
 			<key>xpos</key>
-			<integer>575</integer>
+			<integer>495</integer>
 			<key>ypos</key>
-			<integer>205</integer>
+			<integer>210</integer>
 		</dict>
 		<key>6CC4C999-29AE-4AF4-BA87-E3D270C5673D</key>
 		<dict>
 			<key>xpos</key>
-			<integer>505</integer>
+			<integer>440</integer>
 			<key>ypos</key>
-			<integer>495</integer>
+			<integer>580</integer>
 		</dict>
 		<key>705AB63E-8447-449C-A1D8-0EC99A9C1BC8</key>
 		<dict>
@@ -710,7 +715,7 @@ share files</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.4</string>
+	<string>1.5</string>
 	<key>webaddress</key>
 	<string>https://1991421.cn</string>
 </dict>
