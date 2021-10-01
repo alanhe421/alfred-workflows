@@ -17,3 +17,6 @@ if you need image-compress
 
 - brew install jq
 - visit https://tinypng.com/developers, get your api key
+
+## notice
+for image compress, 500 free limit/per month
