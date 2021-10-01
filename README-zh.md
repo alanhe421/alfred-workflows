@@ -25,7 +25,7 @@
 21. About Mac - 显示Mac基本信息
 22. Progress bar - 显示时间进度
 23. Do not disturb - 一键开关勿扰模式
-24. Compress GIF - 一键GIF压缩
+24. Compress - 一键GIF/WebP, JPEG and PNG压缩
 25. Batch import workflows - 一键导入多个workflow
 26. My iPhones - 展示个人iPhone购买历史
 27. Whistle - Rules快速切换选择
