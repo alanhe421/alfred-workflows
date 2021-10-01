@@ -17,6 +17,8 @@ if you need image-compress
 
 - brew install jq
 - visit https://tinypng.com/developers, get your api key
+- api key setting
+  ![](./screenshot_2.jpeg)
 
 ## notice
 for image compress, 500 free limit/per month
