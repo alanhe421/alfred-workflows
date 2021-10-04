@@ -79,7 +79,7 @@
 				<key>queuemode</key>
 				<integer>1</integer>
 				<key>runningsubtext</key>
-				<string></string>
+				<string>Please Wait</string>
 				<key>script</key>
 				<string>tell application "Finder"
 set username to long user name of (system info)set computername to host name of (system info)set ethernet to primary Ethernet address of (system info)set ipaddress to IPv4 address of (system info)set osver to system version of (system info)set cpuType to CPU type of (system info)set physicalMemory to physical memory of (system info)-- set bootVolume to boot volume of (system info)set totalSpace to capacity of (get startup disk)set freeSpace to free space of (get startup disk)
