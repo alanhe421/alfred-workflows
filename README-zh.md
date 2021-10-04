@@ -4,7 +4,6 @@
 ## Workflow集
 1. eudic-tools 一键查词，一键发音
 2. pic-uploader  一键上传图片到个人图床
-3. movie-searcher 检索电影
 4. git 循环拉取项目
 5. 快速连接和断开蓝牙设备
 6. 文本识别OCR
