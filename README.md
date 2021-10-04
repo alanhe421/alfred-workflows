@@ -6,4 +6,5 @@
 
 ## Sponsor
 
-- Repo Star / [Paypal](https://www.paypal.com/paypalme/alanhe421)
+- Star this repo 🌟 ☝️ 
+- [Buy me a ☕️ ](https://www.paypal.com/paypalme/alanhe421)
