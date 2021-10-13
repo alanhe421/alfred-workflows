@@ -167,6 +167,42 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
+				<string>year=`date +%Y`
+
+ssh $user@$server "mkdir -p $destination/$year"
+
+rsync -p --chmod=Du=rwx,Dgo=rx,Fu=rw,Fog=r ./temp/{query} $user@$server:$destination/$year
+
+if [ $? -eq 0 ];
+then
+  echo -n "![]($url/$year/{query})"
+else
+  echo -n 1
+fi
+
+rm -rf ./temp/*</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>68D6AFE6-235B-4EEF-A904-B9358FF8B94C</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
 				<string>d=`date +%F-%H%M%S`
 
 query="{query}"
@@ -189,42 +225,6 @@ echo -n $filename</string>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
 			<string>6DDA8B25-8BA3-44A7-9108-60CC23C7CD94</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>year=`date +%Y`
-
-ssh $user@$server "mkdir -p $destination/$year"
-
-scp ./temp/{query} $user@$server:$destination/$year
-
-if [ $? -eq 0 ];
-then
-  echo -n "![]($url/$year/{query})"
-else
-  echo -n 1
-fi
-
-rm -rf ./temp/*</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>68D6AFE6-235B-4EEF-A904-B9358FF8B94C</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -304,6 +304,27 @@ rm -rf ./temp/*</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string></string>
+				<key>title</key>
+				<string>Please take a pic first</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>8AD996E2-9A53-464F-8B4D-E19327553B53</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>conditions</key>
 				<array>
 					<dict>
@@ -328,27 +349,6 @@ rm -rf ./temp/*</string>
 			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
 			<string>A37E6EF4-A477-441C-B264-ACFC58B138E0</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string></string>
-				<key>title</key>
-				<string>Please take a pic first</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>8AD996E2-9A53-464F-8B4D-E19327553B53</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -530,9 +530,9 @@ echo -n $filename</string>
 			<key>note</key>
 			<string>exception</string>
 			<key>xpos</key>
-			<integer>485</integer>
+			<integer>390</integer>
 			<key>ypos</key>
-			<integer>355</integer>
+			<integer>245</integer>
 		</dict>
 		<key>A37E6EF4-A477-441C-B264-ACFC58B138E0</key>
 		<dict>
@@ -593,7 +593,7 @@ echo -n $filename</string>
 		<string>user</string>
 	</array>
 	<key>version</key>
-	<string>1.4</string>
+	<string>1.5</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/pic-uploader</string>
 </dict>

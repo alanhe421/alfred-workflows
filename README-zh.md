@@ -4,7 +4,6 @@
 ## Workflow集
 1. eudic-tools 一键查词，一键发音
 2. pic-uploader  一键上传图片到个人图床
-3. movie-searcher 检索电影
 4. git 循环拉取项目
 5. 快速连接和断开蓝牙设备
 6. 文本识别OCR
@@ -25,7 +24,7 @@
 21. About Mac - 显示Mac基本信息
 22. Progress bar - 显示时间进度
 23. Do not disturb - 一键开关勿扰模式
-24. Compress GIF - 一键GIF压缩
+24. Compress - 一键GIF/WebP, JPEG and PNG压缩
 25. Batch import workflows - 一键导入多个workflow
 26. My iPhones - 展示个人iPhone购买历史
 27. Whistle - Rules快速切换选择

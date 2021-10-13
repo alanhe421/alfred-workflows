@@ -112,6 +112,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>672241DA-A742-4C25-8736-D929FC69A4E5</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E78945D3-3452-4A45-A0B8-2A46BACB37B7</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>7AF3CA13-DA2D-4D97-B5A7-E4EC8D4107F3</key>
 		<array>
 			<dict>
@@ -248,6 +261,18 @@
 				<string></string>
 				<key>sourceoutputuid</key>
 				<string>E933A172-0BB9-448B-A033-1E0AC7512B93</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>672241DA-A742-4C25-8736-D929FC69A4E5</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>14FA5E04-9ADE-4A0A-B8D5-4A034446C6FA</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -450,6 +475,20 @@
 						<key>uid</key>
 						<string>8F9640CA-01F8-4302-A00C-84BA9B4CA810</string>
 					</dict>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>rules</string>
+						<key>outputlabel</key>
+						<string></string>
+						<key>uid</key>
+						<string>14FA5E04-9ADE-4A0A-B8D5-4A034446C6FA</string>
+					</dict>
 				</array>
 				<key>elselabel</key>
 				<string>else</string>
@@ -487,7 +526,7 @@
 				<key>queuemode</key>
 				<integer>1</integer>
 				<key>runningsubtext</key>
-				<string>Please Wait</string>
+				<string>Please wait</string>
 				<key>script</key>
 				<string>/usr/local/bin/node ./index.js $HTTP_API {query}</string>
 				<key>scriptargtype</key>
@@ -822,6 +861,23 @@
 			<key>type</key>
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
+			<string>672241DA-A742-4C25-8736-D929FC69A4E5</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
 			<string>A205BD55-D9B0-44B8-A796-D824FF9D0CD5</string>
 			<key>version</key>
 			<integer>1</integer>
@@ -964,6 +1020,53 @@
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>/usr/local/bin/node rules.js {query}</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>E78945D3-3452-4A45-A0B8-2A46BACB37B7</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>develop tools based on Surge Mac 4.0 HTTP API.
@@ -1044,6 +1147,13 @@
 			<key>ypos</key>
 			<integer>530</integer>
 		</dict>
+		<key>672241DA-A742-4C25-8736-D929FC69A4E5</key>
+		<dict>
+			<key>xpos</key>
+			<integer>335</integer>
+			<key>ypos</key>
+			<integer>805</integer>
+		</dict>
 		<key>7AF3CA13-DA2D-4D97-B5A7-E4EC8D4107F3</key>
 		<dict>
 			<key>xpos</key>
@@ -1122,6 +1232,15 @@
 			<key>ypos</key>
 			<integer>220</integer>
 		</dict>
+		<key>E78945D3-3452-4A45-A0B8-2A46BACB37B7</key>
+		<dict>
+			<key>note</key>
+			<string>Rules</string>
+			<key>xpos</key>
+			<integer>485</integer>
+			<key>ypos</key>
+			<integer>1080</integer>
+		</dict>
 		<key>E9460C86-1ECB-4B7A-AC26-9E3C9217A842</key>
 		<dict>
 			<key>note</key>
@@ -1146,7 +1265,7 @@
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.13</string>
+	<string>1.2</string>
 	<key>webaddress</key>
 	<string>https://1991421.cn</string>
 </dict>

@@ -1,4 +1,4 @@
-[![](https://img.shields.io/badge/version-v0.1-green)](./Type%20Search.alfredworkflow)
+[![](https://img.shields.io/badge/version-v0.2-green)](./Type%20Search.alfredworkflow)
 
 > 快速搜索包类型
 
