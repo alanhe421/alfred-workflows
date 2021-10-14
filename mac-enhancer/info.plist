@@ -8,6 +8,44 @@
 	<string>Self-Dev</string>
 	<key>connections</key>
 	<dict>
+		<key>6E268ABF-0773-452C-B548-5D61FE7ECDB2</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>FD523C1F-C6BF-4955-809A-51ECF942A9F6</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>62109EB1-9131-4E93-BFC5-D1781630C239</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>7352D6CA-8913-4E57-8E41-823216845D0F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>70C83943-0D5A-4693-BB72-3C445197EE25</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>6E268ABF-0773-452C-B548-5D61FE7ECDB2</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>91417F9B-F3F5-4A48-9A04-80DC5B1DB101</key>
 		<array>
 			<dict>
@@ -143,11 +181,160 @@
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>set volume without output muted</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>FD523C1F-C6BF-4955-809A-51ECF942A9F6</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>mute</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Please Wait</string>
+				<key>script</key>
+				<string>set muted to (output muted of (get volume settings))set comm to "bash ./mute.sh" &amp; " \"" &amp; muted &amp; "\""
+do shell script comm</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>./system-info.scpt</string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>Toggle Mute</string>
+				<key>type</key>
+				<integer>6</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>70C83943-0D5A-4693-BB72-3C445197EE25</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>true</string>
+						<key>outputlabel</key>
+						<string></string>
+						<key>uid</key>
+						<string>62109EB1-9131-4E93-BFC5-D1781630C239</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>6E268ABF-0773-452C-B548-5D61FE7ECDB2</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>set volume with output muted</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>7352D6CA-8913-4E57-8E41-823216845D0F</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>Mac enhancer</string>
 	<key>uidata</key>
 	<dict>
+		<key>6E268ABF-0773-452C-B548-5D61FE7ECDB2</key>
+		<dict>
+			<key>xpos</key>
+			<integer>260</integer>
+			<key>ypos</key>
+			<integer>570</integer>
+		</dict>
+		<key>70C83943-0D5A-4693-BB72-3C445197EE25</key>
+		<dict>
+			<key>xpos</key>
+			<integer>90</integer>
+			<key>ypos</key>
+			<integer>550</integer>
+		</dict>
+		<key>7352D6CA-8913-4E57-8E41-823216845D0F</key>
+		<dict>
+			<key>note</key>
+			<string>mute</string>
+			<key>xpos</key>
+			<integer>450</integer>
+			<key>ypos</key>
+			<integer>635</integer>
+		</dict>
 		<key>91417F9B-F3F5-4A48-9A04-80DC5B1DB101</key>
 		<dict>
 			<key>xpos</key>
@@ -178,11 +365,20 @@
 			<key>ypos</key>
 			<integer>325</integer>
 		</dict>
+		<key>FD523C1F-C6BF-4955-809A-51ECF942A9F6</key>
+		<dict>
+			<key>note</key>
+			<string>unmute</string>
+			<key>xpos</key>
+			<integer>455</integer>
+			<key>ypos</key>
+			<integer>465</integer>
+		</dict>
 	</dict>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.0</string>
+	<string>1.1</string>
 	<key>webaddress</key>
 	<string>https://1991421.cn</string>
 </dict>
