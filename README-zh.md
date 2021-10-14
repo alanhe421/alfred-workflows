@@ -10,7 +10,7 @@
 7. 百度翻译
 8. 印象笔记一键检索
 9. new-file 一键创建文件【JS，CSS，HTML】，并用VSC打开
-10. mac-enhancer - 一键开关内置trackpad
+10. mac-enhancer - Mac一些增强操作，比如一键开关trackpad/静音，热键结束录屏等
 11. rgb-hex-converter - 快速转换RGB，Hex颜色值
 12. airdrop - 一键唤起Airdrop，发送选中文件或链接到目标设备
 13. appid - 快速获取App Bundle ID
