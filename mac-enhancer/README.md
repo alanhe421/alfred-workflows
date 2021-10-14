@@ -1,6 +1,6 @@
 # mac-enhancer
 
-[![](https://img.shields.io/badge/version-v1.1-green)](./Mac%20Enhancer.alfredworkflow)
+[![](https://img.shields.io/badge/version-v1.2-green)](./Mac%20Enhancer.alfredworkflow)
 
 
 1. toggle trackpad

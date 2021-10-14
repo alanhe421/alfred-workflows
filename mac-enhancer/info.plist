@@ -309,34 +309,40 @@ do shell script comm</string>
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>Mac enhancer</string>
+	<string>Mac enhancer
+
+1. toggle trackpad
+2. toggle mute
+3. shortcut[⌘ ⇧ 6] to end screenshot</string>
 	<key>uidata</key>
 	<dict>
 		<key>6E268ABF-0773-452C-B548-5D61FE7ECDB2</key>
 		<dict>
 			<key>xpos</key>
-			<integer>260</integer>
+			<integer>245</integer>
 			<key>ypos</key>
-			<integer>570</integer>
+			<integer>580</integer>
 		</dict>
 		<key>70C83943-0D5A-4693-BB72-3C445197EE25</key>
 		<dict>
 			<key>xpos</key>
-			<integer>90</integer>
+			<integer>80</integer>
 			<key>ypos</key>
-			<integer>550</integer>
+			<integer>560</integer>
 		</dict>
 		<key>7352D6CA-8913-4E57-8E41-823216845D0F</key>
 		<dict>
 			<key>note</key>
 			<string>mute</string>
 			<key>xpos</key>
-			<integer>450</integer>
+			<integer>360</integer>
 			<key>ypos</key>
-			<integer>635</integer>
+			<integer>655</integer>
 		</dict>
 		<key>91417F9B-F3F5-4A48-9A04-80DC5B1DB101</key>
 		<dict>
+			<key>note</key>
+			<string>end screenshot</string>
 			<key>xpos</key>
 			<integer>85</integer>
 			<key>ypos</key>
@@ -370,15 +376,15 @@ do shell script comm</string>
 			<key>note</key>
 			<string>unmute</string>
 			<key>xpos</key>
-			<integer>455</integer>
+			<integer>365</integer>
 			<key>ypos</key>
-			<integer>465</integer>
+			<integer>500</integer>
 		</dict>
 	</dict>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.1</string>
+	<string>1.2</string>
 	<key>webaddress</key>
 	<string>https://1991421.cn</string>
 </dict>
