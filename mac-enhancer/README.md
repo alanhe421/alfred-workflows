@@ -1,12 +1,12 @@
 # mac-enhancer
 
-[![](https://img.shields.io/badge/version-v1.1-green)](./Mac%20Enhancer.alfredworkflow)
+[![](https://img.shields.io/badge/version-v1.3-green)](./Mac%20Enhancer.alfredworkflow)
 
 
 1. toggle trackpad
 2. toggle mute
-   - recommend to uncheck mute setting in alfred
 3. shortcut[⌘ ⇧ 6] to end screenshot
+4. shortcut[⌘ ⇧ O] to open with
 
 ## Toggle Trackpad on/off
 
