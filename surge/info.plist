@@ -357,7 +357,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>/Users/alanhe/.nvm/versions/node/v12.20.0/bin/node node_modules/@stacker/alfred-utils/dist/alfred-cli-download.js</string>
+				<string>/usr/local/bin/node node_modules/@stacker/alfred-utils/dist/alfred-cli-download.js</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -1073,7 +1073,12 @@
 
 ## install 
 
-1. install node</string>
+1. install node
+
+
+
+## Surge HTTP API
+- https://manual.nssurge.com/others/http-api.html</string>
 	<key>uidata</key>
 	<dict>
 		<key>0636B261-83DB-4543-80DF-242F3DC91488</key>
@@ -1265,8 +1270,8 @@
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.2</string>
+	<string>1.3</string>
 	<key>webaddress</key>
-	<string>https://1991421.cn</string>
+	<string>https://github.com/alanhg/alfred-workflows/tree/master/surge</string>
 </dict>
 </plist>
