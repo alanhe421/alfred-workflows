@@ -1,6 +1,6 @@
 > 快速切换选择代理Rules
 
-[![](https://img.shields.io/badge/version-v1.5-green)](./Whistle.alfredworkflow)
+[![](https://img.shields.io/badge/version-v1.6-green)](./Whistle.alfredworkflow)
 
 - ⌥ ⏎ 访问WEB管理页面
 - ⏎ 切换rule选择状态
