@@ -87,6 +87,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>E7878FD3-341C-46E3-B296-200E28529751</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>82D1CD73-87B3-464C-A925-683257981357</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 	</dict>
 	<key>createdby</key>
 	<string>Alan He</string>
@@ -98,27 +111,6 @@
 	<string>Mac Enhancer</string>
 	<key>objects</key>
 	<array>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>trackpad</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>Toggle Trackpad on/off</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>B8BFA086-1B2F-4728-9976-2D4F4EBB5086</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -141,6 +133,27 @@
 			<string>A8008FB3-73D5-4264-9B1E-597592344FC8</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>trackpad</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Toggle Trackpad on/off</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>B8BFA086-1B2F-4728-9976-2D4F4EBB5086</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -193,27 +206,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>count</key>
-				<integer>1</integer>
-				<key>keychar</key>
-				<string>⎋</string>
-				<key>keycode</key>
-				<integer>53</integer>
-				<key>keymod</key>
-				<integer>1310720</integer>
-				<key>overridewithargument</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.dispatchkeycombo</string>
-			<key>uid</key>
-			<string>C51C0769-A94F-406E-80EC-F4B635F47C86</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -241,6 +233,27 @@
 			<string>91417F9B-F3F5-4A48-9A04-80DC5B1DB101</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>count</key>
+				<integer>1</integer>
+				<key>keychar</key>
+				<string>⎋</string>
+				<key>keycode</key>
+				<integer>53</integer>
+				<key>keymod</key>
+				<integer>1310720</integer>
+				<key>overridewithargument</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.dispatchkeycombo</string>
+			<key>uid</key>
+			<string>C51C0769-A94F-406E-80EC-F4B635F47C86</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -368,6 +381,64 @@ do shell script comm</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>37</integer>
+				<key>hotmod</key>
+				<integer>1179648</integer>
+				<key>hotstring</key>
+				<string>L</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>com.google.Chrome</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>1</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>E7878FD3-341C-46E3-B296-200E28529751</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>tell application "Google Chrome" to set URL of active tab of window 1 to "javascript:"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>82D1CD73-87B3-464C-A925-683257981357</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>Mac enhancer
@@ -375,7 +446,9 @@ do shell script comm</string>
 1. toggle trackpad
 2. toggle mute
 3. shortcut[⌘ ⇧ 6] to end screenshot
-4. shortcut[⌘ ⇧ O] to open with</string>
+4. shortcut[⌘ ⇧ O] to open with
+5. shortcut[⌘ ⇧ L] to lose focus from address bar input 
+   just for Chrome</string>
 	<key>uidata</key>
 	<dict>
 		<key>6DC74B76-2782-45C0-A426-7DB760F0B008</key>
@@ -417,6 +490,15 @@ do shell script comm</string>
 			<key>ypos</key>
 			<integer>135</integer>
 		</dict>
+		<key>82D1CD73-87B3-464C-A925-683257981357</key>
+		<dict>
+			<key>note</key>
+			<string>return focus to page after address input</string>
+			<key>xpos</key>
+			<integer>355</integer>
+			<key>ypos</key>
+			<integer>860</integer>
+		</dict>
 		<key>91417F9B-F3F5-4A48-9A04-80DC5B1DB101</key>
 		<dict>
 			<key>note</key>
@@ -449,6 +531,15 @@ do shell script comm</string>
 			<key>ypos</key>
 			<integer>325</integer>
 		</dict>
+		<key>E7878FD3-341C-46E3-B296-200E28529751</key>
+		<dict>
+			<key>note</key>
+			<string>for Chrome</string>
+			<key>xpos</key>
+			<integer>85</integer>
+			<key>ypos</key>
+			<integer>860</integer>
+		</dict>
 		<key>FD523C1F-C6BF-4955-809A-51ECF942A9F6</key>
 		<dict>
 			<key>note</key>
@@ -462,7 +553,7 @@ do shell script comm</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.3</string>
+	<string>1.4</string>
 	<key>webaddress</key>
 	<string>https://1991421.cn</string>
 </dict>
