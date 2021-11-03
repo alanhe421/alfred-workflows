@@ -6,7 +6,8 @@
 1. toggle trackpad
 2. toggle mute
 3. shortcut[⌘ ⇧ 6] to end screenshot
-4. shortcut[⌘ ⇧ O] to open with
+5. shortcut[⌘ ⇧ L] to lose focus from address bar input
+   just for Chrome
 
 ## Toggle Trackpad on/off
 
