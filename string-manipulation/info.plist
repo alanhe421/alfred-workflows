@@ -47,6 +47,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>3795C1CA-60EF-47E5-AC68-D96CBBD3D3BE</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>030D5547-83F6-4958-948F-5A2F42B97AD7</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>63FFA124-E784-487C-A031-5A19E789322D</key>
 		<array>
 			<dict>
@@ -148,6 +161,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>9D0605B6-BA37-4A72-927D-E402394339B2</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>FD6BEFA0-E37D-4313-9305-5AB45088B32D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>AE3DDC48-5F22-4AE4-82AC-F118CCD0062D</key>
 		<array/>
 		<key>B9742278-AF74-4748-AABD-EE87E58E96F9</key>
@@ -220,6 +246,32 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>0573B8FD-6DED-44E8-ACA7-E5699F60142C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>FA8BC035-7744-4C13-91B1-90D088A2035F</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>030D5547-83F6-4958-948F-5A2F42B97AD7</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>FD6BEFA0-E37D-4313-9305-5AB45088B32D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>FA8BC035-7744-4C13-91B1-90D088A2035F</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -456,6 +508,27 @@
 				<key>acceptsurls</key>
 				<false/>
 				<key>name</key>
+				<string>capitalize-case</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.universalaction</string>
+			<key>uid</key>
+			<string>3795C1CA-60EF-47E5-AC68-D96CBBD3D3BE</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsfiles</key>
+				<false/>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>acceptstext</key>
+				<true/>
+				<key>acceptsurls</key>
+				<false/>
+				<key>name</key>
 				<string>lower-case</string>
 			</dict>
 			<key>type</key>
@@ -477,6 +550,71 @@
 			<string>6C2BEEC9-D2AD-4872-A808-3DC75B6F2CF4</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>md5 -s {query}</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>FD6BEFA0-E37D-4313-9305-5AB45088B32D</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsfiles</key>
+				<false/>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>acceptstext</key>
+				<true/>
+				<key>acceptsurls</key>
+				<false/>
+				<key>name</key>
+				<string>MD5</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.universalaction</string>
+			<key>uid</key>
+			<string>9D0605B6-BA37-4A72-927D-E402394339B2</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>matchmode</key>
+				<integer>1</integer>
+				<key>matchstring</key>
+				<string>(^(\s|\S)+=\s)|(\n$)</string>
+				<key>regexcaseinsensitive</key>
+				<false/>
+				<key>regexmultiline</key>
+				<false/>
+				<key>replacestring</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.replace</string>
+			<key>uid</key>
+			<string>FA8BC035-7744-4C13-91B1-90D088A2035F</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -589,7 +727,10 @@ echo "$size"</string>
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>Case switching.</string>
+	<string>Case switching.
+
+1. Case switching
+2. MD5</string>
 	<key>uidata</key>
 	<dict>
 		<key>022858CA-3A3C-4C6B-B5F1-788AE01FABF6</key>
@@ -621,6 +762,15 @@ echo "$size"</string>
 			<integer>70</integer>
 			<key>ypos</key>
 			<integer>310</integer>
+		</dict>
+		<key>3795C1CA-60EF-47E5-AC68-D96CBBD3D3BE</key>
+		<dict>
+			<key>note</key>
+			<string>hello world =&gt; Hello World</string>
+			<key>xpos</key>
+			<integer>525</integer>
+			<key>ypos</key>
+			<integer>610</integer>
 		</dict>
 		<key>63FFA124-E784-487C-A031-5A19E789322D</key>
 		<dict>
@@ -672,6 +822,15 @@ echo "$size"</string>
 			<integer>230</integer>
 			<key>ypos</key>
 			<integer>190</integer>
+		</dict>
+		<key>9D0605B6-BA37-4A72-927D-E402394339B2</key>
+		<dict>
+			<key>note</key>
+			<string>123456 =&gt; e10adc3949ba59abbe56e057f20f883e</string>
+			<key>xpos</key>
+			<integer>500</integer>
+			<key>ypos</key>
+			<integer>880</integer>
 		</dict>
 		<key>AE3DDC48-5F22-4AE4-82AC-F118CCD0062D</key>
 		<dict>
@@ -730,11 +889,25 @@ echo "$size"</string>
 			<key>ypos</key>
 			<integer>130</integer>
 		</dict>
+		<key>FA8BC035-7744-4C13-91B1-90D088A2035F</key>
+		<dict>
+			<key>xpos</key>
+			<integer>890</integer>
+			<key>ypos</key>
+			<integer>910</integer>
+		</dict>
+		<key>FD6BEFA0-E37D-4313-9305-5AB45088B32D</key>
+		<dict>
+			<key>xpos</key>
+			<integer>685</integer>
+			<key>ypos</key>
+			<integer>880</integer>
+		</dict>
 	</dict>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>0.2</string>
+	<string>0.4</string>
 	<key>webaddress</key>
 	<string>https://1991421.cn</string>
 </dict>
