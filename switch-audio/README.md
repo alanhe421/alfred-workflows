@@ -1,6 +1,6 @@
 > easy to switch audio(speaker and mic)
 
-[![](https://img.shields.io/badge/version-v2.0-green)](./Switch%20Audio.alfredworkflow)
+[![](https://img.shields.io/badge/version-v2.1-green)](./Switch%20Audio.alfredworkflow)
 
 
 just input `sound` or `voice`
