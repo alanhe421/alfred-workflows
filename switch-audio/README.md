@@ -12,4 +12,4 @@ support switch to airplay
 
 [Please click here](https://gist.github.com/alanhg/21f7fd110e0bdac1d0cce66ca40e78ea) If you want to know how to realize it with Apple Script.
 
-not support Monterey 12
+Support Monterey 12
