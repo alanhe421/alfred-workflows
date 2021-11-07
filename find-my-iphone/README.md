@@ -1,4 +1,6 @@
-[![](https://img.shields.io/badge/version-v0.2-green)](./Find%20iPhone.alfredworkflow)> quickly find your missing iPhone (or other Apple device)
+> quickly find your missing iPhone (or other Apple device)
+
+[![](https://img.shields.io/badge/version-v0.2-green)](./Find%20iPhone.alfredworkflow)
 
 just input `findmy`
 
