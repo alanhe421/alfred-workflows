@@ -173,6 +173,9 @@
 	<key>readme</key>
 	<string>quickly find your missing iPhone (or other Apple device)
 
+## Requirement
+
+brew install node
 
 ## Config
 
@@ -247,7 +250,7 @@ Logging in for the first time is troublesome, but after that, it will automatica
 		<string>dsid</string>
 	</array>
 	<key>version</key>
-	<string>0.3</string>
+	<string>0.4</string>
 	<key>webaddress</key>
 	<string>https://1991421.cn</string>
 </dict>
