@@ -9,6 +9,10 @@ just input `findmy`
 - ⌥ ⏎ Send alert
 - ⌘ ⏎ view iCloud Web
 
+## Requirement
+
+brew install node
+
 ## Config
 
 1. login icloud web
