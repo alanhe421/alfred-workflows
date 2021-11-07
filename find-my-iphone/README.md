@@ -10,7 +10,7 @@ just input `findmy`
 ## Config
 
 1. login icloud web
-2. copy some cookie to alfred-env-vironment
+2. copy some cookie to alfred-environment
 3. set your iCloud apple_id and password(for auto login)
 
 ## Thanks
