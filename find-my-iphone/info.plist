@@ -247,7 +247,7 @@ Logging in for the first time is troublesome, but after that, it will automatica
 		<string>dsid</string>
 	</array>
 	<key>version</key>
-	<string>0.2</string>
+	<string>0.3</string>
 	<key>webaddress</key>
 	<string>https://1991421.cn</string>
 </dict>
