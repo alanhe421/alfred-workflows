@@ -112,24 +112,11 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
-				<string>D24D4D1B-0654-4B5E-8D11-0441A3E8520A</string>
+				<string>36C4E69C-D047-4166-AAF9-4E2FAD70D0EC</string>
 				<key>modifiers</key>
 				<integer>524288</integer>
 				<key>modifiersubtext</key>
 				<string>View on dashboard</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>D24D4D1B-0654-4B5E-8D11-0441A3E8520A</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>36C4E69C-D047-4166-AAF9-4E2FAD70D0EC</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -269,6 +256,19 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>type</key>
+				<integer>3</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.transform</string>
+			<key>uid</key>
+			<string>3663A43F-E7D9-407D-950D-9DB3D22228B4</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -320,19 +320,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>type</key>
-				<integer>3</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.transform</string>
-			<key>uid</key>
-			<string>3663A43F-E7D9-407D-950D-9DB3D22228B4</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -361,7 +348,7 @@
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
-				<string>{var:URL}#rules</string>
+				<string>{var:URL}#rules?ruleName={var:ruleName}</string>
 				<key>utf8</key>
 				<true/>
 			</dict>
@@ -369,23 +356,6 @@
 			<string>alfred.workflow.action.openurl</string>
 			<key>uid</key>
 			<string>FDB82DA2-C61F-4C9D-AD52-D69759532762</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>{var:URL}</string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>D24D4D1B-0654-4B5E-8D11-0441A3E8520A</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -481,16 +451,9 @@ npm install -g whistle</string>
 			<key>note</key>
 			<string>list rules</string>
 			<key>xpos</key>
-			<integer>50</integer>
+			<integer>40</integer>
 			<key>ypos</key>
-			<integer>135</integer>
-		</dict>
-		<key>D24D4D1B-0654-4B5E-8D11-0441A3E8520A</key>
-		<dict>
-			<key>xpos</key>
-			<integer>340</integer>
-			<key>ypos</key>
-			<integer>445</integer>
+			<integer>185</integer>
 		</dict>
 		<key>FDB82DA2-C61F-4C9D-AD52-D69759532762</key>
 		<dict>
@@ -508,7 +471,7 @@ npm install -g whistle</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.6</string>
+	<string>1.7</string>
 	<key>webaddress</key>
 	<string>https://1991421.cn</string>
 </dict>
