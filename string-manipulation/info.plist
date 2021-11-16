@@ -47,11 +47,63 @@
 				<false/>
 			</dict>
 		</array>
+		<key>1778558A-479A-4491-8A22-083A43FC2B1F</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>61E7A3D5-4919-492B-8176-9669BE8BAE41</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>36FD5055-3E6E-462F-BCE9-9BC54ECB2722</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>030D5547-83F6-4958-948F-5A2F42B97AD7</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>3795C1CA-60EF-47E5-AC68-D96CBBD3D3BE</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>030D5547-83F6-4958-948F-5A2F42B97AD7</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>38D2768B-EC56-4DC8-87EB-D1C336E41A3F</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B9C86366-49BE-40EA-A373-9E0F25850D45</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>61E7A3D5-4919-492B-8176-9669BE8BAE41</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>36FD5055-3E6E-462F-BCE9-9BC54ECB2722</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -181,6 +233,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>63FFA124-E784-487C-A031-5A19E789322D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>B9C86366-49BE-40EA-A373-9E0F25850D45</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>36FD5055-3E6E-462F-BCE9-9BC54ECB2722</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -653,6 +718,71 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>matchmode</key>
+				<integer>1</integer>
+				<key>matchstring</key>
+				<string>\n+$</string>
+				<key>regexcaseinsensitive</key>
+				<false/>
+				<key>regexmultiline</key>
+				<false/>
+				<key>replacestring</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.replace</string>
+			<key>uid</key>
+			<string>36FD5055-3E6E-462F-BCE9-9BC54ECB2722</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsfiles</key>
+				<false/>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>acceptstext</key>
+				<true/>
+				<key>acceptsurls</key>
+				<false/>
+				<key>name</key>
+				<string>Base64 Encode</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.universalaction</string>
+			<key>uid</key>
+			<string>38D2768B-EC56-4DC8-87EB-D1C336E41A3F</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>echo -n '{query}' | base64</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>B9C86366-49BE-40EA-A373-9E0F25850D45</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>alignment</key>
 				<integer>0</integer>
 				<key>backgroundcolor</key>
@@ -725,12 +855,57 @@ echo "$size"</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>echo {query} | base64 --decode</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>61E7A3D5-4919-492B-8176-9669BE8BAE41</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsfiles</key>
+				<false/>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>acceptstext</key>
+				<true/>
+				<key>acceptsurls</key>
+				<false/>
+				<key>name</key>
+				<string>Base64 Decode</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.universalaction</string>
+			<key>uid</key>
+			<string>1778558A-479A-4491-8A22-083A43FC2B1F</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>Case switching.
 
 1. Case switching
-2. MD5</string>
+2. MD5
+3. Base64</string>
 	<key>uidata</key>
 	<dict>
 		<key>022858CA-3A3C-4C6B-B5F1-788AE01FABF6</key>
@@ -763,6 +938,24 @@ echo "$size"</string>
 			<key>ypos</key>
 			<integer>310</integer>
 		</dict>
+		<key>1778558A-479A-4491-8A22-083A43FC2B1F</key>
+		<dict>
+			<key>note</key>
+			<string>123456 =&gt; e10adc3949ba59abbe56e057f20f883e</string>
+			<key>xpos</key>
+			<integer>700</integer>
+			<key>ypos</key>
+			<integer>1285</integer>
+		</dict>
+		<key>36FD5055-3E6E-462F-BCE9-9BC54ECB2722</key>
+		<dict>
+			<key>note</key>
+			<string>remove newline</string>
+			<key>xpos</key>
+			<integer>1125</integer>
+			<key>ypos</key>
+			<integer>1095</integer>
+		</dict>
 		<key>3795C1CA-60EF-47E5-AC68-D96CBBD3D3BE</key>
 		<dict>
 			<key>note</key>
@@ -771,6 +964,22 @@ echo "$size"</string>
 			<integer>525</integer>
 			<key>ypos</key>
 			<integer>610</integer>
+		</dict>
+		<key>38D2768B-EC56-4DC8-87EB-D1C336E41A3F</key>
+		<dict>
+			<key>note</key>
+			<string>123456 =&gt; e10adc3949ba59abbe56e057f20f883e</string>
+			<key>xpos</key>
+			<integer>685</integer>
+			<key>ypos</key>
+			<integer>1095</integer>
+		</dict>
+		<key>61E7A3D5-4919-492B-8176-9669BE8BAE41</key>
+		<dict>
+			<key>xpos</key>
+			<integer>880</integer>
+			<key>ypos</key>
+			<integer>1280</integer>
 		</dict>
 		<key>63FFA124-E784-487C-A031-5A19E789322D</key>
 		<dict>
@@ -848,6 +1057,13 @@ echo "$size"</string>
 			<key>ypos</key>
 			<integer>980</integer>
 		</dict>
+		<key>B9C86366-49BE-40EA-A373-9E0F25850D45</key>
+		<dict>
+			<key>xpos</key>
+			<integer>880</integer>
+			<key>ypos</key>
+			<integer>1095</integer>
+		</dict>
 		<key>BEA5EED6-DC4F-48A8-94DC-85CD62B3046E</key>
 		<dict>
 			<key>note</key>
@@ -907,7 +1123,7 @@ echo "$size"</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>0.4</string>
+	<string>0.5</string>
 	<key>webaddress</key>
 	<string>https://1991421.cn</string>
 </dict>
