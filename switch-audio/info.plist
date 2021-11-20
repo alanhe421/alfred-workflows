@@ -95,36 +95,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>on run argv
-  set theQuery to item 1 of argv
-
-tell application "System Preferences"	reveal pane id "com.apple.preference.sound"end telltell application "System Events"	tell application process "System Preferences"
-         repeat until exists tab group 1 of window "Sound"		end repeat		tell tab group 1 of window "Sound"			click radio button "Output"			tell table 1 of scroll area 1				select (row 1 where value of text field 1 is theQuery)							end tell		end tell	end tellend tellif application "System Preferences" is running then	tell application "System Preferences" to quitend if
-
-return theQuery
-end run</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>6</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>3AE8EB58-5F7D-49B6-98C1-4BAE5E79FC2E</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -178,6 +148,36 @@ do shell script comm
 			<string>B066EEAB-4F3C-4516-9F00-E8FD7A5439B6</string>
 			<key>version</key>
 			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>on run argv
+  set theQuery to item 1 of argv
+
+tell application "System Preferences"	reveal pane id "com.apple.preference.sound"end telltell application "System Events"	tell application process "System Preferences"
+         repeat until exists tab group 1 of window "Sound"		end repeat		tell tab group 1 of window "Sound"			click radio button "Output"			tell table 1 of scroll area 1				select (row 1 where value of text field 1 is theQuery)							end tell		end tell	end tellend tellif application "System Preferences" is running then	tell application "System Preferences" to quitend if
+
+return theQuery
+end run</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>3AE8EB58-5F7D-49B6-98C1-4BAE5E79FC2E</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -267,13 +267,66 @@ do shell script comm
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>camera</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>waiting</string>
+				<key>script</key>
+				<string>/usr/local/bin/node ./index.js </string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>list camera</string>
+				<key>title</key>
+				<string>camera</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>33EDD99E-D237-4696-BCA8-E11E341697BE</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
 	</array>
 	<key>readme</key>
-	<string>Easy to switch audio.
+	<string>Easy to switch audio/list camera.
 
-AppleScript combined with Shell implementation, no need to install any dependencies.
 
-SUpport Monterey 12.0.1</string>
+Support Monterey 12.0.1
+
+
+## Requirement
+
+If you need camera command, just brew install node</string>
 	<key>uidata</key>
 	<dict>
 		<key>1450496C-74BC-4EDE-930B-ADC6027C5449</key>
@@ -282,6 +335,13 @@ SUpport Monterey 12.0.1</string>
 			<integer>35</integer>
 			<key>ypos</key>
 			<integer>435</integer>
+		</dict>
+		<key>33EDD99E-D237-4696-BCA8-E11E341697BE</key>
+		<dict>
+			<key>xpos</key>
+			<integer>40</integer>
+			<key>ypos</key>
+			<integer>675</integer>
 		</dict>
 		<key>39B059B1-CD01-4C2D-8907-1E2F9262CD04</key>
 		<dict>
@@ -319,7 +379,7 @@ SUpport Monterey 12.0.1</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>2.1</string>
+	<string>2.2</string>
 	<key>webaddress</key>
 	<string>https://1991421.cn</string>
 </dict>
