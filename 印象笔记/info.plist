@@ -5,7 +5,7 @@
 	<key>bundleid</key>
 	<string>com.sztoltz.evernote</string>
 	<key>category</key>
-	<string>Vendor</string>
+	<string>Self-Dev</string>
 	<key>connections</key>
 	<dict>
 		<key>051B1D7E-4660-4706-9B71-8C1F50BE9F93</key>
@@ -2654,7 +2654,7 @@
 			<key>config</key>
 			<dict>
 				<key>acceptsmulti</key>
-				<true/>
+				<integer>1</integer>
 				<key>filetypes</key>
 				<array/>
 				<key>name</key>
@@ -2715,7 +2715,7 @@
 			<key>config</key>
 			<dict>
 				<key>acceptsmulti</key>
-				<true/>
+				<integer>1</integer>
 				<key>filetypes</key>
 				<array/>
 				<key>name</key>
@@ -4126,7 +4126,7 @@ http://dev.evernote.com/documentation/local/chapters/mac.php</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.0.1</string>
+	<string>1.0.2</string>
 	<key>webaddress</key>
 	<string>sztoltz.wordpress.com</string>
 </dict>
