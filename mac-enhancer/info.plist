@@ -8,6 +8,42 @@
 	<string>Self-Dev</string>
 	<key>connections</key>
 	<dict>
+		<key>45554D26-FF2F-4F95-8C08-934F062DEF67</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>AC6456A9-9CE8-413B-9915-555B9C96BC26</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>8BBF2599-5319-489D-974D-D3D2DD98F6DD</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>5B7F670B-D806-4968-88BC-C8CDF3273C19</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>45554D26-FF2F-4F95-8C08-934F062DEF67</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>6DC74B76-2782-45C0-A426-7DB760F0B008</key>
 		<array>
 			<dict>
@@ -167,11 +203,11 @@
 				<key>focusedappvariablename</key>
 				<string></string>
 				<key>hotkey</key>
-				<integer>31</integer>
+				<integer>0</integer>
 				<key>hotmod</key>
-				<integer>1179648</integer>
+				<integer>0</integer>
 				<key>hotstring</key>
-				<string>O</string>
+				<string></string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -258,6 +294,65 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>soundname</key>
+				<string>Blow</string>
+				<key>systemsound</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.playsound</string>
+			<key>uid</key>
+			<string>AC6456A9-9CE8-413B-9915-555B9C96BC26</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>tell application "Messages"	set myChats to chats		repeat with chatItem in myChats		try			delete chatItem		on error errorMessage			log "errorMessage" &amp; errorMessage		end try	end repeat	end tell</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>45554D26-FF2F-4F95-8C08-934F062DEF67</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>empty</string>
+				<key>subtext</key>
+				<string>delete all messages</string>
+				<key>text</key>
+				<string>Empty Messages</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>5B7F670B-D806-4968-88BC-C8CDF3273C19</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -275,6 +370,31 @@
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
 			<string>FD523C1F-C6BF-4955-809A-51ECF942A9F6</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>if application "Messages" is running then	tell application "Messages" to quitend if
+
+if application "Messages" is not running then	tell application "Messages" to openend if</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>8BBF2599-5319-489D-974D-D3D2DD98F6DD</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -448,9 +568,26 @@ do shell script comm</string>
 3. shortcut[⌘ ⇧ 6] to end screenshot
 4. shortcut[⌘ ⇧ O] to open with
 5. shortcut[⌘ ⇧ L] to lose focus from address bar input 
-   just for Chrome</string>
+   just for Chrome
+6. Delete All Messages</string>
 	<key>uidata</key>
 	<dict>
+		<key>45554D26-FF2F-4F95-8C08-934F062DEF67</key>
+		<dict>
+			<key>note</key>
+			<string>delete messages</string>
+			<key>xpos</key>
+			<integer>765</integer>
+			<key>ypos</key>
+			<integer>370</integer>
+		</dict>
+		<key>5B7F670B-D806-4968-88BC-C8CDF3273C19</key>
+		<dict>
+			<key>xpos</key>
+			<integer>560</integer>
+			<key>ypos</key>
+			<integer>370</integer>
+		</dict>
 		<key>6DC74B76-2782-45C0-A426-7DB760F0B008</key>
 		<dict>
 			<key>note</key>
@@ -499,6 +636,15 @@ do shell script comm</string>
 			<key>ypos</key>
 			<integer>860</integer>
 		</dict>
+		<key>8BBF2599-5319-489D-974D-D3D2DD98F6DD</key>
+		<dict>
+			<key>note</key>
+			<string>reopen Message.app</string>
+			<key>xpos</key>
+			<integer>985</integer>
+			<key>ypos</key>
+			<integer>510</integer>
+		</dict>
 		<key>91417F9B-F3F5-4A48-9A04-80DC5B1DB101</key>
 		<dict>
 			<key>note</key>
@@ -514,6 +660,13 @@ do shell script comm</string>
 			<integer>320</integer>
 			<key>ypos</key>
 			<integer>125</integer>
+		</dict>
+		<key>AC6456A9-9CE8-413B-9915-555B9C96BC26</key>
+		<dict>
+			<key>xpos</key>
+			<integer>990</integer>
+			<key>ypos</key>
+			<integer>370</integer>
 		</dict>
 		<key>B8BFA086-1B2F-4728-9976-2D4F4EBB5086</key>
 		<dict>
@@ -553,7 +706,7 @@ do shell script comm</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.4</string>
+	<string>1.5</string>
 	<key>webaddress</key>
 	<string>https://1991421.cn</string>
 </dict>
