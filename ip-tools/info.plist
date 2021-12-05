@@ -148,7 +148,8 @@
 	</array>
 	<key>readme</key>
 	<string>1. check ip is cn or not
-2. display local ip address</string>
+2. display local ip address
+3. support domain check</string>
 	<key>uidata</key>
 	<dict>
 		<key>1A58D9E9-FAB5-40AB-9E11-75646D475204</key>
@@ -185,7 +186,7 @@
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>0.0.1</string>
+	<string>0.1</string>
 	<key>webaddress</key>
 	<string>https://1991421.cn</string>
 </dict>
