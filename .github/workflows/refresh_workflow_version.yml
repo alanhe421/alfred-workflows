@@ -36,7 +36,7 @@ jobs:
       - name: Build
         run: |
           git config --global user.email "alan@1991421.cn"
-          git config --global user.name "Alan He"
+          git config --global user.name "GitHub Bot"
           git add .
           git commit -m 'Update workflow version'
       - name: Deploy GitHub

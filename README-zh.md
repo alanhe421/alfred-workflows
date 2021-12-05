@@ -31,7 +31,7 @@
 27. Json2Ts - JSON生成TS接口定义
 28. Mount Volume - 快速挂载网络硬盘，支持SMB，FTP等
 29. String Manipulation - 文本格式切换
-30. Type Search - 类型搜索
+30. Type Search - 类型搜索gp
 31. IP Tools - 判断给定IP是不是CN的，查询本地内网/外网IP
 
 ## Alfred常见问题
