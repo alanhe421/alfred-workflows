@@ -13,7 +13,7 @@ function updateVersion(workflowFolder, version, workflow) {
   try {
     let readmeContent = fs.readFileSync(readmeFile, 'utf8');
     if (!readmeContent.match(/shields/)) {
-      readmeContent = `[![](https://img.shields.io/badge/version-v${version}-green)](./${filename})` + readmeContent;
+      readmeContent = `[![](https://img.shields.io/badge/version-v${version}-green)](./${filename})\n` + readmeContent;
     } else {
       readmeContent = readmeContent.replace(/(?<=version-v)(\d\.(\d+\.)?\d+)/, version);
     }
