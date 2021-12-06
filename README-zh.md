@@ -33,6 +33,7 @@
 29. String Manipulation - 文本格式切换
 30. Type Search - 类型搜索gp
 31. IP Tools - 判断给定IP是不是CN的，查询本地内网/外网IP
+31. Git Code - 腾讯工蜂
 
 ## Alfred常见问题
 
