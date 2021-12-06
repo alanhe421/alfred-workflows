@@ -169,7 +169,8 @@
 
 1. 关键词模糊检索
 2. 拷贝SSH Repo链接
-3. 浏览器打开Repo地址</string>
+3. 浏览器打开Repo地址
+4. 最多支持2个工蜂服务配置，如果不需要第二个，去掉相关配置或者置空即可</string>
 	<key>uidata</key>
 	<dict>
 		<key>30CD93A9-33D6-4A7A-951A-55D05CB6CE6B</key>
@@ -205,17 +206,24 @@
 	<dict>
 		<key>access_token</key>
 		<string></string>
+		<key>access_token_2</key>
+		<string></string>
 		<key>base_url</key>
-		<string>https://git.code.tencent.com</string>
+		<string></string>
+		<key>base_url_2</key>
+		<string></string>
 		<key>per_page</key>
-		<string>20</string>
+		<string>10</string>
 	</dict>
 	<key>variablesdontexport</key>
 	<array>
+		<string>base_url</string>
+		<string>access_token_2</string>
 		<string>access_token</string>
+		<string>base_url_2</string>
 	</array>
 	<key>version</key>
-	<string>0.1</string>
+	<string>0.3</string>
 	<key>webaddress</key>
 	<string>https://1991421.cn</string>
 </dict>
