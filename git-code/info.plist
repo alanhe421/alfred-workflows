@@ -213,7 +213,7 @@
 		<key>base_url_2</key>
 		<string></string>
 		<key>per_page</key>
-		<string>10</string>
+		<string>20</string>
 	</dict>
 	<key>variablesdontexport</key>
 	<array>
@@ -223,7 +223,7 @@
 		<string>access_token_2</string>
 	</array>
 	<key>version</key>
-	<string>0.4</string>
+	<string>0.5</string>
 	<key>webaddress</key>
 	<string>https://1991421.cn</string>
 </dict>
