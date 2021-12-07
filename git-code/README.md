@@ -1,4 +1,4 @@
-[![](https://img.shields.io/badge/version-v0.3-green)](./Git%20Code.alfredworkflow)
+[![](https://img.shields.io/badge/version-v0.4-green)](./Git%20Code.alfredworkflow)
  > 腾讯工蜂项目检索
  
 ## feat

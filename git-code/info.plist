@@ -48,7 +48,7 @@
 	<key>createdby</key>
 	<string>Alan He</string>
 	<key>description</key>
-	<string>工蜂项目检索</string>
+	<string>Git Drone Search</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
@@ -91,7 +91,7 @@
 				<key>subtext</key>
 				<string>search project</string>
 				<key>title</key>
-				<string>工蜂检索</string>
+				<string>Git Drone</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -167,7 +167,7 @@
 	<key>readme</key>
 	<string>腾讯工蜂项目检索
 
-1. 关键词模糊检索
+1. gc+关键词进行模糊检索
 2. 拷贝SSH Repo链接
 3. 浏览器打开Repo地址
 4. 最多支持2个工蜂服务配置，如果不需要第二个，去掉相关配置或者置空即可</string>
@@ -218,12 +218,12 @@
 	<key>variablesdontexport</key>
 	<array>
 		<string>base_url</string>
-		<string>access_token_2</string>
-		<string>access_token</string>
 		<string>base_url_2</string>
+		<string>access_token</string>
+		<string>access_token_2</string>
 	</array>
 	<key>version</key>
-	<string>0.3</string>
+	<string>0.4</string>
 	<key>webaddress</key>
 	<string>https://1991421.cn</string>
 </dict>
