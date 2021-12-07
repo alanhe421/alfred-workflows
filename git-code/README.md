@@ -1,6 +1,8 @@
 [![](https://img.shields.io/badge/version-v0.4-green)](./Git%20Code.alfredworkflow)
  > 腾讯工蜂项目检索
  
+![](./screenshot.gif)
+
 ## feat
 1. gc+关键词进行模糊检索
 2. 拷贝SSH Repo链接
