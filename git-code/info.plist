@@ -539,9 +539,9 @@
 	<key>variablesdontexport</key>
 	<array>
 		<string>base_url</string>
-		<string>access_token_2</string>
-		<string>access_token</string>
 		<string>base_url_2</string>
+		<string>access_token</string>
+		<string>access_token_2</string>
 	</array>
 	<key>version</key>
 	<string>0.6</string>
