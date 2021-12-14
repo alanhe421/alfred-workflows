@@ -1,4 +1,12 @@
-> 选择文件或链接，唤起Airdrop进行分享
+> One click to evoke airdrop and send the selected something to the target device
+
+- Currently only supports English and Simplified Chinese
+- You can share file、photo、url.
+- Support File Action
+    - Support multi file selection but must be same directory.
+
+Support Catalina、Big Sur
+
 
 [![](https://img.shields.io/badge/version-v1.6-green)](./Airdrop.alfredworkflow)
 
@@ -6,4 +14,4 @@
 
 ![](./screenshot2.gif)
 
-无任何依赖，直接安装即可
+
