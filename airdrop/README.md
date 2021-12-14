@@ -3,7 +3,7 @@
 - Currently only supports English and Simplified Chinese
 - You can share file、photo、url.
 - Support File Action
-    - Support multi file selection but must be same directory.
+    - Support multi file selection.
 
 Support Catalina、Big Sur
 
