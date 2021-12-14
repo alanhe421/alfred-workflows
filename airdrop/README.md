@@ -8,7 +8,7 @@
 Support Catalina、Big Sur
 
 
-[![](https://img.shields.io/badge/version-v1.6-green)](./Airdrop.alfredworkflow)
+[![](https://img.shields.io/badge/version-v1.7-green)](./Airdrop.alfredworkflow)
 
 ![](./screenshot.gif)
 

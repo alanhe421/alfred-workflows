@@ -109,24 +109,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>7D1A2F7F-4B5B-436B-A0E0-8D382F93833E</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>395D4FF3-7EFC-4BEB-B456-910F98800B5D</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>867EC047-018A-4663-8AE9-C262B0E2FF9E</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>7D1A2F7F-4B5B-436B-A0E0-8D382F93833E</string>
+				<string>395D4FF3-7EFC-4BEB-B456-910F98800B5D</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -520,54 +507,6 @@ end tell</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>applescript</key>
-				<string>on alfred_script(q)
-return user locale of (get system info)
-end alfred_script</string>
-				<key>cachescript</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.applescript</string>
-			<key>uid</key>
-			<string>395D4FF3-7EFC-4BEB-B456-910F98800B5D</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>on run argv
-  set pathList to {}
-
-  repeat with pathString in argv
-    copy ((POSIX file pathString) as alias) to the end of the pathList
-  end repeat
-
-  tell application "Finder" to select pathList
-end run</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>6</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>7D1A2F7F-4B5B-436B-A0E0-8D382F93833E</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>acceptsmulti</key>
 				<integer>1</integer>
 				<key>filetypes</key>
@@ -579,6 +518,23 @@ end run</string>
 			<string>alfred.workflow.trigger.action</string>
 			<key>uid</key>
 			<string>867EC047-018A-4663-8AE9-C262B0E2FF9E</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>applescript</key>
+				<string>on alfred_script(q)
+return user locale of (get system info)
+end alfred_script</string>
+				<key>cachescript</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.applescript</string>
+			<key>uid</key>
+			<string>395D4FF3-7EFC-4BEB-B456-910F98800B5D</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -609,7 +565,7 @@ end run</string>
 - Currently only supports English and Simplified Chinese
 - You can share file、photo、url.
 - Support File Action
-  - Support multi file selection but must be same directory.
+  - Support multi file selection.
 
 
 Support Catalina、Big Sur</string>
@@ -654,9 +610,9 @@ share files</string>
 			<key>note</key>
 			<string>Get System Language</string>
 			<key>xpos</key>
-			<integer>525</integer>
+			<integer>400</integer>
 			<key>ypos</key>
-			<integer>760</integer>
+			<integer>765</integer>
 		</dict>
 		<key>5F497DB5-C783-41DC-BC77-32AEAB33287D</key>
 		<dict>
@@ -680,13 +636,6 @@ share files</string>
 			<integer>330</integer>
 			<key>ypos</key>
 			<integer>385</integer>
-		</dict>
-		<key>7D1A2F7F-4B5B-436B-A0E0-8D382F93833E</key>
-		<dict>
-			<key>xpos</key>
-			<integer>300</integer>
-			<key>ypos</key>
-			<integer>765</integer>
 		</dict>
 		<key>867EC047-018A-4663-8AE9-C262B0E2FF9E</key>
 		<dict>
@@ -734,7 +683,7 @@ share files</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.6</string>
+	<string>1.7</string>
 	<key>webaddress</key>
 	<string>https://1991421.cn</string>
 </dict>
