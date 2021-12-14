@@ -1,6 +1,6 @@
 > 选择文件或链接，唤起Airdrop进行分享
 
-[![](https://img.shields.io/badge/version-v1.5-green)](./Airdrop.alfredworkflow)
+[![](https://img.shields.io/badge/version-v1.6-green)](./Airdrop.alfredworkflow)
 
 ![](./screenshot.gif)
 

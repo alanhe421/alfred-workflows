@@ -109,11 +109,24 @@
 				<false/>
 			</dict>
 		</array>
+		<key>7D1A2F7F-4B5B-436B-A0E0-8D382F93833E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>395D4FF3-7EFC-4BEB-B456-910F98800B5D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>867EC047-018A-4663-8AE9-C262B0E2FF9E</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>9446FB99-A721-4C23-9E1E-71DA709AD034</string>
+				<string>7D1A2F7F-4B5B-436B-A0E0-8D382F93833E</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -127,19 +140,6 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>F4852CCD-ED13-4407-824B-2BDBB14C7003</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>9446FB99-A721-4C23-9E1E-71DA709AD034</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>395D4FF3-7EFC-4BEB-B456-910F98800B5D</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -537,8 +537,39 @@ end alfred_script</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>on run argv
+  set pathList to {}
+
+  repeat with pathString in argv
+    copy ((POSIX file pathString) as alias) to the end of the pathList
+  end repeat
+
+  tell application "Finder" to select pathList
+end run</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>7D1A2F7F-4B5B-436B-A0E0-8D382F93833E</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>acceptsmulti</key>
-				<integer>0</integer>
+				<integer>1</integer>
 				<key>filetypes</key>
 				<array/>
 				<key>name</key>
@@ -548,19 +579,6 @@ end alfred_script</string>
 			<string>alfred.workflow.trigger.action</string>
 			<key>uid</key>
 			<string>867EC047-018A-4663-8AE9-C262B0E2FF9E</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>path</key>
-				<string></string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.revealfile</string>
-			<key>uid</key>
-			<string>9446FB99-A721-4C23-9E1E-71DA709AD034</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -590,7 +608,8 @@ end alfred_script</string>
 
 - Currently only supports English and Simplified Chinese
 - You can share file、photo、url.
-
+- Support File Action
+  - Support multi file selection but must be same directory.
 
 
 Support Catalina、Big Sur</string>
@@ -635,7 +654,7 @@ share files</string>
 			<key>note</key>
 			<string>Get System Language</string>
 			<key>xpos</key>
-			<integer>520</integer>
+			<integer>525</integer>
 			<key>ypos</key>
 			<integer>760</integer>
 		</dict>
@@ -662,6 +681,13 @@ share files</string>
 			<key>ypos</key>
 			<integer>385</integer>
 		</dict>
+		<key>7D1A2F7F-4B5B-436B-A0E0-8D382F93833E</key>
+		<dict>
+			<key>xpos</key>
+			<integer>300</integer>
+			<key>ypos</key>
+			<integer>765</integer>
+		</dict>
 		<key>867EC047-018A-4663-8AE9-C262B0E2FF9E</key>
 		<dict>
 			<key>xpos</key>
@@ -675,13 +701,6 @@ share files</string>
 			<integer>30</integer>
 			<key>ypos</key>
 			<integer>120</integer>
-		</dict>
-		<key>9446FB99-A721-4C23-9E1E-71DA709AD034</key>
-		<dict>
-			<key>xpos</key>
-			<integer>300</integer>
-			<key>ypos</key>
-			<integer>765</integer>
 		</dict>
 		<key>E132D993-DFA1-4D18-8E8F-1E19D7073AE2</key>
 		<dict>
@@ -715,7 +734,7 @@ share files</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.5</string>
+	<string>1.6</string>
 	<key>webaddress</key>
 	<string>https://1991421.cn</string>
 </dict>
