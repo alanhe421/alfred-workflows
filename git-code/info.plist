@@ -593,12 +593,12 @@
 		<string>base_url</string>
 		<string>score_2</string>
 		<string>score</string>
-		<string>access_token_2</string>
-		<string>access_token</string>
 		<string>base_url_2</string>
+		<string>access_token</string>
+		<string>access_token_2</string>
 	</array>
 	<key>version</key>
-	<string>0.8</string>
+	<string>0.9</string>
 	<key>webaddress</key>
 	<string>https://1991421.cn</string>
 </dict>
