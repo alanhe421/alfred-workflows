@@ -48,6 +48,16 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
+				<string>62020450-80F3-431B-B648-969B059702EE</string>
+				<key>modifiers</key>
+				<integer>262144</integer>
+				<key>modifiersubtext</key>
+				<string>⏎ to Copy HTTP URL: {query}.git</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
 				<string>6CE09F6A-FAA4-4651-8DBB-41F21EEA8068</string>
 				<key>modifiers</key>
 				<integer>0</integer>
@@ -73,6 +83,19 @@
 				<integer>524288</integer>
 				<key>modifiersubtext</key>
 				<string>Overview</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>62020450-80F3-431B-B648-969B059702EE</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>30CD93A9-33D6-4A7A-951A-55D05CB6CE6B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -165,6 +188,23 @@
 	<string>Git Code</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}.git</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>62020450-80F3-431B-B648-969B059702EE</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -442,7 +482,7 @@
 ## feat
 
 1. gc+关键词进行模糊检索
-2. 拷贝SSH Repo链接
+2. ⌃ 拷贝HTTP Repo链接/ ⌘ 拷贝SSH Repo链接
 3. ⏎ 浏览器打开Repo地址
 4. 最多支持2个工蜂服务配置，如果不需要第二个，去掉相关配置或者置空即可
 5. ⌥ ⏎ 选择MR，再⌥ ⏎，显示repo打开的 Merge Request，同时支持关键词检索
@@ -463,9 +503,9 @@
 		<key>30CD93A9-33D6-4A7A-951A-55D05CB6CE6B</key>
 		<dict>
 			<key>xpos</key>
-			<integer>340</integer>
+			<integer>360</integer>
 			<key>ypos</key>
-			<integer>225</integer>
+			<integer>230</integer>
 		</dict>
 		<key>42312DC7-F660-4E68-9D7C-88091E1CECF8</key>
 		<dict>
@@ -477,9 +517,16 @@
 		<key>50B0CD10-4D52-4898-9C05-DD3A34A829C3</key>
 		<dict>
 			<key>xpos</key>
-			<integer>70</integer>
+			<integer>75</integer>
 			<key>ypos</key>
 			<integer>50</integer>
+		</dict>
+		<key>62020450-80F3-431B-B648-969B059702EE</key>
+		<dict>
+			<key>xpos</key>
+			<integer>345</integer>
+			<key>ypos</key>
+			<integer>10</integer>
 		</dict>
 		<key>6CE09F6A-FAA4-4651-8DBB-41F21EEA8068</key>
 		<dict>
@@ -498,9 +545,9 @@
 		<key>8AEBE2BF-BFAC-4DA3-95D4-2A3238908144</key>
 		<dict>
 			<key>xpos</key>
-			<integer>230</integer>
+			<integer>255</integer>
 			<key>ypos</key>
-			<integer>360</integer>
+			<integer>340</integer>
 		</dict>
 		<key>935119A8-8D36-4251-B83E-DE68FE581EFD</key>
 		<dict>
@@ -551,7 +598,7 @@
 		<string>base_url_2</string>
 	</array>
 	<key>version</key>
-	<string>0.7</string>
+	<string>0.8</string>
 	<key>webaddress</key>
 	<string>https://1991421.cn</string>
 </dict>
