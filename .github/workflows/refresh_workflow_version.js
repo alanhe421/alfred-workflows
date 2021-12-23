@@ -23,10 +23,18 @@ function updateVersion(workflowFolder, version, workflow) {
   }
 }
 
-/**
- * 获取workflow文件中版本信息
- */
-function getVersion(workflowFolder, workflow) {
+function updateReadme(workflowFolder, readme) {
+  const readmeFile = workflowFolder + '/README.md';
+  try {
+    let readmeContent = fs.readFileSync(readmeFile, 'utf8');
+    readmeContent = readme + '\n' + readmeContent;
+    fs.writeFileSync(readmeFile, readmeContent);
+  } catch (e) {
+    console.log(e);
+  }
+}
+
+function parseWorkflowInfo(workflowFolder, workflow) {
   const workFlowFile = workflowFolder + '/' + workflow;
   const workFlowZipFile = workflowFolder + '/temp.zip';
   fs.copyFileSync(workFlowFile, workFlowZipFile);
@@ -35,9 +43,8 @@ function getVersion(workflowFolder, workflow) {
   execSync(`rm -rf ${workFlowZipFile}`);
   const plistObj = plist.parse(fs.readFileSync(`${workFlowUnzipFolder}/info.plist`, 'utf8'));
   execSync(`mv ${workFlowUnzipFolder}/info.plist ${workflowFolder}/`);
-  const version = plistObj.version;
   execSync(`rm -rf ${workFlowUnzipFolder}`);
-  return version;
+  return {plistObj};
 }
 
 function readAllWorkflows() {
@@ -58,8 +65,11 @@ function readAllWorkflows() {
       return;
     }
     try {
-      const version = getVersion(workflowFolder, workflow);
+      const {plistObj} = parseWorkflowInfo(workflowFolder, workflow);
+      const version = plistObj.version;
+      const readme = plistObj.readme;
       updateVersion(workflowFolder, version, workflow);
+      // updateReadme(workflowFolder, readme);
     } catch (e) {
       console.error(e);
     }
