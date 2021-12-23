@@ -1,4 +1,8 @@
-[![](https://img.shields.io/badge/version-v1.9-green)](./About%2Mac.alfredworkflow)> 显示Mac基本信息，比如机型年份，系统版本，内存，硬盘等
+> 显示Mac基本信息，比如机型年份，系统版本，内存，硬盘等
+
+<!-- more -->
+
+[![](https://img.shields.io/badge/version-v1.9-green)](./About%2Mac.alfredworkflow)
 
 
 ![](./screenshot.gif)
