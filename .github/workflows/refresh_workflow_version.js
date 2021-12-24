@@ -27,7 +27,11 @@ function updateReadme(workflowFolder, readme) {
   const readmeFile = workflowFolder + '/README.md';
   try {
     let readmeContent = fs.readFileSync(readmeFile, 'utf8');
-    readmeContent = readme + '\n' + readmeContent;
+    if (readmeContent.match(/^(\s|\S)+(\<\!\-\- more \-\-\>)/)) {
+      readmeContent = readmeContent.replace(/^(\s|\S)+(\<\!\-\- more \-\-\>)/, readme + '\n<!-- more -->')
+    } else {
+      readmeContent = readme + '\n<!-- more -->\n' + readmeContent;
+    }
     fs.writeFileSync(readmeFile, readmeContent);
   } catch (e) {
     console.log(e);
@@ -69,7 +73,7 @@ function readAllWorkflows() {
       const version = plistObj.version;
       const readme = plistObj.readme;
       updateVersion(workflowFolder, version, workflow);
-      // updateReadme(workflowFolder, readme);
+      updateReadme(workflowFolder, readme);
     } catch (e) {
       console.error(e);
     }
