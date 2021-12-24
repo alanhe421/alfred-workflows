@@ -5,7 +5,7 @@
 	<key>bundleid</key>
 	<string>cn.alanhe.appid</string>
 	<key>category</key>
-	<string>Tools</string>
+	<string>Self-Dev</string>
 	<key>connections</key>
 	<dict>
 		<key>56E911C8-B422-41A5-B703-DBA1649E1DA1</key>
@@ -301,6 +301,8 @@ fi</string>
 				<string>{query}</string>
 				<key>textcolor</key>
 				<string></string>
+				<key>wrapat</key>
+				<integer>50</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.output.largetype</string>
@@ -313,7 +315,7 @@ fi</string>
 			<key>config</key>
 			<dict>
 				<key>acceptsmulti</key>
-				<false/>
+				<integer>0</integer>
 				<key>filetypes</key>
 				<array>
 					<string>com.apple.application-bundle</string>
@@ -330,7 +332,10 @@ fi</string>
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>Getting Bundle ID of apps</string>
+	<string>&gt; Getting Bundle ID of apps
+
+1. ⏎ copy to clipboard
+2. support universal action</string>
 	<key>uidata</key>
 	<dict>
 		<key>2F51BDA7-F08C-4264-B552-7A482E912727</key>
