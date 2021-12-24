@@ -12,7 +12,6 @@ brew install node
 <!-- more -->
 > just cherish the time
 
-[![](https://img.shields.io/badge/version-v1.1-green)](./ProgressBar.alfredworkflow)
 
 ## Screenshot
 

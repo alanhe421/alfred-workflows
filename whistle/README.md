@@ -18,8 +18,6 @@ npm install -g whistle
 <!-- more -->
 > 快速切换选择代理Rules
 
-[![](https://img.shields.io/badge/version-v1.7-green)](./Whistle.alfredworkflow)
-
 - ⌥ ⏎ 访问WEB管理页面
 - ⏎ 切换rule选择状态
 - ⌘ C拷贝当前Rule具体配置项

@@ -19,8 +19,6 @@ $ yarn install canvas
 # rgb-hex-converter
 
 
-[![](https://img.shields.io/badge/version-v1.0-green)](./RGB-Hex converter.alfredworkflow)
-
 ## pre install
 
 ```shell

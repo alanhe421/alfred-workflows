@@ -17,8 +17,6 @@ First run this command on a terminal:
 
 
 
-[![](https://img.shields.io/badge/version-v1.1-green)](./OCR.alfredworkflow)
-
 First run this command on a terminal:
 
 1. brew install pngpaste
