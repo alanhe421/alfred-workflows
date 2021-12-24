@@ -17,7 +17,6 @@ nvm install 10
 
 <!-- more -->
 
-[![](https://img.shields.io/badge/version-v1.0.1-green)](./Bluetooth%20Manager.alfredworkflow)
 
 _支持AirPods电量信息展示_
 
