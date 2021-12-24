@@ -560,7 +560,7 @@ end alfred_script</string>
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>One click to evoke airdrop and send the selected something to the target device
+	<string>&gt; One click to evoke airdrop and send the selected something to the target device
 
 - Currently only supports English and Simplified Chinese
 - You can share file、photo、url.
