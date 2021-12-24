@@ -15,10 +15,14 @@ Logging in for the first time is troublesome, but after that, it will automatica
 ## Thanks
 - https://gist.github.com/adamawolf/3048717
 - https://emojipedia.org/
-<!-- more -->
-> quickly find your missing iPhone (or other Apple device)
+
 
 [![](https://img.shields.io/badge/version-v0.4-green)](./Find%20iPhone.alfredworkflow)
+
+
+
+<!-- more -->
+> quickly find your missing iPhone (or other Apple device)
 
 just input `findmy`
 

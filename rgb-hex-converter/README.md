@@ -9,6 +9,12 @@ $ npm install canvas
 $ yarn install canvas
 
 ```
+
+
+[![](https://img.shields.io/badge/version-v1.0-green)](./RGB-Hex%20converter.alfredworkflow)
+
+
+
 <!-- more -->
 # rgb-hex-converter
 

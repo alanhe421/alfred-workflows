@@ -4,6 +4,12 @@ First run this command on a terminal:
 
 1. brew install pngpaste
 2. npm install baidu-aip-sdk -g
+
+
+[![](https://img.shields.io/badge/version-v1.1-green)](./OCR.alfredworkflow)
+
+
+
 <!-- more -->
 > 使用百度文本识别API实现
 > 

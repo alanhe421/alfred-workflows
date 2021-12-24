@@ -1,4 +1,10 @@
 generate TypeScript interfaces from JSON.
+
+
+[![](https://img.shields.io/badge/version-v1.0-green)](./Json2TS.alfredworkflow)
+
+
+
 <!-- more -->
 > Copy JSON and Generate TypeScript Interface quickly
 

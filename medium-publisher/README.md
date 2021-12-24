@@ -9,6 +9,12 @@ Easy publish medium post
 
 - go into workflow directory
 - yarn install
+
+
+[![](https://img.shields.io/badge/version-v1.1-green)](./Medium%20Tools.alfredworkflow)
+
+
+
 <!-- more -->
 > 选中MD文件，一键发布到Medium平台
 

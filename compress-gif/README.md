@@ -9,11 +9,15 @@ if you need image-compress
 
 - brew install jq
 - visit https://tinypng.com/developers, get your api key
+
+
+[![](https://img.shields.io/badge/version-v2.0-green)](./Compress.alfredworkflow)
+
+
+
 <!-- more -->
 > easy to compress your GIF/WebP, JPEG and PNG
 
-
-[![](https://img.shields.io/badge/version-v2.0-green)](./Compress%20GIF.alfredworkflow)
 
 Select the file and invoke the compress command or use file action
 

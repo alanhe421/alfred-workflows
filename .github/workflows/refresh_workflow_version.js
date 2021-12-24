@@ -4,33 +4,23 @@ const path = require('path');
 const plist = require('plist');
 const querystring = require('querystring');
 
-/**
- * 更新readme中version版本
- */
-function updateVersion(workflowFolder, version, workflow) {
+function updateReadme(workflowFolder, plistObj, workflow) {
+  const version = plistObj.version;
+  const readme = plistObj.readme;
   const readmeFile = workflowFolder + '/README.md';
   const filename = querystring.escape(path.basename(workflow));
-  try {
-    let readmeContent = fs.readFileSync(readmeFile, 'utf8');
-    if (!readmeContent.match(/shields/)) {
-      readmeContent = `[![](https://img.shields.io/badge/version-v${version}-green)](./${filename})\n` + readmeContent;
-    } else {
-      readmeContent = readmeContent.replace(/(?<=version-v)(\d\.(\d+\.)?\d+)/, version);
-    }
-    fs.writeFileSync(readmeFile, readmeContent);
-  } catch (e) {
-    console.log(e);
-  }
-}
 
-function updateReadme(workflowFolder, readme) {
-  const readmeFile = workflowFolder + '/README.md';
   try {
     let readmeContent = fs.readFileSync(readmeFile, 'utf8');
+    let newContent = `${readme}\n\n
+[![](https://img.shields.io/badge/version-v${version}-green)](./${filename})
+\n\n
+<!-- more -->`;
+    // 有则更新，无则添加
     if (readmeContent.match(/^(\s|\S)+(\<\!\-\- more \-\-\>)/)) {
-      readmeContent = readmeContent.replace(/^(\s|\S)+(\<\!\-\- more \-\-\>)/, readme + '\n<!-- more -->')
+      readmeContent = readmeContent.replace(/^(\s|\S)+(\<\!\-\- more \-\-\>)/, newContent)
     } else {
-      readmeContent = readme + '\n<!-- more -->\n' + readmeContent;
+      readmeContent = newContent + readmeContent;
     }
     fs.writeFileSync(readmeFile, readmeContent);
   } catch (e) {
@@ -70,10 +60,7 @@ function readAllWorkflows() {
     }
     try {
       const {plistObj} = parseWorkflowInfo(workflowFolder, workflow);
-      const version = plistObj.version;
-      const readme = plistObj.readme;
-      updateVersion(workflowFolder, version, workflow);
-      updateReadme(workflowFolder, readme);
+      updateReadme(workflowFolder, plistObj, workflow);
     } catch (e) {
       console.error(e);
     }

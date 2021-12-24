@@ -3,6 +3,12 @@ translate cn to en
 ## install
 
 - node required
+
+
+[![](https://img.shields.io/badge/version-v1.0-green)](./Translate.alfredworkflow)
+
+
+
 <!-- more -->
 > 使用百度翻译API实现
 

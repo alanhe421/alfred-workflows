@@ -7,6 +7,12 @@ Mac enhancer
 5. shortcut[⌘ ⇧ L] to lose focus from address bar input 
    just for Chrome
 6. Delete All Messages
+
+
+[![](https://img.shields.io/badge/version-v1.5-green)](./Mac%20Enhancer.alfredworkflow)
+
+
+
 <!-- more -->
 # mac-enhancer
 

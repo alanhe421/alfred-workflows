@@ -1,6 +1,12 @@
 Quickly create target type file
 
 You can configure the file generation path in environment variables
+
+
+[![](https://img.shields.io/badge/version-v1.2-green)](./New%20File.alfredworkflow)
+
+
+
 <!-- more -->
 [![](https://img.shields.io/badge/version-v1.2-green)](./New%20File.alfredworkflow)
 

@@ -7,9 +7,13 @@ One click to evoke airdrop and send the selected something to the target device
 
 
 Support Catalina、Big Sur
-<!-- more -->
+
 
 [![](https://img.shields.io/badge/version-v1.7-green)](./Airdrop.alfredworkflow)
+
+
+
+<!-- more -->
 
 ![](./screenshot.gif)
 

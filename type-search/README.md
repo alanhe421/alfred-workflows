@@ -1,8 +1,13 @@
 Find npm packages that have type declarations, either bundled or on Definitely Typed.
 
 based on https://www.typescriptlang.org/dt/search
-<!-- more -->
+
+
 [![](https://img.shields.io/badge/version-v0.2-green)](./Type%20Search.alfredworkflow)
+
+
+
+<!-- more -->
 
 > 快速搜索包类型
 
