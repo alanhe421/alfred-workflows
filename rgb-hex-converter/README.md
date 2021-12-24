@@ -1,3 +1,15 @@
+## pre install
+
+```shell
+
+$ npm install canvas
+
+// or
+
+$ yarn install canvas
+
+```
+<!-- more -->
 # rgb-hex-converter
 
 

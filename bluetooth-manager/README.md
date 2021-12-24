@@ -1,3 +1,15 @@
+First run this command on a terminal:
+
+brew install blueutil
+
+brew cask install hammerspoon
+
+cp init.lua ~/.hammerspoon/
+
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+
+nvm install 10
+<!-- more -->
 > Connect or disconnect a specific device
 
 [![](https://img.shields.io/badge/version-v1.0.1-green)](./Bluetooth%20Manager.alfredworkflow)

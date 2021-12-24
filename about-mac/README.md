@@ -1,5 +1,4 @@
-> 显示Mac基本信息，比如机型年份，系统版本，内存，硬盘等
-
+> Displays system information about your Mac
 <!-- more -->
 
 [![](https://img.shields.io/badge/version-v1.9-green)](./About%2Mac.alfredworkflow)

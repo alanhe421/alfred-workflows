@@ -1,3 +1,9 @@
+Easy to search gif and copy to anywhere.
+
+## Install
+
+1. install node
+<!-- more -->
 > 一键搜索表情，方便粘贴到微信，邮件等。
 
 [![](https://img.shields.io/badge/version-v1.1-green)](./Giphy.alfredworkflow)

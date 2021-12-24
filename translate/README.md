@@ -1,3 +1,9 @@
+translate cn to en
+
+## install
+
+- node required
+<!-- more -->
 > 使用百度翻译API实现
 
 

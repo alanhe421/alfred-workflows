@@ -112,7 +112,7 @@ end tell</string>
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>Displays system information about your Mac</string>
+	<string>&gt; Displays system information about your Mac</string>
 	<key>uidata</key>
 	<dict>
 		<key>2353E6A3-0536-4ADA-8936-B2AEC1E72656</key>

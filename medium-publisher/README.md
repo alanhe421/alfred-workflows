@@ -1,3 +1,15 @@
+Easy publish medium post
+
+## Requirement
+
+- Node
+- Yarn
+
+## install
+
+- go into workflow directory
+- yarn install
+<!-- more -->
 > 选中MD文件，一键发布到Medium平台
 
 [![](https://img.shields.io/badge/version-v1.1-green)](./Medium%20Tools.alfredworkflow)

@@ -1,3 +1,12 @@
+建立在Carlos Alberto Sztoltz的workflow基础之上，进行APP签名的替换，从而支持Alfred4及印象笔记
+
+目前没有强化和丰富功能
+
+
+Code snippets from:
+
+http://dev.evernote.com/documentation/local/chapters/mac.php
+<!-- more -->
 > 建立在Carlos Alberto Sztoltz的workflow基础之上，进行APP签名的替换，从而支持Alfred4及印象笔记
 
 [![](https://img.shields.io/badge/version-v1.0.2-green)](./印象笔记.alfredworkflow)

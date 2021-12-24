@@ -1,3 +1,15 @@
+select rules.
+
+
+## Usage
+
+type w2 to trigger
+
+
+## install
+
+npm install -g whistle
+<!-- more -->
 > 快速切换选择代理Rules
 
 [![](https://img.shields.io/badge/version-v1.7-green)](./Whistle.alfredworkflow)

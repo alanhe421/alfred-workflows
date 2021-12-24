@@ -1,3 +1,15 @@
+Compress your GIF
+
+
+## install
+
+- brew install gifsicle
+
+if you need image-compress
+
+- brew install jq
+- visit https://tinypng.com/developers, get your api key
+<!-- more -->
 > easy to compress your GIF/WebP, JPEG and PNG
 
 
