@@ -1,6 +1,8 @@
-Mac enhancer
+> Mac enhancer，toggle dnd
 
-toggle dnd
+## usage
+
+input `dnd` to toggle it.
 
 
 ## requirement
@@ -8,7 +10,7 @@ toggle dnd
 - brew install node
 
 
-[![](https://img.shields.io/badge/version-v1.1-green)](./DO%20NOT%20DISTURB.alfredworkflow)
+[![](https://img.shields.io/badge/version-v1.2-green)](./DO%20NOT%20DISTURB.alfredworkflow)
 
 
 

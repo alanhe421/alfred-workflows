@@ -8,6 +8,19 @@
 	<string>Self-Dev</string>
 	<key>connections</key>
 	<dict>
+		<key>02C2ED12-F0F8-4AAB-8872-C744E53A50A0</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>BD1EBEE6-9664-42AB-BB4C-50A678D753BA</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>0969E78A-5979-437E-96AC-33E7ABFFA076</key>
 		<array/>
 		<key>BD1EBEE6-9664-42AB-BB4C-50A678D753BA</key>
@@ -28,19 +41,6 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>0969E78A-5979-437E-96AC-33E7ABFFA076</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>E3438087-5F59-4ED6-BF41-E6E868CF7E03</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>BD1EBEE6-9664-42AB-BB4C-50A678D753BA</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -120,55 +120,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>alfredfiltersresults</key>
-				<false/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<true/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>keyword</key>
-				<string>disturb</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>script</key>
-				<string>/usr/local/bin/node ./disturb.js</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>subtext</key>
-				<string>Toggle it</string>
-				<key>title</key>
-				<string>DO NOT DISTURB</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>E3438087-5F59-4ED6-BF41-E6E868CF7E03</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -207,6 +158,55 @@
 			<string>C93E806C-998E-49EA-B64A-4AB9F71D4135</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>dnd</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>/usr/local/bin/node ./disturb.js</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Toggle it</string>
+				<key>title</key>
+				<string>DO NOT DISTURB</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>02C2ED12-F0F8-4AAB-8872-C744E53A50A0</string>
+			<key>version</key>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -270,9 +270,11 @@
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>Mac enhancer
+	<string>&gt; Mac enhancer，toggle dnd
 
-toggle dnd
+## usage
+
+input `dnd` to toggle it.
 
 
 ## requirement
@@ -280,6 +282,13 @@ toggle dnd
 - brew install node</string>
 	<key>uidata</key>
 	<dict>
+		<key>02C2ED12-F0F8-4AAB-8872-C744E53A50A0</key>
+		<dict>
+			<key>xpos</key>
+			<integer>55</integer>
+			<key>ypos</key>
+			<integer>170</integer>
+		</dict>
 		<key>0969E78A-5979-437E-96AC-33E7ABFFA076</key>
 		<dict>
 			<key>xpos</key>
@@ -308,13 +317,6 @@ toggle dnd
 			<key>ypos</key>
 			<integer>265</integer>
 		</dict>
-		<key>E3438087-5F59-4ED6-BF41-E6E868CF7E03</key>
-		<dict>
-			<key>xpos</key>
-			<integer>85</integer>
-			<key>ypos</key>
-			<integer>165</integer>
-		</dict>
 		<key>EE9117B4-59ED-4F95-9F7E-1D228850C451</key>
 		<dict>
 			<key>xpos</key>
@@ -333,7 +335,7 @@ toggle dnd
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.1</string>
+	<string>1.2</string>
 	<key>webaddress</key>
 	<string>https://1991421.cn</string>
 </dict>
