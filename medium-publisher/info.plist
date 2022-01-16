@@ -230,13 +230,14 @@
 			<key>config</key>
 			<dict>
 				<key>acceptsmulti</key>
-				<false/>
+				<integer>0</integer>
 				<key>filetypes</key>
 				<array>
+					<string>dyn.ah62d4rv4ge8043a</string>
 					<string>net.daringfireball.markdown</string>
 				</array>
 				<key>name</key>
-				<string>Deploy to Medium</string>
+				<string>Medium Deploy</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.action</string>
@@ -366,7 +367,7 @@ end run</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>/usr/local/bin/node ./index.js $TOKEN $AUTHOR_ID {query}</string>
+				<string>/usr/local/bin/node ./index.js $TOKEN $AUTHOR_ID "{query}"</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -436,17 +437,11 @@ end run</string>
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>Easy publish medium post
+	<string>&gt; Easy publish medium post
 
 ## Requirement
 
-- Node
-- Yarn
-
-## install
-
-- go into workflow directory
-- yarn install</string>
+- Node</string>
 	<key>uidata</key>
 	<dict>
 		<key>05887F0C-F263-4DB5-9D60-D5569295F1D5</key>
@@ -559,11 +554,11 @@ end run</string>
 	</dict>
 	<key>variablesdontexport</key>
 	<array>
-		<string>TOKEN</string>
 		<string>AUTHOR_ID</string>
+		<string>TOKEN</string>
 	</array>
 	<key>version</key>
-	<string>1.1</string>
+	<string>1.2</string>
 	<key>webaddress</key>
 	<string>https://1991421.cn</string>
 </dict>
