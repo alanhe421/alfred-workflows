@@ -1,17 +1,11 @@
-Easy publish medium post
+> Easy publish medium post
 
 ## Requirement
 
 - Node
-- Yarn
-
-## install
-
-- go into workflow directory
-- yarn install
 
 
-[![](https://img.shields.io/badge/version-v1.1-green)](./Medium%20Tools.alfredworkflow)
+[![](https://img.shields.io/badge/version-v1.2-green)](./Medium%20Tools.alfredworkflow)
 
 
 
