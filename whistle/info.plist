@@ -89,6 +89,18 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
+				<string>A06CD71A-6778-48AB-A9FB-AE6515F7552E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>62CA5AD5-40A3-418C-B546-753F1EDD9907</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
 				<string>7B24A41C-933C-4C90-A34B-D03DCE0DA75E</string>
 				<key>modifiers</key>
 				<integer>0</integer>
@@ -221,6 +233,20 @@
 						<key>uid</key>
 						<string>17A4B683-706C-4042-AFB7-2ADCEB5AC069</string>
 					</dict>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>no_matched_rules</string>
+						<key>outputlabel</key>
+						<string></string>
+						<key>uid</key>
+						<string>62CA5AD5-40A3-418C-B546-753F1EDD9907</string>
+					</dict>
 				</array>
 				<key>elselabel</key>
 				<string>else</string>
@@ -256,13 +282,19 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>type</key>
-				<integer>3</integer>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>{var:URL}#rules</string>
+				<key>utf8</key>
+				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.utility.transform</string>
+			<string>alfred.workflow.action.openurl</string>
 			<key>uid</key>
-			<string>3663A43F-E7D9-407D-950D-9DB3D22228B4</string>
+			<string>A06CD71A-6778-48AB-A9FB-AE6515F7552E</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -343,19 +375,13 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>{var:URL}#rules?ruleName={var:ruleName}</string>
-				<key>utf8</key>
-				<true/>
+				<key>type</key>
+				<integer>3</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
+			<string>alfred.workflow.utility.transform</string>
 			<key>uid</key>
-			<string>FDB82DA2-C61F-4C9D-AD52-D69759532762</string>
+			<string>3663A43F-E7D9-407D-950D-9DB3D22228B4</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -376,6 +402,25 @@
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>{var:URL}#rules?ruleName={var:ruleName}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>FDB82DA2-C61F-4C9D-AD52-D69759532762</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>select rules.
@@ -394,16 +439,16 @@ npm install -g whistle</string>
 		<key>3663A43F-E7D9-407D-950D-9DB3D22228B4</key>
 		<dict>
 			<key>xpos</key>
-			<integer>590</integer>
+			<integer>815</integer>
 			<key>ypos</key>
-			<integer>145</integer>
+			<integer>370</integer>
 		</dict>
 		<key>36C4E69C-D047-4166-AAF9-4E2FAD70D0EC</key>
 		<dict>
 			<key>xpos</key>
-			<integer>430</integer>
+			<integer>275</integer>
 			<key>ypos</key>
-			<integer>445</integer>
+			<integer>495</integer>
 		</dict>
 		<key>423180BB-76D0-424B-A500-A7CB720B9B5A</key>
 		<dict>
@@ -419,16 +464,16 @@ npm install -g whistle</string>
 			<key>note</key>
 			<string>select rules</string>
 			<key>xpos</key>
-			<integer>395</integer>
+			<integer>430</integer>
 			<key>ypos</key>
-			<integer>205</integer>
+			<integer>320</integer>
 		</dict>
 		<key>8F3F47C9-3B17-4001-AB15-68C6CE16EFEA</key>
 		<dict>
 			<key>note</key>
 			<string>settings</string>
 			<key>xpos</key>
-			<integer>390</integer>
+			<integer>430</integer>
 			<key>ypos</key>
 			<integer>10</integer>
 		</dict>
@@ -438,6 +483,15 @@ npm install -g whistle</string>
 			<integer>240</integer>
 			<key>ypos</key>
 			<integer>75</integer>
+		</dict>
+		<key>A06CD71A-6778-48AB-A9FB-AE6515F7552E</key>
+		<dict>
+			<key>note</key>
+			<string>open home url</string>
+			<key>xpos</key>
+			<integer>430</integer>
+			<key>ypos</key>
+			<integer>170</integer>
 		</dict>
 		<key>A861B62C-7E54-491E-8FC6-FCCD1DAA2422</key>
 		<dict>
@@ -457,10 +511,12 @@ npm install -g whistle</string>
 		</dict>
 		<key>FDB82DA2-C61F-4C9D-AD52-D69759532762</key>
 		<dict>
+			<key>note</key>
+			<string>open rules url</string>
 			<key>xpos</key>
-			<integer>570</integer>
+			<integer>435</integer>
 			<key>ypos</key>
-			<integer>395</integer>
+			<integer>505</integer>
 		</dict>
 	</dict>
 	<key>variables</key>
@@ -471,7 +527,7 @@ npm install -g whistle</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.7</string>
+	<string>1.8</string>
 	<key>webaddress</key>
 	<string>https://1991421.cn</string>
 </dict>
