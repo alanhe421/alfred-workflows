@@ -14,3 +14,7 @@ I developed the following SDK to improve workflow development efficiency.
 
 - Star this repo 🌟 ☝️
 - [Buy me a ☕️ ](https://www.paypal.com/paypalme/alanhe421)
+
+## Subscribe & Communication
+
+![](./wechat.png)
