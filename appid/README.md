@@ -2,13 +2,15 @@
 
 ## usage
 
-1. `av` to get Bundle ID of apps
-2. Universal action support
+1. `appid` to get Bundle ID of apps
+2. `av` to get Bundle version of apps
+3. Universal action support
 	- `App ID` get id of app
+	- `App Version` get version of app
     - `App Name` get name of app
 
 
-[![](https://img.shields.io/badge/version-v1.1.0-green)](./AppID.alfredworkflow)
+[![](https://img.shields.io/badge/version-v1.2.0-green)](./AppID.alfredworkflow)
 
 
 

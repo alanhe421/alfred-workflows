@@ -8,11 +8,11 @@
 	<string>Self-Dev</string>
 	<key>connections</key>
 	<dict>
-		<key>42BBB04B-30C5-49D2-AFA8-D24B9C9FB417</key>
+		<key>0413D15A-857E-4782-93DC-A2D5292C0479</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>79EAF480-9E98-4ED6-A0BC-7162FC442749</string>
+				<string>D7A8FF94-E45E-4FD4-BA1A-11237326A0E1</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -21,7 +21,48 @@
 				<false/>
 			</dict>
 		</array>
+		<key>42BBB04B-30C5-49D2-AFA8-D24B9C9FB417</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D7A8FF94-E45E-4FD4-BA1A-11237326A0E1</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>53D51879-0D2E-4B6B-8EAD-45D634D7AED8</key>
+		<array/>
 		<key>56E911C8-B422-41A5-B703-DBA1649E1DA1</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D7A8FF94-E45E-4FD4-BA1A-11237326A0E1</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>5B30E91B-47B7-4F83-9119-64675F13B00D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>0413D15A-857E-4782-93DC-A2D5292C0479</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>73372C83-B363-44A4-A210-51B88F77C9FE</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
@@ -61,12 +102,10 @@
 			</dict>
 		</array>
 		<key>D7A8FF94-E45E-4FD4-BA1A-11237326A0E1</key>
-		<array/>
-		<key>D7E96C4B-C158-4A5C-9D3A-7C6C37A6557D</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>D7A8FF94-E45E-4FD4-BA1A-11237326A0E1</string>
+				<string>53D51879-0D2E-4B6B-8EAD-45D634D7AED8</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -74,9 +113,12 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
+		</array>
+		<key>D7E96C4B-C158-4A5C-9D3A-7C6C37A6557D</key>
+		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>79EAF480-9E98-4ED6-A0BC-7162FC442749</string>
+				<string>D7A8FF94-E45E-4FD4-BA1A-11237326A0E1</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -96,25 +138,6 @@
 	<string>AppID</string>
 	<key>objects</key>
 	<array>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>autopaste</key>
-				<false/>
-				<key>clipboardtext</key>
-				<string>{query}</string>
-				<key>ignoredynamicplaceholders</key>
-				<false/>
-				<key>transient</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
-			<key>uid</key>
-			<string>D7A8FF94-E45E-4FD4-BA1A-11237326A0E1</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -186,31 +209,61 @@ puts({ items: script_filter_items }.to_json)</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>alignment</key>
-				<integer>0</integer>
-				<key>backgroundcolor</key>
-				<string></string>
-				<key>fadespeed</key>
-				<integer>0</integer>
-				<key>fillmode</key>
-				<integer>0</integer>
-				<key>font</key>
-				<string></string>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
 				<key>ignoredynamicplaceholders</key>
 				<false/>
-				<key>largetypetext</key>
-				<string>{query}</string>
-				<key>textcolor</key>
-				<string></string>
-				<key>wrapat</key>
-				<integer>50</integer>
+				<key>transient</key>
+				<false/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.output.largetype</string>
+			<string>alfred.workflow.output.clipboard</string>
 			<key>uid</key>
-			<string>79EAF480-9E98-4ED6-A0BC-7162FC442749</string>
+			<string>D7A8FF94-E45E-4FD4-BA1A-11237326A0E1</string>
 			<key>version</key>
 			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>Copied to clipboard</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>53D51879-0D2E-4B6B-8EAD-45D634D7AED8</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>filetypes</key>
+				<array>
+					<string>com.apple.application-bundle</string>
+				</array>
+				<key>name</key>
+				<string>App ID</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.action</string>
+			<key>uid</key>
+			<string>778BD714-0E96-4EA4-A4FD-751D05C92D2D</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -245,12 +298,12 @@ puts({ items: script_filter_items }.to_json)</string>
 					<string>com.apple.application-bundle</string>
 				</array>
 				<key>name</key>
-				<string>App ID</string>
+				<string>App Name</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.action</string>
 			<key>uid</key>
-			<string>778BD714-0E96-4EA4-A4FD-751D05C92D2D</string>
+			<string>A48CE873-8369-400F-9DFA-5526A5D9C90C</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -280,6 +333,74 @@ puts({ items: script_filter_items }.to_json)</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>av</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Getting versions of apps in /Applications…</string>
+				<key>script</key>
+				<string>require 'json'
+require 'open3'
+require 'pathname'
+
+apps = Pathname('/Applications').children
+         .concat(Pathname('/Applications/Utilities').children)
+         .map(&amp;:to_path)
+         .sort_by { |p| File.basename(p).downcase }
+         .select { |e| e.end_with?('.app') }
+
+script_filter_items = []
+
+apps.each do |app|
+  version = Open3.capture2('mdls', '-raw', '-name', 'kMDItemVersion', app).first
+  next if version == '(null)'
+  name = File.basename(app, '.app')
+  script_filter_items.push(title: name, subtitle: version, arg: version, icon: { type: 'fileicon', path: app })
+end
+
+puts({ items: script_filter_items }.to_json)</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Show version number of installed apps</string>
+				<key>title</key>
+				<string>AppVersion</string>
+				<key>type</key>
+				<integer>2</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>73372C83-B363-44A4-A210-51B88F77C9FE</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>acceptsmulti</key>
 				<integer>0</integer>
 				<key>filetypes</key>
@@ -287,14 +408,37 @@ puts({ items: script_filter_items }.to_json)</string>
 					<string>com.apple.application-bundle</string>
 				</array>
 				<key>name</key>
-				<string>App Name</string>
+				<string>App version</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.action</string>
 			<key>uid</key>
-			<string>A48CE873-8369-400F-9DFA-5526A5D9C90C</string>
+			<string>5B30E91B-47B7-4F83-9119-64675F13B00D</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>mdls -raw -name kMDItemVersion "${1}"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>0413D15A-857E-4782-93DC-A2D5292C0479</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 	</array>
 	<key>readme</key>
@@ -302,18 +446,34 @@ puts({ items: script_filter_items }.to_json)</string>
 
 ## usage
 
-1. `av` to get Bundle ID of apps
-2. Universal action support
+1. `appid` to get Bundle ID of apps
+2. `av` to get Bundle version of apps
+3. Universal action support
 	- `App ID` get id of app
+	- `App Version` get version of app
     - `App Name` get name of app</string>
 	<key>uidata</key>
 	<dict>
+		<key>0413D15A-857E-4782-93DC-A2D5292C0479</key>
+		<dict>
+			<key>xpos</key>
+			<integer>295</integer>
+			<key>ypos</key>
+			<integer>840</integer>
+		</dict>
 		<key>42BBB04B-30C5-49D2-AFA8-D24B9C9FB417</key>
 		<dict>
 			<key>xpos</key>
 			<integer>235</integer>
 			<key>ypos</key>
-			<integer>425</integer>
+			<integer>430</integer>
+		</dict>
+		<key>53D51879-0D2E-4B6B-8EAD-45D634D7AED8</key>
+		<dict>
+			<key>xpos</key>
+			<integer>860</integer>
+			<key>ypos</key>
+			<integer>150</integer>
 		</dict>
 		<key>56E911C8-B422-41A5-B703-DBA1649E1DA1</key>
 		<dict>
@@ -322,19 +482,26 @@ puts({ items: script_filter_items }.to_json)</string>
 			<key>ypos</key>
 			<integer>90</integer>
 		</dict>
+		<key>5B30E91B-47B7-4F83-9119-64675F13B00D</key>
+		<dict>
+			<key>xpos</key>
+			<integer>60</integer>
+			<key>ypos</key>
+			<integer>840</integer>
+		</dict>
+		<key>73372C83-B363-44A4-A210-51B88F77C9FE</key>
+		<dict>
+			<key>xpos</key>
+			<integer>50</integer>
+			<key>ypos</key>
+			<integer>605</integer>
+		</dict>
 		<key>778BD714-0E96-4EA4-A4FD-751D05C92D2D</key>
 		<dict>
 			<key>xpos</key>
 			<integer>50</integer>
 			<key>ypos</key>
 			<integer>245</integer>
-		</dict>
-		<key>79EAF480-9E98-4ED6-A0BC-7162FC442749</key>
-		<dict>
-			<key>xpos</key>
-			<integer>430</integer>
-			<key>ypos</key>
-			<integer>230</integer>
 		</dict>
 		<key>A48CE873-8369-400F-9DFA-5526A5D9C90C</key>
 		<dict>
@@ -346,9 +513,9 @@ puts({ items: script_filter_items }.to_json)</string>
 		<key>D7A8FF94-E45E-4FD4-BA1A-11237326A0E1</key>
 		<dict>
 			<key>xpos</key>
-			<integer>430</integer>
+			<integer>675</integer>
 			<key>ypos</key>
-			<integer>85</integer>
+			<integer>150</integer>
 		</dict>
 		<key>D7E96C4B-C158-4A5C-9D3A-7C6C37A6557D</key>
 		<dict>
@@ -361,7 +528,7 @@ puts({ items: script_filter_items }.to_json)</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.1.0</string>
+	<string>1.2.0</string>
 	<key>webaddress</key>
 	<string>https://1991421.cn</string>
 </dict>
