@@ -10,9 +10,9 @@
 
 <!-- more -->
 
-### App 列表
+### App List
 
 ![](./appid.gif)
 
-### 单个App ID
+### Universal Action
 ![](./appid_2.gif)
