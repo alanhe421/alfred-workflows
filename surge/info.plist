@@ -266,6 +266,18 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
+				<string>184429E5-5B99-4D80-8741-ACC0B6820475</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>3DE87DAE-DC88-4020-8D85-3C764F5C8DAD</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
 				<string>672241DA-A742-4C25-8736-D929FC69A4E5</string>
 				<key>modifiers</key>
 				<integer>0</integer>
@@ -488,6 +500,20 @@
 						<string></string>
 						<key>uid</key>
 						<string>14FA5E04-9ADE-4A0A-B8D5-4A034446C6FA</string>
+					</dict>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>log</string>
+						<key>outputlabel</key>
+						<string></string>
+						<key>uid</key>
+						<string>3DE87DAE-DC88-4020-8D85-3C764F5C8DAD</string>
 					</dict>
 				</array>
 				<key>elselabel</key>
@@ -725,7 +751,10 @@
 				<key>passthroughargument</key>
 				<false/>
 				<key>variables</key>
-				<dict/>
+				<dict>
+					<key>module</key>
+					<string>{query}</string>
+				</dict>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.argument</string>
@@ -886,7 +915,7 @@
 			<key>config</key>
 			<dict>
 				<key>alfredfiltersresults</key>
-				<false/>
+				<true/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
 				<key>argumenttreatemptyqueryasnil</key>
@@ -908,7 +937,7 @@
 				<key>runningsubtext</key>
 				<string></string>
 				<key>script</key>
-				<string>/usr/local/bin/node profiles.js $HTTP_API "{query}"</string>
+				<string>/usr/local/bin/node profiles.js</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -1005,7 +1034,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>/usr/local/bin/node ./do.js $HTTP_API "{query}"</string>
+				<string>/usr/local/bin/node ./do.js "{query}"</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -1217,18 +1246,18 @@ Surge Mac 4.0.0、Surge iOS 4.4.0开始提供HTTP API, 即该版本之前的均�
 			<key>note</key>
 			<string>warning for turn on http-api</string>
 			<key>xpos</key>
-			<integer>470</integer>
+			<integer>480</integer>
 			<key>ypos</key>
-			<integer>365</integer>
+			<integer>345</integer>
 		</dict>
 		<key>BBB56AB5-5DF6-4763-8504-006F8B6066C9</key>
 		<dict>
 			<key>note</key>
 			<string>do something</string>
 			<key>xpos</key>
-			<integer>780</integer>
+			<integer>800</integer>
 			<key>ypos</key>
-			<integer>1035</integer>
+			<integer>985</integer>
 		</dict>
 		<key>CAC75DC7-4E03-47F4-9C88-B75709EC6D23</key>
 		<dict>
@@ -1286,7 +1315,7 @@ Surge Mac 4.0.0、Surge iOS 4.4.0开始提供HTTP API, 即该版本之前的均�
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.5</string>
+	<string>1.6</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/surge</string>
 </dict>

@@ -26,7 +26,7 @@ http-api = examplekey@0.0.0.0:6171
 Surge Mac 4.0.0、Surge iOS 4.4.0开始提供HTTP API, 即该版本之前的均不支持
 
 
-[![](https://img.shields.io/badge/version-v1.5-green)](./Surge.alfredworkflow)
+[![](https://img.shields.io/badge/version-v1.6-green)](./Surge.alfredworkflow)
 
 
 
