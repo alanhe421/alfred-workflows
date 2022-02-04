@@ -1,6 +1,7 @@
 > check all the ports in use mac and kill someone
 
-⌥ ⏎ to kill process
+1. type `process` to tigger
+2. ⌥ ⏎ to kill process
 
 # install
 
