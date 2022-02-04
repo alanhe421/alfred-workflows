@@ -8,6 +8,19 @@
 	<string>Self-Dev</string>
 	<key>connections</key>
 	<dict>
+		<key>29DA1D50-839E-444B-8391-CE11F16BAB95</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>346E6071-BEB0-4365-8EEA-50163C41B766</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>45554D26-FF2F-4F95-8C08-934F062DEF67</key>
 		<array>
 			<dict>
@@ -242,6 +255,27 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>count</key>
+				<integer>1</integer>
+				<key>keychar</key>
+				<string>⎋</string>
+				<key>keycode</key>
+				<integer>53</integer>
+				<key>keymod</key>
+				<integer>1310720</integer>
+				<key>overridewithargument</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.dispatchkeycombo</string>
+			<key>uid</key>
+			<string>C51C0769-A94F-406E-80EC-F4B635F47C86</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -269,42 +303,6 @@
 			<string>91417F9B-F3F5-4A48-9A04-80DC5B1DB101</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>count</key>
-				<integer>1</integer>
-				<key>keychar</key>
-				<string>⎋</string>
-				<key>keycode</key>
-				<integer>53</integer>
-				<key>keymod</key>
-				<integer>1310720</integer>
-				<key>overridewithargument</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.dispatchkeycombo</string>
-			<key>uid</key>
-			<string>C51C0769-A94F-406E-80EC-F4B635F47C86</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>soundname</key>
-				<string>Blow</string>
-				<key>systemsound</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.playsound</string>
-			<key>uid</key>
-			<string>AC6456A9-9CE8-413B-9915-555B9C96BC26</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -347,6 +345,21 @@
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
 			<string>5B7F670B-D806-4968-88BC-C8CDF3273C19</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>soundname</key>
+				<string>Blow</string>
+				<key>systemsound</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.playsound</string>
+			<key>uid</key>
+			<string>AC6456A9-9CE8-413B-9915-555B9C96BC26</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -504,6 +517,91 @@ do shell script comm</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>wifi</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Please Wait</string>
+				<key>script</key>
+				<string>set device to do shell script "networksetup -listallhardwareports | awk '$3==\"Wi-Fi\" {getline;print}' | awk '{print $2}'"set power to do shell script "networksetup -getairportpower " &amp; device &amp; " | awk '{print $4}'"
+
+set comm to "bash ./wifi.sh" &amp; " \"" &amp; power &amp; "\""
+do shell script comm</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>./system-info.scpt</string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>Toggle WiFi</string>
+				<key>type</key>
+				<integer>6</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>29DA1D50-839E-444B-8391-CE11F16BAB95</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>set device to do shell script "networksetup -listallhardwareports | awk '$3==\"Wi-Fi\" {getline;print}' | awk '{print $2}'"
+
+set power to do shell script "networksetup -getairportpower " &amp; device &amp; " | awk '{print $4}'"
+
+if power is equal to "on" then
+	set power to "off"
+else
+	set power to "on"
+end if
+
+do shell script ("networksetup -setairportpower " &amp; device &amp; " " &amp; power)</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>346E6071-BEB0-4365-8EEA-50163C41B766</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -569,9 +667,26 @@ do shell script comm</string>
 4. shortcut[⌘ ⇧ O] to open with
 5. shortcut[⌘ ⇧ L] to lose focus from address bar input 
    just for Chrome
-6. Delete All Messages</string>
+6. Delete All Messages
+7. toggle WiFi</string>
 	<key>uidata</key>
 	<dict>
+		<key>29DA1D50-839E-444B-8391-CE11F16BAB95</key>
+		<dict>
+			<key>xpos</key>
+			<integer>640</integer>
+			<key>ypos</key>
+			<integer>745</integer>
+		</dict>
+		<key>346E6071-BEB0-4365-8EEA-50163C41B766</key>
+		<dict>
+			<key>note</key>
+			<string>toggle WiFi</string>
+			<key>xpos</key>
+			<integer>875</integer>
+			<key>ypos</key>
+			<integer>745</integer>
+		</dict>
 		<key>45554D26-FF2F-4F95-8C08-934F062DEF67</key>
 		<dict>
 			<key>note</key>
@@ -706,7 +821,7 @@ do shell script comm</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.5</string>
+	<string>1.6</string>
 	<key>webaddress</key>
 	<string>https://1991421.cn</string>
 </dict>

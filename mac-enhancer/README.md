@@ -7,9 +7,10 @@ Mac enhancer
 5. shortcut[⌘ ⇧ L] to lose focus from address bar input 
    just for Chrome
 6. Delete All Messages
+7. toggle WiFi
 
 
-[![](https://img.shields.io/badge/version-v1.5-green)](./Mac%20Enhancer.alfredworkflow)
+[![](https://img.shields.io/badge/version-v1.6-green)](./Mac%20Enhancer.alfredworkflow)
 
 
 
