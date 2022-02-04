@@ -97,6 +97,27 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>PID {query}, Port:{var:port}</string>
+				<key>title</key>
+				<string>Process Killed</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>D612EE96-4027-4A27-93B5-8BDF4760BD44</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -118,32 +139,12 @@ echo {query}|tr -d '\n'</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>PID {query}, Port:{var:port}</string>
-				<key>title</key>
-				<string>Process Killed</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>D612EE96-4027-4A27-93B5-8BDF4760BD44</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string>&gt; check all the ports in use mac and kill someone
 
-⌥ ⏎ to kill process
+1. type `process` to tigger
+2. ⌥ ⏎ to kill process
 
 # install
 
