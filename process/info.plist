@@ -49,7 +49,7 @@
 			<key>config</key>
 			<dict>
 				<key>alfredfiltersresults</key>
-				<true/>
+				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
 				<key>argumenttreatemptyqueryasnil</key>
@@ -75,11 +75,11 @@
 				<key>script</key>
 				<string>/usr/local/bin/node ./index.js {query}</string>
 				<key>scriptargtype</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>scriptfile</key>
 				<string></string>
 				<key>subtext</key>
-				<string>process</string>
+				<string>List All Process</string>
 				<key>title</key>
 				<string>process</string>
 				<key>type</key>
@@ -93,27 +93,6 @@
 			<string>170B13B0-26A2-4522-B6FA-B473EAFE090D</string>
 			<key>version</key>
 			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>PID {query}, Port:{var:port}</string>
-				<key>title</key>
-				<string>Process Killed</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>D612EE96-4027-4A27-93B5-8BDF4760BD44</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -139,12 +118,34 @@ echo {query}|tr -d '\n'</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>PID {query}, Port:{var:port}</string>
+				<key>title</key>
+				<string>Process Killed</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>D612EE96-4027-4A27-93B5-8BDF4760BD44</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>&gt; check all the ports in use mac and kill someone
 
 1. type `process` to tigger
 2. ⌥ ⏎ to kill process
+3. support filter by keyword
 
 # install
 
@@ -176,7 +177,7 @@ brew install node</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>0.1</string>
+	<string>0.2</string>
 	<key>webaddress</key>
 	<string>https://1991421.cn</string>
 </dict>
