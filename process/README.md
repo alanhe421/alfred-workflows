@@ -13,3 +13,5 @@ brew install node
 
 
 <!-- more -->
+
+![](./screenshot.gif)
