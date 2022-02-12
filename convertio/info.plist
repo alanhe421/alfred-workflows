@@ -25,7 +25,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>7FADB272-27EF-419C-8314-EF188F580D7F</string>
+				<string>BDD5E983-C340-4F81-AFD7-E9F2247A5140</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -46,11 +46,24 @@
 				<false/>
 			</dict>
 		</array>
-		<key>B1EBEA6D-025B-447A-8EA2-D2BD649723A1</key>
+		<key>585A309D-54C0-4AF9-B6D3-8059523F18C0</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>514DEB5B-4214-456E-AB96-44D7F3EFB4F4</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>B1EBEA6D-025B-447A-8EA2-D2BD649723A1</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>585A309D-54C0-4AF9-B6D3-8059523F18C0</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -70,21 +83,6 @@
 	<string>ConvertIO</string>
 	<key>objects</key>
 	<array>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>openwith</key>
-				<string>/Applications/Safari.app</string>
-				<key>sourcefile</key>
-				<string></string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openfile</string>
-			<key>uid</key>
-			<string>7FADB272-27EF-419C-8314-EF188F580D7F</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -130,6 +128,19 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>path</key>
+				<string>{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.revealfile</string>
+			<key>uid</key>
+			<string>BDD5E983-C340-4F81-AFD7-E9F2247A5140</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>fileutivariablename</key>
 				<string></string>
 				<key>outputfileuti</key>
@@ -141,6 +152,27 @@
 			<string>514DEB5B-4214-456E-AB96-44D7F3EFB4F4</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>matchmode</key>
+				<integer>1</integer>
+				<key>matchstring</key>
+				<string>\n</string>
+				<key>regexcaseinsensitive</key>
+				<false/>
+				<key>regexmultiline</key>
+				<false/>
+				<key>replacestring</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.replace</string>
+			<key>uid</key>
+			<string>585A309D-54C0-4AF9-B6D3-8059523F18C0</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -167,8 +199,11 @@
 	<key>readme</key>
 	<string>&gt; Support mobi to epub
 
+select mobi file and trigger action
+
 ## get started
 
+- brew install node
 - registry on https://developers.convertio.co
 - config api_key
 
@@ -186,25 +221,25 @@
 		<key>514DEB5B-4214-456E-AB96-44D7F3EFB4F4</key>
 		<dict>
 			<key>xpos</key>
-			<integer>495</integer>
+			<integer>640</integer>
 			<key>ypos</key>
 			<integer>70</integer>
+		</dict>
+		<key>585A309D-54C0-4AF9-B6D3-8059523F18C0</key>
+		<dict>
+			<key>note</key>
+			<string>delete newline</string>
+			<key>xpos</key>
+			<integer>500</integer>
+			<key>ypos</key>
+			<integer>80</integer>
 		</dict>
 		<key>61073CA9-E2D1-4B04-8811-CC0FB3C5D513</key>
 		<dict>
 			<key>xpos</key>
-			<integer>740</integer>
+			<integer>910</integer>
 			<key>ypos</key>
-			<integer>210</integer>
-		</dict>
-		<key>7FADB272-27EF-419C-8314-EF188F580D7F</key>
-		<dict>
-			<key>note</key>
-			<string>open finder</string>
-			<key>xpos</key>
-			<integer>745</integer>
-			<key>ypos</key>
-			<integer>40</integer>
+			<integer>215</integer>
 		</dict>
 		<key>B1EBEA6D-025B-447A-8EA2-D2BD649723A1</key>
 		<dict>
@@ -212,6 +247,13 @@
 			<integer>310</integer>
 			<key>ypos</key>
 			<integer>50</integer>
+		</dict>
+		<key>BDD5E983-C340-4F81-AFD7-E9F2247A5140</key>
+		<dict>
+			<key>xpos</key>
+			<integer>910</integer>
+			<key>ypos</key>
+			<integer>65</integer>
 		</dict>
 	</dict>
 	<key>variables</key>
@@ -224,7 +266,7 @@
 		<string>api_key</string>
 	</array>
 	<key>version</key>
-	<string>0.1</string>
+	<string>0.2</string>
 	<key>webaddress</key>
 	<string>https://1991421.cn</string>
 </dict>
