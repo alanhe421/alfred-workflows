@@ -12,5 +12,6 @@
 [![](https://img.shields.io/badge/version-v0.1-green)](./ConvertIO.alfredworkflow)
 
 
+<!-- more -->
 
-<!-- more --><!-- more -->
+![](./screenshot.gif)
