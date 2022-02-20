@@ -5,7 +5,7 @@
 - Node
 
 
-[![](https://img.shields.io/badge/version-v1.2-green)](./Medium%20Tools.alfredworkflow)
+[![](https://img.shields.io/badge/version-v1.3-green)](./Medium%20Tools.alfredworkflow)
 
 
 
