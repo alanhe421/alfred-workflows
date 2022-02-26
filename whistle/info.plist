@@ -64,7 +64,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>423180BB-76D0-424B-A500-A7CB720B9B5A</string>
+				<string>C25F40C1-2C15-4BCF-8F80-3C2BBC70CA9A</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -133,6 +133,31 @@
 				<false/>
 			</dict>
 		</array>
+		<key>C25F40C1-2C15-4BCF-8F80-3C2BBC70CA9A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>C77FA813-2DA6-4948-869A-B9C4E57C0295</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>17A4B683-706C-4042-AFB7-2ADCEB5AC069</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>423180BB-76D0-424B-A500-A7CB720B9B5A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 	</dict>
 	<key>createdby</key>
 	<string>Alan He</string>
@@ -144,29 +169,6 @@
 	<string>Whistle</string>
 	<key>objects</key>
 	<array>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>127</integer>
-				<key>script</key>
-				<string>/usr/local/bin/node ./do-settings.js $URL '{query}'</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>423180BB-76D0-424B-A500-A7CB720B9B5A</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -213,6 +215,51 @@
 			<string>8F3F47C9-3B17-4001-AB15-68C6CE16EFEA</string>
 			<key>version</key>
 			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>npm i whistle@latest -g</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.terminalcommand</string>
+			<key>uid</key>
+			<string>C77FA813-2DA6-4948-869A-B9C4E57C0295</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>installNewVersion</string>
+						<key>outputlabel</key>
+						<string></string>
+						<key>uid</key>
+						<string>17A4B683-706C-4042-AFB7-2ADCEB5AC069</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>C25F40C1-2C15-4BCF-8F80-3C2BBC70CA9A</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -278,6 +325,29 @@
 			<string>A861B62C-7E54-491E-8FC6-FCCD1DAA2422</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>script</key>
+				<string>/usr/local/bin/node ./do-settings.js $URL '{query}'</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>423180BB-76D0-424B-A500-A7CB720B9B5A</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -463,25 +533,25 @@ npm install -g whistle</string>
 			<key>note</key>
 			<string>select rules</string>
 			<key>xpos</key>
-			<integer>615</integer>
+			<integer>705</integer>
 			<key>ypos</key>
-			<integer>10</integer>
+			<integer>170</integer>
 		</dict>
 		<key>7B24A41C-933C-4C90-A34B-D03DCE0DA75E</key>
 		<dict>
 			<key>note</key>
 			<string>select rules</string>
 			<key>xpos</key>
-			<integer>430</integer>
+			<integer>420</integer>
 			<key>ypos</key>
-			<integer>175</integer>
+			<integer>180</integer>
 		</dict>
 		<key>8F3F47C9-3B17-4001-AB15-68C6CE16EFEA</key>
 		<dict>
 			<key>note</key>
 			<string>settings</string>
 			<key>xpos</key>
-			<integer>430</integer>
+			<integer>410</integer>
 			<key>ypos</key>
 			<integer>10</integer>
 		</dict>
@@ -497,16 +567,16 @@ npm install -g whistle</string>
 			<key>note</key>
 			<string>open url</string>
 			<key>xpos</key>
-			<integer>425</integer>
+			<integer>420</integer>
 			<key>ypos</key>
 			<integer>340</integer>
 		</dict>
 		<key>A861B62C-7E54-491E-8FC6-FCCD1DAA2422</key>
 		<dict>
 			<key>xpos</key>
-			<integer>795</integer>
+			<integer>900</integer>
 			<key>ypos</key>
-			<integer>110</integer>
+			<integer>115</integer>
 		</dict>
 		<key>BD42B648-2B65-477E-929E-CC00905A458A</key>
 		<dict>
@@ -516,6 +586,20 @@ npm install -g whistle</string>
 			<integer>40</integer>
 			<key>ypos</key>
 			<integer>185</integer>
+		</dict>
+		<key>C25F40C1-2C15-4BCF-8F80-3C2BBC70CA9A</key>
+		<dict>
+			<key>xpos</key>
+			<integer>580</integer>
+			<key>ypos</key>
+			<integer>35</integer>
+		</dict>
+		<key>C77FA813-2DA6-4948-869A-B9C4E57C0295</key>
+		<dict>
+			<key>xpos</key>
+			<integer>710</integer>
+			<key>ypos</key>
+			<integer>15</integer>
 		</dict>
 		<key>FDB82DA2-C61F-4C9D-AD52-D69759532762</key>
 		<dict>
@@ -535,7 +619,7 @@ npm install -g whistle</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.9</string>
+	<string>2.0</string>
 	<key>webaddress</key>
 	<string>https://1991421.cn</string>
 </dict>
