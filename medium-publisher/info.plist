@@ -362,6 +362,27 @@ end run</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>Will jump to the Medium page...</string>
+				<key>title</key>
+				<string>Successfully published!</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>05887F0C-F263-4DB5-9D60-D5569295F1D5</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -381,27 +402,6 @@ end run</string>
 			<string>A7B84DA3-DBA0-4EC4-A3CD-0CD14C7B7D82</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>Will jump to the Medium page...</string>
-				<key>title</key>
-				<string>Successfully published!</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>05887F0C-F263-4DB5-9D60-D5569295F1D5</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -439,6 +439,11 @@ end run</string>
 	<key>readme</key>
 	<string>&gt; Easy publish medium post
 
+## usage
+1. custom publishStatus
+2. trigger file action to publish
+
+
 ## Requirement
 
 - Node</string>
@@ -449,9 +454,9 @@ end run</string>
 			<key>note</key>
 			<string>Successfully published</string>
 			<key>xpos</key>
-			<integer>445</integer>
+			<integer>475</integer>
 			<key>ypos</key>
-			<integer>525</integer>
+			<integer>510</integer>
 		</dict>
 		<key>1F99A061-C264-4609-9A9A-CCB68E7A9996</key>
 		<dict>
@@ -499,9 +504,9 @@ end run</string>
 			<key>note</key>
 			<string>just post</string>
 			<key>xpos</key>
-			<integer>250</integer>
+			<integer>290</integer>
 			<key>ypos</key>
-			<integer>520</integer>
+			<integer>515</integer>
 		</dict>
 		<key>BA367EB7-EBFF-44A1-8850-338540687F1B</key>
 		<dict>
@@ -517,9 +522,9 @@ end run</string>
 			<key>note</key>
 			<string>jump to medium</string>
 			<key>xpos</key>
-			<integer>715</integer>
+			<integer>750</integer>
 			<key>ypos</key>
-			<integer>525</integer>
+			<integer>520</integer>
 		</dict>
 		<key>ED5D79E1-9B45-4C44-A863-51A1612D72E1</key>
 		<dict>
@@ -551,6 +556,8 @@ end run</string>
 		<string></string>
 		<key>TOKEN</key>
 		<string></string>
+		<key>publishStatus</key>
+		<string>public</string>
 	</dict>
 	<key>variablesdontexport</key>
 	<array>
@@ -558,7 +565,7 @@ end run</string>
 		<string>TOKEN</string>
 	</array>
 	<key>version</key>
-	<string>1.3</string>
+	<string>1.4</string>
 	<key>webaddress</key>
 	<string>https://1991421.cn</string>
 </dict>

@@ -1,11 +1,16 @@
 > Easy publish medium post
 
+## usage
+1. custom publishStatus
+2. trigger file action to publish
+
+
 ## Requirement
 
 - Node
 
 
-[![](https://img.shields.io/badge/version-v1.3-green)](./Medium%20Tools.alfredworkflow)
+[![](https://img.shields.io/badge/version-v1.4-green)](./Medium%20Tools.alfredworkflow)
 
 
 
