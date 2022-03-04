@@ -1,4 +1,4 @@
-Upload pictures with one click
+> Upload pictures with one click
 
 1. ssh keygen
     ```
@@ -13,7 +13,7 @@ Upload pictures with one click
 3. configure the alfred environment variable
 
 
-[![](https://img.shields.io/badge/version-v1.5-green)](./Pic%20Uploader.alfredworkflow)
+[![](https://img.shields.io/badge/version-v1.7-green)](./Pic%20Uploader.alfredworkflow)
 
 
 
