@@ -38,6 +38,7 @@
 32. Git Code - 腾讯工蜂
 33. Process - 进程/端口管理
 34. convertio - mobi/epub电子书转换工具
+35. OpenConnect VPN - 一键VPN
 
 ## Alfred常见问题
 
