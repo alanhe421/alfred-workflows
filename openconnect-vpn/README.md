@@ -13,3 +13,9 @@ $ brew install openconnect
 
 <!-- more -->
 
+## Usage
+variables config
+
+![](./screenshot.jpeg)
+
+type keyword `vpn` to trigger
