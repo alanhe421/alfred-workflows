@@ -5,7 +5,7 @@
 ## Workflow集
 
 1. eudic-tools 一键查词，一键发音
-2. pic-uploader 一键上传图片到个人图床
+2. pic-uploader 一键上传图片到个人图床/Imgur
 3. git 循环拉取项目
 4. 快速连接和断开蓝牙设备
 5. 文本识别OCR
@@ -17,7 +17,7 @@
 11. airdrop - 一键唤起Airdrop，发送选中文件或链接到目标设备
 12. appid - 快速获取App Bundle ID
 13. apple script - 批量替换scpt文件b内容
-14. surge - 快速操作Surge
+14. Surge - 快速操作Surge
 15. Medium Tools - 一键发布hexo-MD文档到Medium
 16. Switch Audio - 一键切换Mac上声音输入输出设备
 17. File Enhancer - 一键Copy文件名称`无后缀`
