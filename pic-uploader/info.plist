@@ -8,6 +8,33 @@
 	<string>Self-Dev</string>
 	<key>connections</key>
 	<dict>
+		<key>0506B244-2B55-465B-9BE0-C3969ADD268D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>68D6AFE6-235B-4EEF-A904-B9358FF8B94C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>307E089C-FEEA-4AEC-8F51-62A35A608E76</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>79B164F8-2392-47A5-B385-0D95F8ED0553</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>4E21EC75-1DB7-43DD-8923-96DA6697BEE0</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>141F8961-7B89-4BC5-9746-E8D86A3850A8</key>
 		<array>
 			<dict>
@@ -21,11 +48,24 @@
 				<false/>
 			</dict>
 		</array>
+		<key>3053246A-6E9D-432D-A8D0-DBFE6AE8C6AE</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>A37E6EF4-A477-441C-B264-ACFC58B138E0</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>4971FE38-3798-4A8B-B69D-1990D65C4816</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>68D6AFE6-235B-4EEF-A904-B9358FF8B94C</string>
+				<string>0506B244-2B55-465B-9BE0-C3969ADD268D</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -58,9 +98,12 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
+		</array>
+		<key>6DDA8B25-8BA3-44A7-9108-60CC23C7CD94</key>
+		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>DDD58D4E-D2FB-4D51-A7A3-6C330909B85B</string>
+				<string>0506B244-2B55-465B-9BE0-C3969ADD268D</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -69,11 +112,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>6DDA8B25-8BA3-44A7-9108-60CC23C7CD94</key>
+		<key>79B164F8-2392-47A5-B385-0D95F8ED0553</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>68D6AFE6-235B-4EEF-A904-B9358FF8B94C</string>
+				<string>F4B7CED6-DF9C-4269-B412-93E048D0AE4E</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -86,7 +129,33 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>A37E6EF4-A477-441C-B264-ACFC58B138E0</string>
+				<string>80B2D97D-A7D6-4A86-8245-4B3A5CD4FD68</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>80B2D97D-A7D6-4A86-8245-4B3A5CD4FD68</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>A1EBEA64-04EB-43F2-9032-729E3CF18086</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>A1EBEA64-04EB-43F2-9032-729E3CF18086</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3053246A-6E9D-432D-A8D0-DBFE6AE8C6AE</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -124,7 +193,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>6DDA8B25-8BA3-44A7-9108-60CC23C7CD94</string>
+				<string>80B2D97D-A7D6-4A86-8245-4B3A5CD4FD68</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -170,6 +239,16 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>45FC7350-63E1-4798-B707-C7E137370471</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
 		</array>
 	</dict>
 	<key>createdby</key>
@@ -182,75 +261,6 @@
 	<string>Pic Uploader</string>
 	<key>objects</key>
 	<array>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>d=`date +%F-%H%M%S`
-
-query="{query}"
-
-extension="${query##*.}"
-
-filename="$d.$extension"
-
-cp "$query" ./temp/$filename
-
-echo -n $filename</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>6DDA8B25-8BA3-44A7-9108-60CC23C7CD94</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>year=`date +%Y`
-
-ssh $user@$server "mkdir -p $destination/$year"
-
-rsync -p --chmod=Du=rwx,Dgo=rx,Fu=rw,Fog=r ./temp/{query} $user@$server:$destination/$year
-
-if [ $? -eq 0 ];
-then
-  echo -n "![]($url/$year/{query})"
-else
-  echo -n 1
-fi
-
-rm -rf ./temp/*</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>68D6AFE6-235B-4EEF-A904-B9358FF8B94C</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -269,6 +279,29 @@ rm -rf ./temp/*</string>
 			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
 			<string>D06D3C5F-4081-47FD-BA59-59EDAC4441C7</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>filetypes</key>
+				<array>
+					<string></string>
+					<string>com.compuserve.gif</string>
+					<string>org.webmproject.webp</string>
+					<string>public.jpeg</string>
+					<string>public.png</string>
+				</array>
+				<key>name</key>
+				<string>Pic Uploader</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.action</string>
+			<key>uid</key>
+			<string>B17DF40C-4617-48F9-AC8F-EF2A8D55AB84</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -306,21 +339,53 @@ rm -rf ./temp/*</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>lastpathcomponent</key>
+				<key>concurrently</key>
 				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>something wrong, maybe ssh-key missing.</string>
-				<key>title</key>
-				<string>Upload fail</string>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>d=`date +%F-%H%M%S`
+
+query="{query}"
+
+extension="${query##*.}"
+
+filename="$d.$extension"
+
+cp "$query" ./temp/$filename
+
+echo -n $filename</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
+			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>E58A61CC-C85B-499A-9040-E5F9AEE54595</string>
+			<string>6DDA8B25-8BA3-44A7-9108-60CC23C7CD94</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>selection</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>80B2D97D-A7D6-4A86-8245-4B3A5CD4FD68</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -334,14 +399,138 @@ rm -rf ./temp/*</string>
 				<key>removeextension</key>
 				<false/>
 				<key>text</key>
-				<string></string>
+				<string>upload to {var:server} , something wrong</string>
 				<key>title</key>
-				<string>Please take a pic first</string>
+				<string>Upload fail</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
-			<string>8AD996E2-9A53-464F-8B4D-E19327553B53</string>
+			<string>E58A61CC-C85B-499A-9040-E5F9AEE54595</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>fixedorder</key>
+				<false/>
+				<key>items</key>
+				<string>[{"imagefile":"b1252189aadc73bb508e933933528ae31b64597a.png","title":"VPS","arg":"vps"},{"imagefile":"c953f249e065226d289c6406706786efd47528ed.png","title":"Imgur","arg":"imgur"}]</string>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string></string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.listfilter</string>
+			<key>uid</key>
+			<string>A1EBEA64-04EB-43F2-9032-729E3CF18086</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>year=`date +%Y`
+
+ssh $user@$server "mkdir -p $destination/$year"
+
+rsync -p --chmod=Du=rwx,Dgo=rx,Fu=rw,Fog=r ./temp/{query} $user@$server:$destination/$year
+
+if [ $? -eq 0 ];
+then
+  echo -n "![]($url/$year/{query})"
+else
+  echo -n 1
+fi</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>68D6AFE6-235B-4EEF-A904-B9358FF8B94C</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>BE3C48D7-BC03-406A-ADA3-9C484051F827</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:server}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>vps</string>
+						<key>outputlabel</key>
+						<string></string>
+						<key>uid</key>
+						<string>307E089C-FEEA-4AEC-8F51-62A35A608E76</string>
+					</dict>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:server}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>imgur</string>
+						<key>outputlabel</key>
+						<string></string>
+						<key>uid</key>
+						<string>4E21EC75-1DB7-43DD-8923-96DA6697BEE0</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>0506B244-2B55-465B-9BE0-C3969ADD268D</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -378,21 +567,43 @@ rm -rf ./temp/*</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>autopaste</key>
+				<key>lastpathcomponent</key>
 				<false/>
-				<key>clipboardtext</key>
-				<string>{query}</string>
-				<key>ignoredynamicplaceholders</key>
+				<key>onlyshowifquerypopulated</key>
 				<false/>
-				<key>transient</key>
+				<key>removeextension</key>
 				<false/>
+				<key>text</key>
+				<string></string>
+				<key>title</key>
+				<string>Please take a pic first</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
+			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
-			<string>BE3C48D7-BC03-406A-ADA3-9C484051F827</string>
+			<string>8AD996E2-9A53-464F-8B4D-E19327553B53</string>
 			<key>version</key>
-			<integer>3</integer>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{var:selection}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>server</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>3053246A-6E9D-432D-A8D0-DBFE6AE8C6AE</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -432,6 +643,52 @@ rm -rf ./temp/*</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
+				<string>/usr/local/bin/node ./upload-imgur.js {query}</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>79B164F8-2392-47A5-B385-0D95F8ED0553</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>rm -rf ./temp/*</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>45FC7350-63E1-4798-B707-C7E137370471</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
 				<string>d=`date +%F-%H%M%S`
 
 filename="$d.jpeg"
@@ -452,27 +709,6 @@ echo -n $filename</string>
 			<string>141F8961-7B89-4BC5-9746-E8D86A3850A8</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<true/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string></string>
-				<key>title</key>
-				<string>Uploading the pic</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>DDD58D4E-D2FB-4D51-A7A3-6C330909B85B</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -504,32 +740,12 @@ echo -n $filename</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>acceptsmulti</key>
-				<integer>0</integer>
-				<key>filetypes</key>
-				<array>
-					<string></string>
-					<string>com.compuserve.gif</string>
-					<string>org.webmproject.webp</string>
-					<string>public.jpeg</string>
-					<string>public.png</string>
-				</array>
-				<key>name</key>
-				<string>Pic Uploader</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.action</string>
-			<key>uid</key>
-			<string>B17DF40C-4617-48F9-AC8F-EF2A8D55AB84</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 	</array>
 	<key>readme</key>
-	<string>&gt; Upload pictures with one click
+	<string>&gt; Upload pictures with one click, support upload to imgur or vps
+
+
+## VPS uploader setting
 
 1. ssh keygen
     ```
@@ -541,17 +757,47 @@ echo -n $filename</string>
 	
    copy to ~/.ssh/authorized_keys 
 
-3. configure the alfred environment variable</string>
+3. configure the alfred environment variable
+
+## Imgur Uploader setting
+1. https://api.imgur.com/oauth2/addclient
+   get clientId
+2. configure the alfred environment variable
+
+https://apidocs.imgur.com/</string>
 	<key>uidata</key>
 	<dict>
+		<key>0506B244-2B55-465B-9BE0-C3969ADD268D</key>
+		<dict>
+			<key>xpos</key>
+			<integer>695</integer>
+			<key>ypos</key>
+			<integer>425</integer>
+		</dict>
 		<key>141F8961-7B89-4BC5-9746-E8D86A3850A8</key>
 		<dict>
 			<key>note</key>
 			<string>create pic from clipboard</string>
 			<key>xpos</key>
-			<integer>285</integer>
+			<integer>275</integer>
 			<key>ypos</key>
-			<integer>535</integer>
+			<integer>665</integer>
+		</dict>
+		<key>3053246A-6E9D-432D-A8D0-DBFE6AE8C6AE</key>
+		<dict>
+			<key>xpos</key>
+			<integer>240</integer>
+			<key>ypos</key>
+			<integer>510</integer>
+		</dict>
+		<key>45FC7350-63E1-4798-B707-C7E137370471</key>
+		<dict>
+			<key>note</key>
+			<string>delete temp pics</string>
+			<key>xpos</key>
+			<integer>1135</integer>
+			<key>ypos</key>
+			<integer>650</integer>
 		</dict>
 		<key>4971FE38-3798-4A8B-B69D-1990D65C4816</key>
 		<dict>
@@ -560,25 +806,34 @@ echo -n $filename</string>
 			<key>xpos</key>
 			<integer>470</integer>
 			<key>ypos</key>
-			<integer>585</integer>
+			<integer>725</integer>
 		</dict>
 		<key>68D6AFE6-235B-4EEF-A904-B9358FF8B94C</key>
 		<dict>
 			<key>note</key>
 			<string>upload to server by SCP</string>
 			<key>xpos</key>
-			<integer>645</integer>
+			<integer>810</integer>
 			<key>ypos</key>
-			<integer>10</integer>
+			<integer>355</integer>
 		</dict>
 		<key>6DDA8B25-8BA3-44A7-9108-60CC23C7CD94</key>
 		<dict>
 			<key>note</key>
 			<string>create pic path from selection</string>
 			<key>xpos</key>
-			<integer>255</integer>
+			<integer>440</integer>
 			<key>ypos</key>
-			<integer>10</integer>
+			<integer>225</integer>
+		</dict>
+		<key>79B164F8-2392-47A5-B385-0D95F8ED0553</key>
+		<dict>
+			<key>note</key>
+			<string>upload to imgur</string>
+			<key>xpos</key>
+			<integer>800</integer>
+			<key>ypos</key>
+			<integer>580</integer>
 		</dict>
 		<key>7F06D968-A68C-481E-83C0-7B45F509D2D1</key>
 		<dict>
@@ -588,78 +843,91 @@ echo -n $filename</string>
 			<string>1. upload copy pic to target server
 2. set markdown url to clipboard</string>
 			<key>xpos</key>
-			<integer>25</integer>
+			<integer>30</integer>
 			<key>ypos</key>
-			<integer>40</integer>
+			<integer>90</integer>
+		</dict>
+		<key>80B2D97D-A7D6-4A86-8245-4B3A5CD4FD68</key>
+		<dict>
+			<key>xpos</key>
+			<integer>260</integer>
+			<key>ypos</key>
+			<integer>245</integer>
 		</dict>
 		<key>8AD996E2-9A53-464F-8B4D-E19327553B53</key>
 		<dict>
 			<key>note</key>
 			<string>exception</string>
 			<key>xpos</key>
-			<integer>430</integer>
+			<integer>500</integer>
 			<key>ypos</key>
-			<integer>230</integer>
+			<integer>470</integer>
+		</dict>
+		<key>A1EBEA64-04EB-43F2-9032-729E3CF18086</key>
+		<dict>
+			<key>note</key>
+			<string>uploader chooser</string>
+			<key>xpos</key>
+			<integer>85</integer>
+			<key>ypos</key>
+			<integer>350</integer>
 		</dict>
 		<key>A37E6EF4-A477-441C-B264-ACFC58B138E0</key>
 		<dict>
 			<key>xpos</key>
-			<integer>140</integer>
+			<integer>320</integer>
 			<key>ypos</key>
-			<integer>260</integer>
+			<integer>425</integer>
 		</dict>
 		<key>B17DF40C-4617-48F9-AC8F-EF2A8D55AB84</key>
 		<dict>
 			<key>xpos</key>
-			<integer>50</integer>
+			<integer>230</integer>
 			<key>ypos</key>
-			<integer>650</integer>
+			<integer>60</integer>
 		</dict>
 		<key>BE3C48D7-BC03-406A-ADA3-9C484051F827</key>
 		<dict>
 			<key>xpos</key>
-			<integer>940</integer>
+			<integer>1170</integer>
 			<key>ypos</key>
-			<integer>370</integer>
+			<integer>415</integer>
 		</dict>
 		<key>D06D3C5F-4081-47FD-BA59-59EDAC4441C7</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>1050</integer>
+			<integer>1195</integer>
 			<key>ypos</key>
-			<integer>30</integer>
-		</dict>
-		<key>DDD58D4E-D2FB-4D51-A7A3-6C330909B85B</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>2</integer>
-			<key>xpos</key>
-			<integer>780</integer>
-			<key>ypos</key>
-			<integer>545</integer>
+			<integer>50</integer>
 		</dict>
 		<key>E58A61CC-C85B-499A-9040-E5F9AEE54595</key>
 		<dict>
 			<key>note</key>
 			<string>upload error</string>
 			<key>xpos</key>
-			<integer>830</integer>
+			<integer>1095</integer>
 			<key>ypos</key>
-			<integer>210</integer>
+			<integer>245</integer>
 		</dict>
 		<key>F4B7CED6-DF9C-4269-B412-93E048D0AE4E</key>
 		<dict>
 			<key>xpos</key>
-			<integer>660</integer>
+			<integer>990</integer>
 			<key>ypos</key>
-			<integer>420</integer>
+			<integer>545</integer>
 		</dict>
 	</dict>
 	<key>variables</key>
 	<dict>
 		<key>destination</key>
+		<string></string>
+		<key>imgur_client_id</key>
+		<string></string>
+		<key>imgur_client_secret</key>
+		<string></string>
+		<key>imgur_refresh_token</key>
 		<string></string>
 		<key>server</key>
 		<string></string>
@@ -670,13 +938,16 @@ echo -n $filename</string>
 	</dict>
 	<key>variablesdontexport</key>
 	<array>
+		<string>imgur_client_id</string>
 		<string>destination</string>
-		<string>url</string>
 		<string>server</string>
+		<string>url</string>
+		<string>imgur_client_secret</string>
+		<string>imgur_refresh_token</string>
 		<string>user</string>
 	</array>
 	<key>version</key>
-	<string>1.7</string>
+	<string>2.0</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/pic-uploader</string>
 </dict>

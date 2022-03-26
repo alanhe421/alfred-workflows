@@ -1,4 +1,7 @@
-> Upload pictures with one click
+> Upload pictures with one click, support upload to imgur or vps
+
+
+## VPS uploader setting
 
 1. ssh keygen
     ```
@@ -12,8 +15,15 @@
 
 3. configure the alfred environment variable
 
+## Imgur Uploader setting
+1. https://api.imgur.com/oauth2/addclient
+   get clientId
+2. configure the alfred environment variable
 
-[![](https://img.shields.io/badge/version-v1.7-green)](./Pic%20Uploader.alfredworkflow)
+https://apidocs.imgur.com/
+
+
+[![](https://img.shields.io/badge/version-v2.0-green)](./Pic%20Uploader.alfredworkflow)
 
 
 
