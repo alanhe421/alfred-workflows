@@ -28,16 +28,25 @@ function updateReadme(workflowFolder, plistObj, workflow) {
   }
 }
 
+/**
+ * 保存workflow源码文件，方便PR对比
+ * @param workflowFolder
+ * @param workflow
+ * @returns {{plistObj: *}}
+ */
 function parseWorkflowInfo(workflowFolder, workflow) {
   const workFlowFile = workflowFolder + '/' + workflow;
-  const workFlowZipFile = workflowFolder + '/temp.zip';
+  const zip_suffix = '.zip';
+  const workFlowZipFile = workflowFolder + '/src' + zip_suffix
   fs.copyFileSync(workFlowFile, workFlowZipFile);
-  const workFlowUnzipFolder = workFlowZipFile.substring(0, workFlowZipFile.length - 4);
+  // 解压zip文件，创建文件夹
+  const workFlowUnzipFolder = workFlowZipFile.substring(0, workFlowZipFile.length - zip_suffix.length);
   execSync(`unzip -o ${workFlowZipFile} -d ${workFlowUnzipFolder}`);
   execSync(`rm -rf ${workFlowZipFile}`);
+  execSync(`cp ${workFlowUnzipFolder}/info.plist ${workflowFolder}/`);
+  // 源码中node_modules不纳入版本管理
+  execSync(`rm -rf ${workFlowUnzipFolder}/node_modules`);
   const plistObj = plist.parse(fs.readFileSync(`${workFlowUnzipFolder}/info.plist`, 'utf8'));
-  execSync(`mv ${workFlowUnzipFolder}/info.plist ${workflowFolder}/`);
-  execSync(`rm -rf ${workFlowUnzipFolder}`);
   return {plistObj};
 }
 
