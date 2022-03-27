@@ -1,0 +1,14 @@
+{
+  "name": "user.workflow.fe0253ca-60aa-46b0-95aa-e0c280c774f0",
+  "version": "1.0.0",
+  "description": "",
+  "main": "upload-imgur.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@stacker/alfred-utils": "^0.1.36"
+  }
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "name": "iPhone12",
+    "purchasingDate": "2021.5.12",
+    "cover": "icons/iphone12.png"
+  },
+  {
+    "name": "iPhone8 Plus",
+    "purchasingDate": "2017.10.30",
+    "cover": "icons/iphone8p.png"
+  },
+  {
+    "name": "iPhone6",
+    "purchasingDate": "2014.10.01",
+    "cover": "icons/iphone6.png"
+  },
+  {
+    "name": "iPhone4s",
+    "purchasingDate": "2011.12.01",
+    "cover": "icons/iphone6.png"
+  }
+]

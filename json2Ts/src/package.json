@@ -1,0 +1,15 @@
+{
+  "name": "user.workflow.f77da0ae-17d7-4267-8c94-ef81149cbc33",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "json-ts": "^1.6.4"
+  }
+}

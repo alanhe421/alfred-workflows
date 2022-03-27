@@ -1,0 +1,14 @@
+{
+  "name": "medium-publisher",
+  "version": "1.0.0",
+  "description": "选中MD文件，一键发布到Medium平台",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2"
+  }
+}

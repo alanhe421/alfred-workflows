@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@stacker/alfred-utils": "^0.1.13",
+    "axios": "^0.21.0"
+  }
+}

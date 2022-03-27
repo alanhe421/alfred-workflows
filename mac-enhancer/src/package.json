@@ -1,0 +1,9 @@
+{
+  "name": "user.workflow.3FEA006A-2F07-4A4D-965C-F03548728CAD",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@sindresorhus/do-not-disturb": "^1.1.0"
+  }
+}

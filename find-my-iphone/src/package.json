@@ -1,0 +1,14 @@
+{
+  "name": "user.workflow.4c72774e-9129-4f4d-b7fc-af478ec0813d",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@stacker/alfred-utils": "^0.1.23"
+  }
+}

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>cn.alanhe.aboutmac</string>
+	<key>category</key>
+	<string>Self-Dev</string>
+	<key>connections</key>
+	<dict>
+		<key>2353E6A3-0536-4ADA-8936-B2AEC1E72656</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F6EDB591-1C8F-42F0-93A1-752E94140C67</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>F6EDB591-1C8F-42F0-93A1-752E94140C67</key>
+		<array/>
+	</dict>
+	<key>createdby</key>
+	<string>Alan He</string>
+	<key>description</key>
+	<string>About This Mac</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>About Mac</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>F6EDB591-1C8F-42F0-93A1-752E94140C67</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>about</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Please Wait</string>
+				<key>script</key>
+				<string>tell application "Finder"
+set username to long user name of (system info)set computername to host name of (system info)set ethernet to primary Ethernet address of (system info)set ipaddress to IPv4 address of (system info)set osver to system version of (system info)set cpuType to CPU type of (system info)set physicalMemory to physical memory of (system info)-- set bootVolume to boot volume of (system info)set totalSpace to capacity of (get startup disk)set freeSpace to free space of (get startup disk)
+
+set osName to do shell script "bash ./os-name.sh"
+
+set modelName to do shell script "bash ./mac-model-year.sh"set vmStats to (text 12 thru -2 of (do shell script "vm_stat | grep 'Pages free'")) * 4096set freeMemory to (round (vmStats / 1.0E+7) / 100)set param to (username &amp; "‡" &amp; computername &amp; "‡" &amp; ethernet &amp; "‡" &amp; ipaddress &amp; "‡" &amp; osver &amp; "‡" &amp; cpuType &amp; "‡" &amp; (round (physicalMemory / 1024)) &amp; "‡" &amp; (round (totalSpace / 10E8)) &amp; "‡" &amp; (round (freeSpace / 10E8)))&amp; "‡" &amp; osName&amp; "‡" &amp; freeMemory&amp; "‡" &amp;modelNameset comm to "bash ./main.sh" &amp; " \"" &amp; param &amp; "\""
+
+do shell script comm
+end tell</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>./system-info.scpt</string>
+				<key>subtext</key>
+				<string>About This Mac</string>
+				<key>title</key>
+				<string>About Mac</string>
+				<key>type</key>
+				<integer>6</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>2353E6A3-0536-4ADA-8936-B2AEC1E72656</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>&gt; Displays system information about your Mac</string>
+	<key>uidata</key>
+	<dict>
+		<key>2353E6A3-0536-4ADA-8936-B2AEC1E72656</key>
+		<dict>
+			<key>xpos</key>
+			<integer>105</integer>
+			<key>ypos</key>
+			<integer>120</integer>
+		</dict>
+		<key>F6EDB591-1C8F-42F0-93A1-752E94140C67</key>
+		<dict>
+			<key>xpos</key>
+			<integer>325</integer>
+			<key>ypos</key>
+			<integer>120</integer>
+		</dict>
+	</dict>
+	<key>variablesdontexport</key>
+	<array/>
+	<key>version</key>
+	<string>1.10</string>
+	<key>webaddress</key>
+	<string>https://1991421.cn</string>
+</dict>
+</plist>

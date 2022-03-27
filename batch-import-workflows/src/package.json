@@ -1,0 +1,14 @@
+{
+  "name": "user.workflow.7d381488-654f-4d0c-8a17-ee9711f7b94a",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "uuid": "^8.3.2"
+  }
+}
