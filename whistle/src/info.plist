@@ -619,7 +619,7 @@ npm install -g whistle</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>2.2</string>
+	<string>2.3</string>
 	<key>webaddress</key>
 	<string>https://1991421.cn</string>
 </dict>
