@@ -1,14 +1,11 @@
 const [, , URL, query] = process.argv;
-const querystring = require('querystring');
+const querystring = require('qs');
 const {
-  utils: {
-    splitMultiArgStr
-  },
+  utils: { splitMultiArgStr },
   http
 } = require('@stacker/alfred-utils');
 const instance = http.createHttpClient(URL);
 const [name, value, selected] = splitMultiArgStr(query);
-const { Base64 } = require('js-base64');
 
 function getUrl() {
   if (name === 'default') {
@@ -20,17 +17,19 @@ function getUrl() {
     ? '/cgi-bin/rules/select'
     : '/cgi-bin/rules/unselect';
 }
-
 instance
   .post(
     getUrl(),
-    querystring.stringify({
-      name,
-      value: Base64.decode(value)
-    }),
+    querystring.stringify(
+      {
+        name,
+        value
+      },
+      { format: 'RFC1738' }
+    ),
     {
       headers: {
-        'Content-Type': 'application/x-www-form-urlencoded'
+        'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8'
       }
     }
   )

@@ -19,7 +19,7 @@ type `w2` to trigger
 npm install -g whistle
 
 
-[![](https://img.shields.io/badge/version-v2.1-green)](./Whistle.alfredworkflow)
+[![](https://img.shields.io/badge/version-v2.2-green)](./Whistle.alfredworkflow)
 
 
 

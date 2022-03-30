@@ -12,7 +12,6 @@ const {
 } = require('@stacker/alfred-utils');
 const [, , URL, ROOT_PATH, query] = process.argv;
 const instance = http.createHttpClient(URL);
-const { Base64 } = require('js-base64');
 const fs = require('fs');
 
 const settingItem = buildItem({
@@ -70,7 +69,7 @@ async function main() {
       items: [
         {
           title: 'Service unavailable!',
-          subtitle: 'Service not start or port wrong'
+          subtitle: e
         }
       ]
     });
@@ -101,7 +100,10 @@ function formatItem(item) {
   return buildItem({
     title: item.name,
     subtitle: item.selected ? 'selected' : '',
-    arg: joinMultiArg(item.name, Base64.encode(item.data), !item.selected),
+    arg: joinMultiArg(item.name,
+      item.data,
+      !item.selected
+    ),
     text: {
       copy: item.data,
       largetype: item.data

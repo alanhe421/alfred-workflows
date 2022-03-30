@@ -355,7 +355,7 @@
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
-				<integer>127</integer>
+				<integer>0</integer>
 				<key>script</key>
 				<string>/usr/local/bin/node ./select-rules.js $URL '{query}'</string>
 				<key>scriptargtype</key>
@@ -517,7 +517,7 @@ npm install -g whistle</string>
 		<key>3663A43F-E7D9-407D-950D-9DB3D22228B4</key>
 		<dict>
 			<key>xpos</key>
-			<integer>815</integer>
+			<integer>750</integer>
 			<key>ypos</key>
 			<integer>370</integer>
 		</dict>
@@ -619,7 +619,7 @@ npm install -g whistle</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>2.1</string>
+	<string>2.2</string>
 	<key>webaddress</key>
 	<string>https://1991421.cn</string>
 </dict>
