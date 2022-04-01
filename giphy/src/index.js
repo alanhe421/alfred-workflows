@@ -1,4 +1,4 @@
-const [, , HTTP_API, query, rootPath, limit, channel] = process.argv;
+const [, , HTTP_API, query, limit, channel] = process.argv;
 const instance = require('./axios').createHttpClient();
 const util = require('util');
 const exec = util.promisify(require('child_process').exec);
@@ -38,16 +38,16 @@ const searchGif = () =>
           subtitle: formatBytes(item.images.original.size),
           arg: originalGif + '#' + item.id,
           icon: {
-            path: `${rootPath}/${item.id}_preview.gif`
+            path: `${process.env.alfred_workflow_cache}/${item.id}_preview.gif`
           },
-          quicklookurl: `file://${rootPath.replace(/\s/g, '%20')}/${
+          quicklookurl: `file://${process.env.alfred_workflow_cache.replace(/\s/g, '%20')}/${
             item.id
           }_preview.gif`
         });
 
         downloadPreviewGifs.push(
           exec(
-            `curl "${previewGif}" -v --output "${rootPath}/${item.id}_preview.gif"`
+            `curl "${previewGif}" -v --output "${process.env.alfred_workflow_cache}/${item.id}_preview.gif"`
           )
         );
       });
@@ -68,7 +68,7 @@ async function main() {
    * find /Users/xxx/Library/Caches/com.runningwithcrayons.Alfred/Workflow\ Data/cn.alanhe.giphy -mtime +1 -type f -delete
    */
   await exec(
-    `find ${rootPath.replace(/\s/g, '\\ ')} -mtime +1 -type f -delete`
+    `find ${process.env.alfred_workflow_cache.replace(/\s/g, '\\ ')} -mtime +1 -type f -delete`
   );
   searchGif();
 }

@@ -245,7 +245,9 @@
 
 set theQuery to item 1 of argv
 
-set thePath to theQuery-- set the clipboard to a file (this only works with a single file or folder)set the clipboard to POSIX file thePath
+set thePath to theQueryset the clipboard to POSIX file thePath
+
+delay 1
 
 return theQuery
 
@@ -375,9 +377,7 @@ echo -n "$alfred_workflow_cache/$split2.gif"</string>
 				<key>runningsubtext</key>
 				<string>Searching GIF...</string>
 				<key>script</key>
-				<string>[[ -d "${alfred_workflow_cache}" ]] || mkdir -p "${alfred_workflow_cache}"
-
-/usr/local/bin/node ./index.js $HTTP_API '{query}' "$alfred_workflow_cache" $LIMIT gifs</string>
+				<string>/usr/local/bin/node ./index.js $HTTP_API '{query}' $LIMIT gifs</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -478,9 +478,7 @@ echo -n "$alfred_workflow_cache/$split2.gif"</string>
 				<key>runningsubtext</key>
 				<string>Searching Sticker...</string>
 				<key>script</key>
-				<string>[[ -d "${alfred_workflow_cache}" ]] || mkdir -p "${alfred_workflow_cache}"
-
-/usr/local/bin/node ./index.js $HTTP_API '{query}' "$alfred_workflow_cache" $LIMIT stickers</string>
+				<string>/usr/local/bin/node ./index.js $HTTP_API '{query}' $LIMIT stickers</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -687,7 +685,7 @@ echo -n "$alfred_workflow_cache/$split2.gif"</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.1</string>
+	<string>1.2</string>
 	<key>webaddress</key>
 	<string>https://1991421.cn</string>
 </dict>
