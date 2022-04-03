@@ -38,7 +38,8 @@
 32. Git Code - 腾讯工蜂
 33. Process - 进程/端口管理
 34. convertio - mobi/epub电子书转换工具
-35. OpenConnect VPN - 一键VPN
+35. OpenConnect VPN - 一键VPN 
+36. Read Captcha - 短信验证码读取工具
 
 ## Alfred常见问题
 
