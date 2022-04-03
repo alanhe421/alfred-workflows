@@ -14,3 +14,6 @@
 
 
 <!-- more -->
+
+## 效果
+![](./screenshot.gif)
