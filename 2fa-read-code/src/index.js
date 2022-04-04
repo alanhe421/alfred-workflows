@@ -43,7 +43,7 @@ const lookBackMinutes = process.env.look_back_minutes;
   utils.printScriptFilter({
     items: [
       utils.buildItem({
-        title: 'There is no captcha',
+        title: 'There is no authentication code',
         subtitle: '⏎ to view Messages App',
         arg: 'view_message'
       })
