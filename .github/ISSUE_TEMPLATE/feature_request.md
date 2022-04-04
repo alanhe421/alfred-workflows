@@ -2,12 +2,12 @@
 name: Feature request
 about: Suggest an idea for this project
 title: ''
-labels: ''
-assignees: ''
+labels: 
+  - feat
+assignees: 'alanhg'
 
 ---
-**Version Info (please complete the following information):**
-- Workflow Name: [e.g. Surge]
+Workflow Name: [e.g. Surge]
 
 **Is your feature request related to a problem? Please describe.**
 A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
