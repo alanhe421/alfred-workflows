@@ -65,5 +65,11 @@ cat << EOB
 	<icon>icons/disk.png</icon>
   <arg>${arrIN[7]}GB total,${arrIN[8]}GB free</arg>
   </item>
+  <item>
+    <title>Locale / Language</title>
+	<subtitle>${arrIN[12]}</subtitle>
+	<icon>icons/locale.png</icon>
+  <arg>${arrIN[12]}</arg>
+  </item>
 </items>
 EOB

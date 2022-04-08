@@ -79,14 +79,17 @@
 				<key>queuemode</key>
 				<integer>1</integer>
 				<key>runningsubtext</key>
-				<string>Please Wait</string>
+				<string>Please Waiting</string>
 				<key>script</key>
 				<string>tell application "Finder"
 set username to long user name of (system info)set computername to host name of (system info)set ethernet to primary Ethernet address of (system info)set ipaddress to IPv4 address of (system info)set osver to system version of (system info)set cpuType to CPU type of (system info)set physicalMemory to physical memory of (system info)-- set bootVolume to boot volume of (system info)set totalSpace to capacity of (get startup disk)set freeSpace to free space of (get startup disk)
 
 set osName to do shell script "bash ./os-name.sh"
 
-set modelName to do shell script "bash ./mac-model-year.sh"set vmStats to (text 12 thru -2 of (do shell script "vm_stat | grep 'Pages free'")) * 4096set freeMemory to (round (vmStats / 1.0E+7) / 100)set param to (username &amp; "‡" &amp; computername &amp; "‡" &amp; ethernet &amp; "‡" &amp; ipaddress &amp; "‡" &amp; osver &amp; "‡" &amp; cpuType &amp; "‡" &amp; (round (physicalMemory / 1024)) &amp; "‡" &amp; (round (totalSpace / 10E8)) &amp; "‡" &amp; (round (freeSpace / 10E8)))&amp; "‡" &amp; osName&amp; "‡" &amp; freeMemory&amp; "‡" &amp;modelNameset comm to "bash ./main.sh" &amp; " \"" &amp; param &amp; "\""
+set modelName to do shell script "bash ./mac-model-year.sh"set vmStats to (text 12 thru -2 of (do shell script "vm_stat | grep 'Pages free'")) * 4096set freeMemory to (round (vmStats / 1.0E+7) / 100)
+
+set locale to user locale of (get system info)
+set param to (username &amp; "‡" &amp; computername &amp; "‡" &amp; ethernet &amp; "‡" &amp; ipaddress &amp; "‡" &amp; osver &amp; "‡" &amp; cpuType &amp; "‡" &amp; (round (physicalMemory / 1024)) &amp; "‡" &amp; (round (totalSpace / 10E8)) &amp; "‡" &amp; (round (freeSpace / 10E8)))&amp; "‡" &amp; osName&amp; "‡" &amp; freeMemory&amp; "‡" &amp;modelName &amp; "‡" &amp;localeset comm to "bash ./main.sh" &amp; " \"" &amp; param &amp; "\""
 
 do shell script comm
 end tell</string>
@@ -133,7 +136,7 @@ end tell</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.10</string>
+	<string>1.11</string>
 	<key>webaddress</key>
 	<string>https://1991421.cn</string>
 </dict>
