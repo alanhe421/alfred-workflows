@@ -13,7 +13,7 @@ function updateReadme(workflowFolder, plistObj, workflow) {
   try {
     let readmeContent = fs.readFileSync(readmeFile, 'utf8');
     let newContent = `${readme}\n\n
-![](https://img.shields.io/badge/version-v${version}-green?style=for-the-badge)]
+![](https://img.shields.io/badge/version-v${version}-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](./${filename})
 \n\n
 <!-- more -->`;
