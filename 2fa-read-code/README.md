@@ -9,7 +9,7 @@
 2. Alfred has permission to `Full Disk Access`
 
 
-![](https://img.shields.io/badge/version-v0.4-green?style=for-the-badge)]
+![](https://img.shields.io/badge/version-v0.4-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](./2FA-Read%20Code.alfredworkflow)
 
 

@@ -10,7 +10,7 @@
     - `App Name` get name of app
 
 
-![](https://img.shields.io/badge/version-v1.2.0-green?style=for-the-badge)]
+![](https://img.shields.io/badge/version-v1.2.0-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](./AppID.alfredworkflow)
 
 

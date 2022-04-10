@@ -6,7 +6,7 @@ First run this command on a terminal:
 2. npm install baidu-aip-sdk -g
 
 
-![](https://img.shields.io/badge/version-v1.1-green?style=for-the-badge)]
+![](https://img.shields.io/badge/version-v1.1-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](./OCR.alfredworkflow)
 
 

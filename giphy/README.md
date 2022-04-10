@@ -5,7 +5,7 @@ Easy to search gif and copy to anywhere.
 1. install node
 
 
-![](https://img.shields.io/badge/version-v1.2-green?style=for-the-badge)]
+![](https://img.shields.io/badge/version-v1.2-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](./Giphy.alfredworkflow)
 
 

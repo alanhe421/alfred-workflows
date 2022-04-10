@@ -3,7 +3,7 @@ Keywords are one of Alfred's most commonly used and most useful ways of launchin
 Type your keyword into Alfred, followed by your input text if needed, and you'll be on your way to boosting your productivity!
 
 
-![](https://img.shields.io/badge/version-v1.0-green?style=for-the-badge)]
+![](https://img.shields.io/badge/version-v1.0-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](./alfred-demo.alfredworkflow)
 
 

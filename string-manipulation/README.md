@@ -6,7 +6,7 @@ Case switching.
 4. URL Encode/Decode
 
 
-![](https://img.shields.io/badge/version-v0.6-green?style=for-the-badge)]
+![](https://img.shields.io/badge/version-v0.6-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](./String%20Manipulation.alfredworkflow)
 
 

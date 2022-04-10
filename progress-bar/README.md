@@ -5,7 +5,7 @@ Time lost can not be recalled.
 brew install node
 
 
-![](https://img.shields.io/badge/version-v1.1-green?style=for-the-badge)]
+![](https://img.shields.io/badge/version-v1.1-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](./ProgressBar.alfredworkflow)
 
 
