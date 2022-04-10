@@ -9,7 +9,8 @@
 brew install node
 
 
-[![](https://img.shields.io/badge/version-v0.2-green)](./Process.alfredworkflow)
+![](https://img.shields.io/badge/version-v0.2-green?style=for-the-badge)]
+[![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](./Process.alfredworkflow)
 
 
 

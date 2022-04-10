@@ -11,7 +11,8 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 nvm install 10
 
 
-[![](https://img.shields.io/badge/version-v1.0.1-green)](./Bluetooth%20Manager.alfredworkflow)
+![](https://img.shields.io/badge/version-v1.0.1-green?style=for-the-badge)]
+[![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](./Bluetooth%20Manager.alfredworkflow)
 
 
 

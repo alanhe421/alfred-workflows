@@ -22,5 +22,8 @@ const code4 = readCaptchaFromMessage(preProcessMessage('尊敬的用户，您可
 
 console.log(code4);
 
+const code5 = readCaptchaFromMessage('【BOSS直聘】登录验证码：780929，30分钟内有效。工作人员不会向您索要验证码，切勿将验证码提供给他人，谨防被骗。');
+console.log(code5);
+
 const subject = readSubjectFromMessage('【美团】8758（登录验证码，请完成验证），如非本人操作，请忽略本短信。');
 console.log(subject);

@@ -10,7 +10,8 @@
 - Node
 
 
-[![](https://img.shields.io/badge/version-v1.4-green)](./Medium%20Tools.alfredworkflow)
+![](https://img.shields.io/badge/version-v1.4-green?style=for-the-badge)]
+[![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](./Medium%20Tools.alfredworkflow)
 
 
 

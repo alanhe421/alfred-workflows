@@ -211,11 +211,11 @@
 	<string>&gt; Read authentication code in your recent messages
 
 1. Type `2fa` to trigger workflow
-2. Type`⌘ C` or ⏎ to copy captcha
+2. Type`⌘ C` or `⏎` to copy captcha
 
 ## requirement
 
-1. brew install node
+1. `brew install node`
 2. Alfred has permission to `Full Disk Access`</string>
 	<key>uidata</key>
 	<dict>
@@ -263,7 +263,7 @@
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>0.2</string>
+	<string>0.4</string>
 	<key>webaddress</key>
 	<string>https://1991421.cn</string>
 </dict>

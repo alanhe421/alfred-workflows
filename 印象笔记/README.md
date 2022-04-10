@@ -8,7 +8,8 @@ Code snippets from:
 http://dev.evernote.com/documentation/local/chapters/mac.php
 
 
-[![](https://img.shields.io/badge/version-v1.0.2-green)](./%E5%8D%B0%E8%B1%A1%E7%AC%94%E8%AE%B0.alfredworkflow)
+![](https://img.shields.io/badge/version-v1.0.2-green?style=for-the-badge)]
+[![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](./%E5%8D%B0%E8%B1%A1%E7%AC%94%E8%AE%B0.alfredworkflow)
 
 
 

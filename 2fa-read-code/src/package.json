@@ -9,7 +9,8 @@
   "license": "MIT",
   "description": "",
   "dependencies": {
-    "@stacker/alfred-utils": "^0.1.13",
+    "@stacker/alfred-utils": "^0.1.41",
+    "q": "^1.5.1",
     "sqlite3": "^5.0.2"
   }
 }

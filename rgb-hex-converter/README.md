@@ -11,7 +11,8 @@ $ yarn install canvas
 ```
 
 
-[![](https://img.shields.io/badge/version-v1.0-green)](./RGB-Hex%20converter.alfredworkflow)
+![](https://img.shields.io/badge/version-v1.0-green?style=for-the-badge)]
+[![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](./RGB-Hex%20converter.alfredworkflow)
 
 
 

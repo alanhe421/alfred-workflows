@@ -5,7 +5,8 @@ Hotkeys are stripped on import, to ensure that they don't clash with your existi
 A hotkey needs to contain a modifier (Cmd, Ctrl or Alt) and a keyboard character at least, but your best bet is to use slightly less common combinations (e.g. two modifiers) to avoid clashing with default OS X hotkeys or other apps on your Mac.
 
 
-[![](https://img.shields.io/badge/version-v1.0-green)](./Eudic%20Tools.alfredworkflow)
+![](https://img.shields.io/badge/version-v1.0-green?style=for-the-badge)]
+[![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](./Eudic%20Tools.alfredworkflow)
 
 
 

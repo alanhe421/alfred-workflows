@@ -1,3 +1,5 @@
+/// <reference path="./node_modules/@stacker/alfred-utils/dist/environment.d.ts" />
+
 /**
  * usage
  * /usr/local/bin/node ./index.js {query}
@@ -66,7 +68,7 @@ function preProcessMessage(msg) {
 function readCaptchaFromMessage(msg) {
   try {
     return msg.match(/\d{4,6}/)[0];
-  } catch {
+  } catch (e) {
     return null;
   }
 }

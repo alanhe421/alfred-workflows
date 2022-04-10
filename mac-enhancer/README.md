@@ -10,7 +10,8 @@ Mac enhancer
 7. toggle WiFi
 
 
-[![](https://img.shields.io/badge/version-v1.6-green)](./Mac%20Enhancer.alfredworkflow)
+![](https://img.shields.io/badge/version-v1.6-green?style=for-the-badge)]
+[![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](./Mac%20Enhancer.alfredworkflow)
 
 
 

@@ -3,7 +3,8 @@
 3. support domain check
 
 
-[![](https://img.shields.io/badge/version-v0.1-green)](./IP%20Tools.alfredworkflow)
+![](https://img.shields.io/badge/version-v0.1-green?style=for-the-badge)]
+[![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](./IP%20Tools.alfredworkflow)
 
 
 

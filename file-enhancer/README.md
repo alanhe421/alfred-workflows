@@ -1,7 +1,8 @@
 copy file name without suffix.
 
 
-[![](https://img.shields.io/badge/version-v1.0-green)](./File%20Enhancer.alfredworkflow)
+![](https://img.shields.io/badge/version-v1.0-green?style=for-the-badge)]
+[![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](./File%20Enhancer.alfredworkflow)
 
 
 

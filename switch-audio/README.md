@@ -9,7 +9,8 @@ Support Monterey 12.0.1
 If you need camera command, just brew install node
 
 
-[![](https://img.shields.io/badge/version-v2.2-green)](./Switch%20Audio.alfredworkflow)
+![](https://img.shields.io/badge/version-v2.2-green?style=for-the-badge)]
+[![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](./Switch%20Audio.alfredworkflow)
 
 
 

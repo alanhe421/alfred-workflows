@@ -12,7 +12,8 @@ select mobi file and trigger action
 - https://developers.convertio.co/api/docs/
 
 
-[![](https://img.shields.io/badge/version-v0.2-green)](./ConvertIO.alfredworkflow)
+![](https://img.shields.io/badge/version-v0.2-green?style=for-the-badge)]
+[![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](./ConvertIO.alfredworkflow)
 
 
 

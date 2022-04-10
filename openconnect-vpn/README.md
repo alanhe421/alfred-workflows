@@ -7,7 +7,8 @@ $ brew install openconnect
 ```
 
 
-[![](https://img.shields.io/badge/version-v1.1-green)](./OpenConnect%20VPN.alfredworkflow)
+![](https://img.shields.io/badge/version-v1.1-green?style=for-the-badge)]
+[![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](./OpenConnect%20VPN.alfredworkflow)
 
 
 
