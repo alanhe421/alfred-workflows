@@ -60,6 +60,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>2B1E266B-C3BB-43EE-8F5F-F5904E3BAC64</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>030D5547-83F6-4958-948F-5A2F42B97AD7</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>36FD5055-3E6E-462F-BCE9-9BC54ECB2722</key>
 		<array>
 			<dict>
@@ -226,6 +239,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>ADD185C1-067C-49C1-93AB-A4DBDE272058</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>030D5547-83F6-4958-948F-5A2F42B97AD7</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>AE3DDC48-5F22-4AE4-82AC-F118CCD0062D</key>
 		<array/>
 		<key>B9742278-AF74-4748-AABD-EE87E58E96F9</key>
@@ -293,6 +319,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>CFD18957-A854-493D-A07C-245E44451A33</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>ADD185C1-067C-49C1-93AB-A4DBDE272058</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>E995C538-B96F-4DAD-AB6B-EB71EB96F46A</key>
 		<array>
 			<dict>
@@ -311,6 +350,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>0573B8FD-6DED-44E8-ACA7-E5699F60142C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>F62FDCC5-4A71-49C5-962F-A027E4D2044F</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>2B1E266B-C3BB-43EE-8F5F-F5904E3BAC64</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -495,6 +547,50 @@
 				<key>acceptstext</key>
 				<true/>
 				<key>acceptsurls</key>
+				<true/>
+				<key>name</key>
+				<string>URL Encode</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.universalaction</string>
+			<key>uid</key>
+			<string>CFD18957-A854-493D-A07C-245E44451A33</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>100</integer>
+				<key>script</key>
+				<string>echo rawurlencode('{query}');</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>1</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>ADD185C1-067C-49C1-93AB-A4DBDE272058</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsfiles</key>
+				<false/>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>acceptstext</key>
+				<true/>
+				<key>acceptsurls</key>
 				<false/>
 				<key>name</key>
 				<string>screaming snake-case</string>
@@ -606,6 +702,50 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>acceptsfiles</key>
+				<false/>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>acceptstext</key>
+				<true/>
+				<key>acceptsurls</key>
+				<true/>
+				<key>name</key>
+				<string>URL Decode</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.universalaction</string>
+			<key>uid</key>
+			<string>F62FDCC5-4A71-49C5-962F-A027E4D2044F</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>100</integer>
+				<key>script</key>
+				<string>echo rawurldecode('{query}');</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>1</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>2B1E266B-C3BB-43EE-8F5F-F5904E3BAC64</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>type</key>
 				<integer>2</integer>
 			</dict>
@@ -649,7 +789,7 @@
 				<key>acceptstext</key>
 				<true/>
 				<key>acceptsurls</key>
-				<false/>
+				<true/>
 				<key>name</key>
 				<string>MD5</string>
 			</dict>
@@ -746,7 +886,7 @@
 				<key>acceptstext</key>
 				<true/>
 				<key>acceptsurls</key>
-				<false/>
+				<true/>
 				<key>name</key>
 				<string>Base64 Encode</string>
 			</dict>
@@ -888,7 +1028,7 @@ echo "$size"</string>
 				<key>acceptstext</key>
 				<true/>
 				<key>acceptsurls</key>
-				<false/>
+				<true/>
 				<key>name</key>
 				<string>Base64 Decode</string>
 			</dict>
@@ -905,7 +1045,8 @@ echo "$size"</string>
 
 1. Case switching
 2. MD5
-3. Base64</string>
+3. Base64
+4. URL Encode/Decode</string>
 	<key>uidata</key>
 	<dict>
 		<key>022858CA-3A3C-4C6B-B5F1-788AE01FABF6</key>
@@ -918,9 +1059,9 @@ echo "$size"</string>
 		<key>030D5547-83F6-4958-948F-5A2F42B97AD7</key>
 		<dict>
 			<key>xpos</key>
-			<integer>540</integer>
+			<integer>685</integer>
 			<key>ypos</key>
-			<integer>275</integer>
+			<integer>270</integer>
 		</dict>
 		<key>0573B8FD-6DED-44E8-ACA7-E5699F60142C</key>
 		<dict>
@@ -946,6 +1087,13 @@ echo "$size"</string>
 			<integer>700</integer>
 			<key>ypos</key>
 			<integer>1285</integer>
+		</dict>
+		<key>2B1E266B-C3BB-43EE-8F5F-F5904E3BAC64</key>
+		<dict>
+			<key>xpos</key>
+			<integer>1355</integer>
+			<key>ypos</key>
+			<integer>820</integer>
 		</dict>
 		<key>36FD5055-3E6E-462F-BCE9-9BC54ECB2722</key>
 		<dict>
@@ -1041,6 +1189,13 @@ echo "$size"</string>
 			<key>ypos</key>
 			<integer>880</integer>
 		</dict>
+		<key>ADD185C1-067C-49C1-93AB-A4DBDE272058</key>
+		<dict>
+			<key>xpos</key>
+			<integer>1380</integer>
+			<key>ypos</key>
+			<integer>530</integer>
+		</dict>
 		<key>AE3DDC48-5F22-4AE4-82AC-F118CCD0062D</key>
 		<dict>
 			<key>xpos</key>
@@ -1089,6 +1244,13 @@ echo "$size"</string>
 			<key>ypos</key>
 			<integer>345</integer>
 		</dict>
+		<key>CFD18957-A854-493D-A07C-245E44451A33</key>
+		<dict>
+			<key>xpos</key>
+			<integer>1185</integer>
+			<key>ypos</key>
+			<integer>520</integer>
+		</dict>
 		<key>E995C538-B96F-4DAD-AB6B-EB71EB96F46A</key>
 		<dict>
 			<key>note</key>
@@ -1104,6 +1266,13 @@ echo "$size"</string>
 			<integer>295</integer>
 			<key>ypos</key>
 			<integer>130</integer>
+		</dict>
+		<key>F62FDCC5-4A71-49C5-962F-A027E4D2044F</key>
+		<dict>
+			<key>xpos</key>
+			<integer>1180</integer>
+			<key>ypos</key>
+			<integer>810</integer>
 		</dict>
 		<key>FA8BC035-7744-4C13-91B1-90D088A2035F</key>
 		<dict>
@@ -1123,7 +1292,7 @@ echo "$size"</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>0.5</string>
+	<string>0.6</string>
 	<key>webaddress</key>
 	<string>https://1991421.cn</string>
 </dict>
