@@ -4,6 +4,10 @@ const path = require('path');
 const plist = require('plist');
 const querystring = require('querystring');
 
+/**
+ * github 缺省环境变量
+ * https://docs.github.com/en/enterprise-cloud@latest/actions/learn-github-actions/environment-variables#default-environment-variables
+ */
 function updateReadme(absoluteWorkflowFolder, folderName, plistObj, workflow) {
   const version = plistObj.version;
   const readme = plistObj.readme;
