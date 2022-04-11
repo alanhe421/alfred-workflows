@@ -6,7 +6,7 @@ A hotkey needs to contain a modifier (Cmd, Ctrl or Alt) and a keyboard character
 
 
 ![](https://img.shields.io/badge/version-v1.0-green?style=for-the-badge)
-[![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](./Eudic%20Tools.alfredworkflow)
+[![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/undefined/eudic-tools/Eudic%20Tools.alfredworkflow)
 
 
 

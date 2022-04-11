@@ -11,7 +11,7 @@
 
 
 ![](https://img.shields.io/badge/version-v1.2.0-green?style=for-the-badge)
-[![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](./AppID.alfredworkflow)
+[![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/undefined/appid/AppID.alfredworkflow)
 
 
 

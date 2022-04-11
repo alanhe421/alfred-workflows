@@ -7,7 +7,7 @@ First run this command on a terminal:
 
 
 ![](https://img.shields.io/badge/version-v1.1-green?style=for-the-badge)
-[![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](./OCR.alfredworkflow)
+[![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/undefined/ocr/OCR.alfredworkflow)
 
 
 

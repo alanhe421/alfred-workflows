@@ -12,7 +12,7 @@ if you need image-compress
 
 
 ![](https://img.shields.io/badge/version-v2.0-green?style=for-the-badge)
-[![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](./Compress.alfredworkflow)
+[![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/undefined/compress-gif/Compress.alfredworkflow)
 
 
 

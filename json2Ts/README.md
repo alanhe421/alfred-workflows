@@ -9,7 +9,7 @@ json text select and trigger json2ts universal action.
 
 
 ![](https://img.shields.io/badge/version-v1.2-green?style=for-the-badge)
-[![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](./Json2TS.alfredworkflow)
+[![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/undefined/json2Ts/Json2TS.alfredworkflow)
 
 
 

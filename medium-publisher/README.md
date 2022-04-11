@@ -11,7 +11,7 @@
 
 
 ![](https://img.shields.io/badge/version-v1.4-green?style=for-the-badge)
-[![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](./Medium%20Tools.alfredworkflow)
+[![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/undefined/medium-publisher/Medium%20Tools.alfredworkflow)
 
 
 

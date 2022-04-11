@@ -2,7 +2,7 @@ display history about my iPhones.
 
 
 ![](https://img.shields.io/badge/version-v0.1-green?style=for-the-badge)
-[![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](./My%20iPhones.alfredworkflow)
+[![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/undefined/my-iphones/My%20iPhones.alfredworkflow)
 
 
 

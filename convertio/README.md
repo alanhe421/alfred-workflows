@@ -13,7 +13,7 @@ select mobi file and trigger action
 
 
 ![](https://img.shields.io/badge/version-v0.2-green?style=for-the-badge)
-[![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](./ConvertIO.alfredworkflow)
+[![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/undefined/convertio/ConvertIO.alfredworkflow)
 
 
 

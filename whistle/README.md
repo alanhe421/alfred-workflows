@@ -20,7 +20,7 @@ npm install -g whistle
 
 
 ![](https://img.shields.io/badge/version-v2.3-green?style=for-the-badge)
-[![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](./Whistle.alfredworkflow)
+[![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/undefined/whistle/Whistle.alfredworkflow)
 
 
 
