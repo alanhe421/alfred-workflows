@@ -6,7 +6,7 @@ Easy to search gif and copy to anywhere.
 
 
 ![](https://img.shields.io/badge/version-v1.2-green?style=for-the-badge)
-[![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/undefined/giphy/Giphy.alfredworkflow)
+[![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/giphy/Giphy.alfredworkflow)
 
 
 

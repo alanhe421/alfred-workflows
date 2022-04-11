@@ -4,7 +4,7 @@ Type your keyword into Alfred, followed by your input text if needed, and you'll
 
 
 ![](https://img.shields.io/badge/version-v1.0-green?style=for-the-badge)
-[![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/undefined/release/alfred-demo.alfredworkflow)
+[![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/release/alfred-demo.alfredworkflow)
 
 
 

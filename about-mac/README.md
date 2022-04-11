@@ -2,7 +2,7 @@
 
 
 ![](https://img.shields.io/badge/version-v1.11-green?style=for-the-badge)
-[![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/undefined/about-mac/About%20Mac.alfredworkflow)
+[![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/about-mac/About%20Mac.alfredworkflow)
 
 
 
