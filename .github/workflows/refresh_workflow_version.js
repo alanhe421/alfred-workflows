@@ -4,17 +4,17 @@ const path = require('path');
 const plist = require('plist');
 const querystring = require('querystring');
 
-function updateReadme(workflowFolder, plistObj, workflow) {
+function updateReadme(absoluteWorkflowFolder, folderName, plistObj, workflow) {
   const version = plistObj.version;
   const readme = plistObj.readme;
-  const readmeFile = workflowFolder + '/README.md';
+  const readmeFile = absoluteWorkflowFolder + '/README.md';
   const filename = querystring.escape(path.basename(workflow));
 
   try {
     let readmeContent = fs.readFileSync(readmeFile, 'utf8');
     let newContent = `${readme}\n\n
 ![](https://img.shields.io/badge/version-v${version}-green?style=for-the-badge)
-[![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](./${filename})
+[![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/${process.env.GITHUB_REPOSITORY}/raw/${process.GITHUB_REF_NAME}/${folderName}/${filename})
 \n\n
 <!-- more -->`;
     // 有则更新，无则添加
@@ -54,13 +54,13 @@ function parseWorkflowInfo(workflowFolder, workflow) {
 function readAllWorkflows() {
   const targetFolder = path.resolve(__dirname, '../../');
   const folders = fs.readdirSync(targetFolder);
-  folders.forEach((folder) => {
-    const workflowFolder = targetFolder + '/' + folder;
+  folders.forEach((folderName) => {
+    const workflowFolder = targetFolder + '/' + folderName;
     const stat = fs.lstatSync(workflowFolder);
     if (stat.isFile()) {
       return;
     }
-    if (folder.match(/^\./)) {
+    if (folderName.match(/^\./)) {
       return;
     }
     const files = fs.readdirSync(workflowFolder);
@@ -70,7 +70,7 @@ function readAllWorkflows() {
     }
     try {
       const {plistObj} = parseWorkflowInfo(workflowFolder, workflow);
-      updateReadme(workflowFolder, plistObj, workflow);
+      updateReadme(workflowFolder, folderName, plistObj, workflow);
     } catch (e) {
       console.error(e);
     }
