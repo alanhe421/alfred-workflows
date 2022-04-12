@@ -18,3 +18,5 @@ I developed the following SDK to improve workflow development efficiency.
 ## Subscribe & Communication
 
 [![](https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@alanhg)
+
+![](./wechat.png)
