@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@stacker/alfred-utils": "^0.1.36"
+    "@stacker/alfred-utils": "^0.1.46"
   }
 }

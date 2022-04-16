@@ -1,19 +1,20 @@
 > Upload pictures with one click, support upload to imgur or vps
 
 
+## requirement
+
+brew install pngpaste
+
+
 ## VPS uploader setting
 
-1. ssh keygen
-    ```
+configure the alfred environment variable
 
-	$ ssh-keygen -t rsa -C "youremail"
+- user
+- password
+- destination
 
-	```
-2. copy public rsa to the target server
-	
-   copy to ~/.ssh/authorized_keys 
 
-3. configure the alfred environment variable
 
 ## Imgur Uploader setting
 1. https://api.imgur.com/oauth2/addclient
@@ -23,7 +24,7 @@
 https://apidocs.imgur.com/
 
 
-![](https://img.shields.io/badge/version-v2.0-green?style=for-the-badge)
+![](https://img.shields.io/badge/version-v2.1-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/pic-uploader/Pic%20Uploader.alfredworkflow)
 
 

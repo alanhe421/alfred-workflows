@@ -1,3 +1,5 @@
+/// <reference path="./node_modules/@stacker/alfred-utils/dist/environment.d.ts" />
+
 /**
  * usage
  * /usr/local/bin/node ./upload-imgur.js {query}
@@ -23,7 +25,7 @@ const instance = http.createHttpClient();
     const res = await instance.post(
       'https://api.imgur.com/3/image',
       {
-        image: readFileSync(`${__dirname}/temp/${input}`, {
+        image: readFileSync(`${process.env.alfred_workflow_cache}/${input}`, {
           encoding: 'base64'
         }),
         type: 'base64'
