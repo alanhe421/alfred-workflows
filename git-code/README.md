@@ -12,7 +12,7 @@
 整体设计，⏎均是浏览器打开对应URL，⌥为进一步操作。
 
 
-![](https://img.shields.io/badge/version-v0.9-green?style=for-the-badge)
+![](https://img.shields.io/badge/version-v1.0-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/git-code/Git%20Code.alfredworkflow)
 
 

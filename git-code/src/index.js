@@ -68,7 +68,8 @@ async function searchProjects(token, baseUrl, score) {
         item: utils.buildItem({
           uid: item.name_with_namespace,
           title: item.name_with_namespace,
-          subtitle: item.description,
+          subtitle:
+            (item.archived ? '🔒Archived project , ' : '') + item.description,
           arg: item.web_url,
           autocomplete: item.name_with_namespace,
           mods: {
