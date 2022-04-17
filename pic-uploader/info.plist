@@ -342,7 +342,7 @@
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
-				<integer>102</integer>
+				<integer>1</integer>
 				<key>script</key>
 				<string>[[ -d "${alfred_workflow_cache}" ]] || mkdir "${alfred_workflow_cache}"
 
@@ -354,7 +354,7 @@ extension="${query##*.}"
 
 filename="$d.$extension"
 
-cp "$query" $alfred_workflow_cache/$filename
+cp "$query" "$alfred_workflow_cache/$filename"
 
 echo -n $filename</string>
 				<key>scriptargtype</key>
@@ -655,7 +655,7 @@ echo -n $filename</string>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
-				<integer>102</integer>
+				<integer>1</integer>
 				<key>script</key>
 				<string>rm -rf $alfred_workflow_cache/*</string>
 				<key>scriptargtype</key>
@@ -942,7 +942,7 @@ https://apidocs.imgur.com/</string>
 		<string>imgur_refresh_token</string>
 	</array>
 	<key>version</key>
-	<string>2.1</string>
+	<string>2.2</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/pic-uploader</string>
 </dict>
