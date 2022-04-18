@@ -751,7 +751,10 @@ configure the alfred environment variable
 - user
 - password
 - destination
+ 
+### connection test
 
+`ssh -p 22 ${process.env.vps_user}@${process.env.vps_server}`
 
 
 ## Imgur Uploader setting
@@ -916,6 +919,8 @@ https://apidocs.imgur.com/</string>
 	</dict>
 	<key>variables</key>
 	<dict>
+		<key>destination</key>
+		<string>/var/www/blog/static-assets</string>
 		<key>imgur_client_id</key>
 		<string></string>
 		<key>imgur_client_secret</key>
@@ -942,7 +947,7 @@ https://apidocs.imgur.com/</string>
 		<string>imgur_refresh_token</string>
 	</array>
 	<key>version</key>
-	<string>2.2</string>
+	<string>2.3</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/pic-uploader</string>
 </dict>

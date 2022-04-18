@@ -13,7 +13,10 @@ configure the alfred environment variable
 - user
 - password
 - destination
+ 
+### connection test
 
+`ssh -p 22 ${process.env.vps_user}@${process.env.vps_server}`
 
 
 ## Imgur Uploader setting
@@ -24,7 +27,7 @@ configure the alfred environment variable
 https://apidocs.imgur.com/
 
 
-![](https://img.shields.io/badge/version-v2.2-green?style=for-the-badge)
+![](https://img.shields.io/badge/version-v2.3-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/pic-uploader/Pic%20Uploader.alfredworkflow)
 
 
