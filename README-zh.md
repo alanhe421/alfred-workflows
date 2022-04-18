@@ -49,9 +49,8 @@
 
 ## 交流
 
-热爱*Alfred*的人，欢迎关注公微，不定期分享技巧
+欢迎到 ➡️ [Discussion](https://github.com/alanhg/alfred-workflows/discussions)交流
 
-![](./wechat.png)
 
 ## 支持
 
