@@ -65,6 +65,25 @@ async function searchMergeRequests(token, baseUrl, projectId, projectName) {
         arg: `${baseUrl}/${projectName}/merge_requests/${item.iid}`
       })
     );
+
+    const allMRLinks = res.data
+      .map(
+        (item) =>
+          `- ${item.title}\n  ${baseUrl}/${projectName}/merge_requests/${item.iid}`
+      )
+      .join('\n');
+    items.unshift(
+      utils.buildItem({
+        title: 'Copy All MRs',
+        subtitle: `⌘+c copy to clipboard`,
+        autocomplete: 'Copy All MRs',
+        text: {
+          largetype: allMRLinks,
+          copy: allMRLinks
+        },
+        arg: `${baseUrl}/${projectName}/merge_requests/`
+      })
+    );
     return items;
   } catch (e) {
     return [
