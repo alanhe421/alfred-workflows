@@ -29,6 +29,6 @@ jobs:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
           message: |
-            Someone stars *${{env.REPO_NAME}}* repository, see here(https://github.com/${{github.repository}}).
+            [${{github.event.sender.login}}](${{github.event.sender.html_url}}) stars *${{env.REPO_NAME}}* repository, see here(https://github.com/${{github.repository}}).
             There are currently ${{steps.repo-stars.outputs.stars}}⭐, come on!
           format: markdown
