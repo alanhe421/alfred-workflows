@@ -13,7 +13,7 @@ const {
 const [, , URL, ROOT_PATH, query] = process.argv;
 const instance = http.createHttpClient(URL);
 const fs = require('fs');
-
+const querystring = require('querystring');
 const settingItem = buildItem({
   title: 'Settings',
   subtitle: 'Custom Setting',
@@ -62,7 +62,10 @@ async function main() {
             path: 'rules'
           }
         })
-      )
+      ),
+      variables: {
+        keyword: query
+      }
     });
   } catch (e) {
     printScriptFilter({
@@ -88,7 +91,7 @@ function createFilterItems(data) {
 }
 
 function formatItem(item) {
-  const filename = `${ROOT_PATH}/${item.name}.txt`;
+  const filename = `${ROOT_PATH}/${querystring.escape(item.name)}.txt`;
   if (fs.existsSync(filename)) {
     fs.unlinkSync(filename);
   }
@@ -100,10 +103,7 @@ function formatItem(item) {
   return buildItem({
     title: item.name,
     subtitle: item.selected ? 'selected' : '',
-    arg: joinMultiArg(item.name,
-      item.data,
-      !item.selected
-    ),
+    arg: joinMultiArg(item.name, item.data, !item.selected),
     text: {
       copy: item.data,
       largetype: item.data

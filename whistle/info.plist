@@ -8,6 +8,19 @@
 	<string>Self-Dev</string>
 	<key>connections</key>
 	<dict>
+		<key>30D803D0-E21E-46BC-A8DA-347C1CC19AEB</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>795632DF-8E0D-46A1-8D7A-04E7327568F2</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>3663A43F-E7D9-407D-950D-9DB3D22228B4</key>
 		<array>
 			<dict>
@@ -52,6 +65,16 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>3663A43F-E7D9-407D-950D-9DB3D22228B4</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>30D803D0-E21E-46BC-A8DA-347C1CC19AEB</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -158,6 +181,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>E2BDBB31-7558-4AC8-8099-698959B5E2F4</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>BD42B648-2B65-477E-929E-CC00905A458A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 	</dict>
 	<key>createdby</key>
 	<string>Alan He</string>
@@ -228,6 +264,19 @@
 			<string>alfred.workflow.action.terminalcommand</string>
 			<key>uid</key>
 			<string>C77FA813-2DA6-4948-869A-B9C4E57C0295</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>triggerid</key>
+				<string>w2</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.external</string>
+			<key>uid</key>
+			<string>E2BDBB31-7558-4AC8-8099-698959B5E2F4</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -458,6 +507,23 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argument</key>
+				<string>{var:keyword}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>30D803D0-E21E-46BC-A8DA-347C1CC19AEB</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>matchmode</key>
 				<integer>0</integer>
 				<key>matchstring</key>
@@ -491,6 +557,25 @@
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>externaltriggerid</key>
+				<string>w2</string>
+				<key>passinputasargument</key>
+				<true/>
+				<key>passvariables</key>
+				<true/>
+				<key>workflowbundleid</key>
+				<string>self</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.callexternaltrigger</string>
+			<key>uid</key>
+			<string>795632DF-8E0D-46A1-8D7A-04E7327568F2</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>&gt; 快速切换选择代理Rules
@@ -514,6 +599,13 @@ type `w2` to trigger
 npm install -g whistle</string>
 	<key>uidata</key>
 	<dict>
+		<key>30D803D0-E21E-46BC-A8DA-347C1CC19AEB</key>
+		<dict>
+			<key>xpos</key>
+			<integer>630</integer>
+			<key>ypos</key>
+			<integer>445</integer>
+		</dict>
 		<key>3663A43F-E7D9-407D-950D-9DB3D22228B4</key>
 		<dict>
 			<key>xpos</key>
@@ -524,9 +616,9 @@ npm install -g whistle</string>
 		<key>36C4E69C-D047-4166-AAF9-4E2FAD70D0EC</key>
 		<dict>
 			<key>xpos</key>
-			<integer>275</integer>
+			<integer>295</integer>
 			<key>ypos</key>
-			<integer>495</integer>
+			<integer>505</integer>
 		</dict>
 		<key>423180BB-76D0-424B-A500-A7CB720B9B5A</key>
 		<dict>
@@ -536,6 +628,13 @@ npm install -g whistle</string>
 			<integer>705</integer>
 			<key>ypos</key>
 			<integer>170</integer>
+		</dict>
+		<key>795632DF-8E0D-46A1-8D7A-04E7327568F2</key>
+		<dict>
+			<key>xpos</key>
+			<integer>755</integer>
+			<key>ypos</key>
+			<integer>520</integer>
 		</dict>
 		<key>7B24A41C-933C-4C90-A34B-D03DCE0DA75E</key>
 		<dict>
@@ -583,9 +682,9 @@ npm install -g whistle</string>
 			<key>note</key>
 			<string>list rules</string>
 			<key>xpos</key>
-			<integer>40</integer>
+			<integer>50</integer>
 			<key>ypos</key>
-			<integer>185</integer>
+			<integer>310</integer>
 		</dict>
 		<key>C25F40C1-2C15-4BCF-8F80-3C2BBC70CA9A</key>
 		<dict>
@@ -601,12 +700,19 @@ npm install -g whistle</string>
 			<key>ypos</key>
 			<integer>15</integer>
 		</dict>
+		<key>E2BDBB31-7558-4AC8-8099-698959B5E2F4</key>
+		<dict>
+			<key>xpos</key>
+			<integer>35</integer>
+			<key>ypos</key>
+			<integer>30</integer>
+		</dict>
 		<key>FDB82DA2-C61F-4C9D-AD52-D69759532762</key>
 		<dict>
 			<key>note</key>
 			<string>open rules url</string>
 			<key>xpos</key>
-			<integer>425</integer>
+			<integer>490</integer>
 			<key>ypos</key>
 			<integer>510</integer>
 		</dict>
@@ -614,12 +720,12 @@ npm install -g whistle</string>
 	<key>variables</key>
 	<dict>
 		<key>URL</key>
-		<string>http://127.0.0.1:8899/</string>
+		<string>http://127.0.0.1:8899</string>
 	</dict>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>2.3</string>
+	<string>2.4</string>
 	<key>webaddress</key>
 	<string>https://1991421.cn</string>
 </dict>
