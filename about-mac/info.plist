@@ -115,7 +115,10 @@ end tell</string>
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>&gt; Displays system information about your Mac</string>
+	<string>&gt; Displays system information about your Mac
+
+1. ⏎ to copy info
+2. large type support</string>
 	<key>uidata</key>
 	<dict>
 		<key>2353E6A3-0536-4ADA-8936-B2AEC1E72656</key>
@@ -136,7 +139,7 @@ end tell</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.11</string>
+	<string>1.2</string>
 	<key>webaddress</key>
 	<string>https://1991421.cn</string>
 </dict>
