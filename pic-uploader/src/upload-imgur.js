@@ -37,7 +37,7 @@ const instance = http.createHttpClient();
       }
     );
     if (res.data.success) {
-      console.log(`![${res.data.data.link}](${res.data.data.link})`);
+      console.log(res.data.data.link);
       return;
     } else {
       process.stdout.write('1');

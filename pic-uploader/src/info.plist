@@ -151,6 +151,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>9414D13B-3E06-43F2-8A37-A083F4F1CC9A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>BE3C48D7-BC03-406A-ADA3-9C484051F827</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>A1EBEA64-04EB-43F2-9032-729E3CF18086</key>
 		<array>
 			<dict>
@@ -215,6 +228,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>EB85B9D4-A469-4441-9728-7D634A5415EB</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>9414D13B-3E06-43F2-8A37-A083F4F1CC9A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>F4B7CED6-DF9C-4269-B412-93E048D0AE4E</key>
 		<array>
 			<dict>
@@ -231,7 +257,7 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
-				<string>BE3C48D7-BC03-406A-ADA3-9C484051F827</string>
+				<string>09B418AB-E36C-4E1F-A8E0-141E63DEF116</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -261,27 +287,6 @@
 	<string>Pic Uploader</string>
 	<key>objects</key>
 	<array>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<true/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>{query}</string>
-				<key>title</key>
-				<string>Uploaded</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>D06D3C5F-4081-47FD-BA59-59EDAC4441C7</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -374,20 +379,21 @@ echo -n $filename</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argument</key>
-				<string></string>
-				<key>passthroughargument</key>
+				<key>lastpathcomponent</key>
 				<false/>
-				<key>variables</key>
-				<dict>
-					<key>selection</key>
-					<string>{query}</string>
-				</dict>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>Uploaded</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
+			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
-			<string>80B2D97D-A7D6-4A86-8245-4B3A5CD4FD68</string>
+			<string>D06D3C5F-4081-47FD-BA59-59EDAC4441C7</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -409,6 +415,26 @@ echo -n $filename</string>
 			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
 			<string>E58A61CC-C85B-499A-9040-E5F9AEE54595</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>selection</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>80B2D97D-A7D6-4A86-8245-4B3A5CD4FD68</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -465,21 +491,32 @@ echo -n $filename</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>autopaste</key>
-				<false/>
-				<key>clipboardtext</key>
-				<string>{query}</string>
-				<key>ignoredynamicplaceholders</key>
-				<false/>
-				<key>transient</key>
-				<false/>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>4</integer>
+						<key>matchstring</key>
+						<string>\.</string>
+						<key>outputlabel</key>
+						<string></string>
+						<key>uid</key>
+						<string>02019F76-5359-48A2-A207-EED16BD84A24</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
+			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
-			<string>BE3C48D7-BC03-406A-ADA3-9C484051F827</string>
+			<string>A37E6EF4-A477-441C-B264-ACFC58B138E0</string>
 			<key>version</key>
-			<integer>3</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -528,36 +565,6 @@ echo -n $filename</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>conditions</key>
-				<array>
-					<dict>
-						<key>inputstring</key>
-						<string></string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>4</integer>
-						<key>matchstring</key>
-						<string>\.</string>
-						<key>outputlabel</key>
-						<string></string>
-						<key>uid</key>
-						<string>02019F76-5359-48A2-A207-EED16BD84A24</string>
-					</dict>
-				</array>
-				<key>elselabel</key>
-				<string>else</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.conditional</string>
-			<key>uid</key>
-			<string>A37E6EF4-A477-441C-B264-ACFC58B138E0</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
@@ -593,6 +600,23 @@ echo -n $filename</string>
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
 			<string>3053246A-6E9D-432D-A8D0-DBFE6AE8C6AE</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>jumpto</key>
+				<string>_popUpItemAction:</string>
+				<key>path</key>
+				<string></string>
+				<key>type</key>
+				<integer>2</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.actioninalfred</string>
+			<key>uid</key>
+			<string>09B418AB-E36C-4E1F-A8E0-141E63DEF116</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -646,29 +670,6 @@ echo -n $filename</string>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
 			<string>79B164F8-2392-47A5-B385-0D95F8ED0553</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>1</integer>
-				<key>script</key>
-				<string>rm -rf $alfred_workflow_cache/*</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>45FC7350-63E1-4798-B707-C7E137370471</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -734,6 +735,94 @@ echo -n $filename</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>1</integer>
+				<key>script</key>
+				<string>rm -rf $alfred_workflow_cache/*</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>45FC7350-63E1-4798-B707-C7E137370471</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>BE3C48D7-BC03-406A-ADA3-9C484051F827</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsfiles</key>
+				<false/>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>acceptstext</key>
+				<true/>
+				<key>acceptsurls</key>
+				<true/>
+				<key>name</key>
+				<string>Markdown Image Link</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.universalaction</string>
+			<key>uid</key>
+			<string>EB85B9D4-A469-4441-9728-7D634A5415EB</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>query={query}
+
+echo "![$query]($query)"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>9414D13B-3E06-43F2-8A37-A083F4F1CC9A</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>&gt; Upload pictures with one click, support upload to imgur or vps
@@ -772,6 +861,13 @@ https://apidocs.imgur.com/</string>
 			<key>ypos</key>
 			<integer>425</integer>
 		</dict>
+		<key>09B418AB-E36C-4E1F-A8E0-141E63DEF116</key>
+		<dict>
+			<key>xpos</key>
+			<integer>1170</integer>
+			<key>ypos</key>
+			<integer>535</integer>
+		</dict>
 		<key>141F8961-7B89-4BC5-9746-E8D86A3850A8</key>
 		<dict>
 			<key>note</key>
@@ -793,9 +889,9 @@ https://apidocs.imgur.com/</string>
 			<key>note</key>
 			<string>delete temp pics</string>
 			<key>xpos</key>
-			<integer>1135</integer>
+			<integer>1175</integer>
 			<key>ypos</key>
-			<integer>650</integer>
+			<integer>695</integer>
 		</dict>
 		<key>4971FE38-3798-4A8B-B69D-1990D65C4816</key>
 		<dict>
@@ -861,6 +957,13 @@ https://apidocs.imgur.com/</string>
 			<key>ypos</key>
 			<integer>440</integer>
 		</dict>
+		<key>9414D13B-3E06-43F2-8A37-A083F4F1CC9A</key>
+		<dict>
+			<key>xpos</key>
+			<integer>875</integer>
+			<key>ypos</key>
+			<integer>900</integer>
+		</dict>
 		<key>A1EBEA64-04EB-43F2-9032-729E3CF18086</key>
 		<dict>
 			<key>note</key>
@@ -887,18 +990,18 @@ https://apidocs.imgur.com/</string>
 		<key>BE3C48D7-BC03-406A-ADA3-9C484051F827</key>
 		<dict>
 			<key>xpos</key>
-			<integer>1170</integer>
+			<integer>1180</integer>
 			<key>ypos</key>
-			<integer>415</integer>
+			<integer>890</integer>
 		</dict>
 		<key>D06D3C5F-4081-47FD-BA59-59EDAC4441C7</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>1195</integer>
+			<integer>1600</integer>
 			<key>ypos</key>
-			<integer>50</integer>
+			<integer>230</integer>
 		</dict>
 		<key>E58A61CC-C85B-499A-9040-E5F9AEE54595</key>
 		<dict>
@@ -908,6 +1011,15 @@ https://apidocs.imgur.com/</string>
 			<integer>1095</integer>
 			<key>ypos</key>
 			<integer>245</integer>
+		</dict>
+		<key>EB85B9D4-A469-4441-9728-7D634A5415EB</key>
+		<dict>
+			<key>note</key>
+			<string>![]()</string>
+			<key>xpos</key>
+			<integer>610</integer>
+			<key>ypos</key>
+			<integer>900</integer>
 		</dict>
 		<key>F4B7CED6-DF9C-4269-B412-93E048D0AE4E</key>
 		<dict>
@@ -920,7 +1032,7 @@ https://apidocs.imgur.com/</string>
 	<key>variables</key>
 	<dict>
 		<key>destination</key>
-		<string>/var/www/blog/static-assets</string>
+		<string></string>
 		<key>imgur_client_id</key>
 		<string></string>
 		<key>imgur_client_secret</key>
@@ -939,15 +1051,16 @@ https://apidocs.imgur.com/</string>
 	<key>variablesdontexport</key>
 	<array>
 		<string>imgur_client_id</string>
+		<string>destination</string>
 		<string>vps_destination</string>
-		<string>vps_user</string>
 		<string>vps_url</string>
+		<string>vps_user</string>
 		<string>vps_server</string>
 		<string>imgur_client_secret</string>
 		<string>imgur_refresh_token</string>
 	</array>
 	<key>version</key>
-	<string>2.3</string>
+	<string>2.4</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/pic-uploader</string>
 </dict>

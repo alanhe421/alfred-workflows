@@ -21,7 +21,7 @@ const { execSync } = require('child_process');
         process.env.vps_destination
       }/${year}/`
     );
-    console.log(`![](${process.env.vps_url}/${year}/${query})`);
+    console.log(`${process.env.vps_url}/${year}/${query}`);
   } catch (e) {
     console.log(e);
     console.log(1);
