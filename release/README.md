@@ -9,4 +9,3 @@ Type your keyword into Alfred, followed by your input text if needed, and you'll
 
 
 <!-- more -->
-[![](https://img.shields.io/badge/version-v1.0-green)](./alfred-demo.alfredworkflow)

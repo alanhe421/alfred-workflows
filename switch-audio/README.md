@@ -17,8 +17,6 @@ If you need camera command, just brew install node
 <!-- more -->
 > easy to switch audio(speaker and mic)
 
-[![](https://img.shields.io/badge/version-v2.2-green)](./Switch%20Audio.alfredworkflow)
-
 
 just input `sound` or `voice`
 
