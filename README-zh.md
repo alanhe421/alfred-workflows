@@ -1,18 +1,19 @@
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**
-
-- [alfred-workflows](#alfred-workflows)
-  - [Workflow集](#workflow%E9%9B%86)
-  - [Alfred常见问题](#alfred%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98)
-  - [交流](#%E4%BA%A4%E6%B5%81)
-  - [支持](#%E6%94%AF%E6%8C%81)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
 # alfred-workflows
 
 > 劳动重复即是体力活，so需要以工具来做自动化处理，节约生命。
+
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- param::TOC_TITLE::**目录**:: -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**
+
+- [Workflows](#workflows)
+- [Dependency](#dependency)
+- [Sponsor](#sponsor)
+- [Subscribe & Communication](#subscribe--communication)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Workflow集
 
