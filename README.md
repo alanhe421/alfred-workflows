@@ -35,15 +35,14 @@
 26. [Pic Uploader](https://github.com/alanhg/alfred-workflows/tree/master/pic-uploader)
 27. [Process](https://github.com/alanhg/alfred-workflows/tree/master/process)
 28. [ProgressBar](https://github.com/alanhg/alfred-workflows/tree/master/progress-bar)
-29. [alfred-demo](https://github.com/alanhg/alfred-workflows/tree/master/release)
-30. [RGB-Hex converter](https://github.com/alanhg/alfred-workflows/tree/master/rgb-hex-converter)
-31. [String Manipulation](https://github.com/alanhg/alfred-workflows/tree/master/string-manipulation)
-32. [Surge](https://github.com/alanhg/alfred-workflows/tree/master/surge)
-33. [Switch Audio](https://github.com/alanhg/alfred-workflows/tree/master/switch-audio)
-34. [Translate](https://github.com/alanhg/alfred-workflows/tree/master/translate)
-35. [Type Search](https://github.com/alanhg/alfred-workflows/tree/master/type-search)
-36. [Whistle](https://github.com/alanhg/alfred-workflows/tree/master/whistle)
-37. [印象笔记](https://github.com/alanhg/alfred-workflows/tree/master/印象笔记)<!--workflow-end-->
+29. [RGB-Hex converter](https://github.com/alanhg/alfred-workflows/tree/master/rgb-hex-converter)
+30. [String Manipulation](https://github.com/alanhg/alfred-workflows/tree/master/string-manipulation)
+31. [Surge](https://github.com/alanhg/alfred-workflows/tree/master/surge)
+32. [Switch Audio](https://github.com/alanhg/alfred-workflows/tree/master/switch-audio)
+33. [Translate](https://github.com/alanhg/alfred-workflows/tree/master/translate)
+34. [Type Search](https://github.com/alanhg/alfred-workflows/tree/master/type-search)
+35. [Whistle](https://github.com/alanhg/alfred-workflows/tree/master/whistle)
+36. [印象笔记](https://github.com/alanhg/alfred-workflows/tree/master/印象笔记)<!--workflow-end-->
 
 ## Dependency
 
