@@ -30,6 +30,10 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: GitHub README Generator
         uses: th3c0d3br34ker/github-readme-info@1.0.2
+        with:
+          GH_TOKEN: ${{ github.token }}
+          TIMEZONE: "Asia/Shanghai"
+          SHOW_TOTAL_CONTRIBUTIONS: "True"
       - run: npm install plist
       - name: Refresh Workflow Version
         run:  node .github/workflows/refresh_readme.js
