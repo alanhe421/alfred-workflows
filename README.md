@@ -5,8 +5,16 @@
 > Labor duplication is physical work, so need to use tools to do automated treatment, saving lives.
 
 
-<!-- START doctoc -->
-<!-- END doctoc -->
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**
+
+- [Workflows](#workflows)
+- [Dependency](#dependency)
+- [Sponsor](#sponsor)
+- [Subscribe & Communication](#subscribe--communication)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 ## Workflows
 
 <!--workflow-start-->
