@@ -30,7 +30,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - run: npm install plist
       - name: Refresh Workflow Version
-        run:  node .github/workflows/refresh_workflow_version.js
+        run:  node .github/workflows/refresh_readme.js
       - name: Build
         run: |
           git config --global user.email "alan@1991421.cn"
