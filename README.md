@@ -1,3 +1,15 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**
+
+- [alfred-workflows](#alfred-workflows)
+  - [Workflows](#workflows)
+  - [Dependency](#dependency)
+  - [Sponsor](#sponsor)
+  - [Subscribe & Communication](#subscribe--communication)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # alfred-workflows
 
 [![alanhg](https://jaywcjlove.github.io/sb/lang/chinese.svg)](README-zh.md)
