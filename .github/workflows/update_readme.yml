@@ -28,6 +28,8 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
+      - name: GitHub README Generator
+        uses: th3c0d3br34ker/github-readme-info@1.0.2
       - run: npm install plist
       - name: Refresh Workflow Version
         run:  node .github/workflows/refresh_readme.js

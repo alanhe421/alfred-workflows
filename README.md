@@ -4,6 +4,9 @@
 
 > Labor duplication is physical work, so need to use tools to do automated treatment, saving lives.
 
+
+<!--START_SECTION:readme-info-->
+
 ## Workflows
 
 <!--workflow-start-->
@@ -60,3 +63,5 @@ I developed the following SDK to improve workflow development efficiency.
 Welcome to ➡️ [Discussion](https://github.com/alanhg/alfred-workflows/discussions)
 
 [![](https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@alanhg)
+
+<!--END_SECTION:readme-info-->
