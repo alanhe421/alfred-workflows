@@ -1,15 +1,3 @@
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**
-
-- [alfred-workflows](#alfred-workflows)
-  - [Workflows](#workflows)
-  - [Dependency](#dependency)
-  - [Sponsor](#sponsor)
-  - [Subscribe & Communication](#subscribe--communication)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
 # alfred-workflows
 
 [![alanhg](https://jaywcjlove.github.io/sb/lang/chinese.svg)](README-zh.md)
@@ -17,7 +5,7 @@
 > Labor duplication is physical work, so need to use tools to do automated treatment, saving lives.
 
 
-<!--START_SECTION:readme-info-->
+<!-- START doctoc -->
 
 ## Workflows
 
@@ -76,4 +64,4 @@ Welcome to ➡️ [Discussion](https://github.com/alanhg/alfred-workflows/discus
 
 [![](https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@alanhg)
 
-<!--END_SECTION:readme-info-->
+<!-- END doctoc -->
