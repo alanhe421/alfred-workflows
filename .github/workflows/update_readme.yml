@@ -28,12 +28,14 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
-      - name: GitHub README Generator
-        uses: th3c0d3br34ker/github-readme-info@1.0.2
-        with:
-          GH_TOKEN: ${{ github.token }}
-          TIMEZONE: "Asia/Shanghai"
-          SHOW_TOTAL_CONTRIBUTIONS: "True"
+      - name: TOC Generator
+        uses: technote-space/toc-generator@v4
+#      - name: GitHub README Generator
+#        uses: th3c0d3br34ker/github-readme-info@1.0.2
+#        with:
+#          GH_TOKEN: ${{ github.token }}
+#          TIMEZONE: "Asia/Shanghai"
+#          SHOW_TOTAL_CONTRIBUTIONS: "True"
       - run: npm install plist
       - name: Refresh Workflow Version
         run:  node .github/workflows/refresh_readme.js
