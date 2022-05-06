@@ -6,7 +6,7 @@
 
 
 <!-- START doctoc -->
-
+<!-- END doctoc -->
 ## Workflows
 
 <!--workflow-start-->
@@ -64,4 +64,4 @@ Welcome to ➡️ [Discussion](https://github.com/alanhg/alfred-workflows/discus
 
 [![](https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@alanhg)
 
-<!-- END doctoc -->
+
