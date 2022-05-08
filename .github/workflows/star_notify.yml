@@ -5,12 +5,11 @@ name: Repo Star Notify
 # Controls when the action will run.
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
-  watch:
-    action: started
+  schedule:
+    - cron:  '0 0 8 ? * L' # 每周星期天8点实行一次
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 env:
-  REPO_NAME: ${{ github.event.repository.name }}
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
@@ -29,6 +28,6 @@ jobs:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
           message: |
-            [${{github.event.sender.login}}](${{github.event.sender.html_url}}) stars *${{env.REPO_NAME}}* repository, see here(https://github.com/${{github.repository}}).
+            About repository [${{ github.event.repository.name }}](https://github.com/${{ github.repository }}).
             There are currently ${{steps.repo-stars.outputs.stars}}⭐, come on!
           format: markdown
