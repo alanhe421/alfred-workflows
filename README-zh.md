@@ -73,7 +73,7 @@
 - 你的支持也是一种动力。
 
 - Star /[Paypal](https://www.paypal.com/paypalme/alanhe421)
-  / [微信打赏](./award.jpg)
+  / [微信打赏](./wechat-award.jpg)
 
 ## 订阅&交流
 
