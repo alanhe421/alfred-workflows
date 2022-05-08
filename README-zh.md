@@ -18,43 +18,42 @@
 ## Workflow集
 
 <!--workflow-start-->
-1. eudic-tools 一键查词，一键发音
-2. pic-uploader 一键上传图片到个人图床/Imgur
-3. git 循环拉取项目
-4. 快速连接和断开蓝牙设备
-5. 文本识别OCR
-6. 百度翻译
-7. 印象笔记一键检索
-8. new-file 一键创建文件【JS，CSS，HTML】，并用VSC打开
-9. mac-enhancer - Mac一些增强操作，比如一键开关trackpad/静音，热键结束录屏等
-10. rgb-hex-converter - 快速转换RGB，Hex颜色值
-11. airdrop - 一键唤起Airdrop，发送选中文件或链接到目标设备
-12. appid - 快速获取App Bundle ID
-13. apple script - 批量替换scpt文件b内容
-14. Surge - 快速操作Surge
-15. Medium Tools - 一键发布hexo-MD文档到Medium
-16. Switch Audio - 一键切换Mac上声音输入输出设备
-17. File Enhancer - 一键Copy文件名称`无后缀`
-18. Giphy - 表情包检索
-19. Paste into files - 剪贴板内容存储为文件，比如图片
-20. About Mac - 显示Mac基本信息
-21. Progress bar - 显示时间进度
-22. Do not disturb - 一键开关勿扰模式
-23. Compress - 一键GIF/WebP, JPEG and PNG压缩
-24. Batch import workflows - 一键导入多个workflow
-25. My iPhones - 展示个人iPhone购买历史
-26. Whistle - Rules快速切换选择
-27. Json2Ts - JSON生成TS接口定义
-28. Mount Volume - 快速挂载网络硬盘，支持SMB，FTP等
-29. String Manipulation - 文本格式切换
-30. Type Search - 类型搜索gp
-31. IP Tools - 判断给定IP是不是CN的，查询本地内网/外网IP
-32. Git Code - 腾讯工蜂
-33. Process - 进程/端口管理
-34. convertio - mobi/epub电子书转换工具
-35. OpenConnect VPN - 一键VPN 
-36. 2FA-Read Code - 短信验证码读取工具
-<!--workflow-end-->
+1. [2FA-Read Code](https://github.com/alanhg/alfred-workflows/tree/master/2fa-read-code)
+2. [About Mac](https://github.com/alanhg/alfred-workflows/tree/master/about-mac)
+3. [Airdrop](https://github.com/alanhg/alfred-workflows/tree/master/airdrop)
+4. [AppID](https://github.com/alanhg/alfred-workflows/tree/master/appid)
+5. [AppleScript Tools](https://github.com/alanhg/alfred-workflows/tree/master/apple-script)
+6. [Batch Import Workflows](https://github.com/alanhg/alfred-workflows/tree/master/batch-import-workflows)
+7. [Bluetooth Manager](https://github.com/alanhg/alfred-workflows/tree/master/bluetooth-manager)
+8. [Compress](https://github.com/alanhg/alfred-workflows/tree/master/compress-gif)
+9. [ConvertIO](https://github.com/alanhg/alfred-workflows/tree/master/convertio)
+10. [DO NOT DISTURB](https://github.com/alanhg/alfred-workflows/tree/master/do-not-disturb)
+11. [Eudic Tools](https://github.com/alanhg/alfred-workflows/tree/master/eudic-tools)
+12. [File Enhancer](https://github.com/alanhg/alfred-workflows/tree/master/file-enhancer)
+13. [Find iPhone](https://github.com/alanhg/alfred-workflows/tree/master/find-my-iphone)
+14. [Giphy](https://github.com/alanhg/alfred-workflows/tree/master/giphy)
+15. [Git Code](https://github.com/alanhg/alfred-workflows/tree/master/git-code)
+16. [IP Tools](https://github.com/alanhg/alfred-workflows/tree/master/ip-tools)
+17. [Json2TS](https://github.com/alanhg/alfred-workflows/tree/master/json2Ts)
+18. [Mac Enhancer](https://github.com/alanhg/alfred-workflows/tree/master/mac-enhancer)
+19. [Medium Tools](https://github.com/alanhg/alfred-workflows/tree/master/medium-publisher)
+20. [Mount Volume](https://github.com/alanhg/alfred-workflows/tree/master/mount-volume)
+21. [My iPhones](https://github.com/alanhg/alfred-workflows/tree/master/my-iphones)
+22. [New File](https://github.com/alanhg/alfred-workflows/tree/master/new-file)
+23. [OCR](https://github.com/alanhg/alfred-workflows/tree/master/ocr)
+24. [OpenConnect VPN](https://github.com/alanhg/alfred-workflows/tree/master/openconnect-vpn)
+25. [Paste into files](https://github.com/alanhg/alfred-workflows/tree/master/paste-into-files)
+26. [Pic Uploader](https://github.com/alanhg/alfred-workflows/tree/master/pic-uploader)
+27. [Process](https://github.com/alanhg/alfred-workflows/tree/master/process)
+28. [ProgressBar](https://github.com/alanhg/alfred-workflows/tree/master/progress-bar)
+29. [RGB-Hex converter](https://github.com/alanhg/alfred-workflows/tree/master/rgb-hex-converter)
+30. [String Manipulation](https://github.com/alanhg/alfred-workflows/tree/master/string-manipulation)
+31. [Surge](https://github.com/alanhg/alfred-workflows/tree/master/surge)
+32. [Switch Audio](https://github.com/alanhg/alfred-workflows/tree/master/switch-audio)
+33. [Translate](https://github.com/alanhg/alfred-workflows/tree/master/translate)
+34. [Type Search](https://github.com/alanhg/alfred-workflows/tree/master/type-search)
+35. [Whistle](https://github.com/alanhg/alfred-workflows/tree/master/whistle)
+36. [印象笔记](https://github.com/alanhg/alfred-workflows/tree/master/印象笔记)<!--workflow-end-->
 
 ## 开发工具
 
