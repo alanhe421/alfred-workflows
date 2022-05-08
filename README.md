@@ -11,6 +11,7 @@
 
 - [Workflows](#workflows)
 - [Dependency](#dependency)
+- [FAQ](#faq)
 - [Sponsor](#sponsor)
 - [Subscribe & Communication](#subscribe--communication)
 
