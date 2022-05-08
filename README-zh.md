@@ -16,6 +16,7 @@
 
 ## Workflow集
 
+<!--workflow-start-->
 1. eudic-tools 一键查词，一键发音
 2. pic-uploader 一键上传图片到个人图床/Imgur
 3. git 循环拉取项目
@@ -52,21 +53,30 @@
 34. convertio - mobi/epub电子书转换工具
 35. OpenConnect VPN - 一键VPN 
 36. 2FA-Read Code - 短信验证码读取工具
+<!--workflow-end-->
 
-## Alfred常见问题
+## 开发工具
+
+脚手架
+
+[Alfred Workflow SDK](https://github.com/alanhg/alfred-utils)
+
+## 常见问题
 
 这里我记录了平时遇到的一些小技巧，小问题。
-
-[戳这里](https://github.com/alanhg/others-note/issues?q=is%3Aissue+is%3Aopen+label%3AAlfred)
-
-## 交流
 
 欢迎到 ➡️ [Discussion](https://github.com/alanhg/alfred-workflows/discussions)交流
 
 
 ## 支持
 
-- 社畜码字不易，你的支持也是一种动力。
+- 你的支持也是一种动力。
 
 - Star /[Paypal](https://www.paypal.com/paypalme/alanhe421)
   / [微信打赏](./award.jpg)
+
+## 订阅&交流
+
+[![](https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@alanhg)
+
+![](./wechat.png)

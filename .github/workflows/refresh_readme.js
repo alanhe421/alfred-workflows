@@ -8,13 +8,14 @@ const plist = require('plist');
  * https://docs.github.com/en/enterprise-cloud@latest/actions/learn-github-actions/environment-variables#default-environment-variables
  */
 function updateReadme(items) {
-  const readmeFile = path.resolve(__dirname, '../../', 'README.md');
-  let readmeContent = fs.readFileSync(readmeFile, 'utf8');
-  const workflowsList = items.map((item, index) => {
-    return `\n${index + 1}. [${item.name}](https://github.com/alanhg/alfred-workflows${item.path})`;
-  }).join('');
-  const newReadmeContent = readmeContent.replace(/(?<=<!--workflow-start-->)[\s\S]*(?=<!--workflow-end-->)/, workflowsList)
-  fs.writeFileSync(readmeFile, newReadmeContent);
+  [path.resolve(__dirname, '../../', 'README.md'), path.resolve(__dirname, '../../', 'README-zh.md')].forEach((path) => {
+    let readmeContent = fs.readFileSync(path, 'utf8');
+    const workflowsList = items.map((item, index) => {
+      return `\n${index + 1}. [${item.name}](https://github.com/alanhg/alfred-workflows${item.path})`;
+    }).join('');
+    const newReadmeContent = readmeContent.replace(/(?<=<!--workflow-start-->)[\s\S]*(?=<!--workflow-end-->)/, workflowsList)
+    fs.writeFileSync(path, newReadmeContent);
+  })
 }
 
 /**
