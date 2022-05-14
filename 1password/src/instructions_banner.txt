@@ -1,0 +1,12 @@
+
+---------------------------- INSTRUCTIONS ----------------------------
+
+The official 1Password command-line tool will ask you to sign in.
+This is necessary to get the items list for the 1Password Workflow.
+
+For account details, consult your 1Password Emergency Kit:
+
+  https://support.1password.com/emergency-kit/#get-your-emergency-kit
+
+----------------------------------------------------------------------
+

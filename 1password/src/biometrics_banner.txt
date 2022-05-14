@@ -1,0 +1,17 @@
+
+------------------------- IMPORTANT -------------------------
+
+To use biometric unlock, you need to manually install
+the 1Password command-line tool. Download it at:
+
+  https://1password.com/downloads/command-line/
+
+Then run the Workflow again.
+
+Alternatively, disable Biometric unlock for 1Password CLI
+in the 1Password app preferences, under Developer.
+
+You may close the terminal.
+
+-------------------------------------------------------------
+

@@ -1,0 +1,14 @@
+
+------------------------- IMPORTANT -------------------------
+
+You have an old version of the 1Password command-line tool.
+Install the latest version from:
+
+  https://1password.com/downloads/command-line/
+
+Then run the Workflow again.
+
+You may close the terminal.
+
+-------------------------------------------------------------
+
