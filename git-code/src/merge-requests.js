@@ -66,12 +66,19 @@ async function searchMergeRequests(token, baseUrl, projectId, projectName) {
       })
     );
 
-    const allMRLinks = res.data
+    let allMRLinks = res.data
       .map(
         (item) =>
           `- ${item.title}\n  ${baseUrl}/${projectName}/merge_requests/${item.iid}`
       )
       .join('\n');
+
+    if (
+      process.env.mr_links_copy_text &&
+      process.env.mr_links_copy_text.trim()
+    ) {
+      allMRLinks += `\n\n${process.env.mr_links_copy_text.trim()}`;
+    }
     items.unshift(
       utils.buildItem({
         title: 'Copy All MRs',

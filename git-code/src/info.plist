@@ -193,7 +193,7 @@
 	<key>createdby</key>
 	<string>Alan He</string>
 	<key>description</key>
-	<string>Git Drone Search</string>
+	<string>TGit Search</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
@@ -640,6 +640,8 @@
 		<string></string>
 		<key>base_url_2</key>
 		<string></string>
+		<key>mr_links_copy_text</key>
+		<string></string>
 		<key>per_page</key>
 		<string>20</string>
 		<key>score</key>
@@ -649,15 +651,16 @@
 	</dict>
 	<key>variablesdontexport</key>
 	<array>
-		<string>base_url</string>
-		<string>score_2</string>
-		<string>score</string>
-		<string>access_token_2</string>
-		<string>access_token</string>
 		<string>base_url_2</string>
+		<string>score</string>
+		<string>base_url</string>
+		<string>mr_links_copy_text</string>
+		<string>score_2</string>
+		<string>access_token</string>
+		<string>access_token_2</string>
 	</array>
 	<key>version</key>
-	<string>1.1</string>
+	<string>1.2</string>
 	<key>webaddress</key>
 	<string>https://1991421.cn</string>
 </dict>
