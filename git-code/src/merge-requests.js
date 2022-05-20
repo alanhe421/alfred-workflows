@@ -60,7 +60,10 @@ async function searchMergeRequests(token, baseUrl, projectId, projectName) {
         subtitle: `source:${item.source_branch} ➡️ target:${item.target_branch}`,
         autocomplete: item.title,
         text: {
-          largetype: item.description
+          largetype: item.description,
+          copy: appendCopyText(
+            `- ${item.title}\n  ${baseUrl}/${projectName}/merge_requests/${item.iid}\n`
+          )
         },
         arg: `${baseUrl}/${projectName}/merge_requests/${item.iid}`
       })
@@ -73,12 +76,6 @@ async function searchMergeRequests(token, baseUrl, projectId, projectName) {
       )
       .join('\n');
 
-    if (
-      process.env.mr_links_copy_text &&
-      process.env.mr_links_copy_text.trim()
-    ) {
-      allMRLinks += `\n\n${process.env.mr_links_copy_text.trim()}`;
-    }
     items.unshift(
       utils.buildItem({
         title: 'Copy All MRs',
@@ -86,7 +83,7 @@ async function searchMergeRequests(token, baseUrl, projectId, projectName) {
         autocomplete: 'Copy All MRs',
         text: {
           largetype: allMRLinks,
-          copy: allMRLinks
+          copy: appendCopyText(allMRLinks)
         },
         arg: `${baseUrl}/${projectName}/merge_requests/`
       })
@@ -101,3 +98,11 @@ async function searchMergeRequests(token, baseUrl, projectId, projectName) {
     ];
   }
 }
+function appendCopyText(text) {
+  if (process.env.mr_links_copy_text &&
+    process.env.mr_links_copy_text.trim()) {
+    text += `\n\n${process.env.mr_links_copy_text.trim()}`;
+  }
+  return text;
+}
+
