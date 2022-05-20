@@ -9,11 +9,12 @@
 5. ⌥ ⏎ 选择MR，再⌥ ⏎，显示repo打开的 Merge Request，同时支持关键词检索
 6. 增加score权重设定，比如设置score_2=1，这样第二个工蜂服务项目可以优先排在前面，不设定，则默认为第一个项目列表在前
 7. 一键拷贝所有MR链接
+8 输入`:updategitcode`进行workflow升级
 
 整体设计，⏎均是浏览器打开对应URL，⌥为进一步操作。
 
 
-![](https://img.shields.io/badge/version-v1.1-green?style=for-the-badge)
+![](https://img.shields.io/badge/version-v1.4-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/git-code/Git%20Code.alfredworkflow)
 
 
