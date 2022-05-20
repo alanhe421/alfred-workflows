@@ -46,6 +46,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>CEE2BD28-2AFE-4B8D-A1CD-6251EA336851</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>78EF6D57-B9D6-4C41-B61C-A9186B00CC4C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>DDD1D4C2-BC2D-4E83-9029-EE6A670EAFF9</key>
 		<array>
 			<dict>
@@ -206,13 +219,57 @@
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>./one-update.sh</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>78EF6D57-B9D6-4C41-B61C-A9186B00CC4C</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>:update2fa</string>
+				<key>subtext</key>
+				<string>Check for updates and install them if they exist</string>
+				<key>text</key>
+				<string>Update 2FA-Read Code</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>CEE2BD28-2AFE-4B8D-A1CD-6251EA336851</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>&gt; Read authentication code in your recent messages
 
 1. Type `2fa` to trigger workflow
 2. Type`⌘ C` or `⏎` to copy captcha
-
+3. Type `:update2fa` to update workflow
 ## requirement
 
 1. `brew install node`
@@ -240,12 +297,26 @@
 			<key>ypos</key>
 			<integer>220</integer>
 		</dict>
+		<key>78EF6D57-B9D6-4C41-B61C-A9186B00CC4C</key>
+		<dict>
+			<key>xpos</key>
+			<integer>315</integer>
+			<key>ypos</key>
+			<integer>500</integer>
+		</dict>
 		<key>B551E16A-99ED-4CFD-9FA2-BF5DE3680187</key>
 		<dict>
 			<key>xpos</key>
 			<integer>400</integer>
 			<key>ypos</key>
 			<integer>45</integer>
+		</dict>
+		<key>CEE2BD28-2AFE-4B8D-A1CD-6251EA336851</key>
+		<dict>
+			<key>xpos</key>
+			<integer>65</integer>
+			<key>ypos</key>
+			<integer>500</integer>
 		</dict>
 		<key>DDD1D4C2-BC2D-4E83-9029-EE6A670EAFF9</key>
 		<dict>
@@ -263,7 +334,7 @@
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>0.5</string>
+	<string>0.6</string>
 	<key>webaddress</key>
 	<string>https://1991421.cn</string>
 </dict>
