@@ -8,6 +8,19 @@
 	<string>Self-Dev</string>
 	<key>connections</key>
 	<dict>
+		<key>19B6ED47-D749-4CFD-A503-556F264BBD0B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>34A48C4D-D4AC-40B0-98E2-38F761EB1AA6</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>2BE29A0E-B934-4CB3-B196-46DEFD5F8F24</key>
 		<array>
 			<dict>
@@ -524,6 +537,50 @@
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>./one-update.sh</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>34A48C4D-D4AC-40B0-98E2-38F761EB1AA6</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>:updategitcode</string>
+				<key>subtext</key>
+				<string>Check for updates and install them if they exist</string>
+				<key>text</key>
+				<string>Update Git Code</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>19B6ED47-D749-4CFD-A503-556F264BBD0B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>腾讯工蜂项目检索
@@ -537,6 +594,7 @@
 5. ⌥ ⏎ 选择MR，再⌥ ⏎，显示repo打开的 Merge Request，同时支持关键词检索
 6. 增加score权重设定，比如设置score_2=1，这样第二个工蜂服务项目可以优先排在前面，不设定，则默认为第一个项目列表在前
 7. 一键拷贝所有MR链接
+8 输入`:updategitcode`进行workflow升级
 
 整体设计，⏎均是浏览器打开对应URL，⌥为进一步操作。</string>
 	<key>uidata</key>
@@ -547,6 +605,13 @@
 			<integer>585</integer>
 			<key>ypos</key>
 			<integer>790</integer>
+		</dict>
+		<key>19B6ED47-D749-4CFD-A503-556F264BBD0B</key>
+		<dict>
+			<key>xpos</key>
+			<integer>95</integer>
+			<key>ypos</key>
+			<integer>915</integer>
 		</dict>
 		<key>2BE29A0E-B934-4CB3-B196-46DEFD5F8F24</key>
 		<dict>
@@ -563,6 +628,13 @@
 			<integer>360</integer>
 			<key>ypos</key>
 			<integer>230</integer>
+		</dict>
+		<key>34A48C4D-D4AC-40B0-98E2-38F761EB1AA6</key>
+		<dict>
+			<key>xpos</key>
+			<integer>345</integer>
+			<key>ypos</key>
+			<integer>915</integer>
 		</dict>
 		<key>42312DC7-F660-4E68-9D7C-88091E1CECF8</key>
 		<dict>
@@ -660,7 +732,7 @@
 		<string>access_token_2</string>
 	</array>
 	<key>version</key>
-	<string>1.3</string>
+	<string>1.4</string>
 	<key>webaddress</key>
 	<string>https://1991421.cn</string>
 </dict>
