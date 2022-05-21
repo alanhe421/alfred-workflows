@@ -14,6 +14,7 @@
 - [FAQ](#faq)
 - [Sponsor](#sponsor)
 - [Subscribe & Communication](#subscribe--communication)
+- [Contributors](#contributors)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 ## Workflows
