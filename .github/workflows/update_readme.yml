@@ -41,14 +41,12 @@ jobs:
         run:  node .github/workflows/refresh_readme.js
       - name: Build
         run: |
-          git config --global user.email "alan@1991421.cn"
-          git config --global user.name "GitHub Bot"
           git add .
-          git commit -m 'Update readme'
       - name: Deploy GitHub
-        uses: ad-m/github-push-action@master
+        uses: actions-js/push@master
         with:
-          github_token: ${{ github.token }}
+          message: Update readme
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: master
   contrib-readme-job:
       runs-on: ubuntu-latest
