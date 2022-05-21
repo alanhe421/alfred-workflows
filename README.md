@@ -80,4 +80,21 @@ Welcome ➡️ [Discussion](https://github.com/alanhg/alfred-workflows/discussio
 ## Contributors
 
 <!-- readme: collaborators,contributors -start -->
+<table>
+<tr>
+    <td align="center">
+        <a href="https://github.com/alanhg">
+            <img src="https://avatars.githubusercontent.com/u/9245110?v=4" width="100;" alt="alanhg"/>
+            <br />
+            <sub><b>Alan.He</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/psychopasss">
+            <img src="https://avatars.githubusercontent.com/u/11738089?v=4" width="100;" alt="psychopasss"/>
+            <br />
+            <sub><b>Psycho Pass</b></sub>
+        </a>
+    </td></tr>
+</table>
 <!-- readme: collaborators,contributors -end -->
