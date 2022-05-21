@@ -76,4 +76,7 @@ Welcome ➡️ [Discussion](https://github.com/alanhg/alfred-workflows/discussio
 
 [![](https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@alanhg)
 
+## Contributors
 
+<!-- readme: collaborators,contributors -start -->
+<!-- readme: collaborators,contributors -end -->
