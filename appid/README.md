@@ -8,9 +8,10 @@
 	- `App ID` get id of app
 	- `App Version` get version of app
     - `App Name` get name of app
+4. type `:updateappid` to update workflow
 
 
-![](https://img.shields.io/badge/version-v1.2.0-green?style=for-the-badge)
+![](https://img.shields.io/badge/version-v1.3-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/appid/AppID.alfredworkflow)
 
 
