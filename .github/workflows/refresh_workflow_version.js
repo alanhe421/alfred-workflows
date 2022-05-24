@@ -19,6 +19,7 @@ function updateReadme(absoluteWorkflowFolder, folderName, plistObj, workflow) {
     let newContent = `${readme}\n\n
 ![](https://img.shields.io/badge/version-v${version}-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/${process.env.GITHUB_REPOSITORY}/raw/${process.env.GITHUB_REF_NAME}/${folderName}/${filename})
+[![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/${process.env.GITHUB_REPOSITORY}/${process.env.GITHUB_REF_NAME}/${folderName}/src/info.plist)
 \n\n
 <!-- more -->`;
     // 有则更新，无则添加
