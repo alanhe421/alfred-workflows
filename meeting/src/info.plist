@@ -8,11 +8,11 @@
 	<string>Self-Dev</string>
 	<key>connections</key>
 	<dict>
-		<key>0D581D86-E4A0-47BF-A7A9-09247304D6B8</key>
+		<key>3F9E8A28-1A8F-4EB6-8599-E67B1BEF3296</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>CAC6F79E-FFC5-45DD-A3A0-BB16C2BB0E84</string>
+				<string>0759C1B3-6639-4B30-B86F-8BF6607A0F2E</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -25,7 +25,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>D41981C9-D66B-4B2D-B044-19B6B8452E49</string>
+				<string>E9B37C47-B242-4096-A1D3-A3B05EA98332</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -51,7 +51,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>D41981C9-D66B-4B2D-B044-19B6B8452E49</string>
+				<string>E9B37C47-B242-4096-A1D3-A3B05EA98332</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -66,11 +66,38 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>0D581D86-E4A0-47BF-A7A9-09247304D6B8</string>
+				<string>CAC6F79E-FFC5-45DD-A3A0-BB16C2BB0E84</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>E9B37C47-B242-4096-A1D3-A3B05EA98332</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D41981C9-D66B-4B2D-B044-19B6B8452E49</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>36FBAA3D-E546-4B2A-8D4D-D6BC9CFE2891</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>3F9E8A28-1A8F-4EB6-8599-E67B1BEF3296</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>53C7808E-5BE6-4C7C-A075-2398473EFE57</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -110,29 +137,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>echo "{query}" | grep -Eo "\d{3}-\d{3}-\d{3}"</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>D41981C9-D66B-4B2D-B044-19B6B8452E49</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>browser</key>
 				<string></string>
 				<key>spaces</key>
@@ -152,17 +156,109 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>matchmode</key>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>/usr/local/bin/node ./main.js "{query}" "tencent"</string>
+				<key>scriptargtype</key>
 				<integer>0</integer>
-				<key>matchstring</key>
-				<string>-</string>
-				<key>replacestring</key>
+				<key>scriptfile</key>
 				<string></string>
+				<key>type</key>
+				<integer>0</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.utility.replace</string>
+			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>0D581D86-E4A0-47BF-A7A9-09247304D6B8</string>
+			<string>D41981C9-D66B-4B2D-B044-19B6B8452E49</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>4</integer>
+						<key>matchstring</key>
+						<string>(腾讯会议|tencent)</string>
+						<key>outputlabel</key>
+						<string></string>
+						<key>uid</key>
+						<string>36FBAA3D-E546-4B2A-8D4D-D6BC9CFE2891</string>
+					</dict>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>4</integer>
+						<key>matchstring</key>
+						<string>Zoom</string>
+						<key>outputlabel</key>
+						<string></string>
+						<key>uid</key>
+						<string>53C7808E-5BE6-4C7C-A075-2398473EFE57</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>E9B37C47-B242-4096-A1D3-A3B05EA98332</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>zoommtg://{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>0759C1B3-6639-4B30-B86F-8BF6607A0F2E</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>/usr/local/bin/node ./main.js "{query}" "zoom"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>3F9E8A28-1A8F-4EB6-8599-E67B1BEF3296</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -206,22 +302,31 @@
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>&gt; 一键加入会议
-拷贝会议邀请信息，或者选中邀请信息文本，唤起universal action或者触发关键词meeting，一键加入会议。计划支持常用会议App，当前支持腾讯会议App
+	<string>&gt; 一键加入会议。
+拷贝会议邀请信息，或者选中邀请信息文本，唤起universal action或者触发关键词meeting，一键加入会议。
+计划支持常用会议App，当前支持腾讯会议App,Zoom会议
 
 
 1. 支持关键词 `meeting` 唤起.
-2. 支持Universal Action</string>
+2. 支持Universal Action
+3. 依赖Node环境，请先`brew install node`</string>
 	<key>uidata</key>
 	<dict>
-		<key>0D581D86-E4A0-47BF-A7A9-09247304D6B8</key>
+		<key>0759C1B3-6639-4B30-B86F-8BF6607A0F2E</key>
+		<dict>
+			<key>xpos</key>
+			<integer>860</integer>
+			<key>ypos</key>
+			<integer>315</integer>
+		</dict>
+		<key>3F9E8A28-1A8F-4EB6-8599-E67B1BEF3296</key>
 		<dict>
 			<key>note</key>
-			<string>remove -</string>
+			<string>Zoom</string>
 			<key>xpos</key>
-			<integer>545</integer>
+			<integer>495</integer>
 			<key>ypos</key>
-			<integer>290</integer>
+			<integer>315</integer>
 		</dict>
 		<key>7C7F0602-B9F2-4FFA-870C-CEA945590CF4</key>
 		<dict>
@@ -247,22 +352,31 @@
 		<key>CAC6F79E-FFC5-45DD-A3A0-BB16C2BB0E84</key>
 		<dict>
 			<key>xpos</key>
-			<integer>725</integer>
+			<integer>870</integer>
 			<key>ypos</key>
-			<integer>260</integer>
+			<integer>115</integer>
 		</dict>
 		<key>D41981C9-D66B-4B2D-B044-19B6B8452E49</key>
+		<dict>
+			<key>note</key>
+			<string>腾讯会议</string>
+			<key>xpos</key>
+			<integer>485</integer>
+			<key>ypos</key>
+			<integer>120</integer>
+		</dict>
+		<key>E9B37C47-B242-4096-A1D3-A3B05EA98332</key>
 		<dict>
 			<key>xpos</key>
 			<integer>350</integer>
 			<key>ypos</key>
-			<integer>245</integer>
+			<integer>190</integer>
 		</dict>
 	</dict>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>0.1</string>
+	<string>0.2</string>
 	<key>webaddress</key>
 	<string>https://1991421.cn</string>
 </dict>
