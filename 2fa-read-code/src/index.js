@@ -19,20 +19,40 @@ const lookBackMinutes = process.env.look_back_minutes;
       }
       const captcha = readCaptchaFromMessage(msg);
       if (captcha) {
-        const subject = readSubjectFromMessage(msg);
-        res.push(
-          utils.buildItem({
-            title: `${captcha}`,
-            subtitle: `Sender：${subject} ${dateUtils.formatToCalendar(
-              messageObj.message_date
-            )}，⏎ to Copy`,
-            arg: captcha,
-            text: {
-              largetype: messageObj.text,
-              copy: captcha
-            }
-          })
-        );
+        subject = readSubjectFromMessage(msg);
+        if (!subject) {
+          // `a` is falsey, which includes `undefined` and `null`
+          // (and `""`, and `0`, and `NaN`, and [of course] `false`)
+
+          res.push(
+            utils.buildItem({
+              title: `${captcha}`,
+              subtitle: `${dateUtils.formatToCalendar(
+                messageObj.message_date
+              )}，⏎ to Copy`,
+              arg: captcha,
+              text: {
+                largetype: messageObj.text,
+                copy: captcha
+              }
+            })
+          );
+        }
+        else {
+          res.push(
+            utils.buildItem({
+              title: `${captcha}`,
+              subtitle: `Sender：${subject} ${dateUtils.formatToCalendar(
+                messageObj.message_date
+              )}，⏎ to Copy`,
+              arg: captcha,
+              text: {
+                largetype: messageObj.text,
+                copy: captcha
+              }
+            })
+          );
+        }
       }
       return res;
     }, []);
