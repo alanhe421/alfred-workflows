@@ -21,9 +21,9 @@ const lookBackMinutes = process.env.look_back_minutes;
       if (captcha) {
         subject = readSubjectFromMessage(msg);
         if (!subject) {
-          // `a` is falsey, which includes `undefined` and `null`
+          // `subject` is falsey, which includes `undefined` and `null`
           // (and `""`, and `0`, and `NaN`, and [of course] `false`)
-
+          // https://stackoverflow.com/a/5101991
           res.push(
             utils.buildItem({
               title: `${captcha}`,
