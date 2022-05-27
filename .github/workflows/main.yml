@@ -45,6 +45,7 @@ jobs:
   home_readme_toc:
 
     runs-on: ubuntu-latest
+    needs: [workflow_readme]
 
     strategy:
       matrix:
@@ -78,6 +79,7 @@ jobs:
   contrib-readme-job:
     runs-on: ubuntu-latest
     name: A job to automate contrib in readme
+    needs: [ workflow_readme, home_readme_toc ]
     steps:
       - name: Contribute List
         uses: akhilmhdh/contributors-readme-action@v2.3.4
