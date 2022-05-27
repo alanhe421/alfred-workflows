@@ -4,8 +4,8 @@ let res;
 try {
   switch (app) {
     case 'tencent':
-      res = query.match(/\d{3}-\d{3}-\d{3}/)[0];
-      res = res.replace(/-/g, '');
+      res = query.match(/\d{3,4}(-|\s)\d{3,4}\1\d{3,4}/)[0];
+      res = res.replace(/(-|\s)/g, '');
       break;
     case 'zoom':
       const url = query.match(zoom_regex)[0];
