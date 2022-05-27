@@ -1,0 +1,85 @@
+# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: main
+
+on:
+  push:
+    branches: [ master ]
+    paths:
+      - '*/*.alfredworkflow'
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: 'Log level'
+        required: true
+        default: 'warning'
+      tags:
+        description: 'Test scenario tags'
+jobs:
+  workflow_readme:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14.x]
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: npm install plist
+      - name: Refresh Workflow Version
+        run:  node .github/workflows/refresh_workflow_version.js
+      - name: Build
+        run: |
+          git add .
+      - name: Deploy GitHub
+        uses: actions-js/push@master
+        with:
+          message: Update workflow version
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: master
+  home_readme_toc:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14.x]
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: TOC Generator
+        uses: technote-space/toc-generator@v4
+      #      - name: GitHub README Generator
+      #        uses: th3c0d3br34ker/github-readme-info@1.0.2
+      #        with:
+      #          GH_TOKEN: ${{ github.token }}
+      #          TIMEZONE: "Asia/Shanghai"
+      #          SHOW_TOTAL_CONTRIBUTIONS: "True"
+      - run: npm install plist
+      - name: Refresh Workflow Version
+        run:  node .github/workflows/refresh_readme.js
+      - name: Build
+        run: |
+          git add .
+      - name: Deploy GitHub
+        uses: actions-js/push@master
+        with:
+          message: Update readme
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: master
+  contrib-readme-job:
+    runs-on: ubuntu-latest
+    name: A job to automate contrib in readme
+    steps:
+      - name: Contribute List
+        uses: akhilmhdh/contributors-readme-action@v2.3.4
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
