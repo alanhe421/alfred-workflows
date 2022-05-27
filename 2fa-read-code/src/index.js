@@ -23,9 +23,9 @@ const lookBackMinutes = process.env.look_back_minutes;
         res.push(
           utils.buildItem({
             title: `${captcha}`,
-            subtitle: `Sender：${subject} ${dateUtils.formatToCalendar(
-              messageObj.message_date
-            )}，⏎ to Copy`,
+            subtitle: `${
+              subject ? `Sender：${subject} ` : ''
+            }${dateUtils.formatToCalendar(messageObj.message_date)}，⏎ to Copy`,
             arg: captcha,
             text: {
               largetype: messageObj.text,
