@@ -8,7 +8,6 @@ You can configure the file generation path in environment variables
 [![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/new-file/src/info.plist)
 
 
-
 <!-- more -->
 > Quickly create target-type file, directory also support.
 

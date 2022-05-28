@@ -31,7 +31,6 @@ Surge Mac 4.0.0、Surge iOS 4.4.0开始提供HTTP API, 即该版本之前的均�
 [![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/surge/src/info.plist)
 
 
-
 <!-- more -->
 
 ## 实际效果

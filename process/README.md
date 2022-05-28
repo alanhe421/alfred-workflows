@@ -14,7 +14,6 @@ brew install node
 [![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/process/src/info.plist)
 
 
-
 <!-- more -->
 
 ![](./screenshot.gif)

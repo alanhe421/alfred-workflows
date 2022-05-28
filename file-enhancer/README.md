@@ -6,7 +6,6 @@ copy file name without suffix.
 [![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/file-enhancer/src/info.plist)
 
 
-
 <!-- more -->
 > copy file name without suffix.
 

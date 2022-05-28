@@ -10,7 +10,6 @@ A hotkey needs to contain a modifier (Cmd, Ctrl or Alt) and a keyboard character
 [![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/eudic-tools/src/info.plist)
 
 
-
 <!-- more -->
 
 > 欧陆词典

@@ -11,7 +11,6 @@ Case switching.
 [![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/string-manipulation/src/info.plist)
 
 
-
 <!-- more -->
 
 

@@ -9,7 +9,6 @@ Select the folder and import workflows in batches
 [![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/batch-import-workflows/src/info.plist)
 
 
-
 <!-- more -->
 > Batch import workflows. just select folder which contains multi workflows and execute batch import file action.
 

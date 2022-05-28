@@ -15,7 +15,6 @@ input `dnd` to toggle it.
 [![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/do-not-disturb/src/info.plist)
 
 
-
 <!-- more -->
 
 ![](./screenshot.gif)

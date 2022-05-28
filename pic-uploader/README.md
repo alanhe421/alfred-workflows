@@ -32,7 +32,6 @@ https://apidocs.imgur.com/
 [![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/pic-uploader/src/info.plist)
 
 
-
 <!-- more -->
 > 系统截图，或者选中一个图片文件，直接一键即可上传到个人配置的图床服务，然后生成的Markdown图片地址已经存在系统剪切板中。
 

@@ -14,7 +14,6 @@
 [![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/2fa-read-code/src/info.plist)
 
 
-
 <!-- more -->
 
 ## 效果

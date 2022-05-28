@@ -15,7 +15,6 @@
 [![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/medium-publisher/src/info.plist)
 
 
-
 <!-- more -->
 > 选中MD文件，一键发布到Medium平台
 

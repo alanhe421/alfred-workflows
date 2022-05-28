@@ -6,6 +6,5 @@ some tools about apple script.
 [![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/apple-script/src/info.plist)
 
 
-
 <!-- more -->
 > 批量替换

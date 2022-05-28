@@ -10,7 +10,6 @@
 [![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/about-mac/src/info.plist)
 
 
-
 <!-- more -->
 
 

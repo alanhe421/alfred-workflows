@@ -16,7 +16,6 @@ $ yarn install canvas
 [![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/rgb-hex-converter/src/info.plist)
 
 
-
 <!-- more -->
 # rgb-hex-converter
 

@@ -22,7 +22,6 @@ Logging in for the first time is troublesome, but after that, it will automatica
 [![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/find-my-iphone/src/info.plist)
 
 
-
 <!-- more -->
 > quickly find your missing iPhone (or other Apple device)
 

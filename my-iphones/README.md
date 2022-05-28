@@ -6,7 +6,6 @@ display history about my iPhones.
 [![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/my-iphones/src/info.plist)
 
 
-
 <!-- more -->
 you need maintain json manually.
 

@@ -12,7 +12,6 @@ $ brew install openconnect
 [![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/openconnect-vpn/src/info.plist)
 
 
-
 <!-- more -->
 
 ## Usage

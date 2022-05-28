@@ -11,7 +11,6 @@ First run this command on a terminal:
 [![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/ocr/src/info.plist)
 
 
-
 <!-- more -->
 
 登陆百度智能云，选择文本识别，创建应用,将高亮的三个值配置在workflow中即可。

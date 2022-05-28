@@ -17,7 +17,6 @@ select mobi file and trigger action
 [![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/convertio/src/info.plist)
 
 
-
 <!-- more -->
 
 ![](./screenshot.gif)

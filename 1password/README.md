@@ -29,7 +29,6 @@ Uncommon but useful actions, such as toggling vaults, can be accessed via `:1pex
 [![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/1password/src/info.plist)
 
 
-
 <!-- more -->
 
 

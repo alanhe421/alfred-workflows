@@ -10,7 +10,6 @@ Easy to search gif and copy to anywhere.
 [![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/giphy/src/info.plist)
 
 
-
 <!-- more -->
 
 - 输入关键词`gif`或`sticker`进行相关检索

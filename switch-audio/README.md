@@ -14,7 +14,6 @@ If you need camera command, just brew install node
 [![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/switch-audio/src/info.plist)
 
 
-
 <!-- more -->
 > easy to switch audio(speaker and mic)
 

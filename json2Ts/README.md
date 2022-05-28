@@ -13,7 +13,6 @@ json text select and trigger json2ts universal action.
 [![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/json2Ts/src/info.plist)
 
 
-
 <!-- more -->
 
 ![](./screenshot.gif)

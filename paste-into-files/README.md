@@ -13,7 +13,6 @@ paste into files
 [![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/paste-into-files/src/info.plist)
 
 
-
 <!-- more -->
 > 剪贴板中的内容保存为文件，当前仅支持图片
 

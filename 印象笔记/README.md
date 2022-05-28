@@ -13,7 +13,6 @@ http://dev.evernote.com/documentation/local/chapters/mac.php
 [![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/印象笔记/src/info.plist)
 
 
-
 <!-- more -->
 
 ## 效果

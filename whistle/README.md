@@ -24,7 +24,6 @@ npm install -g whistle
 [![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/whistle/src/info.plist)
 
 
-
 <!-- more -->
 
 ### Whistle官方文档
