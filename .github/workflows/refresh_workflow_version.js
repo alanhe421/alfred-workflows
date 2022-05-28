@@ -13,21 +13,23 @@ function updateReadme(absoluteWorkflowFolder, folderName, plistObj, workflow) {
   const readme = plistObj.readme;
   const readmeFile = absoluteWorkflowFolder + '/README.md';
   const filename = querystring.escape(path.basename(workflow));
-
+  let readmeContent;
   try {
-    let readmeContent = fs.readFileSync(readmeFile, 'utf8');
-    let newContent = `${readme}\n\n
+    if (!fs.existsSync(readmeFile)) {
+      readmeContent = `
+
+<!-- more -->`;
+    } else {
+      readmeContent = fs.readFileSync(readmeFile, 'utf8');
+    }
+
+    const badgeContent = `${readme}\n\n
 ![](https://img.shields.io/badge/version-v${version}-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/${process.env.GITHUB_REPOSITORY}/raw/${process.env.GITHUB_REF_NAME}/${folderName}/${filename})
 [![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/${process.env.GITHUB_REPOSITORY}/${process.env.GITHUB_REF_NAME}/${folderName}/src/info.plist)
-\n\n
-<!-- more -->`;
-    // 有则更新，无则添加
-    if (readmeContent.match(/^(\s|\S)+(\<\!\-\- more \-\-\>)/)) {
-      readmeContent = readmeContent.replace(/^(\s|\S)+(\<\!\-\- more \-\-\>)/, newContent)
-    } else {
-      readmeContent = newContent + readmeContent;
-    }
+\n\n`;
+    readmeContent = readmeContent.replace(/(^(\s|\S)+)?(?=<!-- more -->)/, '');
+    readmeContent = badgeContent + readmeContent;
     fs.writeFileSync(readmeFile, readmeContent);
   } catch (e) {
     console.log(e);
@@ -49,7 +51,6 @@ function parseWorkflowInfo(workflowFolder, workflow) {
   const workFlowUnzipFolder = workFlowZipFile.substring(0, workFlowZipFile.length - zip_suffix.length);
   execSync(`unzip -o ${workFlowZipFile} -d ${workFlowUnzipFolder}`);
   execSync(`rm -rf ${workFlowZipFile}`);
-  execSync(`cp ${workFlowUnzipFolder}/info.plist ${workflowFolder}/`);
   // 源码中node_modules不纳入版本管理
   execSync(`rm -rf ${workFlowUnzipFolder}/node_modules`);
   const plistObj = plist.parse(fs.readFileSync(`${workFlowUnzipFolder}/info.plist`, 'utf8'));
