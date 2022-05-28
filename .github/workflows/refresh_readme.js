@@ -33,7 +33,6 @@ function parseWorkflowInfo(workflowFolder, workflow) {
   const workFlowUnzipFolder = workFlowZipFile.substring(0, workFlowZipFile.length - zip_suffix.length);
   execSync(`unzip -o ${workFlowZipFile} -d ${workFlowUnzipFolder}`);
   execSync(`rm -rf ${workFlowZipFile}`);
-  execSync(`cp ${workFlowUnzipFolder}/info.plist ${workflowFolder}/`);
   // 源码中node_modules不纳入版本管理
   execSync(`rm -rf ${workFlowUnzipFolder}/node_modules`);
   const plistObj = plist.parse(fs.readFileSync(`${workFlowUnzipFolder}/info.plist`, 'utf8'));

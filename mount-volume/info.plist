@@ -1,185 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>bundleid</key>
-	<string>cn.alanhe.mountVolume</string>
-	<key>category</key>
-	<string>Self-Dev</string>
-	<key>connections</key>
-	<dict>
-		<key>3DE4B996-B960-444D-ADA2-437EE5A84911</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>5DB629D2-D256-4826-A821-C1D40CCA5335</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>3E554F3A-9D95-4D8B-9797-FDE6FDA14DCD</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>3DE4B996-B960-444D-ADA2-437EE5A84911</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>5DB629D2-D256-4826-A821-C1D40CCA5335</key>
-		<array/>
-	</dict>
-	<key>createdby</key>
-	<string>Alan He</string>
-	<key>description</key>
-	<string>connect to server quickly</string>
-	<key>disabled</key>
-	<false/>
-	<key>name</key>
-	<string>Mount Volume</string>
-	<key>objects</key>
-	<array>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string></string>
-				<key>title</key>
-				<string>Mounted the server</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>5DB629D2-D256-4826-A821-C1D40CCA5335</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>mount</string>
-				<key>subtext</key>
-				<string>connect to server</string>
-				<key>text</key>
-				<string>Mount Volume</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>3E554F3A-9D95-4D8B-9797-FDE6FDA14DCD</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>to split(someText, delimiter)	set AppleScript's text item delimiters to delimiter	set someText to someText's text items	set AppleScript's text item delimiters to {""} --&gt; restore delimiters to default value	return someTextend split
-
-
-on run
-set theQuery to "{query}"set serverIP to (system attribute "server_address")set UserAccount to (system attribute "username")set ServerPassword to (system attribute "password")set serverIpArr to split(serverIP, "/")set serverVolume to end of serverIpArrtell application "Finder"	try		if disk serverVolume exists then		else			mount volume serverIP as user name UserAccount with password ServerPassword		end if		tell application "Finder" to open folder serverVolume of computer container	end tryend tell
-
-
-
-
-
-
-
-  return theQuery
-end run</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>6</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>3DE4B996-B960-444D-ADA2-437EE5A84911</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-	</array>
-	<key>readme</key>
-	<string>&gt; Connect to server quickly. Mount and Open volume.
-
-Network like SMB/CIF、NFS 和 FTP。
-
-@see https://support.apple.com/guide/mac-help/network-address-formats-and-protocols-on-mac-mchlp1654/11.0/mac/11.0</string>
-	<key>uidata</key>
-	<dict>
-		<key>3DE4B996-B960-444D-ADA2-437EE5A84911</key>
-		<dict>
-			<key>note</key>
-			<string>remount when disconnected.
-
-auto open in finder</string>
-			<key>xpos</key>
-			<integer>290</integer>
-			<key>ypos</key>
-			<integer>130</integer>
-		</dict>
-		<key>3E554F3A-9D95-4D8B-9797-FDE6FDA14DCD</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>4</integer>
-			<key>xpos</key>
-			<integer>50</integer>
-			<key>ypos</key>
-			<integer>125</integer>
-		</dict>
-		<key>5DB629D2-D256-4826-A821-C1D40CCA5335</key>
-		<dict>
-			<key>xpos</key>
-			<integer>490</integer>
-			<key>ypos</key>
-			<integer>120</integer>
-		</dict>
-	</dict>
-	<key>variables</key>
-	<dict>
-		<key>password</key>
-		<string></string>
-		<key>server_address</key>
-		<string></string>
-		<key>username</key>
-		<string></string>
-	</dict>
-	<key>variablesdontexport</key>
-	<array>
-		<string>password</string>
-		<string>username</string>
-		<string>server_address</string>
-	</array>
-	<key>version</key>
-	<string>1.1</string>
-	<key>webaddress</key>
-	<string>https://www.alfredapp.com</string>
-</dict>
-</plist>
