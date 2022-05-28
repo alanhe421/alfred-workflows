@@ -7,7 +7,6 @@ copy file name without suffix.
 
 
 <!-- more -->
-> copy file name without suffix.
 
 
 ![](./screenshot.gif)
