@@ -1,0 +1,684 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>cn.alanhe.appid</string>
+	<key>category</key>
+	<string>Self-Dev</string>
+	<key>connections</key>
+	<dict>
+		<key>0413D15A-857E-4782-93DC-A2D5292C0479</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D7A8FF94-E45E-4FD4-BA1A-11237326A0E1</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>4000643B-2DB8-40C7-B4BD-8514772DC55A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>265554E8-8FD4-40ED-B217-D7D1A7B6B020</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>42BBB04B-30C5-49D2-AFA8-D24B9C9FB417</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D7A8FF94-E45E-4FD4-BA1A-11237326A0E1</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>53D51879-0D2E-4B6B-8EAD-45D634D7AED8</key>
+		<array/>
+		<key>56E911C8-B422-41A5-B703-DBA1649E1DA1</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D7A8FF94-E45E-4FD4-BA1A-11237326A0E1</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>5B30E91B-47B7-4F83-9119-64675F13B00D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>0413D15A-857E-4782-93DC-A2D5292C0479</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>73372C83-B363-44A4-A210-51B88F77C9FE</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D7A8FF94-E45E-4FD4-BA1A-11237326A0E1</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>778BD714-0E96-4EA4-A4FD-751D05C92D2D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D7E96C4B-C158-4A5C-9D3A-7C6C37A6557D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>A48CE873-8369-400F-9DFA-5526A5D9C90C</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>42BBB04B-30C5-49D2-AFA8-D24B9C9FB417</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>D7A8FF94-E45E-4FD4-BA1A-11237326A0E1</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>53D51879-0D2E-4B6B-8EAD-45D634D7AED8</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>D7E96C4B-C158-4A5C-9D3A-7C6C37A6557D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D7A8FF94-E45E-4FD4-BA1A-11237326A0E1</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Alan He</string>
+	<key>description</key>
+	<string>Show ID of installed apps</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>AppID</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>appid</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Getting Bundle ID of apps in /Applications…</string>
+				<key>script</key>
+				<string>require 'json'
+require 'open3'
+require 'pathname'
+
+apps = Pathname('/Applications').children
+         .concat(Pathname('/Applications/Utilities').children)
+         .map(&amp;:to_path)
+         .sort_by { |p| File.basename(p).downcase }
+         .select { |e| e.end_with?('.app') }
+
+script_filter_items = []
+
+apps.each do |app|
+  appId = Open3.capture2("osascript -e 'id of app \"#{app}\"'").first
+  next if appId == '(null)'
+  name = File.basename(app, '.app')
+  script_filter_items.push(title: name, subtitle: appId, arg: appId, icon: { type: 'fileicon', path: app })
+end
+
+puts({ items: script_filter_items }.to_json)</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Show App ID of installed apps</string>
+				<key>title</key>
+				<string>AppID</string>
+				<key>type</key>
+				<integer>2</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>56E911C8-B422-41A5-B703-DBA1649E1DA1</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>Copied to clipboard</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>53D51879-0D2E-4B6B-8EAD-45D634D7AED8</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>v{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>D7A8FF94-E45E-4FD4-BA1A-11237326A0E1</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>filetypes</key>
+				<array>
+					<string>com.apple.application-bundle</string>
+				</array>
+				<key>name</key>
+				<string>App ID</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.action</string>
+			<key>uid</key>
+			<string>778BD714-0E96-4EA4-A4FD-751D05C92D2D</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>osascript -e 'id of app "{query}"'</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>D7E96C4B-C158-4A5C-9D3A-7C6C37A6557D</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>filetypes</key>
+				<array>
+					<string>com.apple.application-bundle</string>
+				</array>
+				<key>name</key>
+				<string>App Name</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.action</string>
+			<key>uid</key>
+			<string>A48CE873-8369-400F-9DFA-5526A5D9C90C</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>osascript -e 'name of app "{query}"'</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>42BBB04B-30C5-49D2-AFA8-D24B9C9FB417</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string># THESE VARIABLES MUST BE SET. SEE THE ONEUPDATER README FOR AN EXPLANATION OF EACH.
+readonly remote_info_plist="https://raw.githubusercontent.com/alanhg/alfred-workflows/master/appid/src/info.plist"
+readonly workflow_url="https://github.com/alanhg/alfred-workflows/raw/master/appid/AppID.alfredworkflow"
+readonly download_type='direct'
+readonly frequency_check='0'
+
+# FROM HERE ON, CODE SHOULD BE LEFT UNTOUCHED!
+function abort {
+  echo "${1}" &gt;&amp;2
+  exit 1
+}
+
+function url_exists {
+  curl --silent --location --output /dev/null --fail --range 0-0 "${1}"
+}
+
+function notification {
+  local -r notificator="$(find . -type f -name 'notificator')"
+
+  if [[ -f "${notificator}" &amp;&amp; "$(/usr/bin/file --brief --mime-type "${notificator}")" == 'text/x-shellscript' ]]; then
+    "${notificator}" --message "${1}" --title "${alfred_workflow_name}" --subtitle "${2:-A new version is available}"
+    return
+  fi
+
+  osascript -e "display notification \"${1}\" with title \"${alfred_workflow_name}\" subtitle \"${2:-A new version is available}\""
+}
+
+# Local sanity checks
+readonly local_info_plist='info.plist'
+readonly local_version="$(/usr/libexec/PlistBuddy -c 'print version' "${local_info_plist}")"
+
+[[ -n "${local_version}" ]] || abort 'You need to set a workflow version in the configuration sheet.'
+[[ "${download_type}" =~ ^(direct|page|github_release)$ ]] || abort "'download_type' (${download_type}) needs to be one of 'direct', 'page', or 'github_release'."
+[[ "${frequency_check}" =~ ^[0-9]+$ ]] || abort "'frequency_check' (${frequency_check}) needs to be a number."
+
+# Check for updates
+if [[ $(find "${local_info_plist}" -mtime +"${frequency_check}"d) ]]; then
+  # Remote sanity check
+  if ! url_exists "${remote_info_plist}"; then
+    abort "'remote_info_plist' (${remote_info_plist}) appears to not be reachable."
+  fi
+
+  readonly tmp_file="$(mktemp)"
+  curl --silent --location --output "${tmp_file}" "${remote_info_plist}"
+  readonly remote_version="$(/usr/libexec/PlistBuddy -c 'print version' "${tmp_file}")"
+  rm "${tmp_file}"
+
+  if [[ "${local_version}" == "${remote_version}" ]]; then
+    touch "${local_info_plist}" # Reset timer by touching local file
+    notification 'You are up to date…' ' '
+    exit 0
+  fi
+
+  if [[ "${download_type}" == 'page' ]]; then
+    notification 'Opening download page…'
+    open "${workflow_url}"
+    exit 0
+  fi
+
+  readonly download_url="$(
+    if [[ "${download_type}" == 'github_release' ]]; then
+      osascript -l JavaScript -e 'function run(argv) { return JSON.parse(argv[0])["assets"].find(asset =&gt; asset["browser_download_url"].endsWith(".alfredworkflow"))["browser_download_url"] }' "$(curl --silent "https://api.github.com/repos/${workflow_url}/releases/latest")"
+    else
+      echo "${workflow_url}"
+    fi
+  )"
+
+  if url_exists "${download_url}"; then
+    notification 'Downloading and installing…'
+    readonly download_name="$(basename "${download_url}")"
+    curl --silent --location --output "${HOME}/Downloads/${download_name}" "${download_url}"
+    open "${HOME}/Downloads/${download_name}"
+  else
+    abort "'workflow_url' (${download_url}) appears to not be reachable."
+  fi
+fi</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>265554E8-8FD4-40ED-B217-D7D1A7B6B020</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>:updateappid</string>
+				<key>subtext</key>
+				<string>Check for updates and install them if they exist</string>
+				<key>text</key>
+				<string>Update AppID</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>4000643B-2DB8-40C7-B4BD-8514772DC55A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>av</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Getting versions of apps in /Applications…</string>
+				<key>script</key>
+				<string>require 'json'
+require 'open3'
+require 'pathname'
+
+apps = Pathname('/Applications').children
+         .concat(Pathname('/Applications/Utilities').children)
+         .map(&amp;:to_path)
+         .sort_by { |p| File.basename(p).downcase }
+         .select { |e| e.end_with?('.app') }
+
+script_filter_items = []
+
+apps.each do |app|
+  version = Open3.capture2('mdls', '-raw', '-name', 'kMDItemVersion', app).first
+  next if version == '(null)'
+  name = File.basename(app, '.app')
+  script_filter_items.push(title: name, subtitle: version, arg: version, icon: { type: 'fileicon', path: app })
+end
+
+puts({ items: script_filter_items }.to_json)</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Show version number of installed apps</string>
+				<key>title</key>
+				<string>AppVersion</string>
+				<key>type</key>
+				<integer>2</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>73372C83-B363-44A4-A210-51B88F77C9FE</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>filetypes</key>
+				<array>
+					<string>com.apple.application-bundle</string>
+				</array>
+				<key>name</key>
+				<string>App version</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.action</string>
+			<key>uid</key>
+			<string>5B30E91B-47B7-4F83-9119-64675F13B00D</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>mdls -raw -name kMDItemVersion "${1}"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>0413D15A-857E-4782-93DC-A2D5292C0479</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>&gt; Getting Bundle ID of apps
+
+## usage
+
+1. `appid` to get Bundle ID of apps
+2. `av` to get Bundle version of apps
+3. Universal action support
+	- `App ID` get id of app
+	- `App Version` get version of app
+    - `App Name` get name of app
+4. type `:updateappid` to update workflow</string>
+	<key>uidata</key>
+	<dict>
+		<key>0413D15A-857E-4782-93DC-A2D5292C0479</key>
+		<dict>
+			<key>xpos</key>
+			<integer>295</integer>
+			<key>ypos</key>
+			<integer>840</integer>
+		</dict>
+		<key>265554E8-8FD4-40ED-B217-D7D1A7B6B020</key>
+		<dict>
+			<key>xpos</key>
+			<integer>935</integer>
+			<key>ypos</key>
+			<integer>535</integer>
+		</dict>
+		<key>4000643B-2DB8-40C7-B4BD-8514772DC55A</key>
+		<dict>
+			<key>xpos</key>
+			<integer>685</integer>
+			<key>ypos</key>
+			<integer>535</integer>
+		</dict>
+		<key>42BBB04B-30C5-49D2-AFA8-D24B9C9FB417</key>
+		<dict>
+			<key>xpos</key>
+			<integer>235</integer>
+			<key>ypos</key>
+			<integer>430</integer>
+		</dict>
+		<key>53D51879-0D2E-4B6B-8EAD-45D634D7AED8</key>
+		<dict>
+			<key>xpos</key>
+			<integer>860</integer>
+			<key>ypos</key>
+			<integer>150</integer>
+		</dict>
+		<key>56E911C8-B422-41A5-B703-DBA1649E1DA1</key>
+		<dict>
+			<key>xpos</key>
+			<integer>50</integer>
+			<key>ypos</key>
+			<integer>90</integer>
+		</dict>
+		<key>5B30E91B-47B7-4F83-9119-64675F13B00D</key>
+		<dict>
+			<key>xpos</key>
+			<integer>60</integer>
+			<key>ypos</key>
+			<integer>840</integer>
+		</dict>
+		<key>73372C83-B363-44A4-A210-51B88F77C9FE</key>
+		<dict>
+			<key>xpos</key>
+			<integer>50</integer>
+			<key>ypos</key>
+			<integer>605</integer>
+		</dict>
+		<key>778BD714-0E96-4EA4-A4FD-751D05C92D2D</key>
+		<dict>
+			<key>xpos</key>
+			<integer>50</integer>
+			<key>ypos</key>
+			<integer>245</integer>
+		</dict>
+		<key>A48CE873-8369-400F-9DFA-5526A5D9C90C</key>
+		<dict>
+			<key>xpos</key>
+			<integer>50</integer>
+			<key>ypos</key>
+			<integer>425</integer>
+		</dict>
+		<key>D7A8FF94-E45E-4FD4-BA1A-11237326A0E1</key>
+		<dict>
+			<key>note</key>
+			<string>v[version]</string>
+			<key>xpos</key>
+			<integer>675</integer>
+			<key>ypos</key>
+			<integer>150</integer>
+		</dict>
+		<key>D7E96C4B-C158-4A5C-9D3A-7C6C37A6557D</key>
+		<dict>
+			<key>xpos</key>
+			<integer>225</integer>
+			<key>ypos</key>
+			<integer>245</integer>
+		</dict>
+	</dict>
+	<key>variablesdontexport</key>
+	<array/>
+	<key>version</key>
+	<string>1.3</string>
+	<key>webaddress</key>
+	<string>https://1991421.cn</string>
+</dict>
+</plist>

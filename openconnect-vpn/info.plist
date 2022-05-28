@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>cn.alanhe.openconnect-vpn</string>
+	<key>category</key>
+	<string>Self-Dev</string>
+	<key>connections</key>
+	<dict>
+		<key>033A1686-C0F8-42AB-AB38-B78FC9DD411A</key>
+		<array/>
+		<key>2A5DD05A-6EB9-4BAD-BF59-317CA3C2845D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>BD59BE3B-0B89-4B40-A1FA-E708A4E09F4F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>BD59BE3B-0B89-4B40-A1FA-E708A4E09F4F</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>033A1686-C0F8-42AB-AB38-B78FC9DD411A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Alan He</string>
+	<key>description</key>
+	<string>Connect to VPN</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>OpenConnect VPN</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>vpn</string>
+				<key>subtext</key>
+				<string>VPN client</string>
+				<key>text</key>
+				<string>OpenConnect VPN</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>2A5DD05A-6EB9-4BAD-BF59-317CA3C2845D</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>currentPath=`pwd`
+echo "${currentPath}/vpn.sh '$URL' '$MAC_PASSWORD' '$USERNAME' '$PASSWORD'"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>BD59BE3B-0B89-4B40-A1FA-E708A4E09F4F</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.terminalcommand</string>
+			<key>uid</key>
+			<string>033A1686-C0F8-42AB-AB38-B78FC9DD411A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>&gt; quick to connect-vpn
+
+## install
+
+```
+$ brew install openconnect
+```</string>
+	<key>uidata</key>
+	<dict>
+		<key>033A1686-C0F8-42AB-AB38-B78FC9DD411A</key>
+		<dict>
+			<key>xpos</key>
+			<integer>545</integer>
+			<key>ypos</key>
+			<integer>165</integer>
+		</dict>
+		<key>2A5DD05A-6EB9-4BAD-BF59-317CA3C2845D</key>
+		<dict>
+			<key>note</key>
+			<string>input captcha</string>
+			<key>xpos</key>
+			<integer>20</integer>
+			<key>ypos</key>
+			<integer>155</integer>
+		</dict>
+		<key>BD59BE3B-0B89-4B40-A1FA-E708A4E09F4F</key>
+		<dict>
+			<key>xpos</key>
+			<integer>290</integer>
+			<key>ypos</key>
+			<integer>160</integer>
+		</dict>
+	</dict>
+	<key>variables</key>
+	<dict>
+		<key>MAC_PASSWORD</key>
+		<string></string>
+		<key>PASSWORD</key>
+		<string></string>
+		<key>URL</key>
+		<string></string>
+		<key>USERNAME</key>
+		<string></string>
+		<key>servercert</key>
+		<string></string>
+	</dict>
+	<key>variablesdontexport</key>
+	<array>
+		<string>PASSWORD</string>
+		<string>URL</string>
+		<string>USERNAME</string>
+		<string>MAC_PASSWORD</string>
+		<string>servercert</string>
+	</array>
+	<key>version</key>
+	<string>1.1</string>
+	<key>webaddress</key>
+	<string>https://1991421.cn</string>
+</dict>
+</plist>
