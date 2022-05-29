@@ -337,6 +337,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>E78945D3-3452-4A45-A0B8-2A46BACB37B7</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>AD911E40-3BD8-4B7B-A8A9-2D5ADB28887C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>E9460C86-1ECB-4B7A-AC26-9E3C9217A842</key>
 		<array>
 			<dict>
@@ -1096,6 +1109,23 @@
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>paths</key>
+				<array>
+					<string>/Applications/Surge.app</string>
+				</array>
+				<key>toggle</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.launchfiles</string>
+			<key>uid</key>
+			<string>AD911E40-3BD8-4B7B-A8A9-2D5ADB28887C</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>&gt; Surge Mac 4.0提供了HTTP API支持，因此终于可以打通外部App调用了。这里实现了Alfred的打通，比如快速切换代理模式等。
@@ -1241,6 +1271,13 @@ Surge Mac 4.0.0、Surge iOS 4.4.0开始提供HTTP API, 即该版本之前的均�
 			<key>ypos</key>
 			<integer>45</integer>
 		</dict>
+		<key>AD911E40-3BD8-4B7B-A8A9-2D5ADB28887C</key>
+		<dict>
+			<key>xpos</key>
+			<integer>685</integer>
+			<key>ypos</key>
+			<integer>1110</integer>
+		</dict>
 		<key>B53E08CC-23B2-4106-BDA3-E59F7963BB1C</key>
 		<dict>
 			<key>note</key>
@@ -1308,14 +1345,14 @@ Surge Mac 4.0.0、Surge iOS 4.4.0开始提供HTTP API, 即该版本之前的均�
 		<key>check_update</key>
 		<string>true</string>
 		<key>remote_info_list_url</key>
-		<string>https://raw.githubusercontent.com/alanhg/alfred-workflows/master/surge/info.plist</string>
+		<string>https://raw.githubusercontent.com/alanhg/alfred-workflows/master/surge/src/info.plist</string>
 		<key>remote_workflow_url</key>
 		<string>https://raw.githubusercontent.com/alanhg/alfred-workflows/master/surge/Surge.alfredworkflow</string>
 	</dict>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.8</string>
+	<string>1.9</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/surge</string>
 </dict>
