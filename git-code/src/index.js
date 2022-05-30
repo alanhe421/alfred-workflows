@@ -7,30 +7,38 @@ const { Workflow } = require('@stacker/alfred-utils/dist/workflow');
 const [, , query] = process.argv;
 const wf = new Workflow();
 (async function () {
-  if (!process.env.access_token || !process.env.base_url) {
+  if (!process.env.access_token_1 || !process.env.base_url_1) {
     utils.printScriptFilter({
       items: [
         utils.buildItem({
           title: 'token or url missing',
-          subtitle: 'you should set environment variable'
+          subtitle: 'You need to setup at least one git - environment variable'
         })
       ]
     });
     return;
   }
 
-  await Promise.all([
-    searchProjects(
-      process.env.access_token,
-      process.env.base_url,
-      process.env.score
-    ),
-    searchProjects(
-      process.env.access_token_2,
-      process.env.base_url_2,
-      process.env.score_2
-    )
-  ]);
+  const gitPromises = [];
+  let index = 1;
+  function indexStr(prefix) {
+    return `${prefix}_${String(index)}`;
+  }
+  while (
+    process.env[indexStr('access_token')] &&
+    process.env[indexStr('base_url')]
+  ) {
+    gitPromises.push(
+      searchProjects(
+        process.env[indexStr('access_token')],
+        process.env[indexStr('base_url')],
+        process.env[indexStr('score')]
+      )
+    );
+    index += 1;
+  }
+
+  await Promise.all(gitPromises);
   utils.printScriptFilter({
     items: wf.convertWorkflowItems()
   });
