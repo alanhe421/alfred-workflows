@@ -154,6 +154,16 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
+				<string>D41981C9-D66B-4B2D-B044-19B6B8452E49</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
 				<string>3F9E8A28-1A8F-4EB6-8599-E67B1BEF3296</string>
 				<key>modifiers</key>
 				<integer>0</integer>
@@ -186,7 +196,7 @@
 				<key>acceptstext</key>
 				<true/>
 				<key>acceptsurls</key>
-				<false/>
+				<true/>
 				<key>name</key>
 				<string>Join Meeting</string>
 			</dict>
@@ -594,9 +604,9 @@ fi</string>
 			<key>note</key>
 			<string>Zoom</string>
 			<key>xpos</key>
-			<integer>495</integer>
+			<integer>485</integer>
 			<key>ypos</key>
-			<integer>315</integer>
+			<integer>285</integer>
 		</dict>
 		<key>65DCFF1D-286C-4F2A-910D-44936EA37B8B</key>
 		<dict>
@@ -674,8 +684,8 @@ fi</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>0.5</string>
+	<string>0.6</string>
 	<key>webaddress</key>
-	<string>https://1991421.cn</string>
+	<string>https://github.com/alanhg/alfred-workflows/tree/master/meeting</string>
 </dict>
 </plist>
