@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "@sindresorhus/do-not-disturb": "^1.1.0"
+    "@sindresorhus/do-not-disturb": "^1.1.0",
+    "@stacker/alfred-utils": "^0.1.50"
   }
 }

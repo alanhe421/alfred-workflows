@@ -8,9 +8,10 @@ Mac enhancer
    just for Chrome
 6. Delete All Messages
 7. toggle WiFi
+8. type 'host' and ⏎ to open `/etc/hosts` file
 
 
-![](https://img.shields.io/badge/version-v1.6-green?style=for-the-badge)
+![](https://img.shields.io/badge/version-v1.7-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/mac-enhancer/Mac%20Enhancer.alfredworkflow)
 [![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/mac-enhancer/src/info.plist)
 
