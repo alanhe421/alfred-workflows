@@ -4,11 +4,11 @@
 
 
 1. 支持关键词 `meeting` 唤起.
-2. 支持Universal Action
+2. 支持`Universal Action-Join Meeting`
 3. 依赖Node环境，请先`brew install node`
 
 
-![](https://img.shields.io/badge/version-v0.6-green?style=for-the-badge)
+![](https://img.shields.io/badge/version-v0.7-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/meeting/Meeting.alfredworkflow)
 [![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/meeting/src/info.plist)
 

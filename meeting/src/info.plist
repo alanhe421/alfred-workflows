@@ -189,6 +189,25 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>wemeet://page/inmeeting?meeting_code={query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>CAC6F79E-FFC5-45DD-A3A0-BB16C2BB0E84</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>acceptsfiles</key>
 				<false/>
 				<key>acceptsmulti</key>
@@ -204,25 +223,6 @@
 			<string>alfred.workflow.trigger.universalaction</string>
 			<key>uid</key>
 			<string>7C7F0602-B9F2-4FFA-870C-CEA945590CF4</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>wemeet://page/inmeeting?meeting_code={query}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>CAC6F79E-FFC5-45DD-A3A0-BB16C2BB0E84</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -581,7 +581,7 @@ fi</string>
 
 
 1. 支持关键词 `meeting` 唤起.
-2. 支持Universal Action
+2. 支持`Universal Action-Join Meeting`
 3. 依赖Node环境，请先`brew install node`</string>
 	<key>uidata</key>
 	<dict>
@@ -611,9 +611,9 @@ fi</string>
 		<key>65DCFF1D-286C-4F2A-910D-44936EA37B8B</key>
 		<dict>
 			<key>xpos</key>
-			<integer>370</integer>
+			<integer>415</integer>
 			<key>ypos</key>
-			<integer>635</integer>
+			<integer>605</integer>
 		</dict>
 		<key>7C7F0602-B9F2-4FFA-870C-CEA945590CF4</key>
 		<dict>
@@ -646,16 +646,16 @@ fi</string>
 		<key>B5F99FA9-B9E4-422C-94DB-E1DF1865139C</key>
 		<dict>
 			<key>xpos</key>
-			<integer>120</integer>
+			<integer>95</integer>
 			<key>ypos</key>
-			<integer>635</integer>
+			<integer>605</integer>
 		</dict>
 		<key>CAC6F79E-FFC5-45DD-A3A0-BB16C2BB0E84</key>
 		<dict>
 			<key>xpos</key>
 			<integer>870</integer>
 			<key>ypos</key>
-			<integer>115</integer>
+			<integer>85</integer>
 		</dict>
 		<key>CBBB5BBC-7507-4FFB-92C8-68947D5FCEFE</key>
 		<dict>
@@ -684,7 +684,7 @@ fi</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>0.6</string>
+	<string>0.7</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/meeting</string>
 </dict>
