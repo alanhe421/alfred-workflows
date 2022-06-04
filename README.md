@@ -5,6 +5,8 @@
 > Labor duplication is physical work, so need to use tools to do automated treatment, saving lives.
 
 
+P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to use these workflows.
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
