@@ -812,7 +812,7 @@ fi</string>
 		<string>access_token_2</string>
 	</array>
 	<key>version</key>
-	<string>1.5</string>
+	<string>1.6</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/git-code</string>
 </dict>

@@ -2,8 +2,8 @@
  * usage
  * /usr/local/bin/node ./index.js {query}
  */
-const { utils, http } = require('@stacker/alfred-utils');
-const { Workflow } = require('@stacker/alfred-utils/dist/workflow');
+const {utils, http} = require('@stacker/alfred-utils');
+const {Workflow} = require('@stacker/alfred-utils/dist/workflow');
 const [, , query] = process.argv;
 const wf = new Workflow();
 (async function () {
@@ -21,19 +21,17 @@ const wf = new Workflow();
 
   const gitPromises = [];
   let index = 1;
+
   function indexStr(prefix) {
     return `${prefix}_${String(index)}`;
   }
+
   while (
     process.env[indexStr('access_token')] &&
     process.env[indexStr('base_url')]
-  ) {
+    ) {
     gitPromises.push(
-      searchProjects(
-        process.env[indexStr('access_token')],
-        process.env[indexStr('base_url')],
-        process.env[indexStr('score')]
-      )
+      searchProjects(process.env[indexStr('access_token')], process.env[indexStr('base_url')], process.env[indexStr('score')], index)
     );
     index += 1;
   }
@@ -44,7 +42,7 @@ const wf = new Workflow();
   });
 })();
 
-async function searchProjects(token, baseUrl, score) {
+async function searchProjects(token, baseUrl, score, index) {
   if (!token || !baseUrl) {
     return;
   }
@@ -65,7 +63,10 @@ async function searchProjects(token, baseUrl, score) {
         item: utils.buildItem({
           title: `Search for '${query}'`,
           subtitle: `Goto ${baseUrl}`,
-          arg: `${baseUrl}/primarySearch?search=${query}`
+          arg: `${baseUrl}/primarySearch?search=${query}`,
+          icon: {
+            path: `icon/icon-theme${index % 3 + 1}.png`
+          }
         }),
         score
       });
@@ -80,6 +81,9 @@ async function searchProjects(token, baseUrl, score) {
             (item.archived ? '🔒Archived project , ' : '') + item.description,
           arg: item.web_url,
           autocomplete: item.name_with_namespace,
+          icon: {
+            path: `icon/icon-theme${index % 4 + 1}.png`
+          },
           mods: {
             cmd: {
               arg: item.ssh_url_to_repo,
@@ -102,6 +106,9 @@ async function searchProjects(token, baseUrl, score) {
   } catch (e) {
     wf.addWorkflowItem({
       item: utils.buildItem({
+        icon: {
+          path: 'icon/icon-error.png'
+        },
         title: baseUrl,
         subtitle: 'something wrong:' + e
       }),
