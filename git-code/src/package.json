@@ -9,6 +9,6 @@
   "license": "MIT",
   "description": "",
   "dependencies": {
-    "@stacker/alfred-utils": "^0.1.33"
+    "@stacker/alfred-utils": "^0.1.51"
   }
 }

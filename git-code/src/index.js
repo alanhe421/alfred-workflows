@@ -5,7 +5,7 @@
 const {utils, http} = require('@stacker/alfred-utils');
 const {Workflow} = require('@stacker/alfred-utils/dist/workflow');
 const [, , query] = process.argv;
-const wf = new Workflow();
+const wf = new Workflow([], true);
 (async function () {
   if (!process.env.access_token_1 || !process.env.base_url_1) {
     utils.printScriptFilter({
@@ -37,9 +37,9 @@ const wf = new Workflow();
   }
 
   await Promise.all(gitPromises);
-  utils.printScriptFilter({
-    items: wf.convertWorkflowItems()
-  });
+
+  wf.run(); 
+
 })();
 
 async function searchProjects(token, baseUrl, score, index) {
