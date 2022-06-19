@@ -8,11 +8,44 @@
 	<string>Self-Dev</string>
 	<key>connections</key>
 	<dict>
+		<key>10DAB206-DAB4-4DEE-B9AB-20B5F2431F33</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>570250E1-F9FA-4B41-BFBE-412DD258DC44</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>7BC96501-D9E1-4A51-926A-A4D2B7866FC3</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>1C678B7F-4E6E-4468-AA63-3C242326C99B</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>570250E1-F9FA-4B41-BFBE-412DD258DC44</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>7BC96501-D9E1-4A51-926A-A4D2B7866FC3</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -59,12 +92,35 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>7BC96501-D9E1-4A51-926A-A4D2B7866FC3</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
 		</array>
 		<key>8A29FF84-B010-4C62-A11E-8E6232F98D27</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>399B3A4B-008F-4212-B706-043EB7BD6DB6</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>95764FE3-1E5E-4768-97CB-084B51CFC219</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>10DAB206-DAB4-4DEE-B9AB-20B5F2431F33</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -100,23 +156,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>acceptsmulti</key>
-				<integer>0</integer>
-				<key>filetypes</key>
-				<array/>
-				<key>name</key>
-				<string>Copy Filename to Clipboard</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.action</string>
-			<key>uid</key>
-			<string>8A29FF84-B010-4C62-A11E-8E6232F98D27</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>autopaste</key>
 				<false/>
 				<key>clipboardtext</key>
@@ -132,6 +171,23 @@
 			<string>570250E1-F9FA-4B41-BFBE-412DD258DC44</string>
 			<key>version</key>
 			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>filetypes</key>
+				<array/>
+				<key>name</key>
+				<string>Copy Filename to Clipboard</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.action</string>
+			<key>uid</key>
+			<string>8A29FF84-B010-4C62-A11E-8E6232F98D27</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -178,6 +234,52 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>alignment</key>
+				<integer>0</integer>
+				<key>backgroundcolor</key>
+				<string></string>
+				<key>fadespeed</key>
+				<integer>0</integer>
+				<key>fillmode</key>
+				<integer>0</integer>
+				<key>font</key>
+				<string></string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>largetypetext</key>
+				<string>{query}</string>
+				<key>textcolor</key>
+				<string></string>
+				<key>wrapat</key>
+				<integer>50</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.largetype</string>
+			<key>uid</key>
+			<string>7BC96501-D9E1-4A51-926A-A4D2B7866FC3</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>filetypes</key>
+				<array/>
+				<key>name</key>
+				<string>Copy File Size to Clipboard</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.action</string>
+			<key>uid</key>
+			<string>CCCE1D1B-E013-441F-901B-62013D2A7A53</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -203,17 +305,21 @@ echo -n "${filesize}B"</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>acceptsmulti</key>
-				<integer>0</integer>
-				<key>filetypes</key>
-				<array/>
-				<key>name</key>
-				<string>Copy File Size to Clipboard</string>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>:updateaboutmac</string>
+				<key>subtext</key>
+				<string>Check for updates and install them if they exist</string>
+				<key>text</key>
+				<string>Update About Mac</string>
+				<key>withspace</key>
+				<false/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.trigger.action</string>
+			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>CCCE1D1B-E013-441F-901B-62013D2A7A53</string>
+			<string>58647FDB-7E57-49AF-8E03-EBEE4B21D508</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -318,21 +424,41 @@ fi</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>:updateaboutmac</string>
-				<key>subtext</key>
-				<string>Check for updates and install them if they exist</string>
-				<key>text</key>
-				<string>Update About Mac</string>
-				<key>withspace</key>
+				<key>concurrently</key>
 				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>#!/bin/bash
+/usr/local/bin/identify -format '%wx%h' {query}</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
+			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>58647FDB-7E57-49AF-8E03-EBEE4B21D508</string>
+			<string>10DAB206-DAB4-4DEE-B9AB-20B5F2431F33</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>filetypes</key>
+				<array/>
+				<key>name</key>
+				<string>Copy Pixel Size to Clipboard</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.action</string>
+			<key>uid</key>
+			<string>95764FE3-1E5E-4768-97CB-084B51CFC219</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -341,10 +467,24 @@ fi</string>
 	<string>&gt; file action to enhance file operation
 
 
+## requirement
+
+brew install imagemagick
+
+## feat
+
 1. copy file name without suffix.
-2. copy file size without suffix.</string>
+2. copy file size without suffix.
+3. copy pixel size for image file</string>
 	<key>uidata</key>
 	<dict>
+		<key>10DAB206-DAB4-4DEE-B9AB-20B5F2431F33</key>
+		<dict>
+			<key>xpos</key>
+			<integer>315</integer>
+			<key>ypos</key>
+			<integer>730</integer>
+		</dict>
 		<key>1C678B7F-4E6E-4468-AA63-3C242326C99B</key>
 		<dict>
 			<key>note</key>
@@ -366,9 +506,9 @@ fi</string>
 		<key>570250E1-F9FA-4B41-BFBE-412DD258DC44</key>
 		<dict>
 			<key>xpos</key>
-			<integer>520</integer>
+			<integer>585</integer>
 			<key>ypos</key>
-			<integer>145</integer>
+			<integer>140</integer>
 		</dict>
 		<key>58647FDB-7E57-49AF-8E03-EBEE4B21D508</key>
 		<dict>
@@ -384,6 +524,13 @@ fi</string>
 			<key>ypos</key>
 			<integer>390</integer>
 		</dict>
+		<key>7BC96501-D9E1-4A51-926A-A4D2B7866FC3</key>
+		<dict>
+			<key>xpos</key>
+			<integer>590</integer>
+			<key>ypos</key>
+			<integer>355</integer>
+		</dict>
 		<key>82008DC3-7A42-463D-A472-34B0DCFE8353</key>
 		<dict>
 			<key>xpos</key>
@@ -398,6 +545,13 @@ fi</string>
 			<key>ypos</key>
 			<integer>140</integer>
 		</dict>
+		<key>95764FE3-1E5E-4768-97CB-084B51CFC219</key>
+		<dict>
+			<key>xpos</key>
+			<integer>50</integer>
+			<key>ypos</key>
+			<integer>730</integer>
+		</dict>
 		<key>CCCE1D1B-E013-441F-901B-62013D2A7A53</key>
 		<dict>
 			<key>xpos</key>
@@ -409,7 +563,7 @@ fi</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.1</string>
+	<string>1.2</string>
 	<key>webaddress</key>
 	<string>https://1991421.cn</string>
 </dict>
