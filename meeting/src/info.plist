@@ -12,7 +12,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>CAC6F79E-FFC5-45DD-A3A0-BB16C2BB0E84</string>
+				<string>7D62529D-D53A-4914-A5ED-BCC08ACD29AF</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -24,11 +24,13 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
-				<string>7D62529D-D53A-4914-A5ED-BCC08ACD29AF</string>
+				<string>CAC6F79E-FFC5-45DD-A3A0-BB16C2BB0E84</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>sourceoutputuid</key>
+				<string>5EDE2E3E-ED33-4519-A095-2865E5239B2A</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -104,7 +106,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>0759C1B3-6639-4B30-B86F-8BF6607A0F2E</string>
+				<string>7D62529D-D53A-4914-A5ED-BCC08ACD29AF</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -116,7 +118,7 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
-				<string>7D62529D-D53A-4914-A5ED-BCC08ACD29AF</string>
+				<string>0759C1B3-6639-4B30-B86F-8BF6607A0F2E</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -189,25 +191,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>wemeet://page/inmeeting?meeting_code={query}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>CAC6F79E-FFC5-45DD-A3A0-BB16C2BB0E84</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>acceptsfiles</key>
 				<false/>
 				<key>acceptsmulti</key>
@@ -260,13 +243,27 @@
 						<key>matchcasesensitive</key>
 						<false/>
 						<key>matchmode</key>
-						<integer>1</integer>
+						<integer>0</integer>
 						<key>matchstring</key>
 						<string>-1</string>
 						<key>outputlabel</key>
 						<string></string>
 						<key>uid</key>
 						<string>52AE1F64-30FC-4DA9-AD91-7FEC8385D291</string>
+					</dict>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>4</integer>
+						<key>matchstring</key>
+						<string>\d+</string>
+						<key>outputlabel</key>
+						<string></string>
+						<key>uid</key>
+						<string>5EDE2E3E-ED33-4519-A095-2865E5239B2A</string>
 					</dict>
 				</array>
 				<key>elselabel</key>
@@ -276,6 +273,27 @@
 			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
 			<string>1A1957B9-AA49-4C9C-B242-B7D0478C6E32</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string></string>
+				<key>title</key>
+				<string>meeting info is invalid</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>7D62529D-D53A-4914-A5ED-BCC08ACD29AF</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -354,14 +372,14 @@
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
-				<string>zoommtg://{query}</string>
+				<string>wemeet://page/inmeeting?meeting_code={query}</string>
 				<key>utf8</key>
 				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
 			<key>uid</key>
-			<string>0759C1B3-6639-4B30-B86F-8BF6607A0F2E</string>
+			<string>CAC6F79E-FFC5-45DD-A3A0-BB16C2BB0E84</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -414,7 +432,7 @@
 						<key>matchcasesensitive</key>
 						<false/>
 						<key>matchmode</key>
-						<integer>1</integer>
+						<integer>0</integer>
 						<key>matchstring</key>
 						<string>-1</string>
 						<key>outputlabel</key>
@@ -436,21 +454,19 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
+				<key>browser</key>
 				<string></string>
-				<key>title</key>
-				<string>meeting info is invalid</string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>zoommtg://{query}</string>
+				<key>utf8</key>
+				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
+			<string>alfred.workflow.action.openurl</string>
 			<key>uid</key>
-			<string>7D62529D-D53A-4914-A5ED-BCC08ACD29AF</string>
+			<string>0759C1B3-6639-4B30-B86F-8BF6607A0F2E</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -582,15 +598,16 @@ fi</string>
 
 1. 支持关键词 `meeting` 唤起.
 2. 支持`Universal Action-Join Meeting`
-3. 依赖Node环境，请先`brew install node`</string>
+3. 依赖Node环境，请先`brew install node`
+4. 如果仅有企业微信会议链接，由于无法获取会议ID，因此无法直接跳转开启会议</string>
 	<key>uidata</key>
 	<dict>
 		<key>0759C1B3-6639-4B30-B86F-8BF6607A0F2E</key>
 		<dict>
 			<key>xpos</key>
-			<integer>860</integer>
+			<integer>955</integer>
 			<key>ypos</key>
-			<integer>315</integer>
+			<integer>500</integer>
 		</dict>
 		<key>1A1957B9-AA49-4C9C-B242-B7D0478C6E32</key>
 		<dict>
@@ -625,9 +642,9 @@ fi</string>
 		<key>7D62529D-D53A-4914-A5ED-BCC08ACD29AF</key>
 		<dict>
 			<key>xpos</key>
-			<integer>875</integer>
+			<integer>970</integer>
 			<key>ypos</key>
-			<integer>490</integer>
+			<integer>180</integer>
 		</dict>
 		<key>9EB3BEC1-001C-48C8-927A-7978E68AAC7A</key>
 		<dict>
@@ -653,9 +670,9 @@ fi</string>
 		<key>CAC6F79E-FFC5-45DD-A3A0-BB16C2BB0E84</key>
 		<dict>
 			<key>xpos</key>
-			<integer>870</integer>
+			<integer>960</integer>
 			<key>ypos</key>
-			<integer>85</integer>
+			<integer>330</integer>
 		</dict>
 		<key>CBBB5BBC-7507-4FFB-92C8-68947D5FCEFE</key>
 		<dict>
@@ -684,7 +701,7 @@ fi</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>0.7</string>
+	<string>0.8</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/meeting</string>
 </dict>

@@ -1,14 +1,27 @@
 const zoom_regex = /(?<=https:\/\/)([\w.]+)\/j\/(\d+)\?pwd=([\w.-]+)/;
-const tencent_regex = /\d{3,4}(-|\s)\d{3,4}\1\d{3,4}/;
-
-const [, , query, app] = process.argv;
+const tencent_meeting_num_regex = /\d{3,4}(-|\s)\d{3,4}\1\d{3,4}/;
+const [, , query, app = 'tencent'] = process.argv;
+const notifier = require('node-notifier');
 const https = require('https');
+
 (async function main() {
   let res;
   try {
     switch (app) {
       case 'tencent':
         res = await getTencentCode(query);
+        if (res === '') {
+          const linkFromWework = query.match(
+            /https:\/\/work\.weixin\.qq\.com\/webapp\/tm\/[a-zA-Z0-9]+/
+          );
+          if (linkFromWework) {
+            notifier.notify({
+              title: process.env.alfred_workflow_name,
+              message: `The Link ${linkFromWework[0]} not support`
+            });
+            return;
+          }
+        }
         break;
       case 'zoom':
         res = getZoomCode(query);
@@ -22,7 +35,7 @@ const https = require('https');
 })();
 
 async function getTencentCode(text) {
-  const matches = text.match(tencent_regex);
+  const matches = text.match(tencent_meeting_num_regex);
   let code = matches ? matches[0] : '';
   if (!code) {
     code = await getTencentCodeFromLink(text);
@@ -32,7 +45,8 @@ async function getTencentCode(text) {
 }
 
 function getTencentCodeFromLink(text) {
-  const link = text.match(/https:\/\/meeting.tencent.com\/dm\/\w+/)[0];
+  let match = text.match(/https:\/\/meeting.tencent.com\/dm\/\w+/);
+  const link = match ? match[0] : null;
   if (link) {
     return new Promise((resolve) => {
       https.get(
@@ -52,7 +66,7 @@ function getTencentCodeFromLink(text) {
             str += chunk;
           });
           res.on('end', () => {
-            resolve(str.match(tencent_regex)[0]);
+            resolve(str.match(tencent_meeting_num_regex)[0]);
           });
         }
       );
