@@ -14,6 +14,31 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
+				<string>A2E4ED9A-BAC4-4CC3-B88E-3BD9251D46DE</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>A2E4ED9A-BAC4-4CC3-B88E-3BD9251D46DE</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F83E005F-A328-4011-A93A-1AF716FC7AC3</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>96B5F257-4B74-49F5-B2F5-4A16B74C8079</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
 				<string>BD59BE3B-0B89-4B40-A1FA-E708A4E09F4F</string>
 				<key>modifiers</key>
 				<integer>0</integer>
@@ -50,21 +75,96 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>brew install openconnect</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.terminalcommand</string>
+			<key>uid</key>
+			<string>F83E005F-A328-4011-A93A-1AF716FC7AC3</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
 				<key>argumenttype</key>
 				<integer>2</integer>
+				<key>escaping</key>
+				<integer>102</integer>
 				<key>keyword</key>
 				<string>vpn</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>/bin/bash check.sh</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
 				<key>subtext</key>
-				<string>VPN client</string>
-				<key>text</key>
-				<string>OpenConnect VPN</string>
+				<string></string>
+				<key>title</key>
+				<string>Connect to VPN</string>
+				<key>type</key>
+				<integer>5</integer>
 				<key>withspace</key>
 				<false/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
+			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
 			<string>2A5DD05A-6EB9-4BAD-BF59-317CA3C2845D</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>openconnect</string>
+						<key>outputlabel</key>
+						<string></string>
+						<key>uid</key>
+						<string>96B5F257-4B74-49F5-B2F5-4A16B74C8079</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+				<key>hideelse</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>A2E4ED9A-BAC4-4CC3-B88E-3BD9251D46DE</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -111,38 +211,49 @@ echo "${currentPath}/vpn.sh '$URL' '$MAC_PASSWORD' '$USERNAME' '$PASSWORD' '$SER
 	<key>readme</key>
 	<string>&gt; quick to connect-vpn
 
-## install
 
-```shell
-brew install openconnect
-brew install expect
-```
-
-support `servercert` setting</string>
+1. Support `servercert` setting
+2. Auto-Check openconnect install</string>
 	<key>uidata</key>
 	<dict>
 		<key>033A1686-C0F8-42AB-AB38-B78FC9DD411A</key>
 		<dict>
+			<key>note</key>
+			<string>vpn</string>
 			<key>xpos</key>
-			<real>545</real>
+			<real>680</real>
 			<key>ypos</key>
-			<real>165</real>
+			<real>235</real>
 		</dict>
 		<key>2A5DD05A-6EB9-4BAD-BF59-317CA3C2845D</key>
 		<dict>
-			<key>note</key>
-			<string>input captcha</string>
 			<key>xpos</key>
 			<real>30</real>
 			<key>ypos</key>
-			<real>155</real>
+			<real>175</real>
+		</dict>
+		<key>A2E4ED9A-BAC4-4CC3-B88E-3BD9251D46DE</key>
+		<dict>
+			<key>xpos</key>
+			<real>220</real>
+			<key>ypos</key>
+			<real>175</real>
 		</dict>
 		<key>BD59BE3B-0B89-4B40-A1FA-E708A4E09F4F</key>
 		<dict>
 			<key>xpos</key>
-			<real>290</real>
+			<real>415</real>
 			<key>ypos</key>
-			<real>160</real>
+			<real>235</real>
+		</dict>
+		<key>F83E005F-A328-4011-A93A-1AF716FC7AC3</key>
+		<dict>
+			<key>note</key>
+			<string>openconnect install</string>
+			<key>xpos</key>
+			<real>410</real>
+			<key>ypos</key>
+			<real>15</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
@@ -169,7 +280,7 @@ support `servercert` setting</string>
 		<string>SERVER_CERT</string>
 	</array>
 	<key>version</key>
-	<string>1.2</string>
+	<string>1.3</string>
 	<key>webaddress</key>
 	<string>https://1991421.cn</string>
 </dict>
