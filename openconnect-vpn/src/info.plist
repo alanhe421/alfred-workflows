@@ -77,7 +77,7 @@
 				<integer>102</integer>
 				<key>script</key>
 				<string>currentPath=`pwd`
-echo "${currentPath}/vpn.sh '$URL' '$MAC_PASSWORD' '$USERNAME' '$PASSWORD'"</string>
+echo "${currentPath}/vpn.sh '$URL' '$MAC_PASSWORD' '$USERNAME' '$PASSWORD' '$SERVER_CERT'"</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -113,46 +113,51 @@ echo "${currentPath}/vpn.sh '$URL' '$MAC_PASSWORD' '$USERNAME' '$PASSWORD'"</str
 
 ## install
 
+```shell
+brew install openconnect
+brew install expect
 ```
-$ brew install openconnect
-```</string>
+
+support `servercert` setting</string>
 	<key>uidata</key>
 	<dict>
 		<key>033A1686-C0F8-42AB-AB38-B78FC9DD411A</key>
 		<dict>
 			<key>xpos</key>
-			<integer>545</integer>
+			<real>545</real>
 			<key>ypos</key>
-			<integer>165</integer>
+			<real>165</real>
 		</dict>
 		<key>2A5DD05A-6EB9-4BAD-BF59-317CA3C2845D</key>
 		<dict>
 			<key>note</key>
 			<string>input captcha</string>
 			<key>xpos</key>
-			<integer>20</integer>
+			<real>30</real>
 			<key>ypos</key>
-			<integer>155</integer>
+			<real>155</real>
 		</dict>
 		<key>BD59BE3B-0B89-4B40-A1FA-E708A4E09F4F</key>
 		<dict>
 			<key>xpos</key>
-			<integer>290</integer>
+			<real>290</real>
 			<key>ypos</key>
-			<integer>160</integer>
+			<real>160</real>
 		</dict>
 	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
 	<key>variables</key>
 	<dict>
 		<key>MAC_PASSWORD</key>
 		<string></string>
 		<key>PASSWORD</key>
 		<string></string>
+		<key>SERVER_CERT</key>
+		<string></string>
 		<key>URL</key>
 		<string></string>
 		<key>USERNAME</key>
-		<string></string>
-		<key>servercert</key>
 		<string></string>
 	</dict>
 	<key>variablesdontexport</key>
@@ -161,10 +166,10 @@ $ brew install openconnect
 		<string>URL</string>
 		<string>USERNAME</string>
 		<string>MAC_PASSWORD</string>
-		<string>servercert</string>
+		<string>SERVER_CERT</string>
 	</array>
 	<key>version</key>
-	<string>1.1</string>
+	<string>1.2</string>
 	<key>webaddress</key>
 	<string>https://1991421.cn</string>
 </dict>
