@@ -54,11 +54,50 @@
 				<false/>
 			</dict>
 		</array>
+		<key>23E50046-334E-4CB2-9FDE-96C0CC8239D4</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>350F8E24-DB4F-447E-B329-68CF8FDDE789</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>350F8E24-DB4F-447E-B329-68CF8FDDE789</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>53362501-618C-4F8B-B446-B28C4C548AB8</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>399B3A4B-008F-4212-B706-043EB7BD6DB6</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>1C678B7F-4E6E-4468-AA63-3C242326C99B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>53362501-618C-4F8B-B446-B28C4C548AB8</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>BD056944-2D4C-4E3D-BF5D-EF96F3E4AE39</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -121,6 +160,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>10DAB206-DAB4-4DEE-B9AB-20B5F2431F33</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>BD056944-2D4C-4E3D-BF5D-EF96F3E4AE39</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>570250E1-F9FA-4B41-BFBE-412DD258DC44</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -305,6 +357,29 @@ echo -n "${filesize}B"</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>/usr/local/bin/node ./main.js "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>53362501-618C-4F8B-B446-B28C4C548AB8</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
@@ -424,6 +499,64 @@ fi</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>Copied to clipboard</string>
+				<key>title</key>
+				<string>{var:filename}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>BD056944-2D4C-4E3D-BF5D-EF96F3E4AE39</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>filetypes</key>
+				<array/>
+				<key>name</key>
+				<string>Copy File Data-URL</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.action</string>
+			<key>uid</key>
+			<string>23E50046-334E-4CB2-9FDE-96C0CC8239D4</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>filename</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>350F8E24-DB4F-447E-B329-68CF8FDDE789</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -473,98 +606,129 @@ brew install imagemagick
 
 ## feat
 
-1. copy file name without suffix.
-2. copy file size without suffix.
-3. copy pixel size for image file</string>
+1. copy file name without suffix
+2. copy file size without suffix
+3. copy pixel size for image file
+4. convert file to dataURL</string>
 	<key>uidata</key>
 	<dict>
 		<key>10DAB206-DAB4-4DEE-B9AB-20B5F2431F33</key>
 		<dict>
 			<key>xpos</key>
-			<integer>315</integer>
+			<real>315</real>
 			<key>ypos</key>
-			<integer>730</integer>
+			<real>730</real>
 		</dict>
 		<key>1C678B7F-4E6E-4468-AA63-3C242326C99B</key>
 		<dict>
 			<key>note</key>
 			<string>remove suffix</string>
 			<key>xpos</key>
-			<integer>370</integer>
+			<real>370</real>
 			<key>ypos</key>
-			<integer>175</integer>
+			<real>175</real>
+		</dict>
+		<key>23E50046-334E-4CB2-9FDE-96C0CC8239D4</key>
+		<dict>
+			<key>xpos</key>
+			<real>610</real>
+			<key>ypos</key>
+			<real>665</real>
+		</dict>
+		<key>350F8E24-DB4F-447E-B329-68CF8FDDE789</key>
+		<dict>
+			<key>xpos</key>
+			<real>775</real>
+			<key>ypos</key>
+			<real>700</real>
 		</dict>
 		<key>399B3A4B-008F-4212-B706-043EB7BD6DB6</key>
 		<dict>
 			<key>note</key>
 			<string>remove path</string>
 			<key>xpos</key>
-			<integer>235</integer>
+			<real>235</real>
 			<key>ypos</key>
-			<integer>170</integer>
+			<real>170</real>
+		</dict>
+		<key>53362501-618C-4F8B-B446-B28C4C548AB8</key>
+		<dict>
+			<key>xpos</key>
+			<real>845</real>
+			<key>ypos</key>
+			<real>540</real>
 		</dict>
 		<key>570250E1-F9FA-4B41-BFBE-412DD258DC44</key>
 		<dict>
 			<key>xpos</key>
-			<integer>585</integer>
+			<real>830</real>
 			<key>ypos</key>
-			<integer>140</integer>
+			<real>135</real>
 		</dict>
 		<key>58647FDB-7E57-49AF-8E03-EBEE4B21D508</key>
 		<dict>
 			<key>xpos</key>
-			<integer>50</integer>
+			<real>50</real>
 			<key>ypos</key>
-			<integer>565</integer>
+			<real>565</real>
 		</dict>
 		<key>7B691B07-F4CA-4208-85DC-915E21423F64</key>
 		<dict>
 			<key>xpos</key>
-			<integer>290</integer>
+			<real>290</real>
 			<key>ypos</key>
-			<integer>390</integer>
+			<real>390</real>
 		</dict>
 		<key>7BC96501-D9E1-4A51-926A-A4D2B7866FC3</key>
 		<dict>
 			<key>xpos</key>
-			<integer>590</integer>
+			<real>610</real>
 			<key>ypos</key>
-			<integer>355</integer>
+			<real>320</real>
 		</dict>
 		<key>82008DC3-7A42-463D-A472-34B0DCFE8353</key>
 		<dict>
 			<key>xpos</key>
-			<integer>300</integer>
+			<real>300</real>
 			<key>ypos</key>
-			<integer>565</integer>
+			<real>565</real>
 		</dict>
 		<key>8A29FF84-B010-4C62-A11E-8E6232F98D27</key>
 		<dict>
 			<key>xpos</key>
-			<integer>50</integer>
+			<real>50</real>
 			<key>ypos</key>
-			<integer>140</integer>
+			<real>140</real>
 		</dict>
 		<key>95764FE3-1E5E-4768-97CB-084B51CFC219</key>
 		<dict>
 			<key>xpos</key>
-			<integer>50</integer>
+			<real>50</real>
 			<key>ypos</key>
-			<integer>730</integer>
+			<real>730</real>
+		</dict>
+		<key>BD056944-2D4C-4E3D-BF5D-EF96F3E4AE39</key>
+		<dict>
+			<key>xpos</key>
+			<real>1005</real>
+			<key>ypos</key>
+			<real>575</real>
 		</dict>
 		<key>CCCE1D1B-E013-441F-901B-62013D2A7A53</key>
 		<dict>
 			<key>xpos</key>
-			<integer>55</integer>
+			<real>55</real>
 			<key>ypos</key>
-			<integer>390</integer>
+			<real>390</real>
 		</dict>
 	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.2</string>
+	<string>1.3</string>
 	<key>webaddress</key>
-	<string>https://1991421.cn</string>
+	<string>https://github.com/alanhg/alfred-workflows/tree/master/file-enhancer</string>
 </dict>
 </plist>
