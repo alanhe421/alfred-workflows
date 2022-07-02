@@ -14,6 +14,7 @@ const [, ,] = process.argv;
         title: '/etc/hosts',
         subtitle: ' ⇧ to view',
         quicklookurl: '/etc/hosts',
+        type: 'file',
         arg: '/etc/hosts',
         text: {
           largetype: fs.readFileSync('/etc/hosts', { encoding: 'utf8' })

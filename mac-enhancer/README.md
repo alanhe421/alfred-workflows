@@ -1,4 +1,4 @@
-Mac enhancer
+> Mac enhancer
 
 1. toggle trackpad
 2. toggle mute
@@ -9,9 +9,11 @@ Mac enhancer
 6. Delete All Messages
 7. toggle WiFi
 8. type 'host' and ⏎ to open `/etc/hosts` file
+   recommend add hosts file rw rights for current user.
+   ![https://i.imgur.com/d8DKgnY.jpg](https://i.imgur.com/d8DKgnY.jpg)
 
 
-![](https://img.shields.io/badge/version-v1.7-green?style=for-the-badge)
+![](https://img.shields.io/badge/version-v1.8-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/mac-enhancer/Mac%20Enhancer.alfredworkflow)
 [![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/mac-enhancer/src/info.plist)
 
