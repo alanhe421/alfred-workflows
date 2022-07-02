@@ -69,7 +69,7 @@ I developed the following SDK to improve workflow development efficiency.
 
 ## FAQ
 
-Welcome ➡️ [Discussion](https://github.com/alanhg/alfred-workflows/discussions)
+Welcome ➡️ [Discussion](https://github.com/alanhg/alfred-workflows/discussions)🔥
 
 ## Sponsor
 
