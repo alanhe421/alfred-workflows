@@ -15,6 +15,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 - [Dependency](#dependency)
 - [FAQ](#faq)
 - [Sponsor](#sponsor)
+- [Star History](#star-history)
 - [Subscribe & Communication](#subscribe--communication)
 - [Contributors](#contributors)
 
