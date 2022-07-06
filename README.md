@@ -76,6 +76,11 @@ Welcome ➡️ [Discussion](https://github.com/alanhg/alfred-workflows/discussio
 - Star this repo 🌟 ☝️
 - [Buy me a ☕️ ](https://www.paypal.com/paypalme/alanhe421)
 
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=alanhg/alfred-workflows&type=Date)](https://star-history.com/#alanhg/alfred-workflows&Date)
+
+
 ## Subscribe & Communication
 
 [![](https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@alanhg)
