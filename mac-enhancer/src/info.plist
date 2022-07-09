@@ -8,6 +8,19 @@
 	<string>Self-Dev</string>
 	<key>connections</key>
 	<dict>
+		<key>248EAC40-BF24-4D70-B18D-EA2AA0052EFA</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>1B18F274-588B-456C-9E33-FEFA036EBCF0</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>29DA1D50-839E-444B-8391-CE11F16BAB95</key>
 		<array>
 			<dict>
@@ -675,6 +688,42 @@ do shell script ("networksetup -setairportpower " &amp; device &amp; " " &amp; p
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>sudo pkill bluetoothd</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.terminalcommand</string>
+			<key>uid</key>
+			<string>1B18F274-588B-456C-9E33-FEFA036EBCF0</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>bluetooth</string>
+				<key>subtext</key>
+				<string>Reset the Bluetooth module</string>
+				<key>text</key>
+				<string>Reset Bluetooth</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>248EAC40-BF24-4D70-B18D-EA2AA0052EFA</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -758,9 +807,24 @@ do shell script ("networksetup -setairportpower " &amp; device &amp; " " &amp; p
 7. toggle WiFi
 8. type 'host' and ⏎ to open `/etc/hosts` file
    recommend add hosts file rw rights for current user.
-   ![https://i.imgur.com/d8DKgnY.jpg](https://i.imgur.com/d8DKgnY.jpg)</string>
+   ![https://i.imgur.com/d8DKgnY.jpg](https://i.imgur.com/d8DKgnY.jpg)
+9. type `bluetooth` to reset module</string>
 	<key>uidata</key>
 	<dict>
+		<key>1B18F274-588B-456C-9E33-FEFA036EBCF0</key>
+		<dict>
+			<key>xpos</key>
+			<real>880</real>
+			<key>ypos</key>
+			<real>975</real>
+		</dict>
+		<key>248EAC40-BF24-4D70-B18D-EA2AA0052EFA</key>
+		<dict>
+			<key>xpos</key>
+			<real>650</real>
+			<key>ypos</key>
+			<real>975</real>
+		</dict>
 		<key>29DA1D50-839E-444B-8391-CE11F16BAB95</key>
 		<dict>
 			<key>xpos</key>
@@ -929,7 +993,7 @@ do shell script ("networksetup -setairportpower " &amp; device &amp; " " &amp; p
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.8</string>
+	<string>1.9</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/mac-enhancer</string>
 </dict>
