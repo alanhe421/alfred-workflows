@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>cn.alanhe.clipboard-history</string>
+	<key>category</key>
+	<string>Self-Dev</string>
+	<key>connections</key>
+	<dict>
+		<key>A94CBE56-EC66-4466-884E-FACD03696B97</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E1C27CC0-8EA4-4C46-9FD9-B4EFF67D061F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>AE603C0F-5392-4BDE-98EB-759F5AFD87CC</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Alan He</string>
+	<key>description</key>
+	<string>clear clipboard history</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Clipboard History</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>sqlite3 "${HOME}/Library/Application Support/Alfred/Databases/clipboard.alfdb" &lt;&lt;STATEMENT
+  DELETE FROM clipboard;
+STATEMENT
+
+
+if [ -d "${HOME}/Library/Application Support/Alfred/Databases/clipboard.alfdb.data" ]; then rm -Rf "${HOME}/Library/Application Support/Alfred/Databases/clipboard.alfdb.data"; fi</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>E1C27CC0-8EA4-4C46-9FD9-B4EFF67D061F</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>clear</string>
+				<key>subtext</key>
+				<string>Both Alfred and System</string>
+				<key>text</key>
+				<string>Clear Clipboard History</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>A94CBE56-EC66-4466-884E-FACD03696B97</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>tasksettings</key>
+				<dict/>
+				<key>taskuid</key>
+				<string>com.alfredapp.automation.core/macOS/clipboard.clear</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.automation.task</string>
+			<key>uid</key>
+			<string>AE603C0F-5392-4BDE-98EB-759F5AFD87CC</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>&gt; Clear Clipboard History, both Alfred and System</string>
+	<key>uidata</key>
+	<dict>
+		<key>A94CBE56-EC66-4466-884E-FACD03696B97</key>
+		<dict>
+			<key>xpos</key>
+			<real>115</real>
+			<key>ypos</key>
+			<real>220</real>
+		</dict>
+		<key>AE603C0F-5392-4BDE-98EB-759F5AFD87CC</key>
+		<dict>
+			<key>note</key>
+			<string>clear system</string>
+			<key>xpos</key>
+			<real>445</real>
+			<key>ypos</key>
+			<real>380</real>
+		</dict>
+		<key>E1C27CC0-8EA4-4C46-9FD9-B4EFF67D061F</key>
+		<dict>
+			<key>note</key>
+			<string>clear alfred</string>
+			<key>xpos</key>
+			<real>445</real>
+			<key>ypos</key>
+			<real>200</real>
+		</dict>
+	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
+	<key>variablesdontexport</key>
+	<array/>
+	<key>version</key>
+	<string>0.1</string>
+	<key>webaddress</key>
+	<string>https://1991421.cn</string>
+</dict>
+</plist>
