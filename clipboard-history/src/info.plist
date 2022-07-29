@@ -37,7 +37,7 @@
 	<key>description</key>
 	<string>clear clipboard history</string>
 	<key>disabled</key>
-	<false/>
+	<true/>
 	<key>name</key>
 	<string>Clipboard History</string>
 	<key>objects</key>
@@ -108,7 +108,12 @@ if [ -d "${HOME}/Library/Application Support/Alfred/Databases/clipboard.alfdb.da
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>&gt; Clear Clipboard History, both Alfred and System</string>
+	<string>&gt; Clear Clipboard History, both Alfred and System
+
+
+## Usage
+
+type `clear` to trigger.</string>
 	<key>uidata</key>
 	<dict>
 		<key>A94CBE56-EC66-4466-884E-FACD03696B97</key>
@@ -142,8 +147,8 @@ if [ -d "${HOME}/Library/Application Support/Alfred/Databases/clipboard.alfdb.da
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>0.1</string>
+	<string>0.2</string>
 	<key>webaddress</key>
-	<string>https://1991421.cn</string>
+	<string>https://github.com/alanhg/alfred-workflows/tree/master/clipboard-history</string>
 </dict>
 </plist>
