@@ -5,6 +5,7 @@ instance.get('/v1/modules').then((res) => {
   const items = res.data.available.map((item) => {
     const enabled = res.data.enabled.includes(item);
     return {
+      uid: item,
       title: item,
       subtitle: enabled ? 'enabled' : '',
       arg: utils.joinMultiArg('module', item, !enabled)

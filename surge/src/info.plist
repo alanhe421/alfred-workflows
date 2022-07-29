@@ -531,6 +531,8 @@
 				</array>
 				<key>elselabel</key>
 				<string>else</string>
+				<key>hideelse</key>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.conditional</string>
@@ -599,6 +601,8 @@
 				<false/>
 				<key>items</key>
 				<string>[{"title":"Direct Outbound","arg":"direct","subtitle":"All requests will be sent to the target server directly"},{"title":"Global Proxy","arg":"proxy","subtitle":"All requests will be forwarded to a proxy server"},{"title":"Rule-based Proxy","arg":"rule","subtitle":"Using rule system to determine how to process requests"}]</string>
+				<key>matchmode</key>
+				<integer>0</integer>
 				<key>runningsubtext</key>
 				<string></string>
 				<key>subtext</key>
@@ -723,6 +727,8 @@
 				<false/>
 				<key>items</key>
 				<string>[{"title":"Flush DNS","arg":"\/dns\/flush","subtitle":"Flush the DNS cache."},{"title":"DNS Cache","arg":"\/dns","subtitle":"Obtain the current DNS cache content."},{"title":"DNS Delay","arg":"\/test\/dns_delay","subtitle":"Test the DNS delay."}]</string>
+				<key>matchmode</key>
+				<integer>0</integer>
 				<key>runningsubtext</key>
 				<string></string>
 				<key>subtext</key>
@@ -1161,183 +1167,185 @@ Surge Mac 4.0.0、Surge iOS 4.4.0开始提供HTTP API, 即该版本之前的均�
 			<key>note</key>
 			<string>Profiles</string>
 			<key>xpos</key>
-			<integer>485</integer>
+			<real>485</real>
 			<key>ypos</key>
-			<integer>850</integer>
+			<real>850</real>
 		</dict>
 		<key>0B781B29-1B66-4F9C-8B61-8477E02878CD</key>
 		<dict>
 			<key>xpos</key>
-			<integer>345</integer>
+			<real>345</real>
 			<key>ypos</key>
-			<integer>310</integer>
+			<real>310</real>
 		</dict>
 		<key>184429E5-5B99-4D80-8741-ACC0B6820475</key>
 		<dict>
 			<key>xpos</key>
-			<integer>315</integer>
+			<real>315</real>
 			<key>ypos</key>
-			<integer>705</integer>
+			<real>705</real>
 		</dict>
 		<key>2535B20A-F43D-438D-8DF6-2F037994030B</key>
 		<dict>
 			<key>note</key>
 			<string>group-policy list</string>
 			<key>xpos</key>
-			<integer>790</integer>
+			<real>790</real>
 			<key>ypos</key>
-			<integer>750</integer>
+			<real>750</real>
 		</dict>
 		<key>32F87F30-C084-443C-8A7F-43B9F5588E2A</key>
 		<dict>
 			<key>xpos</key>
-			<integer>1180</integer>
+			<real>1180</real>
 			<key>ypos</key>
-			<integer>940</integer>
+			<real>940</real>
 		</dict>
 		<key>3477EA17-4B07-418B-B4D8-B4D74D4ECF96</key>
 		<dict>
 			<key>xpos</key>
-			<integer>500</integer>
+			<real>500</real>
 			<key>ypos</key>
-			<integer>255</integer>
+			<real>255</real>
 		</dict>
 		<key>5468E8DA-D6EE-46E4-B944-F358BFBB350A</key>
 		<dict>
 			<key>note</key>
 			<string>Policy Groups</string>
 			<key>xpos</key>
-			<integer>480</integer>
+			<real>480</real>
 			<key>ypos</key>
-			<integer>710</integer>
+			<real>710</real>
 		</dict>
 		<key>55101303-A2F4-4FCE-8085-F6E1E1CEDE14</key>
 		<dict>
 			<key>xpos</key>
-			<integer>25</integer>
+			<real>30</real>
 			<key>ypos</key>
-			<integer>145</integer>
+			<real>145</real>
 		</dict>
 		<key>6620B43C-63DB-4DCE-99DD-3A1C57604DDA</key>
 		<dict>
 			<key>note</key>
 			<string>dns</string>
 			<key>xpos</key>
-			<integer>700</integer>
+			<real>700</real>
 			<key>ypos</key>
-			<integer>530</integer>
+			<real>530</real>
 		</dict>
 		<key>672241DA-A742-4C25-8736-D929FC69A4E5</key>
 		<dict>
 			<key>xpos</key>
-			<integer>335</integer>
+			<real>335</real>
 			<key>ypos</key>
-			<integer>805</integer>
+			<real>805</real>
 		</dict>
 		<key>7AF3CA13-DA2D-4D97-B5A7-E4EC8D4107F3</key>
 		<dict>
 			<key>xpos</key>
-			<integer>675</integer>
+			<real>675</real>
 			<key>ypos</key>
-			<integer>770</integer>
+			<real>770</real>
 		</dict>
 		<key>7F8E5ABB-8E12-4EE8-A537-9C6C8884222A</key>
 		<dict>
 			<key>note</key>
 			<string>DNS mode</string>
 			<key>xpos</key>
-			<integer>470</integer>
+			<real>470</real>
 			<key>ypos</key>
-			<integer>535</integer>
+			<real>535</real>
 		</dict>
 		<key>82C5845C-72B1-4A59-8F88-A73D1A4C77E4</key>
 		<dict>
 			<key>xpos</key>
-			<integer>355</integer>
+			<real>355</real>
 			<key>ypos</key>
-			<integer>550</integer>
+			<real>550</real>
 		</dict>
 		<key>A205BD55-D9B0-44B8-A796-D824FF9D0CD5</key>
 		<dict>
 			<key>xpos</key>
-			<integer>240</integer>
+			<real>240</real>
 			<key>ypos</key>
-			<integer>840</integer>
+			<real>840</real>
 		</dict>
 		<key>A700346D-23C4-4082-B08E-5310676FC7B1</key>
 		<dict>
 			<key>xpos</key>
-			<integer>430</integer>
+			<real>430</real>
 			<key>ypos</key>
-			<integer>45</integer>
+			<real>45</real>
 		</dict>
 		<key>AD911E40-3BD8-4B7B-A8A9-2D5ADB28887C</key>
 		<dict>
 			<key>xpos</key>
-			<integer>685</integer>
+			<real>685</real>
 			<key>ypos</key>
-			<integer>1110</integer>
+			<real>1110</real>
 		</dict>
 		<key>B53E08CC-23B2-4106-BDA3-E59F7963BB1C</key>
 		<dict>
 			<key>note</key>
 			<string>warning for turn on http-api</string>
 			<key>xpos</key>
-			<integer>480</integer>
+			<real>480</real>
 			<key>ypos</key>
-			<integer>345</integer>
+			<real>345</real>
 		</dict>
 		<key>BBB56AB5-5DF6-4763-8504-006F8B6066C9</key>
 		<dict>
 			<key>note</key>
 			<string>do something</string>
 			<key>xpos</key>
-			<integer>800</integer>
+			<real>800</real>
 			<key>ypos</key>
-			<integer>985</integer>
+			<real>985</real>
 		</dict>
 		<key>CAC75DC7-4E03-47F4-9C88-B75709EC6D23</key>
 		<dict>
 			<key>xpos</key>
-			<integer>195</integer>
+			<real>195</real>
 			<key>ypos</key>
-			<integer>120</integer>
+			<real>120</real>
 		</dict>
 		<key>D7FC2694-B93F-4F59-A2DF-BB59ACDA7200</key>
 		<dict>
 			<key>xpos</key>
-			<integer>820</integer>
+			<real>820</real>
 			<key>ypos</key>
-			<integer>225</integer>
+			<real>225</real>
 		</dict>
 		<key>D8F3DDB1-79D5-455B-BF8C-022F6FBFECB7</key>
 		<dict>
 			<key>note</key>
 			<string>outbound mode</string>
 			<key>xpos</key>
-			<integer>640</integer>
+			<real>640</real>
 			<key>ypos</key>
-			<integer>220</integer>
+			<real>220</real>
 		</dict>
 		<key>E78945D3-3452-4A45-A0B8-2A46BACB37B7</key>
 		<dict>
 			<key>note</key>
 			<string>Rules</string>
 			<key>xpos</key>
-			<integer>485</integer>
+			<real>485</real>
 			<key>ypos</key>
-			<integer>1080</integer>
+			<real>1080</real>
 		</dict>
 		<key>E9460C86-1ECB-4B7A-AC26-9E3C9217A842</key>
 		<dict>
 			<key>note</key>
 			<string>module</string>
 			<key>xpos</key>
-			<integer>200</integer>
+			<real>200</real>
 			<key>ypos</key>
-			<integer>965</integer>
+			<real>965</real>
 		</dict>
 	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
 	<key>variables</key>
 	<dict>
 		<key>HTTP_API</key>
@@ -1352,7 +1360,7 @@ Surge Mac 4.0.0、Surge iOS 4.4.0开始提供HTTP API, 即该版本之前的均�
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.9</string>
+	<string>1.10</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/surge</string>
 </dict>

@@ -8,6 +8,7 @@ const getSystemProxy = new Promise((resolve, reject) => {
     .then((res) => {
       resolve({
         title: 'System Proxy',
+        uid: 'System Proxy',
         subtitle: res.data.enabled ? 'enabled' : 'disabled',
         arg: utils.joinMultiArg('systemproxy', !res.data.enabled)
       });
@@ -21,6 +22,7 @@ const getEnhancedMode = new Promise((resolve) => {
     .then((res) => {
       resolve({
         title: 'Enhanced Mode',
+        uid: 'Enhanced Mode',
         subtitle: res.data.enabled ? 'enabled' : 'disabled',
         arg: utils.joinMultiArg(`enhancedmode`, !res.data.enabled)
       });
@@ -32,6 +34,7 @@ const getMitmFeature = new Promise((resolve) => {
   instance.get('/v1/features/mitm').then((res) => {
     resolve({
       title: 'MitM',
+      uid: 'MitM',
       subtitle: res.data.enabled ? 'enabled' : 'disabled',
       arg: utils.joinMultiArg('mitm', !res.data.enabled)
     });
@@ -42,6 +45,7 @@ const getCaptureFeature = new Promise((resolve) => {
   instance.get('/v1/features/capture').then((res) => {
     resolve({
       title: 'HTTP Capture',
+      uid: 'HTTP Capture',
       subtitle: res.data.enabled ? 'enabled' : 'disabled',
       arg: utils.joinMultiArg('capture', !res.data.enabled)
     });
@@ -54,6 +58,7 @@ const getRewriteFeature = new Promise((resolve) => {
     .then((res) => {
       resolve({
         title: 'Rewrite',
+        uid: 'Rewrite',
         subtitle: res.data.enabled ? 'enabled' : 'disabled',
         arg: utils.joinMultiArg('rewrite', !res.data.enabled)
       });
@@ -67,6 +72,7 @@ const getScriptingFeature = new Promise((resolve) => {
     .then((res) => {
       resolve({
         title: 'Scripting',
+        uid: 'Scripting',
         subtitle: res.data.enabled ? 'enabled' : 'disabled',
         arg: utils.joinMultiArg('scripting', !res.data.enabled)
       });
@@ -90,6 +96,7 @@ const getOutboundMode = new Promise((resolve) => {
 const getReloadProfile = new Promise((resolve) => {
   resolve({
     title: 'Reload Profile',
+    uid: 'Reload Profile',
     subtitle: '',
     arg: 'reloadProfile'
   });
@@ -98,6 +105,7 @@ const getReloadProfile = new Promise((resolve) => {
 const getDNS = new Promise((resolve) => {
   resolve({
     title: 'DNS',
+    uid: 'DNS',
     subtitle: '',
     arg: 'dns'
   });
@@ -106,6 +114,7 @@ const getDNS = new Promise((resolve) => {
 const getPolicyGroups = new Promise((resolve) => {
   resolve({
     title: 'Policy Groups',
+    uid: 'Policy Groups',
     subtitle: '',
     arg: 'policyGroups'
   });
@@ -117,6 +126,7 @@ const getProfiles = new Promise((resolve) => {
     .then((res) => {
       resolve({
         title: 'Profiles',
+        uid: 'Profiles',
         subtitle: `${res.data.name} ${utils.emoji.checked} , ⏎ to switch profile`,
         arg: 'profiles'
       });
@@ -127,6 +137,7 @@ const getProfiles = new Promise((resolve) => {
 const getModules = new Promise((resolve) => {
   resolve({
     title: 'Module',
+    uid: 'Module',
     subtitle: 'override the current profiles',
     arg: 'module'
   });
@@ -135,6 +146,7 @@ const getModules = new Promise((resolve) => {
 const getRules = new Promise((resolve) => {
   resolve({
     title: 'Rules',
+    uid: 'Rules',
     subtitle: 'Obtain the list of rules',
     arg: 'rules'
   });
@@ -143,6 +155,7 @@ const getRules = new Promise((resolve) => {
 const getLog = new Promise((resolve) => {
   resolve({
     title: 'Log',
+    uid: 'Log',
     subtitle: 'Dynamically modify Log Level without writing to conf file',
     arg: 'log'
   });
