@@ -41,7 +41,7 @@
 				<key>modifiersubtext</key>
 				<string>View</string>
 				<key>vitoclose</key>
-				<false/>
+				<true/>
 			</dict>
 		</array>
 		<key>30CD93A9-33D6-4A7A-951A-55D05CB6CE6B</key>
@@ -49,6 +49,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>42312DC7-F660-4E68-9D7C-88091E1CECF8</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>4512B97D-47E4-44D5-82B3-5870BFDD33B9</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>845C97B3-4EF6-48FC-8245-A90AF2F96C70</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -167,7 +180,32 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
+				<string>95069264-C0C3-4E1B-8B45-39B955FE85C0</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>F77E5B27-3C83-4449-B54E-71B78C50C517</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
 				<string>14CEF865-8E34-46F4-B4CF-A1C05377F746</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>95069264-C0C3-4E1B-8B45-39B955FE85C0</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>4512B97D-47E4-44D5-82B3-5870BFDD33B9</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -266,7 +304,7 @@
 				<key>subtext</key>
 				<string>search project</string>
 				<key>title</key>
-				<string>Git Drone</string>
+				<string>Git Code</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -284,12 +322,14 @@
 			<dict>
 				<key>browser</key>
 				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
 				<string>{query}</string>
-				<key>utf8</key>
-				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -378,31 +418,51 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
 				<integer>2</integer>
-				<key>fixedorder</key>
-				<false/>
-				<key>items</key>
-				<string>[{"title":"Merge Request","arg":"merge_requests"},{"title":"Issues","arg":"issues"},{"title":"Archive project","arg":"archive_project"}]</string>
+				<key>escaping</key>
+				<integer>102</integer>
 				<key>keyword</key>
 				<string>cview</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
 				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>/usr/local/bin/node ./repo-detail.js {query}</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
 				<string></string>
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
 				<string></string>
+				<key>type</key>
+				<integer>0</integer>
 				<key>withspace</key>
 				<false/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.listfilter</string>
+			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
 			<string>2BE29A0E-B934-4CB3-B196-46DEFD5F8F24</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -486,9 +546,25 @@
 						<key>uid</key>
 						<string>C763BFDE-BA2B-492A-A195-AB3F8AA39A8B</string>
 					</dict>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>-/branches</string>
+						<key>outputlabel</key>
+						<string></string>
+						<key>uid</key>
+						<string>F77E5B27-3C83-4449-B54E-71B78C50C517</string>
+					</dict>
 				</array>
 				<key>elselabel</key>
 				<string>else</string>
+				<key>hideelse</key>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.conditional</string>
@@ -513,6 +589,70 @@
 			<string>D1311193-4E0A-496C-B58C-377CA7ED67EA</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>95069264-C0C3-4E1B-8B45-39B955FE85C0</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>/usr/local/bin/node ./repo-branch.js</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>4512B97D-47E4-44D5-82B3-5870BFDD33B9</string>
+			<key>version</key>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -670,6 +810,7 @@ fi</string>
 6. 增加score权重设定，比如设置score_2=1，这样第二个工蜂服务项目可以优先排在前面，不设定，则默认为第一个项目列表在前
 7. 一键拷贝所有MR链接
 8. 输入`:updategitcode`进行workflow升级
+9. 支持查看分支列表
 
 整体设计，⏎均是浏览器打开对应URL，⌥为进一步操作。</string>
 	<key>uidata</key>
@@ -677,106 +818,124 @@ fi</string>
 		<key>14CEF865-8E34-46F4-B4CF-A1C05377F746</key>
 		<dict>
 			<key>xpos</key>
-			<integer>585</integer>
+			<real>720</real>
 			<key>ypos</key>
-			<integer>790</integer>
+			<real>910</real>
 		</dict>
 		<key>19B6ED47-D749-4CFD-A503-556F264BBD0B</key>
 		<dict>
 			<key>xpos</key>
-			<integer>95</integer>
+			<real>95</real>
 			<key>ypos</key>
-			<integer>915</integer>
+			<real>915</real>
 		</dict>
 		<key>2BE29A0E-B934-4CB3-B196-46DEFD5F8F24</key>
 		<dict>
 			<key>note</key>
-			<string>overview</string>
+			<string>repo-detail</string>
 			<key>xpos</key>
-			<integer>190</integer>
+			<real>190</real>
 			<key>ypos</key>
-			<integer>495</integer>
+			<real>505</real>
 		</dict>
 		<key>30CD93A9-33D6-4A7A-951A-55D05CB6CE6B</key>
 		<dict>
 			<key>xpos</key>
-			<integer>360</integer>
+			<real>360</real>
 			<key>ypos</key>
-			<integer>230</integer>
+			<real>230</real>
 		</dict>
 		<key>34A48C4D-D4AC-40B0-98E2-38F761EB1AA6</key>
 		<dict>
 			<key>xpos</key>
-			<integer>345</integer>
+			<real>345</real>
 			<key>ypos</key>
-			<integer>915</integer>
+			<real>915</real>
 		</dict>
 		<key>42312DC7-F660-4E68-9D7C-88091E1CECF8</key>
 		<dict>
 			<key>xpos</key>
-			<integer>580</integer>
+			<real>580</real>
 			<key>ypos</key>
-			<integer>225</integer>
+			<real>225</real>
+		</dict>
+		<key>4512B97D-47E4-44D5-82B3-5870BFDD33B9</key>
+		<dict>
+			<key>note</key>
+			<string>branches list</string>
+			<key>xpos</key>
+			<real>720</real>
+			<key>ypos</key>
+			<real>740</real>
 		</dict>
 		<key>50B0CD10-4D52-4898-9C05-DD3A34A829C3</key>
 		<dict>
 			<key>xpos</key>
-			<integer>75</integer>
+			<real>75</real>
 			<key>ypos</key>
-			<integer>50</integer>
+			<real>50</real>
 		</dict>
 		<key>62020450-80F3-431B-B648-969B059702EE</key>
 		<dict>
 			<key>xpos</key>
-			<integer>345</integer>
+			<real>345</real>
 			<key>ypos</key>
-			<integer>10</integer>
+			<real>15</real>
 		</dict>
 		<key>6CE09F6A-FAA4-4651-8DBB-41F21EEA8068</key>
 		<dict>
 			<key>xpos</key>
-			<integer>940</integer>
+			<real>940</real>
 			<key>ypos</key>
-			<integer>80</integer>
+			<real>80</real>
 		</dict>
 		<key>845C97B3-4EF6-48FC-8245-A90AF2F96C70</key>
 		<dict>
 			<key>xpos</key>
-			<integer>540</integer>
+			<real>540</real>
 			<key>ypos</key>
-			<integer>415</integer>
+			<real>415</real>
 		</dict>
 		<key>8AEBE2BF-BFAC-4DA3-95D4-2A3238908144</key>
 		<dict>
 			<key>xpos</key>
-			<integer>255</integer>
+			<real>255</real>
 			<key>ypos</key>
-			<integer>340</integer>
+			<real>340</real>
 		</dict>
 		<key>935119A8-8D36-4251-B83E-DE68FE581EFD</key>
 		<dict>
 			<key>xpos</key>
-			<integer>405</integer>
+			<real>490</real>
 			<key>ypos</key>
-			<integer>610</integer>
+			<real>630</real>
+		</dict>
+		<key>95069264-C0C3-4E1B-8B45-39B955FE85C0</key>
+		<dict>
+			<key>xpos</key>
+			<real>605</real>
+			<key>ypos</key>
+			<real>695</real>
 		</dict>
 		<key>D1311193-4E0A-496C-B58C-377CA7ED67EA</key>
 		<dict>
 			<key>xpos</key>
-			<integer>575</integer>
+			<real>660</real>
 			<key>ypos</key>
-			<integer>625</integer>
+			<real>645</real>
 		</dict>
 		<key>D7F469D8-9AFB-458B-91D7-149BF973BB8A</key>
 		<dict>
 			<key>note</key>
 			<string>merge request list</string>
 			<key>xpos</key>
-			<integer>695</integer>
+			<real>780</real>
 			<key>ypos</key>
-			<integer>510</integer>
+			<real>530</real>
 		</dict>
 	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
 	<key>variables</key>
 	<dict>
 		<key>access_token_1</key>
@@ -802,17 +961,17 @@ fi</string>
 	</dict>
 	<key>variablesdontexport</key>
 	<array>
-		<string>base_url_3</string>
+		<string>access_token_2</string>
 		<string>base_url_2</string>
 		<string>base_url_1</string>
 		<string>access_token_3</string>
 		<string>access_token_1</string>
 		<string>score_2</string>
 		<string>score_1</string>
-		<string>access_token_2</string>
+		<string>base_url_3</string>
 	</array>
 	<key>version</key>
-	<string>1.8</string>
+	<string>1.9</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/git-code</string>
 </dict>
