@@ -1,5 +1,5 @@
-const { utils } = require('@stacker/alfred-utils');
-const { checkUpdate } = require('@stacker/alfred-utils/dist/alfred-cli-check');
+const {utils} = require('@stacker/alfred-utils');
+const {checkUpdate} = require('@stacker/alfred-utils/dist/alfred-cli-check');
 const [, , HTTP_API] = process.argv;
 const instance = require('./axios').createHttpClient(HTTP_API);
 const getSystemProxy = new Promise((resolve, reject) => {
@@ -85,9 +85,7 @@ const getOutboundMode = new Promise((resolve) => {
     .get('/v1/outbound')
     .then((res) => {
       resolve({
-        title: 'Outbound Mode',
-        subtitle: res.data.mode,
-        arg: utils.joinMultiArg('outboundmode')
+        title: 'Outbound Mode', subtitle: res.data.mode, arg: utils.joinMultiArg('outboundmode')
       });
     })
     .catch((e) => reject(e));
@@ -95,28 +93,19 @@ const getOutboundMode = new Promise((resolve) => {
 
 const getReloadProfile = new Promise((resolve) => {
   resolve({
-    title: 'Reload Profile',
-    uid: 'Reload Profile',
-    subtitle: '',
-    arg: 'reloadProfile'
+    title: 'Reload Profile', uid: 'Reload Profile', subtitle: '', arg: 'reloadProfile'
   });
 });
 
 const getDNS = new Promise((resolve) => {
   resolve({
-    title: 'DNS',
-    uid: 'DNS',
-    subtitle: '',
-    arg: 'dns'
+    title: 'DNS', uid: 'DNS', subtitle: '', arg: 'dns'
   });
 });
 
 const getPolicyGroups = new Promise((resolve) => {
   resolve({
-    title: 'Policy Groups',
-    uid: 'Policy Groups',
-    subtitle: '',
-    arg: 'policyGroups'
+    title: 'Policy Groups', uid: 'Policy Groups', subtitle: '', arg: 'policyGroups'
   });
 });
 
@@ -136,55 +125,27 @@ const getProfiles = new Promise((resolve) => {
 
 const getModules = new Promise((resolve) => {
   resolve({
-    title: 'Module',
-    uid: 'Module',
-    subtitle: 'override the current profiles',
-    arg: 'module'
+    title: 'Module', uid: 'Module', subtitle: 'override the current profiles', arg: 'module'
   });
 });
 
 const getRules = new Promise((resolve) => {
   resolve({
-    title: 'Rules',
-    uid: 'Rules',
-    subtitle: 'Obtain the list of rules',
-    arg: 'rules'
+    title: 'Rules', uid: 'Rules', subtitle: 'Obtain the list of rules', arg: 'rules'
   });
 });
 
 const getLog = new Promise((resolve) => {
   resolve({
-    title: 'Log',
-    uid: 'Log',
-    subtitle: 'Dynamically modify Log Level without writing to conf file',
-    arg: 'log'
+    title: 'Log', uid: 'Log', subtitle: 'Dynamically modify Log Level without writing to conf file', arg: 'log'
   });
 });
 
-const printItems = (obj) =>
-  console.log(
-    JSON.stringify({
-      items: Array.isArray(obj) ? obj : [obj]
-    })
-  );
+const printItems = (obj) => console.log(JSON.stringify({
+  items: Array.isArray(obj) ? obj : [obj]
+}));
 
-Promise.all([
-  checkUpdate(),
-  getSystemProxy,
-  getEnhancedMode,
-  getMitmFeature,
-  getCaptureFeature,
-  getRewriteFeature,
-  getScriptingFeature,
-  getOutboundMode,
-  getReloadProfile,
-  getDNS,
-  getProfiles,
-  getPolicyGroups,
-  getModules,
-  getRules,
-  getLog
-])
+Promise.all([checkUpdate(), getSystemProxy, getEnhancedMode, getMitmFeature, getCaptureFeature, getRewriteFeature, getScriptingFeature, getOutboundMode, getReloadProfile, getDNS, getProfiles, getPolicyGroups, getModules, getRules, getLog])
   .then(([updateItem, ...res]) => {
     if (updateItem) {
       res.unshift(updateItem);
@@ -194,11 +155,19 @@ Promise.all([
     });
   })
   .catch((e) => {
-    printItems({
-      title: 'You should enable HTTP API',
-      subtitle: 'Press enter to config',
-      arg: 'httpApi'
-    });
+    if (e.isAxiosError) {
+      printItems({
+        title: 'HTTP API meet wrong', subtitle: e.message, arg: 'httpApi', text: {
+          copy: e.message, largetype: e.message
+        }
+      });
+    } else {
+      printItems({
+        title: 'Something Wrong', subtitle: e.toString(), arg: e.toString(), text: {
+          copy: e.toString(), largetype: e.toString()
+        }
+      });
+    }
   });
 module.exports = {
   axios: instance

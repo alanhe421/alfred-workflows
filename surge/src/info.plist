@@ -1360,7 +1360,7 @@ Surge Mac 4.0.0、Surge iOS 4.4.0开始提供HTTP API, 即该版本之前的均�
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.10</string>
+	<string>1.11</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/surge</string>
 </dict>
