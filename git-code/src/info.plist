@@ -57,7 +57,7 @@
 				<false/>
 			</dict>
 		</array>
-		<key>4512B97D-47E4-44D5-82B3-5870BFDD33B9</key>
+		<key>3DD0D1AA-0A60-4153-BD0D-AF934B47A907</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
@@ -68,6 +68,19 @@
 				<string></string>
 				<key>vitoclose</key>
 				<false/>
+			</dict>
+		</array>
+		<key>4512B97D-47E4-44D5-82B3-5870BFDD33B9</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>8F3A4E0F-8EBF-49D8-9C2E-492EB36EC9DC</string>
+				<key>modifiers</key>
+				<integer>524288</integer>
+				<key>modifiersubtext</key>
+				<string>View commit list</string>
+				<key>vitoclose</key>
+				<true/>
 			</dict>
 		</array>
 		<key>50B0CD10-4D52-4898-9C05-DD3A34A829C3</key>
@@ -144,6 +157,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>2BE29A0E-B934-4CB3-B196-46DEFD5F8F24</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>8F3A4E0F-8EBF-49D8-9C2E-492EB36EC9DC</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3DD0D1AA-0A60-4153-BD0D-AF934B47A907</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -382,26 +408,6 @@
 			<key>config</key>
 			<dict>
 				<key>argument</key>
-				<string></string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict>
-					<key>repo</key>
-					<string>{query}</string>
-				</dict>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>8AEBE2BF-BFAC-4DA3-95D4-2A3238908144</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
 				<string>{var:baseUrl}/{var:projectName}/{query}</string>
 				<key>passthroughargument</key>
 				<false/>
@@ -418,51 +424,22 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>alfredfiltersresults</key>
-				<true/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<true/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>keyword</key>
-				<string>cview</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
+				<key>argument</key>
 				<string></string>
-				<key>script</key>
-				<string>/usr/local/bin/node ./repo-detail.js {query}</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>subtext</key>
-				<string></string>
-				<key>title</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
+				<key>passthroughargument</key>
 				<false/>
+				<key>variables</key>
+				<dict>
+					<key>repo</key>
+					<string>{query}</string>
+				</dict>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
+			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
-			<string>2BE29A0E-B934-4CB3-B196-46DEFD5F8F24</string>
+			<string>8AEBE2BF-BFAC-4DA3-95D4-2A3238908144</string>
 			<key>version</key>
-			<integer>3</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -510,6 +487,55 @@
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
 			<string>D7F469D8-9AFB-458B-91D7-149BF973BB8A</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>cview</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>/usr/local/bin/node ./repo-detail.js {query}</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>2BE29A0E-B934-4CB3-B196-46DEFD5F8F24</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
@@ -576,6 +602,53 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>/usr/local/bin/node ./repo-branch-commit.js</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>3DD0D1AA-0A60-4153-BD0D-AF934B47A907</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argument</key>
 				<string></string>
 				<key>passthroughargument</key>
@@ -587,6 +660,23 @@
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
 			<string>D1311193-4E0A-496C-B58C-377CA7ED67EA</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>8F3A4E0F-8EBF-49D8-9C2E-492EB36EC9DC</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -653,29 +743,6 @@
 			<string>4512B97D-47E4-44D5-82B3-5870BFDD33B9</string>
 			<key>version</key>
 			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>/usr/local/bin/node ./do.js {query}</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>14CEF865-8E34-46F4-B4CF-A1C05377F746</string>
-			<key>version</key>
-			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -796,6 +863,29 @@ fi</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>/usr/local/bin/node ./do.js {query}</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>14CEF865-8E34-46F4-B4CF-A1C05377F746</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>&gt; 腾讯工蜂项目检索
@@ -818,9 +908,9 @@ fi</string>
 		<key>14CEF865-8E34-46F4-B4CF-A1C05377F746</key>
 		<dict>
 			<key>xpos</key>
-			<real>720</real>
+			<real>690</real>
 			<key>ypos</key>
-			<real>910</real>
+			<real>965</real>
 		</dict>
 		<key>19B6ED47-D749-4CFD-A503-556F264BBD0B</key>
 		<dict>
@@ -852,6 +942,15 @@ fi</string>
 			<key>ypos</key>
 			<real>915</real>
 		</dict>
+		<key>3DD0D1AA-0A60-4153-BD0D-AF934B47A907</key>
+		<dict>
+			<key>note</key>
+			<string>commit list</string>
+			<key>xpos</key>
+			<real>1120</real>
+			<key>ypos</key>
+			<real>640</real>
+		</dict>
 		<key>42312DC7-F660-4E68-9D7C-88091E1CECF8</key>
 		<dict>
 			<key>xpos</key>
@@ -864,9 +963,9 @@ fi</string>
 			<key>note</key>
 			<string>branches list</string>
 			<key>xpos</key>
-			<real>720</real>
+			<real>780</real>
 			<key>ypos</key>
-			<real>740</real>
+			<real>730</real>
 		</dict>
 		<key>50B0CD10-4D52-4898-9C05-DD3A34A829C3</key>
 		<dict>
@@ -891,10 +990,12 @@ fi</string>
 		</dict>
 		<key>845C97B3-4EF6-48FC-8245-A90AF2F96C70</key>
 		<dict>
+			<key>note</key>
+			<string>build url</string>
 			<key>xpos</key>
-			<real>540</real>
+			<real>820</real>
 			<key>ypos</key>
-			<real>415</real>
+			<real>280</real>
 		</dict>
 		<key>8AEBE2BF-BFAC-4DA3-95D4-2A3238908144</key>
 		<dict>
@@ -902,6 +1003,13 @@ fi</string>
 			<real>255</real>
 			<key>ypos</key>
 			<real>340</real>
+		</dict>
+		<key>8F3A4E0F-8EBF-49D8-9C2E-492EB36EC9DC</key>
+		<dict>
+			<key>xpos</key>
+			<real>1020</real>
+			<key>ypos</key>
+			<real>670</real>
 		</dict>
 		<key>935119A8-8D36-4251-B83E-DE68FE581EFD</key>
 		<dict>
@@ -913,9 +1021,9 @@ fi</string>
 		<key>95069264-C0C3-4E1B-8B45-39B955FE85C0</key>
 		<dict>
 			<key>xpos</key>
-			<real>605</real>
+			<real>635</real>
 			<key>ypos</key>
-			<real>695</real>
+			<real>720</real>
 		</dict>
 		<key>D1311193-4E0A-496C-B58C-377CA7ED67EA</key>
 		<dict>
@@ -929,9 +1037,9 @@ fi</string>
 			<key>note</key>
 			<string>merge request list</string>
 			<key>xpos</key>
-			<real>780</real>
+			<real>805</real>
 			<key>ypos</key>
-			<real>530</real>
+			<real>495</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
@@ -961,17 +1069,17 @@ fi</string>
 	</dict>
 	<key>variablesdontexport</key>
 	<array>
-		<string>access_token_2</string>
+		<string>base_url_3</string>
 		<string>base_url_2</string>
 		<string>base_url_1</string>
 		<string>access_token_3</string>
 		<string>access_token_1</string>
 		<string>score_2</string>
 		<string>score_1</string>
-		<string>base_url_3</string>
+		<string>access_token_2</string>
 	</array>
 	<key>version</key>
-	<string>1.9</string>
+	<string>1.10</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/git-code</string>
 </dict>

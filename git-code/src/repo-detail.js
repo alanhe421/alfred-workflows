@@ -21,7 +21,8 @@ const wf = new Workflow();
     }
   }).addWorkflowItem({
     item: {
-      title: 'Branch', arg: '-/branches'
+      title: 'Branch',
+      arg: '-/branches',
     }
   })
     .run();

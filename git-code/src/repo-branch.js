@@ -24,7 +24,7 @@ const wf = new Workflow();
         item: {
           title: item.name,
           subtitle: subtitleArr.filter(Boolean).join(','),
-          arg: `tree/${item.name}`
+          arg: item.name
         }
       });
     });
