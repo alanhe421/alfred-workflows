@@ -24,7 +24,12 @@ const wf = new Workflow();
         item: {
           title: item.name,
           subtitle: subtitleArr.filter(Boolean).join(','),
-          arg: item.name
+          arg: `tree/${item.name}`,
+          mods: {
+            alt: {
+              arg: item.name
+            }
+          }
         }
       });
     });

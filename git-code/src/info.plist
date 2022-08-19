@@ -74,6 +74,16 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
+				<string>845C97B3-4EF6-48FC-8245-A90AF2F96C70</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
 				<string>8F3A4E0F-8EBF-49D8-9C2E-492EB36EC9DC</string>
 				<key>modifiers</key>
 				<integer>524288</integer>
@@ -445,55 +455,6 @@
 			<key>config</key>
 			<dict>
 				<key>alfredfiltersresults</key>
-				<false/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>2</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<false/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>escaping</key>
-				<integer>127</integer>
-				<key>keyword</key>
-				<string>cmr</string>
-				<key>queuedelaycustom</key>
-				<integer>1</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<false/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string>waiting</string>
-				<key>script</key>
-				<string>/usr/local/bin/node ./merge-requests.js {query}</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string>test.sh</string>
-				<key>subtext</key>
-				<string></string>
-				<key>title</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>D7F469D8-9AFB-458B-91D7-149BF973BB8A</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alfredfiltersresults</key>
 				<true/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
@@ -536,6 +497,55 @@
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
 			<string>2BE29A0E-B934-4CB3-B196-46DEFD5F8F24</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>2</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>keyword</key>
+				<string>cmr</string>
+				<key>queuedelaycustom</key>
+				<integer>1</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>waiting</string>
+				<key>script</key>
+				<string>/usr/local/bin/node ./merge-requests.js {query}</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string>test.sh</string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>D7F469D8-9AFB-458B-91D7-149BF973BB8A</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
@@ -900,7 +910,7 @@ fi</string>
 6. 增加score权重设定，比如设置score_2=1，这样第二个工蜂服务项目可以优先排在前面，不设定，则默认为第一个项目列表在前
 7. 一键拷贝所有MR链接
 8. 输入`:updategitcode`进行workflow升级
-9. 支持查看分支列表
+9. 支持查看分支/提交列表
 
 整体设计，⏎均是浏览器打开对应URL，⌥为进一步操作。</string>
 	<key>uidata</key>
@@ -963,9 +973,9 @@ fi</string>
 			<key>note</key>
 			<string>branches list</string>
 			<key>xpos</key>
-			<real>780</real>
+			<real>690</real>
 			<key>ypos</key>
-			<real>730</real>
+			<real>750</real>
 		</dict>
 		<key>50B0CD10-4D52-4898-9C05-DD3A34A829C3</key>
 		<dict>
@@ -984,18 +994,18 @@ fi</string>
 		<key>6CE09F6A-FAA4-4651-8DBB-41F21EEA8068</key>
 		<dict>
 			<key>xpos</key>
-			<real>940</real>
+			<real>1070</real>
 			<key>ypos</key>
-			<real>80</real>
+			<real>50</real>
 		</dict>
 		<key>845C97B3-4EF6-48FC-8245-A90AF2F96C70</key>
 		<dict>
 			<key>note</key>
 			<string>build url</string>
 			<key>xpos</key>
-			<real>820</real>
+			<real>865</real>
 			<key>ypos</key>
-			<real>280</real>
+			<real>245</real>
 		</dict>
 		<key>8AEBE2BF-BFAC-4DA3-95D4-2A3238908144</key>
 		<dict>
@@ -1021,25 +1031,25 @@ fi</string>
 		<key>95069264-C0C3-4E1B-8B45-39B955FE85C0</key>
 		<dict>
 			<key>xpos</key>
-			<real>635</real>
+			<real>615</real>
 			<key>ypos</key>
-			<real>720</real>
+			<real>725</real>
 		</dict>
 		<key>D1311193-4E0A-496C-B58C-377CA7ED67EA</key>
 		<dict>
 			<key>xpos</key>
-			<real>660</real>
+			<real>610</real>
 			<key>ypos</key>
-			<real>645</real>
+			<real>650</real>
 		</dict>
 		<key>D7F469D8-9AFB-458B-91D7-149BF973BB8A</key>
 		<dict>
 			<key>note</key>
 			<string>merge request list</string>
 			<key>xpos</key>
-			<real>805</real>
+			<real>690</real>
 			<key>ypos</key>
-			<real>495</real>
+			<real>550</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
@@ -1079,7 +1089,7 @@ fi</string>
 		<string>access_token_2</string>
 	</array>
 	<key>version</key>
-	<string>1.10</string>
+	<string>1.11</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/git-code</string>
 </dict>
