@@ -6,6 +6,14 @@
 brew install pngpaste
 
 
+## compress support
+
+500 times for free/per month
+
+1. get api key https://tinypng.com/developers
+2. setting tinypng_api_key
+3. ensure visit https://tinypng.com is ok
+
 ## VPS uploader setting
 
 configure the alfred environment variable
@@ -27,7 +35,7 @@ configure the alfred environment variable
 https://apidocs.imgur.com/
 
 
-![](https://img.shields.io/badge/version-v2.5-green?style=for-the-badge)
+![](https://img.shields.io/badge/version-v2.6-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/pic-uploader/Pic%20Uploader.alfredworkflow)
 [![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/pic-uploader/src/info.plist)
 

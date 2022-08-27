@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@stacker/alfred-utils": "^0.1.46"
+    "@stacker/alfred-utils": "^0.1.46",
+    "tinify": "^1.6.1"
   }
 }
