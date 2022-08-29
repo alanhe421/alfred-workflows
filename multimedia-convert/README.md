@@ -16,3 +16,5 @@ brew install ffmpeg
 
 
 <!-- more -->
+
+![](./screenshot.gif)
