@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>cn.alanhe.ffmpeg</string>
+	<key>category</key>
+	<string>Self-Dev</string>
+	<key>connections</key>
+	<dict>
+		<key>28B339AE-1519-453C-B870-93C380E2F967</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>37E5CC13-5163-46A7-9FD5-68209B3441A1</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>37E5CC13-5163-46A7-9FD5-68209B3441A1</key>
+		<array/>
+	</dict>
+	<key>createdby</key>
+	<string>Alan He</string>
+	<key>description</key>
+	<string>MOV,MP4</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Multimedia Convert</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsmulti</key>
+				<integer>1</integer>
+				<key>filetypes</key>
+				<array>
+					<string>com.apple.quicktime-movie</string>
+				</array>
+				<key>name</key>
+				<string>MOV ➡️ MP4</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.action</string>
+			<key>uid</key>
+			<string>28B339AE-1519-453C-B870-93C380E2F967</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>for var in "$@"
+do
+filename=${var%.*}
+ffmpeg -i "$var" -vcodec h264 -acodec mp2 "$filename.mp4"
+done</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>37E5CC13-5163-46A7-9FD5-68209B3441A1</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>&gt; FFmpeg is a collection of libraries and tools to process multimedia content such as audio, video, subtitles and related metadata.
+
+
+
+## Requirement
+
+brew install ffmpeg
+
+## Feat
+1. MOV ➡️ MP4</string>
+	<key>uidata</key>
+	<dict>
+		<key>28B339AE-1519-453C-B870-93C380E2F967</key>
+		<dict>
+			<key>xpos</key>
+			<real>170</real>
+			<key>ypos</key>
+			<real>120</real>
+		</dict>
+		<key>37E5CC13-5163-46A7-9FD5-68209B3441A1</key>
+		<dict>
+			<key>xpos</key>
+			<real>400</real>
+			<key>ypos</key>
+			<real>120</real>
+		</dict>
+	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
+	<key>variablesdontexport</key>
+	<array/>
+	<key>version</key>
+	<string>0.1</string>
+	<key>webaddress</key>
+	<string>https://1991421.cn</string>
+</dict>
+</plist>
