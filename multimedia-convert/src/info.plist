@@ -3,12 +3,117 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>cn.alanhe.ffmpeg</string>
+	<string>cn.alanhe.multimedia-convert</string>
 	<key>category</key>
 	<string>Self-Dev</string>
 	<key>connections</key>
 	<dict>
+		<key>134DAD41-1509-4C00-8280-D9953739FEB5</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>2836EBA4-0303-499C-B354-99C93E1787EA</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>1EA639F2-BE75-4761-B390-A156C466AD60</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>134DAD41-1509-4C00-8280-D9953739FEB5</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>2836EBA4-0303-499C-B354-99C93E1787EA</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D127E0B9-8854-448B-8ECA-4690D8E3A4D5</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>B36C69A8-E4FA-4600-9A95-B03FCCBA2B76</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>6EC815E5-9F2F-42C6-89D2-F230275F75DC</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>28B339AE-1519-453C-B870-93C380E2F967</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B747AC55-20B9-4C56-A22D-630756D75D2D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>2D5CF053-B99A-4FFC-B577-E5DA146D2AD5</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>0BBC0E9B-0F82-47EB-BE6F-BC54C040B9E8</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>37E5CC13-5163-46A7-9FD5-68209B3441A1</key>
+		<array/>
+		<key>6EC815E5-9F2F-42C6-89D2-F230275F75DC</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>2D5CF053-B99A-4FFC-B577-E5DA146D2AD5</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>B747AC55-20B9-4C56-A22D-630756D75D2D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>1EA639F2-BE75-4761-B390-A156C466AD60</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>D127E0B9-8854-448B-8ECA-4690D8E3A4D5</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
@@ -21,8 +126,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>37E5CC13-5163-46A7-9FD5-68209B3441A1</key>
-		<array/>
 	</dict>
 	<key>createdby</key>
 	<string>Alan He</string>
@@ -59,15 +162,17 @@
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
-				<integer>102</integer>
+				<integer>127</integer>
 				<key>script</key>
-				<string>for var in "$@"
+				<string>variable={query}
+IFS=,
+for var in $variable
 do
 filename=${var%.*}
 ffmpeg -i "$var" -vcodec h264 -acodec mp2 "$filename.mp4"
 done</string>
 				<key>scriptargtype</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>scriptfile</key>
 				<string></string>
 				<key>type</key>
@@ -80,6 +185,176 @@ done</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>if which ffmpeg &gt;/dev/null; then
+    echo -n 0
+else
+    echo -n -1
+fi</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>134DAD41-1509-4C00-8280-D9953739FEB5</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{var:files}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>D127E0B9-8854-448B-8ECA-4690D8E3A4D5</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>0</string>
+						<key>outputlabel</key>
+						<string></string>
+						<key>uid</key>
+						<string>B36C69A8-E4FA-4600-9A95-B03FCCBA2B76</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+				<key>hideelse</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>2836EBA4-0303-499C-B354-99C93E1787EA</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>brew install ffmpeg</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.terminalcommand</string>
+			<key>uid</key>
+			<string>0BBC0E9B-0F82-47EB-BE6F-BC54C040B9E8</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>fixedorder</key>
+				<false/>
+				<key>items</key>
+				<string>[{"title":"ffmpeg missing","subtitle":"↵ to install"}]</string>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string></string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.listfilter</string>
+			<key>uid</key>
+			<string>2D5CF053-B99A-4FFC-B577-E5DA146D2AD5</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>6EC815E5-9F2F-42C6-89D2-F230275F75DC</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>files</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>1EA639F2-BE75-4761-B390-A156C466AD60</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>delimiter</key>
+				<string>,</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.joinargs</string>
+			<key>uid</key>
+			<string>B747AC55-20B9-4C56-A22D-630756D75D2D</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>&gt; FFmpeg is a collection of libraries and tools to process multimedia content such as audio, video, subtitles and related metadata.
@@ -91,22 +366,83 @@ done</string>
 brew install ffmpeg
 
 ## Feat
-1. MOV ➡️ MP4</string>
+1. MOV ➡️ MP4
+2. Support multi file action</string>
 	<key>uidata</key>
 	<dict>
+		<key>0BBC0E9B-0F82-47EB-BE6F-BC54C040B9E8</key>
+		<dict>
+			<key>note</key>
+			<string>brew install ffmpeg</string>
+			<key>xpos</key>
+			<real>825</real>
+			<key>ypos</key>
+			<real>225</real>
+		</dict>
+		<key>134DAD41-1509-4C00-8280-D9953739FEB5</key>
+		<dict>
+			<key>note</key>
+			<string>precheck ffmpeg install</string>
+			<key>xpos</key>
+			<real>255</real>
+			<key>ypos</key>
+			<real>65</real>
+		</dict>
+		<key>1EA639F2-BE75-4761-B390-A156C466AD60</key>
+		<dict>
+			<key>xpos</key>
+			<real>295</real>
+			<key>ypos</key>
+			<real>260</real>
+		</dict>
+		<key>2836EBA4-0303-499C-B354-99C93E1787EA</key>
+		<dict>
+			<key>xpos</key>
+			<real>420</real>
+			<key>ypos</key>
+			<real>100</real>
+		</dict>
 		<key>28B339AE-1519-453C-B870-93C380E2F967</key>
 		<dict>
 			<key>xpos</key>
-			<real>170</real>
+			<real>30</real>
 			<key>ypos</key>
-			<real>120</real>
+			<real>50</real>
+		</dict>
+		<key>2D5CF053-B99A-4FFC-B577-E5DA146D2AD5</key>
+		<dict>
+			<key>xpos</key>
+			<real>650</real>
+			<key>ypos</key>
+			<real>225</real>
 		</dict>
 		<key>37E5CC13-5163-46A7-9FD5-68209B3441A1</key>
 		<dict>
 			<key>xpos</key>
-			<real>400</real>
+			<real>640</real>
 			<key>ypos</key>
-			<real>120</real>
+			<real>55</real>
+		</dict>
+		<key>6EC815E5-9F2F-42C6-89D2-F230275F75DC</key>
+		<dict>
+			<key>xpos</key>
+			<real>535</real>
+			<key>ypos</key>
+			<real>260</real>
+		</dict>
+		<key>B747AC55-20B9-4C56-A22D-630756D75D2D</key>
+		<dict>
+			<key>xpos</key>
+			<real>200</real>
+			<key>ypos</key>
+			<real>330</real>
+		</dict>
+		<key>D127E0B9-8854-448B-8ECA-4690D8E3A4D5</key>
+		<dict>
+			<key>xpos</key>
+			<real>530</real>
+			<key>ypos</key>
+			<real>90</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
@@ -114,8 +450,8 @@ brew install ffmpeg
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>0.1</string>
+	<string>0.2</string>
 	<key>webaddress</key>
-	<string>https://1991421.cn</string>
+	<string>https://github.com/alanhg/alfred-workflows/tree/master/multimedia-convert</string>
 </dict>
 </plist>

@@ -8,9 +8,10 @@ brew install ffmpeg
 
 ## Feat
 1. MOV ➡️ MP4
+2. Support multi file action
 
 
-![](https://img.shields.io/badge/version-v0.1-green?style=for-the-badge)
+![](https://img.shields.io/badge/version-v0.2-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/multimedia-convert/Multimedia%20Convert.alfredworkflow)
 [![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/multimedia-convert/src/info.plist)
 
