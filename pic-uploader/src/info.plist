@@ -78,19 +78,17 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>8AD996E2-9A53-464F-8B4D-E19327553B53</string>
+				<string>164A5455-3300-4DB2-8C69-42B9FE37A35E</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
-				<key>sourceoutputuid</key>
-				<string>7FEDB0FF-5A72-413E-A312-A467178412A1</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
 			<dict>
 				<key>destinationuid</key>
-				<string>164A5455-3300-4DB2-8C69-42B9FE37A35E</string>
+				<string>8AD996E2-9A53-464F-8B4D-E19327553B53</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -1099,9 +1097,9 @@ https://apidocs.imgur.com/</string>
 			<key>note</key>
 			<string>compress-image by tinypng</string>
 			<key>xpos</key>
-			<real>620</real>
+			<real>635</real>
 			<key>ypos</key>
-			<real>440</real>
+			<real>435</real>
 		</dict>
 		<key>3053246A-6E9D-432D-A8D0-DBFE6AE8C6AE</key>
 		<dict>
@@ -1312,7 +1310,7 @@ https://apidocs.imgur.com/</string>
 		<string>imgur_refresh_token</string>
 	</array>
 	<key>version</key>
-	<string>2.6</string>
+	<string>2.7</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/pic-uploader</string>
 </dict>
