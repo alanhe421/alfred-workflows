@@ -571,26 +571,7 @@ fi</string>
 				<key>runningsubtext</key>
 				<string>Getting versions of apps in /Applications…</string>
 				<key>script</key>
-				<string>require 'json'
-require 'open3'
-require 'pathname'
-
-apps = Pathname('/Applications').children
-         .concat(Pathname('/Applications/Utilities').children)
-         .map(&amp;:to_path)
-         .sort_by { |p| File.basename(p).downcase }
-         .select { |e| e.end_with?('.app') }
-
-script_filter_items = []
-
-apps.each do |app|
-  version = Open3.capture2('mdls', '-raw', '-name', 'kMDItemVersion', app).first
-  next if version == '(null)'
-  name = File.basename(app, '.app')
-  script_filter_items.push(title: name, subtitle: version, arg: version, icon: { type: 'fileicon', path: app })
-end
-
-puts({ items: script_filter_items }.to_json)</string>
+				<string>/usr/local/bin/node ./index.js</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -600,9 +581,9 @@ puts({ items: script_filter_items }.to_json)</string>
 				<key>title</key>
 				<string>AppVersion</string>
 				<key>type</key>
-				<integer>2</integer>
+				<integer>0</integer>
 				<key>withspace</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.scriptfilter</string>
@@ -657,6 +638,10 @@ puts({ items: script_filter_items }.to_json)</string>
 	<key>readme</key>
 	<string>&gt; Getting Bundle ID of apps
 
+## requirement
+
+brew install node
+
 ## usage
 
 1. `appid` to get Bundle ID of apps
@@ -665,7 +650,8 @@ puts({ items: script_filter_items }.to_json)</string>
 	- `App ID` get id of app
 	- `App Version` get version of app
     - `App Name` get name of app
-4. type `:updateappid` to update workflow</string>
+4. type `:updateappid` to update workflow
+5. display app is from appstore or not</string>
 	<key>uidata</key>
 	<dict>
 		<key>00FD277E-4F27-40C6-8983-5115873E955C</key>
@@ -783,8 +769,8 @@ puts({ items: script_filter_items }.to_json)</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.5</string>
+	<string>1.6</string>
 	<key>webaddress</key>
-	<string>https://1991421.cn</string>
+	<string>https://github.com/alanhg/alfred-workflows/tree/master/appid</string>
 </dict>
 </plist>
