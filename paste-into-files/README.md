@@ -14,10 +14,6 @@ paste into files
 
 
 <!-- more -->
-> 剪贴板中的内容保存为文件，当前仅支持图片
-
-
-[![](https://img.shields.io/badge/version-v1.0-green)](./Paste%20into%20files.alfredworkflow)
 
 ![](./screenshot.gif)
 
