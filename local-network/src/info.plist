@@ -15,7 +15,7 @@
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>local network</string>
+	<string>Local Network</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -85,8 +85,8 @@
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>0.1</string>
+	<string>0.2</string>
 	<key>webaddress</key>
-	<string>https://1991421.cn</string>
+	<string>https://github.com/alanhg/alfred-workflows/tree/master/local-network</string>
 </dict>
 </plist>
