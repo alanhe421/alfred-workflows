@@ -41,7 +41,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 16. [Git Code](https://github.com/alanhg/alfred-workflows/tree/master/git-code)
 17. [IP Tools](https://github.com/alanhg/alfred-workflows/tree/master/ip-tools)
 18. [Json2TS](https://github.com/alanhg/alfred-workflows/tree/master/json2Ts)
-19. [local network](https://github.com/alanhg/alfred-workflows/tree/master/local-network)
+19. [Local Network](https://github.com/alanhg/alfred-workflows/tree/master/local-network)
 20. [Mac Enhancer](https://github.com/alanhg/alfred-workflows/tree/master/mac-enhancer)
 21. [Medium Tools](https://github.com/alanhg/alfred-workflows/tree/master/medium-publisher)
 22. [Meeting](https://github.com/alanhg/alfred-workflows/tree/master/meeting)
