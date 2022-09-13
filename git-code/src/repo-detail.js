@@ -24,6 +24,11 @@ const wf = new Workflow();
       title: 'Branch',
       arg: '-/branches',
     }
+  }).addWorkflowItem({
+      item: {
+        title: 'Tag',
+        arg: '-/tags',
+      }
   })
     .run();
 

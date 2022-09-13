@@ -8,6 +8,19 @@
 	<string>Self-Dev</string>
 	<key>connections</key>
 	<dict>
+		<key>02087681-BC93-4A26-8A06-54214AC7BD44</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>845C97B3-4EF6-48FC-8245-A90AF2F96C70</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>19B6ED47-D749-4CFD-A503-556F264BBD0B</key>
 		<array>
 			<dict>
@@ -162,6 +175,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>86D7B6FD-C368-4A56-9DD0-C20C51A8B808</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>02087681-BC93-4A26-8A06-54214AC7BD44</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>8AEBE2BF-BFAC-4DA3-95D4-2A3238908144</key>
 		<array>
 			<dict>
@@ -223,6 +249,18 @@
 				<string></string>
 				<key>sourceoutputuid</key>
 				<string>F77E5B27-3C83-4449-B54E-71B78C50C517</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>86D7B6FD-C368-4A56-9DD0-C20C51A8B808</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>0B434083-BD9B-4C14-9CDD-4B6F1BC5969D</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -596,6 +634,20 @@
 						<key>uid</key>
 						<string>F77E5B27-3C83-4449-B54E-71B78C50C517</string>
 					</dict>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>-/tags</string>
+						<key>outputlabel</key>
+						<string></string>
+						<key>uid</key>
+						<string>0B434083-BD9B-4C14-9CDD-4B6F1BC5969D</string>
+					</dict>
 				</array>
 				<key>elselabel</key>
 				<string>else</string>
@@ -757,6 +809,91 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>86D7B6FD-C368-4A56-9DD0-C20C51A8B808</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>/usr/local/bin/node ./repo-tag.js {query}</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>02087681-BC93-4A26-8A06-54214AC7BD44</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>:updategitcode</string>
+				<key>subtext</key>
+				<string>Check for updates and install them if they exist</string>
+				<key>text</key>
+				<string>Update Git Code</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>19B6ED47-D749-4CFD-A503-556F264BBD0B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -855,27 +992,6 @@ fi</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>:updategitcode</string>
-				<key>subtext</key>
-				<string>Check for updates and install them if they exist</string>
-				<key>text</key>
-				<string>Update Git Code</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>19B6ED47-D749-4CFD-A503-556F264BBD0B</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -910,17 +1026,26 @@ fi</string>
 6. 增加score权重设定，比如设置score_2=1，这样第二个工蜂服务项目可以优先排在前面，不设定，则默认为第一个项目列表在前
 7. 一键拷贝所有MR链接
 8. 输入`:updategitcode`进行workflow升级
-9. 支持查看分支/提交列表
+9. 支持查看分支/提交/Tag列表
 
 整体设计，⏎均是浏览器打开对应URL，⌥为进一步操作。</string>
 	<key>uidata</key>
 	<dict>
-		<key>14CEF865-8E34-46F4-B4CF-A1C05377F746</key>
+		<key>02087681-BC93-4A26-8A06-54214AC7BD44</key>
 		<dict>
+			<key>note</key>
+			<string>tags list</string>
 			<key>xpos</key>
 			<real>690</real>
 			<key>ypos</key>
-			<real>965</real>
+			<real>910</real>
+		</dict>
+		<key>14CEF865-8E34-46F4-B4CF-A1C05377F746</key>
+		<dict>
+			<key>xpos</key>
+			<real>685</real>
+			<key>ypos</key>
+			<real>1050</real>
 		</dict>
 		<key>19B6ED47-D749-4CFD-A503-556F264BBD0B</key>
 		<dict>
@@ -1007,6 +1132,13 @@ fi</string>
 			<key>ypos</key>
 			<real>245</real>
 		</dict>
+		<key>86D7B6FD-C368-4A56-9DD0-C20C51A8B808</key>
+		<dict>
+			<key>xpos</key>
+			<real>610</real>
+			<key>ypos</key>
+			<real>810</real>
+		</dict>
 		<key>8AEBE2BF-BFAC-4DA3-95D4-2A3238908144</key>
 		<dict>
 			<key>xpos</key>
@@ -1089,7 +1221,7 @@ fi</string>
 		<string>base_url_3</string>
 	</array>
 	<key>version</key>
-	<string>1.13</string>
+	<string>1.14</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/git-code</string>
 </dict>
