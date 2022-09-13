@@ -2,10 +2,10 @@
  * usage
  * /usr/local/bin/node ./index.js {query}
  */
-const {utils, http} = require('@stacker/alfred-utils');
-const {Workflow} = require('@stacker/alfred-utils/dist/workflow');
+const { utils, http } = require('@stacker/alfred-utils');
+const { Workflow } = require('@stacker/alfred-utils/dist/workflow');
 const [, , query] = process.argv;
-const wf = new Workflow([], true);
+const wf = new Workflow();
 (async function () {
   if (!process.env.access_token_1 || !process.env.base_url_1) {
     utils.printScriptFilter({
@@ -29,17 +29,21 @@ const wf = new Workflow([], true);
   while (
     process.env[indexStr('access_token')] &&
     process.env[indexStr('base_url')]
-    ) {
+  ) {
     gitPromises.push(
-      searchProjects(process.env[indexStr('access_token')], process.env[indexStr('base_url')], process.env[indexStr('score')], index)
+      searchProjects(
+        process.env[indexStr('access_token')],
+        process.env[indexStr('base_url')],
+        process.env[indexStr('score')],
+        index
+      )
     );
     index += 1;
   }
 
   await Promise.all(gitPromises);
 
-  wf.run(); 
-
+  wf.run();
 })();
 
 async function searchProjects(token, baseUrl, score, index) {
@@ -55,7 +59,7 @@ async function searchProjects(token, baseUrl, score, index) {
         per_page: process.env.per_page || 20,
         sort: 'desc',
         order_by: 'last_activity_at',
-        search: query
+        search: query?.trim()
       }
     });
     if (res.data.length === 0) {
@@ -65,7 +69,7 @@ async function searchProjects(token, baseUrl, score, index) {
           subtitle: `Goto ${baseUrl}`,
           arg: `${baseUrl}/primarySearch?search=${query}`,
           icon: {
-            path: `icon/icon-theme${index % 3 + 1}.png`
+            path: `icon/icon-theme${(index % 3) + 1}.png`
           }
         }),
         score
@@ -75,14 +79,14 @@ async function searchProjects(token, baseUrl, score, index) {
     res.data.forEach((item) => {
       wf.addWorkflowItem({
         item: utils.buildItem({
-          uid: item.name_with_namespace,
+          uid: item.ssh_url_to_repo + item.name_with_namespace,
           title: item.name_with_namespace,
           subtitle:
             (item.archived ? '🔒Archived project , ' : '') + item.description,
           arg: item.web_url,
           autocomplete: item.name_with_namespace,
           icon: {
-            path: `icon/icon-theme${index % 4 + 1}.png`
+            path: `icon/icon-theme${(index % 4) + 1}.png`
           },
           mods: {
             cmd: {
