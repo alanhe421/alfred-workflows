@@ -23,7 +23,7 @@ else
 fi
 
 itemsXML=$itemsXML$(cat <<- EOF
- <item>
+ <item uid="${array[i]// /_}">
     <title>${array[i]}</title>
 	<subtitle>$subTitle</subtitle>
 	<icon>$iconURL</icon>

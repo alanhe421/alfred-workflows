@@ -96,7 +96,7 @@
 			<key>config</key>
 			<dict>
 				<key>alfredfiltersresults</key>
-				<false/>
+				<true/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
 				<key>argumenttreatemptyqueryasnil</key>
@@ -104,7 +104,7 @@
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
-				<integer>2</integer>
+				<integer>1</integer>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
@@ -214,7 +214,7 @@ end run</string>
 			<key>config</key>
 			<dict>
 				<key>alfredfiltersresults</key>
-				<false/>
+				<true/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
 				<key>argumenttreatemptyqueryasnil</key>
@@ -222,7 +222,7 @@ end run</string>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
-				<integer>2</integer>
+				<integer>1</integer>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
@@ -326,61 +326,63 @@ Support Monterey 12.0.1
 
 ## Requirement
 
-If you need camera command, just brew install node</string>
+brew install node</string>
 	<key>uidata</key>
 	<dict>
 		<key>1450496C-74BC-4EDE-930B-ADC6027C5449</key>
 		<dict>
 			<key>xpos</key>
-			<integer>35</integer>
+			<real>35</real>
 			<key>ypos</key>
-			<integer>435</integer>
+			<real>435</real>
 		</dict>
 		<key>33EDD99E-D237-4696-BCA8-E11E341697BE</key>
 		<dict>
 			<key>xpos</key>
-			<integer>40</integer>
+			<real>40</real>
 			<key>ypos</key>
-			<integer>675</integer>
+			<real>675</real>
 		</dict>
 		<key>39B059B1-CD01-4C2D-8907-1E2F9262CD04</key>
 		<dict>
 			<key>xpos</key>
-			<integer>685</integer>
+			<real>685</real>
 			<key>ypos</key>
-			<integer>120</integer>
+			<real>120</real>
 		</dict>
 		<key>3AE8EB58-5F7D-49B6-98C1-4BAE5E79FC2E</key>
 		<dict>
 			<key>note</key>
 			<string>setSound</string>
 			<key>xpos</key>
-			<integer>340</integer>
+			<real>340</real>
 			<key>ypos</key>
-			<integer>125</integer>
+			<real>125</real>
 		</dict>
 		<key>B066EEAB-4F3C-4516-9F00-E8FD7A5439B6</key>
 		<dict>
 			<key>xpos</key>
-			<integer>35</integer>
+			<real>35</real>
 			<key>ypos</key>
-			<integer>125</integer>
+			<real>125</real>
 		</dict>
 		<key>FCE19CD4-E3AE-4361-8B59-F357914A629C</key>
 		<dict>
 			<key>note</key>
 			<string>setVoice</string>
 			<key>xpos</key>
-			<integer>335</integer>
+			<real>335</real>
 			<key>ypos</key>
-			<integer>430</integer>
+			<real>430</real>
 		</dict>
 	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>2.2</string>
+	<string>2.3</string>
 	<key>webaddress</key>
-	<string>https://1991421.cn</string>
+	<string>https://github.com/alanhg/alfred-workflows/tree/master/switch-audio</string>
 </dict>
 </plist>
