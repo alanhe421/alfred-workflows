@@ -4,15 +4,22 @@
  * usage
  * /usr/local/bin/node ./index.js {query}
  */
-const { utils, dateUtils } = require('@stacker/alfred-utils');
+const {utils, dateUtils} = require('@stacker/alfred-utils');
 const iMessage = require('./node-imessage');
+const {execSync} = require('child_process');
 const im = new iMessage();
 const lookBackMinutes = process.env.look_back_minutes;
+
 (async function () {
   const messages = await readLatestMessage();
   im.disconnect();
+  let items = [];
+  const messageFromClipboard = readFromClipboard();
+  if (messageFromClipboard) {
+    items.push(messageFromClipboard);
+  }
   if (messages.length) {
-    const items = messages.reduce((res, messageObj) => {
+    items.push(...messages.reduce((res, messageObj) => {
       const msg = preProcessMessage(messageObj.text);
       if (!msg.trim()) {
         return res;
@@ -20,44 +27,49 @@ const lookBackMinutes = process.env.look_back_minutes;
       const captcha = readCaptchaFromMessage(msg);
       if (captcha) {
         const subject = readSubjectFromMessage(msg);
-        res.push(
-          utils.buildItem({
-            title: `${captcha}`,
-            subtitle: `${
-              subject ? `Sender：${subject} ` : ''
-            }${dateUtils.formatToCalendar(messageObj.message_date)}，⏎ to Copy`,
-            arg: captcha,
-            text: {
-              largetype: messageObj.text,
-              copy: captcha
-            }
-          })
-        );
+        res.push(utils.buildItem({
+          title: `${captcha}`,
+          subtitle: `${subject ? `Sender：${subject} ` : ''}${dateUtils.formatToCalendar(messageObj.message_date)}，⏎ to Copy`,
+          arg: captcha,
+          text: {
+            largetype: messageObj.text, copy: captcha
+          }
+        }));
       }
       return res;
-    }, []);
-    if (items.length) {
-      return utils.printScriptFilter({
-        items
-      });
-    }
+    }, []))
   }
-  utils.printScriptFilter({
-    items: [
-      utils.buildItem({
-        title: 'There is no authentication code',
-        subtitle: '⏎ to view Messages App',
-        arg: 'view_message'
-      })
-    ]
-  });
+  if (items.length) {
+    return utils.printScriptFilter({
+      items
+    });
+  } else {
+    utils.printScriptFilter({
+      items: [utils.buildItem({
+        title: 'There is no authentication code', subtitle: '⏎ to view Messages App', arg: 'view_message'
+      })]
+    });
+  }
 })();
 
+function readFromClipboard() {
+  const msg = execSync('pbpaste', {encoding: 'utf-8'}).replace(/%$/, '');
+  const captcha = readCaptchaFromMessage(msg);
+  if (captcha) {
+    const subject = readSubjectFromMessage(msg);
+    return utils.buildItem({
+      title: `${captcha}`,
+      subtitle: `From 📋，${subject ? `Sender：${subject} ` : ''}${dateUtils.formatToCalendar(Date.now())}，⏎ to Copy`,
+      arg: captcha,
+      text: {
+        largetype: msg, copy: captcha
+      }
+    })
+  }
+}
+
 function preProcessMessage(msg) {
-  return msg.replace(
-    /((https?|ftp|file):\/\/|www\.)[-A-Z0-9+&@#\/%?=~_|$!:,.;]*[A-Z0-9+&@#\/%=~_|$]/i,
-    ''
-  );
+  return msg.replace(/((https?|ftp|file):\/\/|www\.)[-A-Z0-9+&@#\/%?=~_|$!:,.;]*[A-Z0-9+&@#\/%=~_|$]/i, '');
 }
 
 /**
@@ -89,8 +101,7 @@ function readSubjectFromMessage(msg) {
 function readLatestMessage() {
   return new Promise((resolve) => {
     im.getDb(function (err, db) {
-      db.all(
-        `
+      db.all(`
   select
             message.rowid,
             ifnull(handle.uncanonicalized_id, chat.chat_identifier) AS sender,
@@ -121,18 +132,13 @@ function readLatestMessage() {
                     >= datetime('now', '-${lookBackMinutes} minutes', 'localtime')
         order by
             message.date desc
-        limit 100`,
-        function (err, res) {
-          resolve(res);
-        }
-      );
+        limit 100`, function (err, res) {
+        resolve(res);
+      });
     });
   });
 }
 
 module.exports = {
-  readCaptchaFromMessage,
-  readLatestMessage,
-  readSubjectFromMessage,
-  preProcessMessage
+  readCaptchaFromMessage, readLatestMessage, readSubjectFromMessage, preProcessMessage
 };
