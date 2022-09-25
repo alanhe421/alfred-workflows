@@ -9,18 +9,7 @@
 	<key>connections</key>
 	<dict>
 		<key>3DE4B996-B960-444D-ADA2-437EE5A84911</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>5DB629D2-D256-4826-A821-C1D40CCA5335</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
+		<array/>
 		<key>3E554F3A-9D95-4D8B-9797-FDE6FDA14DCD</key>
 		<array>
 			<dict>
@@ -34,8 +23,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>5DB629D2-D256-4826-A821-C1D40CCA5335</key>
-		<array/>
 	</dict>
 	<key>createdby</key>
 	<string>Alan He</string>
@@ -47,27 +34,6 @@
 	<string>Mount Volume</string>
 	<key>objects</key>
 	<array>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string></string>
-				<key>title</key>
-				<string>Mounted the server</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>5DB629D2-D256-4826-A821-C1D40CCA5335</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -101,7 +67,8 @@
 
 
 on run
-set theQuery to "{query}"set serverIP to (system attribute "server_address")set UserAccount to (system attribute "username")set ServerPassword to (system attribute "password")set serverIpArr to split(serverIP, "/")set serverVolume to end of serverIpArrtell application "Finder"	try		if disk serverVolume exists then		else			mount volume serverIP as user name UserAccount with password ServerPassword		end if		tell application "Finder" to open folder serverVolume of computer container	end tryend tell
+set theQuery to "{query}"set serverIP to (system attribute "server_address")set UserAccount to (system attribute "username")set ServerPassword to (system attribute "password")set serverIpArr to split(serverIP, "/")set serverVolume to end of serverIpArrtell application "Finder"	try		if disk serverVolume exists then		else			mount volume serverIP as user name UserAccount with password ServerPassword		end if		tell application "Finder" to open folder serverVolume of computer container
+		activate	end tryend tell
 
 
 
@@ -141,27 +108,22 @@ Network like SMB/CIF、NFS 和 FTP。
 
 auto open in finder</string>
 			<key>xpos</key>
-			<integer>290</integer>
+			<real>290</real>
 			<key>ypos</key>
-			<integer>130</integer>
+			<real>130</real>
 		</dict>
 		<key>3E554F3A-9D95-4D8B-9797-FDE6FDA14DCD</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>4</integer>
 			<key>xpos</key>
-			<integer>50</integer>
+			<real>50</real>
 			<key>ypos</key>
-			<integer>125</integer>
-		</dict>
-		<key>5DB629D2-D256-4826-A821-C1D40CCA5335</key>
-		<dict>
-			<key>xpos</key>
-			<integer>490</integer>
-			<key>ypos</key>
-			<integer>120</integer>
+			<real>125</real>
 		</dict>
 	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
 	<key>variables</key>
 	<dict>
 		<key>password</key>
@@ -178,7 +140,7 @@ auto open in finder</string>
 		<string>server_address</string>
 	</array>
 	<key>version</key>
-	<string>1.1</string>
+	<string>1.3</string>
 	<key>webaddress</key>
 	<string>https://www.alfredapp.com</string>
 </dict>
