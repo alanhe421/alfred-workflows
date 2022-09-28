@@ -21,6 +21,8 @@
 				<false/>
 			</dict>
 		</array>
+		<key>030D5547-83F6-4958-948F-5A2F42B97AD7</key>
+		<array/>
 		<key>0573B8FD-6DED-44E8-ACA7-E5699F60142C</key>
 		<array>
 			<dict>
@@ -554,7 +556,7 @@
 				<key>autopaste</key>
 				<true/>
 				<key>clipboardtext</key>
-				<string>{query}</string>
+				<string>{query}{cursor}</string>
 				<key>ignoredynamicplaceholders</key>
 				<false/>
 				<key>transient</key>
@@ -1543,7 +1545,7 @@ echo "$size"</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>0.8</string>
+	<string>0.9</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/string-manipulation</string>
 </dict>
