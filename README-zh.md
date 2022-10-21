@@ -79,7 +79,7 @@ P.S.: 使用这些Workflow的前提是已购买[Powerpack](https://www.alfredapp
 - 你的支持也是一种动力。
 
 - Star /[Paypal](https://www.paypal.com/paypalme/alanhe421)
-  / [微信打赏](./wechat-award.jpg)
+  / [微信打赏](./.github/wechat-award.jpg)
 
 ## 订阅&交流
 
