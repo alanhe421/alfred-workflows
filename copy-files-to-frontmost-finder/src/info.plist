@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>cn.alanhe.copyfiles-to-frontmost-finder</string>
+	<key>connections</key>
+	<dict>
+		<key>236A63F4-1640-4199-8B18-5763A7C5E8CB</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>43068431-C2FB-4D9F-BF73-4D772BB7B1B4</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>28A4D088-2C9C-4327-916A-F0E698325B0B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>8BF9AD7D-54FE-40F1-BFAD-E2E54F960377</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>43068431-C2FB-4D9F-BF73-4D772BB7B1B4</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D387ECD6-7F32-49E0-8F41-035C2D8FC775</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>8BF9AD7D-54FE-40F1-BFAD-E2E54F960377</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F85B4D3E-14BC-462B-9918-80E40521F16B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>F85B4D3E-14BC-462B-9918-80E40521F16B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>236A63F4-1640-4199-8B18-5763A7C5E8CB</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Alan He</string>
+	<key>description</key>
+	<string></string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Copy Files to The frontmost Finder</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>script</key>
+				<string>on theSplit(theString, theDelimiter)	-- save delimiters to restore old settings	set oldDelimiters to AppleScript's text item delimiters	-- set delimiters to delimiter to be used	set AppleScript's text item delimiters to theDelimiter	-- create the array	set theArray to every text item of theString	-- restore the old setting	set AppleScript's text item delimiters to oldDelimiters	-- return the result	return theArrayend theSplittell application "Finder"
+	set destFolder to (system attribute "DEST_FOLDER")
+	set filestr to "{query}"
+	
+	set fileList to my theSplit(filestr, ",")
+	repeat with theItem in fileList
+		set cpStr to "cp " &amp; theItem &amp; " " &amp; destFolder
+		
+		do shell script cpStr
+	end repeat
+	
+end tell</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>D387ECD6-7F32-49E0-8F41-035C2D8FC775</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{var:FILES}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>DEST_FOLDER</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>43068431-C2FB-4D9F-BF73-4D772BB7B1B4</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>passthroughargument</key>
+				<true/>
+				<key>variables</key>
+				<dict>
+					<key>FILES</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>F85B4D3E-14BC-462B-9918-80E40521F16B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsfiles</key>
+				<true/>
+				<key>acceptsmulti</key>
+				<integer>1</integer>
+				<key>acceptstext</key>
+				<false/>
+				<key>acceptsurls</key>
+				<false/>
+				<key>name</key>
+				<string>copy files to the frontmost finder window</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.universalaction</string>
+			<key>uid</key>
+			<string>28A4D088-2C9C-4327-916A-F0E698325B0B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>tasksettings</key>
+				<dict/>
+				<key>taskuid</key>
+				<string>com.alfredapp.automation.core/files-and-folders/finder.windows.current</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.automation.task</string>
+			<key>uid</key>
+			<string>236A63F4-1640-4199-8B18-5763A7C5E8CB</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>delimiter</key>
+				<string>,</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.joinargs</string>
+			<key>uid</key>
+			<string>8BF9AD7D-54FE-40F1-BFAD-E2E54F960377</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>&gt; Copy selected files to the frontmost finder window</string>
+	<key>uidata</key>
+	<dict>
+		<key>236A63F4-1640-4199-8B18-5763A7C5E8CB</key>
+		<dict>
+			<key>xpos</key>
+			<real>430</real>
+			<key>ypos</key>
+			<real>365</real>
+		</dict>
+		<key>28A4D088-2C9C-4327-916A-F0E698325B0B</key>
+		<dict>
+			<key>xpos</key>
+			<real>30</real>
+			<key>ypos</key>
+			<real>325</real>
+		</dict>
+		<key>43068431-C2FB-4D9F-BF73-4D772BB7B1B4</key>
+		<dict>
+			<key>xpos</key>
+			<real>450</real>
+			<key>ypos</key>
+			<real>255</real>
+		</dict>
+		<key>8BF9AD7D-54FE-40F1-BFAD-E2E54F960377</key>
+		<dict>
+			<key>xpos</key>
+			<real>200</real>
+			<key>ypos</key>
+			<real>370</real>
+		</dict>
+		<key>D387ECD6-7F32-49E0-8F41-035C2D8FC775</key>
+		<dict>
+			<key>xpos</key>
+			<real>745</real>
+			<key>ypos</key>
+			<real>225</real>
+		</dict>
+		<key>F85B4D3E-14BC-462B-9918-80E40521F16B</key>
+		<dict>
+			<key>xpos</key>
+			<real>315</real>
+			<key>ypos</key>
+			<real>315</real>
+		</dict>
+	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
+	<key>variablesdontexport</key>
+	<array/>
+	<key>version</key>
+	<string>0.1</string>
+	<key>webaddress</key>
+	<string>https://1991421.cn</string>
+</dict>
+</plist>
