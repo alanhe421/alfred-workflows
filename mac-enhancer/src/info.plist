@@ -8,6 +8,32 @@
 	<string>Self-Dev</string>
 	<key>connections</key>
 	<dict>
+		<key>1F861028-2D63-4856-923E-3F2AAEEA8043</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>CFAAD5D3-F791-4906-8FBC-0A036805F76A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>242A5459-2003-40CE-A4CD-AF8C1A3B8EE7</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>FAA9B021-194E-4279-9155-12F56970CA9F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>248EAC40-BF24-4D70-B18D-EA2AA0052EFA</key>
 		<array>
 			<dict>
@@ -162,6 +188,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>DD93F2F3-04E6-438F-BE22-4C1EBCA47DDA</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>1F861028-2D63-4856-923E-3F2AAEEA8043</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>E7878FD3-341C-46E3-B296-200E28529751</key>
 		<array>
 			<dict>
@@ -171,6 +210,21 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>FAA9B021-194E-4279-9155-12F56970CA9F</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>DD93F2F3-04E6-438F-BE22-4C1EBCA47DDA</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>BBE6E0E1-E314-40F6-9B21-FDAE0B8845FF</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -793,6 +847,151 @@ do shell script ("networksetup -setairportpower " &amp; device &amp; " " &amp; p
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict/>
+			<key>type</key>
+			<string>alfred.workflow.automation.task</string>
+			<key>uid</key>
+			<string>01364533-E4F0-45E2-AF7C-C15C5452871D</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>fileutivariablename</key>
+				<string></string>
+				<key>outputfileuti</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.file</string>
+			<key>uid</key>
+			<string>A178C922-62CD-4639-B2D4-481A45377845</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>pkill -9 -f "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>CFAAD5D3-F791-4906-8FBC-0A036805F76A</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>osascript -e 'name of app "{query}"'</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>DD93F2F3-04E6-438F-BE22-4C1EBCA47DDA</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsfiles</key>
+				<true/>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>acceptstext</key>
+				<false/>
+				<key>acceptsurls</key>
+				<false/>
+				<key>name</key>
+				<string>Force Quit App</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.universalaction</string>
+			<key>uid</key>
+			<string>242A5459-2003-40CE-A4CD-AF8C1A3B8EE7</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>matchmode</key>
+				<integer>1</integer>
+				<key>matchstring</key>
+				<string>\n</string>
+				<key>regexcaseinsensitive</key>
+				<false/>
+				<key>regexmultiline</key>
+				<true/>
+				<key>replacestring</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.replace</string>
+			<key>uid</key>
+			<string>1F861028-2D63-4856-923E-3F2AAEEA8043</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>4</integer>
+						<key>matchstring</key>
+						<string>\.app$</string>
+						<key>outputlabel</key>
+						<string></string>
+						<key>uid</key>
+						<string>BBE6E0E1-E314-40F6-9B21-FDAE0B8845FF</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+				<key>hideelse</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>FAA9B021-194E-4279-9155-12F56970CA9F</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>&gt; Mac enhancer
@@ -808,15 +1007,39 @@ do shell script ("networksetup -setairportpower " &amp; device &amp; " " &amp; p
 8. type 'host' and ⏎ to open `/etc/hosts` file
    recommend add hosts file rw rights for current user.
    ![https://i.imgur.com/d8DKgnY.jpg](https://i.imgur.com/d8DKgnY.jpg)
-9. type `bluetooth` to reset module</string>
+9. type `bluetooth` to reset module
+10. forcequit certain app by app universal action</string>
 	<key>uidata</key>
 	<dict>
+		<key>01364533-E4F0-45E2-AF7C-C15C5452871D</key>
+		<dict>
+			<key>xpos</key>
+			<real>740</real>
+			<key>ypos</key>
+			<real>1145</real>
+		</dict>
 		<key>1B18F274-588B-456C-9E33-FEFA036EBCF0</key>
 		<dict>
 			<key>xpos</key>
 			<real>880</real>
 			<key>ypos</key>
 			<real>975</real>
+		</dict>
+		<key>1F861028-2D63-4856-923E-3F2AAEEA8043</key>
+		<dict>
+			<key>note</key>
+			<string>remove newline</string>
+			<key>xpos</key>
+			<real>690</real>
+			<key>ypos</key>
+			<real>1335</real>
+		</dict>
+		<key>242A5459-2003-40CE-A4CD-AF8C1A3B8EE7</key>
+		<dict>
+			<key>xpos</key>
+			<real>75</real>
+			<key>ypos</key>
+			<real>1320</real>
 		</dict>
 		<key>248EAC40-BF24-4D70-B18D-EA2AA0052EFA</key>
 		<dict>
@@ -939,6 +1162,13 @@ do shell script ("networksetup -setairportpower " &amp; device &amp; " " &amp; p
 			<key>ypos</key>
 			<real>325</real>
 		</dict>
+		<key>A178C922-62CD-4639-B2D4-481A45377845</key>
+		<dict>
+			<key>xpos</key>
+			<real>590</real>
+			<key>ypos</key>
+			<real>1205</real>
+		</dict>
 		<key>A8008FB3-73D5-4264-9B1E-597592344FC8</key>
 		<dict>
 			<key>xpos</key>
@@ -969,6 +1199,22 @@ do shell script ("networksetup -setairportpower " &amp; device &amp; " " &amp; p
 			<key>ypos</key>
 			<real>325</real>
 		</dict>
+		<key>CFAAD5D3-F791-4906-8FBC-0A036805F76A</key>
+		<dict>
+			<key>xpos</key>
+			<real>815</real>
+			<key>ypos</key>
+			<real>1305</real>
+		</dict>
+		<key>DD93F2F3-04E6-438F-BE22-4C1EBCA47DDA</key>
+		<dict>
+			<key>note</key>
+			<string>app name</string>
+			<key>xpos</key>
+			<real>450</real>
+			<key>ypos</key>
+			<real>1305</real>
+		</dict>
 		<key>E7878FD3-341C-46E3-B296-200E28529751</key>
 		<dict>
 			<key>note</key>
@@ -977,6 +1223,15 @@ do shell script ("networksetup -setairportpower " &amp; device &amp; " " &amp; p
 			<real>85</real>
 			<key>ypos</key>
 			<real>860</real>
+		</dict>
+		<key>FAA9B021-194E-4279-9155-12F56970CA9F</key>
+		<dict>
+			<key>note</key>
+			<string>is app</string>
+			<key>xpos</key>
+			<real>285</real>
+			<key>ypos</key>
+			<real>1340</real>
 		</dict>
 		<key>FD523C1F-C6BF-4955-809A-51ECF942A9F6</key>
 		<dict>
@@ -993,7 +1248,7 @@ do shell script ("networksetup -setairportpower " &amp; device &amp; " " &amp; p
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.9</string>
+	<string>1.10</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/mac-enhancer</string>
 </dict>

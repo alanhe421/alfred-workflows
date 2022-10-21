@@ -9,7 +9,7 @@ const { getCurProxy } = require('./network-utils');
 const [, ,] = process.argv;
 const wf = new Workflow();
 (function () {
-  const { http, https } = getCurProxy();
+  const {http, https, socks} = getCurProxy();
 
   wf.addWorkflowItem({
     item: {
@@ -38,6 +38,19 @@ const wf = new Workflow();
       }
     }
   });
+  wf.addWorkflowItem({
+    item: {
+      title: 'SOCKS Proxy',
+      subtitle: buildHttpProxySubtitle(socks),
+      icon: {
+        path: 'icon/socks.png'
+      },
+      text: {
+        copy: socks.enabled ? `${socks.host}:${socks.port}` : '',
+        largetype: socks.enabled ? `${socks.host}:${socks.port}` : ''
+      }
+    }
+  })
   wf.run();
 })();
 
