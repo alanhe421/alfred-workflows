@@ -1,0 +1,84 @@
+name: Bug report
+description: Create a report to help us improve. 支持中文。
+title: "[Bug]: "
+labels: ["bug"]
+assignees:
+ - alanhg
+body:
+ - type: textarea
+   id: what-happened
+   attributes:
+     label: Describe the bug
+     description: > 
+        What the bug is.\n
+        Clear Steps of description and screenshot is welcome.\n
+   validations:
+    required: true
+ - type: dropdown
+   id: mac-os-version
+   attributes:
+     label: MacOS Version
+     options:
+      - macOS 11 Big Sur and ago
+      - macOS 12 Monterey
+      - macOS 13 Ventura
+   validations:
+     required: true
+ - type: input
+   id: alfred-version
+   attributes:
+    label: Alfred Version
+    placeholder: e.g. v4.6.5
+   validations:
+     required: true
+ - type: dropdown
+   id: workflow-name
+   attributes:
+     label: Workflow Name
+     description: >
+       Confirm the latest workflow used.
+     options:
+       - 2FA-Read Code
+       - About Mac
+       - Airdrop
+       - AppID
+       - AppleScript Tools
+       - Batch Import Workflows
+       - Bluetooth Manager
+       - Clipboard History
+       - Compress
+       - ConvertIO
+       - Copy Files to The frontmost Finder
+       - DO NOT DISTURB
+       - Eudic Tools
+       - File Enhancer
+       - Find iPhone
+       - Giphy
+       - Git Code
+       - IP Tools
+       - Json2TS
+       - Local Network
+       - Mac Enhancer
+       - Medium Tools
+       - Meeting
+       - Mount Volume
+       - Multimedia Convert
+       - My iPhones
+       - New File
+       - OCR
+       - OpenConnect VPN
+       - Paste into files
+       - Pic Uploader
+       - Process
+       - ProgressBar
+       - Alfred Remote
+       - RGB-Hex converter
+       - String Manipulation
+       - Surge
+       - Switch Audio
+       - Translate
+       - Type Search
+       - Whistle
+       - 印象笔记
+   validations:
+     required: true

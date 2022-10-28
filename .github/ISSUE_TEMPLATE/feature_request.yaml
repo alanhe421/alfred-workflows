@@ -1,0 +1,71 @@
+---
+name: Feature request
+description: Suggest an idea for this project. 支持中文。
+title: "[Feat]: "
+labels: ["feat"]
+assignees:
+  - alanhg
+body:
+  - type: textarea
+    id: why-need
+    attributes:
+      label: Describe the need
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Describe the solution
+    validations:
+      required: true
+  - type: dropdown
+    id: workflow-name
+    attributes:
+      label: Workflow Name
+      description: >
+        if it's new workflow need. Don't have to choose.
+      options:
+        - 2FA-Read Code
+        - About Mac
+        - Airdrop
+        - AppID
+        - AppleScript Tools
+        - Batch Import Workflows
+        - Bluetooth Manager
+        - Clipboard History
+        - Compress
+        - ConvertIO
+        - Copy Files to The frontmost Finder
+        - DO NOT DISTURB
+        - Eudic Tools
+        - File Enhancer
+        - Find iPhone
+        - Giphy
+        - Git Code
+        - IP Tools
+        - Json2TS
+        - Local Network
+        - Mac Enhancer
+        - Medium Tools
+        - Meeting
+        - Mount Volume
+        - Multimedia Convert
+        - My iPhones
+        - New File
+        - OCR
+        - OpenConnect VPN
+        - Paste into files
+        - Pic Uploader
+        - Process
+        - ProgressBar
+        - Alfred Remote
+        - RGB-Hex converter
+        - String Manipulation
+        - Surge
+        - Switch Audio
+        - Translate
+        - Type Search
+        - Whistle
+        - 印象笔记
+    validations:
+      required: false
