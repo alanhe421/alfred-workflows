@@ -4,11 +4,22 @@ const path = require('path');
 const plist = require('plist');
 
 /**
+ * 输出workflow-name到固定文件，CI需要,之后走CI解析yaml，做到动态更新
+ * @param items
+ */
+function writeWorkflowNameOptions(items) {
+  fs.writeFileSync(path.join(__dirname, 'workflow_name_options.txt',), items.reduce((res, workflow) => res += `- ${workflow.name}\n`, ''),{
+    encoding:'utf8'
+  });
+}
+
+/**
  * github 缺省环境变量
  * https://docs.github.com/en/enterprise-cloud@latest/actions/learn-github-actions/environment-variables#default-environment-variables
  */
 function updateReadme(items) {
-  [path.resolve(__dirname, '../../', 'README.md'), path.resolve(__dirname, '../../', 'README-zh.md')].forEach((path) => {
+  [path.resolve(__dirname, '../../', 'README.md'),
+    path.resolve(__dirname, '../../', 'README-zh.md')].forEach((path) => {
     let readmeContent = fs.readFileSync(path, 'utf8');
     const workflowsList = items.map((item, index) => {
       return `\n${index + 1}. [${item.name}](https://github.com/alanhg/alfred-workflows${item.path})`;
@@ -65,6 +76,7 @@ function readAllWorkflows() {
     }
   });
   updateReadme(items);
+  writeWorkflowNameOptions(items);
 }
 
 function main() {
