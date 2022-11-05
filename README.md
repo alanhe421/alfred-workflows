@@ -58,13 +58,14 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 33. [ProgressBar](https://github.com/alanhg/alfred-workflows/tree/master/progress-bar)
 34. [Alfred Remote](https://github.com/alanhg/alfred-workflows/tree/master/remote)
 35. [RGB-Hex converter](https://github.com/alanhg/alfred-workflows/tree/master/rgb-hex-converter)
-36. [String Manipulation](https://github.com/alanhg/alfred-workflows/tree/master/string-manipulation)
-37. [Surge](https://github.com/alanhg/alfred-workflows/tree/master/surge)
-38. [Switch Audio](https://github.com/alanhg/alfred-workflows/tree/master/switch-audio)
-39. [Translate](https://github.com/alanhg/alfred-workflows/tree/master/translate)
-40. [Type Search](https://github.com/alanhg/alfred-workflows/tree/master/type-search)
-41. [Whistle](https://github.com/alanhg/alfred-workflows/tree/master/whistle)
-42. [印象笔记](https://github.com/alanhg/alfred-workflows/tree/master/印象笔记)<!--workflow-end-->
+36. [SSH Utils](https://github.com/alanhg/alfred-workflows/tree/master/ssh-utils)
+37. [String Manipulation](https://github.com/alanhg/alfred-workflows/tree/master/string-manipulation)
+38. [Surge](https://github.com/alanhg/alfred-workflows/tree/master/surge)
+39. [Switch Audio](https://github.com/alanhg/alfred-workflows/tree/master/switch-audio)
+40. [Translate](https://github.com/alanhg/alfred-workflows/tree/master/translate)
+41. [Type Search](https://github.com/alanhg/alfred-workflows/tree/master/type-search)
+42. [Whistle](https://github.com/alanhg/alfred-workflows/tree/master/whistle)
+43. [印象笔记](https://github.com/alanhg/alfred-workflows/tree/master/印象笔记)<!--workflow-end-->
 
 ## Dependency
 
