@@ -23,9 +23,9 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [14.x]
+        node-version: [16.x]
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v2
         with:
@@ -49,11 +49,11 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [14.x]
+        node-version: [16.x]
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
       - name: TOC Generator
@@ -82,6 +82,6 @@ jobs:
     needs: [ workflow_readme, home_readme_toc ]
     steps:
       - name: Contribute List
-        uses: akhilmhdh/contributors-readme-action@v2.3.4
+        uses: akhilmhdh/contributors-readme-action@v2.3.6
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
