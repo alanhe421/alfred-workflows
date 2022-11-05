@@ -8,7 +8,7 @@ const plist = require('plist');
  * @param items
  */
 function writeWorkflowNameOptions(items) {
-  fs.writeFileSync(path.join(__dirname, 'workflow_name_options.txt',), items.reduce((res, workflow) => res += `- ${workflow.name}\n`, ''),{
+  fs.writeFileSync(path.join(__dirname, '../..','workflow_name_options.txt',), items.reduce((res, workflow) => res += `- ${workflow.name}\n`, ''),{
     encoding:'utf8'
   });
 }
