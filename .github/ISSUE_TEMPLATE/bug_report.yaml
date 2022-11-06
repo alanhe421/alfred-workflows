@@ -13,24 +13,7 @@ body:
         What the bug is.\n
         Clear Steps of description and screenshot is welcome.\n
    validations:
-    required: true
- - type: dropdown
-   id: mac-os-version
-   attributes:
-     label: MacOS Version
-     options:
-      - macOS 11 Big Sur and ago
-      - macOS 12 Monterey
-      - macOS 13 Ventura
-   validations:
-     required: true
- - type: input
-   id: alfred-version
-   attributes:
-    label: Alfred Version
-    placeholder: e.g. v4.6.5
-   validations:
-     required: true
+    required:
  - type: dropdown
    id: workflow-name
    attributes:
@@ -82,3 +65,30 @@ body:
        - 印象笔记
    validations:
      required: true
+ - type: dropdown
+   id: mac-os-version
+   attributes:
+     label: MacOS Version
+     options:
+      - macOS 11 Big Sur and ago
+      - macOS 12 Monterey
+      - macOS 13 Ventura
+   validations:
+     required: true
+ - type: input
+   id: alfred-version
+   attributes:
+    label: Alfred Version
+    placeholder: e.g. v4.6.5
+   validations:
+     required: true
+ - type: dropdown
+   id: mac-os-locale
+   attributes:
+     label: MacOS Locale
+     options:
+       - EN
+       - CN-中文
+       - Others
+   validations:
+     required: false
