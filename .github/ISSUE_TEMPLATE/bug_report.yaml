@@ -65,6 +65,13 @@ body:
        - 印象笔记
    validations:
      required: true
+ - type: input
+   id: alfred-version
+   attributes:
+     label: Alfred Version
+     placeholder: e.g. v4.6.5
+   validations:
+     required: true
  - type: dropdown
    id: mac-os-version
    attributes:
@@ -73,13 +80,6 @@ body:
       - macOS 11 Big Sur and ago
       - macOS 12 Monterey
       - macOS 13 Ventura
-   validations:
-     required: true
- - type: input
-   id: alfred-version
-   attributes:
-    label: Alfred Version
-    placeholder: e.g. v4.6.5
    validations:
      required: true
  - type: dropdown
