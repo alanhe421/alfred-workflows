@@ -13,6 +13,7 @@ P.S.: 使用这些Workflow的前提是已购买[Powerpack](https://www.alfredapp
 - [常见问题](#%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98)
 - [支持](#%E6%94%AF%E6%8C%81)
 - [订阅&交流](#%E8%AE%A2%E9%98%85%E4%BA%A4%E6%B5%81)
+- [其他Workflows推荐](#%E5%85%B6%E4%BB%96workflows%E6%8E%A8%E8%8D%90)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

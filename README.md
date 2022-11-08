@@ -18,6 +18,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 - [Star History](#star-history)
 - [Subscribe & Communication](#subscribe--communication)
 - [Contributors](#contributors)
+- [Workflows developed by others](#workflows-developed-by-others)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 ## Workflows
