@@ -112,3 +112,9 @@ Welcome ➡️ [Discussion](https://github.com/alanhg/alfred-workflows/discussio
     </td></tr>
 </table>
 <!-- readme: collaborators,contributors -end -->
+
+## Workflows developed by others
+
+1. [alfred-currency-conversion](https://github.com/jeppestaerk/alfred-currency-conversion#readme)
+2. [GitHub for Alfred](https://github.com/gharlan/alfred-github-workflow)
+3. [JetBrains - Open Project](https://github.com/bchatard/alfred-jetbrains)

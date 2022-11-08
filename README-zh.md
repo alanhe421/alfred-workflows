@@ -86,3 +86,9 @@ P.S.: 使用这些Workflow的前提是已购买[Powerpack](https://www.alfredapp
 ## 订阅&交流
 
 [![](https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@alanhg)
+
+## 其他Workflows推荐
+
+1. [alfred-currency-conversion](https://github.com/jeppestaerk/alfred-currency-conversion#readme)
+2. [GitHub for Alfred](https://github.com/gharlan/alfred-github-workflow)
+3. [JetBrains - Open Project](https://github.com/bchatard/alfred-jetbrains)
