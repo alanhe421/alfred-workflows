@@ -56,9 +56,11 @@ body:
        - ProgressBar
        - Alfred Remote
        - RGB-Hex converter
+       - SSH Utils
        - String Manipulation
        - Surge
        - Switch Audio
+       - System Settings
        - Translate
        - Type Search
        - Whistle
