@@ -59,10 +59,11 @@ P.S.: 使用这些Workflow的前提是已购买[Powerpack](https://www.alfredapp
 37. [String Manipulation](https://github.com/alanhg/alfred-workflows/tree/master/string-manipulation)
 38. [Surge](https://github.com/alanhg/alfred-workflows/tree/master/surge)
 39. [Switch Audio](https://github.com/alanhg/alfred-workflows/tree/master/switch-audio)
-40. [Translate](https://github.com/alanhg/alfred-workflows/tree/master/translate)
-41. [Type Search](https://github.com/alanhg/alfred-workflows/tree/master/type-search)
-42. [Whistle](https://github.com/alanhg/alfred-workflows/tree/master/whistle)
-43. [印象笔记](https://github.com/alanhg/alfred-workflows/tree/master/印象笔记)<!--workflow-end-->
+40. [System Settings](https://github.com/alanhg/alfred-workflows/tree/master/system-settings)
+41. [Translate](https://github.com/alanhg/alfred-workflows/tree/master/translate)
+42. [Type Search](https://github.com/alanhg/alfred-workflows/tree/master/type-search)
+43. [Whistle](https://github.com/alanhg/alfred-workflows/tree/master/whistle)
+44. [印象笔记](https://github.com/alanhg/alfred-workflows/tree/master/印象笔记)<!--workflow-end-->
 
 ## 开发工具
 

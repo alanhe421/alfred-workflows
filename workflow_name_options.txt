@@ -37,6 +37,7 @@
 - String Manipulation
 - Surge
 - Switch Audio
+- System Settings
 - Translate
 - Type Search
 - Whistle
