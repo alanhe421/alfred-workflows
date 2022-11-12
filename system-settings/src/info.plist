@@ -3,14 +3,16 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>com.alfredapp.vitor.systemsettings</string>
+	<string>cn.alanhe.prefpanes</string>
+	<key>category</key>
+	<string>Self-Dev</string>
 	<key>connections</key>
 	<dict>
-		<key>0608C0AA-05B8-4CE2-BF9D-929EC1D23ED0</key>
+		<key>012416E0-D3F7-4F47-B748-12FE6DC2833E</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>8DF0DD15-2F02-4FAA-A0EF-B435B4E86A6C</string>
+				<string>8A3375B0-5B3C-4C0F-9446-946DDDD44B93</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -19,11 +21,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>06E6F7FA-B33E-4568-B37C-D470DD8D69EF</key>
+		<key>060176DC-38BB-479E-B536-8DD29C0811D0</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>24B029BA-B491-4A7C-9CE0-B686D911DB69</string>
+				<string>8A3375B0-5B3C-4C0F-9446-946DDDD44B93</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -32,11 +34,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>0FE978FA-DA25-4DD4-95F6-72F1FF0A81D3</key>
+		<key>098496B2-9FC5-45A3-A54C-830CB04DEB11</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>4103FEE5-FE83-4AE9-AB7E-ECF6B857E94D</string>
+				<string>A23EAC9D-14E2-43BE-91FA-E93EFB51B05A</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -45,11 +47,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>10BB0E7F-7A7B-47CA-B6BF-A2E88447DBDA</key>
+		<key>0D2B8F7C-2EA0-4C95-83D5-77D56C7BE5C3</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>0608C0AA-05B8-4CE2-BF9D-929EC1D23ED0</string>
+				<string>AFF55B71-9073-4AA2-8236-07247644D581</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -58,11 +60,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>115B40CE-5832-44BB-A48D-124EA294C8A7</key>
+		<key>14F31181-91DE-4A50-AFEF-16D922024128</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>178BDB4E-CBE0-4282-A0C5-3CD4248FEE35</string>
+				<string>8A3375B0-5B3C-4C0F-9446-946DDDD44B93</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -71,11 +73,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>120960EE-4CFF-423E-BC97-113B7F3C232D</key>
+		<key>211B9708-2FEE-4F88-82C2-3EF6F4EADD4B</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>456823B3-FB47-4FFF-86D8-BA63F58AEDB5</string>
+				<string>F8F8F9E9-5C7C-489A-8B28-B6D3189299F6</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -84,11 +86,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>13FE221D-C366-4C22-8CAD-2AAFC1D587D2</key>
+		<key>21AF7132-826C-48DF-A023-3C0E24064377</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>8DF0DD15-2F02-4FAA-A0EF-B435B4E86A6C</string>
+				<string>8A3375B0-5B3C-4C0F-9446-946DDDD44B93</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -97,11 +99,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>178BDB4E-CBE0-4282-A0C5-3CD4248FEE35</key>
+		<key>24BD2C86-8E08-48F6-A95D-39F22627BE96</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>8DF0DD15-2F02-4FAA-A0EF-B435B4E86A6C</string>
+				<string>C1AC903E-F790-4486-9275-4702544BD08E</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -110,11 +112,13 @@
 				<false/>
 			</dict>
 		</array>
-		<key>1C4A3BBD-4972-4628-B315-5018BA3533E6</key>
+		<key>2739207C-A263-4FBD-A4E3-E1C7891D9DC1</key>
+		<array/>
+		<key>3C12B6CB-1F2D-458D-B52D-99A7E8352E0A</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>8DF0DD15-2F02-4FAA-A0EF-B435B4E86A6C</string>
+				<string>012416E0-D3F7-4F47-B748-12FE6DC2833E</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -123,11 +127,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>1F30947A-6478-415C-8496-35E5FF7E3183</key>
+		<key>40E439BD-5B0E-484B-9132-20CA8E3D7689</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>E1063F88-2288-4DD3-AA7A-D014CFA78D28</string>
+				<string>C0396A23-C7F8-4E73-ACFA-587CDF10815E</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -136,11 +140,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>20B9EAC8-6D3C-41EC-9197-032A38287211</key>
+		<key>4274EFAC-E0CC-4DCB-B37C-77278CE702F2</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>C1ED21AF-2527-4855-8138-EF451EC916DD</string>
+				<string>14F31181-91DE-4A50-AFEF-16D922024128</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -149,11 +153,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>24B029BA-B491-4A7C-9CE0-B686D911DB69</key>
+		<key>7B8CD541-E553-49CD-AF2E-AE2B83996444</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>8DF0DD15-2F02-4FAA-A0EF-B435B4E86A6C</string>
+				<string>21AF7132-826C-48DF-A023-3C0E24064377</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -162,11 +166,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>24F3B88D-BDF4-46F8-9328-38B228957B44</key>
+		<key>7BB8FE3A-940B-4D94-AB99-89DA7A620CBD</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>8DF0DD15-2F02-4FAA-A0EF-B435B4E86A6C</string>
+				<string>8A3375B0-5B3C-4C0F-9446-946DDDD44B93</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -175,11 +179,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>253AEE64-C460-4828-9AD6-9F43102B4148</key>
+		<key>822E9E96-8A6A-45E4-8208-DB12CA8D94AF</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>8DF0DD15-2F02-4FAA-A0EF-B435B4E86A6C</string>
+				<string>DA17A143-1642-4602-9B15-C299A28C62EB</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -188,765 +192,23 @@
 				<false/>
 			</dict>
 		</array>
-		<key>2CB67EEF-BC29-4898-AE0C-34104B40FE99</key>
+		<key>8A3375B0-5B3C-4C0F-9446-946DDDD44B93</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>8DF0DD15-2F02-4FAA-A0EF-B435B4E86A6C</string>
+				<string>2739207C-A263-4FBD-A4E3-E1C7891D9DC1</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>sourceoutputuid</key>
+				<string>27F61507-9A94-4D9D-A5E8-5270D78A1662</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
-		</array>
-		<key>2D4876F3-DFBE-4C89-9410-864A25B0DBC9</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>D4270F56-8C0E-4311-AE90-366F5F544DEC</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>2D4E769A-79E7-45F8-8541-475DBB9BC514</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>79F005CC-B769-43B6-ACF6-3C057C54D2E4</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>35325F14-3A02-48C2-8193-76B67651119B</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>9A08AB7D-C3AA-4A06-A516-31995F1CFEA0</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>354F777D-BBCC-4FB8-BA07-1F9C33490800</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>9995134B-DD1E-46A9-B7A9-0A33BBDC1B0A</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>35DB0201-99C4-495D-BDFF-165691C694EE</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>EEE44FA0-2C27-4B2A-B1AD-EF2CC79BCBF9</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>3A9BB8B2-8264-4D58-96D8-CB947F8EB2F1</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>1C4A3BBD-4972-4628-B315-5018BA3533E6</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>3C1DE7BC-7D7E-4DF8-AACE-4E5C413972CD</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>8DF0DD15-2F02-4FAA-A0EF-B435B4E86A6C</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>3D37C8D0-BFD2-41F0-AADE-C0C7F39AA0EF</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>8DF0DD15-2F02-4FAA-A0EF-B435B4E86A6C</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>3E2E649B-2FAC-47AF-9A1A-6E37AAD127BE</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>8DF0DD15-2F02-4FAA-A0EF-B435B4E86A6C</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>3E5DFC7D-070E-4320-8410-E9670DFF38E8</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>65BD6A90-B01C-4699-ACA2-9A58F7949E26</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>4103FEE5-FE83-4AE9-AB7E-ECF6B857E94D</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>8DF0DD15-2F02-4FAA-A0EF-B435B4E86A6C</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>418001B9-F077-4607-AEF8-0CFD7291C229</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>8F65BD1A-3B71-4CC9-8B1C-C6C1FEAEF615</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>4184F0E9-B4CF-4A6F-AD11-864009D6A8B5</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>C6E30C4C-ADB4-4F06-8B93-847664C709C2</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>456823B3-FB47-4FFF-86D8-BA63F58AEDB5</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>8DF0DD15-2F02-4FAA-A0EF-B435B4E86A6C</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>47194840-EFFD-41C6-A534-A8C1E72054B6</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>8DF0DD15-2F02-4FAA-A0EF-B435B4E86A6C</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>48EAE7F8-F0CA-4421-8671-05CEA6773F6D</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>8DF0DD15-2F02-4FAA-A0EF-B435B4E86A6C</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>55D2217C-FA9F-4BB3-9BEC-E9933DFFF9F5</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>E3132328-3B9E-4178-A0CF-F1062965DD8D</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>596333A1-85AF-425D-9B53-F8B3DD44C701</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>3C1DE7BC-7D7E-4DF8-AACE-4E5C413972CD</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>5C30707B-B5FD-4FB9-BFE1-70B378C691F6</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>47194840-EFFD-41C6-A534-A8C1E72054B6</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>61A9FAE2-8E37-46E6-A135-95CE170C8204</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>C5F6F828-2DBE-4C7D-96D8-7A19DF1544F1</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>6223847C-07DF-417D-850C-938595F8A5C0</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>E300E7D0-3E59-43D4-AB35-B80EC6042FAF</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>65BD6A90-B01C-4699-ACA2-9A58F7949E26</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>8DF0DD15-2F02-4FAA-A0EF-B435B4E86A6C</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>69B4D9BB-4FB0-4F07-91E2-270B5E41F5A4</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>24F3B88D-BDF4-46F8-9328-38B228957B44</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>753E9EF2-1E25-4B02-BD3C-E3BD78988871</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>7CF54EAA-86FE-48E7-A445-A29FBF0CB443</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>75E7AEB3-32A3-4654-812F-AA40D6A56427</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>2CB67EEF-BC29-4898-AE0C-34104B40FE99</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>760F70B4-1DAF-4342-93FC-13273C4A9207</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>3E2E649B-2FAC-47AF-9A1A-6E37AAD127BE</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>791156A0-115E-4EC5-891C-494DCCF5A7A9</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>D6E98923-3178-4A19-BCD5-35F5C3E5814D</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>79F005CC-B769-43B6-ACF6-3C057C54D2E4</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>8DF0DD15-2F02-4FAA-A0EF-B435B4E86A6C</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>7C5D0F9E-0580-4CF5-8346-B333F6F1BB53</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>A2ECA8CC-8F6A-41E9-A1D5-B95E557E266E</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>7CF54EAA-86FE-48E7-A445-A29FBF0CB443</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>8DF0DD15-2F02-4FAA-A0EF-B435B4E86A6C</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>7FF91A32-D9F4-4099-B823-A2237EB6F4C9</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>8DF0DD15-2F02-4FAA-A0EF-B435B4E86A6C</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>843B7B23-A1DD-4CB9-9401-EFF0D0038B2F</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>DB31B76C-CE9B-4228-BFB5-440E9FED9E75</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>89E73D2A-C97E-4827-8845-125CA6AD451C</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>13FE221D-C366-4C22-8CAD-2AAFC1D587D2</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>8B7B3372-147B-42C1-9FCC-63D3C98B2227</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>8DF0DD15-2F02-4FAA-A0EF-B435B4E86A6C</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>8D037CC0-0F11-4AA9-89F5-CB529CF3FED1</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>A425F3D3-7282-40EE-88B7-DBBE4113E2EE</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>8DF0DD15-2F02-4FAA-A0EF-B435B4E86A6C</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>61966E11-4358-4ED8-9FDC-84B6C485D17E</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>8F65BD1A-3B71-4CC9-8B1C-C6C1FEAEF615</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>8DF0DD15-2F02-4FAA-A0EF-B435B4E86A6C</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>954C1736-08E0-4113-A5A2-4914FF0C15C8</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>ECE5D09E-5A1E-4A62-B176-BCD01629B971</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>98B79881-C483-4E18-B1F2-21BDAFB920AA</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>F90E8A37-DC7E-4213-974D-30FDDC830142</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>9995134B-DD1E-46A9-B7A9-0A33BBDC1B0A</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>8DF0DD15-2F02-4FAA-A0EF-B435B4E86A6C</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>9A08AB7D-C3AA-4A06-A516-31995F1CFEA0</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>8DF0DD15-2F02-4FAA-A0EF-B435B4E86A6C</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>9DA9A047-0B3E-4DA3-95A2-BB02218CC277</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>F7458BEC-63BF-4D47-AAA6-C5F64C20C2F4</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>A0B1D547-3565-4F71-A2E8-F76814C81588</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>3D37C8D0-BFD2-41F0-AADE-C0C7F39AA0EF</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>A1DB4053-BABB-4A4E-88B3-294D84AB3FCE</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>F60B76ED-5474-4C0E-9004-564FD1B9BEAB</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>A1E8573B-020C-4E80-AF45-1E9F1F06C34A</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>8DF0DD15-2F02-4FAA-A0EF-B435B4E86A6C</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>A2ECA8CC-8F6A-41E9-A1D5-B95E557E266E</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>8DF0DD15-2F02-4FAA-A0EF-B435B4E86A6C</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>A425F3D3-7282-40EE-88B7-DBBE4113E2EE</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>8DF0DD15-2F02-4FAA-A0EF-B435B4E86A6C</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>A86C58CA-97B6-4C26-B2D0-4F9DAC129FE4</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>D866752D-24AC-496F-85DE-EB0DE026C284</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>A8DA8DFF-7221-4443-B687-08B414451CAC</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>8DF0DD15-2F02-4FAA-A0EF-B435B4E86A6C</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>B1C763E7-32E4-433E-A74B-BC467CD42473</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>8DF0DD15-2F02-4FAA-A0EF-B435B4E86A6C</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>B2AE61F2-C9A8-4664-BDE2-1039857F20CB</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>7FF91A32-D9F4-4099-B823-A2237EB6F4C9</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>B7B9D159-E1DE-4C44-B7A9-8C7577CD5DBE</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>48EAE7F8-F0CA-4421-8671-05CEA6773F6D</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>BDECD53D-5065-4FAF-A7C1-17257C5E9EB6</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>8DF0DD15-2F02-4FAA-A0EF-B435B4E86A6C</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>BF58136F-A1F6-40D4-B6E7-74BFA588DAD4</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>8B7B3372-147B-42C1-9FCC-63D3C98B2227</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>C1ED21AF-2527-4855-8138-EF451EC916DD</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>8DF0DD15-2F02-4FAA-A0EF-B435B4E86A6C</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>C3A62EE5-CC39-4509-8D4B-77BDC6C34961</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>A1E8573B-020C-4E80-AF45-1E9F1F06C34A</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>C5F6F828-2DBE-4C7D-96D8-7A19DF1544F1</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>8DF0DD15-2F02-4FAA-A0EF-B435B4E86A6C</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>C6E30C4C-ADB4-4F06-8B93-847664C709C2</key>
-		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>8DF0DD15-2F02-4FAA-A0EF-B435B4E86A6C</string>
+				<string>9FADCAF7-15C0-4D4B-B599-766C127D304C</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -955,11 +217,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>C9EA832B-7612-48A7-87AF-E8AA452D13D1</key>
+		<key>8A4DB646-8531-4E78-94D3-2040ED448E65</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>BDECD53D-5065-4FAF-A7C1-17257C5E9EB6</string>
+				<string>060176DC-38BB-479E-B536-8DD29C0811D0</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -968,11 +230,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>CC63467F-8C0A-45C0-9CE5-29996DDA3199</key>
+		<key>9900958A-F973-4806-A2CA-7FD7A935688B</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>B1C763E7-32E4-433E-A74B-BC467CD42473</string>
+				<string>8A3375B0-5B3C-4C0F-9446-946DDDD44B93</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -981,11 +243,13 @@
 				<false/>
 			</dict>
 		</array>
-		<key>CE6F2E60-0B14-4A59-9089-2EED137CDDC9</key>
+		<key>9FADCAF7-15C0-4D4B-B599-766C127D304C</key>
+		<array/>
+		<key>A23EAC9D-14E2-43BE-91FA-E93EFB51B05A</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>E27A6F53-4CD3-4FBB-8A7C-27AE4BEBE358</string>
+				<string>8A3375B0-5B3C-4C0F-9446-946DDDD44B93</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -994,11 +258,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>D4270F56-8C0E-4311-AE90-366F5F544DEC</key>
+		<key>AE85AC6A-215A-48E6-A9FA-89D97951C30B</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>8DF0DD15-2F02-4FAA-A0EF-B435B4E86A6C</string>
+				<string>7BB8FE3A-940B-4D94-AB99-89DA7A620CBD</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -1007,11 +271,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>D6E98923-3178-4A19-BCD5-35F5C3E5814D</key>
+		<key>AFF55B71-9073-4AA2-8236-07247644D581</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>8DF0DD15-2F02-4FAA-A0EF-B435B4E86A6C</string>
+				<string>8A3375B0-5B3C-4C0F-9446-946DDDD44B93</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -1020,11 +284,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>D866752D-24AC-496F-85DE-EB0DE026C284</key>
+		<key>BAE03D2C-8CE8-4C91-8163-8DA973426A6B</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>8DF0DD15-2F02-4FAA-A0EF-B435B4E86A6C</string>
+				<string>DE876256-E78F-468E-8BA4-E1ADA8F14C5C</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -1033,11 +297,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>DB31B76C-CE9B-4228-BFB5-440E9FED9E75</key>
+		<key>C0396A23-C7F8-4E73-ACFA-587CDF10815E</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>8DF0DD15-2F02-4FAA-A0EF-B435B4E86A6C</string>
+				<string>8A3375B0-5B3C-4C0F-9446-946DDDD44B93</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -1046,11 +310,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>DD1926A0-F642-425A-ADD7-8ED32692EE46</key>
+		<key>C1AC903E-F790-4486-9275-4702544BD08E</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>8DF0DD15-2F02-4FAA-A0EF-B435B4E86A6C</string>
+				<string>8A3375B0-5B3C-4C0F-9446-946DDDD44B93</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -1059,11 +323,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>E1063F88-2288-4DD3-AA7A-D014CFA78D28</key>
+		<key>CBCC3691-6BB2-45D9-AAF1-E51CB80213C2</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>8DF0DD15-2F02-4FAA-A0EF-B435B4E86A6C</string>
+				<string>8A3375B0-5B3C-4C0F-9446-946DDDD44B93</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -1072,11 +336,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>E27A6F53-4CD3-4FBB-8A7C-27AE4BEBE358</key>
+		<key>CC31B7DF-B899-4E5A-9303-B08300A7A9C4</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>8DF0DD15-2F02-4FAA-A0EF-B435B4E86A6C</string>
+				<string>9900958A-F973-4806-A2CA-7FD7A935688B</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -1085,11 +349,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>E300E7D0-3E59-43D4-AB35-B80EC6042FAF</key>
+		<key>CD081A2B-BB24-4D87-BD93-E3AE3054C3CB</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>8DF0DD15-2F02-4FAA-A0EF-B435B4E86A6C</string>
+				<string>8A3375B0-5B3C-4C0F-9446-946DDDD44B93</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -1098,11 +362,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>E3132328-3B9E-4178-A0CF-F1062965DD8D</key>
+		<key>DA17A143-1642-4602-9B15-C299A28C62EB</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>8DF0DD15-2F02-4FAA-A0EF-B435B4E86A6C</string>
+				<string>8A3375B0-5B3C-4C0F-9446-946DDDD44B93</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -1111,11 +375,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>EA53A7BA-07DA-4429-8B26-5002562C3AF9</key>
+		<key>DE876256-E78F-468E-8BA4-E1ADA8F14C5C</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>253AEE64-C460-4828-9AD6-9F43102B4148</string>
+				<string>8A3375B0-5B3C-4C0F-9446-946DDDD44B93</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -1124,11 +388,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>EC2F7B52-566A-4DD8-BC3A-3D15153C540D</key>
+		<key>DF402752-033C-4183-B9AF-0D35CB3F6266</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>DD1926A0-F642-425A-ADD7-8ED32692EE46</string>
+				<string>8A3375B0-5B3C-4C0F-9446-946DDDD44B93</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -1137,11 +401,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>ECE5D09E-5A1E-4A62-B176-BCD01629B971</key>
+		<key>E00B1237-AF84-4214-B363-B691F7EF2A0B</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>8DF0DD15-2F02-4FAA-A0EF-B435B4E86A6C</string>
+				<string>FEDC5D49-9A0B-42F6-B834-555F637B7DCA</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -1150,11 +414,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>EE309342-D86A-4A30-8A1B-151AED4891AE</key>
+		<key>ED0BC42E-531A-4ACC-8C18-D7A7CEFA20A5</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>A8DA8DFF-7221-4443-B687-08B414451CAC</string>
+				<string>DF402752-033C-4183-B9AF-0D35CB3F6266</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -1163,11 +427,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>EEE44FA0-2C27-4B2A-B1AD-EF2CC79BCBF9</key>
+		<key>F71A0FAE-DFDF-4EEF-9927-B057FAD161B7</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>8DF0DD15-2F02-4FAA-A0EF-B435B4E86A6C</string>
+				<string>CBCC3691-6BB2-45D9-AAF1-E51CB80213C2</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -1176,11 +440,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>F60B76ED-5474-4C0E-9004-564FD1B9BEAB</key>
+		<key>F71B6DA6-79A4-4730-9AC3-D508CE085B85</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>8DF0DD15-2F02-4FAA-A0EF-B435B4E86A6C</string>
+				<string>CD081A2B-BB24-4D87-BD93-E3AE3054C3CB</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -1189,11 +453,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>F7458BEC-63BF-4D47-AAA6-C5F64C20C2F4</key>
+		<key>F8F8F9E9-5C7C-489A-8B28-B6D3189299F6</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>8DF0DD15-2F02-4FAA-A0EF-B435B4E86A6C</string>
+				<string>8A3375B0-5B3C-4C0F-9446-946DDDD44B93</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -1202,11 +466,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>F90E8A37-DC7E-4213-974D-30FDDC830142</key>
+		<key>FEDC5D49-9A0B-42F6-B834-555F637B7DCA</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>8DF0DD15-2F02-4FAA-A0EF-B435B4E86A6C</string>
+				<string>8A3375B0-5B3C-4C0F-9446-946DDDD44B93</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -1217,7 +481,7 @@
 		</array>
 	</dict>
 	<key>createdby</key>
-	<string>Vítor Galvão</string>
+	<string>Alan He</string>
 	<key>description</key>
 	<string>Open macOS System Settings Panes</string>
 	<key>disabled</key>
@@ -1243,140 +507,39 @@
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
 			<key>uid</key>
-			<string>8DF0DD15-2F02-4FAA-A0EF-B435B4E86A6C</string>
+			<string>2739207C-A263-4FBD-A4E3-E1C7891D9DC1</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string># Special values for OneUpdater reuse
-readonly workflow_webaddress="$(/usr/libexec/PlistBuddy -c 'print webaddress' './info.plist')"
-readonly workflow_repo="$(basename "$(dirname "${workflow_webaddress}")")/$(basename "${workflow_webaddress}")"
-
-# THESE VARIABLES MUST BE SET. SEE THE ONEUPDATER README FOR AN EXPLANATION OF EACH.
-readonly remote_info_plist="${workflow_webaddress}/raw/main/Workflow/info.plist"
-readonly workflow_url="${workflow_repo}"
-readonly download_type='github_release'
-readonly frequency_check='4'
-
-# FROM HERE ON, CODE SHOULD BE LEFT UNTOUCHED!
-function abort {
-  echo "${1}" &gt;&amp;2
-  exit 1
-}
-
-function url_exists {
-  curl --silent --location --output /dev/null --fail --range 0-0 "${1}"
-}
-
-function notification {
-  local -r notificator="$(find . -type d -name 'Notificator.app')"
-  if [[ -n "${notificator}" ]]; then
-    "${notificator}/Contents/Resources/Scripts/notificator" --message "${1}" --title "${alfred_workflow_name}" --subtitle 'A new version is available'
-    return
-  fi
-
-  local -r terminal_notifier="$(find . -type f -name 'terminal-notifier')"
-  if [[ -n "${terminal_notifier}" ]]; then
-    "${terminal_notifier}" -title "${alfred_workflow_name}" -subtitle 'A new version is available' -message "${1}"
-    return
-  fi
-
-  osascript -e "display notification \"${1}\" with title \"${alfred_workflow_name}\" subtitle \"A new version is available\""
-}
-
-# Local sanity checks
-readonly local_info_plist='info.plist'
-readonly local_version="$(/usr/libexec/PlistBuddy -c 'print version' "${local_info_plist}")"
-
-[[ -n "${local_version}" ]] || abort 'You need to set a workflow version in the configuration sheet.'
-[[ "${download_type}" =~ ^(direct|page|github_release)$ ]] || abort "'download_type' (${download_type}) needs to be one of 'direct', 'page', or 'github_release'."
-[[ "${frequency_check}" =~ ^[0-9]+$ ]] || abort "'frequency_check' (${frequency_check}) needs to be a number."
-
-# Check for updates
-if [[ $(find "${local_info_plist}" -mtime +"${frequency_check}"d) ]]; then
-  if ! url_exists "${remote_info_plist}"; then abort "'remote_info_plist' (${remote_info_plist}) appears to not be reachable."; fi # Remote sanity check
-
-  readonly tmp_file="$(mktemp)"
-  curl --silent --location --output "${tmp_file}" "${remote_info_plist}"
-  readonly remote_version="$(/usr/libexec/PlistBuddy -c 'print version' "${tmp_file}")"
-
-  if [[ "${local_version}" == "${remote_version}" ]]; then
-    touch "${local_info_plist}" # Reset timer by touching local file
-    exit 0
-  fi
-
-  if [[ "${download_type}" == 'page' ]]; then
-    notification 'Opening download page…'
-    open "${workflow_url}"
-    exit 0
-  fi
-
-  download_url="$([[ "${download_type}" == 'github_release' ]] &amp;&amp; curl --silent "https://api.github.com/repos/${workflow_url}/releases/latest" | grep 'browser_download_url' | head -1 | sed -E 's/.*browser_download_url": "(.*)"/\1/' || echo "${workflow_url}")"
-
-  if url_exists "${download_url}"; then
-    notification 'Downloading and installing…'
-    curl --silent --location --output "${HOME}/Downloads/${alfred_workflow_name}.alfredworkflow" "${download_url}"
-    open "${HOME}/Downloads/${alfred_workflow_name}.alfredworkflow"
-  else
-    abort "'workflow_url' (${download_url}) appears to not be reachable."
-  fi
-fi</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>61966E11-4358-4ED8-9FDC-84B6C485D17E</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>about</string>
-				<key>subtext</key>
-				<string>System Settings → General → About</string>
-				<key>text</key>
-				<string>About</string>
-				<key>withspace</key>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>4</integer>
+						<key>matchstring</key>
+						<string>x-apple</string>
+						<key>outputlabel</key>
+						<string>URL</string>
+						<key>uid</key>
+						<string>27F61507-9A94-4D9D-A5E8-5270D78A1662</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>AppleScript</string>
+				<key>hideelse</key>
 				<false/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
+			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
-			<string>35325F14-3A02-48C2-8193-76B67651119B</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>x-apple.systempreferences:com.apple.SystemProfiler.AboutExtension</string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>9A08AB7D-C3AA-4A06-A516-31995F1CFEA0</string>
+			<string>8A3375B0-5B3C-4C0F-9446-946DDDD44B93</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1397,7 +560,7 @@ fi</string>
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>B7B9D159-E1DE-4C44-B7A9-8C7577CD5DBE</string>
+			<string>E00B1237-AF84-4214-B363-B691F7EF2A0B</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1414,85 +577,38 @@ fi</string>
 			<key>type</key>
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
-			<string>48EAE7F8-F0CA-4421-8671-05CEA6773F6D</string>
+			<string>FEDC5D49-9A0B-42F6-B834-555F637B7DCA</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>airdrop and handoff</string>
-				<key>subtext</key>
-				<string>System Settings → General → AirDrop &amp; Handoff</string>
-				<key>text</key>
-				<string>AirDrop &amp; Handoff</string>
-				<key>withspace</key>
+				<key>concurrently</key>
 				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>on run argv
+  set theQuery to item 1 of argv
+	tell application "System Preferences"
+		activate
+		set the current pane to pane id theQuery
+	end tell
+end run</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
+			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>55D2217C-FA9F-4BB3-9BEC-E9933DFFF9F5</string>
+			<string>9FADCAF7-15C0-4D4B-B599-766C127D304C</string>
 			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>x-apple.systempreferences:com.apple.AirDrop-Handoff-Settings.extension</string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>E3132328-3B9E-4178-A0CF-F1062965DD8D</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>appearance</string>
-				<key>subtext</key>
-				<string>System Settings → Appearance</string>
-				<key>text</key>
-				<string>Appearance</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>354F777D-BBCC-4FB8-BA07-1F9C33490800</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>x-apple.systempreferences:com.apple.Appearance-Settings.extension</string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>9995134B-DD1E-46A9-B7A9-0A33BBDC1B0A</string>
-			<key>version</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1511,7 +627,7 @@ fi</string>
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>10BB0E7F-7A7B-47CA-B6BF-A2E88447DBDA</string>
+			<string>098496B2-9FC5-45A3-A54C-830CB04DEB11</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1528,7 +644,7 @@ fi</string>
 			<key>type</key>
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
-			<string>0608C0AA-05B8-4CE2-BF9D-929EC1D23ED0</string>
+			<string>A23EAC9D-14E2-43BE-91FA-E93EFB51B05A</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1549,7 +665,7 @@ fi</string>
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>596333A1-85AF-425D-9B53-F8B3DD44C701</string>
+			<string>8A4DB646-8531-4E78-94D3-2040ED448E65</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1566,7 +682,7 @@ fi</string>
 			<key>type</key>
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
-			<string>3C1DE7BC-7D7E-4DF8-AACE-4E5C413972CD</string>
+			<string>060176DC-38BB-479E-B536-8DD29C0811D0</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1576,18 +692,18 @@ fi</string>
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
-				<string>bluetooth</string>
+				<string>mission control</string>
 				<key>subtext</key>
-				<string>System Settings → Bluetooth</string>
+				<string>System Settings → Mission Control</string>
 				<key>text</key>
-				<string>Bluetooth</string>
+				<string>Mission Control</string>
 				<key>withspace</key>
 				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>98B79881-C483-4E18-B1F2-21BDAFB920AA</string>
+			<string>AE85AC6A-215A-48E6-A9FA-89D97951C30B</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1595,7 +711,7 @@ fi</string>
 			<key>config</key>
 			<dict>
 				<key>argument</key>
-				<string>x-apple.systempreferences:com.apple.BluetoothSettings</string>
+				<string>com.apple.preference.expose</string>
 				<key>passthroughargument</key>
 				<false/>
 				<key>variables</key>
@@ -1604,159 +720,7 @@ fi</string>
 			<key>type</key>
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
-			<string>F90E8A37-DC7E-4213-974D-30FDDC830142</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>control centre</string>
-				<key>subtext</key>
-				<string>System Settings → Control Centre</string>
-				<key>text</key>
-				<string>Control Centre</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>61A9FAE2-8E37-46E6-A135-95CE170C8204</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>x-apple.systempreferences:com.apple.ControlCenter-Settings.extension</string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>C5F6F828-2DBE-4C7D-96D8-7A19DF1544F1</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>date and time</string>
-				<key>subtext</key>
-				<string>System Settings → General → Date &amp; Time</string>
-				<key>text</key>
-				<string>Date &amp; Time</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>35DB0201-99C4-495D-BDFF-165691C694EE</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>x-apple.systempreferences:com.apple.preference.datetime</string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>EEE44FA0-2C27-4B2A-B1AD-EF2CC79BCBF9</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>desktop and dock</string>
-				<key>subtext</key>
-				<string>System Settings → Desktop &amp; Dock</string>
-				<key>text</key>
-				<string>Desktop &amp; Dock</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>EA53A7BA-07DA-4429-8B26-5002562C3AF9</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>x-apple.systempreferences:com.apple.Desktop-Settings.extension</string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>253AEE64-C460-4828-9AD6-9F43102B4148</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>displays</string>
-				<key>subtext</key>
-				<string>System Settings → Displays</string>
-				<key>text</key>
-				<string>Displays</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>75E7AEB3-32A3-4654-812F-AA40D6A56427</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>x-apple.systempreferences:com.apple.Displays-Settings.extension</string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>2CB67EEF-BC29-4898-AE0C-34104B40FE99</string>
+			<string>7BB8FE3A-940B-4D94-AB99-89DA7A620CBD</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1777,7 +741,7 @@ fi</string>
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>A86C58CA-97B6-4C26-B2D0-4F9DAC129FE4</string>
+			<string>24BD2C86-8E08-48F6-A95D-39F22627BE96</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1785,7 +749,7 @@ fi</string>
 			<key>config</key>
 			<dict>
 				<key>argument</key>
-				<string>x-apple.systempreferences:com.apple.preferences.extensions</string>
+				<string>com.apple.preferences.extensions</string>
 				<key>passthroughargument</key>
 				<false/>
 				<key>variables</key>
@@ -1794,7 +758,7 @@ fi</string>
 			<key>type</key>
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
-			<string>D866752D-24AC-496F-85DE-EB0DE026C284</string>
+			<string>C1AC903E-F790-4486-9275-4702544BD08E</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1815,7 +779,7 @@ fi</string>
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>2D4E769A-79E7-45F8-8541-475DBB9BC514</string>
+			<string>40E439BD-5B0E-484B-9132-20CA8E3D7689</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1832,7 +796,7 @@ fi</string>
 			<key>type</key>
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
-			<string>79F005CC-B769-43B6-ACF6-3C057C54D2E4</string>
+			<string>C0396A23-C7F8-4E73-ACFA-587CDF10815E</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1853,7 +817,7 @@ fi</string>
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>CE6F2E60-0B14-4A59-9089-2EED137CDDC9</string>
+			<string>4274EFAC-E0CC-4DCB-B37C-77278CE702F2</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1861,7 +825,7 @@ fi</string>
 			<key>config</key>
 			<dict>
 				<key>argument</key>
-				<string>x-apple.systempreferences:com.apple.Focus-Settings.extension</string>
+				<string>x-apple.systempreferences:com.apple.preference.notifications?Focus</string>
 				<key>passthroughargument</key>
 				<false/>
 				<key>variables</key>
@@ -1870,7 +834,24 @@ fi</string>
 			<key>type</key>
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
-			<string>E27A6F53-4CD3-4FBB-8A7C-27AE4BEBE358</string>
+			<string>14F31181-91DE-4A50-AFEF-16D922024128</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>com.apple.preference.general</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>21AF7132-826C-48DF-A023-3C0E24064377</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1891,176 +872,7 @@ fi</string>
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>EC2F7B52-566A-4DD8-BC3A-3D15153C540D</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>x-apple.systempreferences:com.apple.systempreferences.GeneralSettings</string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>DD1926A0-F642-425A-ADD7-8ED32692EE46</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>game centre</string>
-				<key>subtext</key>
-				<string>System Settings → Game Centre</string>
-				<key>text</key>
-				<string>Game Centre</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>B2AE61F2-C9A8-4664-BDE2-1039857F20CB</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>x-apple.systempreferences:com.apple.Game-Center-Settings.extension</string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>7FF91A32-D9F4-4099-B823-A2237EB6F4C9</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>game controllers</string>
-				<key>subtext</key>
-				<string>System Settings → Game Controllers</string>
-				<key>text</key>
-				<string>Game Controllers</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>EE309342-D86A-4A30-8A1B-151AED4891AE</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>x-apple.systempreferences:com.apple.Game-Controller-Settings.extension</string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>A8DA8DFF-7221-4443-B687-08B414451CAC</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>internet accounts</string>
-				<key>subtext</key>
-				<string>System Settings → Internet Accounts</string>
-				<key>text</key>
-				<string>Internet Accounts</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>843B7B23-A1DD-4CB9-9401-EFF0D0038B2F</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>x-apple.systempreferences:com.apple.Internet-Accounts-Settings.extension</string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>DB31B76C-CE9B-4228-BFB5-440E9FED9E75</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>keyboard</string>
-				<key>subtext</key>
-				<string>System Settings → Keyboard</string>
-				<key>text</key>
-				<string>Keyboard</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>C3A62EE5-CC39-4509-8D4B-77BDC6C34961</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>x-apple.systempreferences:com.apple.Keyboard-Settings.extension</string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>A1E8573B-020C-4E80-AF45-1E9F1F06C34A</string>
+			<string>7B8CD541-E553-49CD-AF2E-AE2B83996444</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -2081,7 +893,7 @@ fi</string>
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>3A9BB8B2-8264-4D58-96D8-CB947F8EB2F1</string>
+			<string>CC31B7DF-B899-4E5A-9303-B08300A7A9C4</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -2089,7 +901,7 @@ fi</string>
 			<key>config</key>
 			<dict>
 				<key>argument</key>
-				<string>x-apple.systempreferences:com.apple.Localization-Settings.extension</string>
+				<string>x-apple.systempreferences:com.apple.Localization</string>
 				<key>passthroughargument</key>
 				<false/>
 				<key>variables</key>
@@ -2098,273 +910,7 @@ fi</string>
 			<key>type</key>
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
-			<string>1C4A3BBD-4972-4628-B315-5018BA3533E6</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>lock screen</string>
-				<key>subtext</key>
-				<string>System Settings → Lock Screen</string>
-				<key>text</key>
-				<string>Lock Screen</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>5C30707B-B5FD-4FB9-BFE1-70B378C691F6</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>x-apple.systempreferences:com.apple.Lock-Screen-Settings.extension</string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>47194840-EFFD-41C6-A534-A8C1E72054B6</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>login items</string>
-				<key>subtext</key>
-				<string>System Settings → General → Login Items</string>
-				<key>text</key>
-				<string>Login Items</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>4184F0E9-B4CF-4A6F-AD11-864009D6A8B5</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>x-apple.systempreferences:com.apple.LoginItems-Settings.extension</string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>C6E30C4C-ADB4-4F06-8B93-847664C709C2</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>mouse</string>
-				<key>subtext</key>
-				<string>System Settings → Mouse</string>
-				<key>text</key>
-				<string>Mouse</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>0FE978FA-DA25-4DD4-95F6-72F1FF0A81D3</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>x-apple.systempreferences:com.apple.Mouse-Settings.extension</string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>4103FEE5-FE83-4AE9-AB7E-ECF6B857E94D</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>network</string>
-				<key>subtext</key>
-				<string>System Settings → Network</string>
-				<key>text</key>
-				<string>Network</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>753E9EF2-1E25-4B02-BD3C-E3BD78988871</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>x-apple.systempreferences:com.apple.Network-Settings.extension</string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>7CF54EAA-86FE-48E7-A445-A29FBF0CB443</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>notifications</string>
-				<key>subtext</key>
-				<string>System Settings → Notifications</string>
-				<key>text</key>
-				<string>Notifications</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>A1DB4053-BABB-4A4E-88B3-294D84AB3FCE</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>x-apple.systempreferences:com.apple.preference.notifications</string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>F60B76ED-5474-4C0E-9004-564FD1B9BEAB</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>passwords</string>
-				<key>subtext</key>
-				<string>System Settings → Passwords</string>
-				<key>text</key>
-				<string>Passwords</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>06E6F7FA-B33E-4568-B37C-D470DD8D69EF</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>x-apple.systempreferences:com.apple.Passwords-Settings.extension</string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>24B029BA-B491-4A7C-9CE0-B686D911DB69</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>printers and scanners</string>
-				<key>subtext</key>
-				<string>System Settings → Printers &amp; Scanners</string>
-				<key>text</key>
-				<string>Printers &amp; Scanners</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>8D037CC0-0F11-4AA9-89F5-CB529CF3FED1</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>x-apple.systempreferences:com.apple.Print-Scan-Settings.extension</string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>A425F3D3-7282-40EE-88B7-DBBE4113E2EE</string>
+			<string>9900958A-F973-4806-A2CA-7FD7A935688B</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -2385,7 +931,7 @@ fi</string>
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>3E5DFC7D-070E-4320-8410-E9670DFF38E8</string>
+			<string>ED0BC42E-531A-4ACC-8C18-D7A7CEFA20A5</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -2402,45 +948,7 @@ fi</string>
 			<key>type</key>
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
-			<string>65BD6A90-B01C-4699-ACA2-9A58F7949E26</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>profiles</string>
-				<key>subtext</key>
-				<string>System Settings → Privacy &amp; Security → Profiles</string>
-				<key>text</key>
-				<string>Profiles</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>A0B1D547-3565-4F71-A2E8-F76814C81588</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>x-apple.systempreferences:com.apple.preferences.configurationprofiles</string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>3D37C8D0-BFD2-41F0-AADE-C0C7F39AA0EF</string>
+			<string>DF402752-033C-4183-B9AF-0D35CB3F6266</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -2461,7 +969,7 @@ fi</string>
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>C9EA832B-7612-48A7-87AF-E8AA452D13D1</string>
+			<string>822E9E96-8A6A-45E4-8208-DB12CA8D94AF</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -2469,7 +977,7 @@ fi</string>
 			<key>config</key>
 			<dict>
 				<key>argument</key>
-				<string>x-apple.systempreferences:com.apple.ScreenSaver-Settings.extension</string>
+				<string>com.apple.preference.desktopscreeneffect</string>
 				<key>passthroughargument</key>
 				<false/>
 				<key>variables</key>
@@ -2478,7 +986,7 @@ fi</string>
 			<key>type</key>
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
-			<string>BDECD53D-5065-4FAF-A7C1-17257C5E9EB6</string>
+			<string>DA17A143-1642-4602-9B15-C299A28C62EB</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -2499,7 +1007,7 @@ fi</string>
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>6223847C-07DF-417D-850C-938595F8A5C0</string>
+			<string>3C12B6CB-1F2D-458D-B52D-99A7E8352E0A</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -2516,7 +1024,7 @@ fi</string>
 			<key>type</key>
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
-			<string>E300E7D0-3E59-43D4-AB35-B80EC6042FAF</string>
+			<string>012416E0-D3F7-4F47-B748-12FE6DC2833E</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -2537,7 +1045,7 @@ fi</string>
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>CC63467F-8C0A-45C0-9CE5-29996DDA3199</string>
+			<string>F71A0FAE-DFDF-4EEF-9927-B057FAD161B7</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -2554,7 +1062,7 @@ fi</string>
 			<key>type</key>
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
-			<string>B1C763E7-32E4-433E-A74B-BC467CD42473</string>
+			<string>CBCC3691-6BB2-45D9-AAF1-E51CB80213C2</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -2575,7 +1083,7 @@ fi</string>
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>954C1736-08E0-4113-A5A2-4914FF0C15C8</string>
+			<string>F71B6DA6-79A4-4730-9AC3-D508CE085B85</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -2592,7 +1100,7 @@ fi</string>
 			<key>type</key>
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
-			<string>ECE5D09E-5A1E-4A62-B176-BCD01629B971</string>
+			<string>CD081A2B-BB24-4D87-BD93-E3AE3054C3CB</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -2613,7 +1121,7 @@ fi</string>
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>115B40CE-5832-44BB-A48D-124EA294C8A7</string>
+			<string>0D2B8F7C-2EA0-4C95-83D5-77D56C7BE5C3</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -2630,159 +1138,7 @@ fi</string>
 			<key>type</key>
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
-			<string>178BDB4E-CBE0-4282-A0C5-3CD4248FEE35</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>sound</string>
-				<key>subtext</key>
-				<string>System Settings → Sound</string>
-				<key>text</key>
-				<string>Sound</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>760F70B4-1DAF-4342-93FC-13273C4A9207</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>x-apple.systempreferences:com.apple.Sound-Settings.extension</string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>3E2E649B-2FAC-47AF-9A1A-6E37AAD127BE</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>startup disk</string>
-				<key>subtext</key>
-				<string>System Settings → General → Startup Disk</string>
-				<key>text</key>
-				<string>Startup Disk</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>2D4876F3-DFBE-4C89-9410-864A25B0DBC9</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>x-apple.systempreferences:com.apple.Startup-Disk-Settings.extension</string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>D4270F56-8C0E-4311-AE90-366F5F544DEC</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>storage</string>
-				<key>subtext</key>
-				<string>System Settings → General → Storage</string>
-				<key>text</key>
-				<string>Storage</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>1F30947A-6478-415C-8496-35E5FF7E3183</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>x-apple.systempreferences:com.apple.settings.Storage</string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>E1063F88-2288-4DD3-AA7A-D014CFA78D28</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>time machine</string>
-				<key>subtext</key>
-				<string>System Settings → General → Time Machine</string>
-				<key>text</key>
-				<string>Time Machine</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>9DA9A047-0B3E-4DA3-95A2-BB02218CC277</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>x-apple.systempreferences:com.apple.Time-Machine-Settings.extension</string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>F7458BEC-63BF-4D47-AAA6-C5F64C20C2F4</string>
+			<string>AFF55B71-9073-4AA2-8236-07247644D581</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -2803,7 +1159,7 @@ fi</string>
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>69B4D9BB-4FB0-4F07-91E2-270B5E41F5A4</string>
+			<string>BAE03D2C-8CE8-4C91-8163-8DA973426A6B</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -2820,83 +1176,7 @@ fi</string>
 			<key>type</key>
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
-			<string>24F3B88D-BDF4-46F8-9328-38B228957B44</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>trackpad</string>
-				<key>subtext</key>
-				<string>System Settings → Trackpad</string>
-				<key>text</key>
-				<string>Trackpad</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>418001B9-F077-4607-AEF8-0CFD7291C229</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>x-apple.systempreferences:com.apple.Trackpad-Settings.extension</string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>8F65BD1A-3B71-4CC9-8B1C-C6C1FEAEF615</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>transfer or reset</string>
-				<key>subtext</key>
-				<string>System Settings → General → Transfer or Reset</string>
-				<key>text</key>
-				<string>Transfer or Reset</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>20B9EAC8-6D3C-41EC-9197-032A38287211</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>x-apple.systempreferences:com.apple.Transfer-Reset-Settings.extension</string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>C1ED21AF-2527-4855-8138-EF451EC916DD</string>
+			<string>DE876256-E78F-468E-8BA4-E1ADA8F14C5C</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -2917,7 +1197,7 @@ fi</string>
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>7C5D0F9E-0580-4CF5-8346-B333F6F1BB53</string>
+			<string>211B9708-2FEE-4F88-82C2-3EF6F4EADD4B</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -2925,7 +1205,7 @@ fi</string>
 			<key>config</key>
 			<dict>
 				<key>argument</key>
-				<string>x-apple.systempreferences:com.apple.Users-Groups-Settings.extension</string>
+				<string>com.apple.preferences.users</string>
 				<key>passthroughargument</key>
 				<false/>
 				<key>variables</key>
@@ -2934,866 +1214,298 @@ fi</string>
 			<key>type</key>
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
-			<string>A2ECA8CC-8F6A-41E9-A1D5-B95E557E266E</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>vpn</string>
-				<key>subtext</key>
-				<string>System Settings → VPN</string>
-				<key>text</key>
-				<string>VPN</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>120960EE-4CFF-423E-BC97-113B7F3C232D</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>x-apple.systempreferences:com.apple.NetworkExtensionSettingsUI.NESettingsUIExtension</string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>456823B3-FB47-4FFF-86D8-BA63F58AEDB5</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>wallet and apple pay</string>
-				<key>subtext</key>
-				<string>System Settings → Wallet &amp; Apple Pay</string>
-				<key>text</key>
-				<string>Wallet &amp; Apple Pay</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>89E73D2A-C97E-4827-8845-125CA6AD451C</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>x-apple.systempreferences:com.apple.WalletSettingsExtension</string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>13FE221D-C366-4C22-8CAD-2AAFC1D587D2</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>wallpaper</string>
-				<key>subtext</key>
-				<string>System Settings → Wallpaper</string>
-				<key>text</key>
-				<string>Wallpaper</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>791156A0-115E-4EC5-891C-494DCCF5A7A9</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>x-apple.systempreferences:com.apple.Wallpaper-Settings.extension</string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>D6E98923-3178-4A19-BCD5-35F5C3E5814D</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>wi-fi</string>
-				<key>subtext</key>
-				<string>System Settings → Wi-Fi</string>
-				<key>text</key>
-				<string>Wi-Fi</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>BF58136F-A1F6-40D4-B6E7-74BFA588DAD4</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>x-apple.systempreferences:com.apple.wifi-settings-extension</string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>8B7B3372-147B-42C1-9FCC-63D3C98B2227</string>
+			<string>F8F8F9E9-5C7C-489A-8B28-B6D3189299F6</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>## Usage
+	<string>&gt; tested on macOS Monterey 12.4
 
-Open System Settings panes via the workflow’s keywords: `about`, `accessibility`, `airdrop and handoff`, `appearance`, `appleid`, `battery`, `bluetooth`, `control centre`, `date and time`, `desktop and dock`, `displays`, `extensions`, `family`, `focus`, `general`, `game centre`, `game controllers`, `internet accounts`, `keyboard`, `language and region`, `lock screen`, `login items`, `mouse`, `network`, `notifications`, `passwords`, `printers and scanners`, `privacy and security`, `profiles`, `screen saver`, `screen time`, `sharing`, `siri and spotlight`, `software update`, `sound`, `startup disk`, `storage`, `time machine`, `touch id and password`, `trackpad`, `transfer or reset`, `users and groups`, `vpn`, `wallet and apple pay`, `wallpaper`, `wi-fi`.
+## usage
+Open System Settings panes via the workflow’s keywords: accessibility, appleid, battery, control centre, date and time and so on`
 
-![Alfred search for app](images/about/app.png)
 
-![Alfred search for acc](images/about/acc.png)
+## macOS 13 Ventura
+just download https://github.com/alfredapp/system-settings-workflow
 
-![Alfred search for screen](images/about/screen.png)</string>
+## thanks
+1. https://github.com/alfredapp/system-settings-workflow
+2. https://github.com/Stephen-Lon/Alfred-workflow-Open-macOS-12-pref-panes/</string>
 	<key>uidata</key>
 	<dict>
-		<key>0608C0AA-05B8-4CE2-BF9D-929EC1D23ED0</key>
+		<key>012416E0-D3F7-4F47-B748-12FE6DC2833E</key>
 		<dict>
 			<key>xpos</key>
-			<real>245</real>
+			<real>235</real>
 			<key>ypos</key>
-			<real>545</real>
+			<real>1725</real>
 		</dict>
-		<key>06E6F7FA-B33E-4568-B37C-D470DD8D69EF</key>
+		<key>060176DC-38BB-479E-B536-8DD29C0811D0</key>
 		<dict>
 			<key>xpos</key>
-			<real>65</real>
+			<real>220</real>
 			<key>ypos</key>
-			<real>3035</real>
+			<real>385</real>
 		</dict>
-		<key>0FE978FA-DA25-4DD4-95F6-72F1FF0A81D3</key>
+		<key>098496B2-9FC5-45A3-A54C-830CB04DEB11</key>
 		<dict>
 			<key>xpos</key>
-			<real>65</real>
+			<real>40</real>
 			<key>ypos</key>
-			<real>2675</real>
+			<real>235</real>
 		</dict>
-		<key>10BB0E7F-7A7B-47CA-B6BF-A2E88447DBDA</key>
-		<dict>
-			<key>xpos</key>
-			<real>65</real>
-			<key>ypos</key>
-			<real>515</real>
-		</dict>
-		<key>115B40CE-5832-44BB-A48D-124EA294C8A7</key>
+		<key>0D2B8F7C-2EA0-4C95-83D5-77D56C7BE5C3</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<real>65</real>
+			<real>55</real>
 			<key>ypos</key>
-			<real>3995</real>
+			<real>2055</real>
 		</dict>
-		<key>120960EE-4CFF-423E-BC97-113B7F3C232D</key>
+		<key>14F31181-91DE-4A50-AFEF-16D922024128</key>
 		<dict>
 			<key>xpos</key>
-			<real>65</real>
+			<real>220</real>
 			<key>ypos</key>
-			<real>5075</real>
+			<real>900</real>
 		</dict>
-		<key>13FE221D-C366-4C22-8CAD-2AAFC1D587D2</key>
+		<key>211B9708-2FEE-4F88-82C2-3EF6F4EADD4B</key>
 		<dict>
 			<key>xpos</key>
-			<real>245</real>
+			<real>55</real>
 			<key>ypos</key>
-			<real>5225</real>
+			<real>2325</real>
 		</dict>
-		<key>178BDB4E-CBE0-4282-A0C5-3CD4248FEE35</key>
+		<key>21AF7132-826C-48DF-A023-3C0E24064377</key>
 		<dict>
 			<key>xpos</key>
-			<real>245</real>
+			<real>220</real>
 			<key>ypos</key>
-			<real>4025</real>
+			<real>1020</real>
 		</dict>
-		<key>1C4A3BBD-4972-4628-B315-5018BA3533E6</key>
-		<dict>
-			<key>xpos</key>
-			<real>245</real>
-			<key>ypos</key>
-			<real>2345</real>
-		</dict>
-		<key>1F30947A-6478-415C-8496-35E5FF7E3183</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>2</integer>
-			<key>xpos</key>
-			<real>65</real>
-			<key>ypos</key>
-			<real>4355</real>
-		</dict>
-		<key>20B9EAC8-6D3C-41EC-9197-032A38287211</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>2</integer>
-			<key>xpos</key>
-			<real>65</real>
-			<key>ypos</key>
-			<real>4835</real>
-		</dict>
-		<key>24B029BA-B491-4A7C-9CE0-B686D911DB69</key>
-		<dict>
-			<key>xpos</key>
-			<real>245</real>
-			<key>ypos</key>
-			<real>3065</real>
-		</dict>
-		<key>24F3B88D-BDF4-46F8-9328-38B228957B44</key>
-		<dict>
-			<key>xpos</key>
-			<real>245</real>
-			<key>ypos</key>
-			<real>4625</real>
-		</dict>
-		<key>253AEE64-C460-4828-9AD6-9F43102B4148</key>
-		<dict>
-			<key>xpos</key>
-			<real>245</real>
-			<key>ypos</key>
-			<real>1145</real>
-		</dict>
-		<key>2CB67EEF-BC29-4898-AE0C-34104B40FE99</key>
-		<dict>
-			<key>xpos</key>
-			<real>245</real>
-			<key>ypos</key>
-			<real>1265</real>
-		</dict>
-		<key>2D4876F3-DFBE-4C89-9410-864A25B0DBC9</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>2</integer>
-			<key>xpos</key>
-			<real>65</real>
-			<key>ypos</key>
-			<real>4235</real>
-		</dict>
-		<key>2D4E769A-79E7-45F8-8541-475DBB9BC514</key>
-		<dict>
-			<key>xpos</key>
-			<real>65</real>
-			<key>ypos</key>
-			<real>1475</real>
-		</dict>
-		<key>35325F14-3A02-48C2-8193-76B67651119B</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>2</integer>
-			<key>xpos</key>
-			<real>65</real>
-			<key>ypos</key>
-			<real>35</real>
-		</dict>
-		<key>354F777D-BBCC-4FB8-BA07-1F9C33490800</key>
-		<dict>
-			<key>xpos</key>
-			<real>65</real>
-			<key>ypos</key>
-			<real>395</real>
-		</dict>
-		<key>35DB0201-99C4-495D-BDFF-165691C694EE</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>2</integer>
-			<key>xpos</key>
-			<real>65</real>
-			<key>ypos</key>
-			<real>995</real>
-		</dict>
-		<key>3A9BB8B2-8264-4D58-96D8-CB947F8EB2F1</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>2</integer>
-			<key>xpos</key>
-			<real>65</real>
-			<key>ypos</key>
-			<real>2315</real>
-		</dict>
-		<key>3C1DE7BC-7D7E-4DF8-AACE-4E5C413972CD</key>
-		<dict>
-			<key>xpos</key>
-			<real>245</real>
-			<key>ypos</key>
-			<real>665</real>
-		</dict>
-		<key>3D37C8D0-BFD2-41F0-AADE-C0C7F39AA0EF</key>
-		<dict>
-			<key>xpos</key>
-			<real>245</real>
-			<key>ypos</key>
-			<real>3425</real>
-		</dict>
-		<key>3E2E649B-2FAC-47AF-9A1A-6E37AAD127BE</key>
-		<dict>
-			<key>xpos</key>
-			<real>245</real>
-			<key>ypos</key>
-			<real>4145</real>
-		</dict>
-		<key>3E5DFC7D-070E-4320-8410-E9670DFF38E8</key>
+		<key>24BD2C86-8E08-48F6-A95D-39F22627BE96</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<real>65</real>
+			<real>40</real>
 			<key>ypos</key>
-			<real>3275</real>
+			<real>630</real>
 		</dict>
-		<key>4103FEE5-FE83-4AE9-AB7E-ECF6B857E94D</key>
+		<key>2739207C-A263-4FBD-A4E3-E1C7891D9DC1</key>
 		<dict>
 			<key>xpos</key>
-			<real>245</real>
+			<real>720</real>
 			<key>ypos</key>
-			<real>2705</real>
+			<real>20</real>
 		</dict>
-		<key>418001B9-F077-4607-AEF8-0CFD7291C229</key>
+		<key>3C12B6CB-1F2D-458D-B52D-99A7E8352E0A</key>
 		<dict>
 			<key>xpos</key>
-			<real>65</real>
+			<real>55</real>
 			<key>ypos</key>
-			<real>4715</real>
+			<real>1695</real>
 		</dict>
-		<key>4184F0E9-B4CF-4A6F-AD11-864009D6A8B5</key>
+		<key>40E439BD-5B0E-484B-9132-20CA8E3D7689</key>
+		<dict>
+			<key>xpos</key>
+			<real>40</real>
+			<key>ypos</key>
+			<real>750</real>
+		</dict>
+		<key>4274EFAC-E0CC-4DCB-B37C-77278CE702F2</key>
+		<dict>
+			<key>xpos</key>
+			<real>40</real>
+			<key>ypos</key>
+			<real>870</real>
+		</dict>
+		<key>7B8CD541-E553-49CD-AF2E-AE2B83996444</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<real>65</real>
+			<real>40</real>
 			<key>ypos</key>
-			<real>2555</real>
+			<real>1040</real>
 		</dict>
-		<key>456823B3-FB47-4FFF-86D8-BA63F58AEDB5</key>
+		<key>7BB8FE3A-940B-4D94-AB99-89DA7A620CBD</key>
 		<dict>
 			<key>xpos</key>
-			<real>245</real>
+			<real>220</real>
 			<key>ypos</key>
-			<real>5105</real>
+			<real>520</real>
 		</dict>
-		<key>47194840-EFFD-41C6-A534-A8C1E72054B6</key>
+		<key>822E9E96-8A6A-45E4-8208-DB12CA8D94AF</key>
 		<dict>
 			<key>xpos</key>
-			<real>245</real>
+			<real>55</real>
 			<key>ypos</key>
-			<real>2465</real>
+			<real>1575</real>
 		</dict>
-		<key>48EAE7F8-F0CA-4421-8671-05CEA6773F6D</key>
+		<key>8A3375B0-5B3C-4C0F-9446-946DDDD44B93</key>
 		<dict>
-			<key>xpos</key>
-			<real>245</real>
-			<key>ypos</key>
-			<real>185</real>
-		</dict>
-		<key>55D2217C-FA9F-4BB3-9BEC-E9933DFFF9F5</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>2</integer>
-			<key>xpos</key>
-			<real>65</real>
-			<key>ypos</key>
-			<real>275</real>
-		</dict>
-		<key>596333A1-85AF-425D-9B53-F8B3DD44C701</key>
-		<dict>
-			<key>xpos</key>
-			<real>65</real>
-			<key>ypos</key>
-			<real>635</real>
-		</dict>
-		<key>5C30707B-B5FD-4FB9-BFE1-70B378C691F6</key>
-		<dict>
-			<key>xpos</key>
-			<real>65</real>
-			<key>ypos</key>
-			<real>2435</real>
-		</dict>
-		<key>61966E11-4358-4ED8-9FDC-84B6C485D17E</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>12</integer>
 			<key>note</key>
-			<string>OneUpdater</string>
+			<string>If the input is x-apple.* use the Open URL action to open the pane otherwise use AppleScript</string>
 			<key>xpos</key>
-			<real>660</real>
+			<real>360</real>
 			<key>ypos</key>
-			<real>35</real>
+			<real>90</real>
 		</dict>
-		<key>61A9FAE2-8E37-46E6-A135-95CE170C8204</key>
+		<key>8A4DB646-8531-4E78-94D3-2040ED448E65</key>
 		<dict>
 			<key>xpos</key>
-			<real>65</real>
+			<real>40</real>
 			<key>ypos</key>
-			<real>875</real>
+			<real>355</real>
 		</dict>
-		<key>6223847C-07DF-417D-850C-938595F8A5C0</key>
+		<key>9900958A-F973-4806-A2CA-7FD7A935688B</key>
 		<dict>
 			<key>xpos</key>
-			<real>65</real>
+			<real>215</real>
 			<key>ypos</key>
-			<real>3635</real>
+			<real>1310</real>
 		</dict>
-		<key>65BD6A90-B01C-4699-ACA2-9A58F7949E26</key>
+		<key>9FADCAF7-15C0-4D4B-B599-766C127D304C</key>
 		<dict>
 			<key>xpos</key>
-			<real>245</real>
+			<real>720</real>
 			<key>ypos</key>
-			<real>3305</real>
+			<real>170</real>
 		</dict>
-		<key>69B4D9BB-4FB0-4F07-91E2-270B5E41F5A4</key>
+		<key>A23EAC9D-14E2-43BE-91FA-E93EFB51B05A</key>
 		<dict>
 			<key>xpos</key>
-			<real>65</real>
+			<real>220</real>
 			<key>ypos</key>
-			<real>4595</real>
+			<real>265</real>
 		</dict>
-		<key>753E9EF2-1E25-4B02-BD3C-E3BD78988871</key>
+		<key>AE85AC6A-215A-48E6-A9FA-89D97951C30B</key>
 		<dict>
 			<key>xpos</key>
-			<real>65</real>
+			<real>40</real>
 			<key>ypos</key>
-			<real>2795</real>
+			<real>490</real>
 		</dict>
-		<key>75E7AEB3-32A3-4654-812F-AA40D6A56427</key>
+		<key>AFF55B71-9073-4AA2-8236-07247644D581</key>
 		<dict>
 			<key>xpos</key>
-			<real>65</real>
+			<real>235</real>
 			<key>ypos</key>
-			<real>1235</real>
+			<real>2085</real>
 		</dict>
-		<key>760F70B4-1DAF-4342-93FC-13273C4A9207</key>
+		<key>BAE03D2C-8CE8-4C91-8163-8DA973426A6B</key>
 		<dict>
 			<key>xpos</key>
-			<real>65</real>
-			<key>ypos</key>
-			<real>4115</real>
-		</dict>
-		<key>791156A0-115E-4EC5-891C-494DCCF5A7A9</key>
-		<dict>
-			<key>xpos</key>
-			<real>65</real>
-			<key>ypos</key>
-			<real>5315</real>
-		</dict>
-		<key>79F005CC-B769-43B6-ACF6-3C057C54D2E4</key>
-		<dict>
-			<key>xpos</key>
-			<real>245</real>
-			<key>ypos</key>
-			<real>1505</real>
-		</dict>
-		<key>7C5D0F9E-0580-4CF5-8346-B333F6F1BB53</key>
-		<dict>
-			<key>xpos</key>
-			<real>65</real>
-			<key>ypos</key>
-			<real>4955</real>
-		</dict>
-		<key>7CF54EAA-86FE-48E7-A445-A29FBF0CB443</key>
-		<dict>
-			<key>xpos</key>
-			<real>245</real>
-			<key>ypos</key>
-			<real>2825</real>
-		</dict>
-		<key>7FF91A32-D9F4-4099-B823-A2237EB6F4C9</key>
-		<dict>
-			<key>xpos</key>
-			<real>245</real>
-			<key>ypos</key>
-			<real>1865</real>
-		</dict>
-		<key>843B7B23-A1DD-4CB9-9401-EFF0D0038B2F</key>
-		<dict>
-			<key>xpos</key>
-			<real>65</real>
-			<key>ypos</key>
-			<real>2075</real>
-		</dict>
-		<key>89E73D2A-C97E-4827-8845-125CA6AD451C</key>
-		<dict>
-			<key>xpos</key>
-			<real>65</real>
-			<key>ypos</key>
-			<real>5195</real>
-		</dict>
-		<key>8B7B3372-147B-42C1-9FCC-63D3C98B2227</key>
-		<dict>
-			<key>xpos</key>
-			<real>245</real>
-			<key>ypos</key>
-			<real>5465</real>
-		</dict>
-		<key>8D037CC0-0F11-4AA9-89F5-CB529CF3FED1</key>
-		<dict>
-			<key>xpos</key>
-			<real>65</real>
-			<key>ypos</key>
-			<real>3155</real>
-		</dict>
-		<key>8DF0DD15-2F02-4FAA-A0EF-B435B4E86A6C</key>
-		<dict>
-			<key>xpos</key>
-			<real>450</real>
-			<key>ypos</key>
-			<real>35</real>
-		</dict>
-		<key>8F65BD1A-3B71-4CC9-8B1C-C6C1FEAEF615</key>
-		<dict>
-			<key>xpos</key>
-			<real>245</real>
-			<key>ypos</key>
-			<real>4745</real>
-		</dict>
-		<key>954C1736-08E0-4113-A5A2-4914FF0C15C8</key>
-		<dict>
-			<key>xpos</key>
-			<real>65</real>
-			<key>ypos</key>
-			<real>3875</real>
-		</dict>
-		<key>98B79881-C483-4E18-B1F2-21BDAFB920AA</key>
-		<dict>
-			<key>xpos</key>
-			<real>65</real>
-			<key>ypos</key>
-			<real>755</real>
-		</dict>
-		<key>9995134B-DD1E-46A9-B7A9-0A33BBDC1B0A</key>
-		<dict>
-			<key>xpos</key>
-			<real>245</real>
-			<key>ypos</key>
-			<real>425</real>
-		</dict>
-		<key>9A08AB7D-C3AA-4A06-A516-31995F1CFEA0</key>
-		<dict>
-			<key>xpos</key>
-			<real>245</real>
-			<key>ypos</key>
-			<real>65</real>
-		</dict>
-		<key>9DA9A047-0B3E-4DA3-95A2-BB02218CC277</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>2</integer>
-			<key>xpos</key>
-			<real>65</real>
-			<key>ypos</key>
-			<real>4475</real>
-		</dict>
-		<key>A0B1D547-3565-4F71-A2E8-F76814C81588</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>7</integer>
-			<key>xpos</key>
-			<real>65</real>
-			<key>ypos</key>
-			<real>3395</real>
-		</dict>
-		<key>A1DB4053-BABB-4A4E-88B3-294D84AB3FCE</key>
-		<dict>
-			<key>xpos</key>
-			<real>65</real>
-			<key>ypos</key>
-			<real>2915</real>
-		</dict>
-		<key>A1E8573B-020C-4E80-AF45-1E9F1F06C34A</key>
-		<dict>
-			<key>xpos</key>
-			<real>245</real>
-			<key>ypos</key>
-			<real>2225</real>
-		</dict>
-		<key>A2ECA8CC-8F6A-41E9-A1D5-B95E557E266E</key>
-		<dict>
-			<key>xpos</key>
-			<real>245</real>
-			<key>ypos</key>
-			<real>4985</real>
-		</dict>
-		<key>A425F3D3-7282-40EE-88B7-DBBE4113E2EE</key>
-		<dict>
-			<key>xpos</key>
-			<real>245</real>
-			<key>ypos</key>
-			<real>3185</real>
-		</dict>
-		<key>A86C58CA-97B6-4C26-B2D0-4F9DAC129FE4</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>7</integer>
-			<key>xpos</key>
-			<real>65</real>
-			<key>ypos</key>
-			<real>1355</real>
-		</dict>
-		<key>A8DA8DFF-7221-4443-B687-08B414451CAC</key>
-		<dict>
-			<key>xpos</key>
-			<real>245</real>
-			<key>ypos</key>
-			<real>1985</real>
-		</dict>
-		<key>B1C763E7-32E4-433E-A74B-BC467CD42473</key>
-		<dict>
-			<key>xpos</key>
-			<real>245</real>
-			<key>ypos</key>
-			<real>3785</real>
-		</dict>
-		<key>B2AE61F2-C9A8-4664-BDE2-1039857F20CB</key>
-		<dict>
-			<key>xpos</key>
-			<real>65</real>
-			<key>ypos</key>
-			<real>1835</real>
-		</dict>
-		<key>B7B9D159-E1DE-4C44-B7A9-8C7577CD5DBE</key>
-		<dict>
-			<key>xpos</key>
-			<real>65</real>
-			<key>ypos</key>
-			<real>155</real>
-		</dict>
-		<key>BDECD53D-5065-4FAF-A7C1-17257C5E9EB6</key>
-		<dict>
-			<key>xpos</key>
-			<real>245</real>
-			<key>ypos</key>
-			<real>3545</real>
-		</dict>
-		<key>BF58136F-A1F6-40D4-B6E7-74BFA588DAD4</key>
-		<dict>
-			<key>xpos</key>
-			<real>65</real>
-			<key>ypos</key>
-			<real>5435</real>
-		</dict>
-		<key>C1ED21AF-2527-4855-8138-EF451EC916DD</key>
-		<dict>
-			<key>xpos</key>
-			<real>245</real>
-			<key>ypos</key>
-			<real>4865</real>
-		</dict>
-		<key>C3A62EE5-CC39-4509-8D4B-77BDC6C34961</key>
-		<dict>
-			<key>xpos</key>
-			<real>65</real>
+			<real>55</real>
 			<key>ypos</key>
 			<real>2195</real>
 		</dict>
-		<key>C5F6F828-2DBE-4C7D-96D8-7A19DF1544F1</key>
+		<key>C0396A23-C7F8-4E73-ACFA-587CDF10815E</key>
 		<dict>
 			<key>xpos</key>
-			<real>245</real>
+			<real>220</real>
 			<key>ypos</key>
-			<real>905</real>
+			<real>780</real>
 		</dict>
-		<key>C6E30C4C-ADB4-4F06-8B93-847664C709C2</key>
+		<key>C1AC903E-F790-4486-9275-4702544BD08E</key>
 		<dict>
 			<key>xpos</key>
-			<real>245</real>
+			<real>220</real>
 			<key>ypos</key>
-			<real>2585</real>
+			<real>660</real>
 		</dict>
-		<key>C9EA832B-7612-48A7-87AF-E8AA452D13D1</key>
+		<key>CBCC3691-6BB2-45D9-AAF1-E51CB80213C2</key>
 		<dict>
 			<key>xpos</key>
-			<real>65</real>
+			<real>235</real>
 			<key>ypos</key>
-			<real>3515</real>
+			<real>1845</real>
 		</dict>
-		<key>CC63467F-8C0A-45C0-9CE5-29996DDA3199</key>
+		<key>CC31B7DF-B899-4E5A-9303-B08300A7A9C4</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<real>65</real>
+			<real>40</real>
 			<key>ypos</key>
-			<real>3755</real>
+			<real>1290</real>
 		</dict>
-		<key>CE6F2E60-0B14-4A59-9089-2EED137CDDC9</key>
+		<key>CD081A2B-BB24-4D87-BD93-E3AE3054C3CB</key>
 		<dict>
 			<key>xpos</key>
-			<real>65</real>
+			<real>235</real>
 			<key>ypos</key>
-			<real>1595</real>
+			<real>1965</real>
 		</dict>
-		<key>D4270F56-8C0E-4311-AE90-366F5F544DEC</key>
+		<key>DA17A143-1642-4602-9B15-C299A28C62EB</key>
 		<dict>
 			<key>xpos</key>
-			<real>245</real>
+			<real>235</real>
 			<key>ypos</key>
-			<real>4265</real>
+			<real>1605</real>
 		</dict>
-		<key>D6E98923-3178-4A19-BCD5-35F5C3E5814D</key>
+		<key>DE876256-E78F-468E-8BA4-E1ADA8F14C5C</key>
 		<dict>
 			<key>xpos</key>
-			<real>245</real>
+			<real>235</real>
 			<key>ypos</key>
-			<real>5345</real>
+			<real>2225</real>
 		</dict>
-		<key>D866752D-24AC-496F-85DE-EB0DE026C284</key>
+		<key>DF402752-033C-4183-B9AF-0D35CB3F6266</key>
 		<dict>
 			<key>xpos</key>
-			<real>245</real>
+			<real>230</real>
 			<key>ypos</key>
-			<real>1385</real>
+			<real>1460</real>
 		</dict>
-		<key>DB31B76C-CE9B-4228-BFB5-440E9FED9E75</key>
+		<key>E00B1237-AF84-4214-B363-B691F7EF2A0B</key>
 		<dict>
 			<key>xpos</key>
-			<real>245</real>
+			<real>30</real>
 			<key>ypos</key>
-			<real>2105</real>
+			<real>110</real>
 		</dict>
-		<key>DD1926A0-F642-425A-ADD7-8ED32692EE46</key>
+		<key>ED0BC42E-531A-4ACC-8C18-D7A7CEFA20A5</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>7</integer>
 			<key>xpos</key>
-			<real>245</real>
+			<real>50</real>
 			<key>ypos</key>
-			<real>1745</real>
+			<real>1430</real>
 		</dict>
-		<key>E1063F88-2288-4DD3-AA7A-D014CFA78D28</key>
-		<dict>
-			<key>xpos</key>
-			<real>245</real>
-			<key>ypos</key>
-			<real>4385</real>
-		</dict>
-		<key>E27A6F53-4CD3-4FBB-8A7C-27AE4BEBE358</key>
-		<dict>
-			<key>xpos</key>
-			<real>245</real>
-			<key>ypos</key>
-			<real>1625</real>
-		</dict>
-		<key>E300E7D0-3E59-43D4-AB35-B80EC6042FAF</key>
-		<dict>
-			<key>xpos</key>
-			<real>245</real>
-			<key>ypos</key>
-			<real>3665</real>
-		</dict>
-		<key>E3132328-3B9E-4178-A0CF-F1062965DD8D</key>
-		<dict>
-			<key>xpos</key>
-			<real>245</real>
-			<key>ypos</key>
-			<real>305</real>
-		</dict>
-		<key>EA53A7BA-07DA-4429-8B26-5002562C3AF9</key>
-		<dict>
-			<key>xpos</key>
-			<real>65</real>
-			<key>ypos</key>
-			<real>1115</real>
-		</dict>
-		<key>EC2F7B52-566A-4DD8-BC3A-3D15153C540D</key>
+		<key>F71A0FAE-DFDF-4EEF-9927-B057FAD161B7</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<real>65</real>
+			<real>55</real>
 			<key>ypos</key>
-			<real>1715</real>
+			<real>1815</real>
 		</dict>
-		<key>ECE5D09E-5A1E-4A62-B176-BCD01629B971</key>
+		<key>F71B6DA6-79A4-4730-9AC3-D508CE085B85</key>
 		<dict>
 			<key>xpos</key>
-			<real>245</real>
+			<real>55</real>
 			<key>ypos</key>
-			<real>3905</real>
+			<real>1935</real>
 		</dict>
-		<key>EE309342-D86A-4A30-8A1B-151AED4891AE</key>
+		<key>F8F8F9E9-5C7C-489A-8B28-B6D3189299F6</key>
 		<dict>
 			<key>xpos</key>
-			<real>65</real>
+			<real>235</real>
 			<key>ypos</key>
-			<real>1955</real>
+			<real>2355</real>
 		</dict>
-		<key>EEE44FA0-2C27-4B2A-B1AD-EF2CC79BCBF9</key>
+		<key>FEDC5D49-9A0B-42F6-B834-555F637B7DCA</key>
 		<dict>
 			<key>xpos</key>
-			<real>245</real>
+			<real>210</real>
 			<key>ypos</key>
-			<real>1025</real>
-		</dict>
-		<key>F60B76ED-5474-4C0E-9004-564FD1B9BEAB</key>
-		<dict>
-			<key>xpos</key>
-			<real>245</real>
-			<key>ypos</key>
-			<real>2945</real>
-		</dict>
-		<key>F7458BEC-63BF-4D47-AAA6-C5F64C20C2F4</key>
-		<dict>
-			<key>xpos</key>
-			<real>245</real>
-			<key>ypos</key>
-			<real>4505</real>
-		</dict>
-		<key>F90E8A37-DC7E-4213-974D-30FDDC830142</key>
-		<dict>
-			<key>xpos</key>
-			<real>245</real>
-			<key>ypos</key>
-			<real>785</real>
+			<real>140</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
@@ -3801,8 +1513,8 @@ Open System Settings panes via the workflow’s keywords: `about`, `accessibilit
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>2022.1</string>
+	<string>1.0</string>
 	<key>webaddress</key>
-	<string>https://github.com/alfredapp/system-settings-workflow/</string>
+	<string>https://1991421.cn</string>
 </dict>
 </plist>
