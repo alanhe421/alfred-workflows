@@ -1,13 +1,13 @@
 > tested on macOS Monterey 12.4
 
-## usage
-Open System Settings panes via the workflow’s keywords: accessibility, appleid, battery, control centre, date and time and so on`
+## Usage
+Open System Settings panes via the workflow’s keywords: `accessibility, appleid, battery, control centre, date and time and so on`
 
 
-## macOS 13 Ventura
+## MacOS 13 Ventura
 just download https://github.com/alfredapp/system-settings-workflow
 
-## thanks
+## Thanks
 1. https://github.com/alfredapp/system-settings-workflow
 2. https://github.com/Stephen-Lon/Alfred-workflow-Open-macOS-12-pref-panes/
 
