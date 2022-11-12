@@ -18,3 +18,6 @@ just download https://github.com/alfredapp/system-settings-workflow
 
 
 <!-- more -->
+
+## Screenshot
+![](./screenshot.jpg)
