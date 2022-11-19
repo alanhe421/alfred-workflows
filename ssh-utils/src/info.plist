@@ -8,6 +8,19 @@
 	<string>Self-Dev</string>
 	<key>connections</key>
 	<dict>
+		<key>017EB696-5B84-44CC-9793-116FFD6E6E19</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>DF53A85F-0ED2-4749-A92E-CB5F2E030954</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>1972C6A3-EC85-4A93-9762-3495098A1234</key>
 		<array>
 			<dict>
@@ -72,6 +85,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>F7D222A1-B55F-4D75-80C5-751E68658C5B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>017EB696-5B84-44CC-9793-116FFD6E6E19</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 	</dict>
 	<key>createdby</key>
 	<string>Alan He</string>
@@ -107,6 +133,29 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>echo -n '{query}' | grep -o '[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}'|tr -d '\n'</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>DF53A85F-0ED2-4749-A92E-CB5F2E030954</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>acceptsfiles</key>
 				<false/>
 				<key>acceptsmulti</key>
@@ -128,25 +177,34 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string></string>
+						<key>outputlabel</key>
+						<string></string>
+						<key>uid</key>
+						<string>1458D9B9-60BB-433F-96FC-C5DD0C6E0190</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+				<key>hideelse</key>
 				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>echo -n '{query}' | grep -o '[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}'|tr -d '\n'</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>5</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.script</string>
+			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
-			<string>DF53A85F-0ED2-4749-A92E-CB5F2E030954</string>
+			<string>B67303CF-C75A-4D3D-8812-8341DE48FDB3</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -195,32 +253,38 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>conditions</key>
-				<array>
-					<dict>
-						<key>inputstring</key>
-						<string></string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string></string>
-						<key>outputlabel</key>
-						<string></string>
-						<key>uid</key>
-						<string>1458D9B9-60BB-433F-96FC-C5DD0C6E0190</string>
-					</dict>
-				</array>
-				<key>elselabel</key>
-				<string>else</string>
-				<key>hideelse</key>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>delete known-hosts records</string>
+				<key>subtext</key>
+				<string>$HOME/.ssh/known_hosts</string>
+				<key>text</key>
+				<string>Delete known-hosts records</string>
+				<key>withspace</key>
 				<false/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.utility.conditional</string>
+			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>B67303CF-C75A-4D3D-8812-8341DE48FDB3</string>
+			<string>F7D222A1-B55F-4D75-80C5-751E68658C5B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{clipboard}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>017EB696-5B84-44CC-9793-116FFD6E6E19</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -235,33 +299,40 @@
 3. select `Delete known-hosts records`</string>
 	<key>uidata</key>
 	<dict>
+		<key>017EB696-5B84-44CC-9793-116FFD6E6E19</key>
+		<dict>
+			<key>xpos</key>
+			<real>280</real>
+			<key>ypos</key>
+			<real>510</real>
+		</dict>
 		<key>0C49395C-CEB2-4EB8-BF45-ADB9BF48764A</key>
 		<dict>
 			<key>xpos</key>
-			<real>850</real>
+			<real>895</real>
 			<key>ypos</key>
-			<real>335</real>
+			<real>325</real>
 		</dict>
 		<key>1972C6A3-EC85-4A93-9762-3495098A1234</key>
 		<dict>
 			<key>xpos</key>
-			<real>610</real>
+			<real>670</real>
 			<key>ypos</key>
-			<real>335</real>
+			<real>325</real>
 		</dict>
 		<key>4A8BC645-9A69-4B1D-AC52-91F46179D355</key>
 		<dict>
 			<key>xpos</key>
-			<real>615</real>
+			<real>665</real>
 			<key>ypos</key>
-			<real>200</real>
+			<real>175</real>
 		</dict>
 		<key>B67303CF-C75A-4D3D-8812-8341DE48FDB3</key>
 		<dict>
 			<key>xpos</key>
-			<real>440</real>
+			<real>505</real>
 			<key>ypos</key>
-			<real>340</real>
+			<real>320</real>
 		</dict>
 		<key>CDDC52D2-817C-45FA-9174-35FE424877B8</key>
 		<dict>
@@ -275,9 +346,16 @@
 			<key>note</key>
 			<string>extract ip</string>
 			<key>xpos</key>
-			<real>285</real>
+			<real>315</real>
 			<key>ypos</key>
-			<real>230</real>
+			<real>200</real>
+		</dict>
+		<key>F7D222A1-B55F-4D75-80C5-751E68658C5B</key>
+		<dict>
+			<key>xpos</key>
+			<real>70</real>
+			<key>ypos</key>
+			<real>465</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
@@ -285,7 +363,7 @@
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>0.1</string>
+	<string>0.2</string>
 	<key>webaddress</key>
 	<string>https://1991421.cn</string>
 </dict>
