@@ -6,6 +6,10 @@ labels: ["feat"]
 assignees:
   - alanhg
 body:
+  - type: markdown
+    attributes:
+    value: |
+      Thanks for taking the time to fill out this feat request!
   - type: textarea
     id: why-need
     attributes:

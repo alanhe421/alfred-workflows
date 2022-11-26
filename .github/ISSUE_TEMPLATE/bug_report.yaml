@@ -5,15 +5,19 @@ labels: ["bug"]
 assignees:
  - alanhg
 body:
+ - type: markdown
+   attributes:
+   value: |
+         Thanks for taking the time to fill out this bug report!
+         Open the [debugger](https://www.alfredapp.com/help/workflows/advanced/debugger/), set the log output to “All Information”, do your action, and post the output.
  - type: textarea
    id: what-happened
    attributes:
      label: Describe the bug
-     description: > 
-        What the bug is.\n
-        Clear Steps of description and screenshot is welcome.\n
+     description: |
+        What the bug is. Clear Steps of description and screenshot is welcome.
    validations:
-    required:
+    required: true
  - type: dropdown
    id: workflow-name
    attributes:
