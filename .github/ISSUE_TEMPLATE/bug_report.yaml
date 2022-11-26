@@ -7,7 +7,7 @@ assignees:
 body:
  - type: markdown
    attributes:
-   value: |
+     value: |
          Thanks for taking the time to fill out this bug report!
          Open the [debugger](https://www.alfredapp.com/help/workflows/advanced/debugger/), set the log output to “All Information”, do your action, and post the output.
  - type: textarea
