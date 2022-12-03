@@ -150,6 +150,8 @@
 				<string>[{"title":"OCR-Default","arg":"CHN_ENG","subtitle":"中英文混合"},{"title":"OCR-ENG","arg":"ENG","subtitle":"英文"},{"title":"OCR-POR","arg":"POR","subtitle":"葡萄牙语"},{"title":"OCR-FRE","arg":"FRE","subtitle":"法语"},{"title":"OCR-GER","arg":"GER","subtitle":"德语"},{"title":"OCR-ITA","arg":"ITA","subtitle":"意大利语"},{"title":"OCR-SPA","arg":"SPA","subtitle":"西班牙语"},{"title":"OCR-RUS","arg":"RUS","subtitle":"俄语"},{"title":"OCR-JAP","arg":"JAP","subtitle":"日语"},{"title":"OCR-KOR","arg":"KOR","subtitle":"韩语"}]</string>
 				<key>keyword</key>
 				<string>ocr</string>
+				<key>matchmode</key>
+				<integer>0</integer>
 				<key>runningsubtext</key>
 				<string></string>
 				<key>subtext</key>
@@ -174,7 +176,10 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>/usr/local/bin/pngpaste ./temp.png
+				<string>[[ -d "${alfred_workflow_cache}" ]] || mkdir "${alfred_workflow_cache}"
+
+/usr/local/bin/pngpaste "$alfred_workflow_cache/temp.png"
+
 
 /usr/local/bin/node ./index.js $APP_ID $API_KEY $SECRET_KEY {query}</string>
 				<key>scriptargtype</key>
@@ -213,6 +218,8 @@
 				</array>
 				<key>elselabel</key>
 				<string>else</string>
+				<key>hideelse</key>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.conditional</string>
@@ -263,80 +270,113 @@
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>Get the text in the screenshot to the clipboard
+	<string>&gt; Get the text in the screenshot to the clipboard
+
+
+## requirement
 
 First run this command on a terminal:
 
 1. brew install pngpaste
-2. npm install baidu-aip-sdk -g</string>
+2. brew install node
+
+
+## dependency
+百度OCR，[相关API](https://cloud.baidu.com/doc/OCR/s/zk3h7xz52)</string>
 	<key>uidata</key>
 	<dict>
 		<key>02490CE9-13B5-4DF2-8925-51959002C029</key>
 		<dict>
 			<key>xpos</key>
-			<integer>380</integer>
+			<real>380</real>
 			<key>ypos</key>
-			<integer>75</integer>
+			<real>75</real>
 		</dict>
 		<key>1017A5FC-CE01-4FE6-982B-3E281E571C46</key>
 		<dict>
 			<key>xpos</key>
-			<integer>605</integer>
+			<real>605</real>
 			<key>ypos</key>
-			<integer>295</integer>
+			<real>295</real>
 		</dict>
 		<key>763B39BE-E24D-4449-A0E3-C2E2021623EC</key>
 		<dict>
 			<key>xpos</key>
-			<integer>25</integer>
+			<real>30</real>
 			<key>ypos</key>
-			<integer>50</integer>
+			<real>50</real>
 		</dict>
 		<key>7FA8077C-0313-4570-8753-BEA7E7026A7B</key>
 		<dict>
 			<key>xpos</key>
-			<integer>610</integer>
+			<real>610</real>
 			<key>ypos</key>
-			<integer>15</integer>
+			<real>15</real>
 		</dict>
 		<key>9EE38889-E5FF-4F8B-9808-748DFEEEACD8</key>
 		<dict>
 			<key>note</key>
 			<string>drop error msg prefix</string>
 			<key>xpos</key>
-			<integer>480</integer>
+			<real>480</real>
 			<key>ypos</key>
-			<integer>30</integer>
+			<real>30</real>
 		</dict>
 		<key>C0F55B7B-E2B9-4FF2-972C-E1E1FEC24322</key>
 		<dict>
 			<key>xpos</key>
-			<integer>615</integer>
+			<real>615</real>
 			<key>ypos</key>
-			<integer>165</integer>
+			<real>165</real>
 		</dict>
 		<key>C67E2790-A8FC-4FBC-8FE7-2A5CD9D012ED</key>
 		<dict>
 			<key>xpos</key>
-			<integer>220</integer>
+			<real>220</real>
 			<key>ypos</key>
-			<integer>55</integer>
+			<real>55</real>
 		</dict>
 	</dict>
+	<key>userconfigurationconfig</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<true/>
+				<key>required</key>
+				<false/>
+				<key>text</key>
+				<string>开启</string>
+			</dict>
+			<key>description</key>
+			<string>只有OCR选择中英文混合会开启</string>
+			<key>label</key>
+			<string>自动中文繁简转换</string>
+			<key>type</key>
+			<string>checkbox</string>
+			<key>variable</key>
+			<string>AUTO_OPEN_CC</string>
+		</dict>
+	</array>
 	<key>variables</key>
 	<dict>
 		<key>API_KEY</key>
-		<string>T239ORnllCtLAPlbqum5UQSB</string>
+		<string></string>
 		<key>APP_ID</key>
-		<string>20034870</string>
+		<string></string>
 		<key>SECRET_KEY</key>
-		<string>8K5jaGZ6MMxgjwf9VGHc9oUZXRMFCIOX</string>
+		<string></string>
 	</dict>
 	<key>variablesdontexport</key>
-	<array/>
+	<array>
+		<string>API_KEY</string>
+		<string>SECRET_KEY</string>
+		<string>APP_ID</string>
+	</array>
 	<key>version</key>
-	<string>1.1</string>
+	<string>1.2</string>
 	<key>webaddress</key>
-	<string>https://1991421.cn</string>
+	<string>https://github.com/alanhg/alfred-workflows/tree/master/ocr</string>
 </dict>
 </plist>

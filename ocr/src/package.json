@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "baidu-aip-sdk": "^2.4.6"
+    "baidu-aip-sdk": "^2.4.6",
+    "opencc": "^1.1.3"
   }
 }
