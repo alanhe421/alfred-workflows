@@ -12,7 +12,20 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>B1EBEA6D-025B-447A-8EA2-D2BD649723A1</string>
+				<string>F2C2A59A-D14C-495F-9A64-F25E9259B381</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>2B2C08D8-A04F-4925-BD8D-4665E03E69AE</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>98B1663E-DEF7-470D-9445-77A25EC756DD</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -59,11 +72,37 @@
 				<false/>
 			</dict>
 		</array>
+		<key>98B1663E-DEF7-470D-9445-77A25EC756DD</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B1EBEA6D-025B-447A-8EA2-D2BD649723A1</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>B1EBEA6D-025B-447A-8EA2-D2BD649723A1</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>585A309D-54C0-4AF9-B6D3-8059523F18C0</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>F2C2A59A-D14C-495F-9A64-F25E9259B381</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B1EBEA6D-025B-447A-8EA2-D2BD649723A1</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -105,29 +144,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>/usr/local/bin/node ./index.js '{query}'</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>B1EBEA6D-025B-447A-8EA2-D2BD649723A1</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>path</key>
 				<string>{query}</string>
 			</dict>
@@ -135,6 +151,26 @@
 			<string>alfred.workflow.action.revealfile</string>
 			<key>uid</key>
 			<string>BDD5E983-C340-4F81-AFD7-E9F2247A5140</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>outputformat</key>
+					<string>epub</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>F2C2A59A-D14C-495F-9A64-F25E9259B381</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -152,6 +188,29 @@
 			<string>514DEB5B-4214-456E-AB96-44D7F3EFB4F4</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>/usr/local/bin/node ./index.js '{query}' "$outputformat"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>B1EBEA6D-025B-447A-8EA2-D2BD649723A1</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -195,11 +254,50 @@
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>outputformat</key>
+					<string>mobi</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>98B1663E-DEF7-470D-9445-77A25EC756DD</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>filetypes</key>
+				<array>
+					<string>org.idpf.epub-container</string>
+				</array>
+				<key>name</key>
+				<string>EPUB ➡️ MOBI</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.action</string>
+			<key>uid</key>
+			<string>2B2C08D8-A04F-4925-BD8D-4665E03E69AE</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
-	<string>&gt; Support mobi to epub
+	<string>&gt; Support mobi to epub, epub to mobi
 
-select mobi file and trigger action
+select mobi/epub file and trigger action
 
 ## get started
 
@@ -214,48 +312,71 @@ select mobi file and trigger action
 		<key>24733700-4082-4D73-81DC-5AF2CC654D65</key>
 		<dict>
 			<key>xpos</key>
-			<integer>50</integer>
+			<real>50</real>
 			<key>ypos</key>
-			<integer>50</integer>
+			<real>50</real>
+		</dict>
+		<key>2B2C08D8-A04F-4925-BD8D-4665E03E69AE</key>
+		<dict>
+			<key>xpos</key>
+			<real>55</real>
+			<key>ypos</key>
+			<real>280</real>
 		</dict>
 		<key>514DEB5B-4214-456E-AB96-44D7F3EFB4F4</key>
 		<dict>
 			<key>xpos</key>
-			<integer>640</integer>
+			<real>705</real>
 			<key>ypos</key>
-			<integer>70</integer>
+			<real>90</real>
 		</dict>
 		<key>585A309D-54C0-4AF9-B6D3-8059523F18C0</key>
 		<dict>
 			<key>note</key>
 			<string>delete newline</string>
 			<key>xpos</key>
-			<integer>500</integer>
+			<real>590</real>
 			<key>ypos</key>
-			<integer>80</integer>
+			<real>110</real>
 		</dict>
 		<key>61073CA9-E2D1-4B04-8811-CC0FB3C5D513</key>
 		<dict>
 			<key>xpos</key>
-			<integer>910</integer>
+			<real>910</real>
 			<key>ypos</key>
-			<integer>215</integer>
+			<real>215</real>
+		</dict>
+		<key>98B1663E-DEF7-470D-9445-77A25EC756DD</key>
+		<dict>
+			<key>xpos</key>
+			<real>240</real>
+			<key>ypos</key>
+			<real>245</real>
 		</dict>
 		<key>B1EBEA6D-025B-447A-8EA2-D2BD649723A1</key>
 		<dict>
 			<key>xpos</key>
-			<integer>310</integer>
+			<real>385</real>
 			<key>ypos</key>
-			<integer>50</integer>
+			<real>90</real>
 		</dict>
 		<key>BDD5E983-C340-4F81-AFD7-E9F2247A5140</key>
 		<dict>
 			<key>xpos</key>
-			<integer>910</integer>
+			<real>910</real>
 			<key>ypos</key>
-			<integer>65</integer>
+			<real>65</real>
+		</dict>
+		<key>F2C2A59A-D14C-495F-9A64-F25E9259B381</key>
+		<dict>
+			<key>xpos</key>
+			<real>220</real>
+			<key>ypos</key>
+			<real>80</real>
 		</dict>
 	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
 	<key>variables</key>
 	<dict>
 		<key>api_key</key>
@@ -266,8 +387,8 @@ select mobi file and trigger action
 		<string>api_key</string>
 	</array>
 	<key>version</key>
-	<string>0.2</string>
+	<string>0.3</string>
 	<key>webaddress</key>
-	<string>https://1991421.cn</string>
+	<string>https://github.com/alanhg/alfred-workflows/tree/master/convertio</string>
 </dict>
 </plist>

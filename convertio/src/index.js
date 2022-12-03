@@ -2,12 +2,12 @@
  * usage
  * /usr/local/bin/node ./index.js {query}
  */
-const { utils, http, input } = require('@stacker/alfred-utils');
+const { http, input } = require('@stacker/alfred-utils');
 const { readFileSync, writeFileSync } = require('fs');
 const notifier = require('node-notifier');
 const path = require('path');
 const instance = http.createHttpClient('http://api.convertio.co');
-
+const outputformat = process.argv[3];
 const filename = path.basename(input);
 (async function () {
   try {
@@ -20,7 +20,7 @@ const filename = path.basename(input);
           apikey: process.env.api_key,
           input: 'base64',
           file,
-          outputformat: 'epub',
+          outputformat,
           filename
         },
         {}
@@ -29,7 +29,7 @@ const filename = path.basename(input);
     notifier.notify({
       title: process.env.alfred_workflow_name,
       message: 'Please wait for a moment while being converted',
-      icon: path.join(__dirname, 'icon.png'),
+      icon: path.join(__dirname, 'icon.png')
     });
     // Get Status of the Conversion
     let step;
@@ -42,12 +42,13 @@ const filename = path.basename(input);
     const fileContent = await instance
       .get(`/convert/${convertionId}/dl/base64`)
       .then((res) => res.data.data.content);
-    const outputEpubFile =
-      process.env.HOME + '/Downloads/' + path.parse(filename).name + '.epub';
-    writeFileSync(outputEpubFile, fileContent, {
+    const outputFile = `${process.env.HOME}/Downloads/${
+      path.parse(filename).name
+    }.${outputformat}`;
+    writeFileSync(outputFile, fileContent, {
       encoding: 'base64'
     });
-    console.log(outputEpubFile);
+    console.log(outputFile);
   } catch (error) {
     console.log(error);
   }
