@@ -249,45 +249,48 @@ fi</string>
 	<key>readme</key>
 	<string>&gt; Displays system information about your Mac
 
-1. ⏎ to copy info
-2. large type support
-3. type `:updateaboutmac` to update workflow</string>
+1. type 'about' to trigger
+2. ⏎ to copy info
+3. large type support
+4. type `:updateaboutmac` to update workflow</string>
 	<key>uidata</key>
 	<dict>
 		<key>2353E6A3-0536-4ADA-8936-B2AEC1E72656</key>
 		<dict>
 			<key>xpos</key>
-			<integer>105</integer>
+			<real>105</real>
 			<key>ypos</key>
-			<integer>120</integer>
+			<real>120</real>
 		</dict>
 		<key>92B41F6D-A3B7-486F-BE6E-9C774E943DD9</key>
 		<dict>
 			<key>xpos</key>
-			<integer>340</integer>
+			<real>350</real>
 			<key>ypos</key>
-			<integer>345</integer>
+			<real>345</real>
 		</dict>
 		<key>D65A77A5-78F8-467D-AFF6-1656DD383D2E</key>
 		<dict>
 			<key>xpos</key>
-			<integer>90</integer>
+			<real>100</real>
 			<key>ypos</key>
-			<integer>345</integer>
+			<real>345</real>
 		</dict>
 		<key>F6EDB591-1C8F-42F0-93A1-752E94140C67</key>
 		<dict>
 			<key>xpos</key>
-			<integer>325</integer>
+			<real>325</real>
 			<key>ypos</key>
-			<integer>120</integer>
+			<real>120</real>
 		</dict>
 	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.4</string>
+	<string>1.5</string>
 	<key>webaddress</key>
-	<string>https://1991421.cn</string>
+	<string>https://github.com/alanhg/alfred-workflows/tree/master/about-mac</string>
 </dict>
 </plist>
