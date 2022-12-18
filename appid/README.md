@@ -22,10 +22,10 @@ brew install node
 
 
 <!-- more -->
-
-### App List
+## screenshots
+![](./screenshot1.png)
+![](./screenshot2.png)
 
 ![](./appid.gif)
 
-### Universal Action
 ![](./appid_2.gif)
