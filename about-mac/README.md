@@ -1,6 +1,6 @@
 > Displays system information about your Mac
 
-1. type 'about' to trigger
+1. type `about` to trigger
 2. ⏎ to copy info
 3. large type support
 4. type `:updateaboutmac` to update workflow
