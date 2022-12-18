@@ -16,6 +16,11 @@ Support Catalina、Big Sur
 
 <!-- more -->
 
+## screenshots
+
+![](./screenshot1.png)
+![](./screenshot2.png)
+
 ![](./screenshot.gif)
 
 ![](./screenshot2.gif)
