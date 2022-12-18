@@ -16,5 +16,7 @@
 
 <!-- more -->
 
-## 效果
+## screenshots
+![](./screenshot1.png)
+
 ![](./screenshot.gif)
