@@ -131,8 +131,6 @@ end tell</string>
 			<dict>
 				<key>argumenttype</key>
 				<integer>2</integer>
-				<key>keyword</key>
-				<string>:updateaboutmac</string>
 				<key>subtext</key>
 				<string>Check for updates and install them if they exist</string>
 				<key>text</key>
@@ -251,8 +249,7 @@ fi</string>
 
 1. type `about` to trigger
 2. ⏎ to copy info
-3. large type support
-4. type `:updateaboutmac` to update workflow</string>
+3. large type support</string>
 	<key>uidata</key>
 	<dict>
 		<key>2353E6A3-0536-4ADA-8936-B2AEC1E72656</key>
@@ -289,7 +286,7 @@ fi</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.5</string>
+	<string>1.6</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/about-mac</string>
 </dict>
