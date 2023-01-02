@@ -12,7 +12,12 @@ const query = process.env.module;
       items: profiles.map((item) => ({
         title: item,
         subtitle: item === name ? 'selected' : '',
-        arg: utils.joinMultiArg(`switchProfile`, item)
+        arg: utils.joinMultiArg(`switchProfile`, item),
+        mods:{
+          cmd:{
+            arg:item
+          }
+        }
       }))
     });
     return;

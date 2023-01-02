@@ -20,6 +20,16 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>26B7B094-1135-4D44-9C83-4A44BF60676A</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string>Reveal profile in Finder</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
 		</array>
 		<key>0B781B29-1B66-4F9C-8B61-8477E02878CD</key>
 		<array>
@@ -60,6 +70,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>26B7B094-1135-4D44-9C83-4A44BF60676A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>7C07A059-1788-425B-B78F-E0E083008564</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>3477EA17-4B07-418B-B4D8-B4D74D4ECF96</key>
 		<array>
 			<dict>
@@ -92,11 +115,11 @@
 				<key>destinationuid</key>
 				<string>CAC75DC7-4E03-47F4-9C88-B75709EC6D23</string>
 				<key>modifiers</key>
-				<integer>0</integer>
+				<integer>524288</integer>
 				<key>modifiersubtext</key>
-				<string></string>
+				<string>View submenu</string>
 				<key>vitoclose</key>
-				<false/>
+				<true/>
 			</dict>
 		</array>
 		<key>6620B43C-63DB-4DCE-99DD-3A1C57604DDA</key>
@@ -169,6 +192,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>E9460C86-1ECB-4B7A-AC26-9E3C9217A842</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>A8B7F4BE-AC75-4422-824F-24CE3504A736</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>32F87F30-C084-443C-8A7F-43B9F5588E2A</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -341,11 +377,11 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>AD911E40-3BD8-4B7B-A8A9-2D5ADB28887C</string>
+				<string>A8B7F4BE-AC75-4422-824F-24CE3504A736</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
-				<string></string>
+				<string>Toogle Selected Rule</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -567,7 +603,7 @@
 				<key>queuemode</key>
 				<integer>1</integer>
 				<key>runningsubtext</key>
-				<string>Please wait</string>
+				<string>Please Waiting</string>
 				<key>script</key>
 				<string>/usr/local/bin/node ./index.js $HTTP_API</string>
 				<key>scriptargtype</key>
@@ -765,6 +801,27 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>Modified successfully</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>32F87F30-C084-443C-8A7F-43B9F5588E2A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argument</key>
 				<string></string>
 				<key>passthroughargument</key>
@@ -781,53 +838,6 @@
 			<string>184429E5-5B99-4D80-8741-ACC0B6820475</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alfredfiltersresults</key>
-				<false/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<true/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>script</key>
-				<string>/usr/local/bin/node policy-groups.js {query}</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>subtext</key>
-				<string></string>
-				<key>title</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>5468E8DA-D6EE-46E4-B944-F358BFBB350A</string>
-			<key>version</key>
-			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -873,6 +883,53 @@
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
 			<string>2535B20A-F43D-438D-8DF6-2F037994030B</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>/usr/local/bin/node policy-groups.js {query}</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>5468E8DA-D6EE-46E4-B944-F358BFBB350A</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
@@ -933,6 +990,29 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>/usr/local/bin/node ./do.js "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>BBB56AB5-5DF6-4763-8504-006F8B6066C9</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>alfredfiltersresults</key>
 				<true/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -976,27 +1056,6 @@
 			<string>0636B261-83DB-4543-80DF-242F3DC91488</string>
 			<key>version</key>
 			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>{query}</string>
-				<key>title</key>
-				<string>Modified successfully</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>32F87F30-C084-443C-8A7F-43B9F5588E2A</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1048,25 +1107,35 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>/usr/local/bin/node ./do.js "{query}"</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
+				<key>path</key>
 				<string></string>
-				<key>type</key>
-				<integer>0</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.script</string>
+			<string>alfred.workflow.action.revealfile</string>
 			<key>uid</key>
-			<string>BBB56AB5-5DF6-4763-8504-006F8B6066C9</string>
+			<string>7C07A059-1788-425B-B78F-E0E083008564</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{var:CONF_FILE_LOCATION}/{query}.conf</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>group</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>26B7B094-1135-4D44-9C83-4A44BF60676A</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1094,7 +1163,7 @@
 				<key>runningsubtext</key>
 				<string></string>
 				<key>script</key>
-				<string>/usr/local/bin/node rules.js {query}</string>
+				<string>/usr/local/bin/node rules.js '{query}'</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -1118,27 +1187,49 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>paths</key>
-				<array>
-					<string>/Applications/Surge.app</string>
-				</array>
-				<key>toggle</key>
+				<key>concurrently</key>
 				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>/usr/local/bin/node ./toggle-rule.js '{query}'</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.launchfiles</string>
+			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>AD911E40-3BD8-4B7B-A8A9-2D5ADB28887C</string>
+			<string>A8B7F4BE-AC75-4422-824F-24CE3504A736</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 	</array>
 	<key>readme</key>
 	<string>&gt; Surge Mac 4.0提供了HTTP API支持，因此终于可以打通外部App调用了。这里实现了Alfred的打通，比如快速切换代理模式等。
 
-## install 
+## 功能
 
-1. install node
+
+1. 支持代理模式切换
+2. 支持增强模式开关
+3. 支持规则检索及切换选中状态
+4. 支持MitM开关
+5. 支持模块开关
+6. 支持选中profile切换，⌘ enter 则finder下选中profile文件
+
+
+### 操作说明
+1. option enter进入下一级菜单
+2. enter选中
+3. command enter表示reveal in finder
+
+## 安装 
+
+1. brew install node
 2. 开启Surge API支持
 
 ##  如何开启Surge API支持
@@ -1158,6 +1249,7 @@ http-api = examplekey@0.0.0.0:6171
 
 - https://manual.nssurge.com/others/http-api.html
 
+
 ## 注意
 Surge Mac 4.0.0、Surge iOS 4.4.0开始提供HTTP API, 即该版本之前的均不支持</string>
 	<key>uidata</key>
@@ -1167,9 +1259,9 @@ Surge Mac 4.0.0、Surge iOS 4.4.0开始提供HTTP API, 即该版本之前的均�
 			<key>note</key>
 			<string>Profiles</string>
 			<key>xpos</key>
-			<real>485</real>
+			<real>460</real>
 			<key>ypos</key>
-			<real>850</real>
+			<real>925</real>
 		</dict>
 		<key>0B781B29-1B66-4F9C-8B61-8477E02878CD</key>
 		<dict>
@@ -1190,16 +1282,23 @@ Surge Mac 4.0.0、Surge iOS 4.4.0开始提供HTTP API, 即该版本之前的均�
 			<key>note</key>
 			<string>group-policy list</string>
 			<key>xpos</key>
-			<real>790</real>
+			<real>770</real>
 			<key>ypos</key>
-			<real>750</real>
+			<real>710</real>
+		</dict>
+		<key>26B7B094-1135-4D44-9C83-4A44BF60676A</key>
+		<dict>
+			<key>xpos</key>
+			<real>690</real>
+			<key>ypos</key>
+			<real>1120</real>
 		</dict>
 		<key>32F87F30-C084-443C-8A7F-43B9F5588E2A</key>
 		<dict>
 			<key>xpos</key>
-			<real>1180</real>
+			<real>1400</real>
 			<key>ypos</key>
-			<real>940</real>
+			<real>590</real>
 		</dict>
 		<key>3477EA17-4B07-418B-B4D8-B4D74D4ECF96</key>
 		<dict>
@@ -1213,7 +1312,7 @@ Surge Mac 4.0.0、Surge iOS 4.4.0开始提供HTTP API, 即该版本之前的均�
 			<key>note</key>
 			<string>Policy Groups</string>
 			<key>xpos</key>
-			<real>480</real>
+			<real>465</real>
 			<key>ypos</key>
 			<real>710</real>
 		</dict>
@@ -1222,7 +1321,7 @@ Surge Mac 4.0.0、Surge iOS 4.4.0开始提供HTTP API, 即该版本之前的均�
 			<key>xpos</key>
 			<real>30</real>
 			<key>ypos</key>
-			<real>145</real>
+			<real>165</real>
 		</dict>
 		<key>6620B43C-63DB-4DCE-99DD-3A1C57604DDA</key>
 		<dict>
@@ -1243,9 +1342,16 @@ Surge Mac 4.0.0、Surge iOS 4.4.0开始提供HTTP API, 即该版本之前的均�
 		<key>7AF3CA13-DA2D-4D97-B5A7-E4EC8D4107F3</key>
 		<dict>
 			<key>xpos</key>
-			<real>675</real>
+			<real>670</real>
 			<key>ypos</key>
-			<real>770</real>
+			<real>740</real>
+		</dict>
+		<key>7C07A059-1788-425B-B78F-E0E083008564</key>
+		<dict>
+			<key>xpos</key>
+			<real>820</real>
+			<key>ypos</key>
+			<real>1065</real>
 		</dict>
 		<key>7F8E5ABB-8E12-4EE8-A537-9C6C8884222A</key>
 		<dict>
@@ -1277,37 +1383,39 @@ Surge Mac 4.0.0、Surge iOS 4.4.0开始提供HTTP API, 即该版本之前的均�
 			<key>ypos</key>
 			<real>45</real>
 		</dict>
-		<key>AD911E40-3BD8-4B7B-A8A9-2D5ADB28887C</key>
+		<key>A8B7F4BE-AC75-4422-824F-24CE3504A736</key>
 		<dict>
+			<key>note</key>
+			<string>Toogle Rule Selected</string>
 			<key>xpos</key>
-			<real>685</real>
+			<real>670</real>
 			<key>ypos</key>
-			<real>1110</real>
+			<real>1215</real>
 		</dict>
 		<key>B53E08CC-23B2-4106-BDA3-E59F7963BB1C</key>
 		<dict>
 			<key>note</key>
 			<string>warning for turn on http-api</string>
 			<key>xpos</key>
-			<real>480</real>
+			<real>485</real>
 			<key>ypos</key>
-			<real>345</real>
+			<real>350</real>
 		</dict>
 		<key>BBB56AB5-5DF6-4763-8504-006F8B6066C9</key>
 		<dict>
 			<key>note</key>
 			<string>do something</string>
 			<key>xpos</key>
-			<real>800</real>
+			<real>825</real>
 			<key>ypos</key>
-			<real>985</real>
+			<real>885</real>
 		</dict>
 		<key>CAC75DC7-4E03-47F4-9C88-B75709EC6D23</key>
 		<dict>
 			<key>xpos</key>
-			<real>195</real>
+			<real>225</real>
 			<key>ypos</key>
-			<real>120</real>
+			<real>60</real>
 		</dict>
 		<key>D7FC2694-B93F-4F59-A2DF-BB59ACDA7200</key>
 		<dict>
@@ -1330,37 +1438,69 @@ Surge Mac 4.0.0、Surge iOS 4.4.0开始提供HTTP API, 即该版本之前的均�
 			<key>note</key>
 			<string>Rules</string>
 			<key>xpos</key>
-			<real>485</real>
+			<real>430</real>
 			<key>ypos</key>
-			<real>1080</real>
+			<real>1215</real>
 		</dict>
 		<key>E9460C86-1ECB-4B7A-AC26-9E3C9217A842</key>
 		<dict>
 			<key>note</key>
 			<string>module</string>
 			<key>xpos</key>
-			<real>200</real>
+			<real>135</real>
 			<key>ypos</key>
-			<real>965</real>
+			<real>1055</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
-	<array/>
-	<key>variables</key>
-	<dict>
-		<key>HTTP_API</key>
-		<string>examplekey@127.0.0.1:6171</string>
-		<key>check_update</key>
-		<string>true</string>
-		<key>remote_info_list_url</key>
-		<string>https://raw.githubusercontent.com/alanhg/alfred-workflows/master/surge/src/info.plist</string>
-		<key>remote_workflow_url</key>
-		<string>https://raw.githubusercontent.com/alanhg/alfred-workflows/master/surge/Surge.alfredworkflow</string>
-	</dict>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>examplekey@127.0.0.1:6171</string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<true/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>开启Surge API支持</string>
+			<key>label</key>
+			<string>HTTP API</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>HTTP_API</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string></string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<true/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>配置文件所在位置</string>
+			<key>label</key>
+			<string>File Location</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>CONF_FILE_LOCATION</string>
+		</dict>
+	</array>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.11</string>
+	<string>1.12</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/surge</string>
 </dict>

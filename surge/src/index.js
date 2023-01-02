@@ -1,5 +1,4 @@
 const {utils} = require('@stacker/alfred-utils');
-const {checkUpdate} = require('@stacker/alfred-utils/dist/alfred-cli-check');
 const [, , HTTP_API] = process.argv;
 const instance = require('./axios').createHttpClient(HTTP_API);
 const getSystemProxy = new Promise((resolve, reject) => {
@@ -145,7 +144,7 @@ const printItems = (obj) => console.log(JSON.stringify({
   items: Array.isArray(obj) ? obj : [obj]
 }));
 
-Promise.all([checkUpdate(), getSystemProxy, getEnhancedMode, getMitmFeature, getCaptureFeature, getRewriteFeature, getScriptingFeature, getOutboundMode, getReloadProfile, getDNS, getProfiles, getPolicyGroups, getModules, getRules, getLog])
+Promise.all([getSystemProxy, getEnhancedMode, getMitmFeature, getCaptureFeature, getRewriteFeature, getScriptingFeature, getOutboundMode, getReloadProfile, getDNS, getProfiles, getPolicyGroups, getModules, getRules, getLog])
   .then(([updateItem, ...res]) => {
     if (updateItem) {
       res.unshift(updateItem);
