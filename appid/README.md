@@ -1,22 +1,22 @@
 > Getting Bundle ID of apps
 
-## requirement
+## Requirement
 
 brew install node
 
-## usage
+## Usage
 
 1. `appid` to get Bundle ID of apps
 2. `av` to get Bundle version of apps
-3. Universal action support
-	- `App ID` get id of app
-	- `App Version` get version of app
-    - `App Name` get name of app
-4. type `:updateappid` to update workflow
-5. display app is from appstore or not
+3. display app is from appstore or not
+4. Universal action support
+	- `App ID` get id of app, type `enter` to copy
+	- `App Version` get version of app，type `enter` to copy
+    - `App Name` get name of app，type `enter` to copy
+    - `App Icon` copy icon of app, type `command enter` to reveal in finder.
 
 
-![](https://img.shields.io/badge/version-v1.6-green?style=for-the-badge)
+![](https://img.shields.io/badge/version-v1.7-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/appid/AppID.alfredworkflow)
 [![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/appid/src/info.plist)
 
