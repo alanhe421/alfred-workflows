@@ -16,7 +16,7 @@
 
 
 ![](https://img.shields.io/badge/version-v1.10-green?style=for-the-badge)
-[![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/mac-enhancer/Mac%20Enhancer.alfredworkflow)
+[![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/mac-enhancer/Mac Enhancer.alfredworkflow)
 [![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/mac-enhancer/src/info.plist)
 
 
