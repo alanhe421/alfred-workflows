@@ -29,8 +29,9 @@ function updateHomeReadme(items) {
     const workflowsList = items.map((item, index) => {
       const arr = [];
       arr.push(`\n### ${index + 1}. [${item.name}](https://github.com/alanhg/alfred-workflows${(item.path)})`);
+      item.plistObj.description && arr.push(`> ${item.plistObj.description}`);
       arr.push(`${buildBadgeContent(item.plistObj, item.folderName, item.filename)}`);
-      return arr.join('\n');
+      return arr.join('\n\n');
     }).join('\n');
     const newReadmeContent = readmeContent.replace(/(?<=<!--workflow-start-->)[\s\S]*(?=<!--workflow-end-->)/, workflowsList)
     fs.writeFileSync(path, newReadmeContent);
