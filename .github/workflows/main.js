@@ -28,8 +28,8 @@ function updateHomeReadme(items) {
     let readmeContent = fs.readFileSync(path, 'utf8');
     const workflowsList = items.map((item, index) => {
       const arr = [];
-      arr.push(`\n### ${index + 1}. [${item.name}](https://github.com/alanhg/alfred-workflows${item.path})`);
-      arr.push(`${buildBadgeContent(item.plistObj, item.folderName, item.name)}`);
+      arr.push(`\n### ${index + 1}. [${item.name}](https://github.com/alanhg/alfred-workflows${(item.path)})`);
+      arr.push(`${buildBadgeContent(item.plistObj, item.folderName, item.filename)}`);
       return arr.join('\n');
     }).join('\n');
     const newReadmeContent = readmeContent.replace(/(?<=<!--workflow-start-->)[\s\S]*(?=<!--workflow-end-->)/, workflowsList)
@@ -78,7 +78,10 @@ function updateHomePage() {
     }
     try {
       const {plistObj} = parseWorkflowInfo(workflowFolder, workflow);
-      items.push({name: plistObj.name, path: `/tree/master/${folderName},`, folderName, plistObj});
+      items.push({
+        name: plistObj.name, path: `/tree/master/${folderName}`, folderName, plistObj,
+        filename: workflow
+      });
     } catch (e) {
       console.error(e);
     }
@@ -105,7 +108,7 @@ main();
 function updateReadme(absoluteWorkflowFolder, folderName, plistObj, workflow) {
   const readme = plistObj.readme;
   const readmeFile = absoluteWorkflowFolder + '/README.md';
-  const filename = querystring.escape(path.basename(workflow));
+  const filename = (path.basename(workflow));
   let readmeContent;
   try {
     if (!fs.existsSync(readmeFile)) {
@@ -127,10 +130,10 @@ ${buildBadgeContent(plistObj, folderName, filename)}
   }
 }
 
-function buildBadgeContent(plistObj, folderName, filename) {
-  return `![](https://img.shields.io/badge/version-v${plistObj.version}-green?style=for-the-badge)
-[![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/${process.env.GITHUB_REPOSITORY}/raw/${process.env.GITHUB_REF_NAME}/${folderName}/${filename})
-[![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/${process.env.GITHUB_REPOSITORY}/${process.env.GITHUB_REF_NAME}/${folderName}/src/info.plist)`
+function buildBadgeContent({version}, folderName, filename) {
+  return `![](https://img.shields.io/badge/version-v${version}-green?style=for-the-badge)
+[![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/${process.env.GITHUB_REPOSITORY}/raw/${process.env.GITHUB_REF_NAME}/${folderName}/${(filename)})
+[![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/${process.env.GITHUB_REPOSITORY}/${process.env.GITHUB_REF_NAME}/${(folderName)}/src/info.plist)`
 }
 
 /**
