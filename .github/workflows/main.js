@@ -23,18 +23,19 @@ function writeWorkflowNameOptions(items) {
  * @param {{name,path}[]} items
  */
 function updateHomeReadme(items) {
-  [path.resolve(__dirname, '../../', 'README.md'),
-    path.resolve(__dirname, '../../', 'README-zh.md')].forEach((path) => {
-    let readmeContent = fs.readFileSync(path, 'utf8');
-    const workflowsList = items.map((item, index) => {
+  ['README.md', 'README-zh.md'].forEach((filename) => {
+    const isEn = filename === 'README.md';
+    const filePath = path.resolve(__dirname, '../../', filename);
+    let readmeContent = fs.readFileSync(filePath, 'utf8');
+    const workflowsList = [isEn ? `There are ${items.length} workflows` : `共${items.length}个`, items.map((item, index) => {
       const arr = [];
       arr.push(`\n### ${index + 1}. [${item.name}](https://github.com/alanhg/alfred-workflows${(item.path)})`);
       item.plistObj.description && arr.push(`> ${item.plistObj.description}`);
       arr.push(`${buildBadgeContent(item.plistObj, item.folderName, item.filename)}`);
       return arr.join('\n\n');
-    }).join('\n');
+    })].join('\n');
     const newReadmeContent = readmeContent.replace(/(?<=<!--workflow-start-->)[\s\S]*(?=<!--workflow-end-->)/, workflowsList)
-    fs.writeFileSync(path, newReadmeContent);
+    fs.writeFileSync(filePath, newReadmeContent);
   })
 }
 
