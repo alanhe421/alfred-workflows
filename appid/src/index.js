@@ -7,9 +7,18 @@
 const { http, Workflow, utils } = require('@stacker/alfred-utils');
 const { execSync } = require('child_process');
 const path = require('path');
-const [, ,] = process.argv;
+const [, , action, query] = process.argv;
 const wf = new Workflow();
+
 (function () {
+  if (action === 'av') {
+    listAppVersions();
+  } else if (action === 'appicon') {
+    getAppIconPath(query);
+  }
+})();
+
+function listAppVersions() {
   const apps = convertToApps(
     execSync('ls /Applications ', { encoding: 'utf-8' }),
     '/Applications'
@@ -20,9 +29,7 @@ const wf = new Workflow();
     )
   );
   for (let index = 0; index < apps.length; index++) {
-    const command = `mdls -raw -name kMDItemVersion  -name kMDItemAppStoreHasReceipt "${apps[
-      index
-    ].path}"`;
+    const command = `mdls -raw -name kMDItemVersion  -name kMDItemAppStoreHasReceipt "${apps[index].path}"`;
     const [receipt, version] = execSync(command, {
       encoding: 'utf-8'
     }).split('\x00');
@@ -39,7 +46,7 @@ const wf = new Workflow();
     });
   }
   wf.run();
-})();
+}
 
 function convertToApps(ouputstr, basePath) {
   return ouputstr
@@ -49,4 +56,8 @@ function convertToApps(ouputstr, basePath) {
       name: app,
       path: path.join(basePath, app)
     }));
+}
+
+function getAppIconPath(appPath) {
+  utils.log(path.join(appPath, 'Contents/Resources/AppIcon.icns'));
 }

@@ -114,6 +114,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>7D9F7AAF-1F9C-4B98-BA88-D06879CA4A0D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>BD37C14D-8511-46CA-A29E-77645457FBB8</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>A48CE873-8369-400F-9DFA-5526A5D9C90C</key>
 		<array>
 			<dict>
@@ -158,6 +171,42 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>00FD277E-4F27-40C6-8983-5115873E955C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>E9AB7639-9DBB-4D6F-B787-F6EAC75EB4C0</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>7D9F7AAF-1F9C-4B98-BA88-D06879CA4A0D</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string>Reveal icon in Finder</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>F1CFF3D8-5212-48AC-B506-E41F558CF0BF</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>F1CFF3D8-5212-48AC-B506-E41F558CF0BF</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>4DFB1BD6-6708-49FD-8E2D-BEEE6DD41196</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -393,6 +442,25 @@ puts({ items: script_filter_items }.to_json)</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>subtext</key>
+				<string>Check for updates and install them if they exist</string>
+				<key>text</key>
+				<string>Update AppID</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>4000643B-2DB8-40C7-B4BD-8514772DC55A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -491,27 +559,6 @@ fi</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>:updateappid</string>
-				<key>subtext</key>
-				<string>Check for updates and install them if they exist</string>
-				<key>text</key>
-				<string>Update AppID</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>4000643B-2DB8-40C7-B4BD-8514772DC55A</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>matchmode</key>
 				<integer>0</integer>
 				<key>matchstring</key>
@@ -571,7 +618,7 @@ fi</string>
 				<key>runningsubtext</key>
 				<string>Getting versions of apps in /Applications…</string>
 				<key>script</key>
-				<string>/usr/local/bin/node ./index.js</string>
+				<string>/usr/local/bin/node ./index.js av</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -595,21 +642,38 @@ fi</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>acceptsmulti</key>
-				<integer>0</integer>
-				<key>filetypes</key>
-				<array>
-					<string>com.apple.application-bundle</string>
-				</array>
-				<key>name</key>
-				<string>App version</string>
+				<key>path</key>
+				<string></string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.trigger.action</string>
+			<string>alfred.workflow.action.revealfile</string>
 			<key>uid</key>
-			<string>5B30E91B-47B7-4F83-9119-64675F13B00D</string>
+			<string>BD37C14D-8511-46CA-A29E-77645457FBB8</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>/usr/local/bin/node ./index.js appicon '{query}'</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>7D9F7AAF-1F9C-4B98-BA88-D06879CA4A0D</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -634,24 +698,100 @@ fi</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>filetypes</key>
+				<array>
+					<string>com.apple.application-bundle</string>
+				</array>
+				<key>name</key>
+				<string>App version</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.action</string>
+			<key>uid</key>
+			<string>5B30E91B-47B7-4F83-9119-64675F13B00D</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>tasksettings</key>
+				<dict/>
+				<key>taskuid</key>
+				<string>com.alfredapp.automation.core/macOS/clipboard.set.image.data</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.automation.task</string>
+			<key>uid</key>
+			<string>4DFB1BD6-6708-49FD-8E2D-BEEE6DD41196</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>filetypes</key>
+				<array>
+					<string>com.apple.application-bundle</string>
+				</array>
+				<key>name</key>
+				<string>App Icon</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.action</string>
+			<key>uid</key>
+			<string>E9AB7639-9DBB-4D6F-B787-F6EAC75EB4C0</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>/usr/local/bin/node ./index.js appicon '{query}'</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>F1CFF3D8-5212-48AC-B506-E41F558CF0BF</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>&gt; Getting Bundle ID of apps
 
-## requirement
+## Requirement
 
 brew install node
 
-## usage
+## Usage
 
 1. `appid` to get Bundle ID of apps
 2. `av` to get Bundle version of apps
-3. Universal action support
-	- `App ID` get id of app
-	- `App Version` get version of app
-    - `App Name` get name of app
-4. type `:updateappid` to update workflow
-5. display app is from appstore or not</string>
+3. display app is from appstore or not
+4. Universal action support
+	- `App ID` get id of app, type `enter` to copy
+	- `App Version` get version of app，type `enter` to copy
+    - `App Name` get name of app，type `enter` to copy
+    - `App Icon` copy icon of app, type `command enter` to reveal in finder.</string>
 	<key>uidata</key>
 	<dict>
 		<key>00FD277E-4F27-40C6-8983-5115873E955C</key>
@@ -680,7 +820,7 @@ brew install node
 		<key>39D9653D-4F4D-4E0E-9B22-22BC23A54697</key>
 		<dict>
 			<key>xpos</key>
-			<real>830</real>
+			<real>835</real>
 			<key>ypos</key>
 			<real>565</real>
 		</dict>
@@ -697,6 +837,13 @@ brew install node
 			<real>235</real>
 			<key>ypos</key>
 			<real>430</real>
+		</dict>
+		<key>4DFB1BD6-6708-49FD-8E2D-BEEE6DD41196</key>
+		<dict>
+			<key>xpos</key>
+			<real>935</real>
+			<key>ypos</key>
+			<real>865</real>
 		</dict>
 		<key>53D51879-0D2E-4B6B-8EAD-45D634D7AED8</key>
 		<dict>
@@ -733,12 +880,28 @@ brew install node
 			<key>ypos</key>
 			<real>245</real>
 		</dict>
+		<key>7D9F7AAF-1F9C-4B98-BA88-D06879CA4A0D</key>
+		<dict>
+			<key>note</key>
+			<string>get icon</string>
+			<key>xpos</key>
+			<real>750</real>
+			<key>ypos</key>
+			<real>730</real>
+		</dict>
 		<key>A48CE873-8369-400F-9DFA-5526A5D9C90C</key>
 		<dict>
 			<key>xpos</key>
 			<real>50</real>
 			<key>ypos</key>
 			<real>425</real>
+		</dict>
+		<key>BD37C14D-8511-46CA-A29E-77645457FBB8</key>
+		<dict>
+			<key>xpos</key>
+			<real>930</real>
+			<key>ypos</key>
+			<real>730</real>
 		</dict>
 		<key>C0789812-ACFF-464D-89F8-A9FEF41A1A9F</key>
 		<dict>
@@ -763,13 +926,29 @@ brew install node
 			<key>ypos</key>
 			<real>245</real>
 		</dict>
+		<key>E9AB7639-9DBB-4D6F-B787-F6EAC75EB4C0</key>
+		<dict>
+			<key>xpos</key>
+			<real>505</real>
+			<key>ypos</key>
+			<real>885</real>
+		</dict>
+		<key>F1CFF3D8-5212-48AC-B506-E41F558CF0BF</key>
+		<dict>
+			<key>note</key>
+			<string>get icon</string>
+			<key>xpos</key>
+			<real>755</real>
+			<key>ypos</key>
+			<real>885</real>
+		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
 	<array/>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.6</string>
+	<string>1.7</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/appid</string>
 </dict>
