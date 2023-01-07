@@ -32,7 +32,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - run: npm install plist
       - name: Refresh Workflow Version
-        run:  node .github/workflows/refresh_workflow_version.js
+        run:  node .github/workflows/main.js updatePerWorkflowPage
       - name: Build
         run: |
           git add .
@@ -66,7 +66,7 @@ jobs:
       #          SHOW_TOTAL_CONTRIBUTIONS: "True"
       - run: npm install plist
       - name: Refresh Workflow Version
-        run:  node .github/workflows/refresh_readme.js
+        run:  node .github/workflows/main.js updateHomePage
       - name: Build
         run: |
           git add .
