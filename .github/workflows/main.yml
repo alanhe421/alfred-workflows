@@ -58,6 +58,8 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: TOC Generator
         uses: technote-space/toc-generator@v4
+        with:
+          MAX_HEADER_LEVEL: 2
       #      - name: GitHub README Generator
       #        uses: th3c0d3br34ker/github-readme-info@1.0.2
       #        with:
