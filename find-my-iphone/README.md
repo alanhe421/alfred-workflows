@@ -18,7 +18,7 @@ Logging in for the first time is troublesome, but after that, it will automatica
 
 
 ![](https://img.shields.io/badge/version-v0.4-green?style=for-the-badge)
-[![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/find-my-iphone/Find%20iPhone.alfredworkflow)
+[![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/find-my-iphone/Find iPhone.alfredworkflow)
 [![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/find-my-iphone/src/info.plist)
 
 
