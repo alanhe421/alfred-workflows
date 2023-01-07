@@ -80,7 +80,7 @@ function updateHomePage() {
       const {plistObj} = parseWorkflowInfo(workflowFolder, workflow);
       items.push({
         name: plistObj.name, path: `/tree/master/${folderName}`, folderName, plistObj,
-        filename: workflow
+        filename: querystring.escape(workflow)
       });
     } catch (e) {
       console.error(e);
