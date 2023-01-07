@@ -27,14 +27,16 @@ function updateHomeReadme(items) {
     const isEn = filename === 'README.md';
     const filePath = path.resolve(__dirname, '../../', filename);
     let readmeContent = fs.readFileSync(filePath, 'utf8');
-    const workflowsList = [isEn ? `There are ${items.length} workflows` : `共${items.length}个`, items.map((item, index) => {
-      const arr = [];
-      arr.push(`\n### ${index + 1}. [${item.name}](https://github.com/alanhg/alfred-workflows${(item.path)})`);
-      item.plistObj.description && arr.push(`> ${item.plistObj.description}`);
-      arr.push(`${buildBadgeContent(item.plistObj, item.folderName, item.filename)}`);
-      return arr.join('\n\n');
-    })].join('\n');
-    const newReadmeContent = readmeContent.replace(/(?<=<!--workflow-start-->)[\s\S]*(?=<!--workflow-end-->)/, workflowsList)
+    const workflowList = [isEn ? `There are ${items.length} workflows` : `共${items.length}个`,
+      ...items.map((item, index) => {
+        const arr = [];
+        arr.push(`\n### ${index + 1}. [${item.name}](https://github.com/alanhg/alfred-workflows${(item.path)})`);
+        item.plistObj.description && arr.push(`> ${item.plistObj.description}`);
+        arr.push(`${buildBadgeContent(item.plistObj, item.folderName, item.filename)}`);
+        return arr.join('\n');
+      })];
+    const workflowsListStr = workflowList.join('\n');
+    const newReadmeContent = readmeContent.replace(/(?<=<!--workflow-start-->)[\s\S]*(?=<!--workflow-end-->)/, workflowsListStr)
     fs.writeFileSync(filePath, newReadmeContent);
   })
 }
@@ -133,9 +135,11 @@ ${buildBadgeContent(plistObj, folderName, filename)}
 }
 
 function buildBadgeContent({version}, folderName, filename) {
-  return `![](https://img.shields.io/badge/version-v${version}-green?style=for-the-badge)
+  return `
+![](https://img.shields.io/badge/version-v${version}-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/${process.env.GITHUB_REPOSITORY}/raw/${process.env.GITHUB_REF_NAME}/${folderName}/${(filename)})
-[![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/${process.env.GITHUB_REPOSITORY}/${process.env.GITHUB_REF_NAME}/${(folderName)}/src/info.plist)`
+[![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/${process.env.GITHUB_REPOSITORY}/${process.env.GITHUB_REF_NAME}/${(folderName)}/src/info.plist)
+`
 }
 
 /**
