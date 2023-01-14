@@ -17,7 +17,7 @@
 
 
 ![](https://img.shields.io/badge/version-v1.14-green?style=for-the-badge)
-[![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/git-code/Git Code.alfredworkflow)
+[![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/git-code/Git%20Code.alfredworkflow)
 [![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/git-code/src/info.plist)
 
 
