@@ -124,7 +124,7 @@ function updateReadme(absoluteWorkflowFolder, folderName, plistObj, workflow) {
     }
 
     const badgeContent = `${readme}\n\n
-${buildBadgeContent(plistObj, folderName, filename)}
+${buildBadgeContent(plistObj, folderName, querystring.escape(filename))}
 \n\n`;
     readmeContent = readmeContent.replace(/(^(\s|\S)+)?(?=<!-- more -->)/, '');
     readmeContent = badgeContent + readmeContent;
