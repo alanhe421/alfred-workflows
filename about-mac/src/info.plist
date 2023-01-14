@@ -256,7 +256,7 @@ Contains UserName、Model、HostName、Primary Ethernet Address、IPv4 Address�
 		<key>2353E6A3-0536-4ADA-8936-B2AEC1E72656</key>
 		<dict>
 			<key>xpos</key>
-			<real>105</real>
+			<real>100</real>
 			<key>ypos</key>
 			<real>120</real>
 		</dict>
@@ -277,7 +277,7 @@ Contains UserName、Model、HostName、Primary Ethernet Address、IPv4 Address�
 		<key>F6EDB591-1C8F-42F0-93A1-752E94140C67</key>
 		<dict>
 			<key>xpos</key>
-			<real>325</real>
+			<real>350</real>
 			<key>ypos</key>
 			<real>120</real>
 		</dict>
@@ -287,7 +287,7 @@ Contains UserName、Model、HostName、Primary Ethernet Address、IPv4 Address�
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.7</string>
+	<string>1.8</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/about-mac</string>
 </dict>
