@@ -1185,7 +1185,52 @@ fi</string>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
-	<array/>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>{{title}}
+{{link}}</string>
+				<key>required</key>
+				<true/>
+				<key>trim</key>
+				<true/>
+				<key>verticalsize</key>
+				<integer>9</integer>
+			</dict>
+			<key>description</key>
+			<string>模版中变量参见工蜂API，这里列举常见变量
+example:{{title}},{{state}},{{description}}</string>
+			<key>label</key>
+			<string>MR拷贝模版</string>
+			<key>type</key>
+			<string>textarea</string>
+			<key>variable</key>
+			<string>mr_links_copy_text</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string></string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<false/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>比如tks.同样适用于一键拷贝所有MR</string>
+			<key>label</key>
+			<string>MR拷贝结束语</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>mr_links_copy_text_footer</string>
+		</dict>
+	</array>
 	<key>variables</key>
 	<dict>
 		<key>access_token_1</key>
@@ -1200,8 +1245,6 @@ fi</string>
 		<string></string>
 		<key>base_url_3</key>
 		<string></string>
-		<key>mr_links_copy_text</key>
-		<string>辛苦处理下</string>
 		<key>per_page</key>
 		<string>20</string>
 		<key>score_1</key>
@@ -1211,17 +1254,17 @@ fi</string>
 	</dict>
 	<key>variablesdontexport</key>
 	<array>
-		<string>access_token_2</string>
+		<string>base_url_3</string>
 		<string>base_url_2</string>
 		<string>base_url_1</string>
 		<string>access_token_3</string>
 		<string>access_token_1</string>
 		<string>score_2</string>
 		<string>score_1</string>
-		<string>base_url_3</string>
+		<string>access_token_2</string>
 	</array>
 	<key>version</key>
-	<string>1.14</string>
+	<string>1.15</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/git-code</string>
 </dict>

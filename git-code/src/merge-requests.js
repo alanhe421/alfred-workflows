@@ -2,9 +2,9 @@
  * usage
  * /usr/local/bin/node ./merge-requests.js
  */
-const { utils, http } = require('@stacker/alfred-utils');
+const { utils, http, Workflow } = require('@stacker/alfred-utils');
 const [, , query] = process.argv;
-
+const wf = new Workflow();
 (async function () {
   const items = await searchMergeRequests(
     process.env.token,
@@ -12,21 +12,19 @@ const [, , query] = process.argv;
     process.env.projectId,
     process.env.projectName
   );
-  if (items.length > 0) {
-    utils.printScriptFilter({
-      items: utils.filterItemsBy(items, query, 'title', 'subtitle')
-    });
-  } else {
-    utils.printScriptFilter({
-      items: [
-        utils.buildItem({
-          title: `No Opened Merge Requests for ${process.env.projectName}`,
-          subtitle: `Goto ${process.env.baseUrl}/${process.env.projectName}/merge_requests`,
-          arg: `${process.env.baseUrl}/${process.env.projectName}/merge_requests`
-        })
-      ]
-    });
-  }
+  items.map((item) =>
+    wf.addWorkflowItem({
+      item
+    })
+  );
+  wf.filterWorkflowItemsBy(query, ['title', 'subtitle'], {
+    item: {
+      title: `No Opened Merge Requests for ${process.env.projectName}`,
+      subtitle: `Goto ${process.env.baseUrl}/${process.env.projectName}/merge_requests`,
+      arg: `${process.env.baseUrl}/${process.env.projectName}/merge_requests`
+    }
+  });
+  wf.run();
 })();
 
 async function searchMergeRequests(token, baseUrl, projectId, projectName) {
@@ -61,20 +59,17 @@ async function searchMergeRequests(token, baseUrl, projectId, projectName) {
         autocomplete: item.title,
         text: {
           largetype: item.description,
-          copy: appendCopyText(
-            `- ${item.title}\n  ${baseUrl}/${projectName}/merge_requests/${item.iid}\n`
-          )
-        },
+          copy:appendFooterCopyText(buildCopyText(baseUrl, projectName, item)),
         arg: `${baseUrl}/${projectName}/merge_requests/${item.iid}`
-      })
+      }})
     );
 
     let allMRLinks = res.data
       .map(
         (item) =>
-          `- ${item.title}\n  ${baseUrl}/${projectName}/merge_requests/${item.iid}`
+        buildCopyText(baseUrl,projectName,item)
       )
-      .join('\n');
+      .join('\n\n');
 
     items.unshift(
       utils.buildItem({
@@ -83,7 +78,7 @@ async function searchMergeRequests(token, baseUrl, projectId, projectName) {
         autocomplete: 'Copy All MRs',
         text: {
           largetype: allMRLinks,
-          copy: appendCopyText(allMRLinks)
+          copy: appendFooterCopyText(allMRLinks)
         },
         arg: `${baseUrl}/${projectName}/merge_requests/`
       })
@@ -98,11 +93,19 @@ async function searchMergeRequests(token, baseUrl, projectId, projectName) {
     ];
   }
 }
-function appendCopyText(text) {
-  if (process.env.mr_links_copy_text &&
-    process.env.mr_links_copy_text.trim()) {
-    text += `\n\n${process.env.mr_links_copy_text.trim()}`;
+function buildCopyText(baseUrl, projectName, item) {
+  return process.env.mr_links_copy_text.replace(/{{(.*?)}}/g, function (match, key) {
+    if (key === 'link') {
+      return `${baseUrl}/${projectName}/merge_requests/${item.iid}`;
+    }
+    return item[key] || match;
+  });
+}
+
+// {var:mr_link_copy_text_footer}
+function appendFooterCopyText(text) {
+  if (process.env.mr_links_copy_text_footer) {
+    text += `\n\n\n${process.env.mr_links_copy_text_footer}`;
   }
   return text;
 }
-
