@@ -148,7 +148,7 @@ P.S.: 使用这些Workflow的前提是已购买[Powerpack](https://www.alfredapp
 ### 17. [Git Code](https://github.com/alanhg/alfred-workflows/tree/master/git-code)
 > TGit Search
 
-![](https://img.shields.io/badge/version-v1.14-green?style=for-the-badge)
+![](https://img.shields.io/badge/version-v1.15-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/git-code/Git%20Code.alfredworkflow)
 [![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/git-code/src/info.plist)
 
