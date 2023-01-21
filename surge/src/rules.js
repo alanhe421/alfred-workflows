@@ -19,7 +19,7 @@ function isSelectedRule(rule, totalConfContent) {
   if (!totalConfContent) {
     return '';
   }
-  return totalConfContent.match(new RegExp(`# *${escapeRegexMeta(rule)}`))
+  return !totalConfContent.match(new RegExp(`# *${escapeRegexMeta(rule)}`))
 }
 
 async function main() {
