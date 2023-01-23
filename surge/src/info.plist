@@ -213,6 +213,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>A6EDFDEB-1846-4C23-B96C-E307F0217376</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E9460C86-1ECB-4B7A-AC26-9E3C9217A842</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>A8B7F4BE-AC75-4422-824F-24CE3504A736</key>
 		<array>
 			<dict>
@@ -1083,6 +1096,19 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>path</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.revealfile</string>
+			<key>uid</key>
+			<string>7C07A059-1788-425B-B78F-E0E083008564</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -1130,19 +1156,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>path</key>
-				<string></string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.revealfile</string>
-			<key>uid</key>
-			<string>7C07A059-1788-425B-B78F-E0E083008564</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argument</key>
 				<string>{var:CONF_FILE_LOCATION}/{query}.conf</string>
 				<key>passthroughargument</key>
@@ -1166,7 +1179,7 @@
 				<key>externaltriggerid</key>
 				<string>rules</string>
 				<key>passinputasargument</key>
-				<false/>
+				<true/>
 				<key>passvariables</key>
 				<true/>
 				<key>workflowbundleid</key>
@@ -1248,6 +1261,21 @@
 			<string>A8B7F4BE-AC75-4422-824F-24CE3504A736</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>availableviaurlhandler</key>
+				<false/>
+				<key>triggerid</key>
+				<string>modules</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.external</string>
+			<key>uid</key>
+			<string>A6EDFDEB-1846-4C23-B96C-E307F0217376</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1447,6 +1475,13 @@ Surge Mac 4.0.0、Surge iOS 4.4.0开始提供HTTP API, 即该版本之前的均�
 			<key>ypos</key>
 			<real>840</real>
 		</dict>
+		<key>A6EDFDEB-1846-4C23-B96C-E307F0217376</key>
+		<dict>
+			<key>xpos</key>
+			<real>30</real>
+			<key>ypos</key>
+			<real>1245</real>
+		</dict>
 		<key>A700346D-23C4-4082-B08E-5310676FC7B1</key>
 		<dict>
 			<key>xpos</key>
@@ -1518,9 +1553,9 @@ Surge Mac 4.0.0、Surge iOS 4.4.0开始提供HTTP API, 即该版本之前的均�
 			<key>note</key>
 			<string>module</string>
 			<key>xpos</key>
-			<real>135</real>
+			<real>175</real>
 			<key>ypos</key>
-			<real>1055</real>
+			<real>1100</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
@@ -1571,7 +1606,7 @@ Surge Mac 4.0.0、Surge iOS 4.4.0开始提供HTTP API, 即该版本之前的均�
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.21</string>
+	<string>1.22</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/surge</string>
 </dict>
