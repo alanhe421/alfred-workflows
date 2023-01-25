@@ -379,6 +379,7 @@ I developed the following SDK to improve workflow development efficiency.
 
 Welcome ➡️ [Discussion](https://github.com/alanhg/alfred-workflows/discussions)🔥
 
+
 ## Sponsor
 
 - Star this repo 🌟 ☝️
@@ -392,6 +393,8 @@ Welcome ➡️ [Discussion](https://github.com/alanhg/alfred-workflows/discussio
 ## Subscribe & Communication
 
 [![](https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@alanhg)
+
+[![](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/channel/UCMl6n5C2xF34wsnDkpw1TKA)
 
 ## Contributors
 
