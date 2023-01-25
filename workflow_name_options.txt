@@ -5,6 +5,7 @@
 - AppleScript Tools
 - Batch Import Workflows
 - Bluetooth Manager
+- Brightness Control
 - Clipboard History
 - Compress
 - ConvertIO
