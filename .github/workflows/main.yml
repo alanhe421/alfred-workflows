@@ -85,5 +85,11 @@ jobs:
     steps:
       - name: Contribute List
         uses: akhilmhdh/contributors-readme-action@v2.3.6
+        readme_path: README.md
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Contribute List CN
+        uses: akhilmhdh/contributors-readme-action@v2.3.6
+        readme_path: README-zh.md
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
