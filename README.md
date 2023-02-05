@@ -409,6 +409,7 @@ Welcome ➡️ [Discussion](https://github.com/alanhg/alfred-workflows/discussio
 </a>
 
 ## Contributors
+Thanks goes to these wonderful people:
 
 <!-- readme: collaborators,contributors -start -->
 <table>
