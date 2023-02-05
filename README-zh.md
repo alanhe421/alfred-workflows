@@ -408,7 +408,23 @@ P.S.: 使用这些Workflow的前提是已购买[Powerpack](https://www.alfredapp
 ## 贡献者
 谢谢大佬们
 <!-- readme: collaborators,contributors -start -->
-
+<table>
+<tr>
+    <td align="center">
+        <a href="https://github.com/alanhg">
+            <img src="https://avatars.githubusercontent.com/u/9245110?v=4" width="100;" alt="alanhg"/>
+            <br />
+            <sub><b>Alan.He</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/psychopasss">
+            <img src="https://avatars.githubusercontent.com/u/11738089?v=4" width="100;" alt="psychopasss"/>
+            <br />
+            <sub><b>Psycho Pass</b></sub>
+        </a>
+    </td></tr>
+</table>
 <!-- readme: collaborators,contributors -end -->
 
 ## 其他Workflows推荐
