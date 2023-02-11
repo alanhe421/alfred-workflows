@@ -8,6 +8,19 @@
 	<string>Self-Dev</string>
 	<key>connections</key>
 	<dict>
+		<key>07CE0A60-C3F9-4C27-BEF5-377D2865A9E3</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>73EACBF7-1B28-4095-84F9-9686EF64E096</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>0BC8DF28-40AD-4943-B85C-A1114C75A9A2</key>
 		<array>
 			<dict>
@@ -114,6 +127,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>73EACBF7-1B28-4095-84F9-9686EF64E096</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>927D3D7C-7E7E-440E-8F66-BA7FFFC8A5A2</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>8A3CBA76-9DB4-41ED-A00D-E4F4638026C1</key>
 		<array>
 			<dict>
@@ -131,6 +157,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>B378C189-93C5-4183-9074-AC0A03C98F9B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>927D3D7C-7E7E-440E-8F66-BA7FFFC8A5A2</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F01B84E1-80CC-4B22-AC74-C5B75D5CC433</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -166,6 +205,31 @@
 				<false/>
 			</dict>
 		</array>
+		<key>C2D5D50F-9A62-44BD-9FE4-2B1B58236E6D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>CCEFAB73-E689-4074-B0A6-DC872FE5A538</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>28D175AB-E3A9-43AC-AF72-808F5EB943C2</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>DDE33C83-6DFB-4A39-9192-CD93B7930812</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>CBD383F3-AEDA-4416-B5EC-E0A6984147D4</key>
 		<array>
 			<dict>
@@ -184,6 +248,29 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>C157D1E4-BF04-4FC9-AE51-AEF67C3A3ADD</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>F01B84E1-80CC-4B22-AC74-C5B75D5CC433</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>C2D5D50F-9A62-44BD-9FE4-2B1B58236E6D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>C7FF401B-4E42-4D93-83E7-DFA7F6611D24</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -325,32 +412,13 @@ end run</string>
 				</array>
 				<key>elselabel</key>
 				<string>else</string>
+				<key>hideelse</key>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
 			<string>C157D1E4-BF04-4FC9-AE51-AEF67C3A3ADD</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string></string>
-				<key>title</key>
-				<string>Please select a gif!</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>69D9815D-9617-4900-86F5-6A004D56224F</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -383,6 +451,27 @@ end run</string>
 				<key>removeextension</key>
 				<false/>
 				<key>text</key>
+				<string></string>
+				<key>title</key>
+				<string>Please select a gif!</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>69D9815D-9617-4900-86F5-6A004D56224F</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
 				<string>{query}</string>
 				<key>title</key>
 				<string>Compressed</string>
@@ -393,51 +482,6 @@ end run</string>
 			<string>1D2B0594-5614-4057-96C7-D77E0ED863E4</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>{query}</string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict>
-					<key>filename</key>
-					<string>{query}</string>
-				</dict>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>1583322E-6CC6-4140-A030-A17980C70E27</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>query=$(echo {query} | sed -e 's/\r//g')
-
-curl --user api:$api_key --data-binary "@$query" "https://api.tinify.com/shrink" | /usr/local/bin/jq -r '.output.url'</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>117C083C-CACD-4FD5-9198-6B9FF3B66CF4</string>
-			<key>version</key>
-			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -489,6 +533,51 @@ end run</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>filename</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>1583322E-6CC6-4140-A030-A17980C70E27</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>query=$(echo {query} | sed -e 's/\r//g')
+
+curl --user api:$api_key --data-binary "@$query" "https://api.tinify.com/shrink" | /usr/local/bin/jq -r '.output.url'</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>117C083C-CACD-4FD5-9198-6B9FF3B66CF4</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>conditions</key>
 				<array>
 					<dict>
@@ -508,11 +597,34 @@ end run</string>
 				</array>
 				<key>elselabel</key>
 				<string>else</string>
+				<key>hideelse</key>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
 			<string>8A3CBA76-9DB4-41ED-A00D-E4F4638026C1</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>filetypes</key>
+				<array>
+					<string>org.webmproject.webp</string>
+					<string>public.jpeg</string>
+					<string>public.png</string>
+				</array>
+				<key>name</key>
+				<string>Image compress</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.action</string>
+			<key>uid</key>
+			<string>CBD383F3-AEDA-4416-B5EC-E0A6984147D4</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -572,176 +684,477 @@ echo {query}</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string></string>
+				<key>title</key>
+				<string>Compressed</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>CCEFAB73-E689-4074-B0A6-DC872FE5A538</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>fixedorder</key>
+				<false/>
+				<key>items</key>
+				<string>[{"title":"mov","arg":"mov"},{"title":"mp4","arg":"mp4"}]</string>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string></string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.listfilter</string>
+			<key>uid</key>
+			<string>927D3D7C-7E7E-440E-8F66-BA7FFFC8A5A2</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>acceptsmulti</key>
 				<integer>0</integer>
 				<key>filetypes</key>
 				<array>
-					<string>org.webmproject.webp</string>
-					<string>public.jpeg</string>
-					<string>public.png</string>
+					<string>com.apple.quicktime-movie</string>
+					<string>public.mpeg-4</string>
 				</array>
 				<key>name</key>
-				<string>Image compress</string>
+				<string>Video compress</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.action</string>
 			<key>uid</key>
-			<string>CBD383F3-AEDA-4416-B5EC-E0A6984147D4</string>
+			<string>07CE0A60-C3F9-4C27-BEF5-377D2865A9E3</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>suffix={query}
+full_path=$filepath
+pth=$( echo ${full_path%/*} )
+d=`date +%F-%H%M%S`
+file_name="${full_path##*/}"
+file="${file_name%.*}"
+target="$pth/$file-opt.$suffix"
+
+crf=$(echo "($scale * 51 + 0.5) / 1" | bc -l | xargs printf "%.0f")
+
+ffmpeg -i "$filepath" -c:v libx264 -crf $crf -c:a copy -loglevel error "$target"
+
+echo -n $?</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>F01B84E1-80CC-4B22-AC74-C5B75D5CC433</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>0</string>
+						<key>outputlabel</key>
+						<string></string>
+						<key>uid</key>
+						<string>28D175AB-E3A9-43AC-AF72-808F5EB943C2</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+				<key>hideelse</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>C2D5D50F-9A62-44BD-9FE4-2B1B58236E6D</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>filepath</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>73EACBF7-1B28-4095-84F9-9686EF64E096</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string></string>
+				<key>title</key>
+				<string>Compressed fail</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>DDE33C83-6DFB-4A39-9192-CD93B7930812</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>just waitting for moment</string>
+				<key>title</key>
+				<string>Compressing</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>C7FF401B-4E42-4D93-83E7-DFA7F6611D24</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>Compress your GIF
+	<string>&gt; Compress your GIF/Mov/MP4, support scale to convert compress ratio
 
 
-## install
+## requirement
 
-- brew install gifsicle
+### GIF
 
-if you need image-compress
+`brew install gifsicle`
 
-- brew install jq
-- visit https://tinypng.com/developers, get your api key</string>
+
+### Image
+
+`brew install jq`
+
+visit https://tinypng.com/developers, get your api key
+
+tinypng pricing
+
+![https://i.imgur.com/NQTEs5s.jpg](https://i.imgur.com/NQTEs5s.jpg)
+
+### Mov/Mp4
+
+`brew install ffmpeg`</string>
 	<key>uidata</key>
 	<dict>
+		<key>07CE0A60-C3F9-4C27-BEF5-377D2865A9E3</key>
+		<dict>
+			<key>xpos</key>
+			<real>55</real>
+			<key>ypos</key>
+			<real>880</real>
+		</dict>
 		<key>0BC8DF28-40AD-4943-B85C-A1114C75A9A2</key>
 		<dict>
 			<key>xpos</key>
-			<integer>50</integer>
+			<real>50</real>
 			<key>ypos</key>
-			<integer>580</integer>
+			<real>470</real>
 		</dict>
 		<key>117C083C-CACD-4FD5-9198-6B9FF3B66CF4</key>
 		<dict>
 			<key>note</key>
 			<string>upload and compress</string>
 			<key>xpos</key>
-			<integer>715</integer>
+			<real>715</real>
 			<key>ypos</key>
-			<integer>510</integer>
+			<real>510</real>
 		</dict>
 		<key>1583322E-6CC6-4140-A030-A17980C70E27</key>
 		<dict>
 			<key>xpos</key>
-			<integer>595</integer>
+			<real>595</real>
 			<key>ypos</key>
-			<integer>510</integer>
+			<real>510</real>
 		</dict>
 		<key>19447271-B75B-485D-98B1-F46B39B99B9E</key>
 		<dict>
 			<key>note</key>
 			<string>downlad</string>
 			<key>xpos</key>
-			<integer>1125</integer>
+			<real>1125</real>
 			<key>ypos</key>
-			<integer>710</integer>
+			<real>710</real>
 		</dict>
 		<key>1B258138-E893-4EB1-BBAF-0767B6496A9E</key>
 		<dict>
 			<key>xpos</key>
-			<integer>965</integer>
+			<real>965</real>
 			<key>ypos</key>
-			<integer>75</integer>
+			<real>75</real>
 		</dict>
 		<key>1D2B0594-5614-4057-96C7-D77E0ED863E4</key>
 		<dict>
 			<key>xpos</key>
-			<integer>935</integer>
+			<real>935</real>
 			<key>ypos</key>
-			<integer>435</integer>
+			<real>435</real>
 		</dict>
 		<key>36314461-8FEE-479B-97F5-C9EFC23E8329</key>
 		<dict>
 			<key>xpos</key>
-			<integer>715</integer>
+			<real>715</real>
 			<key>ypos</key>
-			<integer>65</integer>
+			<real>65</real>
 		</dict>
 		<key>401D924A-DF04-4FB7-BAE2-1D042EBAC660</key>
 		<dict>
 			<key>xpos</key>
-			<integer>45</integer>
+			<real>45</real>
 			<key>ypos</key>
-			<integer>90</integer>
+			<real>90</real>
 		</dict>
 		<key>4A80E415-C55B-459A-8FF8-6372696BD8D8</key>
 		<dict>
 			<key>note</key>
 			<string>get selection</string>
 			<key>xpos</key>
-			<integer>270</integer>
+			<real>265</real>
 			<key>ypos</key>
-			<integer>575</integer>
+			<real>440</real>
 		</dict>
 		<key>52EB62D9-B694-490C-99F7-B16141A2550D</key>
 		<dict>
 			<key>note</key>
 			<string>get selection</string>
 			<key>xpos</key>
-			<integer>280</integer>
+			<real>280</real>
 			<key>ypos</key>
-			<integer>90</integer>
+			<real>90</real>
 		</dict>
 		<key>69D9815D-9617-4900-86F5-6A004D56224F</key>
 		<dict>
 			<key>xpos</key>
-			<integer>700</integer>
+			<real>700</real>
 			<key>ypos</key>
-			<integer>320</integer>
+			<real>320</real>
+		</dict>
+		<key>73EACBF7-1B28-4095-84F9-9686EF64E096</key>
+		<dict>
+			<key>xpos</key>
+			<real>255</real>
+			<key>ypos</key>
+			<real>905</real>
 		</dict>
 		<key>8A3CBA76-9DB4-41ED-A00D-E4F4638026C1</key>
 		<dict>
 			<key>xpos</key>
-			<integer>490</integer>
+			<real>490</real>
 			<key>ypos</key>
-			<integer>635</integer>
+			<real>635</real>
+		</dict>
+		<key>927D3D7C-7E7E-440E-8F66-BA7FFFC8A5A2</key>
+		<dict>
+			<key>xpos</key>
+			<real>380</real>
+			<key>ypos</key>
+			<real>875</real>
 		</dict>
 		<key>B378C189-93C5-4183-9074-AC0A03C98F9B</key>
 		<dict>
 			<key>xpos</key>
-			<integer>710</integer>
+			<real>710</real>
 			<key>ypos</key>
-			<integer>745</integer>
+			<real>745</real>
 		</dict>
 		<key>C157D1E4-BF04-4FC9-AE51-AEF67C3A3ADD</key>
 		<dict>
 			<key>xpos</key>
-			<integer>495</integer>
+			<real>495</real>
 			<key>ypos</key>
-			<integer>250</integer>
+			<real>250</real>
+		</dict>
+		<key>C2D5D50F-9A62-44BD-9FE4-2B1B58236E6D</key>
+		<dict>
+			<key>xpos</key>
+			<real>860</real>
+			<key>ypos</key>
+			<real>895</real>
+		</dict>
+		<key>C7FF401B-4E42-4D93-83E7-DFA7F6611D24</key>
+		<dict>
+			<key>xpos</key>
+			<real>845</real>
+			<key>ypos</key>
+			<real>1060</real>
 		</dict>
 		<key>CBD383F3-AEDA-4416-B5EC-E0A6984147D4</key>
 		<dict>
 			<key>xpos</key>
-			<integer>60</integer>
+			<real>65</real>
 			<key>ypos</key>
-			<integer>875</integer>
+			<real>660</real>
+		</dict>
+		<key>CCEFAB73-E689-4074-B0A6-DC872FE5A538</key>
+		<dict>
+			<key>xpos</key>
+			<real>970</real>
+			<key>ypos</key>
+			<real>805</real>
+		</dict>
+		<key>DDE33C83-6DFB-4A39-9192-CD93B7930812</key>
+		<dict>
+			<key>xpos</key>
+			<real>975</real>
+			<key>ypos</key>
+			<real>935</real>
 		</dict>
 		<key>EA2FEFE3-CA74-4BBD-9ABE-B4442B37E69B</key>
 		<dict>
 			<key>xpos</key>
-			<integer>55</integer>
+			<real>50</real>
 			<key>ypos</key>
-			<integer>320</integer>
+			<real>265</real>
+		</dict>
+		<key>F01B84E1-80CC-4B22-AC74-C5B75D5CC433</key>
+		<dict>
+			<key>xpos</key>
+			<real>675</real>
+			<key>ypos</key>
+			<real>885</real>
 		</dict>
 	</dict>
-	<key>variables</key>
-	<dict>
-		<key>api_key</key>
-		<string></string>
-		<key>colors</key>
-		<string>256</string>
-		<key>scale</key>
-		<string>0.8</string>
-	</dict>
-	<key>variablesdontexport</key>
+	<key>userconfigurationconfig</key>
 	<array>
-		<string>api_key</string>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string></string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<true/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string></string>
+			<key>label</key>
+			<string>TinyPNG API Key</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>api_key</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>256</string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<true/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string></string>
+			<key>label</key>
+			<string>Colors</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>colors</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>0.4</string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<true/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>0-1</string>
+			<key>label</key>
+			<string>Compress Ratio</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>scale</string>
+		</dict>
 	</array>
+	<key>variablesdontexport</key>
+	<array/>
 	<key>version</key>
-	<string>2.0</string>
+	<string>3.0</string>
 	<key>webaddress</key>
-	<string>https://1991421.cn</string>
+	<string>https://github.com/alanhg/alfred-workflows/tree/master/compress-gif</string>
 </dict>
 </plist>
