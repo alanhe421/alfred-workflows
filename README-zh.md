@@ -47,7 +47,7 @@ P.S.: 使用这些Workflow的前提是已购买[Powerpack](https://www.alfredapp
 
 
 ### 4. [AppID](https://github.com/alanhg/alfred-workflows/tree/master/appid)
-> Show ID of installed apps
+> Show ID, Version, Icon of installed apps
 
 ![](https://img.shields.io/badge/version-v1.8-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/appid/AppID.alfredworkflow)
