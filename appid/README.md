@@ -1,4 +1,4 @@
-> Getting Bundle ID of apps
+> Getting Bundle ID, Release Version Number, App icon of apps
 
 ## Requirement
 
@@ -13,7 +13,7 @@
 	- `App ID` get id of app, type `enter` to copy
 	- `App Version` get version of app，type `enter` to copy
     - `App Name` get name of app，type `enter` to copy
-    - `App Icon` copy icon of app, type `command enter` to reveal in finder.
+    - `App ICON` copy icon of app, type `command enter` to reveal in finder.
 
 
 

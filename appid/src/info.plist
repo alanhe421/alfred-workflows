@@ -219,7 +219,7 @@
 	<key>createdby</key>
 	<string>Alan He</string>
 	<key>description</key>
-	<string>Show ID of installed apps</string>
+	<string>Show ID, Version, Icon of installed apps</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
@@ -776,7 +776,7 @@ fi</string>
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>&gt; Getting Bundle ID of apps
+	<string>&gt; Getting Bundle ID, Release Version Number, App icon of apps
 
 ## Requirement
 
@@ -791,7 +791,7 @@ fi</string>
 	- `App ID` get id of app, type `enter` to copy
 	- `App Version` get version of app，type `enter` to copy
     - `App Name` get name of app，type `enter` to copy
-    - `App Icon` copy icon of app, type `command enter` to reveal in finder.</string>
+    - `App ICON` copy icon of app, type `command enter` to reveal in finder.</string>
 	<key>uidata</key>
 	<dict>
 		<key>00FD277E-4F27-40C6-8983-5115873E955C</key>
