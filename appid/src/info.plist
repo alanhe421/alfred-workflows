@@ -742,7 +742,7 @@ fi</string>
 					<string>com.apple.application-bundle</string>
 				</array>
 				<key>name</key>
-				<string>App Icon</string>
+				<string>App ICON</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.action</string>
@@ -780,7 +780,7 @@ fi</string>
 
 ## Requirement
 
-brew install node
+`brew install node`
 
 ## Usage
 
@@ -948,7 +948,7 @@ brew install node
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.7</string>
+	<string>1.8</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/appid</string>
 </dict>

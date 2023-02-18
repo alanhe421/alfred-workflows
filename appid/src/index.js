@@ -4,9 +4,11 @@
  * usage
  * /usr/local/bin/node ./index.js {query}
  */
-const { http, Workflow, utils } = require('@stacker/alfred-utils');
-const { execSync } = require('child_process');
+const {Workflow, utils} = require('@stacker/alfred-utils');
+const {execSync} = require('child_process');
 const path = require('path');
+const fs = require('fs');
+const plist = require('plist');
 const [, , action, query] = process.argv;
 const wf = new Workflow();
 
@@ -19,15 +21,7 @@ const wf = new Workflow();
 })();
 
 function listAppVersions() {
-  const apps = convertToApps(
-    execSync('ls /Applications ', { encoding: 'utf-8' }),
-    '/Applications'
-  ).concat(
-    convertToApps(
-      execSync('ls /Applications/Utilities', { encoding: 'utf-8' }),
-      '/Applications/Utilities'
-    )
-  );
+  const apps = convertToApps(execSync('ls /Applications ', {encoding: 'utf-8'}), '/Applications').concat(convertToApps(execSync('ls /Applications/Utilities', {encoding: 'utf-8'}), '/Applications/Utilities'));
   for (let index = 0; index < apps.length; index++) {
     const command = `mdls -raw -name kMDItemVersion  -name kMDItemAppStoreHasReceipt "${apps[index].path}"`;
     const [receipt, version] = execSync(command, {
@@ -35,13 +29,9 @@ function listAppVersions() {
     }).split('\x00');
     wf.addWorkflowItem({
       item: {
-        title: apps[index].name,
-        icon: {
-          type: 'fileicon',
-          path: apps[index].path
-        },
-        subtitle: version + (receipt === '1' ? '（ from App Store）' : ''),
-        arg: version
+        title: apps[index].name, icon: {
+          type: 'fileicon', path: apps[index].path
+        }, subtitle: version + (receipt === '1' ? '（ from App Store）' : ''), arg: version
       }
     });
   }
@@ -53,11 +43,15 @@ function convertToApps(ouputstr, basePath) {
     .split('\n')
     .filter((item) => item.match(/\.app$/))
     .map((app) => ({
-      name: app,
-      path: path.join(basePath, app)
+      name: app, path: path.join(basePath, app)
     }));
 }
 
 function getAppIconPath(appPath) {
-  utils.log(path.join(appPath, 'Contents/Resources/AppIcon.icns'));
+  let iconName = plist.parse(fs.readFileSync(path.join(appPath, 'Contents/Info.plist'), 'utf8')).CFBundleIconFile;
+  if (path.extname(iconName) === '') {
+    iconName += '.icns';
+  }
+  const iconPath = path.join(appPath, 'Contents/Resources', iconName);
+  utils.log(iconPath);
 }
