@@ -1,0 +1,15 @@
+{
+  "name": "alfred-workflows",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "@stacker/alfred-utils": "^0.1.13",
+    "clipboardy": "^2.3.0"
+  }
+}

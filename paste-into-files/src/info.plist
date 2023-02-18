@@ -35,23 +35,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>3D5CB5DE-8159-4D8C-A051-6392210705F4</key>
+		<key>3A5A92A5-645B-4F8A-AB98-15E4E7F878E6</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>C04D85AE-BAAE-44BA-A9FF-FEE54B3671A0</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>68CE7CF6-540C-4FC8-AF88-9BB3200CA750</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>6C6BF692-790B-4574-BF0C-B626D6DE647B</string>
+				<string>DB607606-49C5-4F92-A925-F150AC4AB5E0</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -64,7 +52,20 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>3D5CB5DE-8159-4D8C-A051-6392210705F4</string>
+				<string>6C6BF692-790B-4574-BF0C-B626D6DE647B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>68E7E523-68BF-40FB-ADC8-B4D2A7593214</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3486ED42-3BF3-414E-B743-89AB7114D06C</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -86,11 +87,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>C04D85AE-BAAE-44BA-A9FF-FEE54B3671A0</key>
+		<key>D2B9D028-E51B-413F-ACBD-C90276FFB239</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>3486ED42-3BF3-414E-B743-89AB7114D06C</string>
+				<string>3A5A92A5-645B-4F8A-AB98-15E4E7F878E6</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -99,8 +100,20 @@
 				<false/>
 			</dict>
 		</array>
-		<key>D2B9D028-E51B-413F-ACBD-C90276FFB239</key>
+		<key>DB607606-49C5-4F92-A925-F150AC4AB5E0</key>
 		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>68E7E523-68BF-40FB-ADC8-B4D2A7593214</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>452EF932-1D1B-4305-83B6-FF1CC1466D1E</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
 			<dict>
 				<key>destinationuid</key>
 				<string>562D30F9-AC34-4227-A3FF-A092B8ECD849</string>
@@ -132,13 +145,14 @@
 				<integer>102</integer>
 				<key>script</key>
 				<string>d=`date +%F-%H%M%S`
-filename="$d.gif"
+filename="$d.$out_image_suffix"
 file="$DEST_DIR/$filename"
 file="${file//\~/$HOME}"
 
-/usr/local/bin/pngpaste $file &amp;&amp; echo $file || echo -n 1</string>
+curl -s -0 "{query}" $file
+echo -n 1</string>
 				<key>scriptargtype</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>scriptfile</key>
 				<string></string>
 				<key>type</key>
@@ -147,9 +161,64 @@ file="${file//\~/$HOME}"
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>C04D85AE-BAAE-44BA-A9FF-FEE54B3671A0</string>
+			<string>68E7E523-68BF-40FB-ADC8-B4D2A7593214</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>pbpaste</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>3A5A92A5-645B-4F8A-AB98-15E4E7F878E6</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>4</integer>
+						<key>matchstring</key>
+						<string>https?://</string>
+						<key>outputlabel</key>
+						<string></string>
+						<key>uid</key>
+						<string>452EF932-1D1B-4305-83B6-FF1CC1466D1E</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+				<key>hideelse</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>DB607606-49C5-4F92-A925-F150AC4AB5E0</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -221,34 +290,43 @@ end run</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>conditions</key>
-				<array>
-					<dict>
-						<key>inputstring</key>
-						<string></string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>4</integer>
-						<key>matchstring</key>
-						<string>class PNGf</string>
-						<key>outputlabel</key>
-						<string></string>
-						<key>uid</key>
-						<string>68CE7CF6-540C-4FC8-AF88-9BB3200CA750</string>
-					</dict>
-				</array>
-				<key>elselabel</key>
-				<string>else</string>
-				<key>hideelse</key>
-				<false/>
+				<key>path</key>
+				<string></string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.utility.conditional</string>
+			<string>alfred.workflow.action.revealfile</string>
 			<key>uid</key>
-			<string>3D5CB5DE-8159-4D8C-A051-6392210705F4</string>
+			<string>25B6709D-C550-4798-B2FE-CE4610ABE4A6</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>d=`date +%F-%H%M%S`
+filename="$d.$out_image_suffix"
+file="$DEST_DIR/$filename"
+file="${file//\~/$HOME}"
+
+/usr/local/bin/pngpaste $file &amp;&amp; echo $file || echo -n 1</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>6C6BF692-790B-4574-BF0C-B626D6DE647B</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -282,57 +360,16 @@ end run</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>d=`date +%F-%H%M%S`
-filename="$d.jpeg"
-file="$DEST_DIR/$filename"
-file="${file//\~/$HOME}"
-
-/usr/local/bin/pngpaste $file &amp;&amp; echo $file || echo -n 1</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>6C6BF692-790B-4574-BF0C-B626D6DE647B</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>path</key>
-				<string></string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.revealfile</string>
-			<key>uid</key>
-			<string>25B6709D-C550-4798-B2FE-CE4610ABE4A6</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 	</array>
 	<key>readme</key>
-	<string>paste into files
+	<string>&gt; paste into files
 
-1. paste into image file with jpeg suffix
-2. gif support
+1. paste into image file with jpeg or png suffix, support user configuration
+2. paste into files from url
 
-## install
+## requirement
 
-1. brew install pngpaste</string>
+`brew install pngpaste`</string>
 	<key>uidata</key>
 	<dict>
 		<key>25B6709D-C550-4798-B2FE-CE4610ABE4A6</key>
@@ -345,16 +382,18 @@ file="${file//\~/$HOME}"
 		<key>3486ED42-3BF3-414E-B743-89AB7114D06C</key>
 		<dict>
 			<key>xpos</key>
-			<real>825</real>
+			<real>855</real>
 			<key>ypos</key>
-			<real>295</real>
+			<real>565</real>
 		</dict>
-		<key>3D5CB5DE-8159-4D8C-A051-6392210705F4</key>
+		<key>3A5A92A5-645B-4F8A-AB98-15E4E7F878E6</key>
 		<dict>
+			<key>note</key>
+			<string>get clipboard content</string>
 			<key>xpos</key>
-			<real>460</real>
-			<key>ypos</key>
 			<real>265</real>
+			<key>ypos</key>
+			<real>60</real>
 		</dict>
 		<key>4970D682-8B12-40F9-9849-BD67C73AE24C</key>
 		<dict>
@@ -368,27 +407,27 @@ file="${file//\~/$HOME}"
 			<key>note</key>
 			<string>clipboard meta info</string>
 			<key>xpos</key>
-			<real>255</real>
+			<real>610</real>
 			<key>ypos</key>
 			<real>240</real>
+		</dict>
+		<key>68E7E523-68BF-40FB-ADC8-B4D2A7593214</key>
+		<dict>
+			<key>note</key>
+			<string>read file from URL</string>
+			<key>xpos</key>
+			<real>610</real>
+			<key>ypos</key>
+			<real>55</real>
 		</dict>
 		<key>6C6BF692-790B-4574-BF0C-B626D6DE647B</key>
 		<dict>
 			<key>note</key>
 			<string>read pic from clipboard</string>
 			<key>xpos</key>
-			<real>575</real>
+			<real>605</real>
 			<key>ypos</key>
-			<real>360</real>
-		</dict>
-		<key>C04D85AE-BAAE-44BA-A9FF-FEE54B3671A0</key>
-		<dict>
-			<key>note</key>
-			<string>read gif from clipboard</string>
-			<key>xpos</key>
-			<real>580</real>
-			<key>ypos</key>
-			<real>165</real>
+			<real>495</real>
 		</dict>
 		<key>D2B9D028-E51B-413F-ACBD-C90276FFB239</key>
 		<dict>
@@ -397,9 +436,38 @@ file="${file//\~/$HOME}"
 			<key>ypos</key>
 			<real>240</real>
 		</dict>
+		<key>DB607606-49C5-4F92-A925-F150AC4AB5E0</key>
+		<dict>
+			<key>xpos</key>
+			<real>450</real>
+			<key>ypos</key>
+			<real>85</real>
+		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
-	<array/>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>jpeg</string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<true/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>jpeg,png</string>
+			<key>label</key>
+			<string>Image Suffix</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>out_image_suffix</string>
+		</dict>
+	</array>
 	<key>variables</key>
 	<dict>
 		<key>DEST_DIR</key>
@@ -408,7 +476,7 @@ file="${file//\~/$HOME}"
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.1</string>
+	<string>1.2</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/paste-into-files</string>
 </dict>
