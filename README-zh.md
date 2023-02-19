@@ -2,6 +2,8 @@
 
 > 劳动重复即是体力活，so需要以工具来做自动化处理，节约生命。
 
+<img src=".github/assets/alfred.png" width="192">
+
 P.S.: 使用这些Workflow的前提是已购买[Powerpack](https://www.alfredapp.com/powerpack/).
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
