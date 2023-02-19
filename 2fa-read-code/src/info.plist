@@ -113,7 +113,7 @@
 				<key>queuemode</key>
 				<integer>1</integer>
 				<key>runningsubtext</key>
-				<string>reading</string>
+				<string>Reading</string>
 				<key>script</key>
 				<string>/usr/local/bin/node ./index.js</string>
 				<key>scriptargtype</key>
@@ -121,9 +121,9 @@
 				<key>scriptfile</key>
 				<string>test.sh</string>
 				<key>subtext</key>
-				<string>find authentication code</string>
+				<string>Find authentication code</string>
 				<key>title</key>
-				<string>read code from Message</string>
+				<string>Read code from Message</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -283,7 +283,7 @@
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.1</string>
+	<string>1.2</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/2fa-read-code</string>
 </dict>

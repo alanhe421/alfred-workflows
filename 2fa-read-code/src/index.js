@@ -10,10 +10,15 @@ const {execSync} = require('child_process');
 const im = new iMessage();
 const lookBackMinutes = process.env.look_back_minutes;
 
+/**
+ * 读取剪贴板的+数据库有限时间内的验证码记录
+ * 但如果剪贴板的数据是数据库中回车拷贝过来的，属于重复数据，显示上就去掉原数据库里同样记录，进行去重
+ */
 (async function () {
   const messages = await readLatestMessage();
   im.disconnect();
   let items = [];
+  
   const messageFromClipboard = readFromClipboard();
   if (messageFromClipboard) {
     items.push(messageFromClipboard);
@@ -26,6 +31,9 @@ const lookBackMinutes = process.env.look_back_minutes;
       }
       const captcha = readCaptchaFromMessage(msg);
       if (captcha) {
+        if (captcha === messageFromClipboard?.arg) {
+          return res;
+        }
         const subject = readSubjectFromMessage(msg);
         res.push(utils.buildItem({
           title: `${captcha}`,
