@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@stacker/alfred-utils": "^0.1.57",
     "baidu-aip-sdk": "^2.4.6",
     "opencc": "^1.1.3"
   }

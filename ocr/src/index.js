@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const {utils} = require('@stacker/alfred-utils');
 const AipOcrClient = require('baidu-aip-sdk').ocr;
 
 const [, , APP_ID, API_KEY, SECRET_KEY, LANGUAGE] = process.argv;
@@ -20,7 +21,6 @@ const doOCR = new Promise((resolve, reject) => {
       } else {
         resolve(result.words_result.map((item) => item.words).join('\n'));
       }
-      a;
     })
     .catch(function (err) {
       reject('error_msg' + err);
@@ -34,9 +34,9 @@ const doOCR = new Promise((resolve, reject) => {
       const converter = new OpenCC('t2s.json');
       res = await converter.convertPromise(res);
     }
-    console.log(res);
+    utils.log(res);
   } catch (e) {
-    console.log(e);
+    utils.log(e);
   } finally {
     fs.unlinkSync(picPath);
   }
