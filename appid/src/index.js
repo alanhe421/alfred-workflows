@@ -31,7 +31,8 @@ function listAppVersions() {
       item: {
         title: apps[index].name, icon: {
           type: 'fileicon', path: apps[index].path
-        }, subtitle: version + (receipt === '1' ? '（ from App Store）' : ''), arg: version
+        }, subtitle: version + (receipt === '1' ? '（from App Store）' : ''), arg: version,
+        action:{ file:apps[index].path}
       }
     });
   }

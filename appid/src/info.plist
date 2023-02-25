@@ -34,19 +34,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>4000643B-2DB8-40C7-B4BD-8514772DC55A</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>265554E8-8FD4-40ED-B217-D7D1A7B6B020</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>42BBB04B-30C5-49D2-AFA8-D24B9C9FB417</key>
 		<array>
 			<dict>
@@ -270,7 +257,7 @@ apps.each do |app|
   appId = Open3.capture2("osascript -e 'id of app \"#{app}\"'").first
   next if appId == '(null)'
   name = File.basename(app, '.app')
-  script_filter_items.push(title: name, subtitle: appId, arg: appId, icon: { type: 'fileicon', path: app })
+  script_filter_items.push(title: name, subtitle: appId, arg: appId, type:'file:skipcheck',icon: { type: 'fileicon', path: app },action:{ file:app})
 end
 
 puts({ items: script_filter_items }.to_json)</string>
@@ -281,11 +268,11 @@ puts({ items: script_filter_items }.to_json)</string>
 				<key>subtext</key>
 				<string>Show App ID of installed apps</string>
 				<key>title</key>
-				<string>AppID</string>
+				<string>App ID</string>
 				<key>type</key>
 				<integer>2</integer>
 				<key>withspace</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.scriptfilter</string>
@@ -442,140 +429,6 @@ puts({ items: script_filter_items }.to_json)</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>subtext</key>
-				<string>Check for updates and install them if they exist</string>
-				<key>text</key>
-				<string>Update AppID</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>4000643B-2DB8-40C7-B4BD-8514772DC55A</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string># THESE VARIABLES MUST BE SET. SEE THE ONEUPDATER README FOR AN EXPLANATION OF EACH.
-readonly remote_info_plist="https://raw.githubusercontent.com/alanhg/alfred-workflows/master/appid/src/info.plist"
-readonly workflow_url="https://github.com/alanhg/alfred-workflows/raw/master/appid/AppID.alfredworkflow"
-readonly download_type='direct'
-readonly frequency_check='0'
-
-# FROM HERE ON, CODE SHOULD BE LEFT UNTOUCHED!
-function abort {
-  echo "${1}" &gt;&amp;2
-  exit 1
-}
-
-function url_exists {
-  curl --silent --location --output /dev/null --fail --range 0-0 "${1}"
-}
-
-function notification {
-  local -r notificator="$(find . -type f -name 'notificator')"
-
-  if [[ -f "${notificator}" &amp;&amp; "$(/usr/bin/file --brief --mime-type "${notificator}")" == 'text/x-shellscript' ]]; then
-    "${notificator}" --message "${1}" --title "${alfred_workflow_name}" --subtitle "${2:-A new version is available}"
-    return
-  fi
-
-  osascript -e "display notification \"${1}\" with title \"${alfred_workflow_name}\" subtitle \"${2:-A new version is available}\""
-}
-
-# Local sanity checks
-readonly local_info_plist='info.plist'
-readonly local_version="$(/usr/libexec/PlistBuddy -c 'print version' "${local_info_plist}")"
-
-[[ -n "${local_version}" ]] || abort 'You need to set a workflow version in the configuration sheet.'
-[[ "${download_type}" =~ ^(direct|page|github_release)$ ]] || abort "'download_type' (${download_type}) needs to be one of 'direct', 'page', or 'github_release'."
-[[ "${frequency_check}" =~ ^[0-9]+$ ]] || abort "'frequency_check' (${frequency_check}) needs to be a number."
-
-# Check for updates
-if [[ $(find "${local_info_plist}" -mtime +"${frequency_check}"d) ]]; then
-  # Remote sanity check
-  if ! url_exists "${remote_info_plist}"; then
-    abort "'remote_info_plist' (${remote_info_plist}) appears to not be reachable."
-  fi
-
-  readonly tmp_file="$(mktemp)"
-  curl --silent --location --output "${tmp_file}" "${remote_info_plist}"
-  readonly remote_version="$(/usr/libexec/PlistBuddy -c 'print version' "${tmp_file}")"
-  rm "${tmp_file}"
-
-  if [[ "${local_version}" == "${remote_version}" ]]; then
-    touch "${local_info_plist}" # Reset timer by touching local file
-    notification 'You are up to date…' ' '
-    exit 0
-  fi
-
-  if [[ "${download_type}" == 'page' ]]; then
-    notification 'Opening download page…'
-    open "${workflow_url}"
-    exit 0
-  fi
-
-  readonly download_url="$(
-    if [[ "${download_type}" == 'github_release' ]]; then
-      osascript -l JavaScript -e 'function run(argv) { return JSON.parse(argv[0])["assets"].find(asset =&gt; asset["browser_download_url"].endsWith(".alfredworkflow"))["browser_download_url"] }' "$(curl --silent "https://api.github.com/repos/${workflow_url}/releases/latest")"
-    else
-      echo "${workflow_url}"
-    fi
-  )"
-
-  if url_exists "${download_url}"; then
-    notification 'Downloading and installing…'
-    readonly download_name="$(basename "${download_url}")"
-    curl --silent --location --output "${HOME}/Downloads/${download_name}" "${download_url}"
-    open "${HOME}/Downloads/${download_name}"
-  else
-    abort "'workflow_url' (${download_url}) appears to not be reachable."
-  fi
-fi</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>265554E8-8FD4-40ED-B217-D7D1A7B6B020</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>matchmode</key>
-				<integer>0</integer>
-				<key>matchstring</key>
-				<string></string>
-				<key>replacestring</key>
-				<string></string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.replace</string>
-			<key>uid</key>
-			<string>39D9653D-4F4D-4E0E-9B22-22BC23A54697</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argument</key>
 				<string>v{query}</string>
 				<key>passthroughargument</key>
@@ -626,7 +479,7 @@ fi</string>
 				<key>subtext</key>
 				<string>Show version number of installed apps</string>
 				<key>title</key>
-				<string>AppVersion</string>
+				<string>App Version</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -638,6 +491,29 @@ fi</string>
 			<string>73372C83-B363-44A4-A210-51B88F77C9FE</string>
 			<key>version</key>
 			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>node ./index.js appicon '{query}'</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>7D9F7AAF-1F9C-4B98-BA88-D06879CA4A0D</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -655,25 +531,21 @@ fi</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>/usr/local/bin/node ./index.js appicon '{query}'</string>
-				<key>scriptargtype</key>
+				<key>acceptsmulti</key>
 				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
+				<key>filetypes</key>
+				<array>
+					<string>com.apple.application-bundle</string>
+				</array>
+				<key>name</key>
+				<string>App Version</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.script</string>
+			<string>alfred.workflow.trigger.action</string>
 			<key>uid</key>
-			<string>7D9F7AAF-1F9C-4B98-BA88-D06879CA4A0D</string>
+			<string>5B30E91B-47B7-4F83-9119-64675F13B00D</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -701,25 +573,6 @@ fi</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>acceptsmulti</key>
-				<integer>0</integer>
-				<key>filetypes</key>
-				<array>
-					<string>com.apple.application-bundle</string>
-				</array>
-				<key>name</key>
-				<string>App version</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.action</string>
-			<key>uid</key>
-			<string>5B30E91B-47B7-4F83-9119-64675F13B00D</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>tasksettings</key>
 				<dict/>
 				<key>taskuid</key>
@@ -742,7 +595,7 @@ fi</string>
 					<string>com.apple.application-bundle</string>
 				</array>
 				<key>name</key>
-				<string>App ICON</string>
+				<string>App Icon</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.action</string>
@@ -759,7 +612,7 @@ fi</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>/usr/local/bin/node ./index.js appicon '{query}'</string>
+				<string>node ./index.js appicon '{query}'</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -809,27 +662,6 @@ fi</string>
 			<real>280</real>
 			<key>ypos</key>
 			<real>835</real>
-		</dict>
-		<key>265554E8-8FD4-40ED-B217-D7D1A7B6B020</key>
-		<dict>
-			<key>xpos</key>
-			<real>935</real>
-			<key>ypos</key>
-			<real>535</real>
-		</dict>
-		<key>39D9653D-4F4D-4E0E-9B22-22BC23A54697</key>
-		<dict>
-			<key>xpos</key>
-			<real>835</real>
-			<key>ypos</key>
-			<real>565</real>
-		</dict>
-		<key>4000643B-2DB8-40C7-B4BD-8514772DC55A</key>
-		<dict>
-			<key>xpos</key>
-			<real>685</real>
-			<key>ypos</key>
-			<real>535</real>
 		</dict>
 		<key>42BBB04B-30C5-49D2-AFA8-D24B9C9FB417</key>
 		<dict>
@@ -948,7 +780,7 @@ fi</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.8</string>
+	<string>1.10</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/appid</string>
 </dict>
