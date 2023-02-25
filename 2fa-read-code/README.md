@@ -18,6 +18,7 @@
 <!-- more -->
 
 ## screenshots
-![](./screenshot1.png)
+
+![](./screenshot.png)
 
 ![](./screenshot.gif)
