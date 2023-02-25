@@ -21,6 +21,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>7D4C38F6-225B-4831-818D-7EC43E61CA82</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>66ED4BDA-49A8-4A35-ADA9-968AE5D6DD3F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>F6EDB591-1C8F-42F0-93A1-752E94140C67</key>
 		<array/>
 	</dict>
@@ -113,6 +126,48 @@ end tell</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>clean about mac cache</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>7D4C38F6-225B-4831-818D-7EC43E61CA82</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>rm -rf $alfred_workflow_cache/**</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>66ED4BDA-49A8-4A35-ADA9-968AE5D6DD3F</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>&gt; Displays system information about your Mac.
@@ -130,6 +185,22 @@ Contains UserName、Model、HostName、Primary Ethernet Address、IPv4 Address�
 			<key>ypos</key>
 			<real>120</real>
 		</dict>
+		<key>66ED4BDA-49A8-4A35-ADA9-968AE5D6DD3F</key>
+		<dict>
+			<key>note</key>
+			<string>clean cache</string>
+			<key>xpos</key>
+			<real>350</real>
+			<key>ypos</key>
+			<real>275</real>
+		</dict>
+		<key>7D4C38F6-225B-4831-818D-7EC43E61CA82</key>
+		<dict>
+			<key>xpos</key>
+			<real>90</real>
+			<key>ypos</key>
+			<real>275</real>
+		</dict>
 		<key>F6EDB591-1C8F-42F0-93A1-752E94140C67</key>
 		<dict>
 			<key>xpos</key>
@@ -143,7 +214,7 @@ Contains UserName、Model、HostName、Primary Ethernet Address、IPv4 Address�
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.11</string>
+	<string>1.12</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/about-mac</string>
 </dict>
