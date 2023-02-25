@@ -26,7 +26,7 @@
 <!-- more -->
 ## Screenshots
 ![](./screenshot1.png)
-![](./screenshot2.png)
+![](./screenshot22.png)
 ![](./screenshot3.png)
 
 ![](./appid.gif)
