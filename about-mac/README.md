@@ -4,6 +4,7 @@ Contains UserName、Model、HostName、Primary Ethernet Address、IPv4 Address�
 1. type `about` to trigger
 2. ⏎ to copy info
 3. large type support
+4. type `about` and `⌘ ⇧ ⏎ ` to clean workflow's cache
 
 
 

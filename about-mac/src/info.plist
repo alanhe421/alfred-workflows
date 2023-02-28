@@ -20,25 +20,22 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>66ED4BDA-49A8-4A35-ADA9-968AE5D6DD3F</string>
+				<key>modifiers</key>
+				<integer>1179648</integer>
+				<key>modifiersubtext</key>
+				<string>Clean About Mac Cache</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
 		</array>
 		<key>66ED4BDA-49A8-4A35-ADA9-968AE5D6DD3F</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>6582D319-31FD-4FDC-8918-1E4454077CF9</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>7D4C38F6-225B-4831-818D-7EC43E61CA82</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>66ED4BDA-49A8-4A35-ADA9-968AE5D6DD3F</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -142,25 +139,6 @@ end tell</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>Clean About Mac Cache</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>7D4C38F6-225B-4831-818D-7EC43E61CA82</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -203,7 +181,8 @@ Contains UserName、Model、HostName、Primary Ethernet Address、IPv4 Address�
 
 1. type `about` to trigger
 2. ⏎ to copy info
-3. large type support</string>
+3. large type support
+4. type `about` and `⌘ ⇧ ⏎ ` to clean workflow's cache</string>
 	<key>uidata</key>
 	<dict>
 		<key>2353E6A3-0536-4ADA-8936-B2AEC1E72656</key>
@@ -226,13 +205,6 @@ Contains UserName、Model、HostName、Primary Ethernet Address、IPv4 Address�
 			<string>model_cache</string>
 			<key>xpos</key>
 			<real>350</real>
-			<key>ypos</key>
-			<real>275</real>
-		</dict>
-		<key>7D4C38F6-225B-4831-818D-7EC43E61CA82</key>
-		<dict>
-			<key>xpos</key>
-			<real>90</real>
 			<key>ypos</key>
 			<real>275</real>
 		</dict>
