@@ -394,6 +394,9 @@ Welcome ➡️ [Discussion](https://github.com/alanhg/alfred-workflows/discussio
 - Star this repo 🌟 ☝️
 - [Buy me a ☕️ ](https://www.paypal.com/paypalme/alanhe421)
 
+
+<a href="https://www.buymeacoffee.com/alanhg" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" >
+
 ## Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=alanhg/alfred-workflows&type=Date)](https://star-history.com/#alanhg/alfred-workflows&Date)
