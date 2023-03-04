@@ -1,6 +1,8 @@
 > resize according to specified resolution
 
 
+support png,jpeg
+
 ## Usage
 
 1. enter to resize the copy image
