@@ -7,58 +7,60 @@
 const {utils, dateUtils} = require('@stacker/alfred-utils');
 const iMessage = require('./node-imessage');
 const {execSync} = require('child_process');
+const {existsSync} = require("fs");
 const im = new iMessage();
 const lookBackMinutes = process.env.look_back_minutes;
 
-/**
- * 读取剪贴板的+数据库有限时间内的验证码记录
- * 但如果剪贴板的数据是数据库中回车拷贝过来的，属于重复数据，显示上就去掉原数据库里同样记录，进行去重
- */
-(async function () {
-  const messages = await readLatestMessage();
-  im.disconnect();
-  let items = [];
-  
-  const messageFromClipboard = readFromClipboard();
-  if (messageFromClipboard) {
-    items.push(messageFromClipboard);
-  }
-  if (messages.length) {
-    items.push(...messages.reduce((res, messageObj) => {
-      const msg = preProcessMessage(messageObj.text);
-      if (!msg.trim()) {
-        return res;
-      }
-      const captcha = readCaptchaFromMessage(msg);
-      if (captcha) {
-        if (captcha === messageFromClipboard?.arg) {
+  /**
+   * 读取剪贴板的+数据库有限时间内的验证码记录
+   * 但如果剪贴板的数据是数据库中回车拷贝过来的，属于重复数据，显示上就去掉原数据库里同样记录，进行去重
+   */
+  (async function () {
+    utils.useCache();
+
+    const messages = await readLatestMessage();
+    let items = [];
+
+    const messageFromClipboard = readFromClipboard();
+    if (messageFromClipboard) {
+      items.push(messageFromClipboard);
+    }
+    if (messages.length) {
+      items.push(...messages.reduce((res, messageObj) => {
+        const msg = preProcessMessage(messageObj.text);
+        if (!msg.trim()) {
           return res;
         }
-        const subject = readSubjectFromMessage(msg);
-        res.push(utils.buildItem({
-          title: `${captcha}`,
-          subtitle: `${subject ? `Sender：${subject} ` : ''}${dateUtils.formatToCalendar(messageObj.message_date)}，⏎ to Copy`,
-          arg: captcha,
-          text: {
-            largetype: messageObj.text, copy: captcha
+        const captcha = readCaptchaFromMessage(msg);
+        if (captcha) {
+          if (captcha === messageFromClipboard?.arg) {
+            return res;
           }
-        }));
-      }
-      return res;
-    }, []))
-  }
-  if (items.length) {
-    return utils.printScriptFilter({
-      items
-    });
-  } else {
-    utils.printScriptFilter({
-      items: [utils.buildItem({
-        title: 'There is no authentication code', subtitle: '⏎ to view Messages App', arg: 'view_message'
-      })]
-    });
-  }
-})();
+          const subject = readSubjectFromMessage(msg);
+          res.push(utils.buildItem({
+            title: `${captcha}`,
+            subtitle: `${subject ? `Sender：${subject} ` : ''}${dateUtils.formatToCalendar(messageObj.message_date)}，⏎ to Copy`,
+            arg: captcha,
+            text: {
+              largetype: messageObj.text, copy: captcha
+            }
+          }));
+        }
+        return res;
+      }, []))
+    }
+    if (items.length) {
+      return utils.printScriptFilter({
+        items
+      });
+    } else {
+      utils.printScriptFilter({
+        items: [utils.buildItem({
+          title: 'There is no authentication code', subtitle: '⏎ to view Messages App', arg: 'view_message'
+        })]
+      });
+    }
+  })();
 
 function readFromClipboard() {
   const msg = execSync('pbpaste', {encoding: 'utf-8'}).replace(/%$/, '');
@@ -108,8 +110,7 @@ function readSubjectFromMessage(msg) {
 
 function readLatestMessage() {
   return new Promise((resolve) => {
-    im.getDb(function (err, db) {
-      db.all(`
+    const res = im.exec(`
   select
             message.rowid,
             ifnull(handle.uncanonicalized_id, chat.chat_identifier) AS sender,
@@ -140,11 +141,10 @@ function readLatestMessage() {
                     >= datetime('now', '-${lookBackMinutes} minutes', 'localtime')
         order by
             message.date desc
-        limit 100`, function (err, res) {
-        resolve(res);
-      });
-    });
-  });
+        limit 100`);
+
+    resolve(res);
+  })
 }
 
 module.exports = {
