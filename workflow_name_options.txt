@@ -16,6 +16,7 @@
 - Find iPhone
 - Giphy
 - Git Code
+- Resize Image
 - IP Tools
 - Json2TS
 - Local Network
