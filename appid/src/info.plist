@@ -471,7 +471,7 @@ puts({ items: script_filter_items }.to_json)</string>
 				<key>runningsubtext</key>
 				<string>Getting versions of apps in /Applications…</string>
 				<key>script</key>
-				<string>/usr/local/bin/node ./index.js av</string>
+				<string>node ./index.js av</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -672,6 +672,8 @@ puts({ items: script_filter_items }.to_json)</string>
 		</dict>
 		<key>4DFB1BD6-6708-49FD-8E2D-BEEE6DD41196</key>
 		<dict>
+			<key>note</key>
+			<string>save image to clipboard</string>
 			<key>xpos</key>
 			<real>935</real>
 			<key>ypos</key>
@@ -780,7 +782,7 @@ puts({ items: script_filter_items }.to_json)</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.10</string>
+	<string>1.11</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/appid</string>
 </dict>
