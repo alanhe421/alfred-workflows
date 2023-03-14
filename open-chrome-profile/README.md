@@ -1,10 +1,20 @@
-The workflow is using Python 3 to get from the Google Chrome folder all available profiles inside Chrome and will open the selected one in a new window.
+> Easy to open Chrome with selected profile.
+
+
+## Usage
+
+type `chromeprofile` or hotkey`⌘ ⇧ P` when chrome focused.
 
 
 
-![](https://img.shields.io/badge/version-v1.0.0-green?style=for-the-badge)
-[![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/open-chrome-profile/Open.Chrome.Profiles.alfredworkflow)
+idea from https://github.com/Wit4r7/AlfredAutomations. Thanks Wit4r7
+
+
+
+![](https://img.shields.io/badge/version-v0.2-green?style=for-the-badge)
+[![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/open-chrome-profile/Open%20Chrome%20Profile.alfredworkflow)
 [![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/open-chrome-profile/src/info.plist)
+
 
 
 <!-- more -->

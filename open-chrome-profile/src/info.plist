@@ -3,11 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string></string>
+	<string>cn.alanhe.open-chrome-profiles</string>
 	<key>category</key>
-	<string>Internet</string>
+	<string>Self-Dev</string>
 	<key>connections</key>
 	<dict>
+		<key>8CFDFE1E-69E4-4EB8-8605-C9146498E50A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>EFB1F57C-ED91-490B-8F0D-534C3102D07E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>EFB1F57C-ED91-490B-8F0D-534C3102D07E</key>
 		<array>
 			<dict>
@@ -23,15 +36,50 @@
 		</array>
 	</dict>
 	<key>createdby</key>
-	<string>wit4r7</string>
+	<string>Alan He</string>
 	<key>description</key>
 	<string>Get all available chrome profiles and open the selected</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Open Chrome Profiles</string>
+	<string>Open Chrome Profile</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>35</integer>
+				<key>hotmod</key>
+				<integer>1179648</integer>
+				<key>hotstring</key>
+				<string>P</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>com.google.Chrome</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>1</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>8CFDFE1E-69E4-4EB8-8605-C9146498E50A</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -40,17 +88,13 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>query=$1
-
-echo -n $query
-
-/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --args --profile-directory="$query"</string>
+				<string>/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --args --profile-directory="{query}"</string>
 				<key>scriptargtype</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>scriptfile</key>
 				<string></string>
 				<key>type</key>
-				<integer>5</integer>
+				<integer>0</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
@@ -75,7 +119,7 @@ echo -n $query
 				<key>escaping</key>
 				<integer>68</integer>
 				<key>keyword</key>
-				<string>chpr</string>
+				<string>chromeprofile</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -85,42 +129,11 @@ echo -n $query
 				<key>queuemode</key>
 				<integer>1</integer>
 				<key>runningsubtext</key>
-				<string></string>
+				<string>Please Wait</string>
 				<key>script</key>
-				<string>import json
-from pathlib import Path
-home = str(Path.home())
+				<string>[[ -d "${alfred_workflow_cache}" ]] || mkdir "${alfred_workflow_cache}"
 
-
-formatted_results = []
-iconURL='{"type": "fileicon","path": "/Applications/Google Chrome.app"}'
-
-file = open(home + "/Library/Application Support/Google/Chrome/Local State", "r")
-example = file.read()
-file.close()
-
-parsedJSON = json.loads(example)
-profile = parsedJSON['profile']
-profil = profile['info_cache']
-
-for item in profil:
-    result = {
-            "title": str(profil[str(item)]['name']),
-            "arg": str(item),
-            "icon": 'pic'
-        }
-    formatted_results.append(result)
-
-
-values = ','.join(str(v) for v in formatted_results)
-output = '{"items": ['+ values + ']}'
-output = output.replace('pic',iconURL)
-output = output.replace("'",'"')
-output = output.replace('"{"type"','{"type"')
-output = output.replace('}"}','}}')
-
-print(output)
-</string>
+python3 main.py</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -128,9 +141,9 @@ print(output)
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
-				<string>open Chrome profile</string>
+				<string>Open Chrome Profile</string>
 				<key>type</key>
-				<integer>9</integer>
+				<integer>0</integer>
 				<key>withspace</key>
 				<false/>
 			</dict>
@@ -143,22 +156,38 @@ print(output)
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>The workflow is using Python 3 to get from the Google Chrome folder all available profiles inside Chrome and will open the selected one in a new window.</string>
+	<string>&gt; Easy to open Chrome with selected profile.
+
+
+## Usage
+
+type `chromeprofile` or hotkey`⌘ ⇧ P` when chrome focused.
+
+
+
+idea from https://github.com/Wit4r7/AlfredAutomations. Thanks Wit4r7</string>
 	<key>uidata</key>
 	<dict>
+		<key>8CFDFE1E-69E4-4EB8-8605-C9146498E50A</key>
+		<dict>
+			<key>xpos</key>
+			<real>100</real>
+			<key>ypos</key>
+			<real>105</real>
+		</dict>
 		<key>A22E78CF-A512-4A22-896B-E69F343B904F</key>
 		<dict>
 			<key>xpos</key>
-			<real>270</real>
+			<real>495</real>
 			<key>ypos</key>
-			<real>100</real>
+			<real>105</real>
 		</dict>
 		<key>EFB1F57C-ED91-490B-8F0D-534C3102D07E</key>
 		<dict>
 			<key>xpos</key>
-			<real>115</real>
+			<real>290</real>
 			<key>ypos</key>
-			<real>100</real>
+			<real>105</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
@@ -166,8 +195,8 @@ print(output)
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.0.0</string>
+	<string>0.2</string>
 	<key>webaddress</key>
-	<string>https://github.com/Wit4r7</string>
+	<string>https://github.com/alanhg/alfred-workflows/tree/master/open-chrome-profile</string>
 </dict>
 </plist>
