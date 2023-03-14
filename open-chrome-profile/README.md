@@ -7,5 +7,6 @@ The workflow is using Python 3 to get from the Google Chrome folder all availabl
 [![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/open-chrome-profile/src/info.plist)
 
 
-
 <!-- more -->
+
+![screenshot.png](./screenshot.png)
