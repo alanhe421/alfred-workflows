@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string></string>
+	<key>category</key>
+	<string>Internet</string>
+	<key>connections</key>
+	<dict>
+		<key>EFB1F57C-ED91-490B-8F0D-534C3102D07E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>A22E78CF-A512-4A22-896B-E69F343B904F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>wit4r7</string>
+	<key>description</key>
+	<string>Get all available chrome profiles and open the selected</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Open Chrome Profiles</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>query=$1
+
+echo -n $query
+
+/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --args --profile-directory="$query"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>A22E78CF-A512-4A22-896B-E69F343B904F</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>keyword</key>
+				<string>chpr</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>import json
+from pathlib import Path
+home = str(Path.home())
+
+
+formatted_results = []
+iconURL='{"type": "fileicon","path": "/Applications/Google Chrome.app"}'
+
+file = open(home + "/Library/Application Support/Google/Chrome/Local State", "r")
+example = file.read()
+file.close()
+
+parsedJSON = json.loads(example)
+profile = parsedJSON['profile']
+profil = profile['info_cache']
+
+for item in profil:
+    result = {
+            "title": str(profil[str(item)]['name']),
+            "arg": str(item),
+            "icon": 'pic'
+        }
+    formatted_results.append(result)
+
+
+values = ','.join(str(v) for v in formatted_results)
+output = '{"items": ['+ values + ']}'
+output = output.replace('pic',iconURL)
+output = output.replace("'",'"')
+output = output.replace('"{"type"','{"type"')
+output = output.replace('}"}','}}')
+
+print(output)
+</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>open Chrome profile</string>
+				<key>type</key>
+				<integer>9</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>EFB1F57C-ED91-490B-8F0D-534C3102D07E</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>The workflow is using Python 3 to get from the Google Chrome folder all available profiles inside Chrome and will open the selected one in a new window.</string>
+	<key>uidata</key>
+	<dict>
+		<key>A22E78CF-A512-4A22-896B-E69F343B904F</key>
+		<dict>
+			<key>xpos</key>
+			<real>270</real>
+			<key>ypos</key>
+			<real>100</real>
+		</dict>
+		<key>EFB1F57C-ED91-490B-8F0D-534C3102D07E</key>
+		<dict>
+			<key>xpos</key>
+			<real>115</real>
+			<key>ypos</key>
+			<real>100</real>
+		</dict>
+	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
+	<key>variablesdontexport</key>
+	<array/>
+	<key>version</key>
+	<string>1.0.0</string>
+	<key>webaddress</key>
+	<string>https://github.com/Wit4r7</string>
+</dict>
+</plist>
