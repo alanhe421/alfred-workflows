@@ -24,7 +24,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 ## Workflows
 
-<!--workflow-start-->There are 46 workflows
+<!--workflow-start-->There are 47 workflows
 
 ### 1. [2FA-Read Code](https://github.com/alanhg/alfred-workflows/tree/master/2fa-read-code)
 > Read authentication code in your recent messages or current clipboard
@@ -262,7 +262,15 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 [![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/ocr/src/info.plist)
 
 
-### 31. [OpenConnect VPN](https://github.com/alanhg/alfred-workflows/tree/master/openconnect-vpn)
+### 31. [Open Chrome Profiles](https://github.com/alanhg/alfred-workflows/tree/master/open-chrome-profile)
+> Get all available chrome profiles and open the selected
+
+![](https://img.shields.io/badge/version-v1.0.0-green?style=for-the-badge)
+[![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/open-chrome-profile/Open.Chrome.Profiles.alfredworkflow)
+[![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/open-chrome-profile/src/info.plist)
+
+
+### 32. [OpenConnect VPN](https://github.com/alanhg/alfred-workflows/tree/master/openconnect-vpn)
 > Connect to VPN
 
 ![](https://img.shields.io/badge/version-v1.3-green?style=for-the-badge)
@@ -270,14 +278,14 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 [![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/openconnect-vpn/src/info.plist)
 
 
-### 32. [Paste into files](https://github.com/alanhg/alfred-workflows/tree/master/paste-into-files)
+### 33. [Paste into files](https://github.com/alanhg/alfred-workflows/tree/master/paste-into-files)
 
 ![](https://img.shields.io/badge/version-v1.2-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/paste-into-files/Paste%20into%20files.alfredworkflow)
 [![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/paste-into-files/src/info.plist)
 
 
-### 33. [Pic Uploader](https://github.com/alanhg/alfred-workflows/tree/master/pic-uploader)
+### 34. [Pic Uploader](https://github.com/alanhg/alfred-workflows/tree/master/pic-uploader)
 > upload pic
 
 ![](https://img.shields.io/badge/version-v2.7-green?style=for-the-badge)
@@ -285,7 +293,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 [![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/pic-uploader/src/info.plist)
 
 
-### 34. [Process](https://github.com/alanhg/alfred-workflows/tree/master/process)
+### 35. [Process](https://github.com/alanhg/alfred-workflows/tree/master/process)
 > List All Process
 
 ![](https://img.shields.io/badge/version-v0.2-green?style=for-the-badge)
@@ -293,7 +301,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 [![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/process/src/info.plist)
 
 
-### 35. [ProgressBar](https://github.com/alanhg/alfred-workflows/tree/master/progress-bar)
+### 36. [ProgressBar](https://github.com/alanhg/alfred-workflows/tree/master/progress-bar)
 > shows you exactly how much of the life, year, month and day has progressed
 
 ![](https://img.shields.io/badge/version-v1.1-green?style=for-the-badge)
@@ -301,7 +309,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 [![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/progress-bar/src/info.plist)
 
 
-### 36. [Alfred Remote](https://github.com/alanhg/alfred-workflows/tree/master/remote)
+### 37. [Alfred Remote](https://github.com/alanhg/alfred-workflows/tree/master/remote)
 > remote enhancer
 
 ![](https://img.shields.io/badge/version-v0.1-green?style=for-the-badge)
@@ -309,7 +317,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 [![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/remote/src/info.plist)
 
 
-### 37. [RGB-Hex converter](https://github.com/alanhg/alfred-workflows/tree/master/rgb-hex-converter)
+### 38. [RGB-Hex converter](https://github.com/alanhg/alfred-workflows/tree/master/rgb-hex-converter)
 > convert color format
 
 ![](https://img.shields.io/badge/version-v1.0-green?style=for-the-badge)
@@ -317,14 +325,14 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 [![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/rgb-hex-converter/src/info.plist)
 
 
-### 38. [SSH Utils](https://github.com/alanhg/alfred-workflows/tree/master/ssh-utils)
+### 39. [SSH Utils](https://github.com/alanhg/alfred-workflows/tree/master/ssh-utils)
 
 ![](https://img.shields.io/badge/version-v0.2-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/ssh-utils/SSH%20Utils.alfredworkflow)
 [![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/ssh-utils/src/info.plist)
 
 
-### 39. [String Manipulation](https://github.com/alanhg/alfred-workflows/tree/master/string-manipulation)
+### 40. [String Manipulation](https://github.com/alanhg/alfred-workflows/tree/master/string-manipulation)
 > Case switching
 
 ![](https://img.shields.io/badge/version-v0.9-green?style=for-the-badge)
@@ -332,7 +340,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 [![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/string-manipulation/src/info.plist)
 
 
-### 40. [Surge](https://github.com/alanhg/alfred-workflows/tree/master/surge)
+### 41. [Surge](https://github.com/alanhg/alfred-workflows/tree/master/surge)
 > Quick to Surge
 
 ![](https://img.shields.io/badge/version-v1.22-green?style=for-the-badge)
@@ -340,7 +348,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 [![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/surge/src/info.plist)
 
 
-### 41. [Switch Audio](https://github.com/alanhg/alfred-workflows/tree/master/switch-audio)
+### 42. [Switch Audio](https://github.com/alanhg/alfred-workflows/tree/master/switch-audio)
 > Quickly switch sound output or input
 
 ![](https://img.shields.io/badge/version-v2.3-green?style=for-the-badge)
@@ -348,7 +356,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 [![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/switch-audio/src/info.plist)
 
 
-### 42. [System Settings](https://github.com/alanhg/alfred-workflows/tree/master/system-settings)
+### 43. [System Settings](https://github.com/alanhg/alfred-workflows/tree/master/system-settings)
 > Open macOS System Settings Panes
 
 ![](https://img.shields.io/badge/version-v1.0-green?style=for-the-badge)
@@ -356,21 +364,21 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 [![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/system-settings/src/info.plist)
 
 
-### 43. [Translate](https://github.com/alanhg/alfred-workflows/tree/master/translate)
+### 44. [Translate](https://github.com/alanhg/alfred-workflows/tree/master/translate)
 
 ![](https://img.shields.io/badge/version-v1.0-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/translate/Translate.alfredworkflow)
 [![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/translate/src/info.plist)
 
 
-### 44. [Type Search](https://github.com/alanhg/alfred-workflows/tree/master/type-search)
+### 45. [Type Search](https://github.com/alanhg/alfred-workflows/tree/master/type-search)
 
 ![](https://img.shields.io/badge/version-v0.2-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/type-search/Type%20Search.alfredworkflow)
 [![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/type-search/src/info.plist)
 
 
-### 45. [Whistle](https://github.com/alanhg/alfred-workflows/tree/master/whistle)
+### 46. [Whistle](https://github.com/alanhg/alfred-workflows/tree/master/whistle)
 > select rules
 
 ![](https://img.shields.io/badge/version-v2.7-green?style=for-the-badge)
@@ -378,7 +386,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 [![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/whistle/src/info.plist)
 
 
-### 46. [印象笔记](https://github.com/alanhg/alfred-workflows/tree/master/印象笔记)
+### 47. [印象笔记](https://github.com/alanhg/alfred-workflows/tree/master/印象笔记)
 > Use Evernote with Alfred
 
 ![](https://img.shields.io/badge/version-v1.0.2-green?style=for-the-badge)

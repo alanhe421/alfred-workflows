@@ -28,6 +28,7 @@
 - My iPhones
 - New File
 - OCR
+- Open Chrome Profiles
 - OpenConnect VPN
 - Paste into files
 - Pic Uploader
