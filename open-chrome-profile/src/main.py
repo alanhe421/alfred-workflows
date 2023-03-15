@@ -27,6 +27,7 @@ for item in profil:
             "title": str(profil[str(item)]['name']),
             "subtitle":"⏎ to open in this profile",
             "arg": str(item),
+            "uid": str(item),
             "icon": {
             "path": filename
             }

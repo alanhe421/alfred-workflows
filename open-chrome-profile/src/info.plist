@@ -107,9 +107,9 @@
 			<key>config</key>
 			<dict>
 				<key>alfredfiltersresults</key>
-				<false/>
+				<true/>
 				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
+				<integer>3</integer>
 				<key>argumenttreatemptyqueryasnil</key>
 				<true/>
 				<key>argumenttrimmode</key>
@@ -195,7 +195,7 @@ idea from https://github.com/Wit4r7/AlfredAutomations. Thanks Wit4r7</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>0.2</string>
+	<string>0.3</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/open-chrome-profile</string>
 </dict>
