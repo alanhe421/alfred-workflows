@@ -325,7 +325,7 @@ type `briup` or `bridown`
 		<key>0E885EDF-52AF-4163-9CEE-8E2766F0AA89</key>
 		<dict>
 			<key>xpos</key>
-			<real>240</real>
+			<real>245</real>
 			<key>ypos</key>
 			<real>335</real>
 		</dict>
@@ -360,7 +360,7 @@ type `briup` or `bridown`
 		<key>86A7AE9B-B82A-4B4E-86B8-2FA1E2A387F7</key>
 		<dict>
 			<key>xpos</key>
-			<real>35</real>
+			<real>45</real>
 			<key>ypos</key>
 			<real>335</real>
 		</dict>
@@ -415,8 +415,8 @@ type `briup` or `bridown`
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>0.1</string>
+	<string>0.2</string>
 	<key>webaddress</key>
-	<string>https://1991421.cn</string>
+	<string>https://github.com/alanhg/alfred-workflows/tree/master/brightness-control</string>
 </dict>
 </plist>
