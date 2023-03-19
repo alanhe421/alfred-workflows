@@ -24,6 +24,18 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
+				<string>72582FA1-13A4-4045-9B19-05C39FBCD4C7</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>BFADC335-03FA-4A96-A001-81AB7A481CE9</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
 				<string>DDD1D4C2-BC2D-4E83-9029-EE6A670EAFF9</string>
 				<key>modifiers</key>
 				<integer>0</integer>
@@ -155,6 +167,20 @@
 						<key>uid</key>
 						<string>DE345E85-2927-49DC-BE97-DEBD2A5DC130</string>
 					</dict>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>upgrade_sqlite</string>
+						<key>outputlabel</key>
+						<string></string>
+						<key>uid</key>
+						<string>BFADC335-03FA-4A96-A001-81AB7A481CE9</string>
+					</dict>
 				</array>
 				<key>elselabel</key>
 				<string>else</string>
@@ -165,6 +191,21 @@
 			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
 			<string>26DC9FDD-521B-4837-8A52-0351B2C1ABEF</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>brew install sqlite3</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.terminalcommand</string>
+			<key>uid</key>
+			<string>72582FA1-13A4-4045-9B19-05C39FBCD4C7</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -218,7 +259,17 @@
 ## requirement
 
 1. `brew install node`
-2. Alfred has permission to `Full Disk Access`</string>
+2. Alfred has permission to `Full Disk Access`
+
+## upgrade sqlite3 issue
+
+&gt; Perhaps the built-in SQLite3 version on Mac is too low and does not support JSON output, so it is necessary to upgrade it using Homebrew.
+
+1.check json support
+  sqlite3 -json
+2. create symbolic link 
+ln -sf /usr/local/Cellar/sqlite/[version]/bin/sqlite3 /usr/local/bin/sqlite3
+3. export PATH="/usr/local/bin:$PATH"</string>
 	<key>uidata</key>
 	<dict>
 		<key>26DC9FDD-521B-4837-8A52-0351B2C1ABEF</key>
@@ -238,9 +289,18 @@
 		<key>59FACEBF-8E54-4ED8-8978-2E2701470C14</key>
 		<dict>
 			<key>xpos</key>
-			<real>620</real>
+			<real>600</real>
 			<key>ypos</key>
-			<real>220</real>
+			<real>375</real>
+		</dict>
+		<key>72582FA1-13A4-4045-9B19-05C39FBCD4C7</key>
+		<dict>
+			<key>note</key>
+			<string>upgrade sqlite3</string>
+			<key>xpos</key>
+			<real>400</real>
+			<key>ypos</key>
+			<real>195</real>
 		</dict>
 		<key>B551E16A-99ED-4CFD-9FA2-BF5DE3680187</key>
 		<dict>
@@ -252,9 +312,9 @@
 		<key>DDD1D4C2-BC2D-4E83-9029-EE6A670EAFF9</key>
 		<dict>
 			<key>xpos</key>
-			<real>410</real>
+			<real>390</real>
 			<key>ypos</key>
-			<real>220</real>
+			<real>375</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
@@ -284,7 +344,7 @@
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.4</string>
+	<string>1.5</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/2fa-read-code</string>
 </dict>

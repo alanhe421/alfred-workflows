@@ -4,29 +4,41 @@
  * usage
  * /usr/local/bin/node ./index.js {query}
  */
-const {utils, dateUtils} = require('@stacker/alfred-utils');
+const { utils, dateUtils } = require('@stacker/alfred-utils');
 const iMessage = require('./node-imessage');
-const {execSync} = require('child_process');
-const {existsSync} = require("fs");
+const { execSync } = require('child_process');
 const im = new iMessage();
 const lookBackMinutes = process.env.look_back_minutes;
 
-  /**
-   * 读取剪贴板的+数据库有限时间内的验证码记录
-   * 但如果剪贴板的数据是数据库中回车拷贝过来的，属于重复数据，显示上就去掉原数据库里同样记录，进行去重
-   */
-  (async function () {
-    utils.useCache();
+/**
+ * 读取剪贴板的+数据库有限时间内的验证码记录
+ * 但如果剪贴板的数据是数据库中回车拷贝过来的，属于重复数据，显示上就去掉原数据库里同样记录，进行去重
+ */
+(async function () {
+  utils.useCache();
 
-    const messages = await readLatestMessage();
-    let items = [];
+  if (!im.isSupport()) {
+    utils.printScriptFilter({
+      items: [
+        utils.buildItem({
+          title: 'A higher version of sqlite is required to read the message.',
+          subtitle: 'enter to upgrade sqlite command line tool',
+          arg: 'upgrade_sqlite'
+        })
+      ]
+    });
+    return;
+  }
+  const messages = await readLatestMessage();
+  let items = [];
 
-    const messageFromClipboard = readFromClipboard();
-    if (messageFromClipboard) {
-      items.push(messageFromClipboard);
-    }
-    if (messages.length) {
-      items.push(...messages.reduce((res, messageObj) => {
+  const messageFromClipboard = readFromClipboard();
+  if (messageFromClipboard) {
+    items.push(messageFromClipboard);
+  }
+  if (messages.length) {
+    items.push(
+      ...messages.reduce((res, messageObj) => {
         const msg = preProcessMessage(messageObj.text);
         if (!msg.trim()) {
           return res;
@@ -37,49 +49,67 @@ const lookBackMinutes = process.env.look_back_minutes;
             return res;
           }
           const subject = readSubjectFromMessage(msg);
-          res.push(utils.buildItem({
-            title: `${captcha}`,
-            subtitle: `${subject ? `Sender：${subject} ` : ''}${dateUtils.formatToCalendar(messageObj.message_date)}，⏎ to Copy`,
-            arg: captcha,
-            text: {
-              largetype: messageObj.text, copy: captcha
-            }
-          }));
+          res.push(
+            utils.buildItem({
+              title: `${captcha}`,
+              subtitle: `${
+                subject ? `Sender：${subject} ` : ''
+              }${dateUtils.formatToCalendar(
+                messageObj.message_date
+              )}，⏎ to Copy`,
+              arg: captcha,
+              text: {
+                largetype: messageObj.text,
+                copy: captcha
+              }
+            })
+          );
         }
         return res;
-      }, []))
-    }
-    if (items.length) {
-      return utils.printScriptFilter({
-        items
-      });
-    } else {
-      utils.printScriptFilter({
-        items: [utils.buildItem({
-          title: 'There is no authentication code', subtitle: '⏎ to view Messages App', arg: 'view_message'
-        })]
-      });
-    }
-  })();
+      }, [])
+    );
+  }
+  if (items.length) {
+    return utils.printScriptFilter({
+      items
+    });
+  } else {
+    utils.printScriptFilter({
+      items: [
+        utils.buildItem({
+          title: 'There is no authentication code',
+          subtitle: '⏎ to view Messages App',
+          arg: 'view_message'
+        })
+      ]
+    });
+  }
+})();
 
 function readFromClipboard() {
-  const msg = execSync('pbpaste', {encoding: 'utf-8'}).replace(/%$/, '');
+  const msg = execSync('pbpaste', { encoding: 'utf-8' }).replace(/%$/, '');
   const captcha = readCaptchaFromMessage(msg);
   if (captcha) {
     const subject = readSubjectFromMessage(msg);
     return utils.buildItem({
       title: `${captcha}`,
-      subtitle: `From 📋，${subject ? `Sender：${subject} ` : ''}${dateUtils.formatToCalendar(Date.now())}，⏎ to Copy`,
+      subtitle: `From 📋，${
+        subject ? `Sender：${subject} ` : ''
+      }${dateUtils.formatToCalendar(Date.now())}，⏎ to Copy`,
       arg: captcha,
       text: {
-        largetype: msg, copy: captcha
+        largetype: msg,
+        copy: captcha
       }
-    })
+    });
   }
 }
 
 function preProcessMessage(msg) {
-  return msg.replace(/((https?|ftp|file):\/\/|www\.)[-A-Z0-9+&@#\/%?=~_|$!:,.;]*[A-Z0-9+&@#\/%=~_|$]/i, '');
+  return msg.replace(
+    /((https?|ftp|file):\/\/|www\.)[-A-Z0-9+&@#\/%?=~_|$!:,.;]*[A-Z0-9+&@#\/%=~_|$]/i,
+    ''
+  );
 }
 
 /**
@@ -144,9 +174,12 @@ function readLatestMessage() {
         limit 100`);
 
     resolve(res);
-  })
+  });
 }
 
 module.exports = {
-  readCaptchaFromMessage, readLatestMessage, readSubjectFromMessage, preProcessMessage
+  readCaptchaFromMessage,
+  readLatestMessage,
+  readSubjectFromMessage,
+  preProcessMessage
 };
