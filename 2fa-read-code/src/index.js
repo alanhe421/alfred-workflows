@@ -16,19 +16,6 @@ const lookBackMinutes = process.env.look_back_minutes;
  */
 (async function () {
   utils.useCache();
-
-  if (!im.isSupport()) {
-    utils.printScriptFilter({
-      items: [
-        utils.buildItem({
-          title: 'A higher version of sqlite is required to read the message.',
-          subtitle: 'enter to upgrade sqlite command line tool',
-          arg: 'upgrade_sqlite'
-        })
-      ]
-    });
-    return;
-  }
   const messages = await readLatestMessage();
   let items = [];
 
