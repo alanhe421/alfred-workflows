@@ -113,25 +113,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>externaltriggerid</key>
-				<string>briup</string>
-				<key>passinputasargument</key>
-				<true/>
-				<key>passvariables</key>
-				<true/>
-				<key>workflowbundleid</key>
-				<string>self</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.callexternaltrigger</string>
-			<key>uid</key>
-			<string>356B67CC-D9DE-4917-AC9E-F2881A0AD87E</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>availableviaurlhandler</key>
 				<false/>
 				<key>triggerid</key>
@@ -285,25 +266,6 @@
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>externaltriggerid</key>
-				<string>bridown</string>
-				<key>passinputasargument</key>
-				<true/>
-				<key>passvariables</key>
-				<true/>
-				<key>workflowbundleid</key>
-				<string>self</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.callexternaltrigger</string>
-			<key>uid</key>
-			<string>7E3E385F-91A2-4595-96B8-243C162CECBA</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string>&gt; keyword to brightness up or down
@@ -329,13 +291,6 @@ type `briup` or `bridown`
 			<key>ypos</key>
 			<real>335</real>
 		</dict>
-		<key>356B67CC-D9DE-4917-AC9E-F2881A0AD87E</key>
-		<dict>
-			<key>xpos</key>
-			<real>585</real>
-			<key>ypos</key>
-			<real>50</real>
-		</dict>
 		<key>526330D1-4910-4B43-B654-6FBFCD37D56E</key>
 		<dict>
 			<key>xpos</key>
@@ -349,13 +304,6 @@ type `briup` or `bridown`
 			<real>40</real>
 			<key>ypos</key>
 			<real>125</real>
-		</dict>
-		<key>7E3E385F-91A2-4595-96B8-243C162CECBA</key>
-		<dict>
-			<key>xpos</key>
-			<real>585</real>
-			<key>ypos</key>
-			<real>385</real>
 		</dict>
 		<key>86A7AE9B-B82A-4B4E-86B8-2FA1E2A387F7</key>
 		<dict>
@@ -415,7 +363,7 @@ type `briup` or `bridown`
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>0.2</string>
+	<string>0.3</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/brightness-control</string>
 </dict>
