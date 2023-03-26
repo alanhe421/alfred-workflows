@@ -8,19 +8,6 @@
 	<string>Self-Dev</string>
 	<key>connections</key>
 	<dict>
-		<key>8CFDFE1E-69E4-4EB8-8605-C9146498E50A</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>EFB1F57C-ED91-490B-8F0D-534C3102D07E</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>EFB1F57C-ED91-490B-8F0D-534C3102D07E</key>
 		<array>
 			<dict>
@@ -45,41 +32,6 @@
 	<string>Open Chrome Profile</string>
 	<key>objects</key>
 	<array>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>35</integer>
-				<key>hotmod</key>
-				<integer>1179648</integer>
-				<key>hotstring</key>
-				<string>P</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-				<key>relatedApps</key>
-				<array>
-					<string>com.google.Chrome</string>
-				</array>
-				<key>relatedAppsMode</key>
-				<integer>1</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>8CFDFE1E-69E4-4EB8-8605-C9146498E50A</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -133,7 +85,7 @@
 				<key>script</key>
 				<string>[[ -d "${alfred_workflow_cache}" ]] || mkdir "${alfred_workflow_cache}"
 
-python3 main.py</string>
+/usr/bin/python3 main.py</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -161,20 +113,16 @@ python3 main.py</string>
 
 ## Usage
 
-type `chromeprofile` or hotkey`⌘ ⇧ P` when chrome focused.
+type `chromeprofile`
 
 
+idea from https://github.com/Wit4r7/AlfredAutomations. Thanks Wit4r7
 
-idea from https://github.com/Wit4r7/AlfredAutomations. Thanks Wit4r7</string>
+## Requirement
+
+`/usr/bin/python3` installed</string>
 	<key>uidata</key>
 	<dict>
-		<key>8CFDFE1E-69E4-4EB8-8605-C9146498E50A</key>
-		<dict>
-			<key>xpos</key>
-			<real>100</real>
-			<key>ypos</key>
-			<real>105</real>
-		</dict>
 		<key>A22E78CF-A512-4A22-896B-E69F343B904F</key>
 		<dict>
 			<key>xpos</key>
@@ -195,7 +143,7 @@ idea from https://github.com/Wit4r7/AlfredAutomations. Thanks Wit4r7</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>0.3</string>
+	<string>0.4</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/open-chrome-profile</string>
 </dict>
