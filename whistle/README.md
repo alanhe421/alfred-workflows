@@ -36,6 +36,3 @@ type `w2` to trigger
 
 1. install node
 2. npm install -g whistle
-3. w2 start 
-4. Alfred Workflow环境变量配置服务地址
-    ![](./screenshot2.png)
