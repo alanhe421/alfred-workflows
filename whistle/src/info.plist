@@ -642,7 +642,8 @@ type `w2` to trigger
 - ⌘ C拷贝当前Rule具体配置项
 - ⇧或⌘ Y或⌘ L进行Rule预览
 - 输入关键词筛选下拉选项，支持中文拼音检索
-- 部分设定【规则多选[x]，版本更新检查】</string>
+- 部分设定【规则多选[x]，版本更新检查】
+- 输入`selected`关键词，进行命中规则筛选</string>
 	<key>uidata</key>
 	<dict>
 		<key>30D803D0-E21E-46BC-A8DA-347C1CC19AEB</key>
@@ -773,16 +774,33 @@ type `w2` to trigger
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
-	<array/>
-	<key>variables</key>
-	<dict>
-		<key>URL</key>
-		<string>http://127.0.0.1:8899</string>
-	</dict>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>http://127.0.0.1:8899</string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<true/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string></string>
+			<key>label</key>
+			<string>URL</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>URL</string>
+		</dict>
+	</array>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>2.7</string>
+	<string>2.8</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/whistle</string>
 </dict>
