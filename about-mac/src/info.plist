@@ -20,29 +20,6 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>66ED4BDA-49A8-4A35-ADA9-968AE5D6DD3F</string>
-				<key>modifiers</key>
-				<integer>1179648</integer>
-				<key>modifiersubtext</key>
-				<string>Clean About Mac Cache</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>66ED4BDA-49A8-4A35-ADA9-968AE5D6DD3F</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>6582D319-31FD-4FDC-8918-1E4454077CF9</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
 		</array>
 		<key>F6EDB591-1C8F-42F0-93A1-752E94140C67</key>
 		<array/>
@@ -136,44 +113,6 @@ end tell</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>echo -n $alfred_workflow_cache/model_cache</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>5</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>66ED4BDA-49A8-4A35-ADA9-968AE5D6DD3F</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>tasksettings</key>
-				<dict/>
-				<key>taskuid</key>
-				<string>com.alfredapp.automation.core/files-and-folders/path.trash</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.automation.task</string>
-			<key>uid</key>
-			<string>6582D319-31FD-4FDC-8918-1E4454077CF9</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string>&gt; Displays system information about your Mac.
@@ -181,8 +120,7 @@ Contains UserName、Model、HostName、Primary Ethernet Address、IPv4 Address�
 
 1. type `about` to trigger
 2. ⏎ to copy info
-3. large type support
-4. type `about` and `⌘ ⇧ ⏎ ` to clean workflow's cache</string>
+3. large type support</string>
 	<key>uidata</key>
 	<dict>
 		<key>2353E6A3-0536-4ADA-8936-B2AEC1E72656</key>
@@ -191,22 +129,6 @@ Contains UserName、Model、HostName、Primary Ethernet Address、IPv4 Address�
 			<real>100</real>
 			<key>ypos</key>
 			<real>120</real>
-		</dict>
-		<key>6582D319-31FD-4FDC-8918-1E4454077CF9</key>
-		<dict>
-			<key>xpos</key>
-			<real>570</real>
-			<key>ypos</key>
-			<real>275</real>
-		</dict>
-		<key>66ED4BDA-49A8-4A35-ADA9-968AE5D6DD3F</key>
-		<dict>
-			<key>note</key>
-			<string>model_cache</string>
-			<key>xpos</key>
-			<real>350</real>
-			<key>ypos</key>
-			<real>275</real>
 		</dict>
 		<key>F6EDB591-1C8F-42F0-93A1-752E94140C67</key>
 		<dict>
@@ -221,7 +143,7 @@ Contains UserName、Model、HostName、Primary Ethernet Address、IPv4 Address�
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.13</string>
+	<string>1.14</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/about-mac</string>
 </dict>
