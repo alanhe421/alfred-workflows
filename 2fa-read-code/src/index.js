@@ -101,12 +101,11 @@ function preProcessMessage(msg) {
 
 /**
  * 读取短信验证码
- * @param msg
- * @returns {null|*}
+ * 数字3-6位
  */
 function readCaptchaFromMessage(msg) {
   try {
-    return msg.match(/\d{4,6}/)[0];
+    return msg.match(/(?<=[^\d$])(\d{3,6})(?=[^\d$])/)[0];
   } catch (e) {
     return null;
   }

@@ -1,7 +1,6 @@
 const path = require('path');
 const childProcess = require('child_process');
 const fs = require('fs');
-const { utils } = require('@stacker/alfred-utils');
 
 const HOME = getUserHome();
 const DB_PATH = path.join(HOME, '/Library/Messages/chat.db');
