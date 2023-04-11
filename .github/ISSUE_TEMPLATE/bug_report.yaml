@@ -94,7 +94,7 @@ body:
      label: Mac Chip
      options:
        - Intel
-       - M (like M1, M2)
+       - Apple Silicon (like M1, M2)
    validations:
      required: true
  - type: dropdown
