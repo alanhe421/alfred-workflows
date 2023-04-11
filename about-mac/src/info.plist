@@ -133,9 +133,9 @@ Contains UserName、Model、HostName、Primary Ethernet Address、IPv4 Address�
 		<key>F6EDB591-1C8F-42F0-93A1-752E94140C67</key>
 		<dict>
 			<key>xpos</key>
-			<real>350</real>
+			<real>340</real>
 			<key>ypos</key>
-			<real>120</real>
+			<real>115</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
