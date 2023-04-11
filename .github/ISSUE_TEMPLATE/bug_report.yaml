@@ -89,6 +89,15 @@ body:
    validations:
      required: true
  - type: dropdown
+   id: mac-chip
+   attributes:
+     label: Mac Chip
+     options:
+       - Intel
+       - M (like M1, M2)
+   validations:
+     required: true
+ - type: dropdown
    id: mac-os-locale
    attributes:
      label: MacOS Locale
