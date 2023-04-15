@@ -19,6 +19,7 @@ profile = parsedJSON['profile']
 profil = profile['info_cache']
 
 for item in profil:
+    filename = ''
     if 'last_downloaded_gaia_picture_url_with_size' in profil[str(item)]:
         filename = profil[str(item)]['last_downloaded_gaia_picture_url_with_size'].split("/")[-1] + ".png"
         filename = cache_dir + '/' + filename
@@ -29,7 +30,7 @@ for item in profil:
                 print(f"HTTP Error {e.code}: {e.reason}")
                 continue
 
-        result = {
+    result = {
             "title": str(profil[str(item)]['name']),
             "subtitle": "⏎ to open in this profile",
             "arg": str(item),
@@ -37,8 +38,8 @@ for item in profil:
             "icon": {
                 "path": filename
             }
-        }
-        formatted_results.append(result)
+    }
+    formatted_results.append(result)
 
 values = ','.join(str(v) for v in formatted_results)
 output = '{"items": ['+ values + ']}'
