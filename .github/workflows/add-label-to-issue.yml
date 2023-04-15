@@ -1,9 +1,17 @@
+# 根据提交的 issue 添加workflow标签等
 name: Add Label to Issue
 
 on:
   issues:
     types: [opened]
-
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: 'Log level'
+        required: true
+        default: 'warning'
+      tags:
+        description: 'Test scenario tags'
 jobs:
   add-label:
     runs-on: ubuntu-latest
@@ -13,14 +21,25 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
-            const labelToAdd = 'bug'; // 需要添加的标签名称
-            const issueNumber = context.issue.number;
-            const owner = context.repo.owner;
-            const repo = context.repo.repo;
-
-            await github.issues.addLabels({
-              owner,
-              repo,
-              issue_number: issueNumber,
-              labels: [labelToAdd]
+            const issueBody = context.payload.issue.body;
+            const labels = context.payload.issue.labels;
+            const repoUrl = context.payload.repository.html_url;
+            const regex = /### Workflow Name([\s\S]*?)(### Alfred Version|$)/;
+            const match = issueBody.match(regex);
+            const workflowName = match ? match[1].trim() : null;
+            const labelToAdd = workflowName == 'None' ? null : workflowName; // 需要添加的标签名称
+            if (!labelToAdd) {
+              return;
+            }
+             labels.push(labelToAdd);
+             const workflowPath = workflowName.toLowerCase().replace(/[^a-zA-Z0-9_]+/g, '-');
+             const newIssueBody = `${issueBody}\n\n-----\n\nWorkflow Homepage is 👉 [${workflowName}](${repoUrl}/tree/master/${workflowPath})`;
+             const issueNumber = context.payload.issue.number;
+             const owner = context.repo.owner;
+             const repo = context.repo.repo;
+             await github.issues.update({
+             owner, repo, 
+             issue_number: issueNumber,
+            labels: labels,
+            body: newIssueBody
             });
