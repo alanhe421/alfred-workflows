@@ -67,7 +67,7 @@
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
-				<integer>2</integer>
+				<integer>1</integer>
 				<key>escaping</key>
 				<integer>68</integer>
 				<key>keyword</key>
@@ -91,7 +91,7 @@
 				<key>scriptfile</key>
 				<string></string>
 				<key>subtext</key>
-				<string></string>
+				<string>With specified profile</string>
 				<key>title</key>
 				<string>Open Chrome Profile</string>
 				<key>type</key>
@@ -143,7 +143,7 @@ idea from https://github.com/Wit4r7/AlfredAutomations. Thanks Wit4r7
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>0.5</string>
+	<string>0.6</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/open-chrome-profile</string>
 </dict>
