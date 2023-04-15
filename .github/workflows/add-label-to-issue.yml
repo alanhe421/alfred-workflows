@@ -1,0 +1,26 @@
+name: Add Label to Issue
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  add-label:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Add label
+        uses: actions/github-script@v4
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const labelToAdd = 'bug'; // 需要添加的标签名称
+            const issueNumber = context.issue.number;
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+
+            await github.issues.addLabels({
+              owner,
+              repo,
+              issue_number: issueNumber,
+              labels: [labelToAdd]
+            });
