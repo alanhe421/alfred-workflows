@@ -40,9 +40,9 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --args --profile-directory="{query}"</string>
+				<string>/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --args --profile-directory=$1</string>
 				<key>scriptargtype</key>
-				<integer>0</integer>
+				<integer>1</integer>
 				<key>scriptfile</key>
 				<string></string>
 				<key>type</key>
@@ -83,7 +83,7 @@
 				<key>runningsubtext</key>
 				<string>Please Wait</string>
 				<key>script</key>
-				<string>[[ -d "${alfred_workflow_cache}" ]] || mkdir "${alfred_workflow_cache}"
+				<string>[[ -d "${alfred_workflow_cache}" ]] || mkdir -p "${alfred_workflow_cache}"
 
 /usr/bin/python3 main.py</string>
 				<key>scriptargtype</key>
@@ -143,7 +143,7 @@ idea from https://github.com/Wit4r7/AlfredAutomations. Thanks Wit4r7
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>0.4</string>
+	<string>0.5</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/open-chrome-profile</string>
 </dict>

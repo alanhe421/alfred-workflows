@@ -7,7 +7,8 @@ home = str(Path.home())
 cache_dir = os.environ['alfred_workflow_cache']
 
 formatted_results = []
-iconURL='{"type": "fileicon","path": "/Applications/Google Chrome.app"}'
+
+iconURL = '{"type": "fileicon","path": "/Applications/Google Chrome.app"}'
 
 file = open(home + "/Library/Application Support/Google/Chrome/Local State", "r")
 example = file.read()
@@ -18,26 +19,30 @@ profile = parsedJSON['profile']
 profil = profile['info_cache']
 
 for item in profil:
-    filename = profil[str(item)]['last_downloaded_gaia_picture_url_with_size'].split("/")[-1] + ".png"
-    filename = cache_dir+'/'+filename
-    if not os.path.isfile(filename):
-     urllib.request.urlretrieve(profil[str(item)]['last_downloaded_gaia_picture_url_with_size'], filename)
+    if 'last_downloaded_gaia_picture_url_with_size' in profil[str(item)]:
+        filename = profil[str(item)]['last_downloaded_gaia_picture_url_with_size'].split("/")[-1] + ".png"
+        filename = cache_dir + '/' + filename
+        if not os.path.isfile(filename):
+            try:
+                urllib.request.urlretrieve(profil[str(item)]['last_downloaded_gaia_picture_url_with_size'], filename)
+            except urllib.error.HTTPError as e:
+                print(f"HTTP Error {e.code}: {e.reason}")
+                continue
 
-    result = {
+        result = {
             "title": str(profil[str(item)]['name']),
-            "subtitle":"⏎ to open in this profile",
+            "subtitle": "⏎ to open in this profile",
             "arg": str(item),
             "uid": str(item),
             "icon": {
-            "path": filename
+                "path": filename
             }
         }
-    formatted_results.append(result)
-
+        formatted_results.append(result)
 
 values = ','.join(str(v) for v in formatted_results)
 output = '{"items": ['+ values + ']}'
-output = output.replace('pic',iconURL)
+output = output.replace('pic', iconURL)
 output = output.replace("'",'"')
 output = output.replace('"{"type"','{"type"')
 output = output.replace('}"}','}}')
