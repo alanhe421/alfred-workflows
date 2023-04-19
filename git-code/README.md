@@ -11,12 +11,13 @@
 7. 一键拷贝所有MR链接
 8. 输入`:updategitcode`进行workflow升级
 9. 支持查看分支/提交/Tag列表
+10. 支持选中文本唤起universial action-Git Code进行repo检索
 
 整体设计，⏎均是浏览器打开对应URL，⌥为进一步操作。
 
 
 
-![](https://img.shields.io/badge/version-v1.15-green?style=for-the-badge)
+![](https://img.shields.io/badge/version-v1.16-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/git-code/Git%20Code.alfredworkflow)
 [![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/git-code/src/info.plist)
 
