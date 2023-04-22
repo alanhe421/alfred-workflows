@@ -415,15 +415,15 @@
 				<key>queuemode</key>
 				<integer>1</integer>
 				<key>runningsubtext</key>
-				<string>waiting</string>
+				<string>Waiting</string>
 				<key>script</key>
-				<string>node ./index.js {query}</string>
+				<string>node ./index.js "$1"</string>
 				<key>scriptargtype</key>
-				<integer>0</integer>
+				<integer>1</integer>
 				<key>scriptfile</key>
 				<string>test.sh</string>
 				<key>subtext</key>
-				<string>search project</string>
+				<string>Search project</string>
 				<key>title</key>
 				<string>Git Code</string>
 				<key>type</key>
@@ -993,7 +993,7 @@
 	<key>readme</key>
 	<string>&gt; 腾讯工蜂项目检索
 
-## feat
+## Feat
 
 1. gc+关键词进行模糊检索
 2. ⌃ 拷贝HTTP Repo链接/ ⌘ 拷贝SSH Repo链接
@@ -1222,6 +1222,27 @@ example:{{title}},{{state}},{{description}}</string>
 			<key>variable</key>
 			<string>mr_links_copy_text_footer</string>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>20</string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<true/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string></string>
+			<key>label</key>
+			<string>搜索每页数</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>per_page</string>
+		</dict>
 	</array>
 	<key>variables</key>
 	<dict>
@@ -1237,8 +1258,6 @@ example:{{title}},{{state}},{{description}}</string>
 		<string></string>
 		<key>base_url_3</key>
 		<string></string>
-		<key>per_page</key>
-		<string>20</string>
 		<key>score_1</key>
 		<string></string>
 		<key>score_2</key>
@@ -1246,17 +1265,17 @@ example:{{title}},{{state}},{{description}}</string>
 	</dict>
 	<key>variablesdontexport</key>
 	<array>
-		<string>access_token_2</string>
+		<string>base_url_3</string>
 		<string>base_url_2</string>
 		<string>base_url_1</string>
 		<string>access_token_3</string>
 		<string>access_token_1</string>
 		<string>score_2</string>
 		<string>score_1</string>
-		<string>base_url_3</string>
+		<string>access_token_2</string>
 	</array>
 	<key>version</key>
-	<string>1.16</string>
+	<string>1.17</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/git-code</string>
 </dict>

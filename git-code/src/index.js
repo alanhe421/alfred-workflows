@@ -78,7 +78,7 @@ async function searchProjects(token, baseUrl, score, index) {
     }
     res.data.forEach((item) => {
       wf.addWorkflowItem({
-        item: utils.buildItem({
+        item: {
           uid: item.ssh_url_to_repo + item.name_with_namespace,
           title: item.name_with_namespace,
           subtitle:
@@ -101,8 +101,10 @@ async function searchProjects(token, baseUrl, score, index) {
                 baseUrl
               }
             }
+          },
+          variables: {
           }
-        }),
+        },
         score
       });
     });
