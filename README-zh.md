@@ -408,9 +408,11 @@ P.S.: 使用这些Workflow的前提是已购买[Powerpack](https://www.alfredapp
 ## 支持
 
 - 你的支持也是一种动力。
-
-- Star /[Paypal](https://www.paypal.com/paypalme/alanhe421)
+- 给repo打星 🌟☝️ 
+- [Paypal](https://www.paypal.com/paypalme/alanhe421)
   / [微信打赏](./.github/wechat-award.jpg)
+
+<a href="https://www.buymeacoffee.com/alanhg" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" >
 
 ## 订阅&交流
 

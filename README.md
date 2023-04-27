@@ -407,7 +407,7 @@ Welcome ➡️ [Discussion](https://github.com/alanhg/alfred-workflows/discussio
 
 ## Sponsor
 
-- Star this repo 🌟 ☝️
+- Love alfred-workflows? Give our repo a star ⭐ ⬆️.
 - [Buy me a ☕️ ](https://www.paypal.com/paypalme/alanhe421)
 
 
