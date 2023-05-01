@@ -1,4 +1,4 @@
-> Read link from qr Code.
+> Read link from QR Code.
 
 ## Usage
 

@@ -356,7 +356,7 @@ return savePath</string>
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>&gt; Read link from qr Code.
+	<string>&gt; Read link from QR Code.
 
 ## Usage
 
