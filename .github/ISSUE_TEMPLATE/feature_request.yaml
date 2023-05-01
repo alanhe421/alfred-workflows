@@ -36,6 +36,7 @@ body:
         - AppleScript Tools
         - Batch Import Workflows
         - Bluetooth Manager
+        - Brightness Control
         - Clipboard History
         - Compress
         - ConvertIO
@@ -46,6 +47,7 @@ body:
         - Find iPhone
         - Giphy
         - Git Code
+        - Resize Image
         - IP Tools
         - Json2TS
         - Local Network
@@ -57,11 +59,13 @@ body:
         - My iPhones
         - New File
         - OCR
+        - Open Chrome Profile
         - OpenConnect VPN
         - Paste into files
         - Pic Uploader
         - Process
         - ProgressBar
+        - QR Reader
         - Alfred Remote
         - RGB-Hex converter
         - SSH Utils
