@@ -4,12 +4,12 @@
  * usage
  * /usr/local/bin/node ./index.js {query}
  */
-const { utils, dateUtils } = require('@stacker/alfred-utils');
+const { utils, dateUtils, Workflow } = require('@stacker/alfred-utils');
 const iMessage = require('./node-imessage');
 const { execSync } = require('child_process');
 const im = new iMessage();
 const lookBackMinutes = process.env.look_back_minutes;
-
+const wf = new Workflow();
 /**
  * 读取剪贴板的+数据库有限时间内的验证码记录
  * 但如果剪贴板的数据是数据库中回车拷贝过来的，属于重复数据，显示上就去掉原数据库里同样记录，进行去重
@@ -21,11 +21,13 @@ const lookBackMinutes = process.env.look_back_minutes;
 
   const messageFromClipboard = readFromClipboard();
   if (messageFromClipboard) {
-    items.push(messageFromClipboard);
+    wf.addWorkflowItem({
+      item: messageFromClipboard
+    });
   }
   if (messages.length) {
-    items.push(
-      ...messages.reduce((res, messageObj) => {
+    messages
+      .reduce((res, messageObj) => {
         const msg = preProcessMessage(messageObj.text);
         if (!msg.trim()) {
           return res;
@@ -54,23 +56,22 @@ const lookBackMinutes = process.env.look_back_minutes;
         }
         return res;
       }, [])
-    );
+      .forEach((item) => {
+        wf.addWorkflowItem({
+          item
+        });
+      });
   }
-  if (items.length) {
-    return utils.printScriptFilter({
-      items
-    });
-  } else {
-    utils.printScriptFilter({
-      items: [
-        utils.buildItem({
-          title: 'There is no authentication code',
-          subtitle: '⏎ to view Messages App',
-          arg: 'view_message'
-        })
-      ]
+  if (!wf.items.length) {
+    wf.addWorkflowItem({
+      item: utils.buildItem({
+        title: 'There is no authentication code',
+        subtitle: '⏎ to view Messages App',
+        arg: 'view_message'
+      })
     });
   }
+  wf.run({ rerun: 1 });
 })();
 
 function readFromClipboard() {
