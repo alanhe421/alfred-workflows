@@ -101,15 +101,29 @@ function preProcessMessage(msg) {
 }
 
 /**
- * 读取短信验证码
- * 数字3-6位
+ * Read SMS verification code
+ * Digit 3-6 digits
+ * Prefer longer codes, skip dates and currencies.
  */
 function readCaptchaFromMessage(msg) {
-  try {
-    return msg.match(/(?<=[^\d$])(\d{3,6})(?=[^\d$])/)[0];
-  } catch (e) {
-    return null;
+  // Remove date strings in various formats
+  const cleanedMsg = msg.replace(/\d{4}[./-]\d{1,2}[./-]\d{1,2}|\d{1,2}[./-]\d{1,2}[./-]\d{2,4}/g, '');
+
+  // Match numbers with 3 to 6 digits, not part of currency amounts
+  const regex = /\b(?<![.,]\d|€|\$|£)(\d{3,6})(?!\d|[.,]\d|€|\$|£)\b/g;
+
+  // Collect all matches
+  const matches = [];
+  let match;
+  while ((match = regex.exec(cleanedMsg)) !== null) {
+    matches.push(match[0]);
   }
+
+  // Sort the matches array by length in descending order (longer codes first)
+  matches.sort((a, b) => b.length - a.length);
+
+  // Return the first (longest) match, or null if no matches found
+  return matches.length > 0 ? matches[0] : null;
 }
 
 /**

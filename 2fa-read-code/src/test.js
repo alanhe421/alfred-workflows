@@ -25,10 +25,18 @@ console.log(code4, code4 === null);
 const code5 = readCaptchaFromMessage('【BOSS直聘】登录验证码：780929，30分钟内有效。工作人员不会向您索要验证码，切勿将验证码提供给他人，谨防被骗。');
 console.log(code5, code5 === '780929');
 
-const subject = readSubjectFromMessage('【美团】8758（登录验证码，请完成验证），如非本人操作，请忽略本短信。');
-console.log(subject, subject === '【美团】');
-
 const code6 = readCaptchaFromMessage(`『　267　』
 セキュリティ番号入力画面で、上記3桁の数字を入力してください。
 有効期限：2023/04/11 14:47`);
 console.log(code6, code6 === '267');
+
+const code7 = readCaptchaFromMessage('1234');
+console.log(code7, code7 === '1234');
+
+const code8 = readCaptchaFromMessage('Der SMS Code für Ihre Zahlung bei MyCompany in Höhe von EUR 99999.77 um 01.05.2023 16:11:02 ist 9401. Geben Sie den Code ein, nur wenn der Name des Händlers und der Betrag mit der von Ihnen gewünschten Zahlung übereinstimmen.');
+console.log(code8, code8 === '9401');
+
+const subject = readSubjectFromMessage('【美团】8758（登录验证码，请完成验证），如非本人操作，请忽略本短信。');
+console.log(subject, subject === '【美团】');
+
+
