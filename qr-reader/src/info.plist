@@ -38,7 +38,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>6BC49598-7306-44DA-A7F8-6239C5F03C8C</string>
+				<string>1AD3E7E2-9E9C-4BDC-8C79-369F26762E87</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -52,19 +52,6 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>43FA5FDD-33C5-4580-850C-572FA1219020</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>6BC49598-7306-44DA-A7F8-6239C5F03C8C</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>1AD3E7E2-9E9C-4BDC-8C79-369F26762E87</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -183,7 +170,8 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>zbarimg "$1" -q</string>
+				<string># swift main.swift "$1"
+./main "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -275,9 +263,9 @@ return savePath</string>
 						<key>matchcasesensitive</key>
 						<false/>
 						<key>matchmode</key>
-						<integer>0</integer>
+						<integer>4</integer>
 						<key>matchstring</key>
-						<string></string>
+						<string>Failure</string>
 						<key>outputlabel</key>
 						<string></string>
 						<key>uid</key>
@@ -325,23 +313,6 @@ return savePath</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>matchmode</key>
-				<integer>0</integer>
-				<key>matchstring</key>
-				<string>QR-Code:</string>
-				<key>replacestring</key>
-				<string></string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.replace</string>
-			<key>uid</key>
-			<string>6BC49598-7306-44DA-A7F8-6239C5F03C8C</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argument</key>
 				<string>{query}</string>
 				<key>leftcursor</key>
@@ -366,8 +337,7 @@ return savePath</string>
 
 ## Dependency
 
-1. `brew install zbar`
-2. Alfred has permission of Screen Recording</string>
+1. Alfred has permission of Screen Recording</string>
 	<key>uidata</key>
 	<dict>
 		<key>1AD3E7E2-9E9C-4BDC-8C79-369F26762E87</key>
@@ -394,7 +364,7 @@ return savePath</string>
 		<key>4939D389-798F-459F-AF4A-B63F64D1B110</key>
 		<dict>
 			<key>note</key>
-			<string>zbarimg</string>
+			<string>swift</string>
 			<key>xpos</key>
 			<real>575</real>
 			<key>ypos</key>
@@ -406,13 +376,6 @@ return savePath</string>
 			<real>50</real>
 			<key>ypos</key>
 			<real>450</real>
-		</dict>
-		<key>6BC49598-7306-44DA-A7F8-6239C5F03C8C</key>
-		<dict>
-			<key>xpos</key>
-			<real>755</real>
-			<key>ypos</key>
-			<real>480</real>
 		</dict>
 		<key>7F782624-41DE-42C0-9B0A-F88AA619E878</key>
 		<dict>
@@ -448,7 +411,7 @@ return savePath</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>0.2</string>
+	<string>0.3</string>
 	<key>webaddress</key>
 	<string>https://1991421.cn</string>
 </dict>
