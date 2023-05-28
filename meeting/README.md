@@ -1,16 +1,21 @@
-> 一键加入会议。
-拷贝会议邀请信息，或者选中邀请信息文本，唤起universal action或者触发关键词meeting，一键加入会议。
-计划支持常用会议App，当前支持腾讯会议App,Zoom会议
+> One-click to join the meeting.
+Copy the meeting invitation information or select the invitation text, trigger the universal action or keyword "meeting", and join the meeting with one click.
+Commonly used meeting apps will be supported in future updates. Currently, Tencent Meeting App and Zoom Meeting are supported.
 
 
-1. 支持关键词 `meeting` 唤起.
-2. 支持`Universal Action-Join Meeting`
-3. 依赖Node环境，请先`brew install node`
-4. 如果仅有企业微信会议链接，由于无法获取会议ID，因此无法直接跳转开启会议
+## Requirement
+
+brew install node
+
+
+## Usage
+1. Support for triggering by keyword "meeting".
+2. Support Universal Action-Join Meeting
+3. If only an enterprise WeChat meeting link is available, it cannot directly jump to start a meeting as it is unable to obtain the meeting ID.
 
 
 
-![](https://img.shields.io/badge/version-v0.8-green?style=for-the-badge)
+![](https://img.shields.io/badge/version-v0.9-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/meeting/Meeting.alfredworkflow)
 [![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/meeting/src/info.plist)
 

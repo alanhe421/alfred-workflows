@@ -87,19 +87,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>B5F99FA9-B9E4-422C-94DB-E1DF1865139C</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>65DCFF1D-286C-4F2A-910D-44936EA37B8B</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>CAC6F79E-FFC5-45DD-A3A0-BB16C2BB0E84</key>
 		<array/>
 		<key>CBBB5BBC-7507-4FFB-92C8-68947D5FCEFE</key>
@@ -217,7 +204,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>/usr/local/bin/node ./main.js "{query}" "tencent"</string>
+				<string>node ./main.js "{query}" "tencent"</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -268,6 +255,8 @@
 				</array>
 				<key>elselabel</key>
 				<string>else</string>
+				<key>hideelse</key>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.conditional</string>
@@ -333,6 +322,8 @@
 				</array>
 				<key>elselabel</key>
 				<string>else</string>
+				<key>hideelse</key>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.conditional</string>
@@ -349,7 +340,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>/usr/local/bin/node ./main.js "{query}" "zoom"</string>
+				<string>node ./main.js "{query}" "zoom"</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -369,12 +360,14 @@
 			<dict>
 				<key>browser</key>
 				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
 				<string>wemeet://page/inmeeting?meeting_code={query}</string>
-				<key>utf8</key>
-				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -443,6 +436,8 @@
 				</array>
 				<key>elselabel</key>
 				<string>else</string>
+				<key>hideelse</key>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.conditional</string>
@@ -456,12 +451,14 @@
 			<dict>
 				<key>browser</key>
 				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
 				<string>zoommtg://{query}</string>
-				<key>utf8</key>
-				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -470,238 +467,112 @@
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>:updatemeeting</string>
-				<key>subtext</key>
-				<string>Check for updates and install them if they exist</string>
-				<key>text</key>
-				<string>Update Meeting</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>B5F99FA9-B9E4-422C-94DB-E1DF1865139C</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string># THESE VARIABLES MUST BE SET. SEE THE ONEUPDATER README FOR AN EXPLANATION OF EACH.
-readonly remote_info_plist="https://raw.githubusercontent.com/alanhg/alfred-workflows/master/meeting/src/info.plist"
-readonly workflow_url="https://github.com/alanhg/alfred-workflows/raw/master/meeting/Meeting.alfredworkflow"
-readonly download_type='direct'
-readonly frequency_check='0'
-
-# FROM HERE ON, CODE SHOULD BE LEFT UNTOUCHED!
-function abort {
-  echo "${1}" &gt;&amp;2
-  exit 1
-}
-
-function url_exists {
-  curl --silent --location --output /dev/null --fail --range 0-0 "${1}"
-}
-
-function notification {
-  local -r notificator="$(find . -type f -name 'notificator')"
-
-  if [[ -f "${notificator}" &amp;&amp; "$(/usr/bin/file --brief --mime-type "${notificator}")" == 'text/x-shellscript' ]]; then
-    "${notificator}" --message "${1}" --title "${alfred_workflow_name}" --subtitle "${2:-A new version is available}"
-    return
-  fi
-
-  osascript -e "display notification \"${1}\" with title \"${alfred_workflow_name}\" subtitle \"${2:-A new version is available}\""
-}
-
-# Local sanity checks
-readonly local_info_plist='info.plist'
-readonly local_version="$(/usr/libexec/PlistBuddy -c 'print version' "${local_info_plist}")"
-
-[[ -n "${local_version}" ]] || abort 'You need to set a workflow version in the configuration sheet.'
-[[ "${download_type}" =~ ^(direct|page|github_release)$ ]] || abort "'download_type' (${download_type}) needs to be one of 'direct', 'page', or 'github_release'."
-[[ "${frequency_check}" =~ ^[0-9]+$ ]] || abort "'frequency_check' (${frequency_check}) needs to be a number."
-
-# Check for updates
-if [[ $(find "${local_info_plist}" -mtime +"${frequency_check}"d) ]]; then
-  # Remote sanity check
-  if ! url_exists "${remote_info_plist}"; then
-    abort "'remote_info_plist' (${remote_info_plist}) appears to not be reachable."
-  fi
-
-  readonly tmp_file="$(mktemp)"
-  curl --silent --location --output "${tmp_file}" "${remote_info_plist}"
-  readonly remote_version="$(/usr/libexec/PlistBuddy -c 'print version' "${tmp_file}")"
-  rm "${tmp_file}"
-
-  if [[ "${local_version}" == "${remote_version}" ]]; then
-    touch "${local_info_plist}" # Reset timer by touching local file
-    notification 'You are up to date…' ' '
-    exit 0
-  fi
-
-  if [[ "${download_type}" == 'page' ]]; then
-    notification 'Opening download page…'
-    open "${workflow_url}"
-    exit 0
-  fi
-
-  readonly download_url="$(
-    if [[ "${download_type}" == 'github_release' ]]; then
-      osascript -l JavaScript -e 'function run(argv) { return JSON.parse(argv[0])["assets"].find(asset =&gt; asset["browser_download_url"].endsWith(".alfredworkflow"))["browser_download_url"] }' "$(curl --silent "https://api.github.com/repos/${workflow_url}/releases/latest")"
-    else
-      echo "${workflow_url}"
-    fi
-  )"
-
-  if url_exists "${download_url}"; then
-    notification 'Downloading and installing…'
-    readonly download_name="$(basename "${download_url}")"
-    curl --silent --location --output "${HOME}/Downloads/${download_name}" "${download_url}"
-    open "${HOME}/Downloads/${download_name}"
-  else
-    abort "'workflow_url' (${download_url}) appears to not be reachable."
-  fi
-fi</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>65DCFF1D-286C-4F2A-910D-44936EA37B8B</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
 	</array>
 	<key>readme</key>
-	<string>&gt; 一键加入会议。
-拷贝会议邀请信息，或者选中邀请信息文本，唤起universal action或者触发关键词meeting，一键加入会议。
-计划支持常用会议App，当前支持腾讯会议App,Zoom会议
+	<string>&gt; One-click to join the meeting.
+Copy the meeting invitation information or select the invitation text, trigger the universal action or keyword "meeting", and join the meeting with one click.
+Commonly used meeting apps will be supported in future updates. Currently, Tencent Meeting App and Zoom Meeting are supported.
 
 
-1. 支持关键词 `meeting` 唤起.
-2. 支持`Universal Action-Join Meeting`
-3. 依赖Node环境，请先`brew install node`
-4. 如果仅有企业微信会议链接，由于无法获取会议ID，因此无法直接跳转开启会议</string>
+## Requirement
+
+brew install node
+
+
+## Usage
+1. Support for triggering by keyword "meeting".
+2. Support Universal Action-Join Meeting
+3. If only an enterprise WeChat meeting link is available, it cannot directly jump to start a meeting as it is unable to obtain the meeting ID.</string>
 	<key>uidata</key>
 	<dict>
 		<key>0759C1B3-6639-4B30-B86F-8BF6607A0F2E</key>
 		<dict>
 			<key>xpos</key>
-			<integer>955</integer>
+			<real>955</real>
 			<key>ypos</key>
-			<integer>500</integer>
+			<real>500</real>
 		</dict>
 		<key>1A1957B9-AA49-4C9C-B242-B7D0478C6E32</key>
 		<dict>
 			<key>xpos</key>
-			<integer>710</integer>
+			<real>710</real>
 			<key>ypos</key>
-			<integer>180</integer>
+			<real>180</real>
 		</dict>
 		<key>3F9E8A28-1A8F-4EB6-8599-E67B1BEF3296</key>
 		<dict>
 			<key>note</key>
 			<string>Zoom</string>
 			<key>xpos</key>
-			<integer>485</integer>
+			<real>485</real>
 			<key>ypos</key>
-			<integer>285</integer>
-		</dict>
-		<key>65DCFF1D-286C-4F2A-910D-44936EA37B8B</key>
-		<dict>
-			<key>xpos</key>
-			<integer>415</integer>
-			<key>ypos</key>
-			<integer>605</integer>
+			<real>285</real>
 		</dict>
 		<key>7C7F0602-B9F2-4FFA-870C-CEA945590CF4</key>
 		<dict>
 			<key>xpos</key>
-			<integer>75</integer>
+			<real>75</real>
 			<key>ypos</key>
-			<integer>110</integer>
+			<real>110</real>
 		</dict>
 		<key>7D62529D-D53A-4914-A5ED-BCC08ACD29AF</key>
 		<dict>
 			<key>xpos</key>
-			<integer>970</integer>
+			<real>970</real>
 			<key>ypos</key>
-			<integer>180</integer>
+			<real>180</real>
 		</dict>
 		<key>9EB3BEC1-001C-48C8-927A-7978E68AAC7A</key>
 		<dict>
 			<key>xpos</key>
-			<integer>80</integer>
+			<real>80</real>
 			<key>ypos</key>
-			<integer>350</integer>
+			<real>350</real>
 		</dict>
 		<key>A9311B0D-CEFF-4F0E-AADE-AFE481854278</key>
 		<dict>
 			<key>xpos</key>
-			<integer>245</integer>
+			<real>245</real>
 			<key>ypos</key>
-			<integer>380</integer>
-		</dict>
-		<key>B5F99FA9-B9E4-422C-94DB-E1DF1865139C</key>
-		<dict>
-			<key>xpos</key>
-			<integer>95</integer>
-			<key>ypos</key>
-			<integer>605</integer>
+			<real>380</real>
 		</dict>
 		<key>CAC6F79E-FFC5-45DD-A3A0-BB16C2BB0E84</key>
 		<dict>
 			<key>xpos</key>
-			<integer>960</integer>
+			<real>960</real>
 			<key>ypos</key>
-			<integer>330</integer>
+			<real>330</real>
 		</dict>
 		<key>CBBB5BBC-7507-4FFB-92C8-68947D5FCEFE</key>
 		<dict>
 			<key>xpos</key>
-			<integer>705</integer>
+			<real>705</real>
 			<key>ypos</key>
-			<integer>480</integer>
+			<real>480</real>
 		</dict>
 		<key>D41981C9-D66B-4B2D-B044-19B6B8452E49</key>
 		<dict>
 			<key>note</key>
 			<string>腾讯会议</string>
 			<key>xpos</key>
-			<integer>485</integer>
+			<real>485</real>
 			<key>ypos</key>
-			<integer>120</integer>
+			<real>120</real>
 		</dict>
 		<key>E9B37C47-B242-4096-A1D3-A3B05EA98332</key>
 		<dict>
 			<key>xpos</key>
-			<integer>350</integer>
+			<real>350</real>
 			<key>ypos</key>
-			<integer>190</integer>
+			<real>190</real>
 		</dict>
 	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>0.8</string>
+	<string>0.9</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/meeting</string>
 </dict>
