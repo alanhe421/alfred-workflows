@@ -215,7 +215,7 @@ P.S.: 使用这些Workflow的前提是已购买[Powerpack](https://www.alfredapp
 ### 25. [Meeting](https://github.com/alanhg/alfred-workflows/tree/master/meeting)
 > quick to meeting
 
-![](https://img.shields.io/badge/version-v0.8-green?style=for-the-badge)
+![](https://img.shields.io/badge/version-v0.9-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/meeting/Meeting.alfredworkflow)
 [![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/meeting/src/info.plist)
 
