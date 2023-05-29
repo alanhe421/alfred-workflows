@@ -8,6 +8,19 @@
 	<string>Self-Dev</string>
 	<key>connections</key>
 	<dict>
+		<key>051867BF-6F62-4651-9B7D-5D5424DA950A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D3E1D969-EDE7-4A02-8A6D-2CDA7B11818A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>10DAB206-DAB4-4DEE-B9AB-20B5F2431F33</key>
 		<array>
 			<dict>
@@ -67,6 +80,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>28CE056A-FDF0-4CE1-BA93-6365E3A9E81A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F0F6CFFD-394A-414F-939F-9771394A4416</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>350F8E24-DB4F-447E-B329-68CF8FDDE789</key>
 		<array>
 			<dict>
@@ -80,6 +106,8 @@
 				<false/>
 			</dict>
 		</array>
+		<key>3918A214-9ED0-42E1-90A9-3BE32B5FEE98</key>
+		<array/>
 		<key>399B3A4B-008F-4212-B706-043EB7BD6DB6</key>
 		<array>
 			<dict>
@@ -93,11 +121,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>53362501-618C-4F8B-B446-B28C4C548AB8</key>
+		<key>4D08D8FB-1160-4BBA-87C3-A5B6A4CBC292</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>BD056944-2D4C-4E3D-BF5D-EF96F3E4AE39</string>
+				<string>3918A214-9ED0-42E1-90A9-3BE32B5FEE98</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -106,11 +134,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>58647FDB-7E57-49AF-8E03-EBEE4B21D508</key>
+		<key>53362501-618C-4F8B-B446-B28C4C548AB8</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>82008DC3-7A42-463D-A472-34B0DCFE8353</string>
+				<string>BD056944-2D4C-4E3D-BF5D-EF96F3E4AE39</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -186,6 +214,32 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>7B691B07-F4CA-4208-85DC-915E21423F64</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>D3E1D969-EDE7-4A02-8A6D-2CDA7B11818A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>28CE056A-FDF0-4CE1-BA93-6365E3A9E81A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>F0F6CFFD-394A-414F-939F-9771394A4416</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>4D08D8FB-1160-4BBA-87C3-A5B6A4CBC292</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -357,6 +411,27 @@ echo -n "${filesize}B"</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>Copied to clipboard</string>
+				<key>title</key>
+				<string>{var:filename}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>BD056944-2D4C-4E3D-BF5D-EF96F3E4AE39</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -376,146 +451,6 @@ echo -n "${filesize}B"</string>
 			<string>53362501-618C-4F8B-B446-B28C4C548AB8</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>:updateaboutmac</string>
-				<key>subtext</key>
-				<string>Check for updates and install them if they exist</string>
-				<key>text</key>
-				<string>Update About Mac</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>58647FDB-7E57-49AF-8E03-EBEE4B21D508</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string># THESE VARIABLES MUST BE SET. SEE THE ONEUPDATER README FOR AN EXPLANATION OF EACH.
-readonly remote_info_plist="https://raw.githubusercontent.com/alanhg/alfred-workflows/master/file-enhancer/src/info.plist"
-readonly workflow_url="https://github.com/alanhg/alfred-workflows/raw/master/file-enhancer/File%20Enhancer.alfredworkflow"
-readonly download_type='direct'
-readonly frequency_check='0'
-
-# FROM HERE ON, CODE SHOULD BE LEFT UNTOUCHED!
-function abort {
-  echo "${1}" &gt;&amp;2
-  exit 1
-}
-
-function url_exists {
-  curl --silent --location --output /dev/null --fail --range 0-0 "${1}"
-}
-
-function notification {
-  local -r notificator="$(find . -type f -name 'notificator')"
-
-  if [[ -f "${notificator}" &amp;&amp; "$(/usr/bin/file --brief --mime-type "${notificator}")" == 'text/x-shellscript' ]]; then
-    "${notificator}" --message "${1}" --title "${alfred_workflow_name}" --subtitle "${2:-A new version is available}"
-    return
-  fi
-
-  osascript -e "display notification \"${1}\" with title \"${alfred_workflow_name}\" subtitle \"${2:-A new version is available}\""
-}
-
-# Local sanity checks
-readonly local_info_plist='info.plist'
-readonly local_version="$(/usr/libexec/PlistBuddy -c 'print version' "${local_info_plist}")"
-
-[[ -n "${local_version}" ]] || abort 'You need to set a workflow version in the configuration sheet.'
-[[ "${download_type}" =~ ^(direct|page|github_release)$ ]] || abort "'download_type' (${download_type}) needs to be one of 'direct', 'page', or 'github_release'."
-[[ "${frequency_check}" =~ ^[0-9]+$ ]] || abort "'frequency_check' (${frequency_check}) needs to be a number."
-
-# Check for updates
-if [[ $(find "${local_info_plist}" -mtime +"${frequency_check}"d) ]]; then
-  # Remote sanity check
-  if ! url_exists "${remote_info_plist}"; then
-    abort "'remote_info_plist' (${remote_info_plist}) appears to not be reachable."
-  fi
-
-  readonly tmp_file="$(mktemp)"
-  curl --silent --location --output "${tmp_file}" "${remote_info_plist}"
-  readonly remote_version="$(/usr/libexec/PlistBuddy -c 'print version' "${tmp_file}")"
-  rm "${tmp_file}"
-
-  if [[ "${local_version}" == "${remote_version}" ]]; then
-    touch "${local_info_plist}" # Reset timer by touching local file
-    notification 'You are up to date…' ' '
-    exit 0
-  fi
-
-  if [[ "${download_type}" == 'page' ]]; then
-    notification 'Opening download page…'
-    open "${workflow_url}"
-    exit 0
-  fi
-
-  readonly download_url="$(
-    if [[ "${download_type}" == 'github_release' ]]; then
-      osascript -l JavaScript -e 'function run(argv) { return JSON.parse(argv[0])["assets"].find(asset =&gt; asset["browser_download_url"].endsWith(".alfredworkflow"))["browser_download_url"] }' "$(curl --silent "https://api.github.com/repos/${workflow_url}/releases/latest")"
-    else
-      echo "${workflow_url}"
-    fi
-  )"
-
-  if url_exists "${download_url}"; then
-    notification 'Downloading and installing…'
-    readonly download_name="$(basename "${download_url}")"
-    curl --silent --location --output "${HOME}/Downloads/${download_name}" "${download_url}"
-    open "${HOME}/Downloads/${download_name}"
-  else
-    abort "'workflow_url' (${download_url}) appears to not be reachable."
-  fi
-fi</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>82008DC3-7A42-463D-A472-34B0DCFE8353</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>Copied to clipboard</string>
-				<key>title</key>
-				<string>{var:filename}</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>BD056944-2D4C-4E3D-BF5D-EF96F3E4AE39</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -595,6 +530,178 @@ fi</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>duti -s {query} "$file_type" all</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>3918A214-9ED0-42E1-90A9-3BE32B5FEE98</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Please Wait</string>
+				<key>script</key>
+				<string>require 'json'
+require 'open3'
+require 'pathname'
+
+# Add your custom paths here
+paths = [
+  '/Applications',
+  '/Applications/Utilities',
+  "#{ENV['HOME']}/Applications/JetBrains Toolbox"
+]
+
+apps = paths.flat_map do |path|
+  Pathname(path).children
+end
+
+apps = apps.map(&amp;:to_path)
+            .sort_by { |p| File.basename(p).downcase }
+            .select { |e| e.end_with?('.app') }
+
+script_filter_items = []
+
+apps.each do |app|
+  appId = Open3.capture2("osascript -e 'id of app \"#{app}\"'").first
+  next if appId == '(null)'
+  name = File.basename(app, '.app')
+  script_filter_items.push(title: name, subtitle: "Enter to set", arg: appId, type:'file:skipcheck',icon: { type: 'fileicon', path: app },action:{ file:app})
+end
+
+puts({ items: script_filter_items }.to_json)
+</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Select App</string>
+				<key>title</key>
+				<string>Select App</string>
+				<key>type</key>
+				<integer>2</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>F0F6CFFD-394A-414F-939F-9771394A4416</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>tasksettings</key>
+				<dict/>
+				<key>taskuid</key>
+				<string>com.alfredapp.automation.core/files-and-folders/path.extension</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.automation.task</string>
+			<key>uid</key>
+			<string>D3E1D969-EDE7-4A02-8A6D-2CDA7B11818A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>filetypes</key>
+				<array/>
+				<key>name</key>
+				<string>Set Default Application</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.action</string>
+			<key>uid</key>
+			<string>051867BF-6F62-4651-9B7D-5D5424DA950A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>matchmode</key>
+				<integer>1</integer>
+				<key>matchstring</key>
+				<string>\n+$</string>
+				<key>regexcaseinsensitive</key>
+				<false/>
+				<key>regexmultiline</key>
+				<false/>
+				<key>replacestring</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.replace</string>
+			<key>uid</key>
+			<string>4D08D8FB-1160-4BBA-87C3-A5B6A4CBC292</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>file_type</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>28CE056A-FDF0-4CE1-BA93-6365E3A9E81A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>&gt; file action to enhance file operation
@@ -602,16 +709,28 @@ fi</string>
 
 ## requirement
 
+```
 brew install imagemagick
+brew install duti
+
+```
 
 ## feat
 
 1. copy file name without suffix
 2. copy file size without suffix
 3. copy pixel size for image file
-4. convert file to dataURL</string>
+4. convert file to dataURL
+5. support set default application for file type</string>
 	<key>uidata</key>
 	<dict>
+		<key>051867BF-6F62-4651-9B7D-5D5424DA950A</key>
+		<dict>
+			<key>xpos</key>
+			<real>40</real>
+			<key>ypos</key>
+			<real>875</real>
+		</dict>
 		<key>10DAB206-DAB4-4DEE-B9AB-20B5F2431F33</key>
 		<dict>
 			<key>xpos</key>
@@ -635,12 +754,26 @@ brew install imagemagick
 			<key>ypos</key>
 			<real>665</real>
 		</dict>
+		<key>28CE056A-FDF0-4CE1-BA93-6365E3A9E81A</key>
+		<dict>
+			<key>xpos</key>
+			<real>620</real>
+			<key>ypos</key>
+			<real>900</real>
+		</dict>
 		<key>350F8E24-DB4F-447E-B329-68CF8FDDE789</key>
 		<dict>
 			<key>xpos</key>
 			<real>775</real>
 			<key>ypos</key>
 			<real>700</real>
+		</dict>
+		<key>3918A214-9ED0-42E1-90A9-3BE32B5FEE98</key>
+		<dict>
+			<key>xpos</key>
+			<real>1230</real>
+			<key>ypos</key>
+			<real>860</real>
 		</dict>
 		<key>399B3A4B-008F-4212-B706-043EB7BD6DB6</key>
 		<dict>
@@ -651,12 +784,21 @@ brew install imagemagick
 			<key>ypos</key>
 			<real>170</real>
 		</dict>
+		<key>4D08D8FB-1160-4BBA-87C3-A5B6A4CBC292</key>
+		<dict>
+			<key>note</key>
+			<string>Remove trailing line breaks</string>
+			<key>xpos</key>
+			<real>1085</real>
+			<key>ypos</key>
+			<real>890</real>
+		</dict>
 		<key>53362501-618C-4F8B-B446-B28C4C548AB8</key>
 		<dict>
 			<key>xpos</key>
 			<real>845</real>
 			<key>ypos</key>
-			<real>540</real>
+			<real>635</real>
 		</dict>
 		<key>570250E1-F9FA-4B41-BFBE-412DD258DC44</key>
 		<dict>
@@ -664,13 +806,6 @@ brew install imagemagick
 			<real>830</real>
 			<key>ypos</key>
 			<real>135</real>
-		</dict>
-		<key>58647FDB-7E57-49AF-8E03-EBEE4B21D508</key>
-		<dict>
-			<key>xpos</key>
-			<real>50</real>
-			<key>ypos</key>
-			<real>565</real>
 		</dict>
 		<key>7B691B07-F4CA-4208-85DC-915E21423F64</key>
 		<dict>
@@ -685,13 +820,6 @@ brew install imagemagick
 			<real>610</real>
 			<key>ypos</key>
 			<real>320</real>
-		</dict>
-		<key>82008DC3-7A42-463D-A472-34B0DCFE8353</key>
-		<dict>
-			<key>xpos</key>
-			<real>300</real>
-			<key>ypos</key>
-			<real>565</real>
 		</dict>
 		<key>8A29FF84-B010-4C62-A11E-8E6232F98D27</key>
 		<dict>
@@ -721,13 +849,27 @@ brew install imagemagick
 			<key>ypos</key>
 			<real>390</real>
 		</dict>
+		<key>D3E1D969-EDE7-4A02-8A6D-2CDA7B11818A</key>
+		<dict>
+			<key>xpos</key>
+			<real>300</real>
+			<key>ypos</key>
+			<real>875</real>
+		</dict>
+		<key>F0F6CFFD-394A-414F-939F-9771394A4416</key>
+		<dict>
+			<key>xpos</key>
+			<real>780</real>
+			<key>ypos</key>
+			<real>865</real>
+		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
 	<array/>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.3</string>
+	<string>1.4</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/file-enhancer</string>
 </dict>
