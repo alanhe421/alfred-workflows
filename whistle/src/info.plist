@@ -60,6 +60,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>518D397F-C8CE-4C0E-B2CA-8F1BA5703803</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3FFF66FA-ECF1-475F-8485-ED07C51464A5</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>7B24A41C-933C-4C90-A34B-D03DCE0DA75E</key>
 		<array>
 			<dict>
@@ -134,7 +147,7 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
-				<string>3FFF66FA-ECF1-475F-8485-ED07C51464A5</string>
+				<string>518D397F-C8CE-4C0E-B2CA-8F1BA5703803</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -479,7 +492,7 @@
 				<key>queuemode</key>
 				<integer>1</integer>
 				<key>runningsubtext</key>
-				<string>loading</string>
+				<string>Loading</string>
 				<key>script</key>
 				<string>[[ -d "${alfred_workflow_cache}" ]] || mkdir -p "${alfred_workflow_cache}"
 
@@ -489,9 +502,9 @@ node ./index.js $URL "${alfred_workflow_cache}" "{query}"</string>
 				<key>scriptfile</key>
 				<string>test.sh</string>
 				<key>subtext</key>
-				<string>select rules</string>
+				<string>Select rules</string>
 				<key>title</key>
-				<string>whistle</string>
+				<string>Whistle</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -544,7 +557,7 @@ node ./index.js $URL "${alfred_workflow_cache}" "{query}"</string>
 				<key>escaping</key>
 				<integer>0</integer>
 				<key>script</key>
-				<string>w2 start</string>
+				<string>{query}</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.terminalcommand</string>
@@ -611,6 +624,33 @@ node ./index.js $URL "${alfred_workflow_cache}" "{query}"</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>if [ -n "$SOCKS_PORT" ]; then
+  echo -n "w2 start --socksPort=$SOCKS_PORT"
+else
+  echo -n "w2 start"
+fi</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>518D397F-C8CE-4C0E-B2CA-8F1BA5703803</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>externaltriggerid</key>
 				<string>w2</string>
 				<key>passinputasargument</key>
@@ -643,7 +683,10 @@ type `w2` to trigger
 - ⇧或⌘ Y或⌘ L进行Rule预览
 - 输入关键词筛选下拉选项，支持中文拼音检索
 - 部分设定【规则多选[x]，版本更新检查】
-- 输入`selected`关键词，进行命中规则筛选</string>
+- 输入`selected`关键词，进行命中规则筛选
+
+## Config
+如果需要socks代理，则需要配置SOCKS_PORT</string>
 	<key>uidata</key>
 	<dict>
 		<key>30D803D0-E21E-46BC-A8DA-347C1CC19AEB</key>
@@ -672,9 +715,9 @@ type `w2` to trigger
 			<key>note</key>
 			<string>run w2</string>
 			<key>xpos</key>
-			<real>905</real>
+			<real>935</real>
 			<key>ypos</key>
-			<real>405</real>
+			<real>410</real>
 		</dict>
 		<key>423180BB-76D0-424B-A500-A7CB720B9B5A</key>
 		<dict>
@@ -685,12 +728,19 @@ type `w2` to trigger
 			<key>ypos</key>
 			<real>170</real>
 		</dict>
+		<key>518D397F-C8CE-4C0E-B2CA-8F1BA5703803</key>
+		<dict>
+			<key>xpos</key>
+			<real>775</real>
+			<key>ypos</key>
+			<real>515</real>
+		</dict>
 		<key>795632DF-8E0D-46A1-8D7A-04E7327568F2</key>
 		<dict>
 			<key>xpos</key>
-			<real>755</real>
+			<real>715</real>
 			<key>ypos</key>
-			<real>520</real>
+			<real>660</real>
 		</dict>
 		<key>7B24A41C-933C-4C90-A34B-D03DCE0DA75E</key>
 		<dict>
@@ -796,11 +846,32 @@ type `w2` to trigger
 			<key>variable</key>
 			<string>URL</string>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string></string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<false/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>eg: 8900</string>
+			<key>label</key>
+			<string>Socks Port</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>SOCKS_PORT</string>
+		</dict>
 	</array>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>2.8</string>
+	<string>2.9</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/whistle</string>
 </dict>
