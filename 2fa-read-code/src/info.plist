@@ -219,7 +219,12 @@
 
 1. `brew install node`
 2. Alfred has permission to `Full Disk Access`
-3. sqlite3 &gt;=v3.33.0</string>
+3. sqlite3 &gt;=v3.33.0
+
+
+## Big Sur Issue
+
+update sqlite by brew</string>
 	<key>uidata</key>
 	<dict>
 		<key>26DC9FDD-521B-4837-8A52-0351B2C1ABEF</key>
@@ -285,7 +290,7 @@
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.8</string>
+	<string>1.9</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/2fa-read-code</string>
 </dict>

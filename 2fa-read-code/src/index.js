@@ -16,14 +16,29 @@ const wf = new Workflow();
  */
 (async function () {
   utils.useCache();
-  const messages = await readLatestMessage();
-  let items = [];
+  let messages = [];
 
-  const messageFromClipboard = readFromClipboard();
-  if (messageFromClipboard) {
+  try {
+    messages = await readLatestMessage();
+    const messageFromClipboard = readFromClipboard();
+    if (messageFromClipboard) {
+      wf.addWorkflowItem({
+        item: messageFromClipboard
+      });
+    }
+  } catch (e) {
     wf.addWorkflowItem({
-      item: messageFromClipboard
+      item: {
+        title: 'Something wrong',
+        subtitle: e.message,
+        text: {
+          copy: e.message,
+          largetype: e.message
+        }
+      }
     });
+    wf.run();
+    return;
   }
   if (messages.length) {
     messages
@@ -107,7 +122,10 @@ function preProcessMessage(msg) {
  */
 function readCaptchaFromMessage(msg) {
   // Remove date strings in various formats
-  const cleanedMsg = msg.replace(/\d{4}[./-]\d{1,2}[./-]\d{1,2}|\d{1,2}[./-]\d{1,2}[./-]\d{2,4}/g, '');
+  const cleanedMsg = msg.replace(
+    /\d{4}[./-]\d{1,2}[./-]\d{1,2}|\d{1,2}[./-]\d{1,2}[./-]\d{2,4}/g,
+    ''
+  );
 
   // Match numbers with 3 to 6 digits, not part of currency amounts
   const regex = /\b(?<![.,]\d|€|\$|£)(\d{3,6})(?!\d|[.,]\d|€|\$|£)\b/g;
