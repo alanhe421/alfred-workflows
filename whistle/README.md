@@ -1,25 +1,36 @@
-> 快速切换选择代理Rules
+> Quick Switching and Selecting Proxy Rules
 
+## Requirement
+
+
+1. brew install node
+2. npm i -g whistle 
 
 ## Usage
 
-type `w2` to trigger
+Type `w2` to trigger.
 
 
-- ⌥ ⏎ 访问WEB管理页面
-- ⏎ 切换rule选择状态
-- ⌘ C拷贝当前Rule具体配置项
-- ⇧或⌘ Y或⌘ L进行Rule预览
-- 输入关键词筛选下拉选项，支持中文拼音检索
-- 部分设定【规则多选[x]，版本更新检查】
-- 输入`selected`关键词，进行命中规则筛选
+- ⌥ ⏎ Access the WEB management page.
+- ⏎ Switch the rule selection status.
+- ⌘ C Copy the specific configuration of the current rule.
+- ⇧ or ⌘ Y or ⌘ L Preview the rule.
+- Enter keywords to filter dropdown options, supports Chinese Pinyin search.
+- Partial settings [Multiple rule selection [x], Version update check].
+- Enter the keyword `selected` to filter rules that match.
+
 
 ## Config
-如果需要socks代理，则需要配置SOCKS_PORT
+If you need SOCKS proxy, configure SOCKS_PORT.
+
+
+## /bin/bash: w2: command not found
+
+ln -sf $HOME/.nvm/versions/node/v16.16.0/bin/w2 /usr/local/bin/w2
 
 
 
-![](https://img.shields.io/badge/version-v2.9-green?style=for-the-badge)
+![](https://img.shields.io/badge/version-v2.10-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/whistle/Whistle.alfredworkflow)
 [![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/whistle/src/info.plist)
 

@@ -137,6 +137,18 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
+				<string>91D22021-41E7-4769-BA48-8F025DF64404</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>C85549CB-DFCC-4A79-A08F-12D47D4C0F1C</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
 				<string>A06CD71A-6778-48AB-A9FB-AE6515F7552E</string>
 				<key>modifiers</key>
 				<integer>0</integer>
@@ -386,6 +398,20 @@
 						<key>uid</key>
 						<string>E771362D-58D5-45B7-AE1B-A3B6126F24B7</string>
 					</dict>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>_stop</string>
+						<key>outputlabel</key>
+						<string></string>
+						<key>uid</key>
+						<string>C85549CB-DFCC-4A79-A08F-12D47D4C0F1C</string>
+					</dict>
 				</array>
 				<key>elselabel</key>
 				<string>else</string>
@@ -520,6 +546,29 @@ node ./index.js $URL "${alfred_workflow_cache}" "{query}"</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>w2 stop</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>91D22021-41E7-4769-BA48-8F025DF64404</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>type</key>
 				<integer>3</integer>
 			</dict>
@@ -569,23 +618,6 @@ node ./index.js $URL "${alfred_workflow_cache}" "{query}"</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argument</key>
-				<string>{var:keyword}</string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>30D803D0-E21E-46BC-A8DA-347C1CC19AEB</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>matchmode</key>
 				<integer>0</integer>
 				<key>matchstring</key>
@@ -599,6 +631,23 @@ node ./index.js $URL "${alfred_workflow_cache}" "{query}"</string>
 			<string>36C4E69C-D047-4166-AAF9-4E2FAD70D0EC</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{var:keyword}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>30D803D0-E21E-46BC-A8DA-347C1CC19AEB</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -669,24 +718,35 @@ fi</string>
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>&gt; 快速切换选择代理Rules
+	<string>&gt; Quick Switching and Selecting Proxy Rules
 
+## Requirement
+
+
+1. brew install node
+2. npm i -g whistle 
 
 ## Usage
 
-type `w2` to trigger
+Type `w2` to trigger.
 
 
-- ⌥ ⏎ 访问WEB管理页面
-- ⏎ 切换rule选择状态
-- ⌘ C拷贝当前Rule具体配置项
-- ⇧或⌘ Y或⌘ L进行Rule预览
-- 输入关键词筛选下拉选项，支持中文拼音检索
-- 部分设定【规则多选[x]，版本更新检查】
-- 输入`selected`关键词，进行命中规则筛选
+- ⌥ ⏎ Access the WEB management page.
+- ⏎ Switch the rule selection status.
+- ⌘ C Copy the specific configuration of the current rule.
+- ⇧ or ⌘ Y or ⌘ L Preview the rule.
+- Enter keywords to filter dropdown options, supports Chinese Pinyin search.
+- Partial settings [Multiple rule selection [x], Version update check].
+- Enter the keyword `selected` to filter rules that match.
+
 
 ## Config
-如果需要socks代理，则需要配置SOCKS_PORT</string>
+If you need SOCKS proxy, configure SOCKS_PORT.
+
+
+## /bin/bash: w2: command not found
+
+ln -sf $HOME/.nvm/versions/node/v16.16.0/bin/w2 /usr/local/bin/w2</string>
 	<key>uidata</key>
 	<dict>
 		<key>30D803D0-E21E-46BC-A8DA-347C1CC19AEB</key>
@@ -694,21 +754,21 @@ type `w2` to trigger
 			<key>xpos</key>
 			<real>630</real>
 			<key>ypos</key>
-			<real>445</real>
+			<real>630</real>
 		</dict>
 		<key>3663A43F-E7D9-407D-950D-9DB3D22228B4</key>
 		<dict>
 			<key>xpos</key>
 			<real>765</real>
 			<key>ypos</key>
-			<real>335</real>
+			<real>520</real>
 		</dict>
 		<key>36C4E69C-D047-4166-AAF9-4E2FAD70D0EC</key>
 		<dict>
 			<key>xpos</key>
-			<real>295</real>
+			<real>165</real>
 			<key>ypos</key>
-			<real>505</real>
+			<real>625</real>
 		</dict>
 		<key>3FFF66FA-ECF1-475F-8485-ED07C51464A5</key>
 		<dict>
@@ -717,14 +777,14 @@ type `w2` to trigger
 			<key>xpos</key>
 			<real>935</real>
 			<key>ypos</key>
-			<real>410</real>
+			<real>595</real>
 		</dict>
 		<key>423180BB-76D0-424B-A500-A7CB720B9B5A</key>
 		<dict>
 			<key>note</key>
 			<string>select rules</string>
 			<key>xpos</key>
-			<real>705</real>
+			<real>715</real>
 			<key>ypos</key>
 			<real>170</real>
 		</dict>
@@ -733,14 +793,14 @@ type `w2` to trigger
 			<key>xpos</key>
 			<real>775</real>
 			<key>ypos</key>
-			<real>515</real>
+			<real>700</real>
 		</dict>
 		<key>795632DF-8E0D-46A1-8D7A-04E7327568F2</key>
 		<dict>
 			<key>xpos</key>
 			<real>715</real>
 			<key>ypos</key>
-			<real>660</real>
+			<real>845</real>
 		</dict>
 		<key>7B24A41C-933C-4C90-A34B-D03DCE0DA75E</key>
 		<dict>
@@ -767,14 +827,23 @@ type `w2` to trigger
 			<key>ypos</key>
 			<real>110</real>
 		</dict>
+		<key>91D22021-41E7-4769-BA48-8F025DF64404</key>
+		<dict>
+			<key>note</key>
+			<string>stop whistle</string>
+			<key>xpos</key>
+			<real>380</real>
+			<key>ypos</key>
+			<real>405</real>
+		</dict>
 		<key>A06CD71A-6778-48AB-A9FB-AE6515F7552E</key>
 		<dict>
 			<key>note</key>
 			<string>open url</string>
 			<key>xpos</key>
-			<real>420</real>
+			<real>405</real>
 			<key>ypos</key>
-			<real>340</real>
+			<real>550</real>
 		</dict>
 		<key>A861B62C-7E54-491E-8FC6-FCCD1DAA2422</key>
 		<dict>
@@ -820,7 +889,7 @@ type `w2` to trigger
 			<key>xpos</key>
 			<real>490</real>
 			<key>ypos</key>
-			<real>510</real>
+			<real>695</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
@@ -871,7 +940,7 @@ type `w2` to trigger
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>2.9</string>
+	<string>2.10</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/whistle</string>
 </dict>

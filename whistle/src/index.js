@@ -27,6 +27,20 @@ const networkItem = buildItem({
   uid: 'network'
 });
 
+
+const stopItem = buildItem({
+  title: 'Stop',
+  subtitle: 'Stop Whistle service',
+  arg: '_stop',
+  icon: {
+    path: 'icons/stop.png'
+  },
+  variables: {
+    path: 'stop'
+  },
+});
+
+
 async function main() {
   try {
     const data = await instance.get('/cgi-bin/init').then((res) => {
@@ -58,6 +72,7 @@ function createFilterItems(data) {
     name: 'default', selected: !data.rules.defaultRulesIsDisabled, data: data.rules.defaultRules || ''
   });
   items.unshift(settingItem, networkItem, defaultItem);
+  items.push(stopItem);
   return items;
 }
 
