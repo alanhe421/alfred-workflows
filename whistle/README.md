@@ -4,7 +4,7 @@
 
 
 1. brew install node
-2. npm i -g whistle 
+2. npm i -g whistle
 
 ## Usage
 
@@ -38,15 +38,11 @@ ln -sf $HOME/.nvm/versions/node/v16.16.0/bin/w2 /usr/local/bin/w2
 
 <!-- more -->
 
-### Whistle官方文档
+### Whistle Official Doc
 
 - https://wproxy.org/whistle/
 
-## 实际效果
+## Screenshots
 
+![](./screenshot.png)
 ![](./screenshot.gif)
-
-## 安装
-
-1. install node
-2. npm install -g whistle
