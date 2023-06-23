@@ -6,14 +6,15 @@
 2. Select a QR code image file, invoke File Action, and select QR reader to read link.
 
 
-## Dependency
+## Requirement
 
 1. `brew install zbar`
-2. Alfred has permission of Screen Recording
+2. `brew install imagemagick` If you need to correctly read color-reversed QR codes, you need to install.
+3. Alfred has permission of Screen Recording.
 
 
 
-![](https://img.shields.io/badge/version-v0.2-green?style=for-the-badge)
+![](https://img.shields.io/badge/version-v0.3-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/qr-reader/QR%20Reader.alfredworkflow)
 [![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/qr-reader/src/info.plist)
 
