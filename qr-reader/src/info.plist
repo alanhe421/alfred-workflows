@@ -225,16 +225,6 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>A50300E3-8075-483B-A655-8174F11540FE</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
 		</array>
 	</dict>
 	<key>createdby</key>
@@ -365,29 +355,6 @@ echo -n $newPic</string>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
 			<string>F0D382D5-DC42-4DFB-9754-E64DABBFEE70</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>echo -n $is_reversed</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>A50300E3-8075-483B-A655-8174F11540FE</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -774,13 +741,6 @@ return savePath</string>
 			<real>905</real>
 			<key>ypos</key>
 			<real>510</real>
-		</dict>
-		<key>A50300E3-8075-483B-A655-8174F11540FE</key>
-		<dict>
-			<key>xpos</key>
-			<real>1595</real>
-			<key>ypos</key>
-			<real>350</real>
 		</dict>
 		<key>AEFB7290-B340-4751-A973-E44C0161765A</key>
 		<dict>
