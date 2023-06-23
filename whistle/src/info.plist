@@ -723,8 +723,7 @@ fi</string>
 ## Requirement
 
 
-1. brew install node
-2. npm i -g whistle 
+1. brew install whistle
 
 ## Usage
 
@@ -741,12 +740,7 @@ Type `w2` to trigger.
 
 
 ## Config
-If you need SOCKS proxy, configure SOCKS_PORT.
-
-
-## /bin/bash: w2: command not found
-
-ln -sf $HOME/.nvm/versions/node/v16.16.0/bin/w2 /usr/local/bin/w2</string>
+If you need SOCKS proxy, configure SOCKS_PORT.</string>
 	<key>uidata</key>
 	<dict>
 		<key>30D803D0-E21E-46BC-A8DA-347C1CC19AEB</key>
@@ -940,7 +934,7 @@ ln -sf $HOME/.nvm/versions/node/v16.16.0/bin/w2 /usr/local/bin/w2</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>2.10</string>
+	<string>2.11</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/whistle</string>
 </dict>
