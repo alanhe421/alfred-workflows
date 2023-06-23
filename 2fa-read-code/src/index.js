@@ -17,10 +17,11 @@ const wf = new Workflow();
 (async function () {
   utils.useCache();
   let messages = [];
+  let messageFromClipboard;
 
   try {
     messages = await readLatestMessage();
-    const messageFromClipboard = readFromClipboard();
+    messageFromClipboard = readFromClipboard();
     if (messageFromClipboard) {
       wf.addWorkflowItem({
         item: messageFromClipboard
