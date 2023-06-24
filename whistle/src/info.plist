@@ -64,7 +64,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>3FFF66FA-ECF1-475F-8485-ED07C51464A5</string>
+				<string>CBEF2157-E76A-4FB4-BA8D-8BB5AFA58CCA</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -603,21 +603,6 @@ node ./index.js $URL "${alfred_workflow_cache}" "{query}"</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string>{query}</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.terminalcommand</string>
-			<key>uid</key>
-			<string>3FFF66FA-ECF1-475F-8485-ED07C51464A5</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>matchmode</key>
 				<integer>0</integer>
 				<key>matchstring</key>
@@ -673,15 +658,34 @@ node ./index.js $URL "${alfred_workflow_cache}" "{query}"</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>externaltriggerid</key>
+				<string>w2</string>
+				<key>passinputasargument</key>
+				<false/>
+				<key>passvariables</key>
+				<false/>
+				<key>workflowbundleid</key>
+				<string>self</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.callexternaltrigger</string>
+			<key>uid</key>
+			<string>CBEF2157-E76A-4FB4-BA8D-8BB5AFA58CCA</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
 				<string>if [ -n "$SOCKS_PORT" ]; then
-  echo -n "w2 start --socksPort=$SOCKS_PORT"
+  w2 start --socksPort=$SOCKS_PORT
 else
-  echo -n "w2 start"
+  w2 start
 fi</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
@@ -764,15 +768,6 @@ If you need SOCKS proxy, configure SOCKS_PORT.</string>
 			<key>ypos</key>
 			<real>625</real>
 		</dict>
-		<key>3FFF66FA-ECF1-475F-8485-ED07C51464A5</key>
-		<dict>
-			<key>note</key>
-			<string>run w2</string>
-			<key>xpos</key>
-			<real>935</real>
-			<key>ypos</key>
-			<real>595</real>
-		</dict>
 		<key>423180BB-76D0-424B-A500-A7CB720B9B5A</key>
 		<dict>
 			<key>note</key>
@@ -784,6 +779,8 @@ If you need SOCKS proxy, configure SOCKS_PORT.</string>
 		</dict>
 		<key>518D397F-C8CE-4C0E-B2CA-8F1BA5703803</key>
 		<dict>
+			<key>note</key>
+			<string>w2 start</string>
 			<key>xpos</key>
 			<real>775</real>
 			<key>ypos</key>
@@ -869,6 +866,13 @@ If you need SOCKS proxy, configure SOCKS_PORT.</string>
 			<key>ypos</key>
 			<real>15</real>
 		</dict>
+		<key>CBEF2157-E76A-4FB4-BA8D-8BB5AFA58CCA</key>
+		<dict>
+			<key>xpos</key>
+			<real>1000</real>
+			<key>ypos</key>
+			<real>700</real>
+		</dict>
 		<key>E2BDBB31-7558-4AC8-8099-698959B5E2F4</key>
 		<dict>
 			<key>xpos</key>
@@ -934,7 +938,7 @@ If you need SOCKS proxy, configure SOCKS_PORT.</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>2.11</string>
+	<string>2.12</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/whistle</string>
 </dict>
