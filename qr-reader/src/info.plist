@@ -124,31 +124,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>6825FC28-66BB-4318-B8F2-690BBCB603B5</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>4E6EDCC5-121B-4DEE-BD30-A376EEE182A5</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>A622AFF9-9BD5-4CB1-A1FF-1B71D5E8290A</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>EA9B8622-BBCD-4F80-9D87-C2841CBC013D</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>6BC49598-7306-44DA-A7F8-6239C5F03C8C</key>
 		<array>
 			<dict>
@@ -179,7 +154,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>6825FC28-66BB-4318-B8F2-690BBCB603B5</string>
+				<string>4E6EDCC5-121B-4DEE-BD30-A376EEE182A5</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -381,38 +356,6 @@ echo -n $newPic</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>conditions</key>
-				<array>
-					<dict>
-						<key>inputstring</key>
-						<string>{var:is_reversed}</string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>1</integer>
-						<key>matchstring</key>
-						<string>true</string>
-						<key>outputlabel</key>
-						<string></string>
-						<key>uid</key>
-						<string>A622AFF9-9BD5-4CB1-A1FF-1B71D5E8290A</string>
-					</dict>
-				</array>
-				<key>elselabel</key>
-				<string>else</string>
-				<key>hideelse</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.conditional</string>
-			<key>uid</key>
-			<string>4E6EDCC5-121B-4DEE-BD30-A376EEE182A5</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
@@ -483,13 +426,13 @@ return savePath</string>
 				<array>
 					<dict>
 						<key>inputstring</key>
-						<string>{var:support_reversed}</string>
+						<string>{var:is_reversed}</string>
 						<key>matchcasesensitive</key>
 						<false/>
 						<key>matchmode</key>
-						<integer>0</integer>
+						<integer>1</integer>
 						<key>matchstring</key>
-						<string>1</string>
+						<string>true</string>
 						<key>outputlabel</key>
 						<string></string>
 						<key>uid</key>
@@ -504,7 +447,7 @@ return savePath</string>
 			<key>type</key>
 			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
-			<string>6825FC28-66BB-4318-B8F2-690BBCB603B5</string>
+			<string>4E6EDCC5-121B-4DEE-BD30-A376EEE182A5</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -632,7 +575,7 @@ return savePath</string>
 ## Requirement
 
 1. `brew install zbar`
-2. `brew install imagemagick` If you need to correctly read color-reversed QR codes, you need to install.
+2. `brew install imagemagick`
 3. Alfred has permission of Screen Recording.</string>
 	<key>uidata</key>
 	<dict>
@@ -701,9 +644,9 @@ return savePath</string>
 			<key>note</key>
 			<string>check reversed</string>
 			<key>xpos</key>
-			<real>1180</real>
+			<real>1090</real>
 			<key>ypos</key>
-			<real>420</real>
+			<real>455</real>
 		</dict>
 		<key>6206D6F7-3F76-4DC9-868F-8321C4E306B6</key>
 		<dict>
@@ -711,15 +654,6 @@ return savePath</string>
 			<real>1555</real>
 			<key>ypos</key>
 			<real>105</real>
-		</dict>
-		<key>6825FC28-66BB-4318-B8F2-690BBCB603B5</key>
-		<dict>
-			<key>note</key>
-			<string>check support_reversed</string>
-			<key>xpos</key>
-			<real>1025</real>
-			<key>ypos</key>
-			<real>460</real>
 		</dict>
 		<key>6BC49598-7306-44DA-A7F8-6239C5F03C8C</key>
 		<dict>
@@ -767,27 +701,7 @@ return savePath</string>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
-	<array>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>default</key>
-				<false/>
-				<key>required</key>
-				<false/>
-				<key>text</key>
-				<string></string>
-			</dict>
-			<key>description</key>
-			<string></string>
-			<key>label</key>
-			<string>Support reversed qr-code</string>
-			<key>type</key>
-			<string>checkbox</string>
-			<key>variable</key>
-			<string>support_reversed</string>
-		</dict>
-	</array>
+	<array/>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>

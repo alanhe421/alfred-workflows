@@ -9,7 +9,7 @@
 ## Requirement
 
 1. `brew install zbar`
-2. `brew install imagemagick` If you need to correctly read color-reversed QR codes, you need to install.
+2. `brew install imagemagick`
 3. Alfred has permission of Screen Recording.
 
 
