@@ -565,6 +565,7 @@ require 'pathname'
 paths = [
   '/Applications',
   '/Applications/Utilities',
+  '/System/Applications',
   "#{ENV['HOME']}/Applications/JetBrains Toolbox"
 ]
 
@@ -610,6 +611,23 @@ puts({ items: script_filter_items }.to_json)
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>filetypes</key>
+				<array/>
+				<key>name</key>
+				<string>Set Default Application</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.action</string>
+			<key>uid</key>
+			<string>051867BF-6F62-4651-9B7D-5D5424DA950A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -629,23 +647,6 @@ puts({ items: script_filter_items }.to_json)
 			<string>3918A214-9ED0-42E1-90A9-3BE32B5FEE98</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>acceptsmulti</key>
-				<integer>0</integer>
-				<key>filetypes</key>
-				<array/>
-				<key>name</key>
-				<string>Set Default Application</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.action</string>
-			<key>uid</key>
-			<string>051867BF-6F62-4651-9B7D-5D5424DA950A</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
