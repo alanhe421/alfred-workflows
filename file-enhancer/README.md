@@ -27,5 +27,10 @@ brew install duti
 
 <!-- more -->
 
+## ScreenShots
+
+![](./screenshot1.png)
+
+![](./screenshot2.png)
 
 ![](./screenshot.gif)
