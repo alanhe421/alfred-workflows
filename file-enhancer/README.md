@@ -1,7 +1,7 @@
 > file action to enhance file operation
 
 
-## requirement
+## Requirement
 
 ```
 brew install imagemagick
@@ -9,7 +9,7 @@ brew install duti
 
 ```
 
-## feat
+## Feat
 
 1. copy file name without suffix
 2. copy file size without suffix
@@ -19,7 +19,7 @@ brew install duti
 
 
 
-![](https://img.shields.io/badge/version-v1.4-green?style=for-the-badge)
+![](https://img.shields.io/badge/version-v1.5-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/file-enhancer/File%20Enhancer.alfredworkflow)
 [![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/file-enhancer/src/info.plist)
 

@@ -437,7 +437,8 @@ echo -n "${filesize}B"</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>/usr/local/bin/node ./main.js "{query}"</string>
+				<string>mimetype=$(file --mime-type "{query}" -b)
+openssl base64 -in "{query}" | tr -d '\n' | echo "data:${mimetype};base64,$(cat -)"</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -449,6 +450,47 @@ echo -n "${filesize}B"</string>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
 			<string>53362501-618C-4F8B-B446-B28C4C548AB8</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>filetypes</key>
+				<array/>
+				<key>name</key>
+				<string>Copy Pixel Size to Clipboard</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.action</string>
+			<key>uid</key>
+			<string>95764FE3-1E5E-4768-97CB-084B51CFC219</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>#!/bin/bash
+/usr/local/bin/identify -format '%wx%h' {query}</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>10DAB206-DAB4-4DEE-B9AB-20B5F2431F33</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -488,70 +530,6 @@ echo -n "${filesize}B"</string>
 			<string>350F8E24-DB4F-447E-B329-68CF8FDDE789</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>#!/bin/bash
-/usr/local/bin/identify -format '%wx%h' {query}</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>10DAB206-DAB4-4DEE-B9AB-20B5F2431F33</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>acceptsmulti</key>
-				<integer>0</integer>
-				<key>filetypes</key>
-				<array/>
-				<key>name</key>
-				<string>Copy Pixel Size to Clipboard</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.action</string>
-			<key>uid</key>
-			<string>95764FE3-1E5E-4768-97CB-084B51CFC219</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>duti -s {query} "$file_type" all</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>3918A214-9ED0-42E1-90A9-3BE32B5FEE98</string>
-			<key>version</key>
-			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -632,17 +610,25 @@ puts({ items: script_filter_items }.to_json)
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>tasksettings</key>
-				<dict/>
-				<key>taskuid</key>
-				<string>com.alfredapp.automation.core/files-and-folders/path.extension</string>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>duti -s {query} "$file_type" all</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.automation.task</string>
+			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>D3E1D969-EDE7-4A02-8A6D-2CDA7B11818A</string>
+			<string>3918A214-9ED0-42E1-90A9-3BE32B5FEE98</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -658,6 +644,21 @@ puts({ items: script_filter_items }.to_json)
 			<string>alfred.workflow.trigger.action</string>
 			<key>uid</key>
 			<string>051867BF-6F62-4651-9B7D-5D5424DA950A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>tasksettings</key>
+				<dict/>
+				<key>taskuid</key>
+				<string>com.alfredapp.automation.core/files-and-folders/path.extension</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.automation.task</string>
+			<key>uid</key>
+			<string>D3E1D969-EDE7-4A02-8A6D-2CDA7B11818A</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -707,7 +708,7 @@ puts({ items: script_filter_items }.to_json)
 	<string>&gt; file action to enhance file operation
 
 
-## requirement
+## Requirement
 
 ```
 brew install imagemagick
@@ -715,7 +716,7 @@ brew install duti
 
 ```
 
-## feat
+## Feat
 
 1. copy file name without suffix
 2. copy file size without suffix
@@ -727,16 +728,16 @@ brew install duti
 		<key>051867BF-6F62-4651-9B7D-5D5424DA950A</key>
 		<dict>
 			<key>xpos</key>
-			<real>40</real>
+			<real>60</real>
 			<key>ypos</key>
-			<real>875</real>
+			<real>860</real>
 		</dict>
 		<key>10DAB206-DAB4-4DEE-B9AB-20B5F2431F33</key>
 		<dict>
 			<key>xpos</key>
-			<real>315</real>
+			<real>290</real>
 			<key>ypos</key>
-			<real>730</real>
+			<real>660</real>
 		</dict>
 		<key>1C678B7F-4E6E-4468-AA63-3C242326C99B</key>
 		<dict>
@@ -833,7 +834,7 @@ brew install duti
 			<key>xpos</key>
 			<real>50</real>
 			<key>ypos</key>
-			<real>730</real>
+			<real>655</real>
 		</dict>
 		<key>BD056944-2D4C-4E3D-BF5D-EF96F3E4AE39</key>
 		<dict>
@@ -852,16 +853,16 @@ brew install duti
 		<key>D3E1D969-EDE7-4A02-8A6D-2CDA7B11818A</key>
 		<dict>
 			<key>xpos</key>
-			<real>300</real>
+			<real>310</real>
 			<key>ypos</key>
-			<real>875</real>
+			<real>865</real>
 		</dict>
 		<key>F0F6CFFD-394A-414F-939F-9771394A4416</key>
 		<dict>
 			<key>xpos</key>
-			<real>780</real>
+			<real>765</real>
 			<key>ypos</key>
-			<real>865</real>
+			<real>860</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
@@ -869,7 +870,7 @@ brew install duti
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.4</string>
+	<string>1.5</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/file-enhancer</string>
 </dict>
