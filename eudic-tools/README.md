@@ -9,6 +9,7 @@ https://www.eudic.net/v4/en/app/download
 ## Usage
 1. Use `⌥ ⌘ e` after selecting a word to look it up.
 2. Use `⌘ ⇧ s` after selecting a word to speak it.
+3. Type keyword `eudic` and word to look it up.
 
 
 

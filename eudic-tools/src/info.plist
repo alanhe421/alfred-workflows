@@ -21,6 +21,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>4EED0387-482F-47F7-A529-41003C2A3AE9</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B31485C7-63E3-4813-A3F9-E0E024258066</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>57EE9397-9A0B-4798-87F8-4CED7C78E470</key>
 		<array/>
 		<key>606BB652-AE3A-4015-9DC4-215BBA26B042</key>
@@ -91,23 +104,6 @@ end tell</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>paths</key>
-				<array>
-					<string>/Applications/Eudic.app</string>
-				</array>
-				<key>toggle</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.launchfiles</string>
-			<key>uid</key>
-			<string>606BB652-AE3A-4015-9DC4-215BBA26B042</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -135,6 +131,44 @@ end tell</string>
 			<string>1D4602C0-5DDC-4744-B79A-68E9A436D2BA</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>paths</key>
+				<array>
+					<string>/Applications/Eudic.app</string>
+				</array>
+				<key>toggle</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.launchfiles</string>
+			<key>uid</key>
+			<string>606BB652-AE3A-4015-9DC4-215BBA26B042</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>eudic</string>
+				<key>subtext</key>
+				<string>Show dic with the word</string>
+				<key>text</key>
+				<string>Eudic</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>4EED0387-482F-47F7-A529-41003C2A3AE9</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -200,7 +234,8 @@ https://www.eudic.net/v4/en/app/download
 
 ## Usage
 1. Use `⌥ ⌘ e` after selecting a word to look it up.
-2. Use `⌘ ⇧ s` after selecting a word to speak it.</string>
+2. Use `⌘ ⇧ s` after selecting a word to speak it.
+3. Type keyword `eudic` and word to look it up.</string>
 	<key>uidata</key>
 	<dict>
 		<key>1D4602C0-5DDC-4744-B79A-68E9A436D2BA</key>
@@ -212,12 +247,19 @@ https://www.eudic.net/v4/en/app/download
 			<key>ypos</key>
 			<real>100</real>
 		</dict>
+		<key>4EED0387-482F-47F7-A529-41003C2A3AE9</key>
+		<dict>
+			<key>xpos</key>
+			<real>70</real>
+			<key>ypos</key>
+			<real>300</real>
+		</dict>
 		<key>57EE9397-9A0B-4798-87F8-4CED7C78E470</key>
 		<dict>
 			<key>xpos</key>
 			<real>295</real>
 			<key>ypos</key>
-			<real>295</real>
+			<real>540</real>
 		</dict>
 		<key>606BB652-AE3A-4015-9DC4-215BBA26B042</key>
 		<dict>
@@ -233,7 +275,7 @@ https://www.eudic.net/v4/en/app/download
 			<key>xpos</key>
 			<real>75</real>
 			<key>ypos</key>
-			<real>295</real>
+			<real>540</real>
 		</dict>
 		<key>B31485C7-63E3-4813-A3F9-E0E024258066</key>
 		<dict>
