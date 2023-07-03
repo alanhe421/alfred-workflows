@@ -5,7 +5,7 @@
 	<key>bundleid</key>
 	<string>cn.alanhe.eudic</string>
 	<key>category</key>
-	<string>Productivity</string>
+	<string>Self-Dev</string>
 	<key>connections</key>
 	<dict>
 		<key>1D4602C0-5DDC-4744-B79A-68E9A436D2BA</key>
@@ -190,11 +190,17 @@ end alfred_script</string>
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>Use hotkeys to launch actions by pressing a key combination. You can connect one or more actions to be performed.
+	<string>&gt; Hotkeys for triggering some operations in Eudic.
 
-Hotkeys are stripped on import, to ensure that they don't clash with your existing hotkeys, so double-click the object and set your own hotkey.
+## Requirement
 
-A hotkey needs to contain a modifier (Cmd, Ctrl or Alt) and a keyboard character at least, but your best bet is to use slightly less common combinations (e.g. two modifiers) to avoid clashing with default OS X hotkeys or other apps on your Mac.</string>
+install eudic app 
+
+https://www.eudic.net/v4/en/app/download
+
+## Usage
+1. Use `⌥ ⌘ e` after selecting a word to look it up.
+2. Use `⌘ ⇧ s` after selecting a word to speak it.</string>
 	<key>uidata</key>
 	<dict>
 		<key>1D4602C0-5DDC-4744-B79A-68E9A436D2BA</key>
@@ -202,46 +208,48 @@ A hotkey needs to contain a modifier (Cmd, Ctrl or Alt) and a keyboard character
 			<key>note</key>
 			<string>Search copied word</string>
 			<key>xpos</key>
-			<integer>80</integer>
+			<real>80</real>
 			<key>ypos</key>
-			<integer>100</integer>
+			<real>100</real>
 		</dict>
 		<key>57EE9397-9A0B-4798-87F8-4CED7C78E470</key>
 		<dict>
 			<key>xpos</key>
-			<integer>295</integer>
+			<real>295</real>
 			<key>ypos</key>
-			<integer>295</integer>
+			<real>295</real>
 		</dict>
 		<key>606BB652-AE3A-4015-9DC4-215BBA26B042</key>
 		<dict>
 			<key>xpos</key>
-			<integer>465</integer>
+			<real>465</real>
 			<key>ypos</key>
-			<integer>100</integer>
+			<real>100</real>
 		</dict>
 		<key>65E11D2E-FC2E-4B45-B58B-E5AF264BFAFE</key>
 		<dict>
 			<key>note</key>
 			<string>One-click pronunciation</string>
 			<key>xpos</key>
-			<integer>75</integer>
+			<real>75</real>
 			<key>ypos</key>
-			<integer>295</integer>
+			<real>295</real>
 		</dict>
 		<key>B31485C7-63E3-4813-A3F9-E0E024258066</key>
 		<dict>
 			<key>xpos</key>
-			<integer>280</integer>
+			<real>280</real>
 			<key>ypos</key>
-			<integer>100</integer>
+			<real>100</real>
 		</dict>
 	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.0</string>
+	<string>1.1</string>
 	<key>webaddress</key>
-	<string>https://1991421.cn</string>
+	<string>https://github.com/alanhg/alfred-workflows/tree/master/eudic-tools</string>
 </dict>
 </plist>
