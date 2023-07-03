@@ -14,4 +14,5 @@ A hotkey needs to contain a modifier (Cmd, Ctrl or Alt) and a keyboard character
 
 <!-- more -->
 
-> 欧陆词典
+![screenshot.png](./screenshot.png)
+
