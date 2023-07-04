@@ -1,6 +1,6 @@
 
 arch=$(uname -m)
-brightness="./brightness/brightness.$arch"
+brightness="brightness"
 currentBrightness=$($brightness -l | grep -o -E 'brightness.*([0-9]+(\.[0-9]+)?)'| tr -d 'brightness ')
 if [ "$mode" = "up" ]; then
 currentBrightness=$(printf "%.6f" $(echo "$currentBrightness+$brightness_granularity" | bc))

@@ -273,7 +273,12 @@
 type `briup` or `bridown`
 
 
-thanks https://github.com/nriley/brightness</string>
+thanks https://github.com/nriley/brightness
+
+
+## Requirement
+
+brew install brightness</string>
 	<key>uidata</key>
 	<dict>
 		<key>0797C9F5-379A-4B76-B27C-CF5238375C04</key>
@@ -362,7 +367,7 @@ thanks https://github.com/nriley/brightness</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>0.4</string>
+	<string>0.5</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/brightness-control</string>
 </dict>
