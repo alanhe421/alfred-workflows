@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string></string>
+	<key>category</key>
+	<string>Tools</string>
+	<key>connections</key>
+	<dict>
+		<key>071D4EA9-B109-479F-8F4C-C31AA4D5DF34</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>95A6CF1B-946A-4FFF-BFFD-01E894B31892</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>95A6CF1B-946A-4FFF-BFFD-01E894B31892</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>50ED09D5-7985-43EF-B65B-1D5B5C5A1A0E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>FE084357-FC9B-4831-86E0-3AE559EC474C</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>95A6CF1B-946A-4FFF-BFFD-01E894B31892</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>LZ</string>
+	<key>description</key>
+	<string>Quickly switch sound output or input</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Switch Audio</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>SwitchAudioSource -s "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>95A6CF1B-946A-4FFF-BFFD-01E894B31892</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string></string>
+				<key>title</key>
+				<string>Switched to {query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>50ED09D5-7985-43EF-B65B-1D5B5C5A1A0E</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>Set output device</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>waiting</string>
+				<key>script</key>
+				<string>echo '&lt;?xml version="1.0"?&gt;&lt;items&gt;'
+current=$(SwitchAudioSource -c)
+SwitchAudioSource -a -t output | while read line; do
+	if [[ $current = $line ]] {
+		echo "&lt;item arg=\"$line\"&gt;&lt;title&gt;$line&lt;/title&gt;&lt;icon&gt;selected.png&lt;/icon&gt;&lt;/item&gt;"
+	} else {
+		echo "&lt;item arg=\"$line\"&gt;&lt;title&gt;$line&lt;/title&gt;&lt;/item&gt;"
+	}
+done
+
+echo '&lt;/items&gt;'</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>select a device to sound output</string>
+				<key>title</key>
+				<string>Set output device.</string>
+				<key>type</key>
+				<integer>5</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>FE084357-FC9B-4831-86E0-3AE559EC474C</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>Set input device</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>waiting</string>
+				<key>script</key>
+				<string>echo '&lt;?xml version="1.0"?&gt;&lt;items&gt;'
+current=$(SwitchAudioSource -c)
+SwitchAudioSource -a -t input | while read line; do
+	if [[ $current = $line ]] {
+		echo "&lt;item arg=\"$line\"&gt;&lt;title&gt;$line&lt;/title&gt;&lt;icon&gt;selected.png&lt;/icon&gt;&lt;/item&gt;"
+	} else {
+		echo "&lt;item arg=\"$line\"&gt;&lt;title&gt;$line&lt;/title&gt;&lt;/item&gt;"
+	}
+done
+
+echo '&lt;/items&gt;'</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>select a device to sound input</string>
+				<key>title</key>
+				<string>Set input device.</string>
+				<key>type</key>
+				<integer>5</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>071D4EA9-B109-479F-8F4C-C31AA4D5DF34</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string># usage
+
+input `Set output device` or `Set input device` to toggle it.
+
+# requirement
+
+`brew install switchaudio-osx`</string>
+	<key>uidata</key>
+	<dict>
+		<key>071D4EA9-B109-479F-8F4C-C31AA4D5DF34</key>
+		<dict>
+			<key>xpos</key>
+			<real>30</real>
+			<key>ypos</key>
+			<real>320</real>
+		</dict>
+		<key>50ED09D5-7985-43EF-B65B-1D5B5C5A1A0E</key>
+		<dict>
+			<key>xpos</key>
+			<real>600</real>
+			<key>ypos</key>
+			<real>150</real>
+		</dict>
+		<key>95A6CF1B-946A-4FFF-BFFD-01E894B31892</key>
+		<dict>
+			<key>note</key>
+			<string>setSound</string>
+			<key>xpos</key>
+			<real>325</real>
+			<key>ypos</key>
+			<real>150</real>
+		</dict>
+		<key>FE084357-FC9B-4831-86E0-3AE559EC474C</key>
+		<dict>
+			<key>xpos</key>
+			<real>30</real>
+			<key>ypos</key>
+			<real>150</real>
+		</dict>
+	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
+	<key>variablesdontexport</key>
+	<array/>
+	<key>version</key>
+	<string>0.1</string>
+	<key>webaddress</key>
+	<string>https://github.com/liCells</string>
+</dict>
+</plist>
