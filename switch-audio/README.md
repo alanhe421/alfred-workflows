@@ -1,7 +1,7 @@
 Easy to switch audio/list camera.
 
 
-Support Monterey 12.0.1
+Support Monterey 12.0.1,Does not support Ventura
 
 
 ## Requirement
