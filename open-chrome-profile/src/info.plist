@@ -8,11 +8,24 @@
 	<string>Self-Dev</string>
 	<key>connections</key>
 	<dict>
-		<key>EFB1F57C-ED91-490B-8F0D-534C3102D07E</key>
+		<key>07626DB9-8FCC-4887-B783-CE7731F12477</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>A22E78CF-A512-4A22-896B-E69F343B904F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>EFB1F57C-ED91-490B-8F0D-534C3102D07E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>07626DB9-8FCC-4887-B783-CE7731F12477</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -32,29 +45,6 @@
 	<string>Open Chrome Profile</string>
 	<key>objects</key>
 	<array>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --args --profile-directory="$1"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>A22E78CF-A512-4A22-896B-E69F343B904F</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -85,7 +75,17 @@
 				<key>script</key>
 				<string>[[ -d "${alfred_workflow_cache}" ]] || mkdir -p "${alfred_workflow_cache}"
 
-/usr/bin/python3 main.py</string>
+if ! /usr/bin/python3 main.py; then
+cat &lt;&lt;EOF
+&lt;?xml version="1.0"?&gt;
+&lt;items&gt;
+  &lt;item arg="error"&gt;
+    &lt;title&gt;Python3 missing&lt;/title&gt;
+    &lt;subtitle&gt;/usr/bin/python3 not exist&lt;/subtitle&gt;
+  &lt;/item&gt;
+&lt;/items&gt;
+EOF
+fi</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -106,6 +106,61 @@
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --args --profile-directory="$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>A22E78CF-A512-4A22-896B-E69F343B904F</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>error</string>
+						<key>outputlabel</key>
+						<string></string>
+						<key>uid</key>
+						<string>5668865B-310F-4789-8B89-63B5620DA6F5</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+				<key>hideelse</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>07626DB9-8FCC-4887-B783-CE7731F12477</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>&gt; Easy to open Chrome with selected profile.
@@ -123,12 +178,19 @@ idea from https://github.com/Wit4r7/AlfredAutomations. Thanks Wit4r7
 `/usr/bin/python3` installed</string>
 	<key>uidata</key>
 	<dict>
+		<key>07626DB9-8FCC-4887-B783-CE7731F12477</key>
+		<dict>
+			<key>xpos</key>
+			<real>525</real>
+			<key>ypos</key>
+			<real>125</real>
+		</dict>
 		<key>A22E78CF-A512-4A22-896B-E69F343B904F</key>
 		<dict>
 			<key>xpos</key>
-			<real>495</real>
+			<real>715</real>
 			<key>ypos</key>
-			<real>105</real>
+			<real>120</real>
 		</dict>
 		<key>EFB1F57C-ED91-490B-8F0D-534C3102D07E</key>
 		<dict>
@@ -143,7 +205,7 @@ idea from https://github.com/Wit4r7/AlfredAutomations. Thanks Wit4r7
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>0.6</string>
+	<string>0.7</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/open-chrome-profile</string>
 </dict>
