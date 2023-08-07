@@ -58,7 +58,7 @@ const wf = new Workflow();
             utils.buildItem({
               title: `${captcha}`,
               subtitle: `${
-                subject ? `Sender：${subject} ` : ''
+                subject ? `Sender：${subject}, ` : `Sender: ${messageObj.sender}, `
               }${dateUtils.formatToCalendar(
                 messageObj.message_date
               )}，⏎ to Copy`,
