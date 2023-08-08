@@ -22,7 +22,9 @@ for item in profil:
     filename = ''
     if 'last_downloaded_gaia_picture_url_with_size' in profil[str(item)]:
         filename = profil[str(item)]['last_downloaded_gaia_picture_url_with_size'].split("/")[-1] + ".png"
-        filename = cache_dir + '/' + filename
+        # Avoid long paths by using a shorter hash instead of the original filename
+        fname_hash = str(hash(filename)) + ".png"
+        filename = cache_dir + '/' + fname_hash
         if not os.path.isfile(filename):
             try:
                 urllib.request.urlretrieve(profil[str(item)]['last_downloaded_gaia_picture_url_with_size'], filename)

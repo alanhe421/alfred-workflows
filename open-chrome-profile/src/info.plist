@@ -73,19 +73,7 @@
 				<key>runningsubtext</key>
 				<string>Please Wait</string>
 				<key>script</key>
-				<string>[[ -d "${alfred_workflow_cache}" ]] || mkdir -p "${alfred_workflow_cache}"
-
-if ! /usr/bin/python3 main.py; then
-cat &lt;&lt;EOF
-&lt;?xml version="1.0"?&gt;
-&lt;items&gt;
-  &lt;item arg="error"&gt;
-    &lt;title&gt;Python3 missing&lt;/title&gt;
-    &lt;subtitle&gt;/usr/bin/python3 not exist&lt;/subtitle&gt;
-  &lt;/item&gt;
-&lt;/items&gt;
-EOF
-fi</string>
+				<string>source script.sh</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
