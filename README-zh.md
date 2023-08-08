@@ -446,6 +446,13 @@ P.S.: 使用这些Workflow的前提是已购买[Powerpack](https://www.alfredapp
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/eliericha">
+            <img src="https://avatars.githubusercontent.com/u/3911549?v=4" width="100;" alt="eliericha"/>
+            <br />
+            <sub><b>Elie Richa</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/psychopasss">
             <img src="https://avatars.githubusercontent.com/u/11738089?v=4" width="100;" alt="psychopasss"/>
             <br />
