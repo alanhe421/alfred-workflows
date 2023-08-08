@@ -2,6 +2,7 @@ import json
 from pathlib import Path
 import urllib.request
 import os
+import hashlib
 
 home = str(Path.home())
 cache_dir = os.environ['alfred_workflow_cache']
@@ -21,9 +22,8 @@ profil = profile['info_cache']
 for item in profil:
     filename = ''
     if 'last_downloaded_gaia_picture_url_with_size' in profil[str(item)]:
-        filename = profil[str(item)]['last_downloaded_gaia_picture_url_with_size'].split("/")[-1] + ".png"
         # Avoid long paths by using a shorter hash instead of the original filename
-        fname_hash = str(hash(filename)) + ".png"
+        fname_hash = str(hashlib.md5(profil[str(item)]['last_downloaded_gaia_picture_url_with_size'].encode()).hexdigest()) + ".png"
         filename = cache_dir + '/' + fname_hash
         if not os.path.isfile(filename):
             try:
