@@ -47,19 +47,13 @@ function updateHomeReadme(items) {
  * @param workflow
  * @returns {{plistObj: *}}
  */
-function parseWorkflowInfo(workflowFolder, workflow) {
-  const workFlowFile = workflowFolder + '/' + workflow;
-  const zip_suffix = '.zip';
-  const workFlowZipFile = workflowFolder + '/src' + zip_suffix
-  fs.copyFileSync(workFlowFile, workFlowZipFile);
-  // 解压zip文件，创建文件夹
-  const workFlowUnzipFolder = workFlowZipFile.substring(0, workFlowZipFile.length - zip_suffix.length);
-  execSync(`unzip -o ${workFlowZipFile} -d ${workFlowUnzipFolder}`);
-  execSync(`rm -rf ${workFlowZipFile}`);
-  // 源码中node_modules不纳入版本管理
-  execSync(`rm -rf ${workFlowUnzipFolder}/node_modules`);
-  const plistObj = plist.parse(fs.readFileSync(`${workFlowUnzipFolder}/info.plist`, 'utf8'));
-  return {plistObj};
+function parseWorkflowInfo(workflowFolder) {
+  if (fs.existsSync(`${workflowFolder}/src/info.plist`)) {
+    const plistObj = plist.parse(fs.readFileSync(`${workflowFolder}/src/info.plist`, 'utf8'));
+    return {plistObj};
+  } else {
+    throw new Error(`workflow ${workflowFolder} not found info.plist`);
+  }
 }
 
 function updateHomePage() {
@@ -72,47 +66,34 @@ function updateHomePage() {
     if (stat.isFile()) {
       return;
     }
-    if (folderName.match(/^\./)) {
-      return;
-    }
-    const files = fs.readdirSync(workflowFolder);
-    const workflow = files.find(f => f.match(/\.alfredworkflow$/));
-    if (!workflow) {
+    if (folderName.match(/(^\.)|node_modules/)) {
       return;
     }
     try {
-      const {plistObj} = parseWorkflowInfo(workflowFolder, workflow);
+      const {plistObj} = parseWorkflowInfo(workflowFolder);
       items.push({
         name: plistObj.name, path: `/tree/master/${folderName}`, folderName, plistObj,
-        filename: querystring.escape(workflow)
+        filename: querystring.escape(plistObj.name + '.alfredworkflow')
       });
     } catch (e) {
-      console.error(e);
+      console.log(e);
     }
   });
   updateHomeReadme(items);
   writeWorkflowNameOptions(items);
 }
 
-function main() {
-  if (action === 'updateHomePage') {
-    updateHomePage();
-  } else if (action === 'updatePerWorkflowPage') {
-    updatePerWorkflowPage();
-  }
-}
-
-main();
-
-
 /**
  * github 缺省环境变量
  * https://docs.github.com/en/enterprise-cloud@latest/actions/learn-github-actions/environment-variables#default-environment-variables
+ * @param absoluteWorkflowFolder
+ * @param folderName
+ * @param plistObj
  */
-function updateReadme(absoluteWorkflowFolder, folderName, plistObj, workflow) {
+function updateReadme(absoluteWorkflowFolder, folderName, plistObj) {
   const readme = plistObj.readme;
   const readmeFile = absoluteWorkflowFolder + '/README.md';
-  const filename = (path.basename(workflow));
+  const filename = plistObj.name + '.alfredworkflow';
   let readmeContent;
   try {
     if (!fs.existsSync(readmeFile)) {
@@ -135,6 +116,7 @@ ${buildBadgeContent(plistObj, folderName, querystring.escape(filename))}
 }
 
 function buildBadgeContent({version}, folderName, filename) {
+
   return `
 ![](https://img.shields.io/badge/version-v${version}-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/${process.env.GITHUB_REPOSITORY}/raw/${process.env.GITHUB_REF_NAME}/${folderName}/${(filename)})
@@ -144,47 +126,57 @@ function buildBadgeContent({version}, folderName, filename) {
 
 /**
  * 保存workflow源码文件，方便PR对比
- * @param workflowFolder
- * @param workflow
+ * @param workflowFolderPath
  * @returns {{plistObj: *}}
  */
-function parseWorkflowInfo(workflowFolder, workflow) {
-  const workFlowFile = workflowFolder + '/' + workflow;
-  const zip_suffix = '.zip';
-  const workFlowZipFile = workflowFolder + '/src' + zip_suffix
-  fs.copyFileSync(workFlowFile, workFlowZipFile);
-  // 解压zip文件，创建文件夹
-  const workFlowUnzipFolder = workFlowZipFile.substring(0, workFlowZipFile.length - zip_suffix.length);
-  execSync(`unzip -o ${workFlowZipFile} -d ${workFlowUnzipFolder}`);
-  execSync(`rm -rf ${workFlowZipFile}`);
-  // 源码中node_modules不纳入版本管理
-  execSync(`rm -rf ${workFlowUnzipFolder}/node_modules`);
-  const plistObj = plist.parse(fs.readFileSync(`${workFlowUnzipFolder}/info.plist`, 'utf8'));
+function buildWorkflow(workflowFolderPath) {
+  const workflowSource = workflowFolderPath + '/src';
+  const plistObj = plist.parse(fs.readFileSync(`${workflowSource}/info.plist`, 'utf8'));
+  const tempFolder = `${workflowFolderPath}/${plistObj.name}`;
+  execSync(`cp -r '${workflowSource}' '${tempFolder}'`);
+  // 如果是NODEJS的workflow，需要安装依赖
+  if (fs.existsSync(`${workflowSource}/package.json`)) {
+    execSync(`cd '${tempFolder}' && npm i`);
+  }
+  execSync(`cd '${tempFolder}' && zip -r '../${plistObj.name}.alfredworkflow' *`);
+  execSync(`rm -rf '${tempFolder}' `);
   return {plistObj};
 }
 
 function updatePerWorkflowPage() {
   const targetFolder = path.resolve(__dirname, '../../');
   const folders = fs.readdirSync(targetFolder);
-  folders.forEach((folderName) => {
+  for (const folderName of folders) {
     const workflowFolder = targetFolder + '/' + folderName;
     const stat = fs.lstatSync(workflowFolder);
     if (stat.isFile()) {
-      return;
+      continue;
     }
     if (folderName.match(/^\./)) {
-      return;
+      continue;
     }
     const files = fs.readdirSync(workflowFolder);
-    const workflow = files.find(f => f.match(/\.alfredworkflow$/));
-    if (!workflow) {
-      return;
+    const workflowSourceCode = files.find(f => f.match(/^src$/));
+    if (!workflowSourceCode) {
+      continue;
     }
     try {
-      const {plistObj} = parseWorkflowInfo(workflowFolder, workflow);
-      updateReadme(workflowFolder, folderName, plistObj, workflow);
+      buildWorkflow(workflowFolder);
+      const {plistObj} = parseWorkflowInfo(workflowFolder);
+      updateReadme(workflowFolder, folderName, plistObj);
     } catch (e) {
       console.error(e);
     }
-  })
+  }
 }
+
+function main() {
+  if (action === 'updatePerWorkflowPage') {
+    updatePerWorkflowPage();
+  }
+  if (action === 'updateHomePage') {
+    updateHomePage();
+  }
+}
+
+main();
