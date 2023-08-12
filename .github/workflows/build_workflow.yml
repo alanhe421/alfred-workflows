@@ -7,7 +7,7 @@ on:
   push:
     branches: [ master ]
     paths:
-      - '*/*.alfredworkflow'
+      - '*/src/**/*'
   workflow_dispatch:
     inputs:
       logLevel:
@@ -60,12 +60,6 @@ jobs:
         uses: technote-space/toc-generator@v4
         with:
           MAX_HEADER_LEVEL: 2
-      #      - name: GitHub README Generator
-      #        uses: th3c0d3br34ker/github-readme-info@1.0.2
-      #        with:
-      #          GH_TOKEN: ${{ github.token }}
-      #          TIMEZONE: "Asia/Shanghai"
-      #          SHOW_TOTAL_CONTRIBUTIONS: "True"
       - run: npm install plist
       - name: Refresh Workflow Version
         run:  node .github/workflows/main.js updateHomePage
