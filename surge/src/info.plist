@@ -126,13 +126,23 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>CAC75DC7-4E03-47F4-9C88-B75709EC6D23</string>
+				<string>BBB56AB5-5DF6-4763-8504-006F8B6066C9</string>
 				<key>modifiers</key>
-				<integer>524288</integer>
+				<integer>1048576</integer>
 				<key>modifiersubtext</key>
-				<string>View submenu</string>
+				<string>enter to toggle</string>
 				<key>vitoclose</key>
-				<true/>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>9DC097B6-3E31-4BC5-82CC-1D8BC266141F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
 		<key>6620B43C-63DB-4DCE-99DD-3A1C57604DDA</key>
@@ -200,69 +210,7 @@
 				<false/>
 			</dict>
 		</array>
-		<key>A205BD55-D9B0-44B8-A796-D824FF9D0CD5</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>E9460C86-1ECB-4B7A-AC26-9E3C9217A842</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>A6EDFDEB-1846-4C23-B96C-E307F0217376</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>E9460C86-1ECB-4B7A-AC26-9E3C9217A842</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>A8B7F4BE-AC75-4422-824F-24CE3504A736</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>32F87F30-C084-443C-8A7F-43B9F5588E2A</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>3D011412-96FD-4B01-A35D-5DF525CE08A6</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>BBB56AB5-5DF6-4763-8504-006F8B6066C9</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>32F87F30-C084-443C-8A7F-43B9F5588E2A</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>CAC75DC7-4E03-47F4-9C88-B75709EC6D23</key>
+		<key>9DC097B6-3E31-4BC5-82CC-1D8BC266141F</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
@@ -372,9 +320,61 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
+		</array>
+		<key>A205BD55-D9B0-44B8-A796-D824FF9D0CD5</key>
+		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>BBB56AB5-5DF6-4763-8504-006F8B6066C9</string>
+				<string>E9460C86-1ECB-4B7A-AC26-9E3C9217A842</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>A6EDFDEB-1846-4C23-B96C-E307F0217376</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E9460C86-1ECB-4B7A-AC26-9E3C9217A842</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>A8B7F4BE-AC75-4422-824F-24CE3504A736</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>32F87F30-C084-443C-8A7F-43B9F5588E2A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>3D011412-96FD-4B01-A35D-5DF525CE08A6</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>BBB56AB5-5DF6-4763-8504-006F8B6066C9</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>32F87F30-C084-443C-8A7F-43B9F5588E2A</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -434,6 +434,16 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>78ED1DBA-29A8-4592-B380-71E3678E1A2B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
 		</array>
 	</dict>
 	<key>createdby</key>
@@ -472,146 +482,25 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>conditions</key>
-				<array>
-					<dict>
-						<key>inputstring</key>
-						<string></string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>update_workflow</string>
-						<key>outputlabel</key>
-						<string></string>
-						<key>uid</key>
-						<string>8F22E5F9-D68C-4D1A-BDDD-E0D6FBE8F0F9</string>
-					</dict>
-					<dict>
-						<key>inputstring</key>
-						<string></string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>outboundmode</string>
-						<key>outputlabel</key>
-						<string></string>
-						<key>uid</key>
-						<string>CC027DAF-E73F-4CE8-AD72-6A8EF241675C</string>
-					</dict>
-					<dict>
-						<key>inputstring</key>
-						<string></string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>httpApi</string>
-						<key>outputlabel</key>
-						<string></string>
-						<key>uid</key>
-						<string>F593F692-F916-42BB-99B7-140B87623C13</string>
-					</dict>
-					<dict>
-						<key>inputstring</key>
-						<string></string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>dns</string>
-						<key>outputlabel</key>
-						<string></string>
-						<key>uid</key>
-						<string>BAF32485-BCE3-4162-A461-73BF076974E5</string>
-					</dict>
-					<dict>
-						<key>inputstring</key>
-						<string></string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>policyGroups</string>
-						<key>outputlabel</key>
-						<string></string>
-						<key>uid</key>
-						<string>B094556D-7E5F-4164-B13E-9BB4ED4E4CB8</string>
-					</dict>
-					<dict>
-						<key>inputstring</key>
-						<string></string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>profiles</string>
-						<key>outputlabel</key>
-						<string></string>
-						<key>uid</key>
-						<string>E933A172-0BB9-448B-A033-1E0AC7512B93</string>
-					</dict>
-					<dict>
-						<key>inputstring</key>
-						<string></string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>module</string>
-						<key>outputlabel</key>
-						<string></string>
-						<key>uid</key>
-						<string>8F9640CA-01F8-4302-A00C-84BA9B4CA810</string>
-					</dict>
-					<dict>
-						<key>inputstring</key>
-						<string></string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>rules</string>
-						<key>outputlabel</key>
-						<string></string>
-						<key>uid</key>
-						<string>14FA5E04-9ADE-4A0A-B8D5-4A034446C6FA</string>
-					</dict>
-					<dict>
-						<key>inputstring</key>
-						<string></string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>log</string>
-						<key>outputlabel</key>
-						<string></string>
-						<key>uid</key>
-						<string>3DE87DAE-DC88-4020-8D85-3C764F5C8DAD</string>
-					</dict>
-				</array>
-				<key>elselabel</key>
-				<string>else</string>
-				<key>hideelse</key>
+				<key>concurrently</key>
 				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>/usr/local/bin/node ./do.js "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.utility.conditional</string>
+			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>CAC75DC7-4E03-47F4-9C88-B75709EC6D23</string>
+			<string>BBB56AB5-5DF6-4763-8504-006F8B6066C9</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -762,6 +651,150 @@
 			<string>alfred.workflow.action.launchfiles</string>
 			<key>uid</key>
 			<string>B53E08CC-23B2-4106-BDA3-E59F7963BB1C</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>update_workflow</string>
+						<key>outputlabel</key>
+						<string></string>
+						<key>uid</key>
+						<string>8F22E5F9-D68C-4D1A-BDDD-E0D6FBE8F0F9</string>
+					</dict>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>outboundmode</string>
+						<key>outputlabel</key>
+						<string></string>
+						<key>uid</key>
+						<string>CC027DAF-E73F-4CE8-AD72-6A8EF241675C</string>
+					</dict>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>httpApi</string>
+						<key>outputlabel</key>
+						<string></string>
+						<key>uid</key>
+						<string>F593F692-F916-42BB-99B7-140B87623C13</string>
+					</dict>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>dns</string>
+						<key>outputlabel</key>
+						<string></string>
+						<key>uid</key>
+						<string>BAF32485-BCE3-4162-A461-73BF076974E5</string>
+					</dict>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>policyGroups</string>
+						<key>outputlabel</key>
+						<string></string>
+						<key>uid</key>
+						<string>B094556D-7E5F-4164-B13E-9BB4ED4E4CB8</string>
+					</dict>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>profiles</string>
+						<key>outputlabel</key>
+						<string></string>
+						<key>uid</key>
+						<string>E933A172-0BB9-448B-A033-1E0AC7512B93</string>
+					</dict>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>module</string>
+						<key>outputlabel</key>
+						<string></string>
+						<key>uid</key>
+						<string>8F9640CA-01F8-4302-A00C-84BA9B4CA810</string>
+					</dict>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>rules</string>
+						<key>outputlabel</key>
+						<string></string>
+						<key>uid</key>
+						<string>14FA5E04-9ADE-4A0A-B8D5-4A034446C6FA</string>
+					</dict>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>log</string>
+						<key>outputlabel</key>
+						<string></string>
+						<key>uid</key>
+						<string>3DE87DAE-DC88-4020-8D85-3C764F5C8DAD</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+				<key>hideelse</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>9DC097B6-3E31-4BC5-82CC-1D8BC266141F</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1026,29 +1059,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>/usr/local/bin/node ./do.js "{query}"</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>BBB56AB5-5DF6-4763-8504-006F8B6066C9</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>alfredfiltersresults</key>
 				<true/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -1092,6 +1102,25 @@
 			<string>0636B261-83DB-4543-80DF-242F3DC91488</string>
 			<key>version</key>
 			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>externaltriggerid</key>
+				<string>modules</string>
+				<key>passinputasargument</key>
+				<true/>
+				<key>passvariables</key>
+				<true/>
+				<key>workflowbundleid</key>
+				<string>self</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.callexternaltrigger</string>
+			<key>uid</key>
+			<string>78ED1DBA-29A8-4592-B380-71E3678E1A2B</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1438,6 +1467,13 @@ Surge Mac 4.0.0、Surge iOS 4.4.0开始提供HTTP API, 即该版本之前的均�
 			<key>ypos</key>
 			<real>805</real>
 		</dict>
+		<key>78ED1DBA-29A8-4592-B380-71E3678E1A2B</key>
+		<dict>
+			<key>xpos</key>
+			<real>1090</real>
+			<key>ypos</key>
+			<real>990</real>
+		</dict>
 		<key>7AF3CA13-DA2D-4D97-B5A7-E4EC8D4107F3</key>
 		<dict>
 			<key>xpos</key>
@@ -1448,9 +1484,9 @@ Surge Mac 4.0.0、Surge iOS 4.4.0开始提供HTTP API, 即该版本之前的均�
 		<key>7C07A059-1788-425B-B78F-E0E083008564</key>
 		<dict>
 			<key>xpos</key>
-			<real>820</real>
+			<real>825</real>
 			<key>ypos</key>
-			<real>1065</real>
+			<real>1070</real>
 		</dict>
 		<key>7F8E5ABB-8E12-4EE8-A537-9C6C8884222A</key>
 		<dict>
@@ -1468,12 +1504,19 @@ Surge Mac 4.0.0、Surge iOS 4.4.0开始提供HTTP API, 即该版本之前的均�
 			<key>ypos</key>
 			<real>550</real>
 		</dict>
+		<key>9DC097B6-3E31-4BC5-82CC-1D8BC266141F</key>
+		<dict>
+			<key>xpos</key>
+			<real>165</real>
+			<key>ypos</key>
+			<real>425</real>
+		</dict>
 		<key>A205BD55-D9B0-44B8-A796-D824FF9D0CD5</key>
 		<dict>
 			<key>xpos</key>
-			<real>240</real>
+			<real>270</real>
 			<key>ypos</key>
-			<real>840</real>
+			<real>860</real>
 		</dict>
 		<key>A6EDFDEB-1846-4C23-B96C-E307F0217376</key>
 		<dict>
@@ -1485,9 +1528,9 @@ Surge Mac 4.0.0、Surge iOS 4.4.0开始提供HTTP API, 即该版本之前的均�
 		<key>A700346D-23C4-4082-B08E-5310676FC7B1</key>
 		<dict>
 			<key>xpos</key>
-			<real>430</real>
+			<real>530</real>
 			<key>ypos</key>
-			<real>45</real>
+			<real>40</real>
 		</dict>
 		<key>A8B7F4BE-AC75-4422-824F-24CE3504A736</key>
 		<dict>
@@ -1503,7 +1546,7 @@ Surge Mac 4.0.0、Surge iOS 4.4.0开始提供HTTP API, 即该版本之前的均�
 			<key>note</key>
 			<string>warning for turn on http-api</string>
 			<key>xpos</key>
-			<real>485</real>
+			<real>500</real>
 			<key>ypos</key>
 			<real>350</real>
 		</dict>
@@ -1512,16 +1555,9 @@ Surge Mac 4.0.0、Surge iOS 4.4.0开始提供HTTP API, 即该版本之前的均�
 			<key>note</key>
 			<string>do something</string>
 			<key>xpos</key>
-			<real>825</real>
+			<real>880</real>
 			<key>ypos</key>
-			<real>885</real>
-		</dict>
-		<key>CAC75DC7-4E03-47F4-9C88-B75709EC6D23</key>
-		<dict>
-			<key>xpos</key>
-			<real>225</real>
-			<key>ypos</key>
-			<real>60</real>
+			<real>50</real>
 		</dict>
 		<key>D7FC2694-B93F-4F59-A2DF-BB59ACDA7200</key>
 		<dict>
@@ -1606,7 +1642,7 @@ Surge Mac 4.0.0、Surge iOS 4.4.0开始提供HTTP API, 即该版本之前的均�
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.22</string>
+	<string>1.23</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/surge</string>
 </dict>

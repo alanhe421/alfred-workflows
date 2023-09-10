@@ -1,5 +1,5 @@
 const [, , query] = process.argv;
-const { utils } = require('@stacker/alfred-utils');
+const {utils} = require('@stacker/alfred-utils');
 
 const instance = require('./axios').createHttpClient(process.env.HTTP_API);
 instance.get('/v1/policy_groups').then((res) => {
@@ -8,7 +8,7 @@ instance.get('/v1/policy_groups').then((res) => {
     arg: item
   }));
 
-  utils.outputScriptFilter({
-    items: utils.filterItemsBy(items, query, 'title', 'subtitle')
+  utils.printScriptFilter({
+    items: utils.filterItemsBy(items, query, ['title', 'subtitle'])
   });
 });

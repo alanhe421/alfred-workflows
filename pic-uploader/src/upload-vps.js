@@ -15,7 +15,9 @@ const { execSync } = require('child_process');
       `ssh -p 22 ${process.env.vps_user}@${process.env.vps_server} "mkdir -p ${process.env.vps_destination}/${year}"`
     );
     execSync(
-      `scp "${process.env.alfred_workflow_cache}/${query}" ${process.env.vps_user}@${process.env.vps_server}:${
+      `scp ${utils.escapeFilePath(
+        process.env.alfred_workflow_cache
+      )}/${query} ${process.env.vps_user}@${process.env.vps_server}:${
         process.env.vps_destination
       }/${year}/`
     );

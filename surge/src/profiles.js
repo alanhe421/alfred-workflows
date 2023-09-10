@@ -8,7 +8,7 @@ const query = process.env.module;
       instance.get('/v1/profiles/current').then((res) => res.data.name),
       instance.get('/v1/profiles').then((res) => res.data.profiles)
     ]);
-    utils.outputScriptFilter({
+    utils.printScriptFilter({
       items: profiles.map((item) => ({
         title: item,
         subtitle: item === name ? 'selected' : '',
@@ -23,7 +23,7 @@ const query = process.env.module;
     return;
   }
   if (query === 'log') {
-    utils.outputScriptFilter({
+    utils.printScriptFilter({
       items: [
         {
           level: 'warning',
