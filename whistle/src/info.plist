@@ -137,6 +137,18 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
+				<string>1BB4A7EB-46B6-4F8F-ABC8-1242CB1D010C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>A2A52332-1F77-42BF-B0EE-4360F5F1E691</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
 				<string>91D22021-41E7-4769-BA48-8F025DF64404</string>
 				<key>modifiers</key>
 				<integer>0</integer>
@@ -166,6 +178,18 @@
 				<string></string>
 				<key>sourceoutputuid</key>
 				<string>E771362D-58D5-45B7-AE1B-A3B6126F24B7</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>518D397F-C8CE-4C0E-B2CA-8F1BA5703803</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>81B42B49-8335-463D-B005-3E33F4D075A9</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -245,21 +269,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string>npm i whistle@latest -g</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.terminalcommand</string>
-			<key>uid</key>
-			<string>C77FA813-2DA6-4948-869A-B9C4E57C0295</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -303,6 +312,21 @@
 			<string>8F3F47C9-3B17-4001-AB15-68C6CE16EFEA</string>
 			<key>version</key>
 			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>npm i whistle@latest -g</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.terminalcommand</string>
+			<key>uid</key>
+			<string>C77FA813-2DA6-4948-869A-B9C4E57C0295</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -411,6 +435,34 @@
 						<string></string>
 						<key>uid</key>
 						<string>C85549CB-DFCC-4A79-A08F-12D47D4C0F1C</string>
+					</dict>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>_global_proxy</string>
+						<key>outputlabel</key>
+						<string></string>
+						<key>uid</key>
+						<string>A2A52332-1F77-42BF-B0EE-4360F5F1E691</string>
+					</dict>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>_restart</string>
+						<key>outputlabel</key>
+						<string></string>
+						<key>uid</key>
+						<string>81B42B49-8335-463D-B005-3E33F4D075A9</string>
 					</dict>
 				</array>
 				<key>elselabel</key>
@@ -551,6 +603,29 @@ node ./index.js $URL "${alfred_workflow_cache}" "{query}"</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
+				<string>npx @stacker/whistle.globalproxy set --port $port --host $host</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>1BB4A7EB-46B6-4F8F-ABC8-1242CB1D010C</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
 				<string>w2 stop</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
@@ -582,6 +657,41 @@ node ./index.js $URL "${alfred_workflow_cache}" "{query}"</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>if [ "{query}" == "service_unavailable" ]; then
+ if [ -n "$SOCKS_PORT" ]; then
+  w2 start --socksPort=$SOCKS_PORT
+  else
+  w2 start
+ fi
+else
+ if [ -n "$SOCKS_PORT" ]; then
+  w2 restart --socksPort=$SOCKS_PORT
+  else
+  w2 restart
+ fi
+fi</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>518D397F-C8CE-4C0E-B2CA-8F1BA5703803</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>browser</key>
 				<string></string>
 				<key>skipqueryencode</key>
@@ -597,6 +707,25 @@ node ./index.js $URL "${alfred_workflow_cache}" "{query}"</string>
 			<string>alfred.workflow.action.openurl</string>
 			<key>uid</key>
 			<string>A06CD71A-6778-48AB-A9FB-AE6515F7552E</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>externaltriggerid</key>
+				<string>w2</string>
+				<key>passinputasargument</key>
+				<false/>
+				<key>passvariables</key>
+				<false/>
+				<key>workflowbundleid</key>
+				<string>self</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.callexternaltrigger</string>
+			<key>uid</key>
+			<string>CBEF2157-E76A-4FB4-BA8D-8BB5AFA58CCA</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -661,52 +790,6 @@ node ./index.js $URL "${alfred_workflow_cache}" "{query}"</string>
 				<key>externaltriggerid</key>
 				<string>w2</string>
 				<key>passinputasargument</key>
-				<false/>
-				<key>passvariables</key>
-				<false/>
-				<key>workflowbundleid</key>
-				<string>self</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.callexternaltrigger</string>
-			<key>uid</key>
-			<string>CBEF2157-E76A-4FB4-BA8D-8BB5AFA58CCA</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>if [ -n "$SOCKS_PORT" ]; then
-  w2 start --socksPort=$SOCKS_PORT
-else
-  w2 start
-fi</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>518D397F-C8CE-4C0E-B2CA-8F1BA5703803</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>externaltriggerid</key>
-				<string>w2</string>
-				<key>passinputasargument</key>
 				<true/>
 				<key>passvariables</key>
 				<true/>
@@ -747,6 +830,15 @@ Type `w2` to trigger.
 If you need SOCKS proxy, configure SOCKS_PORT.</string>
 	<key>uidata</key>
 	<dict>
+		<key>1BB4A7EB-46B6-4F8F-ABC8-1242CB1D010C</key>
+		<dict>
+			<key>note</key>
+			<string>set whistle as global proxy</string>
+			<key>xpos</key>
+			<real>715</real>
+			<key>ypos</key>
+			<real>330</real>
+		</dict>
 		<key>30D803D0-E21E-46BC-A8DA-347C1CC19AEB</key>
 		<dict>
 			<key>xpos</key>
@@ -782,9 +874,9 @@ If you need SOCKS proxy, configure SOCKS_PORT.</string>
 			<key>note</key>
 			<string>w2 start</string>
 			<key>xpos</key>
-			<real>775</real>
+			<real>885</real>
 			<key>ypos</key>
-			<real>700</real>
+			<real>550</real>
 		</dict>
 		<key>795632DF-8E0D-46A1-8D7A-04E7327568F2</key>
 		<dict>
@@ -862,16 +954,16 @@ If you need SOCKS proxy, configure SOCKS_PORT.</string>
 		<key>C77FA813-2DA6-4948-869A-B9C4E57C0295</key>
 		<dict>
 			<key>xpos</key>
-			<real>710</real>
+			<real>705</real>
 			<key>ypos</key>
 			<real>15</real>
 		</dict>
 		<key>CBEF2157-E76A-4FB4-BA8D-8BB5AFA58CCA</key>
 		<dict>
 			<key>xpos</key>
-			<real>1000</real>
+			<real>1190</real>
 			<key>ypos</key>
-			<real>700</real>
+			<real>560</real>
 		</dict>
 		<key>E2BDBB31-7558-4AC8-8099-698959B5E2F4</key>
 		<dict>
@@ -938,7 +1030,7 @@ If you need SOCKS proxy, configure SOCKS_PORT.</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>2.12</string>
+	<string>2.13</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/whistle</string>
 </dict>
