@@ -356,27 +356,6 @@ echo -n $newPic</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>qr</string>
-				<key>subtext</key>
-				<string>Read QR Code from the screen</string>
-				<key>text</key>
-				<string>QR Reader</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>498B32F7-777D-4970-B05C-FAEBBC07B17D</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -396,12 +375,7 @@ end tell
 set the savePath to cacheFolderPath &amp; "/screenshot.png"
 
 
-tell application "Finder"
-    if exists savePath then
-        delete savePath
-    end if
-end tell
-
+do shell script "rm -f " &amp; quoted form of savePath
 do shell script "screencapture -i " &amp; (quoted form of POSIX path of savePath)
 
 return savePath</string>
@@ -418,6 +392,27 @@ return savePath</string>
 			<string>43FA5FDD-33C5-4580-850C-572FA1219020</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>qr</string>
+				<key>subtext</key>
+				<string>Read QR Code from the screen</string>
+				<key>text</key>
+				<string>QR Reader</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>498B32F7-777D-4970-B05C-FAEBBC07B17D</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -705,7 +700,7 @@ return savePath</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>0.3</string>
+	<string>0.4</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/qr-reader</string>
 </dict>
