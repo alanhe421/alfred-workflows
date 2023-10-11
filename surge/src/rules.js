@@ -3,7 +3,6 @@ const {utils, Workflow,} = require('@stacker/alfred-utils');
 const {escapeRegexMeta, readConfFromLocal} = require("./utils");
 
 const instance = require('./axios').createHttpClient(process.env.HTTP_API);
-const limit = 40;
 const wf = new Workflow();
 
 function isSelectedRule(rule, totalConfContent) {
@@ -36,7 +35,11 @@ async function main() {
     })
   });
   wf.filterWorkflowItemsBy(query, ['title', 'subtitle']);
-  wf.run();
+  wf.run({
+    variables:{
+      keyword:query
+    }
+  });
 }
 
 main();

@@ -334,6 +334,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>A2FC1AB9-4FB8-4B9B-BB98-98D82F0F3F28</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>C868E6BF-C380-4C41-8EC1-DF222F2980D3</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>A6EDFDEB-1846-4C23-B96C-E307F0217376</key>
 		<array>
 			<dict>
@@ -362,6 +375,16 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>3D011412-96FD-4B01-A35D-5DF525CE08A6</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>A2FC1AB9-4FB8-4B9B-BB98-98D82F0F3F28</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -419,7 +442,7 @@
 				<key>modifiersubtext</key>
 				<string>Toogle Selected Rule</string>
 				<key>vitoclose</key>
-				<false/>
+				<true/>
 			</dict>
 		</array>
 		<key>E9460C86-1ECB-4B7A-AC26-9E3C9217A842</key>
@@ -1276,7 +1299,8 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>/usr/local/bin/node ./toggle-rule.js '{query}'</string>
+				<string>/usr/local/bin/node ./toggle-rule.js '{query}'
+echo -n '{query}'</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -1309,6 +1333,23 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argument</key>
+				<string>{var:keyword}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>A2FC1AB9-4FB8-4B9B-BB98-98D82F0F3F28</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>availableviaurlhandler</key>
 				<false/>
 				<key>triggerid</key>
@@ -1318,6 +1359,25 @@
 			<string>alfred.workflow.trigger.external</string>
 			<key>uid</key>
 			<string>0785A01E-68C4-485D-A2C8-58607552185C</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>externaltriggerid</key>
+				<string>rules</string>
+				<key>passinputasargument</key>
+				<true/>
+				<key>passvariables</key>
+				<true/>
+				<key>workflowbundleid</key>
+				<string>self</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.callexternaltrigger</string>
+			<key>uid</key>
+			<string>C868E6BF-C380-4C41-8EC1-DF222F2980D3</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1380,9 +1440,9 @@ Surge Mac 4.0.0、Surge iOS 4.4.0开始提供HTTP API, 即该版本之前的均�
 		<key>0785A01E-68C4-485D-A2C8-58607552185C</key>
 		<dict>
 			<key>xpos</key>
-			<real>245</real>
+			<real>270</real>
 			<key>ypos</key>
-			<real>1270</real>
+			<real>1335</real>
 		</dict>
 		<key>0B781B29-1B66-4F9C-8B61-8477E02878CD</key>
 		<dict>
@@ -1518,6 +1578,13 @@ Surge Mac 4.0.0、Surge iOS 4.4.0开始提供HTTP API, 即该版本之前的均�
 			<key>ypos</key>
 			<real>860</real>
 		</dict>
+		<key>A2FC1AB9-4FB8-4B9B-BB98-98D82F0F3F28</key>
+		<dict>
+			<key>xpos</key>
+			<real>880</real>
+			<key>ypos</key>
+			<real>1320</real>
+		</dict>
 		<key>A6EDFDEB-1846-4C23-B96C-E307F0217376</key>
 		<dict>
 			<key>xpos</key>
@@ -1537,7 +1604,7 @@ Surge Mac 4.0.0、Surge iOS 4.4.0开始提供HTTP API, 即该版本之前的均�
 			<key>note</key>
 			<string>Toogle Rule Selected</string>
 			<key>xpos</key>
-			<real>670</real>
+			<real>635</real>
 			<key>ypos</key>
 			<real>1215</real>
 		</dict>
@@ -1558,6 +1625,13 @@ Surge Mac 4.0.0、Surge iOS 4.4.0开始提供HTTP API, 即该版本之前的均�
 			<real>880</real>
 			<key>ypos</key>
 			<real>50</real>
+		</dict>
+		<key>C868E6BF-C380-4C41-8EC1-DF222F2980D3</key>
+		<dict>
+			<key>xpos</key>
+			<real>665</real>
+			<key>ypos</key>
+			<real>1390</real>
 		</dict>
 		<key>D7FC2694-B93F-4F59-A2DF-BB59ACDA7200</key>
 		<dict>
@@ -1642,7 +1716,7 @@ Surge Mac 4.0.0、Surge iOS 4.4.0开始提供HTTP API, 即该版本之前的均�
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.23</string>
+	<string>1.24</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/surge</string>
 </dict>
