@@ -9,7 +9,7 @@ cache_dir = os.environ['alfred_workflow_cache']
 
 formatted_results = []
 
-iconURL = '{"type": "fileicon","path": "/Applications/Google Chrome.app"}'
+icon = {"type": "fileicon","path": "/Applications/Google Chrome.app"}
 
 file = open(home + "/Library/Application Support/Google/Chrome/Local State", "r")
 example = file.read()
@@ -21,6 +21,7 @@ profil = profile['info_cache']
 
 for item in profil:
     filename = ''
+    subtitle='⏎ to open in this profile'
     if 'last_downloaded_gaia_picture_url_with_size' in profil[str(item)]:
         # Avoid long paths by using a shorter hash instead of the original filename
         fname_hash = str(hashlib.md5(profil[str(item)]['last_downloaded_gaia_picture_url_with_size'].encode()).hexdigest()) + ".png"
@@ -29,12 +30,10 @@ for item in profil:
             try:
                 urllib.request.urlretrieve(profil[str(item)]['last_downloaded_gaia_picture_url_with_size'], filename)
             except urllib.error.HTTPError as e:
-                print(f"HTTP Error {e.code}: {e.reason}")
-                continue
-
+                filename = 'icon.png'
     result = {
             "title": str(profil[str(item)]['name']),
-            "subtitle": "⏎ to open in this profile",
+            "subtitle": subtitle,
             "arg": str(item),
             "uid": str(item),
             "icon": {
@@ -43,11 +42,9 @@ for item in profil:
     }
     formatted_results.append(result)
 
-values = ','.join(str(v) for v in formatted_results)
-output = '{"items": ['+ values + ']}'
-output = output.replace('pic', iconURL)
-output = output.replace("'",'"')
-output = output.replace('"{"type"','{"type"')
-output = output.replace('}"}','}}')
+output = {
+    "items": formatted_results
+}
 
-print(output)
+output_json = json.dumps(output, ensure_ascii=False, indent=4)
+print(output_json)
