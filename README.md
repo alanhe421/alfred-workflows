@@ -265,7 +265,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 ### 31. [Open Chrome Profile](https://github.com/alanhg/alfred-workflows/tree/master/open-chrome-profile)
 > Get all available chrome profiles and open the selected
 
-![](https://img.shields.io/badge/version-v0.8-green?style=for-the-badge)
+![](https://img.shields.io/badge/version-v0.10-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/open-chrome-profile/Open%20Chrome%20Profile.alfredworkflow)
 [![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/open-chrome-profile/src/info.plist)
 
