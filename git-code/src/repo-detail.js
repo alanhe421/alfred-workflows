@@ -9,11 +9,17 @@ const wf = new Workflow();
 (async function () {
   wf.addWorkflowItem({
     item: {
-      title: 'Merge Request', arg: 'merge_requests'
+      title: 'Merge Request', arg: 'merge_requests',
+      text: {
+        copy: `${process.env.baseUrl}/${process.env.projectPath}/merge_requests`
+      },
     }
   }).addWorkflowItem({
     item: {
-      title: 'Issues', arg: 'issues'
+      title: 'Issues', arg: 'issues',
+      text: {
+        copy: `${process.env.baseUrl}/${process.env.projectPath}/issues`
+      },
     }
   }).addWorkflowItem({
     item: {
@@ -23,11 +29,17 @@ const wf = new Workflow();
     item: {
       title: 'Branch',
       arg: '-/branches',
+      text: {
+        copy: `${process.env.baseUrl}/${process.env.projectPath}/-/branches`
+      },
     }
   }).addWorkflowItem({
       item: {
         title: 'Tag',
         arg: '-/tags',
+        text: {
+          copy: `${process.env.baseUrl}/${process.env.projectPath}/-/tags`
+        },
       }
   })
     .run();

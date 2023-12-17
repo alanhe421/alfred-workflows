@@ -57,6 +57,7 @@ async function archiveProject(token, baseUrl, score) {
               variables: {
                 projectId: item.id,
                 projectName: item.name_with_namespace,
+                projectPath: item.path_with_namespace,
                 token,
                 baseUrl
               }

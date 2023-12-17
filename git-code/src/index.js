@@ -62,20 +62,6 @@ async function searchProjects(token, baseUrl, score, index) {
         search: query?.trim()
       }
     });
-    if (res.data.length === 0) {
-      wf.addWorkflowItem({
-        item: utils.buildItem({
-          title: `Search for '${query}'`,
-          subtitle: `Goto ${baseUrl}`,
-          arg: `${baseUrl}/primarySearch?search=${query}`,
-          icon: {
-            path: `icon/icon-theme${(index % 3) + 1}.png`
-          }
-        }),
-        score
-      });
-      return;
-    }
     res.data.forEach((item) => {
       wf.addWorkflowItem({
         item: {
@@ -97,6 +83,7 @@ async function searchProjects(token, baseUrl, score, index) {
               variables: {
                 projectId: item.id,
                 projectName: item.name_with_namespace,
+                projectPath: item.path_with_namespace,
                 token,
                 baseUrl
               }
@@ -108,7 +95,17 @@ async function searchProjects(token, baseUrl, score, index) {
         score
       });
     });
-    return;
+    wf.addWorkflowItem({
+      item: utils.buildItem({
+        title: `Search for '${query}'`,
+        subtitle: `Goto ${baseUrl}`,
+        arg: `${baseUrl}/primarySearch?search=${query}`,
+        icon: {
+          path: `icon/icon-theme${(index % 3) + 1}.png`
+        }
+      }),
+      score
+    });
   } catch (e) {
     wf.addWorkflowItem({
       item: utils.buildItem({
@@ -120,6 +117,5 @@ async function searchProjects(token, baseUrl, score, index) {
       }),
       score
     });
-    return;
   }
 }

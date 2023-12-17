@@ -1275,7 +1275,7 @@ example:{{title}},{{state}},{{description}}</string>
 		<string>access_token_2</string>
 	</array>
 	<key>version</key>
-	<string>1.17</string>
+	<string>1.18</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/git-code</string>
 </dict>

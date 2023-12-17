@@ -21,7 +21,7 @@ const wf = new Workflow();
           subtitle: [item.author_name, new Date(item.committed_date).toLocaleTimeString(), item.message].join(','),
           arg: `commit/${item.id}`,
           text: {
-            copy: `${process.env.baseUrl}/${process.env.projectName}/commit/${item.id}`
+            copy: `${process.env.baseUrl}/${process.env.projectPath}/commit/${item.id}`
           }
         }
       });

@@ -29,7 +29,7 @@ const wf = new Workflow();
             subtitleArr.filter(Boolean).join(','),
           arg: `tree/${item.name}`,
           text: {
-            copy: `${process.env.baseUrl}/${process.env.projectName}/tree/${item.name}`
+            copy: `${process.env.baseUrl}/${process.env.projectPath}/tree/${item.name}`
           },
           mods: {
             alt: {
