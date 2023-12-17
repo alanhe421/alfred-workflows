@@ -91,6 +91,7 @@ body:
       - macOS 11 Big Sur and ago
       - macOS 12 Monterey
       - macOS 13 Ventura
+      - macOS 14 Sonoma
    validations:
      required: true
  - type: dropdown
