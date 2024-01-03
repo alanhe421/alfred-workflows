@@ -478,3 +478,10 @@ Thanks goes to these wonderful people:
 1. [alfred-currency-conversion](https://github.com/jeppestaerk/alfred-currency-conversion#readme)
 2. [GitHub for Alfred](https://github.com/gharlan/alfred-github-workflow)
 3. [JetBrains - Open Project](https://github.com/bchatard/alfred-jetbrains)
+
+## Special Thanks to JetBrains
+<div align="left">
+<a href="https://jb.gg/OpenSourceSupport">
+<img src="https://resources.jetbrains.com/storage/products/company/brand/logos/jb_beam.png" alt="JetBrains Logo (Main) logo." height="200">
+</a>
+</div>

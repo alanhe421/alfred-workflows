@@ -474,3 +474,10 @@ P.S.: 使用这些Workflow的前提是已购买[Powerpack](https://www.alfredapp
 1. [alfred-currency-conversion](https://github.com/jeppestaerk/alfred-currency-conversion#readme)
 2. [GitHub for Alfred](https://github.com/gharlan/alfred-github-workflow)
 3. [JetBrains - Open Project](https://github.com/bchatard/alfred-jetbrains)
+
+## 特别感谢 JetBrains
+<div align="left">
+<a href="https://jb.gg/OpenSourceSupport">
+<img src="https://resources.jetbrains.com/storage/products/company/brand/logos/jb_beam.png" alt="JetBrains Logo (Main) logo." height="200">
+</a>
+</div>
