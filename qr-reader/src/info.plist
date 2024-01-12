@@ -60,6 +60,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>2821208F-D0FF-413E-8B0D-AEEB51D343AD</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E76E0D43-9ED3-41B5-81F5-F4050C4952E5</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>43FA5FDD-33C5-4580-850C-572FA1219020</key>
 		<array>
 			<dict>
@@ -180,6 +193,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>19DF2D89-4A46-428A-B981-663F504B5F3E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>E76E0D43-9ED3-41B5-81F5-F4050C4952E5</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3C1CBCBF-E6E3-44CF-94B8-C25EB36E0C0B</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -545,6 +571,70 @@ return savePath</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>acceptsfiles</key>
+				<false/>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>acceptstext</key>
+				<false/>
+				<key>acceptsurls</key>
+				<true/>
+				<key>name</key>
+				<string>Create QR Code</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.universalaction</string>
+			<key>uid</key>
+			<string>2821208F-D0FF-413E-8B0D-AEEB51D343AD</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>script</key>
+				<string>qrencode -o "$alfred_workflow_cache/temp.png" -s 10 -m 2 -l H '{query}'
+
+echo -n "$alfred_workflow_cache/temp.png"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>E76E0D43-9ED3-41B5-81F5-F4050C4952E5</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>tasksettings</key>
+				<dict>
+					<key>target_path</key>
+					<string>{query}</string>
+				</dict>
+				<key>taskuid</key>
+				<string>com.alfredapp.automation.core/files-and-folders/file.quicklook</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.automation.task</string>
+			<key>uid</key>
+			<string>3C1CBCBF-E6E3-44CF-94B8-C25EB36E0C0B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argument</key>
 				<string>{query}</string>
 				<key>leftcursor</key>
@@ -559,19 +649,21 @@ return savePath</string>
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>&gt; Read link from QR Code.
+	<string>&gt; Read link from QR Code. Create a QR code based on a URL.
 
 ## Usage
 
 1. Invoke the keyword 'qr', drag and drop a screenshot, and it will automatically read link.
 2. Select a QR code image file, invoke File Action, and select QR reader to read link.
+3. Select URL, invoke Universal Action, and choose `Create QR Code` to generate a QR code.
 
 
 ## Requirement
 
 1. `brew install zbar`
 2. `brew install imagemagick`
-3. Alfred has permission of Screen Recording.</string>
+3. Alfred has permission of Screen Recording.
+4. `brew install qrencode` *Create QR Code need*</string>
 	<key>uidata</key>
 	<dict>
 		<key>17D0B3FC-09CC-4EDF-BA00-CDB6EB563DDD</key>
@@ -604,12 +696,28 @@ return savePath</string>
 			<key>ypos</key>
 			<real>410</real>
 		</dict>
+		<key>2821208F-D0FF-413E-8B0D-AEEB51D343AD</key>
+		<dict>
+			<key>xpos</key>
+			<real>50</real>
+			<key>ypos</key>
+			<real>635</real>
+		</dict>
 		<key>396ED28E-3487-4E3C-8E7F-759EABCF9343</key>
 		<dict>
 			<key>xpos</key>
 			<real>1075</real>
 			<key>ypos</key>
 			<real>725</real>
+		</dict>
+		<key>3C1CBCBF-E6E3-44CF-94B8-C25EB36E0C0B</key>
+		<dict>
+			<key>note</key>
+			<string>quicklook</string>
+			<key>xpos</key>
+			<real>565</real>
+			<key>ypos</key>
+			<real>640</real>
 		</dict>
 		<key>43FA5FDD-33C5-4580-850C-572FA1219020</key>
 		<dict>
@@ -678,6 +786,13 @@ return savePath</string>
 			<key>ypos</key>
 			<real>145</real>
 		</dict>
+		<key>E76E0D43-9ED3-41B5-81F5-F4050C4952E5</key>
+		<dict>
+			<key>xpos</key>
+			<real>265</real>
+			<key>ypos</key>
+			<real>640</real>
+		</dict>
 		<key>EA9B8622-BBCD-4F80-9D87-C2841CBC013D</key>
 		<dict>
 			<key>xpos</key>
@@ -700,7 +815,7 @@ return savePath</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>0.4</string>
+	<string>0.5</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/qr-reader</string>
 </dict>
