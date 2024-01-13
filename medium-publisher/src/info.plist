@@ -178,12 +178,14 @@
 			<dict>
 				<key>browser</key>
 				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
 				<string>https://medium.com/me/settings</string>
-				<key>utf8</key>
-				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -351,6 +353,8 @@ end run</string>
 				</array>
 				<key>elselabel</key>
 				<string>else</string>
+				<key>hideelse</key>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.conditional</string>
@@ -408,12 +412,14 @@ end run</string>
 			<dict>
 				<key>browser</key>
 				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
 				<string>https://medium.com/me/stories/drafts</string>
-				<key>utf8</key>
-				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -446,7 +452,9 @@ end run</string>
 
 ## Requirement
 
-- Node</string>
+```
+brew install node
+```</string>
 	<key>uidata</key>
 	<dict>
 		<key>05887F0C-F263-4DB5-9D60-D5569295F1D5</key>
@@ -454,119 +462,182 @@ end run</string>
 			<key>note</key>
 			<string>Successfully published</string>
 			<key>xpos</key>
-			<integer>475</integer>
+			<real>475</real>
 			<key>ypos</key>
-			<integer>510</integer>
+			<real>510</real>
 		</dict>
 		<key>1F99A061-C264-4609-9A9A-CCB68E7A9996</key>
 		<dict>
 			<key>xpos</key>
-			<integer>195</integer>
+			<real>195</real>
 			<key>ypos</key>
-			<integer>325</integer>
+			<real>325</real>
 		</dict>
 		<key>43107DD7-0973-4C3B-BEC8-13AF81830CC6</key>
 		<dict>
 			<key>note</key>
 			<string>author_id missing</string>
 			<key>xpos</key>
-			<integer>370</integer>
+			<real>370</real>
 			<key>ypos</key>
-			<integer>225</integer>
+			<real>225</real>
 		</dict>
 		<key>9776069D-A0A9-4FDE-92C8-20546349DE5C</key>
 		<dict>
 			<key>note</key>
 			<string>remove line break</string>
 			<key>xpos</key>
-			<integer>575</integer>
+			<real>575</real>
 			<key>ypos</key>
-			<integer>250</integer>
+			<real>250</real>
 		</dict>
 		<key>A0C8B68C-727B-40D3-B4A5-37DEF20D5B2A</key>
 		<dict>
 			<key>note</key>
 			<string>token missing</string>
 			<key>xpos</key>
-			<integer>390</integer>
+			<real>390</real>
 			<key>ypos</key>
-			<integer>45</integer>
+			<real>45</real>
 		</dict>
 		<key>A33E5396-98F6-42B8-B299-23B86CA83F65</key>
 		<dict>
 			<key>xpos</key>
-			<integer>25</integer>
+			<real>30</real>
 			<key>ypos</key>
-			<integer>110</integer>
+			<real>110</real>
 		</dict>
 		<key>A7B84DA3-DBA0-4EC4-A3CD-0CD14C7B7D82</key>
 		<dict>
 			<key>note</key>
 			<string>just post</string>
 			<key>xpos</key>
-			<integer>290</integer>
+			<real>290</real>
 			<key>ypos</key>
-			<integer>515</integer>
+			<real>515</real>
 		</dict>
 		<key>BA367EB7-EBFF-44A1-8850-338540687F1B</key>
 		<dict>
 			<key>note</key>
 			<string>save environment variable</string>
 			<key>xpos</key>
-			<integer>695</integer>
+			<real>695</real>
 			<key>ypos</key>
-			<integer>230</integer>
+			<real>230</real>
 		</dict>
 		<key>E9CD77C6-0904-4696-903F-1CCB7D5EEFF6</key>
 		<dict>
 			<key>note</key>
 			<string>jump to medium</string>
 			<key>xpos</key>
-			<integer>750</integer>
+			<real>750</real>
 			<key>ypos</key>
-			<integer>520</integer>
+			<real>520</real>
 		</dict>
 		<key>ED5D79E1-9B45-4C44-A863-51A1612D72E1</key>
 		<dict>
 			<key>xpos</key>
-			<integer>575</integer>
+			<real>575</real>
 			<key>ypos</key>
-			<integer>70</integer>
+			<real>70</real>
 		</dict>
 		<key>F1D1F74E-B1C8-448C-AC86-864BC2D6995F</key>
 		<dict>
 			<key>note</key>
 			<string>set token in variable</string>
 			<key>xpos</key>
-			<integer>690</integer>
+			<real>690</real>
 			<key>ypos</key>
-			<integer>35</integer>
+			<real>35</real>
 		</dict>
 		<key>FC19A4F5-AA5C-4F12-9C64-1D3B617DF2E4</key>
 		<dict>
 			<key>xpos</key>
-			<integer>635</integer>
+			<real>635</real>
 			<key>ypos</key>
-			<integer>550</integer>
+			<real>550</real>
 		</dict>
 	</dict>
-	<key>variables</key>
-	<dict>
-		<key>AUTHOR_ID</key>
-		<string></string>
-		<key>TOKEN</key>
-		<string></string>
-		<key>publishStatus</key>
-		<string>public</string>
-	</dict>
-	<key>variablesdontexport</key>
+	<key>userconfigurationconfig</key>
 	<array>
-		<string>AUTHOR_ID</string>
-		<string>TOKEN</string>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>public</string>
+				<key>pairs</key>
+				<array>
+					<array>
+						<string>public</string>
+						<string>public</string>
+					</array>
+					<array>
+						<string>draft</string>
+						<string>draft</string>
+					</array>
+					<array>
+						<string>unlisted</string>
+						<string>unlisted</string>
+					</array>
+				</array>
+			</dict>
+			<key>description</key>
+			<string>publishStatus</string>
+			<key>label</key>
+			<string>publishStatus</string>
+			<key>type</key>
+			<string>popupbutton</string>
+			<key>variable</key>
+			<string>publishStatus</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string></string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<true/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string></string>
+			<key>label</key>
+			<string>Author ID</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>AUTHOR_ID</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string></string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<true/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string></string>
+			<key>label</key>
+			<string>token</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>TOKEN</string>
+		</dict>
 	</array>
+	<key>variablesdontexport</key>
+	<array/>
 	<key>version</key>
-	<string>1.4</string>
+	<string>1.5</string>
 	<key>webaddress</key>
-	<string>https://1991421.cn</string>
+	<string>https://github.com/alanhg/alfred-workflows/tree/master/medium-publisher</string>
 </dict>
 </plist>
