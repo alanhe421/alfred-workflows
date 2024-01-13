@@ -1,5 +1,5 @@
 > Displays system information about your Mac.
-Contains UserName、Model、HostName、Primary Ethernet Address、IPv4 Address、MacOS、CPU Type、Physical Memory、Locale、Display Resolution.
+Contains UserName、Model、HostName、Primary Ethernet Address、IPv4 Address、MacOS、CPU Type、Physical Memory、Locale、Display Resolution.Display System Uptime
 
 1. type `about` to trigger
 2. ⏎ to copy info
@@ -7,7 +7,7 @@ Contains UserName、Model、HostName、Primary Ethernet Address、IPv4 Address�
 
 
 
-![](https://img.shields.io/badge/version-v1.14-green?style=for-the-badge)
+![](https://img.shields.io/badge/version-v1.15-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/about-mac/About%20Mac.alfredworkflow)
 [![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/about-mac/src/info.plist)
 
