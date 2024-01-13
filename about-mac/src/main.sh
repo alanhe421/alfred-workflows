@@ -7,7 +7,7 @@ freeDiskPercent=$(echo "scale=1; ${arrIN[8]}*100 / ${arrIN[7]}" | bc)
 freeMemoryPercent=$(echo "scale=1; ${arrIN[10]}*100 / ${arrIN[6]}" | bc)
 displayResolution=$(system_profiler SPDisplaysDataType | awk '/Resolution/{print $2, $3, $4}'|tr '\n' ', '| sed 's/,$//')
 uptime=$(uptime)
-systemUptime=$(uptime | awk -F' up |, [0-9]+ user' '{print $2}')
+systemUptime=$(uptime | awk -F' up |, [0-9]+ user' '{print $2}' | xargs)
 
 
 cat << EOF 
