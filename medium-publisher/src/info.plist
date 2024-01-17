@@ -232,7 +232,7 @@
 			<key>config</key>
 			<dict>
 				<key>acceptsmulti</key>
-				<integer>0</integer>
+				<integer>1</integer>
 				<key>filetypes</key>
 				<array>
 					<string>dyn.ah62d4rv4ge8043a</string>
@@ -419,7 +419,7 @@ end run</string>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
-				<string>https://medium.com/me/stories/drafts</string>
+				<string>https://medium.com/me/stories/{var:publishStatus}</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -445,9 +445,10 @@ end run</string>
 	<key>readme</key>
 	<string>&gt; Easy publish medium post
 
-## usage
+## Usage
 1. custom publishStatus
 2. trigger file action to publish
+3. support multi-file selection
 
 
 ## Requirement
@@ -584,7 +585,7 @@ brew install node
 			<key>description</key>
 			<string>publishStatus</string>
 			<key>label</key>
-			<string>publishStatus</string>
+			<string>Publish Status</string>
 			<key>type</key>
 			<string>popupbutton</string>
 			<key>variable</key>
@@ -636,7 +637,7 @@ brew install node
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.5</string>
+	<string>1.6</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/medium-publisher</string>
 </dict>
