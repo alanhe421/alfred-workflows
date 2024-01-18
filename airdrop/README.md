@@ -18,7 +18,23 @@ Support Catalina、Big Sur
 
 <!-- more -->
 
-## screenshots
+## Sonoma Need
+
+Add airdrop to the toolbar of the finder
+
+![screenshot3.png](./screenshot3.png)
+![screenshot4.png](screenshot4.png)
+
+now, it's ok to use the workflow
+
+## Monterey Need
+
+Use the above method.
+
+I am not sure it's ok to use the workflow in Monterey, because I don't have a mac with Monterey. If you have a mac with Monterey, please try it and tell me the result.
+
+
+## Screenshots
 
 ![](./screenshot1.png)
 ![](./screenshot2.png)
