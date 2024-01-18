@@ -8,11 +8,36 @@
 	<string>Self-Dev</string>
 	<key>connections</key>
 	<dict>
+		<key>0365D7E7-150D-4BB9-A217-B9F2B168FB43</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E132D993-DFA1-4D18-8E8F-1E19D7073AE2</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>49A9E771-697E-4034-A43A-CB8C276C9AD9</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>F6ED9628-B095-4587-A4CF-F65D1E38FBD1</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>06157B6F-144E-4DB2-A3ED-97A0231C6BA2</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>0D6A4BA1-4450-4719-9D35-EC8E52AFCC6B</string>
+				<string>36B6559D-10C1-4D9F-9C91-D6BBF7681155</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -24,7 +49,7 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
-				<string>E132D993-DFA1-4D18-8E8F-1E19D7073AE2</string>
+				<string>0365D7E7-150D-4BB9-A217-B9F2B168FB43</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -64,6 +89,31 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>F21E3D69-BDA5-4CF8-ADD1-50C2D61368FC</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>36B6559D-10C1-4D9F-9C91-D6BBF7681155</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>79C24BB6-A9DB-4C64-A5F9-EE3070298173</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>49A9E771-697E-4034-A43A-CB8C276C9AD9</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>0D6A4BA1-4450-4719-9D35-EC8E52AFCC6B</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -122,8 +172,31 @@
 				<false/>
 			</dict>
 		</array>
+		<key>7E1FF561-C54F-43C0-81B4-1FDD22B93679</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>BBD84AC8-7342-4D6E-8657-B6405A2FF010</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>7F95E769-44E9-4B3F-9CF3-031C44EECDA8</key>
 		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>EFBE67A7-EF37-4098-80E4-C0A8A9872D2E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
 			<dict>
 				<key>destinationuid</key>
 				<string>395D4FF3-7EFC-4BEB-B456-910F98800B5D</string>
@@ -150,6 +223,16 @@
 		</array>
 		<key>90913B4D-D313-4CD0-AFCF-6AB8B82D173C</key>
 		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>7E1FF561-C54F-43C0-81B4-1FDD22B93679</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
 			<dict>
 				<key>destinationuid</key>
 				<string>F4852CCD-ED13-4407-824B-2BDBB14C7003</string>
@@ -179,6 +262,45 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>06157B6F-144E-4DB2-A3ED-97A0231C6BA2</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>BBD84AC8-7342-4D6E-8657-B6405A2FF010</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>FBB4E0F7-8119-4917-BD9B-A6764F833418</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>BD586F33-819C-4A9D-9273-318676DB9586</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F21E3D69-BDA5-4CF8-ADD1-50C2D61368FC</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>EFBE67A7-EF37-4098-80E4-C0A8A9872D2E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>BD586F33-819C-4A9D-9273-318676DB9586</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -240,6 +362,43 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>applescript</key>
+				<string>on alfred_script(q)
+set osver to system version of (system info)return osver
+end alfred_script</string>
+				<key>cachescript</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.applescript</string>
+			<key>uid</key>
+			<string>7E1FF561-C54F-43C0-81B4-1FDD22B93679</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>OS_VERSION</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>BBD84AC8-7342-4D6E-8657-B6405A2FF010</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
@@ -274,6 +433,29 @@ end alfred_script</string>
 			<string>F4852CCD-ED13-4407-824B-2BDBB14C7003</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>tell application "System Events"	tell process "Finder"		set shareButton to (first button whose title is "隔空投送") of toolbar 1 of window 1				click shareButton		delay 0.1	end tellend telldo shell script "killall System\\ Events"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>79C24BB6-A9DB-4C64-A5F9-EE3070298173</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -321,6 +503,38 @@ end alfred_script</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:OS_VERSION}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>2</integer>
+						<key>matchstring</key>
+						<string>12.999999999</string>
+						<key>outputlabel</key>
+						<string></string>
+						<key>uid</key>
+						<string>49A9E771-697E-4034-A43A-CB8C276C9AD9</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+				<key>hideelse</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>36B6559D-10C1-4D9F-9C91-D6BBF7681155</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -358,6 +572,38 @@ end tell</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:LANG}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>zh_CN</string>
+						<key>outputlabel</key>
+						<string></string>
+						<key>uid</key>
+						<string>E470861E-C1C3-4EDA-9DC4-0E9F4500DF9C</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+				<key>hideelse</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>06157B6F-144E-4DB2-A3ED-97A0231C6BA2</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -389,38 +635,6 @@ end tell</string>
 			<string>A08BACCD-90EB-42B9-934C-CC35C2DFE22D</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>conditions</key>
-				<array>
-					<dict>
-						<key>inputstring</key>
-						<string>{var:LANG}</string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>zh_CN</string>
-						<key>outputlabel</key>
-						<string></string>
-						<key>uid</key>
-						<string>E470861E-C1C3-4EDA-9DC4-0E9F4500DF9C</string>
-					</dict>
-				</array>
-				<key>elselabel</key>
-				<string>else</string>
-				<key>hideelse</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.conditional</string>
-			<key>uid</key>
-			<string>06157B6F-144E-4DB2-A3ED-97A0231C6BA2</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -505,26 +719,44 @@ end run</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:OS_VERSION}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>2</integer>
+						<key>matchstring</key>
+						<string>12.999999999</string>
+						<key>outputlabel</key>
+						<string></string>
+						<key>uid</key>
+						<string>49A9E771-697E-4034-A43A-CB8C276C9AD9</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+				<key>hideelse</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>0365D7E7-150D-4BB9-A217-B9F2B168FB43</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
 				<integer>68</integer>
 				<key>script</key>
-				<string>tell application "System Events"
-	tell process "Finder"
-		set shareButton to (first button whose description is "Share") of toolbar 1 of window 1
-		ignoring application responses
-			click shareButton
-			delay 0.1
-		end ignoring
-	end tell
-end tell
-
-do shell script "killall System\\ Events"
-
-tell application "System Events"
-	click (menu item "AirDrop") of menu 1 of shareButton
-end tell</string>
+				<string>tell application "System Events"	tell process "Finder"		set shareButton to (first button whose title is "AirDrop") of toolbar 1 of window 1				click shareButton		delay 0.1	end tellend telldo shell script "killall System\\ Events"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -563,20 +795,63 @@ end tell</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>applescript</key>
+				<string>on alfred_script(q)
+set osver to system version of (system info)return osver
+end alfred_script</string>
+				<key>cachescript</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.applescript</string>
+			<key>uid</key>
+			<string>EFBE67A7-EF37-4098-80E4-C0A8A9872D2E</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{var:selectedFiles}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>OS_VERSION</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>BD586F33-819C-4A9D-9273-318676DB9586</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
 				<integer>68</integer>
 				<key>script</key>
-				<string>on run argv
-  set pathList to {}
+				<string>tell application "System Events"
+	tell process "Finder"
+		set shareButton to (first button whose description is "Share") of toolbar 1 of window 1
+		ignoring application responses
+			click shareButton
+			delay 0.1
+		end ignoring
+	end tell
+end tell
 
-  repeat with pathString in argv
-    copy ((POSIX file pathString) as alias) to the end of the pathList
-  end repeat
+do shell script "killall System\\ Events"
 
-  tell application "Finder" to select pathList
-end run</string>
+tell application "System Events"
+	click (menu item "AirDrop") of menu 1 of shareButton
+end tell</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -587,7 +862,7 @@ end run</string>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>A81E5AB6-F162-4EA2-B3BB-6A43631CBC6C</string>
+			<string>F6ED9628-B095-4587-A4CF-F65D1E38FBD1</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -631,6 +906,37 @@ end run</string>
 			<string>2479F7D9-DA44-4F6A-8ACA-22A1D7CBCCF5</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>on run argv
+  set pathList to {}
+
+  repeat with pathString in argv
+    copy ((POSIX file pathString) as alias) to the end of the pathList
+  end repeat
+
+  tell application "Finder" to select pathList
+end run</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>A81E5AB6-F162-4EA2-B3BB-6A43631CBC6C</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -709,25 +1015,34 @@ end alfred_script</string>
   - Support multi file selection.
 
 
-Support Catalina、Big Sur</string>
+Support Catalina、Big Sur、Sonoma</string>
 	<key>uidata</key>
 	<dict>
+		<key>0365D7E7-150D-4BB9-A217-B9F2B168FB43</key>
+		<dict>
+			<key>note</key>
+			<string>version</string>
+			<key>xpos</key>
+			<real>1045</real>
+			<key>ypos</key>
+			<real>650</real>
+		</dict>
 		<key>06157B6F-144E-4DB2-A3ED-97A0231C6BA2</key>
 		<dict>
 			<key>note</key>
 			<string>file
 Considering the i18n of the GUI</string>
 			<key>xpos</key>
-			<real>875</real>
+			<real>920</real>
 			<key>ypos</key>
-			<real>450</real>
+			<real>480</real>
 		</dict>
 		<key>06AE249A-313F-494E-8291-3DCDB8A98D78</key>
 		<dict>
 			<key>xpos</key>
-			<real>385</real>
+			<real>425</real>
 			<key>ypos</key>
-			<real>155</real>
+			<real>210</real>
 		</dict>
 		<key>0D6A4BA1-4450-4719-9D35-EC8E52AFCC6B</key>
 		<dict>
@@ -735,129 +1050,194 @@ Considering the i18n of the GUI</string>
 			<string>CN
 share files</string>
 			<key>xpos</key>
-			<real>1145</real>
+			<real>1250</real>
 			<key>ypos</key>
-			<real>325</real>
+			<real>440</real>
 		</dict>
 		<key>195C1B8D-C397-4BF6-8FF2-2356AF31347A</key>
 		<dict>
 			<key>xpos</key>
-			<real>240</real>
+			<real>280</real>
 			<key>ypos</key>
-			<real>935</real>
+			<real>990</real>
 		</dict>
 		<key>2479F7D9-DA44-4F6A-8ACA-22A1D7CBCCF5</key>
 		<dict>
 			<key>xpos</key>
-			<real>710</real>
+			<real>750</real>
 			<key>ypos</key>
-			<real>865</real>
+			<real>920</real>
+		</dict>
+		<key>36B6559D-10C1-4D9F-9C91-D6BBF7681155</key>
+		<dict>
+			<key>note</key>
+			<string>version</string>
+			<key>xpos</key>
+			<real>1045</real>
+			<key>ypos</key>
+			<real>360</real>
 		</dict>
 		<key>395D4FF3-7EFC-4BEB-B456-910F98800B5D</key>
 		<dict>
 			<key>note</key>
 			<string>Get System Language</string>
 			<key>xpos</key>
-			<real>475</real>
+			<real>515</real>
 			<key>ypos</key>
-			<real>905</real>
+			<real>960</real>
 		</dict>
 		<key>5F497DB5-C783-41DC-BC77-32AEAB33287D</key>
 		<dict>
 			<key>note</key>
 			<string>url</string>
 			<key>xpos</key>
-			<real>495</real>
+			<real>655</real>
 			<key>ypos</key>
-			<real>210</real>
+			<real>260</real>
 		</dict>
 		<key>6CC4C999-29AE-4AF4-BA87-E3D270C5673D</key>
 		<dict>
 			<key>xpos</key>
-			<real>515</real>
+			<real>665</real>
 			<key>ypos</key>
-			<real>635</real>
+			<real>690</real>
 		</dict>
 		<key>705AB63E-8447-449C-A1D8-0EC99A9C1BC8</key>
 		<dict>
 			<key>xpos</key>
-			<real>355</real>
+			<real>395</real>
 			<key>ypos</key>
-			<real>455</real>
+			<real>510</real>
+		</dict>
+		<key>79C24BB6-A9DB-4C64-A5F9-EE3070298173</key>
+		<dict>
+			<key>note</key>
+			<string>14
+
+EN
+share files</string>
+			<key>xpos</key>
+			<real>1245</real>
+			<key>ypos</key>
+			<real>205</real>
+		</dict>
+		<key>7E1FF561-C54F-43C0-81B4-1FDD22B93679</key>
+		<dict>
+			<key>note</key>
+			<string>Get OS version</string>
+			<key>xpos</key>
+			<real>240</real>
+			<key>ypos</key>
+			<real>40</real>
 		</dict>
 		<key>7F95E769-44E9-4B3F-9CF3-031C44EECDA8</key>
 		<dict>
 			<key>xpos</key>
-			<real>330</real>
+			<real>370</real>
 			<key>ypos</key>
-			<real>935</real>
+			<real>990</real>
 		</dict>
 		<key>867EC047-018A-4663-8AE9-C262B0E2FF9E</key>
 		<dict>
 			<key>xpos</key>
-			<real>60</real>
+			<real>100</real>
 			<key>ypos</key>
-			<real>910</real>
+			<real>965</real>
 		</dict>
 		<key>90913B4D-D313-4CD0-AFCF-6AB8B82D173C</key>
 		<dict>
 			<key>xpos</key>
-			<real>30</real>
+			<real>70</real>
 			<key>ypos</key>
-			<real>120</real>
+			<real>175</real>
 		</dict>
 		<key>A08BACCD-90EB-42B9-934C-CC35C2DFE22D</key>
 		<dict>
 			<key>note</key>
 			<string>reveal by selected files</string>
 			<key>xpos</key>
-			<real>520</real>
+			<real>640</real>
 			<key>ypos</key>
-			<real>435</real>
+			<real>495</real>
 		</dict>
 		<key>A81E5AB6-F162-4EA2-B3BB-6A43631CBC6C</key>
 		<dict>
 			<key>note</key>
 			<string>reveal files in finder</string>
 			<key>xpos</key>
-			<real>1035</real>
+			<real>940</real>
 			<key>ypos</key>
-			<real>795</real>
+			<real>925</real>
+		</dict>
+		<key>BBD84AC8-7342-4D6E-8657-B6405A2FF010</key>
+		<dict>
+			<key>xpos</key>
+			<real>445</real>
+			<key>ypos</key>
+			<real>55</real>
+		</dict>
+		<key>BD586F33-819C-4A9D-9273-318676DB9586</key>
+		<dict>
+			<key>xpos</key>
+			<real>715</real>
+			<key>ypos</key>
+			<real>835</real>
 		</dict>
 		<key>E132D993-DFA1-4D18-8E8F-1E19D7073AE2</key>
 		<dict>
 			<key>note</key>
-			<string>EN
+			<string>14
+
+EN
 share files</string>
 			<key>xpos</key>
-			<real>1145</real>
+			<real>1255</real>
 			<key>ypos</key>
-			<real>520</real>
+			<real>655</real>
+		</dict>
+		<key>EFBE67A7-EF37-4098-80E4-C0A8A9872D2E</key>
+		<dict>
+			<key>note</key>
+			<string>Get OS version</string>
+			<key>xpos</key>
+			<real>510</real>
+			<key>ypos</key>
+			<real>820</real>
 		</dict>
 		<key>F21E3D69-BDA5-4CF8-ADD1-50C2D61368FC</key>
 		<dict>
 			<key>xpos</key>
-			<real>845</real>
+			<real>885</real>
 			<key>ypos</key>
-			<real>860</real>
+			<real>915</real>
 		</dict>
 		<key>F4852CCD-ED13-4407-824B-2BDBB14C7003</key>
 		<dict>
 			<key>note</key>
 			<string>Get System Language</string>
 			<key>xpos</key>
-			<real>210</real>
+			<real>250</real>
 			<key>ypos</key>
-			<real>140</real>
+			<real>195</real>
+		</dict>
+		<key>F6ED9628-B095-4587-A4CF-F65D1E38FBD1</key>
+		<dict>
+			<key>note</key>
+			<string>EN
+share files</string>
+			<key>xpos</key>
+			<real>1255</real>
+			<key>ypos</key>
+			<real>865</real>
 		</dict>
 		<key>FBB4E0F7-8119-4917-BD9B-A6764F833418</key>
 		<dict>
 			<key>note</key>
 			<string>current selected</string>
 			<key>xpos</key>
-			<real>155</real>
+			<real>195</real>
 			<key>ypos</key>
-			<real>465</real>
+			<real>520</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
@@ -865,7 +1245,7 @@ share files</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.8</string>
+	<string>1.9</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/airdrop</string>
 </dict>
