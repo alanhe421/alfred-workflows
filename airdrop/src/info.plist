@@ -513,7 +513,7 @@ end alfred_script</string>
 						<key>matchmode</key>
 						<integer>2</integer>
 						<key>matchstring</key>
-						<string>12.999999999</string>
+						<string>11.999999999</string>
 						<key>outputlabel</key>
 						<string></string>
 						<key>uid</key>
@@ -729,7 +729,7 @@ end run</string>
 						<key>matchmode</key>
 						<integer>2</integer>
 						<key>matchstring</key>
-						<string>12.999999999</string>
+						<string>11.999999999</string>
 						<key>outputlabel</key>
 						<string></string>
 						<key>uid</key>
@@ -1112,9 +1112,9 @@ share files</string>
 		<key>79C24BB6-A9DB-4C64-A5F9-EE3070298173</key>
 		<dict>
 			<key>note</key>
-			<string>14
+			<string>&gt;=12
 
-EN
+CN
 share files</string>
 			<key>xpos</key>
 			<real>1245</real>
@@ -1186,7 +1186,7 @@ share files</string>
 		<key>E132D993-DFA1-4D18-8E8F-1E19D7073AE2</key>
 		<dict>
 			<key>note</key>
-			<string>14
+			<string>&gt;=12
 
 EN
 share files</string>
