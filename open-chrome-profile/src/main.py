@@ -29,7 +29,7 @@ for item in profil:
         if not os.path.isfile(filename):
             try:
                 urllib.request.urlretrieve(profil[str(item)]['last_downloaded_gaia_picture_url_with_size'], filename)
-            except urllib.error.HTTPError as e:
+            except (urllib.error.HTTPError, ValueError) as e:
                 filename = 'icon.png'
     result = {
             "title": str(profil[str(item)]['name']),
