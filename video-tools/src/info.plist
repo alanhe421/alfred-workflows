@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>cn.alanhe.video-tools</string>
+	<key>connections</key>
+	<dict>
+		<key>8D316FA1-8A10-437C-A4F5-38523D1ED5A6</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>1D062C90-EDF7-45A1-BB1B-7677DD49BD94</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Alan He</string>
+	<key>description</key>
+	<string>tools for video</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>video</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>filetypes</key>
+				<array>
+					<string>public.mpeg-4</string>
+				</array>
+				<key>name</key>
+				<string>Video to Audio</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.action</string>
+			<key>uid</key>
+			<string>8D316FA1-8A10-437C-A4F5-38523D1ED5A6</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>query={query}
+dirpath="${query%/*}"
+filename="${query##*/}"
+filename="${filename%.*}"
+extension="${query##*.}"
+ffmpeg -i "$query" -q:a 0 -map a "$dirpath/$filename".$output_audio_format</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>1D062C90-EDF7-45A1-BB1B-7677DD49BD94</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>&gt; some tools for video
+
+1. extract audio from video</string>
+	<key>uidata</key>
+	<dict>
+		<key>1D062C90-EDF7-45A1-BB1B-7677DD49BD94</key>
+		<dict>
+			<key>xpos</key>
+			<real>555</real>
+			<key>ypos</key>
+			<real>315</real>
+		</dict>
+		<key>8D316FA1-8A10-437C-A4F5-38523D1ED5A6</key>
+		<dict>
+			<key>xpos</key>
+			<real>240</real>
+			<key>ypos</key>
+			<real>300</real>
+		</dict>
+	</dict>
+	<key>userconfigurationconfig</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>mp3</string>
+				<key>pairs</key>
+				<array>
+					<array>
+						<string>MP3</string>
+						<string>mp3</string>
+					</array>
+					<array>
+						<string>WAV</string>
+						<string>wav</string>
+					</array>
+				</array>
+			</dict>
+			<key>description</key>
+			<string></string>
+			<key>label</key>
+			<string>Output Audio Format</string>
+			<key>type</key>
+			<string>popupbutton</string>
+			<key>variable</key>
+			<string>output_audio_format</string>
+		</dict>
+	</array>
+	<key>variablesdontexport</key>
+	<array/>
+	<key>version</key>
+	<string>0.1</string>
+	<key>webaddress</key>
+	<string>https://1991421.cn</string>
+</dict>
+</plist>
