@@ -23,7 +23,7 @@ P.S.: 使用这些Workflow的前提是已购买[Powerpack](https://www.alfredapp
 
 ## Workflow集
 
-<!--workflow-start-->共48个
+<!--workflow-start-->共49个
 
 ### 1. [2FA-Read Code](https://github.com/alanhg/alfred-workflows/tree/master/2fa-read-code)
 > Read authentication code in your recent messages or current clipboard
@@ -385,7 +385,15 @@ P.S.: 使用这些Workflow的前提是已购买[Powerpack](https://www.alfredapp
 [![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/type-search/src/info.plist)
 
 
-### 47. [Whistle](https://github.com/alanhg/alfred-workflows/tree/master/whistle)
+### 47. [video](https://github.com/alanhg/alfred-workflows/tree/master/video-tools)
+> tools for video
+
+![](https://img.shields.io/badge/version-v0.1-green?style=for-the-badge)
+[![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/video-tools/video.alfredworkflow)
+[![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/video-tools/src/info.plist)
+
+
+### 48. [Whistle](https://github.com/alanhg/alfred-workflows/tree/master/whistle)
 > select rules
 
 ![](https://img.shields.io/badge/version-v2.13-green?style=for-the-badge)
@@ -393,7 +401,7 @@ P.S.: 使用这些Workflow的前提是已购买[Powerpack](https://www.alfredapp
 [![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/whistle/src/info.plist)
 
 
-### 48. [印象笔记](https://github.com/alanhg/alfred-workflows/tree/master/印象笔记)
+### 49. [印象笔记](https://github.com/alanhg/alfred-workflows/tree/master/印象笔记)
 > Use Evernote with Alfred
 
 ![](https://img.shields.io/badge/version-v1.0.2-green?style=for-the-badge)
