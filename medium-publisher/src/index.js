@@ -2,13 +2,22 @@ const axios = require('axios');
 const fs = require('fs');
 const [, , TOKEN, AUTHOR_ID, FILE] = process.argv;
 const { extractMeta } = require('./hexo-parser');
+const { publishStatus } = process.env;
+
+const statusToPages={
+'draft':'drafts',
+'public':'public',
+'unlisted':'',
+}
 
 function main() {
   const files = FILE.split('\t');
   const fileDatas = files
     .map((f) => fs.readFileSync(f, 'utf8'))
     .map(extractMeta);
-  return Promise.all(fileDatas.map((f) => createPost(f)));
+  return Promise.all(fileDatas.map((f) => createPost(f))).then((res) => {
+    process.stdout.write(statusToPages[publishStatus]);
+  });
 }
 
 /**
@@ -26,7 +35,7 @@ function createPost(data) {
         /**
          *  “public”, “draft”, or “unlisted”
          */
-        publishStatus: process.env.publishStatus,
+        publishStatus: publishStatus,
         canonicalUrl: data.canonicalUrl
       },
       {
@@ -36,7 +45,7 @@ function createPost(data) {
       }
     )
     .then(({ data: res }) => {
-      return res.data.url;
+      return res;
     }).catch(() => {});
 }
 

@@ -366,10 +366,44 @@ end run</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>taskuid</key>
+				<string>com.alfredapp.automation.core/text-processing/text.lines.trim</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.automation.task</string>
+			<key>uid</key>
+			<string>102B7D62-92B6-49EB-8561-3309DD7428A2</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://medium.com/me/stories/{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>E9CD77C6-0904-4696-903F-1CCB7D5EEFF6</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
-				<false/>
+				<true/>
 				<key>removeextension</key>
 				<false/>
 				<key>text</key>
@@ -410,27 +444,6 @@ end run</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>skipqueryencode</key>
-				<false/>
-				<key>skipvarencode</key>
-				<false/>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>https://medium.com/me/stories/{var:publishStatus}</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>E9CD77C6-0904-4696-903F-1CCB7D5EEFF6</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>seconds</key>
 				<string>1</string>
 			</dict>
@@ -455,7 +468,10 @@ end run</string>
 
 ```
 brew install node
-```</string>
+```
+
+## API
+https://github.com/Medium/medium-api-docs</string>
 	<key>uidata</key>
 	<dict>
 		<key>05887F0C-F263-4DB5-9D60-D5569295F1D5</key>
@@ -463,9 +479,16 @@ brew install node
 			<key>note</key>
 			<string>Successfully published</string>
 			<key>xpos</key>
-			<real>475</real>
+			<real>640</real>
 			<key>ypos</key>
-			<real>510</real>
+			<real>515</real>
+		</dict>
+		<key>102B7D62-92B6-49EB-8561-3309DD7428A2</key>
+		<dict>
+			<key>xpos</key>
+			<real>645</real>
+			<key>ypos</key>
+			<real>370</real>
 		</dict>
 		<key>1F99A061-C264-4609-9A9A-CCB68E7A9996</key>
 		<dict>
@@ -531,9 +554,9 @@ brew install node
 			<key>note</key>
 			<string>jump to medium</string>
 			<key>xpos</key>
-			<real>750</real>
+			<real>950</real>
 			<key>ypos</key>
-			<real>520</real>
+			<real>505</real>
 		</dict>
 		<key>ED5D79E1-9B45-4C44-A863-51A1612D72E1</key>
 		<dict>
@@ -554,9 +577,9 @@ brew install node
 		<key>FC19A4F5-AA5C-4F12-9C64-1D3B617DF2E4</key>
 		<dict>
 			<key>xpos</key>
-			<real>635</real>
+			<real>815</real>
 			<key>ypos</key>
-			<real>550</real>
+			<real>540</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
@@ -565,7 +588,7 @@ brew install node
 			<key>config</key>
 			<dict>
 				<key>default</key>
-				<string>public</string>
+				<string>draft</string>
 				<key>pairs</key>
 				<array>
 					<array>
@@ -637,7 +660,7 @@ brew install node
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.6</string>
+	<string>1.7</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/medium-publisher</string>
 </dict>
