@@ -12,7 +12,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>C67E2790-A8FC-4FBC-8FE7-2A5CD9D012ED</string>
+				<string>A2E6CA5F-BA54-489F-A6E2-A97F223F3F72</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -26,6 +26,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>D5973360-B453-4F19-BEC6-695832FF1756</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>A2E6CA5F-BA54-489F-A6E2-A97F223F3F72</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>C67E2790-A8FC-4FBC-8FE7-2A5CD9D012ED</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -180,6 +193,24 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>tasksettings</key>
+				<dict>
+					<key>to_clipboard</key>
+					<true/>
+				</dict>
+				<key>taskuid</key>
+				<string>com.alfredapp.automation.core/screen-capture/screenshot.interactive</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.automation.task</string>
+			<key>uid</key>
+			<string>A2E6CA5F-BA54-489F-A6E2-A97F223F3F72</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>openwith</key>
 				<string></string>
 				<key>sourcefile</key>
@@ -244,7 +275,7 @@
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>&gt; Get the text in the screenshot to the clipboard
+	<string>&gt; Activate OCR keywords, select the screen area, and press Enter to immediately obtain the text.
 
 Use the built-in OCR, no need to install dependencies.</string>
 	<key>uidata</key>
@@ -272,6 +303,13 @@ Use the built-in OCR, no need to install dependencies.</string>
 			<key>ypos</key>
 			<real>195</real>
 		</dict>
+		<key>A2E6CA5F-BA54-489F-A6E2-A97F223F3F72</key>
+		<dict>
+			<key>xpos</key>
+			<real>145</real>
+			<key>ypos</key>
+			<real>235</real>
+		</dict>
 		<key>C0F55B7B-E2B9-4FF2-972C-E1E1FEC24322</key>
 		<dict>
 			<key>xpos</key>
@@ -282,9 +320,9 @@ Use the built-in OCR, no need to install dependencies.</string>
 		<key>C67E2790-A8FC-4FBC-8FE7-2A5CD9D012ED</key>
 		<dict>
 			<key>xpos</key>
-			<real>220</real>
+			<real>295</real>
 			<key>ypos</key>
-			<real>55</real>
+			<real>65</real>
 		</dict>
 		<key>D1CABD85-A795-45F0-B22D-BE7AB8B76884</key>
 		<dict>
@@ -310,7 +348,7 @@ Use the built-in OCR, no need to install dependencies.</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>2.0</string>
+	<string>2.1</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/ocr</string>
 </dict>

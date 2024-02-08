@@ -1,10 +1,10 @@
-> Get the text in the screenshot to the clipboard
+> Activate OCR keywords, select the screen area, and press Enter to immediately obtain the text.
 
 Use the built-in OCR, no need to install dependencies.
 
 
 
-![](https://img.shields.io/badge/version-v2.0-green?style=for-the-badge)
+![](https://img.shields.io/badge/version-v2.1-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/ocr/OCR.alfredworkflow)
 [![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/ocr/src/info.plist)
 
