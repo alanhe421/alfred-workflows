@@ -176,23 +176,12 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>pngpaste_shell="/usr/local/bin/pngpaste"
-node_shell="/usr/local/bin/node"
-
-if [[ ! -x "${pngpaste_shell}" ]]; then
-    pngpaste_shell="/opt/homebrew/bin/pngpaste"
-fi
-
-if [[ ! -x "${node_shell}" ]]; then
-    node_shell="/opt/homebrew/bin/node"
-fi
-
-[[ -d "${alfred_workflow_cache}" ]] || mkdir "${alfred_workflow_cache}"
+				<string>[[ -d "${alfred_workflow_cache}" ]] || mkdir "${alfred_workflow_cache}"
 
 
-$pngpaste_shell "$alfred_workflow_cache/temp.png"
+pngpaste "$alfred_workflow_cache/temp.png"
 
-$node_shell ./index.js $APP_ID $API_KEY $SECRET_KEY {query}</string>
+node ./index.js $APP_ID $API_KEY $SECRET_KEY {query}</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
