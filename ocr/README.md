@@ -13,7 +13,7 @@ Use the built-in OCR, no need to install dependencies.
 <!-- more -->
 
 ## 效果
-![](screenshot/demo.gif)
+![](screenshot/screenshot.gif)
 
 ## First-time use
 
