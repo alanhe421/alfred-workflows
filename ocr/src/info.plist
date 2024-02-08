@@ -8,43 +8,6 @@
 	<string>Self-Dev</string>
 	<key>connections</key>
 	<dict>
-		<key>02490CE9-13B5-4DF2-8925-51959002C029</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>9EE38889-E5FF-4F8B-9808-748DFEEEACD8</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>429A869E-BAA7-4EAB-BB5F-30B2D51D8E02</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>C0F55B7B-E2B9-4FF2-972C-E1E1FEC24322</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>1017A5FC-CE01-4FE6-982B-3E281E571C46</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>1017A5FC-CE01-4FE6-982B-3E281E571C46</key>
-		<array/>
 		<key>763B39BE-E24D-4449-A0E3-C2E2021623EC</key>
 		<array>
 			<dict>
@@ -58,11 +21,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>9EE38889-E5FF-4F8B-9808-748DFEEEACD8</key>
+		<key>85F97DB5-3EC6-4AE2-BD8A-E53075B998BF</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>7FA8077C-0313-4570-8753-BEA7E7026A7B</string>
+				<string>D5973360-B453-4F19-BEC6-695832FF1756</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -75,11 +38,46 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>02490CE9-13B5-4DF2-8925-51959002C029</string>
+				<string>C0F55B7B-E2B9-4FF2-972C-E1E1FEC24322</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>9985942A-C3C2-45A5-A0B1-44038F392823</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>85F97DB5-3EC6-4AE2-BD8A-E53075B998BF</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>D5973360-B453-4F19-BEC6-695832FF1756</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D1CABD85-A795-45F0-B22D-BE7AB8B76884</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>10800F7B-3F08-4143-BE36-26AA026B629D</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -98,133 +96,21 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<true/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>{query}</string>
-				<key>title</key>
-				<string>OCR failed</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>7FA8077C-0313-4570-8753-BEA7E7026A7B</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>matchmode</key>
-				<integer>1</integer>
-				<key>matchstring</key>
-				<string>^error_msg</string>
-				<key>regexcaseinsensitive</key>
-				<false/>
-				<key>regexmultiline</key>
-				<false/>
-				<key>replacestring</key>
-				<string></string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.replace</string>
-			<key>uid</key>
-			<string>9EE38889-E5FF-4F8B-9808-748DFEEEACD8</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
 				<key>argumenttype</key>
 				<integer>2</integer>
-				<key>fixedorder</key>
-				<false/>
-				<key>items</key>
-				<string>[{"title":"OCR-Default","arg":"CHN_ENG","subtitle":"中英文混合"},{"title":"OCR-ENG","arg":"ENG","subtitle":"英文"},{"title":"OCR-POR","arg":"POR","subtitle":"葡萄牙语"},{"title":"OCR-FRE","arg":"FRE","subtitle":"法语"},{"title":"OCR-GER","arg":"GER","subtitle":"德语"},{"title":"OCR-ITA","arg":"ITA","subtitle":"意大利语"},{"title":"OCR-SPA","arg":"SPA","subtitle":"西班牙语"},{"title":"OCR-RUS","arg":"RUS","subtitle":"俄语"},{"title":"OCR-JAP","arg":"JAP","subtitle":"日语"},{"title":"OCR-KOR","arg":"KOR","subtitle":"韩语"}]</string>
 				<key>keyword</key>
 				<string>ocr</string>
-				<key>matchmode</key>
-				<integer>0</integer>
-				<key>runningsubtext</key>
-				<string></string>
 				<key>subtext</key>
-				<string>Get the text in the screenshot to the clipboard</string>
-				<key>title</key>
+				<string>Extract text from Clipboard</string>
+				<key>text</key>
 				<string>OCR</string>
 				<key>withspace</key>
 				<false/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.listfilter</string>
+			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
 			<string>763B39BE-E24D-4449-A0E3-C2E2021623EC</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>[[ -d "${alfred_workflow_cache}" ]] || mkdir "${alfred_workflow_cache}"
-
-
-pngpaste "$alfred_workflow_cache/temp.png"
-
-node ./index.js $APP_ID $API_KEY $SECRET_KEY {query}</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>C67E2790-A8FC-4FBC-8FE7-2A5CD9D012ED</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>conditions</key>
-				<array>
-					<dict>
-						<key>inputstring</key>
-						<string></string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>4</integer>
-						<key>matchstring</key>
-						<string>^error_msg</string>
-						<key>outputlabel</key>
-						<string></string>
-						<key>uid</key>
-						<string>429A869E-BAA7-4EAB-BB5F-30B2D51D8E02</string>
-					</dict>
-				</array>
-				<key>elselabel</key>
-				<string>else</string>
-				<key>hideelse</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.conditional</string>
-			<key>uid</key>
-			<string>02490CE9-13B5-4DF2-8925-51959002C029</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -252,6 +138,29 @@ node ./index.js $APP_ID $API_KEY $SECRET_KEY {query}</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>/usr/bin/shortcuts run 'OCR'</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>C67E2790-A8FC-4FBC-8FE7-2A5CD9D012ED</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>autopaste</key>
 				<false/>
 				<key>clipboardtext</key>
@@ -264,41 +173,82 @@ node ./index.js $APP_ID $API_KEY $SECRET_KEY {query}</string>
 			<key>type</key>
 			<string>alfred.workflow.output.clipboard</string>
 			<key>uid</key>
-			<string>1017A5FC-CE01-4FE6-982B-3E281E571C46</string>
+			<string>9985942A-C3C2-45A5-A0B1-44038F392823</string>
 			<key>version</key>
 			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>openwith</key>
+				<string></string>
+				<key>sourcefile</key>
+				<string>OCR.shortcut</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>D1CABD85-A795-45F0-B22D-BE7AB8B76884</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>tasksettings</key>
+				<dict>
+					<key>target_shortcut</key>
+					<string>OCR</string>
+				</dict>
+				<key>taskuid</key>
+				<string>com.alfredapp.automation.core/shortcuts/shortcut.installed</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.automation.task</string>
+			<key>uid</key>
+			<string>85F97DB5-3EC6-4AE2-BD8A-E53075B998BF</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>6</integer>
+						<key>matchstring</key>
+						<string></string>
+						<key>outputlabel</key>
+						<string>Missing Shortcut</string>
+						<key>uid</key>
+						<string>10800F7B-3F08-4143-BE36-26AA026B629D</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string></string>
+				<key>hideelse</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>D5973360-B453-4F19-BEC6-695832FF1756</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 	</array>
 	<key>readme</key>
 	<string>&gt; Get the text in the screenshot to the clipboard
 
-
-## requirement
-
-First run this command on a terminal:
-
-1. brew install pngpaste
-2. brew install node (v16 test ok)
-
-
-## dependency
-百度OCR，[相关API](https://cloud.baidu.com/doc/OCR/s/zk3h7xz52)</string>
+Use the built-in OCR, no need to install dependencies.</string>
 	<key>uidata</key>
 	<dict>
-		<key>02490CE9-13B5-4DF2-8925-51959002C029</key>
-		<dict>
-			<key>xpos</key>
-			<real>380</real>
-			<key>ypos</key>
-			<real>75</real>
-		</dict>
-		<key>1017A5FC-CE01-4FE6-982B-3E281E571C46</key>
-		<dict>
-			<key>xpos</key>
-			<real>605</real>
-			<key>ypos</key>
-			<real>295</real>
-		</dict>
 		<key>763B39BE-E24D-4449-A0E3-C2E2021623EC</key>
 		<dict>
 			<key>xpos</key>
@@ -306,28 +256,28 @@ First run this command on a terminal:
 			<key>ypos</key>
 			<real>50</real>
 		</dict>
-		<key>7FA8077C-0313-4570-8753-BEA7E7026A7B</key>
+		<key>85F97DB5-3EC6-4AE2-BD8A-E53075B998BF</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>9</integer>
 			<key>xpos</key>
-			<real>610</real>
+			<real>370</real>
 			<key>ypos</key>
-			<real>15</real>
+			<real>355</real>
 		</dict>
-		<key>9EE38889-E5FF-4F8B-9808-748DFEEEACD8</key>
+		<key>9985942A-C3C2-45A5-A0B1-44038F392823</key>
 		<dict>
-			<key>note</key>
-			<string>drop error msg prefix</string>
 			<key>xpos</key>
-			<real>480</real>
+			<real>510</real>
 			<key>ypos</key>
-			<real>30</real>
+			<real>195</real>
 		</dict>
 		<key>C0F55B7B-E2B9-4FF2-972C-E1E1FEC24322</key>
 		<dict>
 			<key>xpos</key>
-			<real>615</real>
+			<real>510</real>
 			<key>ypos</key>
-			<real>165</real>
+			<real>50</real>
 		</dict>
 		<key>C67E2790-A8FC-4FBC-8FE7-2A5CD9D012ED</key>
 		<dict>
@@ -336,46 +286,31 @@ First run this command on a terminal:
 			<key>ypos</key>
 			<real>55</real>
 		</dict>
+		<key>D1CABD85-A795-45F0-B22D-BE7AB8B76884</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>9</integer>
+			<key>xpos</key>
+			<real>620</real>
+			<key>ypos</key>
+			<real>345</real>
+		</dict>
+		<key>D5973360-B453-4F19-BEC6-695832FF1756</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>9</integer>
+			<key>xpos</key>
+			<real>520</real>
+			<key>ypos</key>
+			<real>375</real>
+		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
-	<array>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>default</key>
-				<true/>
-				<key>required</key>
-				<false/>
-				<key>text</key>
-				<string>开启</string>
-			</dict>
-			<key>description</key>
-			<string>只有OCR选择中英文混合会开启</string>
-			<key>label</key>
-			<string>自动中文繁简转换</string>
-			<key>type</key>
-			<string>checkbox</string>
-			<key>variable</key>
-			<string>AUTO_OPEN_CC</string>
-		</dict>
-	</array>
-	<key>variables</key>
-	<dict>
-		<key>API_KEY</key>
-		<string></string>
-		<key>APP_ID</key>
-		<string></string>
-		<key>SECRET_KEY</key>
-		<string></string>
-	</dict>
+	<array/>
 	<key>variablesdontexport</key>
-	<array>
-		<string>API_KEY</string>
-		<string>SECRET_KEY</string>
-		<string>APP_ID</string>
-	</array>
+	<array/>
 	<key>version</key>
-	<string>1.4</string>
+	<string>2.0</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/ocr</string>
 </dict>

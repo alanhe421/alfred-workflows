@@ -1,22 +1,13 @@
 > Get the text in the screenshot to the clipboard
 
-
-## requirement
-
-First run this command on a terminal:
-
-1. brew install pngpaste
-2. brew install node (v16 test ok)
-
-
-## dependency
-百度OCR，[相关API](https://cloud.baidu.com/doc/OCR/s/zk3h7xz52)
+Use the built-in OCR, no need to install dependencies.
 
 
 
-![](https://img.shields.io/badge/version-v1.4-green?style=for-the-badge)
+![](https://img.shields.io/badge/version-v2.0-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/ocr/OCR.alfredworkflow)
 [![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/ocr/src/info.plist)
+
 
 
 <!-- more -->
