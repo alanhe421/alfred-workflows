@@ -6,7 +6,7 @@
 First run this command on a terminal:
 
 1. brew install pngpaste
-2. brew install node
+2. brew install node (v16 test ok)
 
 
 ## dependency
@@ -14,7 +14,7 @@ First run this command on a terminal:
 
 
 
-![](https://img.shields.io/badge/version-v1.3-green?style=for-the-badge)
+![](https://img.shields.io/badge/version-v1.4-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/ocr/OCR.alfredworkflow)
 [![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/ocr/src/info.plist)
 

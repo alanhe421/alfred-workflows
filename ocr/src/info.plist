@@ -176,12 +176,23 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>[[ -d "${alfred_workflow_cache}" ]] || mkdir "${alfred_workflow_cache}"
+				<string>pngpaste_shell="/usr/local/bin/pngpaste"
+node_shell="/usr/local/bin/node"
 
-/usr/local/bin/pngpaste "$alfred_workflow_cache/temp.png"
+if [[ ! -x "${pngpaste_shell}" ]]; then
+    pngpaste_shell="/opt/homebrew/bin/pngpaste"
+fi
+
+if [[ ! -x "${node_shell}" ]]; then
+    node_shell="/opt/homebrew/bin/node"
+fi
+
+[[ -d "${alfred_workflow_cache}" ]] || mkdir "${alfred_workflow_cache}"
 
 
-/usr/local/bin/node ./index.js $APP_ID $API_KEY $SECRET_KEY {query}</string>
+$pngpaste_shell "$alfred_workflow_cache/temp.png"
+
+$node_shell ./index.js $APP_ID $API_KEY $SECRET_KEY {query}</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -278,7 +289,7 @@
 First run this command on a terminal:
 
 1. brew install pngpaste
-2. brew install node
+2. brew install node (v16 test ok)
 
 
 ## dependency
@@ -375,7 +386,7 @@ First run this command on a terminal:
 		<string>APP_ID</string>
 	</array>
 	<key>version</key>
-	<string>1.3</string>
+	<string>1.4</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/ocr</string>
 </dict>

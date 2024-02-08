@@ -21,6 +21,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>1B272154-CFD9-4A39-9FA1-A140450C1F9E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D56E4473-DD8D-4070-BE6A-DDE87F1972CE</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>26374403-7F8D-4B7B-A99D-1F5CB696ABDC</key>
 		<array>
 			<dict>
@@ -34,11 +47,75 @@
 				<false/>
 			</dict>
 		</array>
+		<key>29B02483-BCD2-45DF-AC40-6156AE996C4D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>85B3FA54-22E8-4381-A7EB-F88C5DE3963D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>310DB5B8-7F20-4C0D-A9BE-27CBFD30C538</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>7B750A40-CA49-4B73-864C-35481850856A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>F6A8013A-7561-4D43-B366-866CD514EE24</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>85B3FA54-22E8-4381-A7EB-F88C5DE3963D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>37BB7108-70E5-42D7-892F-F8CCB9D61CF3</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>26374403-7F8D-4B7B-A99D-1F5CB696ABDC</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>42330A56-745B-48C7-9207-71D103EA9231</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>760BD0DC-CFEE-427C-9BC4-5AC8E7E7B5D0</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>7B750A40-CA49-4B73-864C-35481850856A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>42330A56-745B-48C7-9207-71D103EA9231</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -73,6 +150,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>B1465E80-94D1-4821-97B5-0757142FF853</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>941B1957-6F6B-4445-BA00-19F7635CD4D6</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>C9F55250-F3BF-48AB-A0D0-829057674E9F</key>
 		<array>
 			<dict>
@@ -99,11 +189,49 @@
 				<false/>
 			</dict>
 		</array>
+		<key>D56E4473-DD8D-4070-BE6A-DDE87F1972CE</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3E0B2FF8-5D3C-4E63-BC4B-A641B439A2FD</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>D67C32F7-B21F-4B95-8393-40059623EF9D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>941B1957-6F6B-4445-BA00-19F7635CD4D6</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>1B272154-CFD9-4A39-9FA1-A140450C1F9E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>F6A8013A-7561-4D43-B366-866CD514EE24</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>E198DF77-C0B4-470B-BC7C-07CF14BE7E35</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>85B3FA54-22E8-4381-A7EB-F88C5DE3963D</string>
+				<string>310DB5B8-7F20-4C0D-A9BE-27CBFD30C538</string>
 				<key>modifiers</key>
 				<integer>262144</integer>
 				<key>modifiersubtext</key>
@@ -113,7 +241,20 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
-				<string>941B1957-6F6B-4445-BA00-19F7635CD4D6</string>
+				<string>D67C32F7-B21F-4B95-8393-40059623EF9D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>ED3F083A-836A-4661-9C52-86E024124FF9</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>07095222-4112-4C18-AD73-5CB165AF9C1F</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -133,6 +274,104 @@
 	<string>Resize Image</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>externaltriggerid</key>
+				<string>resize origin image</string>
+				<key>passinputasargument</key>
+				<true/>
+				<key>passvariables</key>
+				<true/>
+				<key>workflowbundleid</key>
+				<string>self</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.callexternaltrigger</string>
+			<key>uid</key>
+			<string>760BD0DC-CFEE-427C-9BC4-5AC8E7E7B5D0</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>availableviaurlhandler</key>
+				<false/>
+				<key>triggerid</key>
+				<string>resize origin image</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.external</string>
+			<key>uid</key>
+			<string>29B02483-BCD2-45DF-AC40-6156AE996C4D</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>bash ./resize-input.sh {query}</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>42330A56-745B-48C7-9207-71D103EA9231</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>7B750A40-CA49-4B73-864C-35481850856A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -159,7 +398,9 @@
 				<key>runningsubtext</key>
 				<string></string>
 				<key>script</key>
-				<string>./main.sh</string>
+				<string>[[ -d "${alfred_workflow_cache}" ]] || mkdir "${alfred_workflow_cache}"
+
+./main.sh</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -179,26 +420,6 @@
 			<string>E198DF77-C0B4-470B-BC7C-07CF14BE7E35</string>
 			<key>version</key>
 			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>tasksettings</key>
-				<dict>
-					<key>height</key>
-					<string>{var:height}</string>
-					<key>width</key>
-					<string>{var:width}</string>
-				</dict>
-				<key>taskuid</key>
-				<string>com.alfredapp.automation.core/image-manipulation/image.resize.freeform</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.automation.task</string>
-			<key>uid</key>
-			<string>ED3F083A-836A-4661-9C52-86E024124FF9</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -223,6 +444,101 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>custom</string>
+						<key>outputlabel</key>
+						<string></string>
+						<key>uid</key>
+						<string>F6A8013A-7561-4D43-B366-866CD514EE24</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+				<key>hideelse</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>310DB5B8-7F20-4C0D-A9BE-27CBFD30C538</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>imageSrc</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>26374403-7F8D-4B7B-A99D-1F5CB696ABDC</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>tasksettings</key>
+				<dict>
+					<key>height</key>
+					<string>{var:height}</string>
+					<key>width</key>
+					<string>{var:width}</string>
+				</dict>
+				<key>taskuid</key>
+				<string>com.alfredapp.automation.core/image-manipulation/image.resize.freeform</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.automation.task</string>
+			<key>uid</key>
+			<string>ED3F083A-836A-4661-9C52-86E024124FF9</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>bash ./autosave.sh "$size"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>07095222-4112-4C18-AD73-5CB165AF9C1F</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argument</key>
 				<string>{var:imageSrc}</string>
 				<key>passthroughargument</key>
@@ -231,6 +547,8 @@
 				<dict>
 					<key>height</key>
 					<string>{var:split2}</string>
+					<key>size</key>
+					<string>{query}</string>
 					<key>width</key>
 					<string>{var:split1}</string>
 				</dict>
@@ -266,20 +584,32 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argument</key>
-				<string></string>
-				<key>passthroughargument</key>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>custom</string>
+						<key>outputlabel</key>
+						<string></string>
+						<key>uid</key>
+						<string>F6A8013A-7561-4D43-B366-866CD514EE24</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+				<key>hideelse</key>
 				<false/>
-				<key>variables</key>
-				<dict>
-					<key>imageSrc</key>
-					<string>{query}</string>
-				</dict>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
+			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
-			<string>26374403-7F8D-4B7B-A99D-1F5CB696ABDC</string>
+			<string>D67C32F7-B21F-4B95-8393-40059623EF9D</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -321,6 +651,30 @@ echo -n "$newfilename"</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>height</key>
+					<string>{var:split2}</string>
+					<key>size</key>
+					<string>{query}</string>
+					<key>width</key>
+					<string>{var:split1}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>0B21731A-E4F4-47D8-B514-7EDBD1B063FD</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>delimiter</key>
 				<string>x</string>
 				<key>discardemptyarguments</key>
@@ -343,21 +697,97 @@ echo -n "$newfilename"</string>
 			<key>config</key>
 			<dict>
 				<key>argument</key>
-				<string>{query}</string>
+				<string></string>
 				<key>passthroughargument</key>
 				<false/>
 				<key>variables</key>
-				<dict>
-					<key>height</key>
-					<string>{var:split2}</string>
-					<key>width</key>
-					<string>{var:split1}</string>
-				</dict>
+				<dict/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
-			<string>0B21731A-E4F4-47D8-B514-7EDBD1B063FD</string>
+			<string>1B272154-CFD9-4A39-9FA1-A140450C1F9E</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>bash ./resize-input.sh {query}</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>D56E4473-DD8D-4070-BE6A-DDE87F1972CE</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>externaltriggerid</key>
+				<string>resize image copy</string>
+				<key>passinputasargument</key>
+				<true/>
+				<key>passvariables</key>
+				<true/>
+				<key>workflowbundleid</key>
+				<string>self</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.callexternaltrigger</string>
+			<key>uid</key>
+			<string>3E0B2FF8-5D3C-4E63-BC4B-A641B439A2FD</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>availableviaurlhandler</key>
+				<false/>
+				<key>triggerid</key>
+				<string>resize image copy</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.external</string>
+			<key>uid</key>
+			<string>B1465E80-94D1-4821-97B5-0757142FF853</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -371,9 +801,20 @@ support png,jpeg
 ## Usage
 
 1. enter to resize the copy image
-2. ⌃ and enter to resize the original image</string>
+2. ⌃ and enter to resize the original image
+3. support custom resize
+4. support size history</string>
 	<key>uidata</key>
 	<dict>
+		<key>07095222-4112-4C18-AD73-5CB165AF9C1F</key>
+		<dict>
+			<key>note</key>
+			<string>autosave</string>
+			<key>xpos</key>
+			<real>1485</real>
+			<key>ypos</key>
+			<real>285</real>
+		</dict>
 		<key>0B21731A-E4F4-47D8-B514-7EDBD1B063FD</key>
 		<dict>
 			<key>xpos</key>
@@ -381,26 +822,79 @@ support png,jpeg
 			<key>ypos</key>
 			<real>545</real>
 		</dict>
+		<key>1B272154-CFD9-4A39-9FA1-A140450C1F9E</key>
+		<dict>
+			<key>xpos</key>
+			<real>345</real>
+			<key>ypos</key>
+			<real>690</real>
+		</dict>
 		<key>26374403-7F8D-4B7B-A99D-1F5CB696ABDC</key>
 		<dict>
 			<key>xpos</key>
-			<real>445</real>
+			<real>255</real>
 			<key>ypos</key>
-			<real>180</real>
+			<real>275</real>
+		</dict>
+		<key>29B02483-BCD2-45DF-AC40-6156AE996C4D</key>
+		<dict>
+			<key>xpos</key>
+			<real>1185</real>
+			<key>ypos</key>
+			<real>65</real>
+		</dict>
+		<key>310DB5B8-7F20-4C0D-A9BE-27CBFD30C538</key>
+		<dict>
+			<key>xpos</key>
+			<real>660</real>
+			<key>ypos</key>
+			<real>275</real>
 		</dict>
 		<key>37BB7108-70E5-42D7-892F-F8CCB9D61CF3</key>
 		<dict>
 			<key>xpos</key>
-			<real>140</real>
+			<real>30</real>
 			<key>ypos</key>
-			<real>150</real>
+			<real>245</real>
+		</dict>
+		<key>3E0B2FF8-5D3C-4E63-BC4B-A641B439A2FD</key>
+		<dict>
+			<key>xpos</key>
+			<real>675</real>
+			<key>ypos</key>
+			<real>800</real>
+		</dict>
+		<key>42330A56-745B-48C7-9207-71D103EA9231</key>
+		<dict>
+			<key>note</key>
+			<string>custom resize</string>
+			<key>xpos</key>
+			<real>775</real>
+			<key>ypos</key>
+			<real>120</real>
+		</dict>
+		<key>760BD0DC-CFEE-427C-9BC4-5AC8E7E7B5D0</key>
+		<dict>
+			<key>xpos</key>
+			<real>985</real>
+			<key>ypos</key>
+			<real>35</real>
+		</dict>
+		<key>7B750A40-CA49-4B73-864C-35481850856A</key>
+		<dict>
+			<key>xpos</key>
+			<real>625</real>
+			<key>ypos</key>
+			<real>160</real>
 		</dict>
 		<key>85B3FA54-22E8-4381-A7EB-F88C5DE3963D</key>
 		<dict>
+			<key>note</key>
+			<string>split by x</string>
 			<key>xpos</key>
-			<real>915</real>
+			<real>980</real>
 			<key>ypos</key>
-			<real>180</real>
+			<real>350</real>
 		</dict>
 		<key>941B1957-6F6B-4445-BA00-19F7635CD4D6</key>
 		<dict>
@@ -409,12 +903,19 @@ support png,jpeg
 			<key>ypos</key>
 			<real>545</real>
 		</dict>
+		<key>B1465E80-94D1-4821-97B5-0757142FF853</key>
+		<dict>
+			<key>xpos</key>
+			<real>865</real>
+			<key>ypos</key>
+			<real>805</real>
+		</dict>
 		<key>C9F55250-F3BF-48AB-A0D0-829057674E9F</key>
 		<dict>
 			<key>xpos</key>
-			<real>1070</real>
+			<real>1095</real>
 			<key>ypos</key>
-			<real>180</real>
+			<real>305</real>
 		</dict>
 		<key>CACEF680-9AEC-47CA-BCE1-9467F2A21923</key>
 		<dict>
@@ -425,19 +926,35 @@ support png,jpeg
 			<key>ypos</key>
 			<real>515</real>
 		</dict>
+		<key>D56E4473-DD8D-4070-BE6A-DDE87F1972CE</key>
+		<dict>
+			<key>note</key>
+			<string>custom resize</string>
+			<key>xpos</key>
+			<real>475</real>
+			<key>ypos</key>
+			<real>695</real>
+		</dict>
+		<key>D67C32F7-B21F-4B95-8393-40059623EF9D</key>
+		<dict>
+			<key>xpos</key>
+			<real>590</real>
+			<key>ypos</key>
+			<real>450</real>
+		</dict>
 		<key>E198DF77-C0B4-470B-BC7C-07CF14BE7E35</key>
 		<dict>
 			<key>xpos</key>
-			<real>570</real>
+			<real>390</real>
 			<key>ypos</key>
-			<real>150</real>
+			<real>245</real>
 		</dict>
 		<key>ED3F083A-836A-4661-9C52-86E024124FF9</key>
 		<dict>
 			<key>xpos</key>
-			<real>1235</real>
+			<real>1265</real>
 			<key>ypos</key>
-			<real>150</real>
+			<real>275</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
@@ -445,7 +962,7 @@ support png,jpeg
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>0.1</string>
+	<string>0.2</string>
 	<key>webaddress</key>
 	<string>https://1991421.cn</string>
 </dict>
