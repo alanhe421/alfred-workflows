@@ -114,7 +114,7 @@
 				<key>keyword</key>
 				<string>ocr</string>
 				<key>subtext</key>
-				<string>Extract text from Clipboard</string>
+				<string>Get the text in the screenshot to the clipboard</string>
 				<key>text</key>
 				<string>OCR</string>
 				<key>withspace</key>
