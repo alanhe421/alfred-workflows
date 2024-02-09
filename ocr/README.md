@@ -17,8 +17,11 @@ Use the built-in OCR, no need to install dependencies.
 
 ## First-time use
 
-In addition to this, when using it, you will be prompted to install shortcuts. Install and authorize to allow it.
+In addition to this, when using it, you will be prompted to install shortcuts. Install it.
 
 ![screenshot1.png](screenshot/screenshot1.png)
+
+When re-triggering the ocr, there will be a permission authorization box as follows. Click allow, and then you can use it normally.
+
 ![screenshot1.png](screenshot/screenshot2.png)
 ![screenshot1.png](screenshot/screenshot3.png)
