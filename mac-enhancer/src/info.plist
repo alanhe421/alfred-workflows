@@ -8,24 +8,13 @@
 	<string>Self-Dev</string>
 	<key>connections</key>
 	<dict>
+		<key>020E16F3-9010-4C58-8733-5A5A5AFDDE7F</key>
+		<array/>
 		<key>1F861028-2D63-4856-923E-3F2AAEEA8043</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>CFAAD5D3-F791-4906-8FBC-0A036805F76A</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>242A5459-2003-40CE-A4CD-AF8C1A3B8EE7</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>FAA9B021-194E-4279-9155-12F56970CA9F</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -52,6 +41,32 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>346E6071-BEB0-4365-8EEA-50163C41B766</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>31D41E55-6158-48DA-9FA8-2D49138A36E9</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>322CA363-BC51-4DF2-9404-2DEAB1A4DE00</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>322CA363-BC51-4DF2-9404-2DEAB1A4DE00</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>DD93F2F3-04E6-438F-BE22-4C1EBCA47DDA</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -175,11 +190,52 @@
 		</array>
 		<key>A8008FB3-73D5-4264-9B1E-597592344FC8</key>
 		<array/>
+		<key>B2812A25-895B-4D65-A598-F2178BE0C911</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>DD93F2F3-04E6-438F-BE22-4C1EBCA47DDA</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>B8BFA086-1B2F-4728-9976-2D4F4EBB5086</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>A8008FB3-73D5-4264-9B1E-597592344FC8</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>BA890FED-9512-4D77-ACF8-2F959ED76E99</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>020E16F3-9010-4C58-8733-5A5A5AFDDE7F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>225779D7-CB7B-40AA-9576-19D4B907AA29</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>CFAAD5D3-F791-4906-8FBC-0A036805F76A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>BA890FED-9512-4D77-ACF8-2F959ED76E99</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -210,21 +266,6 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>FAA9B021-194E-4279-9155-12F56970CA9F</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>DD93F2F3-04E6-438F-BE22-4C1EBCA47DDA</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>BBE6E0E1-E314-40F6-9B21-FDAE0B8845FF</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -386,26 +427,13 @@
 		</dict>
 		<dict>
 			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>tell application "Messages"	set myChats to chats		repeat with chatItem in myChats		try			delete chatItem		on error errorMessage			log "errorMessage" &amp; errorMessage		end try	end repeat	end tell</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>6</integer>
-			</dict>
+			<dict/>
 			<key>type</key>
-			<string>alfred.workflow.action.script</string>
+			<string>alfred.workflow.automation.task</string>
 			<key>uid</key>
-			<string>45554D26-FF2F-4F95-8C08-934F062DEF67</string>
+			<string>31EA3D30-C9F4-4A9E-8B19-BE635B84BCD2</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -442,6 +470,29 @@
 			<string>AC6456A9-9CE8-413B-9915-555B9C96BC26</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>tell application "Messages"	set myChats to chats		repeat with chatItem in myChats		try			delete chatItem		on error errorMessage			log "errorMessage" &amp; errorMessage		end try	end repeat	end tell</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>45554D26-FF2F-4F95-8C08-934F062DEF67</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -742,21 +793,6 @@ do shell script ("networksetup -setairportpower " &amp; device &amp; " " &amp; p
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string>sudo pkill bluetoothd</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.terminalcommand</string>
-			<key>uid</key>
-			<string>1B18F274-588B-456C-9E33-FEFA036EBCF0</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
@@ -772,6 +808,21 @@ do shell script ("networksetup -setairportpower " &amp; device &amp; " " &amp; p
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
 			<string>248EAC40-BF24-4D70-B18D-EA2AA0052EFA</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>sudo pkill bluetoothd</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.terminalcommand</string>
+			<key>uid</key>
+			<string>1B18F274-588B-456C-9E33-FEFA036EBCF0</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -832,7 +883,7 @@ do shell script ("networksetup -setairportpower " &amp; device &amp; " " &amp; p
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>open {query} -a "/Applications/Visual Studio Code.app"</string>
+				<string>open {query} -a "/Applications/Visual Studio Code - Insiders.app"</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -849,26 +900,20 @@ do shell script ("networksetup -setairportpower " &amp; device &amp; " " &amp; p
 		</dict>
 		<dict>
 			<key>config</key>
-			<dict/>
-			<key>type</key>
-			<string>alfred.workflow.automation.task</string>
-			<key>uid</key>
-			<string>01364533-E4F0-45E2-AF7C-C15C5452871D</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
 			<dict>
-				<key>fileutivariablename</key>
-				<string></string>
-				<key>outputfileuti</key>
-				<false/>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>filetypes</key>
+				<array>
+					<string>com.apple.application-bundle</string>
+				</array>
+				<key>name</key>
+				<string>Force Quit App</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.utility.file</string>
+			<string>alfred.workflow.trigger.action</string>
 			<key>uid</key>
-			<string>A178C922-62CD-4639-B2D4-481A45377845</string>
+			<string>B2812A25-895B-4D65-A598-F2178BE0C911</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -880,18 +925,18 @@ do shell script ("networksetup -setairportpower " &amp; device &amp; " " &amp; p
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>pkill -9 -f "{query}"</string>
+				<string>open -a "$app_path"</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
 				<string></string>
 				<key>type</key>
-				<integer>0</integer>
+				<integer>11</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>CFAAD5D3-F791-4906-8FBC-0A036805F76A</string>
+			<string>020E16F3-9010-4C58-8733-5A5A5AFDDE7F</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -921,21 +966,57 @@ do shell script ("networksetup -setairportpower " &amp; device &amp; " " &amp; p
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>acceptsfiles</key>
-				<true/>
-				<key>acceptsmulti</key>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>pkill -9 -f "{query}"
+
+echo -n '{query}'</string>
+				<key>scriptargtype</key>
 				<integer>0</integer>
-				<key>acceptstext</key>
-				<false/>
-				<key>acceptsurls</key>
-				<false/>
-				<key>name</key>
-				<string>Force Quit App</string>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.trigger.universalaction</string>
+			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>242A5459-2003-40CE-A4CD-AF8C1A3B8EE7</string>
+			<string>CFAAD5D3-F791-4906-8FBC-0A036805F76A</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:should_restart}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>true</string>
+						<key>outputlabel</key>
+						<string></string>
+						<key>uid</key>
+						<string>225779D7-CB7B-40AA-9576-19D4B907AA29</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+				<key>hideelse</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>BA890FED-9512-4D77-ACF8-2F959ED76E99</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -963,32 +1044,41 @@ do shell script ("networksetup -setairportpower " &amp; device &amp; " " &amp; p
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>conditions</key>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>filetypes</key>
 				<array>
-					<dict>
-						<key>inputstring</key>
-						<string></string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>4</integer>
-						<key>matchstring</key>
-						<string>\.app$</string>
-						<key>outputlabel</key>
-						<string></string>
-						<key>uid</key>
-						<string>BBE6E0E1-E314-40F6-9B21-FDAE0B8845FF</string>
-					</dict>
+					<string>com.apple.application-bundle</string>
 				</array>
-				<key>elselabel</key>
-				<string>else</string>
-				<key>hideelse</key>
-				<false/>
+				<key>name</key>
+				<string>Restart App</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.utility.conditional</string>
+			<string>alfred.workflow.trigger.action</string>
 			<key>uid</key>
-			<string>FAA9B021-194E-4279-9155-12F56970CA9F</string>
+			<string>31D41E55-6158-48DA-9FA8-2D49138A36E9</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>app_path</key>
+					<string>{query}</string>
+					<key>should_restart</key>
+					<string>true</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>322CA363-BC51-4DF2-9404-2DEAB1A4DE00</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1008,15 +1098,16 @@ do shell script ("networksetup -setairportpower " &amp; device &amp; " " &amp; p
    recommend add hosts file rw rights for current user.
    ![https://i.imgur.com/d8DKgnY.jpg](https://i.imgur.com/d8DKgnY.jpg)
 9. type `bluetooth` to reset module
-10. forcequit certain app by app universal action</string>
+10. forcequit certain app by app universal action
+11. restart certain app by app universal action</string>
 	<key>uidata</key>
 	<dict>
-		<key>01364533-E4F0-45E2-AF7C-C15C5452871D</key>
+		<key>020E16F3-9010-4C58-8733-5A5A5AFDDE7F</key>
 		<dict>
 			<key>xpos</key>
-			<real>740</real>
+			<real>1220</real>
 			<key>ypos</key>
-			<real>1145</real>
+			<real>1310</real>
 		</dict>
 		<key>1B18F274-588B-456C-9E33-FEFA036EBCF0</key>
 		<dict>
@@ -1030,16 +1121,9 @@ do shell script ("networksetup -setairportpower " &amp; device &amp; " " &amp; p
 			<key>note</key>
 			<string>remove newline</string>
 			<key>xpos</key>
-			<real>690</real>
+			<real>715</real>
 			<key>ypos</key>
-			<real>1335</real>
-		</dict>
-		<key>242A5459-2003-40CE-A4CD-AF8C1A3B8EE7</key>
-		<dict>
-			<key>xpos</key>
-			<real>75</real>
-			<key>ypos</key>
-			<real>1320</real>
+			<real>1345</real>
 		</dict>
 		<key>248EAC40-BF24-4D70-B18D-EA2AA0052EFA</key>
 		<dict>
@@ -1055,14 +1139,35 @@ do shell script ("networksetup -setairportpower " &amp; device &amp; " " &amp; p
 			<key>ypos</key>
 			<real>745</real>
 		</dict>
+		<key>31D41E55-6158-48DA-9FA8-2D49138A36E9</key>
+		<dict>
+			<key>xpos</key>
+			<real>85</real>
+			<key>ypos</key>
+			<real>1510</real>
+		</dict>
 		<key>31D76959-8711-42E3-8D2A-BCDF6A8CDF7A</key>
 		<dict>
 			<key>note</key>
 			<string>open file</string>
 			<key>xpos</key>
-			<real>365</real>
+			<real>305</real>
 			<key>ypos</key>
-			<real>1100</real>
+			<real>1090</real>
+		</dict>
+		<key>31EA3D30-C9F4-4A9E-8B19-BE635B84BCD2</key>
+		<dict>
+			<key>xpos</key>
+			<real>1540</real>
+			<key>ypos</key>
+			<real>330</real>
+		</dict>
+		<key>322CA363-BC51-4DF2-9404-2DEAB1A4DE00</key>
+		<dict>
+			<key>xpos</key>
+			<real>345</real>
+			<key>ypos</key>
+			<real>1540</real>
 		</dict>
 		<key>346E6071-BEB0-4365-8EEA-50163C41B766</key>
 		<dict>
@@ -1131,7 +1236,7 @@ do shell script ("networksetup -setairportpower " &amp; device &amp; " " &amp; p
 		<key>80B86FF2-3765-4911-8792-323C0A03865B</key>
 		<dict>
 			<key>xpos</key>
-			<real>100</real>
+			<real>85</real>
 			<key>ypos</key>
 			<real>1090</real>
 		</dict>
@@ -1162,13 +1267,6 @@ do shell script ("networksetup -setairportpower " &amp; device &amp; " " &amp; p
 			<key>ypos</key>
 			<real>325</real>
 		</dict>
-		<key>A178C922-62CD-4639-B2D4-481A45377845</key>
-		<dict>
-			<key>xpos</key>
-			<real>590</real>
-			<key>ypos</key>
-			<real>1205</real>
-		</dict>
 		<key>A8008FB3-73D5-4264-9B1E-597592344FC8</key>
 		<dict>
 			<key>xpos</key>
@@ -1183,12 +1281,26 @@ do shell script ("networksetup -setairportpower " &amp; device &amp; " " &amp; p
 			<key>ypos</key>
 			<real>370</real>
 		</dict>
+		<key>B2812A25-895B-4D65-A598-F2178BE0C911</key>
+		<dict>
+			<key>xpos</key>
+			<real>80</real>
+			<key>ypos</key>
+			<real>1310</real>
+		</dict>
 		<key>B8BFA086-1B2F-4728-9976-2D4F4EBB5086</key>
 		<dict>
 			<key>xpos</key>
 			<real>90</real>
 			<key>ypos</key>
 			<real>125</real>
+		</dict>
+		<key>BA890FED-9512-4D77-ACF8-2F959ED76E99</key>
+		<dict>
+			<key>xpos</key>
+			<real>1065</real>
+			<key>ypos</key>
+			<real>1345</real>
 		</dict>
 		<key>C51C0769-A94F-406E-80EC-F4B635F47C86</key>
 		<dict>
@@ -1202,18 +1314,18 @@ do shell script ("networksetup -setairportpower " &amp; device &amp; " " &amp; p
 		<key>CFAAD5D3-F791-4906-8FBC-0A036805F76A</key>
 		<dict>
 			<key>xpos</key>
-			<real>815</real>
+			<real>870</real>
 			<key>ypos</key>
-			<real>1305</real>
+			<real>1320</real>
 		</dict>
 		<key>DD93F2F3-04E6-438F-BE22-4C1EBCA47DDA</key>
 		<dict>
 			<key>note</key>
 			<string>app name</string>
 			<key>xpos</key>
-			<real>450</real>
+			<real>455</real>
 			<key>ypos</key>
-			<real>1305</real>
+			<real>1315</real>
 		</dict>
 		<key>E7878FD3-341C-46E3-B296-200E28529751</key>
 		<dict>
@@ -1223,15 +1335,6 @@ do shell script ("networksetup -setairportpower " &amp; device &amp; " " &amp; p
 			<real>85</real>
 			<key>ypos</key>
 			<real>860</real>
-		</dict>
-		<key>FAA9B021-194E-4279-9155-12F56970CA9F</key>
-		<dict>
-			<key>note</key>
-			<string>is app</string>
-			<key>xpos</key>
-			<real>285</real>
-			<key>ypos</key>
-			<real>1340</real>
 		</dict>
 		<key>FD523C1F-C6BF-4955-809A-51ECF942A9F6</key>
 		<dict>
@@ -1248,7 +1351,7 @@ do shell script ("networksetup -setairportpower " &amp; device &amp; " " &amp; p
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.10</string>
+	<string>1.11</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/mac-enhancer</string>
 </dict>

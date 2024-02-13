@@ -13,10 +13,11 @@
    ![https://i.imgur.com/d8DKgnY.jpg](https://i.imgur.com/d8DKgnY.jpg)
 9. type `bluetooth` to reset module
 10. forcequit certain app by app universal action
+11. restart certain app by app universal action
 
 
 
-![](https://img.shields.io/badge/version-v1.10-green?style=for-the-badge)
+![](https://img.shields.io/badge/version-v1.11-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/mac-enhancer/Mac%20Enhancer.alfredworkflow)
 [![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/mac-enhancer/src/info.plist)
 
