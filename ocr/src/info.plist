@@ -12,7 +12,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>A2E6CA5F-BA54-489F-A6E2-A97F223F3F72</string>
+				<string>85F97DB5-3EC6-4AE2-BD8A-E53075B998BF</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -38,40 +38,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>C67E2790-A8FC-4FBC-8FE7-2A5CD9D012ED</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>C67E2790-A8FC-4FBC-8FE7-2A5CD9D012ED</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>C0F55B7B-E2B9-4FF2-972C-E1E1FEC24322</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>9985942A-C3C2-45A5-A0B1-44038F392823</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>85F97DB5-3EC6-4AE2-BD8A-E53075B998BF</string>
+				<string>E9A9E33F-4D94-4AF5-BC40-38C018B27927</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -94,6 +61,44 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>A2E6CA5F-BA54-489F-A6E2-A97F223F3F72</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>33C8F2C3-5022-45E1-9BCE-BB018EB24E5C</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>DE89967F-43E5-4EEC-8F93-059E5BA1FB96</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>85F97DB5-3EC6-4AE2-BD8A-E53075B998BF</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>E9A9E33F-4D94-4AF5-BC40-38C018B27927</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>C0F55B7B-E2B9-4FF2-972C-E1E1FEC24322</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
 		</array>
 	</dict>
 	<key>createdby</key>
@@ -106,6 +111,21 @@
 	<string>OCR</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>openwith</key>
+				<string></string>
+				<key>sourcefile</key>
+				<string>OCR.shortcut</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>D1CABD85-A795-45F0-B22D-BE7AB8B76884</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -126,102 +146,6 @@
 			<string>763B39BE-E24D-4449-A0E3-C2E2021623EC</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<true/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>{query}</string>
-				<key>title</key>
-				<string>OCR to clipboard</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>C0F55B7B-E2B9-4FF2-972C-E1E1FEC24322</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>/usr/bin/shortcuts run 'OCR'</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>C67E2790-A8FC-4FBC-8FE7-2A5CD9D012ED</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>autopaste</key>
-				<false/>
-				<key>clipboardtext</key>
-				<string>{query}</string>
-				<key>ignoredynamicplaceholders</key>
-				<false/>
-				<key>transient</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
-			<key>uid</key>
-			<string>9985942A-C3C2-45A5-A0B1-44038F392823</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>tasksettings</key>
-				<dict>
-					<key>to_clipboard</key>
-					<true/>
-				</dict>
-				<key>taskuid</key>
-				<string>com.alfredapp.automation.core/screen-capture/screenshot.interactive</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.automation.task</string>
-			<key>uid</key>
-			<string>A2E6CA5F-BA54-489F-A6E2-A97F223F3F72</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>openwith</key>
-				<string></string>
-				<key>sourcefile</key>
-				<string>OCR.shortcut</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openfile</string>
-			<key>uid</key>
-			<string>D1CABD85-A795-45F0-B22D-BE7AB8B76884</string>
-			<key>version</key>
-			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -260,6 +184,20 @@
 						<key>uid</key>
 						<string>10800F7B-3F08-4143-BE36-26AA026B629D</string>
 					</dict>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>5</integer>
+						<key>matchstring</key>
+						<string></string>
+						<key>outputlabel</key>
+						<string>Has install</string>
+						<key>uid</key>
+						<string>33C8F2C3-5022-45E1-9BCE-BB018EB24E5C</string>
+					</dict>
 				</array>
 				<key>elselabel</key>
 				<string></string>
@@ -273,11 +211,100 @@
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>53</integer>
+				<key>hotmod</key>
+				<integer>1310720</integer>
+				<key>hotstring</key>
+				<string>⎋</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>DE89967F-43E5-4EEC-8F93-059E5BA1FB96</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>tasksettings</key>
+				<dict>
+					<key>to_clipboard</key>
+					<true/>
+				</dict>
+				<key>taskuid</key>
+				<string>com.alfredapp.automation.core/screen-capture/screenshot.interactive</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.automation.task</string>
+			<key>uid</key>
+			<string>A2E6CA5F-BA54-489F-A6E2-A97F223F3F72</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>inputmode</key>
+				<integer>-1</integer>
+				<key>outputmode</key>
+				<integer>1</integer>
+				<key>shortcut</key>
+				<string>OCR</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.automation.runshortcut</string>
+			<key>uid</key>
+			<string>E9A9E33F-4D94-4AF5-BC40-38C018B27927</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>OCR to clipboard</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>C0F55B7B-E2B9-4FF2-972C-E1E1FEC24322</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>&gt; Activate OCR keywords, select the screen area, and press Enter to immediately obtain the text.
 
-Use the built-in OCR, no need to install dependencies.</string>
+Use the built-in OCR, no need to install dependencies.
+
+1. support hotkey trigger: ⌘ ⇧ 6</string>
 	<key>uidata</key>
 	<dict>
 		<key>763B39BE-E24D-4449-A0E3-C2E2021623EC</key>
@@ -292,55 +319,55 @@ Use the built-in OCR, no need to install dependencies.</string>
 			<key>colorindex</key>
 			<integer>9</integer>
 			<key>xpos</key>
-			<real>370</real>
+			<real>210</real>
 			<key>ypos</key>
-			<real>355</real>
-		</dict>
-		<key>9985942A-C3C2-45A5-A0B1-44038F392823</key>
-		<dict>
-			<key>xpos</key>
-			<real>510</real>
-			<key>ypos</key>
-			<real>195</real>
+			<real>50</real>
 		</dict>
 		<key>A2E6CA5F-BA54-489F-A6E2-A97F223F3F72</key>
 		<dict>
 			<key>xpos</key>
-			<real>145</real>
+			<real>600</real>
 			<key>ypos</key>
-			<real>235</real>
+			<real>275</real>
 		</dict>
 		<key>C0F55B7B-E2B9-4FF2-972C-E1E1FEC24322</key>
 		<dict>
 			<key>xpos</key>
-			<real>510</real>
+			<real>1005</real>
 			<key>ypos</key>
-			<real>50</real>
-		</dict>
-		<key>C67E2790-A8FC-4FBC-8FE7-2A5CD9D012ED</key>
-		<dict>
-			<key>xpos</key>
-			<real>295</real>
-			<key>ypos</key>
-			<real>65</real>
+			<real>280</real>
 		</dict>
 		<key>D1CABD85-A795-45F0-B22D-BE7AB8B76884</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>9</integer>
 			<key>xpos</key>
-			<real>620</real>
+			<real>785</real>
 			<key>ypos</key>
-			<real>345</real>
+			<real>45</real>
 		</dict>
 		<key>D5973360-B453-4F19-BEC6-695832FF1756</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>9</integer>
 			<key>xpos</key>
-			<real>520</real>
+			<real>455</real>
 			<key>ypos</key>
-			<real>375</real>
+			<real>75</real>
+		</dict>
+		<key>DE89967F-43E5-4EEC-8F93-059E5BA1FB96</key>
+		<dict>
+			<key>xpos</key>
+			<real>35</real>
+			<key>ypos</key>
+			<real>260</real>
+		</dict>
+		<key>E9A9E33F-4D94-4AF5-BC40-38C018B27927</key>
+		<dict>
+			<key>xpos</key>
+			<real>800</real>
+			<key>ypos</key>
+			<real>280</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
@@ -348,7 +375,7 @@ Use the built-in OCR, no need to install dependencies.</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>2.1</string>
+	<string>2.2</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/ocr</string>
 </dict>
