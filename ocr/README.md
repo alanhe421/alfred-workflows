@@ -23,5 +23,9 @@ In addition to this, when using it, you will be prompted to install shortcuts. I
 
 When re-triggering the ocr, there will be a permission authorization box as follows. Click allow, and then you can use it normally.
 
-![screenshot1.png](screenshot/screenshot2.png)
-![screenshot1.png](screenshot/screenshot3.png)
+![screenshot2.png](screenshot/screenshot2.png)
+
+## hotkey
+`⌘ ⇧ 6` is conflict with the system screenshot shortcut, you can change it in the workflow settings or delete system screenshot hotkey.
+
+![screenshot3.png](screenshot/screenshot4.png)
