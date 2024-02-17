@@ -27,7 +27,7 @@ When re-triggering the ocr, there will be a permission authorization box as foll
 
 ![screenshot2.png](screenshot/screenshot2.png)
 
-## hotkey
-`⌘ ⇧ 6` is conflict with the system screenshot shortcut, you can change it in the workflow settings or delete system screenshot hotkey.
+## Hotkey
+you can change it in the workflow settings
 
-![screenshot3.png](screenshot/screenshot4.png)
+![screenshot4.png](screenshot/screenshot4.png)
