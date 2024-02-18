@@ -29,6 +29,6 @@ When re-triggering the ocr, there will be a permission authorization box as foll
 ![screenshot2.png](screenshot/screenshot2.png)
 
 ## Hotkey
-you can change it in the workflow settings. Recommend setting the hotkey to `⌘ ⇧ 7`.
+You can change it in the workflow settings. Recommend setting the hotkey to `⌘ ⇧ 7`.
 
 ![screenshot4.png](screenshot/screenshot4.png)
