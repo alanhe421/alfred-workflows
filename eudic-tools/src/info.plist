@@ -104,6 +104,23 @@ end tell</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>paths</key>
+				<array>
+					<string>/Applications/Eudic.app</string>
+				</array>
+				<key>toggle</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.launchfiles</string>
+			<key>uid</key>
+			<string>606BB652-AE3A-4015-9DC4-215BBA26B042</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -135,27 +152,10 @@ end tell</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>paths</key>
-				<array>
-					<string>/Applications/Eudic.app</string>
-				</array>
-				<key>toggle</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.launchfiles</string>
-			<key>uid</key>
-			<string>606BB652-AE3A-4015-9DC4-215BBA26B042</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>keyword</key>
-				<string>eudic</string>
+				<string>{var:keyword}</string>
 				<key>subtext</key>
 				<string>Show dic with the word</string>
 				<key>text</key>
@@ -233,7 +233,7 @@ install eudic app
 https://www.eudic.net/v4/en/app/download
 
 ## Usage
-1. Use `⌥ ⌘ e` after selecting a word to look it up.
+1. Use `⌥ ⌘ e` after selecting a word to look it up.If it's a sentence, it will automatically enter the Eduic translation.This is the processing logic of the Eudic and cannot be changed.
 2. Use `⌘ ⇧ s` after selecting a word to speak it.
 3. Type keyword `eudic` and word to look it up.</string>
 	<key>uidata</key>
@@ -250,16 +250,16 @@ https://www.eudic.net/v4/en/app/download
 		<key>4EED0387-482F-47F7-A529-41003C2A3AE9</key>
 		<dict>
 			<key>xpos</key>
-			<real>70</real>
+			<real>75</real>
 			<key>ypos</key>
 			<real>300</real>
 		</dict>
 		<key>57EE9397-9A0B-4798-87F8-4CED7C78E470</key>
 		<dict>
 			<key>xpos</key>
-			<real>295</real>
+			<real>300</real>
 			<key>ypos</key>
-			<real>540</real>
+			<real>515</real>
 		</dict>
 		<key>606BB652-AE3A-4015-9DC4-215BBA26B042</key>
 		<dict>
@@ -273,9 +273,9 @@ https://www.eudic.net/v4/en/app/download
 			<key>note</key>
 			<string>One-click pronunciation</string>
 			<key>xpos</key>
-			<real>75</real>
+			<real>85</real>
 			<key>ypos</key>
-			<real>540</real>
+			<real>515</real>
 		</dict>
 		<key>B31485C7-63E3-4813-A3F9-E0E024258066</key>
 		<dict>
@@ -286,11 +286,33 @@ https://www.eudic.net/v4/en/app/download
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
-	<array/>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>eudic</string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<false/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string></string>
+			<key>label</key>
+			<string>keyword</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>keyword</string>
+		</dict>
+	</array>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.1</string>
+	<string>1.2</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/eudic-tools</string>
 </dict>
