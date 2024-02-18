@@ -2,7 +2,8 @@
 
 Use the built-in OCR, no need to install dependencies.
 
-1. support hotkey trigger: ⌘ ⇧ 7
+1. support hotkey trigger, recommend setting the hotkey to `⌘ ⇧ 7`.
+2. type keyword `ocr` to trigger
 
 
 
