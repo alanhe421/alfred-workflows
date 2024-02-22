@@ -334,10 +334,11 @@ echo -n "${filesize}B"</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>mimetype=$(file --mime-type "{query}" -b)
-openssl base64 -in "{query}" | tr -d '\n' | echo "data:${mimetype};base64,$(cat -)"</string>
+				<string>query=$1
+mimetype=$(file --mime-type "$query" -b)
+openssl base64 -in "$query" | tr -d '\n' | echo "data:${mimetype};base64,$(cat -)"</string>
 				<key>scriptargtype</key>
-				<integer>0</integer>
+				<integer>1</integer>
 				<key>scriptfile</key>
 				<string></string>
 				<key>type</key>
