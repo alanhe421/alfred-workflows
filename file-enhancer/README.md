@@ -1,25 +1,22 @@
-> file action to enhance file operation
+> Effortlessly copy your file name, size, and data conversion.
 
 
 ## Requirement
 
 ```
 brew install imagemagick
-brew install duti
 
 ```
 
 ## Feat
 
-1. copy file name without suffix
-2. copy file size without suffix
-3. copy pixel size for image file
-4. convert file to dataURL
-5. support set default application for file type
+1. Copy FileName without suffix to clipboard
+2. Copy FileSize without suffix to clipboard
+3. Convert file to DataURL and copy to clipboard
 
 
 
-![](https://img.shields.io/badge/version-v1.5-green?style=for-the-badge)
+![](https://img.shields.io/badge/version-v1.6-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/file-enhancer/File%20Enhancer.alfredworkflow)
 [![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/file-enhancer/src/info.plist)
 

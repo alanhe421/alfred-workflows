@@ -8,6 +8,42 @@
 	<string>Self-Dev</string>
 	<key>connections</key>
 	<dict>
+		<key>051867BF-6F62-4651-9B7D-5D5424DA950A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D3E1D969-EDE7-4A02-8A6D-2CDA7B11818A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>10DAB206-DAB4-4DEE-B9AB-20B5F2431F33</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>570250E1-F9FA-4B41-BFBE-412DD258DC44</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>7BC96501-D9E1-4A51-926A-A4D2B7866FC3</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>1C678B7F-4E6E-4468-AA63-3C242326C99B</key>
 		<array>
 			<dict>
@@ -44,6 +80,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>28CE056A-FDF0-4CE1-BA93-6365E3A9E81A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F0F6CFFD-394A-414F-939F-9771394A4416</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>350F8E24-DB4F-447E-B329-68CF8FDDE789</key>
 		<array>
 			<dict>
@@ -57,11 +106,26 @@
 				<false/>
 			</dict>
 		</array>
+		<key>3918A214-9ED0-42E1-90A9-3BE32B5FEE98</key>
+		<array/>
 		<key>399B3A4B-008F-4212-B706-043EB7BD6DB6</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>1C678B7F-4E6E-4468-AA63-3C242326C99B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>4D08D8FB-1160-4BBA-87C3-A5B6A4CBC292</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3918A214-9ED0-42E1-90A9-3BE32B5FEE98</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -119,6 +183,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>95764FE3-1E5E-4768-97CB-084B51CFC219</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>10DAB206-DAB4-4DEE-B9AB-20B5F2431F33</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>BD056944-2D4C-4E3D-BF5D-EF96F3E4AE39</key>
 		<array>
 			<dict>
@@ -145,11 +222,37 @@
 				<false/>
 			</dict>
 		</array>
+		<key>D3E1D969-EDE7-4A02-8A6D-2CDA7B11818A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>28CE056A-FDF0-4CE1-BA93-6365E3A9E81A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>F0F6CFFD-394A-414F-939F-9771394A4416</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>4D08D8FB-1160-4BBA-87C3-A5B6A4CBC292</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 	</dict>
 	<key>createdby</key>
 	<string>Alan He</string>
 	<key>description</key>
-	<string>Copy your file details—name, size, and data conversion.</string>
+	<string>enhance file</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
@@ -183,7 +286,7 @@
 				<key>filetypes</key>
 				<array/>
 				<key>name</key>
-				<string>Copy FileName to Clipboard</string>
+				<string>Copy Filename to Clipboard</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.action</string>
@@ -266,16 +369,34 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>filetypes</key>
+				<array/>
+				<key>name</key>
+				<string>Copy File Size to Clipboard</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.action</string>
+			<key>uid</key>
+			<string>CCCE1D1B-E013-441F-901B-62013D2A7A53</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>query=$1
-filesize=$(ls -lh "$query" | awk '{print $5}')
+				<string>#!/bin/bash
+query=$1
+filesize=$(ls -lh '$query' | awk '{print  $5}')
 echo -n "${filesize}B"</string>
 				<key>scriptargtype</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>scriptfile</key>
 				<string></string>
 				<key>type</key>
@@ -287,23 +408,6 @@ echo -n "${filesize}B"</string>
 			<string>7B691B07-F4CA-4208-85DC-915E21423F64</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>acceptsmulti</key>
-				<integer>0</integer>
-				<key>filetypes</key>
-				<array/>
-				<key>name</key>
-				<string>Copy FileSize to Clipboard</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.action</string>
-			<key>uid</key>
-			<string>CCCE1D1B-E013-441F-901B-62013D2A7A53</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -358,7 +462,48 @@ openssl base64 -in "{query}" | tr -d '\n' | echo "data:${mimetype};base64,$(cat 
 				<key>filetypes</key>
 				<array/>
 				<key>name</key>
-				<string>Copy File DataURL</string>
+				<string>Copy Pixel Size to Clipboard</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.action</string>
+			<key>uid</key>
+			<string>95764FE3-1E5E-4768-97CB-084B51CFC219</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>#!/bin/bash
+/usr/local/bin/identify -format '%wx%h' {query}</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>10DAB206-DAB4-4DEE-B9AB-20B5F2431F33</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>filetypes</key>
+				<array/>
+				<key>name</key>
+				<string>Copy File Data-URL</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.action</string>
@@ -387,25 +532,215 @@ openssl base64 -in "{query}" | tr -d '\n' | echo "data:${mimetype};base64,$(cat 
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Please Wait</string>
+				<key>script</key>
+				<string>require 'json'
+require 'open3'
+require 'pathname'
+
+# Add your custom paths here
+paths = [
+  '/Applications',
+  '/Applications/Utilities',
+  '/System/Applications',
+  "#{ENV['HOME']}/Applications/JetBrains Toolbox"
+]
+
+apps = paths.flat_map do |path|
+  Pathname(path).children
+end
+
+apps = apps.map(&amp;:to_path)
+            .sort_by { |p| File.basename(p).downcase }
+            .select { |e| e.end_with?('.app') }
+
+script_filter_items = []
+
+apps.each do |app|
+  appId = Open3.capture2("osascript -e 'id of app \"#{app}\"'").first
+  next if appId == '(null)'
+  name = File.basename(app, '.app')
+  script_filter_items.push(title: name, subtitle: "Enter to set", arg: appId, type:'file:skipcheck',icon: { type: 'fileicon', path: app },action:{ file:app})
+end
+
+puts({ items: script_filter_items }.to_json)
+</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Select App</string>
+				<key>title</key>
+				<string>Select App</string>
+				<key>type</key>
+				<integer>2</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>F0F6CFFD-394A-414F-939F-9771394A4416</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>filetypes</key>
+				<array/>
+				<key>name</key>
+				<string>Set Default Application</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.action</string>
+			<key>uid</key>
+			<string>051867BF-6F62-4651-9B7D-5D5424DA950A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>duti -s {query} "$file_type" all</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>3918A214-9ED0-42E1-90A9-3BE32B5FEE98</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>tasksettings</key>
+				<dict/>
+				<key>taskuid</key>
+				<string>com.alfredapp.automation.core/files-and-folders/path.extension</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.automation.task</string>
+			<key>uid</key>
+			<string>D3E1D969-EDE7-4A02-8A6D-2CDA7B11818A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>matchmode</key>
+				<integer>1</integer>
+				<key>matchstring</key>
+				<string>\n+$</string>
+				<key>regexcaseinsensitive</key>
+				<false/>
+				<key>regexmultiline</key>
+				<false/>
+				<key>replacestring</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.replace</string>
+			<key>uid</key>
+			<string>4D08D8FB-1160-4BBA-87C3-A5B6A4CBC292</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>file_type</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>28CE056A-FDF0-4CE1-BA93-6365E3A9E81A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
-	<string>&gt; Effortlessly copy your file name, size, and data conversion.
+	<string>&gt; file action to enhance file operation
 
 
 ## Requirement
 
 ```
 brew install imagemagick
+brew install duti
 
 ```
 
 ## Feat
 
-1. Copy FileName without suffix to clipboard
-2. Copy FileSize without suffix to clipboard
-3. Convert file to DataURL and copy to clipboard</string>
+1. copy file name without suffix
+2. copy file size without suffix
+3. copy pixel size for image file
+4. convert file to dataURL
+5. support set default application for file type</string>
 	<key>uidata</key>
 	<dict>
+		<key>051867BF-6F62-4651-9B7D-5D5424DA950A</key>
+		<dict>
+			<key>xpos</key>
+			<real>60</real>
+			<key>ypos</key>
+			<real>860</real>
+		</dict>
+		<key>10DAB206-DAB4-4DEE-B9AB-20B5F2431F33</key>
+		<dict>
+			<key>xpos</key>
+			<real>290</real>
+			<key>ypos</key>
+			<real>660</real>
+		</dict>
 		<key>1C678B7F-4E6E-4468-AA63-3C242326C99B</key>
 		<dict>
 			<key>note</key>
@@ -418,16 +753,30 @@ brew install imagemagick
 		<key>23E50046-334E-4CB2-9FDE-96C0CC8239D4</key>
 		<dict>
 			<key>xpos</key>
-			<real>65</real>
+			<real>610</real>
 			<key>ypos</key>
-			<real>590</real>
+			<real>665</real>
+		</dict>
+		<key>28CE056A-FDF0-4CE1-BA93-6365E3A9E81A</key>
+		<dict>
+			<key>xpos</key>
+			<real>620</real>
+			<key>ypos</key>
+			<real>900</real>
 		</dict>
 		<key>350F8E24-DB4F-447E-B329-68CF8FDDE789</key>
 		<dict>
 			<key>xpos</key>
-			<real>265</real>
+			<real>775</real>
 			<key>ypos</key>
-			<real>615</real>
+			<real>700</real>
+		</dict>
+		<key>3918A214-9ED0-42E1-90A9-3BE32B5FEE98</key>
+		<dict>
+			<key>xpos</key>
+			<real>1230</real>
+			<key>ypos</key>
+			<real>860</real>
 		</dict>
 		<key>399B3A4B-008F-4212-B706-043EB7BD6DB6</key>
 		<dict>
@@ -438,12 +787,21 @@ brew install imagemagick
 			<key>ypos</key>
 			<real>170</real>
 		</dict>
+		<key>4D08D8FB-1160-4BBA-87C3-A5B6A4CBC292</key>
+		<dict>
+			<key>note</key>
+			<string>Remove trailing line breaks</string>
+			<key>xpos</key>
+			<real>1085</real>
+			<key>ypos</key>
+			<real>890</real>
+		</dict>
 		<key>53362501-618C-4F8B-B446-B28C4C548AB8</key>
 		<dict>
 			<key>xpos</key>
-			<real>410</real>
+			<real>845</real>
 			<key>ypos</key>
-			<real>585</real>
+			<real>635</real>
 		</dict>
 		<key>570250E1-F9FA-4B41-BFBE-412DD258DC44</key>
 		<dict>
@@ -455,16 +813,16 @@ brew install imagemagick
 		<key>7B691B07-F4CA-4208-85DC-915E21423F64</key>
 		<dict>
 			<key>xpos</key>
-			<real>265</real>
+			<real>290</real>
 			<key>ypos</key>
-			<real>400</real>
+			<real>390</real>
 		</dict>
 		<key>7BC96501-D9E1-4A51-926A-A4D2B7866FC3</key>
 		<dict>
 			<key>xpos</key>
-			<real>615</real>
+			<real>525</real>
 			<key>ypos</key>
-			<real>375</real>
+			<real>380</real>
 		</dict>
 		<key>8A29FF84-B010-4C62-A11E-8E6232F98D27</key>
 		<dict>
@@ -473,19 +831,40 @@ brew install imagemagick
 			<key>ypos</key>
 			<real>140</real>
 		</dict>
+		<key>95764FE3-1E5E-4768-97CB-084B51CFC219</key>
+		<dict>
+			<key>xpos</key>
+			<real>50</real>
+			<key>ypos</key>
+			<real>655</real>
+		</dict>
 		<key>BD056944-2D4C-4E3D-BF5D-EF96F3E4AE39</key>
 		<dict>
 			<key>xpos</key>
-			<real>685</real>
+			<real>1005</real>
 			<key>ypos</key>
-			<real>585</real>
+			<real>575</real>
 		</dict>
 		<key>CCCE1D1B-E013-441F-901B-62013D2A7A53</key>
 		<dict>
 			<key>xpos</key>
-			<real>60</real>
+			<real>55</real>
 			<key>ypos</key>
-			<real>400</real>
+			<real>390</real>
+		</dict>
+		<key>D3E1D969-EDE7-4A02-8A6D-2CDA7B11818A</key>
+		<dict>
+			<key>xpos</key>
+			<real>310</real>
+			<key>ypos</key>
+			<real>865</real>
+		</dict>
+		<key>F0F6CFFD-394A-414F-939F-9771394A4416</key>
+		<dict>
+			<key>xpos</key>
+			<real>765</real>
+			<key>ypos</key>
+			<real>860</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
@@ -493,7 +872,7 @@ brew install imagemagick
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.6</string>
+	<string>1.5</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/file-enhancer</string>
 </dict>
