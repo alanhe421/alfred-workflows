@@ -11,7 +11,7 @@ brew install imagemagick
 ## Feat
 
 1. Copy FileName without suffix to clipboard
-2. Copy FileSize without suffix to clipboard
+2. Copy FileSize to clipboard
 3. Convert file to DataURL and copy to clipboard
 
 
