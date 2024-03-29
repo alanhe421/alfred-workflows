@@ -485,6 +485,8 @@ P.S.: 使用这些Workflow的前提是已购买[Powerpack](https://www.alfredapp
 3. [JetBrains - Open Project](https://github.com/bchatard/alfred-jetbrains)
 
 ## 特别感谢 JetBrains
+这个项目由[JetBrains IDE](https://www.jetbrains.com)助力开发
+
 <div align="left">
 <a href="https://jb.gg/OpenSourceSupport">
 <img src="https://resources.jetbrains.com/storage/products/company/brand/logos/jb_beam.png" alt="JetBrains Logo (Main) logo." height="200">
