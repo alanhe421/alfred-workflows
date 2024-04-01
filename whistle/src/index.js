@@ -155,6 +155,7 @@ function formatItem(item) {
       largetype: item.data
     },
     variables: {
+      ruleContent: item.data,
       ruleName: item.name,
       path: 'rules',
       notification:
