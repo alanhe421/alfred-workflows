@@ -1,7 +1,7 @@
 const [, , URL, query] = process.argv;
 const querystring = require('qs');
 const {
-  utils: {  },
+  utils: { splitMultiArgStr },
   http
 } = require('@stacker/alfred-utils');
 const instance = http.createHttpClient(URL);
