@@ -892,7 +892,7 @@ Type `w2` to trigger.
 
 - `⌥ ⏎`Access the WEB management page.
 - `⏎` Toggle the rule selection status.
-- `⌘` ⏎` Preview the rule.
+- `⌘ ⏎` Preview the rule.
 - `⌘ C` Copy the specific configuration of the current rule.
 - Enter keywords to filter dropdown options, supports Chinese Pinyin search.
 - Partial settings [Multiple rule selection [x], Version update check].
