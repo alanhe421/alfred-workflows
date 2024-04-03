@@ -434,7 +434,7 @@ fi</string>
 				<key>keyword</key>
 				<string>{var:keyword}</string>
 				<key>subtext</key>
-				<string>Format json text</string>
+				<string>Format JSON text from the clipboard</string>
 				<key>text</key>
 				<string>JSON View</string>
 				<key>withspace</key>
