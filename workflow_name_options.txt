@@ -18,6 +18,7 @@
 - Git Code
 - Resize Image
 - IP Tools
+- JSON View
 - Json2TS
 - Local Network
 - Mac Enhancer
