@@ -33,6 +33,29 @@
 				<false/>
 			</dict>
 		</array>
+		<key>0EADFDF9-A34F-4184-A9BE-1F98AD189E45</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>9765F0E8-10BD-4720-B534-0CC1F44D6069</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string>Copy formatted JSON to clipboard</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>4A1A26B5-022A-443B-94F2-0062E27A1F93</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>42C99DB3-A00B-4417-800B-94D55A24A0EE</key>
 		<array>
 			<dict>
@@ -57,6 +80,19 @@
 			</dict>
 		</array>
 		<key>49DF400A-14F8-4A46-A810-1CAAAC47B0C6</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>DF0D4AEA-3B11-4FF8-BE0D-067C65E187FD</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>4A1A26B5-022A-443B-94F2-0062E27A1F93</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
@@ -99,6 +135,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>92829E93-EB31-4104-883E-65CF00B93FA6</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>9765F0E8-10BD-4720-B534-0CC1F44D6069</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>49DF400A-14F8-4A46-A810-1CAAAC47B0C6</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -155,6 +204,27 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>acceptsfiles</key>
+				<false/>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>acceptstext</key>
+				<true/>
+				<key>acceptsurls</key>
+				<false/>
+				<key>name</key>
+				<string>JSON View</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.universalaction</string>
+			<key>uid</key>
+			<string>42C99DB3-A00B-4417-800B-94D55A24A0EE</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -179,27 +249,6 @@ fi</string>
 			<string>DF0D4AEA-3B11-4FF8-BE0D-067C65E187FD</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>acceptsfiles</key>
-				<false/>
-				<key>acceptsmulti</key>
-				<integer>0</integer>
-				<key>acceptstext</key>
-				<true/>
-				<key>acceptsurls</key>
-				<false/>
-				<key>name</key>
-				<string>JSON View</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.universalaction</string>
-			<key>uid</key>
-			<string>42C99DB3-A00B-4417-800B-94D55A24A0EE</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -230,6 +279,26 @@ fi</string>
 			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
 			<string>5EE010DC-090A-48AD-A192-6532A82A37B6</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>isCopy</key>
+					<string>true</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>49DF400A-14F8-4A46-A810-1CAAAC47B0C6</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -310,26 +379,6 @@ fi</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argument</key>
-				<string>{query}</string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict>
-					<key>isCopy</key>
-					<string>true</string>
-				</dict>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>49DF400A-14F8-4A46-A810-1CAAAC47B0C6</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>behaviour</key>
 				<integer>2</integer>
 				<key>fontmode</key>
@@ -360,6 +409,61 @@ fi</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{clipboard}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>9765F0E8-10BD-4720-B534-0CC1F44D6069</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>{var:keyword}</string>
+				<key>subtext</key>
+				<string>Format json text</string>
+				<key>text</key>
+				<string>JSON View</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>0EADFDF9-A34F-4184-A9BE-1F98AD189E45</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{clipboard}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>4A1A26B5-022A-443B-94F2-0062E27A1F93</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>&gt; Format json text with one click
@@ -374,7 +478,8 @@ brew install jq
 
 1. Select some text and trigger universal action.
 2. `enter` to preview formatted json.
-3. `⌘ enter` to copy the formatted json.</string>
+3. `⌘ enter` to copy the formatted json.
+4. Type `jsonview` keyword to trigger the action with clipboard.</string>
 	<key>uidata</key>
 	<dict>
 		<key>0D7E6D0D-5675-43E8-9B0F-AD5390229B42</key>
@@ -383,6 +488,13 @@ brew install jq
 			<real>650</real>
 			<key>ypos</key>
 			<real>320</real>
+		</dict>
+		<key>0EADFDF9-A34F-4184-A9BE-1F98AD189E45</key>
+		<dict>
+			<key>xpos</key>
+			<real>35</real>
+			<key>ypos</key>
+			<real>490</real>
 		</dict>
 		<key>42C99DB3-A00B-4417-800B-94D55A24A0EE</key>
 		<dict>
@@ -393,10 +505,21 @@ brew install jq
 		</dict>
 		<key>49DF400A-14F8-4A46-A810-1CAAAC47B0C6</key>
 		<dict>
+			<key>note</key>
+			<string>set isCopy</string>
 			<key>xpos</key>
-			<real>240</real>
+			<real>245</real>
 			<key>ypos</key>
-			<real>350</real>
+			<real>245</real>
+		</dict>
+		<key>4A1A26B5-022A-443B-94F2-0062E27A1F93</key>
+		<dict>
+			<key>note</key>
+			<string>read clipboard</string>
+			<key>xpos</key>
+			<real>245</real>
+			<key>ypos</key>
+			<real>630</real>
 		</dict>
 		<key>56B72CA7-CF83-4699-9585-395A6EF0BA99</key>
 		<dict>
@@ -428,6 +551,15 @@ brew install jq
 			<key>ypos</key>
 			<real>290</real>
 		</dict>
+		<key>9765F0E8-10BD-4720-B534-0CC1F44D6069</key>
+		<dict>
+			<key>note</key>
+			<string>read clipboard</string>
+			<key>xpos</key>
+			<real>245</real>
+			<key>ypos</key>
+			<real>455</real>
+		</dict>
 		<key>B2C575D4-2FCD-47D6-97B3-7209D481609D</key>
 		<dict>
 			<key>note</key>
@@ -448,11 +580,33 @@ brew install jq
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
-	<array/>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>jsonview</string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<false/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string></string>
+			<key>label</key>
+			<string>Keyword</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>keyword</string>
+		</dict>
+	</array>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>0.1</string>
+	<string>0.2</string>
 	<key>webaddress</key>
 	<string>https://1991421.cn</string>
 </dict>
