@@ -1,0 +1,7 @@
+#!/bin/bash
+
+formatted=$(echo "$1" | jq .)
+
+response=$(jq -n --arg json "$formatted" '{"response": "\n# JSON\n\n```json\n\($json)\n```\n"}')
+
+echo "$response"
