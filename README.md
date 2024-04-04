@@ -32,7 +32,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 
 ![](https://img.shields.io/badge/version-v1.11-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/2fa-read-code/2FA-Read%20Code.alfredworkflow)
-[![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/2fa-read-code/src/info.plist)
+[![](https://img.shields.io/badge/Install%20In%20Alfred-8A2BE2?style=for-the-badge)](https://alfred.app/workflows/alanhe/2fa-read-code/install/)
 
 
 ### 2. [About Mac](https://github.com/alanhg/alfred-workflows/tree/master/about-mac)
@@ -40,7 +40,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 
 ![](https://img.shields.io/badge/version-v1.16-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/about-mac/About%20Mac.alfredworkflow)
-[![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/about-mac/src/info.plist)
+[![](https://img.shields.io/badge/Install%20In%20Alfred-8A2BE2?style=for-the-badge)](https://alfred.app/workflows/alanhe/about-mac/install/)
 
 
 ### 3. [Airdrop](https://github.com/alanhg/alfred-workflows/tree/master/airdrop)
@@ -48,7 +48,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 
 ![](https://img.shields.io/badge/version-v1.9-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/airdrop/Airdrop.alfredworkflow)
-[![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/airdrop/src/info.plist)
+
 
 
 ### 4. [AppID](https://github.com/alanhg/alfred-workflows/tree/master/appid)
@@ -56,14 +56,14 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 
 ![](https://img.shields.io/badge/version-v1.11-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/appid/AppID.alfredworkflow)
-[![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/appid/src/info.plist)
+[![](https://img.shields.io/badge/Install%20In%20Alfred-8A2BE2?style=for-the-badge)](https://alfred.app/workflows/alanhe/appid/install/)
 
 
 ### 5. [AppleScript Tools](https://github.com/alanhg/alfred-workflows/tree/master/apple-script)
 
 ![](https://img.shields.io/badge/version-v0.1.0-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/apple-script/AppleScript%20Tools.alfredworkflow)
-[![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/apple-script/src/info.plist)
+
 
 
 ### 6. [Batch Import Workflows](https://github.com/alanhg/alfred-workflows/tree/master/batch-import-workflows)
@@ -71,7 +71,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 
 ![](https://img.shields.io/badge/version-v1.0.0-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/batch-import-workflows/Batch%20Import%20Workflows.alfredworkflow)
-[![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/batch-import-workflows/src/info.plist)
+
 
 
 ### 7. [Bluetooth Manager](https://github.com/alanhg/alfred-workflows/tree/master/bluetooth-manager)
@@ -79,7 +79,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 
 ![](https://img.shields.io/badge/version-v1.0.1-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/bluetooth-manager/Bluetooth%20Manager.alfredworkflow)
-[![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/bluetooth-manager/src/info.plist)
+
 
 
 ### 8. [Brightness Control](https://github.com/alanhg/alfred-workflows/tree/master/brightness-control)
@@ -87,7 +87,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 
 ![](https://img.shields.io/badge/version-v0.6-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/brightness-control/Brightness%20Control.alfredworkflow)
-[![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/brightness-control/src/info.plist)
+
 
 
 ### 9. [Clipboard History](https://github.com/alanhg/alfred-workflows/tree/master/clipboard-history)
@@ -95,7 +95,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 
 ![](https://img.shields.io/badge/version-v0.2-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/clipboard-history/Clipboard%20History.alfredworkflow)
-[![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/clipboard-history/src/info.plist)
+
 
 
 ### 10. [Compress](https://github.com/alanhg/alfred-workflows/tree/master/compress-gif)
@@ -103,21 +103,21 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 
 ![](https://img.shields.io/badge/version-v3.0-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/compress-gif/Compress.alfredworkflow)
-[![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/compress-gif/src/info.plist)
+
 
 
 ### 11. [ConvertIO](https://github.com/alanhg/alfred-workflows/tree/master/convertio)
 
 ![](https://img.shields.io/badge/version-v0.3-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/convertio/ConvertIO.alfredworkflow)
-[![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/convertio/src/info.plist)
+
 
 
 ### 12. [Copy Files to The frontmost Finder](https://github.com/alanhg/alfred-workflows/tree/master/copy-files-to-frontmost-finder)
 
 ![](https://img.shields.io/badge/version-v0.1-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/copy-files-to-frontmost-finder/Copy%20Files%20to%20The%20frontmost%20Finder.alfredworkflow)
-[![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/copy-files-to-frontmost-finder/src/info.plist)
+
 
 
 ### 13. [DO NOT DISTURB](https://github.com/alanhg/alfred-workflows/tree/master/do-not-disturb)
@@ -125,7 +125,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 
 ![](https://img.shields.io/badge/version-v1.2-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/do-not-disturb/DO%20NOT%20DISTURB.alfredworkflow)
-[![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/do-not-disturb/src/info.plist)
+
 
 
 ### 14. [Eudic Tools](https://github.com/alanhg/alfred-workflows/tree/master/eudic-tools)
@@ -133,7 +133,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 
 ![](https://img.shields.io/badge/version-v1.2-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/eudic-tools/Eudic%20Tools.alfredworkflow)
-[![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/eudic-tools/src/info.plist)
+
 
 
 ### 15. [File Enhancer](https://github.com/alanhg/alfred-workflows/tree/master/file-enhancer)
@@ -141,14 +141,14 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 
 ![](https://img.shields.io/badge/version-v1.6-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/file-enhancer/File%20Enhancer.alfredworkflow)
-[![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/file-enhancer/src/info.plist)
+
 
 
 ### 16. [Find iPhone](https://github.com/alanhg/alfred-workflows/tree/master/find-my-iphone)
 
 ![](https://img.shields.io/badge/version-v0.4-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/find-my-iphone/Find%20iPhone.alfredworkflow)
-[![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/find-my-iphone/src/info.plist)
+
 
 
 ### 17. [Giphy](https://github.com/alanhg/alfred-workflows/tree/master/giphy)
@@ -156,7 +156,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 
 ![](https://img.shields.io/badge/version-v1.2-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/giphy/Giphy.alfredworkflow)
-[![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/giphy/src/info.plist)
+
 
 
 ### 18. [Git Code](https://github.com/alanhg/alfred-workflows/tree/master/git-code)
@@ -164,7 +164,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 
 ![](https://img.shields.io/badge/version-v1.18-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/git-code/Git%20Code.alfredworkflow)
-[![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/git-code/src/info.plist)
+
 
 
 ### 19. [Resize Image](https://github.com/alanhg/alfred-workflows/tree/master/img-resize)
@@ -172,7 +172,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 
 ![](https://img.shields.io/badge/version-v0.2-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/img-resize/Resize%20Image.alfredworkflow)
-[![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/img-resize/src/info.plist)
+
 
 
 ### 20. [IP Tools](https://github.com/alanhg/alfred-workflows/tree/master/ip-tools)
@@ -180,7 +180,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 
 ![](https://img.shields.io/badge/version-v0.1-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/ip-tools/IP%20Tools.alfredworkflow)
-[![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/ip-tools/src/info.plist)
+
 
 
 ### 21. [JSON View](https://github.com/alanhg/alfred-workflows/tree/master/json-view)
@@ -188,7 +188,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 
 ![](https://img.shields.io/badge/version-v0.2-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/json-view/JSON%20View.alfredworkflow)
-[![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/json-view/src/info.plist)
+
 
 
 ### 22. [Json2TS](https://github.com/alanhg/alfred-workflows/tree/master/json2Ts)
@@ -196,7 +196,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 
 ![](https://img.shields.io/badge/version-v1.2-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/json2Ts/Json2TS.alfredworkflow)
-[![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/json2Ts/src/info.plist)
+
 
 
 ### 23. [Local Network](https://github.com/alanhg/alfred-workflows/tree/master/local-network)
@@ -204,7 +204,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 
 ![](https://img.shields.io/badge/version-v0.3-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/local-network/Local%20Network.alfredworkflow)
-[![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/local-network/src/info.plist)
+
 
 
 ### 24. [Mac Enhancer](https://github.com/alanhg/alfred-workflows/tree/master/mac-enhancer)
@@ -212,7 +212,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 
 ![](https://img.shields.io/badge/version-v1.11-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/mac-enhancer/Mac%20Enhancer.alfredworkflow)
-[![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/mac-enhancer/src/info.plist)
+
 
 
 ### 25. [Medium Tools](https://github.com/alanhg/alfred-workflows/tree/master/medium-publisher)
@@ -220,7 +220,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 
 ![](https://img.shields.io/badge/version-v1.7-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/medium-publisher/Medium%20Tools.alfredworkflow)
-[![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/medium-publisher/src/info.plist)
+
 
 
 ### 26. [Meeting](https://github.com/alanhg/alfred-workflows/tree/master/meeting)
@@ -228,7 +228,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 
 ![](https://img.shields.io/badge/version-v0.9-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/meeting/Meeting.alfredworkflow)
-[![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/meeting/src/info.plist)
+
 
 
 ### 27. [Mount Volume](https://github.com/alanhg/alfred-workflows/tree/master/mount-volume)
@@ -236,7 +236,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 
 ![](https://img.shields.io/badge/version-v1.3-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/mount-volume/Mount%20Volume.alfredworkflow)
-[![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/mount-volume/src/info.plist)
+
 
 
 ### 28. [Multimedia Convert](https://github.com/alanhg/alfred-workflows/tree/master/multimedia-convert)
@@ -244,7 +244,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 
 ![](https://img.shields.io/badge/version-v0.2-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/multimedia-convert/Multimedia%20Convert.alfredworkflow)
-[![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/multimedia-convert/src/info.plist)
+
 
 
 ### 29. [My iPhones](https://github.com/alanhg/alfred-workflows/tree/master/my-iphones)
@@ -252,7 +252,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 
 ![](https://img.shields.io/badge/version-v0.1-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/my-iphones/My%20iPhones.alfredworkflow)
-[![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/my-iphones/src/info.plist)
+
 
 
 ### 30. [New File](https://github.com/alanhg/alfred-workflows/tree/master/new-file)
@@ -260,7 +260,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 
 ![](https://img.shields.io/badge/version-v1.2-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/new-file/New%20File.alfredworkflow)
-[![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/new-file/src/info.plist)
+
 
 
 ### 31. [OCR](https://github.com/alanhg/alfred-workflows/tree/master/ocr)
@@ -268,7 +268,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 
 ![](https://img.shields.io/badge/version-v2.2-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/ocr/OCR.alfredworkflow)
-[![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/ocr/src/info.plist)
+[![](https://img.shields.io/badge/Install%20In%20Alfred-8A2BE2?style=for-the-badge)](https://alfred.app/workflows/alanhe/ocr/install/)
 
 
 ### 32. [Open Chrome Profile](https://github.com/alanhg/alfred-workflows/tree/master/open-chrome-profile)
@@ -276,7 +276,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 
 ![](https://img.shields.io/badge/version-v0.11-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/open-chrome-profile/Open%20Chrome%20Profile.alfredworkflow)
-[![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/open-chrome-profile/src/info.plist)
+[![](https://img.shields.io/badge/Install%20In%20Alfred-8A2BE2?style=for-the-badge)](https://alfred.app/workflows/alanhe/open-chrome-profile/install/)
 
 
 ### 33. [OpenConnect VPN](https://github.com/alanhg/alfred-workflows/tree/master/openconnect-vpn)
@@ -284,14 +284,14 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 
 ![](https://img.shields.io/badge/version-v1.3-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/openconnect-vpn/OpenConnect%20VPN.alfredworkflow)
-[![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/openconnect-vpn/src/info.plist)
+
 
 
 ### 34. [Paste into files](https://github.com/alanhg/alfred-workflows/tree/master/paste-into-files)
 
 ![](https://img.shields.io/badge/version-v1.2-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/paste-into-files/Paste%20into%20files.alfredworkflow)
-[![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/paste-into-files/src/info.plist)
+
 
 
 ### 35. [Pic Uploader](https://github.com/alanhg/alfred-workflows/tree/master/pic-uploader)
@@ -299,7 +299,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 
 ![](https://img.shields.io/badge/version-v2.7-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/pic-uploader/Pic%20Uploader.alfredworkflow)
-[![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/pic-uploader/src/info.plist)
+
 
 
 ### 36. [Process](https://github.com/alanhg/alfred-workflows/tree/master/process)
@@ -307,7 +307,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 
 ![](https://img.shields.io/badge/version-v0.2-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/process/Process.alfredworkflow)
-[![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/process/src/info.plist)
+
 
 
 ### 37. [ProgressBar](https://github.com/alanhg/alfred-workflows/tree/master/progress-bar)
@@ -315,7 +315,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 
 ![](https://img.shields.io/badge/version-v1.1-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/progress-bar/ProgressBar.alfredworkflow)
-[![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/progress-bar/src/info.plist)
+
 
 
 ### 38. [QR Reader](https://github.com/alanhg/alfred-workflows/tree/master/qr-reader)
@@ -323,7 +323,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 
 ![](https://img.shields.io/badge/version-v0.5-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/qr-reader/QR%20Reader.alfredworkflow)
-[![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/qr-reader/src/info.plist)
+[![](https://img.shields.io/badge/Install%20In%20Alfred-8A2BE2?style=for-the-badge)](https://alfred.app/workflows/alanhe/qr-reader/install/)
 
 
 ### 39. [Alfred Remote](https://github.com/alanhg/alfred-workflows/tree/master/remote)
@@ -331,7 +331,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 
 ![](https://img.shields.io/badge/version-v0.1-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/remote/Alfred%20Remote.alfredworkflow)
-[![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/remote/src/info.plist)
+
 
 
 ### 40. [RGB-Hex converter](https://github.com/alanhg/alfred-workflows/tree/master/rgb-hex-converter)
@@ -339,14 +339,14 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 
 ![](https://img.shields.io/badge/version-v1.0-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/rgb-hex-converter/RGB-Hex%20converter.alfredworkflow)
-[![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/rgb-hex-converter/src/info.plist)
+
 
 
 ### 41. [SSH Utils](https://github.com/alanhg/alfred-workflows/tree/master/ssh-utils)
 
 ![](https://img.shields.io/badge/version-v0.2-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/ssh-utils/SSH%20Utils.alfredworkflow)
-[![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/ssh-utils/src/info.plist)
+
 
 
 ### 42. [String Manipulation](https://github.com/alanhg/alfred-workflows/tree/master/string-manipulation)
@@ -354,7 +354,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 
 ![](https://img.shields.io/badge/version-v0.9-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/string-manipulation/String%20Manipulation.alfredworkflow)
-[![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/string-manipulation/src/info.plist)
+
 
 
 ### 43. [Surge](https://github.com/alanhg/alfred-workflows/tree/master/surge)
@@ -362,7 +362,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 
 ![](https://img.shields.io/badge/version-v1.24-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/surge/Surge.alfredworkflow)
-[![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/surge/src/info.plist)
+
 
 
 ### 44. [Switch Audio](https://github.com/alanhg/alfred-workflows/tree/master/switch-audio)
@@ -370,7 +370,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 
 ![](https://img.shields.io/badge/version-v2.3-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/switch-audio/Switch%20Audio.alfredworkflow)
-[![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/switch-audio/src/info.plist)
+
 
 
 ### 45. [System Settings](https://github.com/alanhg/alfred-workflows/tree/master/system-settings)
@@ -378,21 +378,21 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 
 ![](https://img.shields.io/badge/version-v1.0-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/system-settings/System%20Settings.alfredworkflow)
-[![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/system-settings/src/info.plist)
+
 
 
 ### 46. [Translate](https://github.com/alanhg/alfred-workflows/tree/master/translate)
 
 ![](https://img.shields.io/badge/version-v1.0-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/translate/Translate.alfredworkflow)
-[![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/translate/src/info.plist)
+
 
 
 ### 47. [Type Search](https://github.com/alanhg/alfred-workflows/tree/master/type-search)
 
 ![](https://img.shields.io/badge/version-v0.2-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/type-search/Type%20Search.alfredworkflow)
-[![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/type-search/src/info.plist)
+
 
 
 ### 48. [video](https://github.com/alanhg/alfred-workflows/tree/master/video-tools)
@@ -400,7 +400,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 
 ![](https://img.shields.io/badge/version-v0.1-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/video-tools/video.alfredworkflow)
-[![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/video-tools/src/info.plist)
+
 
 
 ### 49. [Whistle](https://github.com/alanhg/alfred-workflows/tree/master/whistle)
@@ -408,7 +408,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 
 ![](https://img.shields.io/badge/version-v2.15-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/whistle/Whistle.alfredworkflow)
-[![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/whistle/src/info.plist)
+
 
 
 ### 50. [印象笔记](https://github.com/alanhg/alfred-workflows/tree/master/印象笔记)
@@ -416,7 +416,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 
 ![](https://img.shields.io/badge/version-v1.0.2-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/印象笔记/%E5%8D%B0%E8%B1%A1%E7%AC%94%E8%AE%B0.alfredworkflow)
-[![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/印象笔记/src/info.plist)
+
 <!--workflow-end-->
 
 ## Dependency
