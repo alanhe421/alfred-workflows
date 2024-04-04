@@ -16,29 +16,35 @@ function writeWorkflowNameOptions(items) {
 }
 
 /**
- * 更新仓库readme，包含中英文
+ * 更新readme中workflow部分介绍，包含中英文
  * github 缺省环境变量
  * https://docs.github.com/en/enterprise-cloud@latest/actions/learn-github-actions/environment-variables#default-environment-variables
  *
  * @param {{name,path}[]} items
  */
-function updateHomeReadme(items) {
-  ['README.md', 'README-zh.md'].forEach((filename) => {
+async function updateHomeReadme(items) {
+  const docs = ['README.md', 'README-zh.md'];
+  for (let i = 0; i < docs.length; i++) {
+    const filename = docs[i];
     const isEn = filename === 'README.md';
     const filePath = path.resolve(__dirname, '../../', filename);
     let readmeContent = fs.readFileSync(filePath, 'utf8');
+    const map = [];
+
+    for (let index = 0; index < items.length; index++) {
+      const arr = [];
+      const item = items[index];
+      arr.push(`\n### ${index + 1}. [${item.name}](https://github.com/alanhg/alfred-workflows${(item.path)})`);
+      item.plistObj.description && arr.push(`> ${item.plistObj.description}`);
+      arr.push(`${await buildBadgeContent(item.plistObj, item.folderName, item.filename)}`);
+      map.push(arr.join('\n'));
+    }
     const workflowList = [isEn ? `There are ${items.length} workflows` : `共${items.length}个`,
-      ...items.map((item, index) => {
-        const arr = [];
-        arr.push(`\n### ${index + 1}. [${item.name}](https://github.com/alanhg/alfred-workflows${(item.path)})`);
-        item.plistObj.description && arr.push(`> ${item.plistObj.description}`);
-        arr.push(`${buildBadgeContent(item.plistObj, item.folderName, item.filename)}`);
-        return arr.join('\n');
-      })];
+      ...map];
     const workflowsListStr = workflowList.join('\n');
     const newReadmeContent = readmeContent.replace(/(?<=<!--workflow-start-->)[\s\S]*(?=<!--workflow-end-->)/, workflowsListStr)
     fs.writeFileSync(filePath, newReadmeContent);
-  })
+  }
 }
 
 /**
@@ -62,7 +68,7 @@ function parseWorkflowInfo(workflowFolder, workflow) {
   return {plistObj};
 }
 
-function updateHomePage() {
+async function updateHomePage() {
   const targetFolder = path.resolve(__dirname, '../../');
   const folders = fs.readdirSync(targetFolder);
   const items = [];
@@ -90,11 +96,12 @@ function updateHomePage() {
       console.error(e);
     }
   });
-  updateHomeReadme(items);
+  await updateHomeReadme(items);
   writeWorkflowNameOptions(items);
 }
 
 function main() {
+  console.log('exec action:', action);
   if (action === 'updateHomePage') {
     updateHomePage();
   } else if (action === 'updatePerWorkflowPage') {
@@ -109,7 +116,7 @@ main();
  * github 缺省环境变量
  * https://docs.github.com/en/enterprise-cloud@latest/actions/learn-github-actions/environment-variables#default-environment-variables
  */
-function updateReadme(absoluteWorkflowFolder, folderName, plistObj, workflow) {
+async function updateReadme(absoluteWorkflowFolder, folderName, plistObj, workflow) {
   const readme = plistObj.readme;
   const readmeFile = absoluteWorkflowFolder + '/README.md';
   const filename = (path.basename(workflow));
@@ -124,7 +131,7 @@ function updateReadme(absoluteWorkflowFolder, folderName, plistObj, workflow) {
     }
 
     const badgeContent = `${readme}\n\n
-${buildBadgeContent(plistObj, folderName, querystring.escape(filename))}
+${await buildBadgeContent(plistObj, folderName, querystring.escape(filename))}
 \n\n`;
     readmeContent = readmeContent.replace(/(^(\s|\S)+)?(?=<!-- more -->)/, '');
     readmeContent = badgeContent + readmeContent;
@@ -134,11 +141,25 @@ ${buildBadgeContent(plistObj, folderName, querystring.escape(filename))}
   }
 }
 
-function buildBadgeContent({version}, folderName, filename) {
+/**
+ * 角标更新
+ * 1. 版本号
+ * 2. workflow下载地址
+ * 3. plist地址
+ * 4. install in Alfred
+ */
+async function buildBadgeContent({version}, folderName, filename) {
+  let inGallery = false;
+  try {
+    const response = await fetch(`https://alfred.app/workflows/alanhe/${folderName}`);
+    inGallery = response.ok;
+  } catch (e) {
+    console.log('response-error:', e, folderName);
+  }
   return `
 ![](https://img.shields.io/badge/version-v${version}-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/${process.env.GITHUB_REPOSITORY}/raw/${process.env.GITHUB_REF_NAME}/${folderName}/${(filename)})
-[![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/${process.env.GITHUB_REPOSITORY}/${process.env.GITHUB_REF_NAME}/${(folderName)}/src/info.plist)
+${inGallery ? `[![](https://img.shields.io/badge/Install%20In%20Alfred-8A2BE2?style=for-the-badge)](https://alfred.app/workflows/alanhe/${folderName}/install/)` : ''}
 `
 }
 
