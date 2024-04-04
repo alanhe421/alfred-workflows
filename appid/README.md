@@ -19,7 +19,7 @@
 
 ![](https://img.shields.io/badge/version-v1.11-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/appid/AppID.alfredworkflow)
-[![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/appid/src/info.plist)
+[![](https://img.shields.io/badge/Install%20In%20Alfred-8A2BE2?style=for-the-badge)](https://alfred.app/workflows/alanhe/appid/install/)
 
 
 

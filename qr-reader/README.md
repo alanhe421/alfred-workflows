@@ -18,7 +18,7 @@
 
 ![](https://img.shields.io/badge/version-v0.5-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/qr-reader/QR%20Reader.alfredworkflow)
-[![](https://img.shields.io/badge/plist-link-important?style=for-the-badge)](https://raw.githubusercontent.com/alanhg/alfred-workflows/master/qr-reader/src/info.plist)
+[![](https://img.shields.io/badge/Install%20In%20Alfred-8A2BE2?style=for-the-badge)](https://alfred.app/workflows/alanhe/qr-reader/install/)
 
 
 
