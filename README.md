@@ -297,7 +297,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 ### 35. [Pic Uploader](https://github.com/alanhg/alfred-workflows/tree/master/pic-uploader)
 > upload pic
 
-![](https://img.shields.io/badge/version-v2.7-green?style=for-the-badge)
+![](https://img.shields.io/badge/version-v2.8-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/pic-uploader/Pic%20Uploader.alfredworkflow)
 
 
