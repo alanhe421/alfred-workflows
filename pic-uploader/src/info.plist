@@ -404,7 +404,7 @@
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>script</key>
 				<string>[[ -d "${alfred_workflow_cache}" ]] || mkdir "${alfred_workflow_cache}"
 
@@ -416,7 +416,9 @@ extension="${query##*.}"
 
 filename="$d.$extension"
 
+
 cp "$query" "$alfred_workflow_cache/$filename"
+
 
 echo -n $filename</string>
 				<key>scriptargtype</key>
@@ -482,7 +484,7 @@ echo -n $filename</string>
 				<key>escaping</key>
 				<integer>127</integer>
 				<key>script</key>
-				<string>/usr/local/bin/node ./upload-vps.js {query}</string>
+				<string>node ./upload-vps.js {query}</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -629,9 +631,9 @@ echo -n $filename</string>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
-				<integer>102</integer>
+				<integer>103</integer>
 				<key>script</key>
-				<string>/usr/local/bin/node ./compress-image.js {query}</string>
+				<string>node ./compress-image.js '{query}'</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -724,7 +726,7 @@ echo -n $filename</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>/usr/local/bin/node ./upload-imgur.js {query}</string>
+				<string>node ./upload-imgur.js {query}</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -796,7 +798,7 @@ d=`date +%F-%H%M%S`
 
 filename="$d.jpeg"
 
-/usr/local/bin/pngpaste "$alfred_workflow_cache/$filename"
+pngpaste "$alfred_workflow_cache/$filename"
 
 
 echo -n $filename</string>
@@ -1048,14 +1050,7 @@ brew install pngpaste
 2. setting tinypng_api_key
 3. ensure visit https://tinypng.com is ok
 
-## VPS uploader setting
 
-configure the alfred environment variable
-
-- user
-- password
-- destination
- 
 ### connection test
 
 `ssh -p 22 ${process.env.vps_user}@${process.env.vps_server}`
@@ -1063,8 +1058,6 @@ configure the alfred environment variable
 
 ## Imgur Uploader setting
 1. https://api.imgur.com/oauth2/addclient
-   get clientId
-2. configure the alfred environment variable
 
 https://apidocs.imgur.com/</string>
 	<key>uidata</key>
@@ -1142,7 +1135,7 @@ https://apidocs.imgur.com/</string>
 			<key>xpos</key>
 			<real>440</real>
 			<key>ypos</key>
-			<real>225</real>
+			<real>220</real>
 		</dict>
 		<key>6EBCE7DB-D4DA-4B3D-A22D-940B6583971A</key>
 		<dict>
@@ -1275,42 +1268,180 @@ https://apidocs.imgur.com/</string>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
-	<array/>
-	<key>variables</key>
-	<dict>
-		<key>destination</key>
-		<string></string>
-		<key>imgur_client_id</key>
-		<string></string>
-		<key>imgur_client_secret</key>
-		<string></string>
-		<key>imgur_refresh_token</key>
-		<string></string>
-		<key>tinypng_api_key</key>
-		<string></string>
-		<key>vps_destination</key>
-		<string></string>
-		<key>vps_server</key>
-		<string></string>
-		<key>vps_url</key>
-		<string></string>
-		<key>vps_user</key>
-		<string></string>
-	</dict>
-	<key>variablesdontexport</key>
 	<array>
-		<string>imgur_client_id</string>
-		<string>destination</string>
-		<string>vps_destination</string>
-		<string>vps_url</string>
-		<string>vps_user</string>
-		<string>vps_server</string>
-		<string>imgur_client_secret</string>
-		<string>tinypng_api_key</string>
-		<string>imgur_refresh_token</string>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string></string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<true/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string></string>
+			<key>label</key>
+			<string>VPS Server</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>vps_server</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string></string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<true/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string></string>
+			<key>label</key>
+			<string>VPS User</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>vps_user</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string></string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<true/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string></string>
+			<key>label</key>
+			<string>VPS URL</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>vps_url</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string></string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<true/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string></string>
+			<key>label</key>
+			<string>VPS Destination</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>vps_destination</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string></string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<false/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string></string>
+			<key>label</key>
+			<string>Imgur Client Id</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>imgur_client_id</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string></string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<false/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string></string>
+			<key>label</key>
+			<string>Imgur Client Secret</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>imgur_client_secret</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string></string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<false/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string></string>
+			<key>label</key>
+			<string>Imgur Refresh Token</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>imgur_refresh_token</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string></string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<false/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>compress image</string>
+			<key>label</key>
+			<string>TinyPNG API Key</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>tinypng_api_key</string>
+		</dict>
 	</array>
+	<key>variablesdontexport</key>
+	<array/>
 	<key>version</key>
-	<string>2.7</string>
+	<string>2.8</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/pic-uploader</string>
 </dict>
