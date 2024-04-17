@@ -116,10 +116,10 @@ end tell</string>
 	</array>
 	<key>readme</key>
 	<string>&gt; Displays system information about your Mac.
-Contains UserName、Model、HostName、Primary Ethernet Address、IPv4 Address、MacOS、CPU Type、Physical Memory、Locale、Display Resolution.Display System Uptime
+Contains UserName、Model、HostName、Primary Ethernet Address、IPv4 Address、MacOS、CPU Type、Physical Memory、Locale、Display Resolution、Display System Uptime、Serial Number.
 
 1. type `about` to trigger
-2. ⏎ to copy info
+2. `⏎` to copy info
 3. large type support</string>
 	<key>uidata</key>
 	<dict>
@@ -135,7 +135,7 @@ Contains UserName、Model、HostName、Primary Ethernet Address、IPv4 Address�
 			<key>xpos</key>
 			<real>340</real>
 			<key>ypos</key>
-			<real>115</real>
+			<real>120</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
@@ -143,7 +143,7 @@ Contains UserName、Model、HostName、Primary Ethernet Address、IPv4 Address�
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.16</string>
+	<string>1.17</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/about-mac</string>
 </dict>
