@@ -9,7 +9,8 @@ displayResolution=$(system_profiler SPDisplaysDataType | awk '/Resolution/{print
 serialNumber=$(system_profiler SPHardwareDataType | grep "Serial Number (system)" | awk '{print $NF}'| tr \d '\n' )
 upsnnumbertime=$(uptime)
 systemUptime=$(uptime | awk -F' up |, [0-9]+ user' '{print $2}' | xargs)
-
+batteryHealthCapacity=$(system_profiler SPPowerDataType | grep "Maximum Capacity:" | tr -d '\n'| tr -d ' ')
+batteryHealthCondition=$(system_profiler SPPowerDataType | grep "Condition:"| tr -d '\n'| tr -d ' ')
 
 if [[ "${arrIN[5]}" =~ ^Intel ]]; then
     cpuName="${arrIN[5]}"
@@ -18,6 +19,13 @@ else
     cpuName=$(system_profiler SPHardwareDataType | grep "Chip:" | awk -F': ' '{print $2}'| tr \d '\n')
     cpuTitle="Chip (${arrIN[5]})"
 fi
+
+if [ -n "$batteryHealthCapacity" ]; then
+  batterySubtitle="${batteryHealthCondition}, ${batteryHealthCapacity}"
+else
+  batterySubtitle="${batteryHealthCondition}"
+fi
+
 
 cat << EOF 
 {
@@ -34,7 +42,8 @@ cat << EOF
 {"title":"Locale / Language","subtitle":"${arrIN[12]}","icon":{"path":"./icons/locale.png"},"arg":"${arrIN[12]}","uid":"locale_language","text":{"copy":"${arrIN[12]}","largetype":"${arrIN[12]}"}},
 {"title":"Display Resolution","subtitle":"${displayResolution}","icon":{"path":"./icons/display-resolution.png"},"arg":"${displayResolution}","uid":"display_resolution","text":{"copy":"${displayResolution}","largetype":"${displayResolution}"}},
 {"title":"${systemUptime} (Uptime)","subtitle":"${uptime}","icon":{"path":"./icons/uptime.png"},"arg":"${uptime}","uid":"systemUptime","text":{"copy":"${uptime}","largetype":"${uptime}"},"match":"system time uptime ${uptime}"},
-{"title":"${serialNumber}","subtitle":"Serial Number","icon":{"path":"./icons/serial-number.png"},"arg":"${uptime}","uid":"serialNumber","text":{"copy":"${serialNumber}","largetype":"${serialNumber}"},"match":"serial number sn  ${serialNumber}"}
+{"title":"${serialNumber}","subtitle":"Serial Number","icon":{"path":"./icons/serial-number.png"},"arg":"${uptime}","uid":"serialNumber","text":{"copy":"${serialNumber}","largetype":"${serialNumber}"},"match":"serial number sn  ${serialNumber}"},
+{"title":"Battery Health","subtitle":"${batterySubtitle}","icon":{"path":"./icons/battery.png"},"arg":"${batterySubtitle}","uid":"battery","text":{"copy":"${batterySubtitle}","largetype":"${batterySubtitle}"}}
  ]
 }
 EOF
