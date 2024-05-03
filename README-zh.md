@@ -430,14 +430,18 @@ P.S.: 使用这些Workflow的前提是已购买[Powerpack](https://www.alfredapp
 欢迎到 ➡️ [Discussion](https://github.com/alanhg/alfred-workflows/discussions)交流
 
 
-## 支持
+## 赞助
 
-- 你的支持也是一种动力。
-- 给repo打星 🌟☝️ 
 - [Paypal](https://www.paypal.com/paypalme/alanhe421)
-  / [微信打赏](./.github/wechat-award.jpg)
+-  [微信打赏](./.github/wechat-award.jpg)
 
 <a href="https://www.buymeacoffee.com/alanhg" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" >
+
+## Star历史
+
+支持我们最简单的方法是点击本页顶部的星星 ⭐。
+
+![Star History Chart](https://api.star-history.com/svg?repos=alanhg/alfred-workflows&type=Date)
 
 ## 订阅&交流
 
