@@ -96,6 +96,8 @@
 				<false/>
 			</dict>
 		</array>
+		<key>32F87F30-C084-443C-8A7F-43B9F5588E2A</key>
+		<array/>
 		<key>3477EA17-4B07-418B-B4D8-B4D74D4ECF96</key>
 		<array>
 			<dict>
@@ -347,6 +349,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>A4709F7F-DEDB-4663-811E-782DF215CE2D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>55101303-A2F4-4FCE-8085-F6E1E1CEDE14</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>A6EDFDEB-1846-4C23-B96C-E307F0217376</key>
 		<array>
 			<dict>
@@ -487,7 +502,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>/usr/local/bin/node node_modules/@stacker/alfred-utils/dist/alfred-cli-download.js</string>
+				<string>node node_modules/@stacker/alfred-utils/dist/alfred-cli-download.js</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -505,12 +520,27 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>availableviaurlhandler</key>
+				<false/>
+				<key>triggerid</key>
+				<string>surge</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.external</string>
+			<key>uid</key>
+			<string>A4709F7F-DEDB-4663-811E-782DF215CE2D</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>/usr/local/bin/node ./do.js "{query}"</string>
+				<string>node ./do.js "{query}"</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -524,6 +554,23 @@
 			<string>BBB56AB5-5DF6-4763-8504-006F8B6066C9</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>3477EA17-4B07-418B-B4D8-B4D74D4ECF96</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -553,7 +600,7 @@
 				<key>runningsubtext</key>
 				<string>Please Waiting</string>
 				<key>script</key>
-				<string>/usr/local/bin/node ./index.js $HTTP_API</string>
+				<string>node ./index.js $HTTP_API</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -606,46 +653,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>/usr/local/bin/node ./outbound.js $HTTP_API {query}</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>D7FC2694-B93F-4F59-A2DF-BB59ACDA7200</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string></string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>3477EA17-4B07-418B-B4D8-B4D74D4ECF96</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argument</key>
 				<string></string>
 				<key>passthroughargument</key>
@@ -659,6 +666,29 @@
 			<string>0B781B29-1B66-4F9C-8B61-8477E02878CD</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>node ./outbound.js $HTTP_API {query}</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>D7FC2694-B93F-4F59-A2DF-BB59ACDA7200</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -829,7 +859,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>/usr/local/bin/node ./dns.js $HTTP_API {query}</string>
+				<string>node ./dns.js $HTTP_API {query}</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -957,7 +987,7 @@
 				<key>runningsubtext</key>
 				<string></string>
 				<key>script</key>
-				<string>/usr/local/bin/node ./policy-groups-policys.js "$group" "{query}"</string>
+				<string>node ./policy-groups-policys.js "$group" "{query}"</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -1004,7 +1034,7 @@
 				<key>runningsubtext</key>
 				<string></string>
 				<key>script</key>
-				<string>/usr/local/bin/node policy-groups.js {query}</string>
+				<string>node policy-groups.js {query}</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -1105,7 +1135,7 @@
 				<key>runningsubtext</key>
 				<string></string>
 				<key>script</key>
-				<string>/usr/local/bin/node profiles.js</string>
+				<string>node profiles.js</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -1184,7 +1214,7 @@
 				<key>runningsubtext</key>
 				<string></string>
 				<key>script</key>
-				<string>/usr/local/bin/node module.js $HTTP_API "{query}"</string>
+				<string>node module.js $HTTP_API "{query}"</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -1247,6 +1277,30 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>node ./toggle-rule.js '{query}'
+echo -n '{query}'</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>A8B7F4BE-AC75-4422-824F-24CE3504A736</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -1270,7 +1324,7 @@
 				<key>runningsubtext</key>
 				<string></string>
 				<key>script</key>
-				<string>/usr/local/bin/node rules.js '{query}'</string>
+				<string>node rules.js '{query}'</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -1290,30 +1344,6 @@
 			<string>E78945D3-3452-4A45-A0B8-2A46BACB37B7</string>
 			<key>version</key>
 			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>/usr/local/bin/node ./toggle-rule.js '{query}'
-echo -n '{query}'</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>A8B7F4BE-AC75-4422-824F-24CE3504A736</string>
-			<key>version</key>
-			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1507,9 +1537,9 @@ Surge Mac 4.0.0、Surge iOS 4.4.0开始提供HTTP API, 即该版本之前的均�
 		<key>55101303-A2F4-4FCE-8085-F6E1E1CEDE14</key>
 		<dict>
 			<key>xpos</key>
-			<real>30</real>
+			<real>80</real>
 			<key>ypos</key>
-			<real>165</real>
+			<real>265</real>
 		</dict>
 		<key>6620B43C-63DB-4DCE-99DD-3A1C57604DDA</key>
 		<dict>
@@ -1567,7 +1597,7 @@ Surge Mac 4.0.0、Surge iOS 4.4.0开始提供HTTP API, 即该版本之前的均�
 		<key>9DC097B6-3E31-4BC5-82CC-1D8BC266141F</key>
 		<dict>
 			<key>xpos</key>
-			<real>165</real>
+			<real>240</real>
 			<key>ypos</key>
 			<real>425</real>
 		</dict>
@@ -1584,6 +1614,13 @@ Surge Mac 4.0.0、Surge iOS 4.4.0开始提供HTTP API, 即该版本之前的均�
 			<real>880</real>
 			<key>ypos</key>
 			<real>1320</real>
+		</dict>
+		<key>A4709F7F-DEDB-4663-811E-782DF215CE2D</key>
+		<dict>
+			<key>xpos</key>
+			<real>80</real>
+			<key>ypos</key>
+			<real>55</real>
 		</dict>
 		<key>A6EDFDEB-1846-4C23-B96C-E307F0217376</key>
 		<dict>
@@ -1622,9 +1659,9 @@ Surge Mac 4.0.0、Surge iOS 4.4.0开始提供HTTP API, 即该版本之前的均�
 			<key>note</key>
 			<string>do something</string>
 			<key>xpos</key>
-			<real>880</real>
+			<real>770</real>
 			<key>ypos</key>
-			<real>50</real>
+			<real>85</real>
 		</dict>
 		<key>C868E6BF-C380-4C41-8EC1-DF222F2980D3</key>
 		<dict>
@@ -1636,9 +1673,9 @@ Surge Mac 4.0.0、Surge iOS 4.4.0开始提供HTTP API, 即该版本之前的均�
 		<key>D7FC2694-B93F-4F59-A2DF-BB59ACDA7200</key>
 		<dict>
 			<key>xpos</key>
-			<real>820</real>
+			<real>905</real>
 			<key>ypos</key>
-			<real>225</real>
+			<real>350</real>
 		</dict>
 		<key>D8F3DDB1-79D5-455B-BF8C-022F6FBFECB7</key>
 		<dict>
@@ -1647,7 +1684,7 @@ Surge Mac 4.0.0、Surge iOS 4.4.0开始提供HTTP API, 即该版本之前的均�
 			<key>xpos</key>
 			<real>640</real>
 			<key>ypos</key>
-			<real>220</real>
+			<real>310</real>
 		</dict>
 		<key>E78945D3-3452-4A45-A0B8-2A46BACB37B7</key>
 		<dict>
@@ -1674,7 +1711,7 @@ Surge Mac 4.0.0、Surge iOS 4.4.0开始提供HTTP API, 即该版本之前的均�
 			<key>config</key>
 			<dict>
 				<key>default</key>
-				<string>examplekey@127.0.0.1:6171</string>
+				<string>examplekey@localhost:6171</string>
 				<key>placeholder</key>
 				<string></string>
 				<key>required</key>
@@ -1704,7 +1741,7 @@ Surge Mac 4.0.0、Surge iOS 4.4.0开始提供HTTP API, 即该版本之前的均�
 				<true/>
 			</dict>
 			<key>description</key>
-			<string>配置文件所在位置</string>
+			<string>配置文件所在绝对路径</string>
 			<key>label</key>
 			<string>File Location</string>
 			<key>type</key>
@@ -1716,7 +1753,7 @@ Surge Mac 4.0.0、Surge iOS 4.4.0开始提供HTTP API, 即该版本之前的均�
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.24</string>
+	<string>1.25</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/surge</string>
 </dict>
