@@ -360,7 +360,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 ### 43. [Surge](https://github.com/alanhg/alfred-workflows/tree/master/surge)
 > Quick to Surge
 
-![](https://img.shields.io/badge/version-v1.24-green?style=for-the-badge)
+![](https://img.shields.io/badge/version-v1.25-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/surge/Surge.alfredworkflow)
 
 
