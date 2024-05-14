@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>cn.alanhe.useragent</string>
+	<key>category</key>
+	<string>Self-Dev</string>
+	<key>connections</key>
+	<dict>
+		<key>189DC477-74DB-4A05-A17D-CBEF15404C51</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>9BFD6A64-092F-425A-B1E3-C090EBDB1AB2</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Alan He</string>
+	<key>description</key>
+	<string>User Agent Parser</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>UAParser</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://uaparser.js.org/?ua={query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>9BFD6A64-092F-425A-B1E3-C090EBDB1AB2</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsfiles</key>
+				<false/>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>acceptstext</key>
+				<true/>
+				<key>acceptsurls</key>
+				<false/>
+				<key>name</key>
+				<string>User Agent Parser</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.universalaction</string>
+			<key>uid</key>
+			<string>189DC477-74DB-4A05-A17D-CBEF15404C51</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>&gt; Select user agent string and trigger text action to view parsed.
+
+## Usage
+
+1. text action by typed `User Agent Parser`.
+
+
+
+Thanks to https://uaparser.js.org</string>
+	<key>uidata</key>
+	<dict>
+		<key>189DC477-74DB-4A05-A17D-CBEF15404C51</key>
+		<dict>
+			<key>xpos</key>
+			<real>140</real>
+			<key>ypos</key>
+			<real>150</real>
+		</dict>
+		<key>9BFD6A64-092F-425A-B1E3-C090EBDB1AB2</key>
+		<dict>
+			<key>xpos</key>
+			<real>450</real>
+			<key>ypos</key>
+			<real>150</real>
+		</dict>
+	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
+	<key>variablesdontexport</key>
+	<array/>
+	<key>version</key>
+	<string>0.1</string>
+	<key>webaddress</key>
+	<string>https://1991421.cn</string>
+</dict>
+</plist>
