@@ -45,6 +45,7 @@
 - System Settings
 - Translate
 - Type Search
+- UAParser
 - video
 - Whistle
 - 印象笔记

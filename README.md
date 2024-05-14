@@ -25,7 +25,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 ## Workflows
 
-<!--workflow-start-->There are 50 workflows
+<!--workflow-start-->There are 51 workflows
 
 ### 1. [2FA-Read Code](https://github.com/alanhg/alfred-workflows/tree/master/2fa-read-code)
 > Read authentication code in your recent messages or current clipboard
@@ -395,7 +395,15 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 
 
 
-### 48. [video](https://github.com/alanhg/alfred-workflows/tree/master/video-tools)
+### 48. [UAParser](https://github.com/alanhg/alfred-workflows/tree/master/ua-parser)
+> User Agent Parser
+
+![](https://img.shields.io/badge/version-v0.1-green?style=for-the-badge)
+[![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/ua-parser/UAParser.alfredworkflow)
+
+
+
+### 49. [video](https://github.com/alanhg/alfred-workflows/tree/master/video-tools)
 > tools for video
 
 ![](https://img.shields.io/badge/version-v0.1-green?style=for-the-badge)
@@ -403,7 +411,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 
 
 
-### 49. [Whistle](https://github.com/alanhg/alfred-workflows/tree/master/whistle)
+### 50. [Whistle](https://github.com/alanhg/alfred-workflows/tree/master/whistle)
 > select rules
 
 ![](https://img.shields.io/badge/version-v2.15-green?style=for-the-badge)
@@ -411,7 +419,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 
 
 
-### 50. [印象笔记](https://github.com/alanhg/alfred-workflows/tree/master/印象笔记)
+### 51. [印象笔记](https://github.com/alanhg/alfred-workflows/tree/master/印象笔记)
 > Use Evernote with Alfred
 
 ![](https://img.shields.io/badge/version-v1.0.2-green?style=for-the-badge)
