@@ -8,6 +8,19 @@
 	<string>Self-Dev</string>
 	<key>connections</key>
 	<dict>
+		<key>4048A283-459F-41D6-8536-FB4A566BA632</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E9A9E33F-4D94-4AF5-BC40-38C018B27927</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>763B39BE-E24D-4449-A0E3-C2E2021623EC</key>
 		<array>
 			<dict>
@@ -38,7 +51,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>E9A9E33F-4D94-4AF5-BC40-38C018B27927</string>
+				<string>4048A283-459F-41D6-8536-FB4A566BA632</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -117,7 +130,7 @@
 				<key>openwith</key>
 				<string></string>
 				<key>sourcefile</key>
-				<string>OCR.shortcut</string>
+				<string>OCR-v3.shortcut</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openfile</string>
@@ -153,7 +166,7 @@
 				<key>tasksettings</key>
 				<dict>
 					<key>target_shortcut</key>
-					<string>OCR</string>
+					<string>OCR-v3</string>
 				</dict>
 				<key>taskuid</key>
 				<string>com.alfredapp.automation.core/shortcuts/shortcut.installed</string>
@@ -214,6 +227,50 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>tasksettings</key>
+				<dict/>
+				<key>taskuid</key>
+				<string>com.alfredapp.automation.core/screen-capture/screenshot.interactive</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.automation.task</string>
+			<key>uid</key>
+			<string>A2E6CA5F-BA54-489F-A6E2-A97F223F3F72</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>[[ -d "${alfred_workflow_cache}" ]] || mkdir "${alfred_workflow_cache}"
+
+tempFile="$alfred_workflow_cache/temp.png"
+
+mv "$1" "$tempFile"
+
+echo -n "$tempFile"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>4048A283-459F-41D6-8536-FB4A566BA632</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -245,41 +302,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>tasksettings</key>
-				<dict>
-					<key>to_clipboard</key>
-					<true/>
-				</dict>
-				<key>taskuid</key>
-				<string>com.alfredapp.automation.core/screen-capture/screenshot.interactive</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.automation.task</string>
-			<key>uid</key>
-			<string>A2E6CA5F-BA54-489F-A6E2-A97F223F3F72</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>inputmode</key>
-				<integer>-1</integer>
-				<key>outputmode</key>
-				<integer>1</integer>
-				<key>shortcut</key>
-				<string>OCR</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.automation.runshortcut</string>
-			<key>uid</key>
-			<string>E9A9E33F-4D94-4AF5-BC40-38C018B27927</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
@@ -298,6 +320,23 @@
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>inputmode</key>
+				<integer>1</integer>
+				<key>outputmode</key>
+				<integer>1</integer>
+				<key>shortcut</key>
+				<string>OCR-v3</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.automation.runshortcut</string>
+			<key>uid</key>
+			<string>E9A9E33F-4D94-4AF5-BC40-38C018B27927</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>&gt; Activate OCR keywords, select the screen area, and press Enter to immediately obtain the text.
@@ -308,6 +347,15 @@ Use the built-in OCR, no need to install dependencies.
 2. type keyword `ocr` to trigger</string>
 	<key>uidata</key>
 	<dict>
+		<key>4048A283-459F-41D6-8536-FB4A566BA632</key>
+		<dict>
+			<key>note</key>
+			<string>move screenshot</string>
+			<key>xpos</key>
+			<real>780</real>
+			<key>ypos</key>
+			<real>195</real>
+		</dict>
 		<key>763B39BE-E24D-4449-A0E3-C2E2021623EC</key>
 		<dict>
 			<key>xpos</key>
@@ -327,16 +375,16 @@ Use the built-in OCR, no need to install dependencies.
 		<key>A2E6CA5F-BA54-489F-A6E2-A97F223F3F72</key>
 		<dict>
 			<key>xpos</key>
-			<real>600</real>
+			<real>590</real>
 			<key>ypos</key>
-			<real>275</real>
+			<real>175</real>
 		</dict>
 		<key>C0F55B7B-E2B9-4FF2-972C-E1E1FEC24322</key>
 		<dict>
 			<key>xpos</key>
-			<real>1005</real>
+			<real>1215</real>
 			<key>ypos</key>
-			<real>280</real>
+			<real>335</real>
 		</dict>
 		<key>D1CABD85-A795-45F0-B22D-BE7AB8B76884</key>
 		<dict>
@@ -366,9 +414,9 @@ Use the built-in OCR, no need to install dependencies.
 		<key>E9A9E33F-4D94-4AF5-BC40-38C018B27927</key>
 		<dict>
 			<key>xpos</key>
-			<real>800</real>
+			<real>990</real>
 			<key>ypos</key>
-			<real>280</real>
+			<real>345</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
@@ -376,7 +424,7 @@ Use the built-in OCR, no need to install dependencies.
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>2.2</string>
+	<string>3.0</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/ocr</string>
 </dict>
