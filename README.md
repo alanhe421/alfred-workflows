@@ -25,7 +25,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 ## Workflows
 
-<!--workflow-start-->There are 51 workflows
+<!--workflow-start-->There are 5️⃣1️⃣ workflows
 
 ### 1. [2FA-Read Code](https://github.com/alanhg/alfred-workflows/tree/master/2fa-read-code)
 > Read authentication code in your recent messages or current clipboard
