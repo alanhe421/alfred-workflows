@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "number-to-emoji": "^1.0.0",
     "plist": "^3.1.0"
   }
 }

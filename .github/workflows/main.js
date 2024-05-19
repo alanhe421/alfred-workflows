@@ -2,6 +2,7 @@ const fs = require('fs');
 const {execSync} = require('child_process');
 const path = require('path');
 const plist = require('plist');
+const Numbers = require('number-to-emoji');
 const [, , action] = process.argv;
 const querystring = require('querystring');
 
@@ -39,7 +40,7 @@ async function updateHomeReadme(items) {
       arr.push(`${await buildBadgeContent(item.plistObj, item.folderName, item.filename)}`);
       map.push(arr.join('\n'));
     }
-    const workflowList = [isEn ? `There are ${items.length} workflows` : `共${items.length}个`,
+    const workflowList = [isEn ? `There are ${Numbers.toEmoji(items.length)} workflows` : `共${Numbers.toEmoji(items.length)}个`,
       ...map];
     const workflowsListStr = workflowList.join('\n');
     const newReadmeContent = readmeContent.replace(/(?<=<!--workflow-start-->)[\s\S]*(?=<!--workflow-end-->)/, workflowsListStr)
