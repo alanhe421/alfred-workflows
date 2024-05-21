@@ -6,6 +6,7 @@
 - Batch Import Workflows
 - Bluetooth Manager
 - Brightness Control
+- ChatGPT Enhancer
 - Clipboard History
 - Compress
 - ConvertIO
