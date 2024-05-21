@@ -1,0 +1,20 @@
+> Make ChatGPT more productive by providing quick access and enhanced functionality.
+
+## Requirement
+
+https://persistent.oaistatic.com/sidekick/public/ChatGPT_Desktop_public_latest.dmg
+
+## Feat
+1. fallback search.
+2. select any texts/files/urls, trigger universal action.
+3. hotkey to trigger `⌥ ⌘ G`.
+
+
+
+![](https://img.shields.io/badge/version-v0.1-green?style=for-the-badge)
+[![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/chatgpt-enhancer/ChatGPT%20Enhancer.alfredworkflow)
+
+
+
+
+<!-- more -->
