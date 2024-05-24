@@ -12,7 +12,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>0177D505-9EE3-42D6-9C8E-AFA9E2C3F1C4</string>
+				<string>93482D3C-F2EF-4D8E-8522-4DB4B6952044</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -43,74 +43,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>17AECFCC-B5DD-415D-B313-78792C7FA8C4</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>C02A6D49-FD53-4A5C-B845-283D67E0A956</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>A4217C40-7288-403A-982A-03BD7B6D22FC</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>1B93E75F-9019-4833-992C-46B4C3CC1EF3</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>34FFB254-F908-42F2-9FD0-7C6AD960E127</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>171A6056-FFD0-4405-A893-ADBC217BB210</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>18E836A6-8F5A-4A94-82BB-6E3B7911283B</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>51DD6052-C864-4383-96C6-75E314A8FC24</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>3FA68A07-5975-4B00-97B2-14019C9C20D4</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>34FFB254-F908-42F2-9FD0-7C6AD960E127</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>51DD6052-C864-4383-96C6-75E314A8FC24</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>17AECFCC-B5DD-415D-B313-78792C7FA8C4</string>
+				<string>171A6056-FFD0-4405-A893-ADBC217BB210</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -123,7 +60,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>34FFB254-F908-42F2-9FD0-7C6AD960E127</string>
+				<string>171A6056-FFD0-4405-A893-ADBC217BB210</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -136,7 +73,46 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>A809EE75-679D-4DE9-8950-2091B0F933CE</string>
+				<string>72E2ED49-56CF-46F9-AC16-3D3B902EC801</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>72E2ED49-56CF-46F9-AC16-3D3B902EC801</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>AC9066D9-C59A-4401-87A8-80DC61EAD077</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>86257124-2E66-40DE-AD4B-267F8D9809EA</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>ADB03A80-B755-4D43-B120-CC829CAA4780</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>93482D3C-F2EF-4D8E-8522-4DB4B6952044</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B9326377-3ACF-4E19-908E-8EE28411D7A3</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -151,7 +127,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>34FFB254-F908-42F2-9FD0-7C6AD960E127</string>
+				<string>171A6056-FFD0-4405-A893-ADBC217BB210</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -173,11 +149,23 @@
 				<false/>
 			</dict>
 		</array>
-		<key>A809EE75-679D-4DE9-8950-2091B0F933CE</key>
+		<key>AC9066D9-C59A-4401-87A8-80DC61EAD077</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>34FFB254-F908-42F2-9FD0-7C6AD960E127</string>
+				<string>86257124-2E66-40DE-AD4B-267F8D9809EA</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>3300992D-649C-476B-B1D5-61087DDA2692</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>4A6D22B5-8EB2-4363-9821-4874EDA470A3</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -186,11 +174,24 @@
 				<false/>
 			</dict>
 		</array>
-		<key>C02A6D49-FD53-4A5C-B845-283D67E0A956</key>
+		<key>ADB03A80-B755-4D43-B120-CC829CAA4780</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>1B93E75F-9019-4833-992C-46B4C3CC1EF3</string>
+				<string>171A6056-FFD0-4405-A893-ADBC217BB210</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>B9326377-3ACF-4E19-908E-8EE28411D7A3</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>7F39B2BE-285C-4002-BC43-0B691C005C9B</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -213,6 +214,27 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>count</key>
+				<integer>1</integer>
+				<key>keychar</key>
+				<string>v</string>
+				<key>keycode</key>
+				<integer>-1</integer>
+				<key>keymod</key>
+				<integer>1048576</integer>
+				<key>overridewithargument</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.dispatchkeycombo</string>
+			<key>uid</key>
+			<string>7F39B2BE-285C-4002-BC43-0B691C005C9B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>text</key>
 				<string>Ask ChatGPT for '{query}'</string>
 			</dict>
@@ -220,6 +242,36 @@
 			<string>alfred.workflow.trigger.fallback</string>
 			<key>uid</key>
 			<string>3FA68A07-5975-4B00-97B2-14019C9C20D4</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>paths</key>
+				<array>
+					<string>/Applications/ChatGPT.app</string>
+				</array>
+				<key>toggle</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.launchfiles</string>
+			<key>uid</key>
+			<string>93482D3C-F2EF-4D8E-8522-4DB4B6952044</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>seconds</key>
+				<string>1</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.delay</string>
+			<key>uid</key>
+			<string>B9326377-3ACF-4E19-908E-8EE28411D7A3</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -312,7 +364,7 @@
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>focusedappvariable</key>
 				<false/>
 				<key>focusedappvariablename</key>
@@ -336,55 +388,6 @@
 			<string>95F1AD4E-B445-49D1-89D7-D10980B13293</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>conditions</key>
-				<array>
-					<dict>
-						<key>inputstring</key>
-						<string></string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>1</integer>
-						<key>matchstring</key>
-						<string></string>
-						<key>outputlabel</key>
-						<string></string>
-						<key>uid</key>
-						<string>18E836A6-8F5A-4A94-82BB-6E3B7911283B</string>
-					</dict>
-				</array>
-				<key>elselabel</key>
-				<string>else</string>
-				<key>hideelse</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.conditional</string>
-			<key>uid</key>
-			<string>34FFB254-F908-42F2-9FD0-7C6AD960E127</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>{clipboard:1}</string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>51DD6052-C864-4383-96C6-75E314A8FC24</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -442,39 +445,24 @@
 			<key>type</key>
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
-			<string>C02A6D49-FD53-4A5C-B845-283D67E0A956</string>
+			<string>ADB03A80-B755-4D43-B120-CC829CAA4780</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>conditions</key>
-				<array>
-					<dict>
-						<key>inputstring</key>
-						<string></string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>1</integer>
-						<key>matchstring</key>
-						<string></string>
-						<key>outputlabel</key>
-						<string></string>
-						<key>uid</key>
-						<string>A4217C40-7288-403A-982A-03BD7B6D22FC</string>
-					</dict>
-				</array>
-				<key>elselabel</key>
-				<string>else</string>
-				<key>hideelse</key>
-				<false/>
+				<key>inputmode</key>
+				<integer>1</integer>
+				<key>outputmode</key>
+				<integer>0</integer>
+				<key>shortcut</key>
+				<string>Copy Selected Files to Clipboard</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.utility.conditional</string>
+			<string>alfred.workflow.automation.runshortcut</string>
 			<key>uid</key>
-			<string>17AECFCC-B5DD-415D-B313-78792C7FA8C4</string>
+			<string>86257124-2E66-40DE-AD4B-267F8D9809EA</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -502,50 +490,67 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>externaltriggerid</key>
-				<string>chatgpt.run</string>
-				<key>passinputasargument</key>
-				<true/>
-				<key>passvariables</key>
-				<true/>
-				<key>workflowbundleid</key>
-				<string>self</string>
+				<key>tasksettings</key>
+				<dict>
+					<key>target_shortcut</key>
+					<string>Copy Selected Files to Clipboard</string>
+				</dict>
+				<key>taskuid</key>
+				<string>com.alfredapp.automation.core/shortcuts/shortcut.installed</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.output.callexternaltrigger</string>
+			<string>alfred.workflow.automation.task</string>
 			<key>uid</key>
-			<string>1B93E75F-9019-4833-992C-46B4C3CC1EF3</string>
+			<string>72E2ED49-56CF-46F9-AC16-3D3B902EC801</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>5</integer>
+						<key>matchstring</key>
+						<string></string>
+						<key>outputlabel</key>
+						<string>has installed</string>
+						<key>uid</key>
+						<string>3300992D-649C-476B-B1D5-61087DDA2692</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>missing</string>
+				<key>hideelse</key>
 				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>on run argv
-set theQuery to item 1 of argv
-tell application "Finder"	activate	set selectedItems to selection	if (count of selectedItems) is greater than 0 then		tell application "System Events"			keystroke "c" using {command down}		end tell	end ifend tell
-
-return 
-
-end run</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>6</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.script</string>
+			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
-			<string>A809EE75-679D-4DE9-8950-2091B0F933CE</string>
+			<string>AC9066D9-C59A-4401-87A8-80DC61EAD077</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>openwith</key>
+				<string></string>
+				<key>sourcefile</key>
+				<string>Copy Selected Files to Clipboard.shortcut</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>4A6D22B5-8EB2-4363-9821-4874EDA470A3</string>
+			<key>version</key>
+			<integer>3</integer>
 		</dict>
 	</array>
 	<key>readme</key>
@@ -553,7 +558,9 @@ end run</string>
 
 ## Requirement
 
-https://persistent.oaistatic.com/sidekick/public/ChatGPT_Desktop_public_latest.dmg
+install ChatGPT App
+
+link: https://persistent.oaistatic.com/sidekick/public/ChatGPT_Desktop_public_latest.dmg
 
 ## Feat
 1. fallback search.
@@ -571,9 +578,9 @@ https://persistent.oaistatic.com/sidekick/public/ChatGPT_Desktop_public_latest.d
 		<key>01C45A52-E18E-4737-9D81-B8C0A0F37E92</key>
 		<dict>
 			<key>xpos</key>
-			<real>865</real>
+			<real>830</real>
 			<key>ypos</key>
-			<real>150</real>
+			<real>205</real>
 		</dict>
 		<key>171A6056-FFD0-4405-A893-ADBC217BB210</key>
 		<dict>
@@ -582,27 +589,6 @@ https://persistent.oaistatic.com/sidekick/public/ChatGPT_Desktop_public_latest.d
 			<key>ypos</key>
 			<real>140</real>
 		</dict>
-		<key>17AECFCC-B5DD-415D-B313-78792C7FA8C4</key>
-		<dict>
-			<key>xpos</key>
-			<real>520</real>
-			<key>ypos</key>
-			<real>475</real>
-		</dict>
-		<key>1B93E75F-9019-4833-992C-46B4C3CC1EF3</key>
-		<dict>
-			<key>xpos</key>
-			<real>675</real>
-			<key>ypos</key>
-			<real>645</real>
-		</dict>
-		<key>34FFB254-F908-42F2-9FD0-7C6AD960E127</key>
-		<dict>
-			<key>xpos</key>
-			<real>335</real>
-			<key>ypos</key>
-			<real>285</real>
-		</dict>
 		<key>3FA68A07-5975-4B00-97B2-14019C9C20D4</key>
 		<dict>
 			<key>xpos</key>
@@ -610,14 +596,14 @@ https://persistent.oaistatic.com/sidekick/public/ChatGPT_Desktop_public_latest.d
 			<key>ypos</key>
 			<real>55</real>
 		</dict>
-		<key>51DD6052-C864-4383-96C6-75E314A8FC24</key>
+		<key>4A6D22B5-8EB2-4363-9821-4874EDA470A3</key>
 		<dict>
-			<key>note</key>
-			<string>access clipboard</string>
+			<key>colorindex</key>
+			<integer>9</integer>
 			<key>xpos</key>
-			<real>520</real>
+			<real>540</real>
 			<key>ypos</key>
-			<real>310</real>
+			<real>665</real>
 		</dict>
 		<key>5A1B1FAB-A41B-4CBE-8A03-7F8B211B937B</key>
 		<dict>
@@ -629,14 +615,42 @@ https://persistent.oaistatic.com/sidekick/public/ChatGPT_Desktop_public_latest.d
 		<key>6C418C6F-0F20-4A6B-A9E2-8563AB93B62D</key>
 		<dict>
 			<key>xpos</key>
-			<real>35</real>
+			<real>30</real>
 			<key>ypos</key>
-			<real>640</real>
+			<real>645</real>
+		</dict>
+		<key>72E2ED49-56CF-46F9-AC16-3D3B902EC801</key>
+		<dict>
+			<key>xpos</key>
+			<real>210</real>
+			<key>ypos</key>
+			<real>645</real>
+		</dict>
+		<key>7F39B2BE-285C-4002-BC43-0B691C005C9B</key>
+		<dict>
+			<key>xpos</key>
+			<real>1135</real>
+			<key>ypos</key>
+			<real>55</real>
+		</dict>
+		<key>86257124-2E66-40DE-AD4B-267F8D9809EA</key>
+		<dict>
+			<key>xpos</key>
+			<real>540</real>
+			<key>ypos</key>
+			<real>510</real>
+		</dict>
+		<key>93482D3C-F2EF-4D8E-8522-4DB4B6952044</key>
+		<dict>
+			<key>xpos</key>
+			<real>905</real>
+			<key>ypos</key>
+			<real>60</real>
 		</dict>
 		<key>95C6E0B3-4134-447D-B630-29398A0B6D6A</key>
 		<dict>
 			<key>xpos</key>
-			<real>1125</real>
+			<real>1130</real>
 			<key>ypos</key>
 			<real>370</real>
 		</dict>
@@ -654,19 +668,26 @@ https://persistent.oaistatic.com/sidekick/public/ChatGPT_Desktop_public_latest.d
 			<key>ypos</key>
 			<real>135</real>
 		</dict>
-		<key>A809EE75-679D-4DE9-8950-2091B0F933CE</key>
+		<key>AC9066D9-C59A-4401-87A8-80DC61EAD077</key>
 		<dict>
 			<key>xpos</key>
-			<real>205</real>
+			<real>370</real>
 			<key>ypos</key>
-			<real>645</real>
+			<real>665</real>
 		</dict>
-		<key>C02A6D49-FD53-4A5C-B845-283D67E0A956</key>
+		<key>ADB03A80-B755-4D43-B120-CC829CAA4780</key>
 		<dict>
 			<key>xpos</key>
-			<real>675</real>
+			<real>685</real>
 			<key>ypos</key>
-			<real>470</real>
+			<real>500</real>
+		</dict>
+		<key>B9326377-3ACF-4E19-908E-8EE28411D7A3</key>
+		<dict>
+			<key>xpos</key>
+			<real>1065</real>
+			<key>ypos</key>
+			<real>80</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
@@ -674,7 +695,7 @@ https://persistent.oaistatic.com/sidekick/public/ChatGPT_Desktop_public_latest.d
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>0.1</string>
+	<string>0.2</string>
 	<key>webaddress</key>
 	<string>https://1991421.cn</string>
 </dict>

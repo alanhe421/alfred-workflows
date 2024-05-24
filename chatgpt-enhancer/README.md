@@ -2,7 +2,9 @@
 
 ## Requirement
 
-https://persistent.oaistatic.com/sidekick/public/ChatGPT_Desktop_public_latest.dmg
+install ChatGPT App
+
+link: https://persistent.oaistatic.com/sidekick/public/ChatGPT_Desktop_public_latest.dmg
 
 ## Feat
 1. fallback search.
@@ -11,7 +13,7 @@ https://persistent.oaistatic.com/sidekick/public/ChatGPT_Desktop_public_latest.d
 
 
 
-![](https://img.shields.io/badge/version-v0.1-green?style=for-the-badge)
+![](https://img.shields.io/badge/version-v0.2-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/chatgpt-enhancer/ChatGPT%20Enhancer.alfredworkflow)
 
 
