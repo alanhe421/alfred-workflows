@@ -204,7 +204,7 @@
 	<key>createdby</key>
 	<string>Alan He</string>
 	<key>description</key>
-	<string>Make ChatGPT more productive</string>
+	<string>Make ChatGPT App more productive</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
@@ -565,7 +565,7 @@ link: https://persistent.oaistatic.com/sidekick/public/ChatGPT_Desktop_public_la
 ## Feat
 1. fallback search.
 2. select any texts/files/urls, trigger universal action.
-3. hotkey to trigger `⌥ ⌘ G`.</string>
+3. hotkey `⌥ ⌘ G` to trigger App.</string>
 	<key>uidata</key>
 	<dict>
 		<key>0177D505-9EE3-42D6-9C8E-AFA9E2C3F1C4</key>
