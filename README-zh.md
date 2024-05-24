@@ -92,7 +92,7 @@ P.S.: 使用这些Workflow的前提是已购买[Powerpack](https://www.alfredapp
 ### 9. [ChatGPT Enhancer](https://github.com/alanhg/alfred-workflows/tree/master/chatgpt-enhancer)
 > Make ChatGPT more productive
 
-![](https://img.shields.io/badge/version-v0.1-green?style=for-the-badge)
+![](https://img.shields.io/badge/version-v0.2-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/chatgpt-enhancer/ChatGPT%20Enhancer.alfredworkflow)
 
 
