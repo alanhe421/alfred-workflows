@@ -8,6 +8,19 @@
 	<string>Self-Dev</string>
 	<key>connections</key>
 	<dict>
+		<key>0177D505-9EE3-42D6-9C8E-AFA9E2C3F1C4</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>C3D83C66-53D7-48F3-8C62-3FBF2F707C20</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>01C45A52-E18E-4737-9D81-B8C0A0F37E92</key>
 		<array>
 			<dict>
@@ -32,6 +45,9 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
+		</array>
+		<key>39510190-9F9E-4AAB-BF89-B6FC602B1C30</key>
+		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>95C6E0B3-4134-447D-B630-29398A0B6D6A</string>
@@ -47,7 +63,55 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
+				<string>9F51041E-2259-44AC-AF29-02C541F82F13</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string>New Chat</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
 				<string>171A6056-FFD0-4405-A893-ADBC217BB210</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>417FD521-0C62-47B5-9DFD-E7D8E7027A5F</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>171A6056-FFD0-4405-A893-ADBC217BB210</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>4CF4C0FF-CA21-4E01-9642-DBD6A9AF34BF</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E2161B31-8D87-4C55-97DA-E9C7D40052E7</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>276AEEC4-2056-4A99-A2E3-8C3593B78A82</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>7F39B2BE-285C-4002-BC43-0B691C005C9B</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -68,8 +132,18 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>B8649B6D-467D-4CA7-BA6B-892079567BD8</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string>New Chat</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
 		</array>
-		<key>6C418C6F-0F20-4A6B-A9E2-8563AB93B62D</key>
+		<key>61A9C87F-4440-44E2-8E2B-CDAC4278AF8B</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
@@ -78,6 +152,29 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>6C418C6F-0F20-4A6B-A9E2-8563AB93B62D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>A2474D43-2916-4940-9A8F-AEF4F8E55C96</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>61A9C87F-4440-44E2-8E2B-CDAC4278AF8B</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string>New Chat</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -108,11 +205,49 @@
 				<false/>
 			</dict>
 		</array>
+		<key>8D53C103-0316-424E-BBFC-1A74557CBC82</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>39510190-9F9E-4AAB-BF89-B6FC602B1C30</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>8ED5A9FB-42C2-4AE7-91CB-B1906C30D1F7</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>8D53C103-0316-424E-BBFC-1A74557CBC82</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>276AEEC4-2056-4A99-A2E3-8C3593B78A82</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>95C6E0B3-4134-447D-B630-29398A0B6D6A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>93482D3C-F2EF-4D8E-8522-4DB4B6952044</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>B9326377-3ACF-4E19-908E-8EE28411D7A3</string>
+				<string>F1753965-80D9-469B-8CBA-9809A64A7DCD</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -149,11 +284,24 @@
 				<false/>
 			</dict>
 		</array>
+		<key>A2474D43-2916-4940-9A8F-AEF4F8E55C96</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>72E2ED49-56CF-46F9-AC16-3D3B902EC801</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>AC9066D9-C59A-4401-87A8-80DC61EAD077</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>86257124-2E66-40DE-AD4B-267F8D9809EA</string>
+				<string>B85628F1-7CF7-42B8-BAE8-B0DFB83C04C8</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -187,11 +335,76 @@
 				<false/>
 			</dict>
 		</array>
-		<key>B9326377-3ACF-4E19-908E-8EE28411D7A3</key>
+		<key>B71F1DE9-68BB-432A-B0EA-2DADBAED8E5A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>417FD521-0C62-47B5-9DFD-E7D8E7027A5F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>B85628F1-7CF7-42B8-BAE8-B0DFB83C04C8</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>86257124-2E66-40DE-AD4B-267F8D9809EA</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>C3D83C66-53D7-48F3-8C62-3FBF2F707C20</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>8ED5A9FB-42C2-4AE7-91CB-B1906C30D1F7</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>E2161B31-8D87-4C55-97DA-E9C7D40052E7</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>EC966E4F-A76A-4D7E-B6DF-E15E47B56E1D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>EC966E4F-A76A-4D7E-B6DF-E15E47B56E1D</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>7F39B2BE-285C-4002-BC43-0B691C005C9B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>F1753965-80D9-469B-8CBA-9809A64A7DCD</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>4CF4C0FF-CA21-4E01-9642-DBD6A9AF34BF</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -217,7 +430,7 @@
 				<key>count</key>
 				<integer>1</integer>
 				<key>keychar</key>
-				<string>v</string>
+				<string>n</string>
 				<key>keycode</key>
 				<integer>-1</integer>
 				<key>keymod</key>
@@ -228,20 +441,22 @@
 			<key>type</key>
 			<string>alfred.workflow.output.dispatchkeycombo</string>
 			<key>uid</key>
-			<string>7F39B2BE-285C-4002-BC43-0B691C005C9B</string>
+			<string>E2161B31-8D87-4C55-97DA-E9C7D40052E7</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>text</key>
-				<string>Ask ChatGPT for '{query}'</string>
+				<key>availableviaurlhandler</key>
+				<false/>
+				<key>triggerid</key>
+				<string>chatgpt.new-chat</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.trigger.fallback</string>
+			<string>alfred.workflow.trigger.external</string>
 			<key>uid</key>
-			<string>3FA68A07-5975-4B00-97B2-14019C9C20D4</string>
+			<string>B71F1DE9-68BB-432A-B0EA-2DADBAED8E5A</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -266,12 +481,200 @@
 			<key>config</key>
 			<dict>
 				<key>seconds</key>
-				<string>1</string>
+				<string>{var:delay}</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.delay</string>
 			<key>uid</key>
-			<string>B9326377-3ACF-4E19-908E-8EE28411D7A3</string>
+			<string>EC966E4F-A76A-4D7E-B6DF-E15E47B56E1D</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>use_new_chat</key>
+					<string>true</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>417FD521-0C62-47B5-9DFD-E7D8E7027A5F</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>count</key>
+				<integer>1</integer>
+				<key>keychar</key>
+				<string>v</string>
+				<key>keycode</key>
+				<integer>-1</integer>
+				<key>keymod</key>
+				<integer>1048576</integer>
+				<key>overridewithargument</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.dispatchkeycombo</string>
+			<key>uid</key>
+			<string>7F39B2BE-285C-4002-BC43-0B691C005C9B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>externaltriggerid</key>
+				<string>chatgpt.new-chat</string>
+				<key>passinputasargument</key>
+				<true/>
+				<key>passvariables</key>
+				<true/>
+				<key>workflowbundleid</key>
+				<string>self</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.callexternaltrigger</string>
+			<key>uid</key>
+			<string>9F51041E-2259-44AC-AF29-02C541F82F13</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:use_clipboard}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>1</string>
+						<key>outputlabel</key>
+						<string>use clipboard</string>
+						<key>uid</key>
+						<string>C10F57DA-1E41-42C0-AD7F-5648C8F8A7A9</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+				<key>hideelse</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>01C45A52-E18E-4737-9D81-B8C0A0F37E92</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>seconds</key>
+				<string>{var:delay}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.delay</string>
+			<key>uid</key>
+			<string>F1753965-80D9-469B-8CBA-9809A64A7DCD</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:use_new_chat}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>5</integer>
+						<key>matchstring</key>
+						<string></string>
+						<key>outputlabel</key>
+						<string>new chat</string>
+						<key>uid</key>
+						<string>276AEEC4-2056-4A99-A2E3-8C3593B78A82</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>current chat</string>
+				<key>hideelse</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>4CF4C0FF-CA21-4E01-9642-DBD6A9AF34BF</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>text</key>
+				<string>Ask ChatGPT for '{query}'</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.fallback</string>
+			<key>uid</key>
+			<string>3FA68A07-5975-4B00-97B2-14019C9C20D4</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>count</key>
+				<integer>1</integer>
+				<key>keychar</key>
+				<string>n</string>
+				<key>keycode</key>
+				<integer>-1</integer>
+				<key>keymod</key>
+				<integer>1048576</integer>
+				<key>overridewithargument</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.dispatchkeycombo</string>
+			<key>uid</key>
+			<string>8D53C103-0316-424E-BBFC-1A74557CBC82</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>paths</key>
+				<array>
+					<string>/Applications/ChatGPT.app</string>
+				</array>
+				<key>toggle</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.launchfiles</string>
+			<key>uid</key>
+			<string>0177D505-9EE3-42D6-9C8E-AFA9E2C3F1C4</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -312,55 +715,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>conditions</key>
-				<array>
-					<dict>
-						<key>inputstring</key>
-						<string>{var:use_clipboard}</string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>1</string>
-						<key>outputlabel</key>
-						<string></string>
-						<key>uid</key>
-						<string>C10F57DA-1E41-42C0-AD7F-5648C8F8A7A9</string>
-					</dict>
-				</array>
-				<key>elselabel</key>
-				<string>else</string>
-				<key>hideelse</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.conditional</string>
-			<key>uid</key>
-			<string>01C45A52-E18E-4737-9D81-B8C0A0F37E92</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>paths</key>
-				<array>
-					<string>/Applications/ChatGPT.app</string>
-				</array>
-				<key>toggle</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.launchfiles</string>
-			<key>uid</key>
-			<string>0177D505-9EE3-42D6-9C8E-AFA9E2C3F1C4</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -392,6 +746,32 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>seconds</key>
+				<string>{var:delay}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.delay</string>
+			<key>uid</key>
+			<string>39510190-9F9E-4AAB-BF89-B6FC602B1C30</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>seconds</key>
+				<string>{var:delay}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.delay</string>
+			<key>uid</key>
+			<string>C3D83C66-53D7-48F3-8C62-3FBF2F707C20</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>autopaste</key>
 				<true/>
 				<key>clipboardtext</key>
@@ -411,6 +791,38 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:use_new_chat}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>5</integer>
+						<key>matchstring</key>
+						<string></string>
+						<key>outputlabel</key>
+						<string>new chat</string>
+						<key>uid</key>
+						<string>276AEEC4-2056-4A99-A2E3-8C3593B78A82</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>current chat</string>
+				<key>hideelse</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>8ED5A9FB-42C2-4AE7-91CB-B1906C30D1F7</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>acceptsfiles</key>
 				<false/>
 				<key>acceptsmulti</key>
@@ -426,6 +838,25 @@
 			<string>alfred.workflow.trigger.universalaction</string>
 			<key>uid</key>
 			<string>5A1B1FAB-A41B-4CBE-8A03-7F8B211B937B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>externaltriggerid</key>
+				<string>chatgpt.new-chat</string>
+				<key>passinputasargument</key>
+				<true/>
+				<key>passvariables</key>
+				<true/>
+				<key>workflowbundleid</key>
+				<string>self</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.callexternaltrigger</string>
+			<key>uid</key>
+			<string>B8649B6D-467D-4CA7-BA6B-892079567BD8</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -469,21 +900,37 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>acceptsfiles</key>
-				<true/>
-				<key>acceptsmulti</key>
-				<integer>1</integer>
-				<key>acceptstext</key>
+				<key>argument</key>
+				<string>{var:selected_files}</string>
+				<key>passthroughargument</key>
 				<false/>
-				<key>acceptsurls</key>
-				<false/>
-				<key>name</key>
-				<string>Ask ChatGPT</string>
+				<key>variables</key>
+				<dict/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.trigger.universalaction</string>
+			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
-			<string>6C418C6F-0F20-4A6B-A9E2-8563AB93B62D</string>
+			<string>B85628F1-7CF7-42B8-BAE8-B0DFB83C04C8</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>selected_files</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>A2474D43-2916-4940-9A8F-AEF4F8E55C96</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -502,6 +949,27 @@
 			<string>alfred.workflow.automation.task</string>
 			<key>uid</key>
 			<string>72E2ED49-56CF-46F9-AC16-3D3B902EC801</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsfiles</key>
+				<true/>
+				<key>acceptsmulti</key>
+				<integer>1</integer>
+				<key>acceptstext</key>
+				<false/>
+				<key>acceptsurls</key>
+				<false/>
+				<key>name</key>
+				<string>Ask ChatGPT</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.universalaction</string>
+			<key>uid</key>
+			<string>6C418C6F-0F20-4A6B-A9E2-8563AB93B62D</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -552,6 +1020,28 @@
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>selected_files</key>
+					<string>{query}</string>
+					<key>use_new_chat</key>
+					<string>true</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>61A9C87F-4440-44E2-8E2B-CDAC4278AF8B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>&gt; Make ChatGPT more productive by providing quick access and enhanced functionality.
@@ -565,15 +1055,16 @@ link: https://persistent.oaistatic.com/sidekick/public/ChatGPT_Desktop_public_la
 ## Feat
 1. fallback search.
 2. select any texts/files/urls, trigger universal action.
-3. hotkey `⌥ ⌘ G` to trigger App.</string>
+3. hotkey `⌥ ⌘ G` to trigger App.
+4. `⌘ Enter` will open new chat.</string>
 	<key>uidata</key>
 	<dict>
 		<key>0177D505-9EE3-42D6-9C8E-AFA9E2C3F1C4</key>
 		<dict>
 			<key>xpos</key>
-			<real>1130</real>
+			<real>940</real>
 			<key>ypos</key>
-			<real>220</real>
+			<real>315</real>
 		</dict>
 		<key>01C45A52-E18E-4737-9D81-B8C0A0F37E92</key>
 		<dict>
@@ -584,61 +1075,109 @@ link: https://persistent.oaistatic.com/sidekick/public/ChatGPT_Desktop_public_la
 		</dict>
 		<key>171A6056-FFD0-4405-A893-ADBC217BB210</key>
 		<dict>
+			<key>note</key>
+			<string>trigger run chatgpt</string>
 			<key>xpos</key>
-			<real>480</real>
+			<real>490</real>
 			<key>ypos</key>
-			<real>140</real>
+			<real>355</real>
+		</dict>
+		<key>39510190-9F9E-4AAB-BF89-B6FC602B1C30</key>
+		<dict>
+			<key>xpos</key>
+			<real>1515</real>
+			<key>ypos</key>
+			<real>450</real>
 		</dict>
 		<key>3FA68A07-5975-4B00-97B2-14019C9C20D4</key>
 		<dict>
 			<key>xpos</key>
-			<real>35</real>
+			<real>45</real>
 			<key>ypos</key>
-			<real>55</real>
+			<real>270</real>
+		</dict>
+		<key>417FD521-0C62-47B5-9DFD-E7D8E7027A5F</key>
+		<dict>
+			<key>note</key>
+			<string>new chat</string>
+			<key>xpos</key>
+			<real>615</real>
+			<key>ypos</key>
+			<real>65</real>
 		</dict>
 		<key>4A6D22B5-8EB2-4363-9821-4874EDA470A3</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>9</integer>
 			<key>xpos</key>
-			<real>540</real>
+			<real>550</real>
 			<key>ypos</key>
-			<real>665</real>
+			<real>880</real>
+		</dict>
+		<key>4CF4C0FF-CA21-4E01-9642-DBD6A9AF34BF</key>
+		<dict>
+			<key>xpos</key>
+			<real>1145</real>
+			<key>ypos</key>
+			<real>230</real>
 		</dict>
 		<key>5A1B1FAB-A41B-4CBE-8A03-7F8B211B937B</key>
 		<dict>
 			<key>xpos</key>
-			<real>30</real>
+			<real>40</real>
 			<key>ypos</key>
-			<real>450</real>
+			<real>665</real>
+		</dict>
+		<key>61A9C87F-4440-44E2-8E2B-CDAC4278AF8B</key>
+		<dict>
+			<key>note</key>
+			<string>new chat</string>
+			<key>xpos</key>
+			<real>240</real>
+			<key>ypos</key>
+			<real>1020</real>
 		</dict>
 		<key>6C418C6F-0F20-4A6B-A9E2-8563AB93B62D</key>
 		<dict>
 			<key>xpos</key>
-			<real>30</real>
+			<real>40</real>
 			<key>ypos</key>
-			<real>645</real>
+			<real>860</real>
 		</dict>
 		<key>72E2ED49-56CF-46F9-AC16-3D3B902EC801</key>
 		<dict>
 			<key>xpos</key>
-			<real>210</real>
+			<real>270</real>
 			<key>ypos</key>
-			<real>645</real>
+			<real>850</real>
 		</dict>
 		<key>7F39B2BE-285C-4002-BC43-0B691C005C9B</key>
 		<dict>
 			<key>xpos</key>
-			<real>1135</real>
+			<real>1490</real>
 			<key>ypos</key>
-			<real>55</real>
+			<real>70</real>
 		</dict>
 		<key>86257124-2E66-40DE-AD4B-267F8D9809EA</key>
 		<dict>
 			<key>xpos</key>
-			<real>540</real>
+			<real>550</real>
 			<key>ypos</key>
-			<real>510</real>
+			<real>725</real>
+		</dict>
+		<key>8D53C103-0316-424E-BBFC-1A74557CBC82</key>
+		<dict>
+			<key>xpos</key>
+			<real>1425</real>
+			<key>ypos</key>
+			<real>300</real>
+		</dict>
+		<key>8ED5A9FB-42C2-4AE7-91CB-B1906C30D1F7</key>
+		<dict>
+			<key>xpos</key>
+			<real>1160</real>
+			<key>ypos</key>
+			<real>535</real>
 		</dict>
 		<key>93482D3C-F2EF-4D8E-8522-4DB4B6952044</key>
 		<dict>
@@ -650,53 +1189,133 @@ link: https://persistent.oaistatic.com/sidekick/public/ChatGPT_Desktop_public_la
 		<key>95C6E0B3-4134-447D-B630-29398A0B6D6A</key>
 		<dict>
 			<key>xpos</key>
-			<real>1130</real>
+			<real>1450</real>
 			<key>ypos</key>
-			<real>370</real>
+			<real>530</real>
 		</dict>
 		<key>95F1AD4E-B445-49D1-89D7-D10980B13293</key>
 		<dict>
 			<key>xpos</key>
-			<real>35</real>
+			<real>45</real>
 			<key>ypos</key>
-			<real>220</real>
+			<real>435</real>
 		</dict>
 		<key>992EB833-6531-480A-BC7D-CFC989092ABF</key>
 		<dict>
+			<key>note</key>
+			<string>run chatgpt</string>
 			<key>xpos</key>
-			<real>665</real>
+			<real>675</real>
 			<key>ypos</key>
-			<real>135</real>
+			<real>350</real>
+		</dict>
+		<key>9F51041E-2259-44AC-AF29-02C541F82F13</key>
+		<dict>
+			<key>xpos</key>
+			<real>265</real>
+			<key>ypos</key>
+			<real>195</real>
+		</dict>
+		<key>A2474D43-2916-4940-9A8F-AEF4F8E55C96</key>
+		<dict>
+			<key>xpos</key>
+			<real>210</real>
+			<key>ypos</key>
+			<real>790</real>
 		</dict>
 		<key>AC9066D9-C59A-4401-87A8-80DC61EAD077</key>
 		<dict>
 			<key>xpos</key>
-			<real>370</real>
+			<real>425</real>
 			<key>ypos</key>
-			<real>665</real>
+			<real>880</real>
 		</dict>
 		<key>ADB03A80-B755-4D43-B120-CC829CAA4780</key>
 		<dict>
 			<key>xpos</key>
-			<real>685</real>
+			<real>695</real>
 			<key>ypos</key>
-			<real>500</real>
+			<real>715</real>
 		</dict>
-		<key>B9326377-3ACF-4E19-908E-8EE28411D7A3</key>
+		<key>B71F1DE9-68BB-432A-B0EA-2DADBAED8E5A</key>
+		<dict>
+			<key>xpos</key>
+			<real>330</real>
+			<key>ypos</key>
+			<real>40</real>
+		</dict>
+		<key>B85628F1-7CF7-42B8-BAE8-B0DFB83C04C8</key>
+		<dict>
+			<key>xpos</key>
+			<real>475</real>
+			<key>ypos</key>
+			<real>785</real>
+		</dict>
+		<key>B8649B6D-467D-4CA7-BA6B-892079567BD8</key>
+		<dict>
+			<key>xpos</key>
+			<real>315</real>
+			<key>ypos</key>
+			<real>675</real>
+		</dict>
+		<key>C3D83C66-53D7-48F3-8C62-3FBF2F707C20</key>
+		<dict>
+			<key>xpos</key>
+			<real>1015</real>
+			<key>ypos</key>
+			<real>515</real>
+		</dict>
+		<key>E2161B31-8D87-4C55-97DA-E9C7D40052E7</key>
+		<dict>
+			<key>xpos</key>
+			<real>1220</real>
+			<key>ypos</key>
+			<real>40</real>
+		</dict>
+		<key>EC966E4F-A76A-4D7E-B6DF-E15E47B56E1D</key>
+		<dict>
+			<key>xpos</key>
+			<real>1395</real>
+			<key>ypos</key>
+			<real>65</real>
+		</dict>
+		<key>F1753965-80D9-469B-8CBA-9809A64A7DCD</key>
 		<dict>
 			<key>xpos</key>
 			<real>1065</real>
 			<key>ypos</key>
-			<real>80</real>
+			<real>225</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
-	<array/>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>0.3</string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<true/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>Seconds</string>
+			<key>label</key>
+			<string>Delay</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>delay</string>
+		</dict>
+	</array>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>0.2</string>
+	<string>0.3</string>
 	<key>webaddress</key>
-	<string>https://1991421.cn</string>
+	<string>https://github.com/alanhg/alfred-workflows/tree/master/chatgpt-enhancer</string>
 </dict>
 </plist>
