@@ -1,6 +1,6 @@
 const header_block_regExp = /^---(\s|\S)*---\n/;
 const abbrlink_regexp = /(?<=abbrlink:\s).*(?=\n)/;
-const title_regexp = /(?<=title:\s).*(?=\n)/;
+const title_regexp = /(?<=title:\s).*?(?=\n)/;
 const tag_regexp = /(?<=-( )+).+(?!-)/g;
 const data_regexp = /(?<=date:\s)\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}:\d{2}/;
 
@@ -15,7 +15,8 @@ function extractMeta(data) {
     data = data.replace(MetaBlockRegex, '');
     const title = metaData.match(
         title_regexp
-    )[0];
+    )[0]?.replace(/^['"]|['"]$/g, '');
+
     const abbrlink = metaData.match(abbrlink_regexp);
     const tags = metaData.match(tag_regexp);
     const createDate = new Date(

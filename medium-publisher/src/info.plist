@@ -256,7 +256,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>/usr/local/bin/node ./author.js $TOKEN</string>
+				<string>node ./author.js $TOKEN</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -426,7 +426,7 @@ end run</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>/usr/local/bin/node ./index.js $TOKEN $AUTHOR_ID "{query}"</string>
+				<string>node ./index.js $TOKEN $AUTHOR_ID "{query}"</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -606,7 +606,7 @@ https://github.com/Medium/medium-api-docs</string>
 				</array>
 			</dict>
 			<key>description</key>
-			<string>publishStatus</string>
+			<string></string>
 			<key>label</key>
 			<string>Publish Status</string>
 			<key>type</key>
@@ -660,7 +660,7 @@ https://github.com/Medium/medium-api-docs</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.7</string>
+	<string>1.8</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/medium-publisher</string>
 </dict>
