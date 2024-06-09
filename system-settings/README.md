@@ -14,7 +14,7 @@ just download https://github.com/alfredapp/system-settings-workflow
 
 
 ![](https://img.shields.io/badge/version-v1.0-green?style=for-the-badge)
-[![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhg/alfred-workflows/raw/master/system-settings/System%20Settings.alfredworkflow)
+[![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/system-settings/System%20Settings.alfredworkflow)
 
 
 
