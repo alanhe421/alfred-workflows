@@ -484,8 +484,8 @@ Thanks goes to these wonderful people:
 <table>
 <tr>
     <td align="center">
-        <a href="https://github.com/alanhg">
-            <img src="https://avatars.githubusercontent.com/u/9245110?v=4" width="100;" alt="alanhg"/>
+        <a href="https://github.com/alanhe421">
+            <img src="https://avatars.githubusercontent.com/u/9245110?v=4" width="100;" alt="alanhe421"/>
             <br />
             <sub><b>Alan.He</b></sub>
         </a>
