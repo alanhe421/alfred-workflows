@@ -33,6 +33,7 @@
 - Open Chrome Profile
 - OpenConnect VPN
 - Paste into files
+- PDF Converter
 - Pic Uploader
 - Process
 - ProgressBar
