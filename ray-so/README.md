@@ -14,7 +14,7 @@ https://github.com/raycast/extensions/tree/main/extensions/ray-so
 
 
 ![](https://img.shields.io/badge/version-v0.1-green?style=for-the-badge)
-[![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/rayso/Generate%20Image.alfredworkflow)
+[![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/ray-so/Generate%20Image.alfredworkflow)
 
 
 
