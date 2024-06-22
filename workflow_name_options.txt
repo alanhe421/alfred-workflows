@@ -38,6 +38,7 @@
 - Process
 - ProgressBar
 - QR Reader
+- Generate Image
 - Alfred Remote
 - RGB-Hex converter
 - SSH Utils

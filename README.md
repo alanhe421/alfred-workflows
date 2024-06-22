@@ -25,7 +25,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 ## Workflows
 
-<!--workflow-start-->There are 5️⃣3️⃣ workflows
+<!--workflow-start-->There are 5️⃣4️⃣ workflows
 
 ### 1. [2FA-Read Code](https://github.com/alanhg/alfred-workflows/tree/master/2fa-read-code)
 > Read authentication code in your recent messages or current clipboard
@@ -342,7 +342,15 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 [![](https://img.shields.io/badge/Install%20In%20Alfred-8A2BE2?style=for-the-badge)](https://alfred.app/workflows/alanhe/qr-reader/install/)
 
 
-### 41. [Alfred Remote](https://github.com/alanhg/alfred-workflows/tree/master/remote)
+### 41. [Generate Image](https://github.com/alanhg/alfred-workflows/tree/master/rayso)
+> Create beautiful images of your code using ray.so
+
+![](https://img.shields.io/badge/version-v0.1-green?style=for-the-badge)
+[![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/rayso/Generate%20Image.alfredworkflow)
+
+
+
+### 42. [Alfred Remote](https://github.com/alanhg/alfred-workflows/tree/master/remote)
 > remote enhancer
 
 ![](https://img.shields.io/badge/version-v0.1-green?style=for-the-badge)
@@ -350,7 +358,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 
 
 
-### 42. [RGB-Hex converter](https://github.com/alanhg/alfred-workflows/tree/master/rgb-hex-converter)
+### 43. [RGB-Hex converter](https://github.com/alanhg/alfred-workflows/tree/master/rgb-hex-converter)
 > convert color format
 
 ![](https://img.shields.io/badge/version-v1.0-green?style=for-the-badge)
@@ -358,14 +366,14 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 
 
 
-### 43. [SSH Utils](https://github.com/alanhg/alfred-workflows/tree/master/ssh-utils)
+### 44. [SSH Utils](https://github.com/alanhg/alfred-workflows/tree/master/ssh-utils)
 
 ![](https://img.shields.io/badge/version-v0.2-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/ssh-utils/SSH%20Utils.alfredworkflow)
 
 
 
-### 44. [String Manipulation](https://github.com/alanhg/alfred-workflows/tree/master/string-manipulation)
+### 45. [String Manipulation](https://github.com/alanhg/alfred-workflows/tree/master/string-manipulation)
 > Case switching
 
 ![](https://img.shields.io/badge/version-v0.9-green?style=for-the-badge)
@@ -373,7 +381,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 
 
 
-### 45. [Surge](https://github.com/alanhg/alfred-workflows/tree/master/surge)
+### 46. [Surge](https://github.com/alanhg/alfred-workflows/tree/master/surge)
 > Quick to Surge
 
 ![](https://img.shields.io/badge/version-v1.25-green?style=for-the-badge)
@@ -381,7 +389,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 
 
 
-### 46. [Switch Audio](https://github.com/alanhg/alfred-workflows/tree/master/switch-audio)
+### 47. [Switch Audio](https://github.com/alanhg/alfred-workflows/tree/master/switch-audio)
 > Quickly switch sound output or input
 
 ![](https://img.shields.io/badge/version-v2.3-green?style=for-the-badge)
@@ -389,7 +397,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 
 
 
-### 47. [System Settings](https://github.com/alanhg/alfred-workflows/tree/master/system-settings)
+### 48. [System Settings](https://github.com/alanhg/alfred-workflows/tree/master/system-settings)
 > Open macOS System Settings Panes
 
 ![](https://img.shields.io/badge/version-v1.0-green?style=for-the-badge)
@@ -397,21 +405,21 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 
 
 
-### 48. [Translate](https://github.com/alanhg/alfred-workflows/tree/master/translate)
+### 49. [Translate](https://github.com/alanhg/alfred-workflows/tree/master/translate)
 
 ![](https://img.shields.io/badge/version-v1.0-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/translate/Translate.alfredworkflow)
 
 
 
-### 49. [Type Search](https://github.com/alanhg/alfred-workflows/tree/master/type-search)
+### 50. [Type Search](https://github.com/alanhg/alfred-workflows/tree/master/type-search)
 
 ![](https://img.shields.io/badge/version-v0.2-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/type-search/Type%20Search.alfredworkflow)
 
 
 
-### 50. [UAParser](https://github.com/alanhg/alfred-workflows/tree/master/ua-parser)
+### 51. [UAParser](https://github.com/alanhg/alfred-workflows/tree/master/ua-parser)
 > User Agent Parser
 
 ![](https://img.shields.io/badge/version-v0.1-green?style=for-the-badge)
@@ -419,7 +427,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 
 
 
-### 51. [video](https://github.com/alanhg/alfred-workflows/tree/master/video-tools)
+### 52. [video](https://github.com/alanhg/alfred-workflows/tree/master/video-tools)
 > tools for video
 
 ![](https://img.shields.io/badge/version-v0.1-green?style=for-the-badge)
@@ -427,7 +435,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 
 
 
-### 52. [Whistle](https://github.com/alanhg/alfred-workflows/tree/master/whistle)
+### 53. [Whistle](https://github.com/alanhg/alfred-workflows/tree/master/whistle)
 > select rules
 
 ![](https://img.shields.io/badge/version-v2.15-green?style=for-the-badge)
@@ -435,7 +443,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 
 
 
-### 53. [印象笔记](https://github.com/alanhg/alfred-workflows/tree/master/印象笔记)
+### 54. [印象笔记](https://github.com/alanhg/alfred-workflows/tree/master/印象笔记)
 > Use Evernote with Alfred
 
 ![](https://img.shields.io/badge/version-v1.0.2-green?style=for-the-badge)
