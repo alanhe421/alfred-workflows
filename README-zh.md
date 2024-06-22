@@ -344,7 +344,7 @@ P.S.: 使用这些Workflow的前提是已购买[Powerpack](https://www.alfredapp
 ### 41. [Generate Image](https://github.com/alanhg/alfred-workflows/tree/master/ray-so)
 > Create beautiful images of your code using ray.so
 
-![](https://img.shields.io/badge/version-v0.2-green?style=for-the-badge)
+![](https://img.shields.io/badge/version-v0.3-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/ray-so/Generate%20Image.alfredworkflow)
 
 
