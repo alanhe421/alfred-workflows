@@ -472,8 +472,7 @@ Welcome ➡️ [Discussion](https://github.com/alanhg/alfred-workflows/discussio
 
 The easiest way to support us is to click on the star (⭐) at the top of this page.
 
-[![Star History Chart](https://api.star-history.com/svg?repos=alanhg/alfred-workflows&type=Date)](https://star-history.com/#alanhg/alfred-workflows&Date)
-
+[![Star History Chart](https://api.star-history.com/svg?repos=alanhe421/alfred-workflows&type=Date)](https://star-history.com/#alanhe421/alfred-workflows&Date)
 
 ## Subscribe & Communication
 

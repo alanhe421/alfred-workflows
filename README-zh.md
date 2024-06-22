@@ -474,7 +474,7 @@ P.S.: 使用这些Workflow的前提是已购买[Powerpack](https://www.alfredapp
 
 支持我们最简单的方法是点击本页顶部的星星 ⭐。
 
-![Star History Chart](https://api.star-history.com/svg?repos=alanhg/alfred-workflows&type=Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=alanhe421/alfred-workflows&type=Date)](https://star-history.com/#alanhe421/alfred-workflows&Date)
 
 ## 订阅&交流
 
