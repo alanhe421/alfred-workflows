@@ -18,5 +18,10 @@ https://github.com/raycast/extensions/tree/main/extensions/ray-so
 
 
 
-
 <!-- more -->
+
+## Screenshots
+
+![screenshot.png](screenshot/screenshot.png)
+
+![screenshot.gif](screenshot/screenshot.gif)
