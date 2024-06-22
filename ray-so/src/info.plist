@@ -173,13 +173,13 @@ echo -n "https://ray.so/#theme=$theme&amp;background=$background&amp;darkMode=$d
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>&gt; Create beautiful images of your code. Rewritten with reference to the official raycast plugin.
+	<string>&gt; Create beautiful images of your code. Rewritten with reference to the official Raycast plugin.
 
 
 ## Usage
 
-select some code and trigger univeral action named `Generate Image`
-
+1. Select some code and trigger univeral action named `Generate Image`.
+2. Support customize the setting.
 
 
 ## Reference
@@ -379,7 +379,7 @@ https://github.com/raycast/extensions/tree/main/extensions/ray-so</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>0.1</string>
+	<string>0.2</string>
 	<key>webaddress</key>
 	<string>https://1991421.cn</string>
 </dict>
