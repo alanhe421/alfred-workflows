@@ -342,11 +342,11 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 [![](https://img.shields.io/badge/Install%20In%20Alfred-8A2BE2?style=for-the-badge)](https://alfred.app/workflows/alanhe/qr-reader/install/)
 
 
-### 41. [Generate Image](https://github.com/alanhg/alfred-workflows/tree/master/rayso)
+### 41. [Generate Image](https://github.com/alanhg/alfred-workflows/tree/master/ray-so)
 > Create beautiful images of your code using ray.so
 
 ![](https://img.shields.io/badge/version-v0.1-green?style=for-the-badge)
-[![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/rayso/Generate%20Image.alfredworkflow)
+[![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/ray-so/Generate%20Image.alfredworkflow)
 
 
 
