@@ -3,7 +3,7 @@
 
 ## Usage
 
-1. Select some code and trigger univeral action named `Generate Image`.
+1. Select some code and trigger universal action named `Generate Image`.
 2. Support customize the setting.
 
 
