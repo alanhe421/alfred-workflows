@@ -170,7 +170,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 ### 19. [Git Code](https://github.com/alanhg/alfred-workflows/tree/master/git-code)
 > TGit Search
 
-![](https://img.shields.io/badge/version-v1.18-green?style=for-the-badge)
+![](https://img.shields.io/badge/version-v1.19-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/git-code/Git%20Code.alfredworkflow)
 
 
