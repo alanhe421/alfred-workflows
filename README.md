@@ -337,7 +337,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 ### 40. [QR Reader](https://github.com/alanhg/alfred-workflows/tree/master/qr-reader)
 > Read QR Code
 
-![](https://img.shields.io/badge/version-v0.5-green?style=for-the-badge)
+![](https://img.shields.io/badge/version-v0.6-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/qr-reader/QR%20Reader.alfredworkflow)
 [![](https://img.shields.io/badge/Install%20In%20Alfred-8A2BE2?style=for-the-badge)](https://alfred.app/workflows/alanhe/qr-reader/install/)
 
