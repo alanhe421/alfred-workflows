@@ -597,7 +597,9 @@ return savePath</string>
 				<key>escaping</key>
 				<integer>127</integer>
 				<key>script</key>
-				<string>qrencode -o "$alfred_workflow_cache/temp.png" -s 10 -m 2 -l H '{query}'
+				<string>[[ -d "${alfred_workflow_cache}" ]] || mkdir "${alfred_workflow_cache}"
+
+qrencode -o "$alfred_workflow_cache/temp.png" -s 10 -m 2 -l H '{query}'
 
 echo -n "$alfred_workflow_cache/temp.png"</string>
 				<key>scriptargtype</key>
@@ -815,7 +817,7 @@ echo -n "$alfred_workflow_cache/temp.png"</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>0.5</string>
+	<string>0.6</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/qr-reader</string>
 </dict>
