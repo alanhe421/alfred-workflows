@@ -16,7 +16,7 @@ update sqlite by brew
 
 
 
-![](https://img.shields.io/badge/version-v1.11-green?style=for-the-badge)
+![](https://img.shields.io/badge/version-v1.12-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/2fa-read-code/2FA-Read%20Code.alfredworkflow)
 [![](https://img.shields.io/badge/Install%20In%20Alfred-8A2BE2?style=for-the-badge)](https://alfred.app/workflows/alanhe/2fa-read-code/install/)
 

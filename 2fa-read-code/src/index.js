@@ -7,14 +7,25 @@
 const { utils, dateUtils, Workflow } = require('@stacker/alfred-utils');
 const iMessage = require('./node-imessage');
 const { execSync } = require('child_process');
+const { argv } = require('process');
+
+const action = argv[2];
 const im = new iMessage();
 const lookBackMinutes = process.env.look_back_minutes;
 const wf = new Workflow();
+
+if (action === 'list') {
+  listMessages();
+}
+else if (action === 'read') {
+  readMessage(process.env.guid?.replace(/\n/, ''));
+}
+
 /**
  * 读取剪贴板的+数据库有限时间内的验证码记录
  * 但如果剪贴板的数据是数据库中回车拷贝过来的，属于重复数据，显示上就去掉原数据库里同样记录，进行去重
  */
-(async function () {
+async function listMessages() {
   utils.useCache();
   let messages = [];
   let messageFromClipboard;
@@ -54,15 +65,23 @@ const wf = new Workflow();
             return res;
           }
           const subject = readSubjectFromMessage(msg);
+          const isRead = messageObj.is_read === 1;
           res.push(
             utils.buildItem({
               title: `${captcha}`,
-              subtitle: `${
-                subject ? `Sender：${subject}, ` : `Sender: ${messageObj.sender}, `
-              }${dateUtils.formatToCalendar(
-                messageObj.message_date
-              )}，⏎ to Copy`,
+              icon: {
+                path: isRead ? 'icon.png' : 'icon-unread.png',
+              },
+              subtitle: `${subject ? `Sender：${subject}, ` : `Sender: ${messageObj.sender}, `
+                }${dateUtils.formatToCalendar(
+                  messageObj.message_date
+                )}，⏎ to Copy`,
               arg: captcha,
+              variables: {
+                guid: isRead ? undefined : messageObj.guid, // dont pass when is_read
+                // guid: messageObj.guid, 
+                rowid: messageObj.rowid,
+              },
               text: {
                 largetype: messageObj.text,
                 copy: captcha
@@ -88,7 +107,7 @@ const wf = new Workflow();
     });
   }
   wf.run({ rerun: 1 });
-})();
+}
 
 function readFromClipboard() {
   const msg = execSync('pbpaste', { encoding: 'utf-8' }).replace(/%$/, '');
@@ -97,9 +116,8 @@ function readFromClipboard() {
     const subject = readSubjectFromMessage(msg);
     return utils.buildItem({
       title: `${captcha}`,
-      subtitle: `From 📋，${
-        subject ? `Sender：${subject} ` : ''
-      }${dateUtils.formatToCalendar(Date.now())}，⏎ to Copy`,
+      subtitle: `From 📋，${subject ? `Sender：${subject} ` : ''
+        }${dateUtils.formatToCalendar(Date.now())}，⏎ to Copy`,
       arg: captcha,
       text: {
         largetype: msg,
@@ -162,11 +180,13 @@ function readLatestMessage() {
   return new Promise((resolve) => {
     const res = im.exec(`
   select
-            message.rowid,
+            message.rowid as rowid,
+            message.guid as guid,
             ifnull(handle.uncanonicalized_id, chat.chat_identifier) AS sender,
             message.service,
             datetime(message.date / 1000000000 + 978307200, 'unixepoch', 'localtime') AS message_date,
-            message.text
+            message.text,
+            is_read
         from
             message
                 left join chat_message_join
@@ -196,6 +216,28 @@ function readLatestMessage() {
     resolve(res);
   });
 }
+
+function readMessage(guid) {
+  if (!guid) {
+    return;
+  }
+  return new Promise((resolve) => {
+    const res = im.exec(`
+      UPDATE message
+SET is_read = 1,date_read = ${createDate()}
+WHERE guid = "${guid}";
+  `);
+    resolve(res);
+  });
+}
+
+function createDate() {
+  const currentTimeMillis = Date.now();
+  const macEpochMillis = new Date('2001-01-01T00:00:00Z').getTime();
+  const elapsedMillis = currentTimeMillis - macEpochMillis;
+  return BigInt(elapsedMillis) * 1_000_000n;
+}
+
 
 module.exports = {
   readCaptchaFromMessage,

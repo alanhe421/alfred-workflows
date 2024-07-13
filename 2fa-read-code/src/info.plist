@@ -32,6 +32,16 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>A9745FFC-587E-445F-88A1-052F2B9F0226</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
 		</array>
 		<key>50B0CD10-4D52-4898-9C05-DD3A34A829C3</key>
 		<array>
@@ -115,11 +125,11 @@
 				<key>runningsubtext</key>
 				<string>Reading</string>
 				<key>script</key>
-				<string>node ./index.js</string>
+				<string>node ./index.js list</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string>test.sh</string>
+				<string></string>
 				<key>subtext</key>
 				<string>Find authentication code</string>
 				<key>title</key>
@@ -208,6 +218,29 @@
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>node ./index.js read</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>A9745FFC-587E-445F-88A1-052F2B9F0226</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>&gt; Read authentication code in your recent messages or current clipboard
@@ -247,6 +280,13 @@ update sqlite by brew</string>
 			<real>600</real>
 			<key>ypos</key>
 			<real>375</real>
+		</dict>
+		<key>A9745FFC-587E-445F-88A1-052F2B9F0226</key>
+		<dict>
+			<key>xpos</key>
+			<real>385</real>
+			<key>ypos</key>
+			<real>520</real>
 		</dict>
 		<key>B551E16A-99ED-4CFD-9FA2-BF5DE3680187</key>
 		<dict>
@@ -290,7 +330,7 @@ update sqlite by brew</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.11</string>
+	<string>1.12</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/2fa-read-code</string>
 </dict>
