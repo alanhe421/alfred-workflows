@@ -42,6 +42,24 @@ const wf = new Workflow();
         },
       }
   })
+    .addWorkflowItem({
+      item: {
+        title: 'Settings - Branches',
+        arg: '-/protected_branches?tab=unprotected_branch_rules',
+        text: {
+          copy: `${process.env.baseUrl}/${process.env.projectPath}/-/protected_branches?tab=unprotected_branch_rules`
+        },
+      }
+    })
+    .addWorkflowItem({
+      item: {
+        title: 'Settings - AI',
+        arg: '-/advanced_settings/ai_config',
+        text: {
+          copy: `${process.env.baseUrl}/${process.env.projectPath}/-/advanced_settings/ai_config`
+        },
+      }
+    })
     .run();
 
 })();
