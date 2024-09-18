@@ -113,16 +113,6 @@ end tell</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict/>
-			<key>type</key>
-			<string>alfred.workflow.automation.task</string>
-			<key>uid</key>
-			<string>0C2239BA-72FE-46D0-867F-8E32710D255C</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string>&gt; Displays system information about your Mac.
@@ -133,13 +123,6 @@ Contains UserName、Model、HostName、Primary Ethernet Address、IPv4 Address�
 3. Large type support</string>
 	<key>uidata</key>
 	<dict>
-		<key>0C2239BA-72FE-46D0-867F-8E32710D255C</key>
-		<dict>
-			<key>xpos</key>
-			<real>405</real>
-			<key>ypos</key>
-			<real>285</real>
-		</dict>
 		<key>2353E6A3-0536-4ADA-8936-B2AEC1E72656</key>
 		<dict>
 			<key>xpos</key>
@@ -160,7 +143,7 @@ Contains UserName、Model、HostName、Primary Ethernet Address、IPv4 Address�
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.20</string>
+	<string>1.21</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/about-mac</string>
 </dict>
