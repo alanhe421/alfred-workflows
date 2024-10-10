@@ -136,7 +136,7 @@ function preProcessMessage(msg) {
 
 /**
  * Read SMS verification code
- * Digit 3-6 digits
+ * Digit 3-7 digits
  * Prefer longer codes, skip dates and currencies.
  */
 function readCaptchaFromMessage(msg) {
@@ -146,8 +146,8 @@ function readCaptchaFromMessage(msg) {
     ''
   );
 
-  // Match numbers with 3 to 6 digits, not part of currency amounts
-  const regex = /\b(?<![.,]\d|€|\$|£)(\d{3,6})(?!\d|[.,]\d|€|\$|£)\b/g;
+  // Match numbers with 3 to 7 digits, not part of currency amounts
+  const regex = /\b(?<![.,]\d|€|\$|£)(\d{3,7})(?!\d|[.,]\d|€|\$|£)\b/g;
 
   // Collect all matches
   const matches = [];
