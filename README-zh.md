@@ -29,7 +29,7 @@ P.S.: 使用这些Workflow的前提是已购买[Powerpack](https://www.alfredapp
 ### 1. [2FA-Read Code](https://github.com/alanhg/alfred-workflows/tree/master/2fa-read-code)
 > Read authentication code in your recent messages or current clipboard
 
-![](https://img.shields.io/badge/version-v1.12-green?style=for-the-badge)
+![](https://img.shields.io/badge/version-v1.13-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/2fa-read-code/2FA-Read%20Code.alfredworkflow)
 [![](https://img.shields.io/badge/Install%20In%20Alfred-8A2BE2?style=for-the-badge)](https://alfred.app/workflows/alanhe/2fa-read-code/install/)
 
