@@ -517,6 +517,13 @@ Thanks goes to these wonderful people:
             <br />
             <sub><b>Psycho Pass</b></sub>
         </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/adriansprk">
+            <img src="https://avatars.githubusercontent.com/u/80471221?v=4" width="100;" alt="adriansprk"/>
+            <br />
+            <sub><b>Adrian_cares</b></sub>
+        </a>
     </td></tr>
 </table>
 <!-- readme: collaborators,contributors -end -->
