@@ -17,7 +17,7 @@ if [[ "${arrIN[5]}" =~ ^Intel ]]; then
     cpuTitle='CPU Type'
 else
     cpuName=$(system_profiler SPHardwareDataType | grep "Chip:" | awk -F': ' '{print $2}'| tr \d '\n')
-    cpuTitle="Chip (${arrIN[5]})"
+    cpuTitle="Chip (${arrIN[5]}), $(sysctl -n hw.logicalcpu)-Core CPU"
 fi
 
 if [ -n "$batteryHealthCapacity" ]; then
