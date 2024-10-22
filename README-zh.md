@@ -24,7 +24,7 @@ P.S.: 使用这些Workflow的前提是已购买[Powerpack](https://www.alfredapp
 
 ## Workflow集
 
-<!--workflow-start-->共5️⃣4️⃣个
+<!--workflow-start-->共5️⃣5️⃣个
 
 ### 1. [2FA-Read Code](https://github.com/alanhg/alfred-workflows/tree/master/2fa-read-code)
 > Read authentication code in your recent messages or current clipboard
@@ -365,14 +365,22 @@ P.S.: 使用这些Workflow的前提是已购买[Powerpack](https://www.alfredapp
 
 
 
-### 44. [SSH Utils](https://github.com/alanhg/alfred-workflows/tree/master/ssh-utils)
+### 44. [SQL Formatter](https://github.com/alanhg/alfred-workflows/tree/master/sql-formatter)
+> pretty-printing SQL queries
+
+![](https://img.shields.io/badge/version-v0.1-green?style=for-the-badge)
+[![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/sql-formatter/SQL%20Formatter.alfredworkflow)
+
+
+
+### 45. [SSH Utils](https://github.com/alanhg/alfred-workflows/tree/master/ssh-utils)
 
 ![](https://img.shields.io/badge/version-v0.2-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/ssh-utils/SSH%20Utils.alfredworkflow)
 
 
 
-### 45. [String Manipulation](https://github.com/alanhg/alfred-workflows/tree/master/string-manipulation)
+### 46. [String Manipulation](https://github.com/alanhg/alfred-workflows/tree/master/string-manipulation)
 > Case switching
 
 ![](https://img.shields.io/badge/version-v0.9-green?style=for-the-badge)
@@ -380,7 +388,7 @@ P.S.: 使用这些Workflow的前提是已购买[Powerpack](https://www.alfredapp
 
 
 
-### 46. [Surge](https://github.com/alanhg/alfred-workflows/tree/master/surge)
+### 47. [Surge](https://github.com/alanhg/alfred-workflows/tree/master/surge)
 > Quick to Surge
 
 ![](https://img.shields.io/badge/version-v1.25-green?style=for-the-badge)
@@ -388,7 +396,7 @@ P.S.: 使用这些Workflow的前提是已购买[Powerpack](https://www.alfredapp
 
 
 
-### 47. [Switch Audio](https://github.com/alanhg/alfred-workflows/tree/master/switch-audio)
+### 48. [Switch Audio](https://github.com/alanhg/alfred-workflows/tree/master/switch-audio)
 > Quickly switch sound output or input
 
 ![](https://img.shields.io/badge/version-v2.3-green?style=for-the-badge)
@@ -396,7 +404,7 @@ P.S.: 使用这些Workflow的前提是已购买[Powerpack](https://www.alfredapp
 
 
 
-### 48. [System Settings](https://github.com/alanhg/alfred-workflows/tree/master/system-settings)
+### 49. [System Settings](https://github.com/alanhg/alfred-workflows/tree/master/system-settings)
 > Open macOS System Settings Panes
 
 ![](https://img.shields.io/badge/version-v1.0-green?style=for-the-badge)
@@ -404,21 +412,21 @@ P.S.: 使用这些Workflow的前提是已购买[Powerpack](https://www.alfredapp
 
 
 
-### 49. [Translate](https://github.com/alanhg/alfred-workflows/tree/master/translate)
+### 50. [Translate](https://github.com/alanhg/alfred-workflows/tree/master/translate)
 
 ![](https://img.shields.io/badge/version-v1.0-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/translate/Translate.alfredworkflow)
 
 
 
-### 50. [Type Search](https://github.com/alanhg/alfred-workflows/tree/master/type-search)
+### 51. [Type Search](https://github.com/alanhg/alfred-workflows/tree/master/type-search)
 
 ![](https://img.shields.io/badge/version-v0.2-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/type-search/Type%20Search.alfredworkflow)
 
 
 
-### 51. [UAParser](https://github.com/alanhg/alfred-workflows/tree/master/ua-parser)
+### 52. [UAParser](https://github.com/alanhg/alfred-workflows/tree/master/ua-parser)
 > User Agent Parser
 
 ![](https://img.shields.io/badge/version-v0.1-green?style=for-the-badge)
@@ -426,7 +434,7 @@ P.S.: 使用这些Workflow的前提是已购买[Powerpack](https://www.alfredapp
 
 
 
-### 52. [video](https://github.com/alanhg/alfred-workflows/tree/master/video-tools)
+### 53. [video](https://github.com/alanhg/alfred-workflows/tree/master/video-tools)
 > tools for video
 
 ![](https://img.shields.io/badge/version-v0.1-green?style=for-the-badge)
@@ -434,7 +442,7 @@ P.S.: 使用这些Workflow的前提是已购买[Powerpack](https://www.alfredapp
 
 
 
-### 53. [Whistle](https://github.com/alanhg/alfred-workflows/tree/master/whistle)
+### 54. [Whistle](https://github.com/alanhg/alfred-workflows/tree/master/whistle)
 > select rules
 
 ![](https://img.shields.io/badge/version-v2.15-green?style=for-the-badge)
@@ -442,7 +450,7 @@ P.S.: 使用这些Workflow的前提是已购买[Powerpack](https://www.alfredapp
 
 
 
-### 54. [印象笔记](https://github.com/alanhg/alfred-workflows/tree/master/印象笔记)
+### 55. [印象笔记](https://github.com/alanhg/alfred-workflows/tree/master/印象笔记)
 > Use Evernote with Alfred
 
 ![](https://img.shields.io/badge/version-v1.0.2-green?style=for-the-badge)

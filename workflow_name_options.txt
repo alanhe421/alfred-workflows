@@ -41,6 +41,7 @@
 - Generate Image
 - Alfred Remote
 - RGB-Hex converter
+- SQL Formatter
 - SSH Utils
 - String Manipulation
 - Surge
