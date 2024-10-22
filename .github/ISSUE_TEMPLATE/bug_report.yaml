@@ -33,6 +33,7 @@ body:
        - Batch Import Workflows
        - Bluetooth Manager
        - Brightness Control
+       - ChatGPT Enhancer
        - Clipboard History
        - Compress
        - ConvertIO
@@ -45,6 +46,7 @@ body:
        - Git Code
        - Resize Image
        - IP Tools
+       - JSON View
        - Json2TS
        - Local Network
        - Mac Enhancer
@@ -58,12 +60,15 @@ body:
        - Open Chrome Profile
        - OpenConnect VPN
        - Paste into files
+       - PDF Converter
        - Pic Uploader
        - Process
        - ProgressBar
        - QR Reader
+       - Generate Image
        - Alfred Remote
        - RGB-Hex converter
+       - SQL Formatter
        - SSH Utils
        - String Manipulation
        - Surge
@@ -71,6 +76,8 @@ body:
        - System Settings
        - Translate
        - Type Search
+       - UAParser
+       - video
        - Whistle
        - 印象笔记
 
