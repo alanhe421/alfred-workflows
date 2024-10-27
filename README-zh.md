@@ -491,7 +491,7 @@ P.S.: 使用这些Workflow的前提是已购买[Powerpack](https://www.alfredapp
 </a>
 &nbsp;
 <a href="https://twitter.com/alanhe421">
-<img src="https://img.shields.io/badge/Alan He-%23000000.svg?style=for-the-badge&logo=X&logoColor=white">
+<img src="https://img.shields.io/badge/Twitter-%23000000.svg?style=for-the-badge&logo=X&logoColor=white">
 </a>
 
 

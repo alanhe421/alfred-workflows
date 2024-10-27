@@ -489,7 +489,7 @@ The easiest way to support us is to click on the star (⭐) at the top of this p
 </a>
 &nbsp;
 <a href="https://twitter.com/alanhe421">
-<img src="https://img.shields.io/badge/Alan He-%23000000.svg?style=for-the-badge&logo=X&logoColor=white">
+<img src="https://img.shields.io/badge/Twitter-%23000000.svg?style=for-the-badge&logo=X&logoColor=white">
 </a>
 
 ## Contributors
