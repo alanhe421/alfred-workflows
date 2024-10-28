@@ -492,6 +492,10 @@ The easiest way to support us is to click on the star (⭐) at the top of this p
 <img src="https://img.shields.io/badge/Twitter-%23000000.svg?style=for-the-badge&logo=X&logoColor=white">
 </a>
 
+<a href="https://medium.com/@alanhe421">
+<img src="https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white">
+</a>
+
 ## Contributors
 Thanks goes to these wonderful people:
 
