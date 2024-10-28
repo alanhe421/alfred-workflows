@@ -34,6 +34,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>42A7C6C6-C17E-4BCC-8FFA-D157F3DC9FA6</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D6D89AAA-1E91-4BBD-921B-4807239ECA99</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>514DEB5B-4214-456E-AB96-44D7F3EFB4F4</key>
 		<array>
 			<dict>
@@ -98,6 +111,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>D6D89AAA-1E91-4BBD-921B-4807239ECA99</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B1EBEA6D-025B-447A-8EA2-D2BD649723A1</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>F2C2A59A-D14C-495F-9A64-F25E9259B381</key>
 		<array>
 			<dict>
@@ -132,7 +158,7 @@
 					<string>dyn.ah62d4rv4ge80455cre</string>
 				</array>
 				<key>name</key>
-				<string>MOBI ➡️ EPUB</string>
+				<string>MOBI ➡️ EPUB Converter</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.action</string>
@@ -257,6 +283,25 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>filetypes</key>
+				<array>
+					<string>org.idpf.epub-container</string>
+				</array>
+				<key>name</key>
+				<string>EPUB ➡️ MOBI Converter</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.action</string>
+			<key>uid</key>
+			<string>2B2C08D8-A04F-4925-BD8D-4665E03E69AE</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argument</key>
 				<string>{query}</string>
 				<key>passthroughargument</key>
@@ -281,23 +326,43 @@
 				<integer>0</integer>
 				<key>filetypes</key>
 				<array>
-					<string>org.idpf.epub-container</string>
+					<string>public.jpeg</string>
 				</array>
 				<key>name</key>
-				<string>EPUB ➡️ MOBI</string>
+				<string>JPG ➡️ PNG Converter</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.action</string>
 			<key>uid</key>
-			<string>2B2C08D8-A04F-4925-BD8D-4665E03E69AE</string>
+			<string>42A7C6C6-C17E-4BCC-8FFA-D157F3DC9FA6</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>outputformat</key>
+					<string>png</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>D6D89AAA-1E91-4BBD-921B-4807239ECA99</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>&gt; Support mobi to epub, epub to mobi
+	<string>&gt; Support mobi to epub, epub to mobi, jpg to png.
 
-select mobi/epub file and trigger action
+select mobi/epub/jpg file and trigger action.
 
 ## get started
 
@@ -322,6 +387,13 @@ select mobi/epub file and trigger action
 			<real>55</real>
 			<key>ypos</key>
 			<real>280</real>
+		</dict>
+		<key>42A7C6C6-C17E-4BCC-8FFA-D157F3DC9FA6</key>
+		<dict>
+			<key>xpos</key>
+			<real>50</real>
+			<key>ypos</key>
+			<real>470</real>
 		</dict>
 		<key>514DEB5B-4214-456E-AB96-44D7F3EFB4F4</key>
 		<dict>
@@ -349,9 +421,9 @@ select mobi/epub file and trigger action
 		<key>98B1663E-DEF7-470D-9445-77A25EC756DD</key>
 		<dict>
 			<key>xpos</key>
-			<real>240</real>
+			<real>220</real>
 			<key>ypos</key>
-			<real>245</real>
+			<real>330</real>
 		</dict>
 		<key>B1EBEA6D-025B-447A-8EA2-D2BD649723A1</key>
 		<dict>
@@ -366,6 +438,13 @@ select mobi/epub file and trigger action
 			<real>910</real>
 			<key>ypos</key>
 			<real>65</real>
+		</dict>
+		<key>D6D89AAA-1E91-4BBD-921B-4807239ECA99</key>
+		<dict>
+			<key>xpos</key>
+			<real>265</real>
+			<key>ypos</key>
+			<real>505</real>
 		</dict>
 		<key>F2C2A59A-D14C-495F-9A64-F25E9259B381</key>
 		<dict>
@@ -387,7 +466,7 @@ select mobi/epub file and trigger action
 		<string>api_key</string>
 	</array>
 	<key>version</key>
-	<string>0.3</string>
+	<string>0.4</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/convertio</string>
 </dict>
