@@ -88,7 +88,7 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
-				<string>DDECB2AF-5C6E-4720-99AF-EC68301C2A98</string>
+				<string>C06F1707-7EB3-43FC-935C-1A921F92E215</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -122,8 +122,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>DDECB2AF-5C6E-4720-99AF-EC68301C2A98</key>
-		<array/>
 	</dict>
 	<key>createdby</key>
 	<string>Alan He</string>
@@ -241,6 +239,8 @@
 				</array>
 				<key>elselabel</key>
 				<string>else</string>
+				<key>hideelse</key>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.conditional</string>
@@ -265,35 +265,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>alignment</key>
-				<integer>0</integer>
-				<key>backgroundcolor</key>
-				<string></string>
-				<key>fadespeed</key>
-				<integer>0</integer>
-				<key>fillmode</key>
-				<integer>0</integer>
-				<key>font</key>
-				<string></string>
-				<key>ignoredynamicplaceholders</key>
-				<false/>
-				<key>largetypetext</key>
-				<string>{query}</string>
-				<key>textcolor</key>
-				<string></string>
-				<key>wrapat</key>
-				<integer>50</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.largetype</string>
-			<key>uid</key>
-			<string>DDECB2AF-5C6E-4720-99AF-EC68301C2A98</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>conditions</key>
 				<array>
 					<dict>
@@ -313,11 +284,46 @@
 				</array>
 				<key>elselabel</key>
 				<string>else</string>
+				<key>hideelse</key>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
 			<string>8A818E6A-8DE0-4DB1-93D6-3C63295704A5</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>behaviour</key>
+				<integer>1</integer>
+				<key>fontmode</key>
+				<integer>0</integer>
+				<key>fontsizing</key>
+				<integer>0</integer>
+				<key>footertext</key>
+				<string></string>
+				<key>inputfile</key>
+				<string></string>
+				<key>inputtype</key>
+				<integer>0</integer>
+				<key>loadingtext</key>
+				<string></string>
+				<key>outputmode</key>
+				<integer>0</integer>
+				<key>scriptinput</key>
+				<integer>0</integer>
+				<key>spellchecking</key>
+				<integer>0</integer>
+				<key>stackview</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.userinterface.text</string>
+			<key>uid</key>
+			<string>C06F1707-7EB3-43FC-935C-1A921F92E215</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -370,84 +376,86 @@
 
 thanks json-ts package.
 
-## usage
+## Usage
 
-json text select and trigger json2ts universal action.</string>
+JSON text select and trigger json2ts universal action.</string>
 	<key>uidata</key>
 	<dict>
 		<key>37012F37-20C8-4D58-92C0-BE9DC0571345</key>
 		<dict>
 			<key>xpos</key>
-			<integer>445</integer>
+			<real>510</real>
 			<key>ypos</key>
-			<integer>430</integer>
+			<real>455</real>
 		</dict>
 		<key>4B13A479-666E-442D-8600-8E35A450CACD</key>
 		<dict>
 			<key>xpos</key>
-			<integer>85</integer>
+			<real>85</real>
 			<key>ypos</key>
-			<integer>175</integer>
+			<real>175</real>
 		</dict>
 		<key>8A45BCE8-EDED-46FB-B48F-6E5F42899948</key>
 		<dict>
 			<key>xpos</key>
-			<integer>955</integer>
+			<real>955</real>
 			<key>ypos</key>
-			<integer>140</integer>
+			<real>140</real>
 		</dict>
 		<key>8A818E6A-8DE0-4DB1-93D6-3C63295704A5</key>
 		<dict>
 			<key>xpos</key>
-			<integer>345</integer>
+			<real>345</real>
 			<key>ypos</key>
-			<integer>285</integer>
+			<real>285</real>
 		</dict>
 		<key>971A0F7B-A38F-4A8B-BADF-C1E7DA05E5AF</key>
 		<dict>
 			<key>xpos</key>
-			<integer>255</integer>
+			<real>255</real>
 			<key>ypos</key>
-			<integer>205</integer>
+			<real>205</real>
 		</dict>
 		<key>C0168EEC-2D9D-4B84-8485-2B6E52EA47AC</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>4</integer>
 			<key>xpos</key>
-			<integer>435</integer>
+			<real>435</real>
 			<key>ypos</key>
-			<integer>150</integer>
+			<real>150</real>
+		</dict>
+		<key>C06F1707-7EB3-43FC-935C-1A921F92E215</key>
+		<dict>
+			<key>xpos</key>
+			<real>725</real>
+			<key>ypos</key>
+			<real>300</real>
 		</dict>
 		<key>C14D2E76-5875-4F6A-9906-C0A1EE902B5A</key>
 		<dict>
 			<key>xpos</key>
-			<integer>585</integer>
+			<real>585</real>
 			<key>ypos</key>
-			<integer>200</integer>
+			<real>200</real>
 		</dict>
 		<key>CF4FB9A4-2544-451A-93E5-75CDE548229A</key>
 		<dict>
 			<key>xpos</key>
-			<integer>720</integer>
+			<real>720</real>
 			<key>ypos</key>
-			<integer>125</integer>
-		</dict>
-		<key>DDECB2AF-5C6E-4720-99AF-EC68301C2A98</key>
-		<dict>
-			<key>xpos</key>
-			<integer>750</integer>
-			<key>ypos</key>
-			<integer>280</integer>
+			<real>125</real>
 		</dict>
 		<key>F24FF793-EB72-4996-B8E1-C8AFBA67F713</key>
 		<dict>
 			<key>xpos</key>
-			<integer>725</integer>
+			<real>725</real>
 			<key>ypos</key>
-			<integer>465</integer>
+			<real>465</real>
 		</dict>
 	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
 	<key>variables</key>
 	<dict>
 		<key>ts_namespace</key>
@@ -462,8 +470,8 @@ json text select and trigger json2ts universal action.</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.2</string>
+	<string>1.3</string>
 	<key>webaddress</key>
-	<string>https://1991421.cn</string>
+	<string>https://github.com/alanhe421/alfred-workflows/tree/master/json2Ts</string>
 </dict>
 </plist>
