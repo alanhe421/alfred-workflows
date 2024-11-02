@@ -35,6 +35,10 @@ export default defineConfig({
           link: `/workflows/${item.name}/${item.name}`,
         })),
       },
+      {
+        text: 'About',
+        link: '/about',
+      },
     ],
     socialLinks: [
       { icon: 'github', link: 'https://github.com/alanhe421/alfred-workflows' },
