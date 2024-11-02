@@ -28,9 +28,9 @@ brew install node
 
 
 <!-- more -->
-![](screenshot/screenshot.gif)
+![](screenshots/screenshot.gif)
 
 ## Configuration
 
-![screenshot1.png](screenshot/screenshot1.png)
-![screenshot2.png](screenshot/screenshot2.jpg)
+![screenshot1.png](screenshots/screenshot1.png)
+![screenshot2.png](screenshots/screenshot2.jpg)

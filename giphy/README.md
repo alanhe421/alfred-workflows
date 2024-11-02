@@ -21,7 +21,7 @@ Easy to search gif and copy to anywhere.
 
 ## 当前效果
 
-![](./screenshot.gif)
+![](screenshots/screenshot.gif)
 
 ## 注意
 - 因为已知原因，中国大陆需要走代理才可正常使用

@@ -16,12 +16,12 @@ Network like SMB/CIF、NFS 和 FTP。
 
 ## screenshot
 
-![](./screenshot.gif)
+![](screenshots/screenshot.gif)
 
 ## get start
     
 1. set environment variable
 2. tap keyword 'mount'
 
-    ![](./screenshot.jpeg)
+    ![](screenshots/screenshot.jpeg)
 

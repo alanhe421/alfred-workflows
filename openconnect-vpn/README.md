@@ -17,6 +17,6 @@
 ## Usage
 variables config
 
-![](./screenshot.jpeg)
+![](screenshots/screenshot.jpeg)
 
 type keyword `vpn` to trigger

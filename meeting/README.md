@@ -25,4 +25,4 @@ brew install node
 
 ## screenshot
 
-![](./screenshot.gif)
+![](screenshots/screenshot.gif)

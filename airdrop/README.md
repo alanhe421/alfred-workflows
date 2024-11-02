@@ -22,8 +22,8 @@ Support Catalina、Big Sur、Sonoma
 
 Add airdrop to the toolbar of the finder
 
-![screenshot3.png](./screenshot3.png)
-![screenshot4.png](screenshot4.png)
+![screenshot3.png](screenshots/screenshot3.png)
+![screenshot4.png](screenshots/screenshot4.png)
 
 now, it's ok to use the workflow
 
@@ -36,11 +36,11 @@ I am not sure it's ok to use the workflow in Monterey, because I don't have a ma
 
 ## Screenshots
 
-![](./screenshot1.png)
-![](./screenshot2.png)
+![](screenshots/screenshot1.png)
+![](screenshots/screenshot2.png)
 
-![](./screenshot.gif)
+![](screenshots/screenshot.gif)
 
-![](./screenshot2.gif)
+![](screenshots/screenshot2.gif)
 
 

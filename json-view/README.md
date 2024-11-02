@@ -23,10 +23,10 @@ brew install jq
 
 <!-- more -->
 
-![screenshot1.gif](screenshot/screenshot1.gif)
+![screenshot1.gif](screenshots/screenshot1.gif)
 
-![screenshot1.png](screenshot/screenshot1.png)
+![screenshot1.png](screenshots/screenshot1.png)
 
-![screenshot2.png](screenshot/screenshot2.png)
+![screenshot2.png](screenshots/screenshot2.png)
 
-![screenshot3.png](screenshot/screenshot3.png)
+![screenshot3.png](screenshots/screenshot3.png)

@@ -29,7 +29,7 @@ Logging in for the first time is troublesome, but after that, it will automatica
 
 just input `findmy`
 
-![](./screenshot.gif)
+![](screenshots/screenshot.gif)
 
 - ⌥ ⏎ Send alert
 - ⌘ ⏎ view iCloud Web

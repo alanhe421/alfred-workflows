@@ -26,6 +26,6 @@ update sqlite by brew
 
 ## screenshots
 
-![](./screenshot.png)
+![](screenshots/screenshot.png)
 
-![](./screenshot.gif)
+![](screenshots/screenshot.gif)

@@ -21,5 +21,5 @@ https://www.eudic.net/v4/en/app/download
 
 <!-- more -->
 
-![screenshot.png](./screenshot.png)
+![screenshot.png](screenshots/screenshot.png)
 

@@ -20,4 +20,4 @@ support png,jpeg
 
 <!-- more -->
 
-![](./screenshot.png)
+![](screenshots/screenshot.png)

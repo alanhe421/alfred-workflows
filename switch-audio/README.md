@@ -22,7 +22,7 @@ brew install node
 
 just input `sound` or `voice`
 
-![](./screenshot.gif)
+![](screenshots/screenshot.gif)
 
 support switch to airplay
 

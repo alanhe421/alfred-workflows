@@ -16,19 +16,19 @@ Use the built-in OCR, no need to install dependencies.
 <!-- more -->
 
 ## 效果
-![](screenshot/screenshot.gif)
+![](screenshots/screenshot.gif)
 
 ## First-time use
 
 In addition to this, when using it, you will be prompted to install shortcuts. Install it.
 
-![screenshot1.png](screenshot/screenshot1.png)
+![screenshot1.png](screenshots/screenshot1.png)
 
 When re-triggering the ocr, there will be a permission authorization box as follows. Click allow, and then you can use it normally.
 
-![screenshot2.png](screenshot/screenshot2.png)
+![screenshot2.png](screenshots/screenshot2.png)
 
 ## Hotkey
 You can change it in the workflow settings. Recommend setting the hotkey to `⌘ ⇧ 7`.
 
-![screenshot4.png](screenshot/screenshot4.png)
+![screenshot4.png](screenshots/screenshot4.png)

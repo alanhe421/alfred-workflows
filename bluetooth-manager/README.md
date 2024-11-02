@@ -23,7 +23,7 @@ nvm install 10
 
 _支持AirPods电量信息展示_
 
-![](./bluetooth.gif)
+![](screenshots/bluetooth.gif)
 
 ## 注意
 

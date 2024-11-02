@@ -14,4 +14,4 @@
 
 <!-- more -->
 
-![](./screenshot.jpeg)
+![](screenshots/screenshot.jpeg)

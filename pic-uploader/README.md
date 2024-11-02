@@ -39,4 +39,4 @@ https://apidocs.imgur.com/
 
 注意：截图生成的图片格式为`JPEG`
 
-![](./2020-04-04-221152.gif)
+![](screenshots/2020-04-04-221152.gif)

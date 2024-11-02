@@ -25,6 +25,6 @@ https://github.com/raycast/extensions/tree/main/extensions/ray-so
 
 ## Screenshots
 
-![screenshot.png](screenshot/screenshot.png)
+![screenshot.png](screenshots/screenshot.png)
 
-![screenshot.gif](screenshot/screenshot.gif)
+![screenshot.gif](screenshots/screenshot.gif)

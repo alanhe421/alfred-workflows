@@ -21,4 +21,4 @@ select mobi/epub/jpg file and trigger action.
 
 <!-- more -->
 
-![](./screenshot.gif)
+![](screenshots/screenshot.gif)

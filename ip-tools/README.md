@@ -17,6 +17,6 @@
 2. display local ip address
 3. support domain
 
-![](screenshot.gif)
+![](screenshots/screenshot.gif)
 
-![](screenshot2.gif)
+![](screenshots/screenshot2.gif)

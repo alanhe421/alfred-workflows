@@ -18,7 +18,7 @@ brew install node
 
 ## Screenshot
 
-![](./screenshot.jpeg)
+![](screenshots/screenshot.jpeg)
 
 
 ## Requirement

@@ -18,4 +18,4 @@ brew install node
 
 <!-- more -->
 
-![](./screenshot.gif)
+![](screenshots/screenshot.gif)

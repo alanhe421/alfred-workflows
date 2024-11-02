@@ -27,6 +27,6 @@
 
 ## Screenshot
 
-![](./screenshot.png)
+![](screenshots/screenshot.png)
 
-![](./screenshot.gif)
+![](screenshots/screenshot.gif)

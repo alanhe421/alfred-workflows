@@ -22,4 +22,4 @@ idea from https://github.com/Wit4r7/AlfredAutomations. Thanks Wit4r7
 
 <!-- more -->
 
-![screenshot.png](./screenshot.png)
+![screenshot.png](screenshots/screenshot.png)

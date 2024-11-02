@@ -16,6 +16,6 @@ Contains UserName、Model、HostName、Primary Ethernet Address、IPv4 Address�
 <!-- more -->
 
 ### screenshots
-![](./screenshot1.png)
-![](./screenshot2.png)
-![](./screenshot.gif)
+![](screenshots/screenshot1.png)
+![](screenshots/screenshot2.png)
+![](screenshots/screenshot.gif)

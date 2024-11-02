@@ -19,4 +19,4 @@ Case switching.
 
 ## 实际效果
 
-![](./screenshot.gif)
+![](screenshots/screenshot.gif)

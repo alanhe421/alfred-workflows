@@ -17,7 +17,7 @@
 
 <!-- more -->
 
-![](./screenshot.gif)
+![](screenshots/screenshot.gif)
 
 ## Install
 

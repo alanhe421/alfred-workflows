@@ -11,5 +11,5 @@ display history about my iPhones.
 <!-- more -->
 you need maintain json manually.
 
-![](./screenshot.gif)
+![](screenshots/screenshot.gif)
 

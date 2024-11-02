@@ -20,7 +20,7 @@ based on https://www.typescriptlang.org/dt/search
 
 ## 实际效果
 
-![](./screenshot.gif)
+![](screenshots/screenshot.gif)
 
 ## 安装
 

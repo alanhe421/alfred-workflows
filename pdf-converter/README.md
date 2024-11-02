@@ -23,4 +23,4 @@ pip install pdf2docx
 
 ## Screenshot
 
-![screenshot1.png](./screenshot/screenshot1.png)
+![screenshot1.png](screenshots/screenshot1.png)

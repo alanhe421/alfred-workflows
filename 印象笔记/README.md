@@ -19,4 +19,4 @@ http://dev.evernote.com/documentation/local/chapters/mac.php
 
 ## 效果
 
-![](./evernote-workflow.gif)
+![](screenshots/evernote-workflow.gif)

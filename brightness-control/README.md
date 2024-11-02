@@ -12,4 +12,4 @@ type `briup` or `bridown`
 
 <!-- more -->
 
-![screenshot.png](./screenshot.png)
+![screenshot.png](screenshots/screenshot.png)

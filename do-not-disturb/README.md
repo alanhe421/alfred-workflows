@@ -19,4 +19,4 @@ input `dnd` to toggle it.
 
 <!-- more -->
 
-![](./screenshot.gif)
+![](screenshots/screenshot.gif)

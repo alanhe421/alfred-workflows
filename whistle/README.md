@@ -38,5 +38,5 @@ If you need SOCKS proxy, configure SOCKS_PORT.
 
 ## Screenshots
 
-![](./screenshot.png)
-![](./screenshot.gif)
+![](screenshots/screenshot.png)
+![](screenshots/screenshot.gif)

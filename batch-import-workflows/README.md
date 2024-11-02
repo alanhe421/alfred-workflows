@@ -14,9 +14,9 @@ Select the folder and import workflows in batches
 <!-- more -->
 > Batch import workflows. just select folder which contains multi workflows and execute batch import file action.
 
-![](./screenshot.jpeg)
+![](screenshots/screenshot.jpeg)
 
-![](./screenshot.gif)
+![](screenshots/screenshot.gif)
 
 ## Requirement
 - NodeJS

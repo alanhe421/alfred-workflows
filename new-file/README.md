@@ -15,9 +15,9 @@ You can configure the file generation path in environment variables
 
 You can configure the file generation path in environment variables
 
-![](./screenshot.gif)
+![](screenshots/screenshot.gif)
 
-![](./screenshot2.png)
+![](screenshots/screenshot2.png)
 
 
 

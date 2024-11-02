@@ -54,4 +54,4 @@ Surge Mac 4.0.0、Surge iOS 4.4.0开始提供HTTP API, 即该版本之前的均�
 
 ## 实际效果
 
-![](./screenshot.gif)
+![](screenshots/screenshot.gif)

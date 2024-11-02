@@ -35,6 +35,6 @@ $ yarn install canvas
 ```
 
 
-![](./screenshot.png)
+![](screenshots/screenshot.png)
 
-![](./screenshot2.png)
+![](screenshots/screenshot2.png)

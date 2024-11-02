@@ -17,8 +17,8 @@ JSON text select and trigger json2ts universal action.
 
 <!-- more -->
 
-![](./screenshot.gif)
+![](screenshots/screenshot.gif)
 
 ## support customize
 
-![](./screenshot.png)
+![](screenshots/screenshot.png)
