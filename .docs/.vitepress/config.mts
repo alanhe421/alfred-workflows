@@ -42,6 +42,7 @@ export default defineConfig({
     ],
     socialLinks: [
       { icon: 'github', link: 'https://github.com/alanhe421/alfred-workflows' },
+      { icon: 'x', link: 'https://x.com/alanhe421' },
     ],
     footer: {
       copyright: `Copyright © 2024-present Alan He`,
