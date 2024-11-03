@@ -24,7 +24,7 @@ update sqlite by brew
 
 <!-- more -->
 
-## screenshots
+## Screenshots
 
 ![](screenshots/screenshot.png)
 
