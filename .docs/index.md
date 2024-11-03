@@ -33,5 +33,20 @@ features:
     link: workflows/ocr/ocr.html
     icon:
       src: /ocr-icon.png
+  - title: AppID
+    details: Show ID, Version, Icon of installed apps
+    link: workflows/appid/appid.html
+    icon:
+      src: /appid-icon.png
+  - title: QR Reader
+    details: Read QR Code
+    link: workflows/qr-reader/qr-reader.html
+    icon:
+      src: /qr-reader-icon.png
+  - title: Open Chrome Profile
+    details: Get all available chrome profiles and open the selected
+    link: workflows/open-chrome-profile/open-chrome-profile.html
+    icon:
+      src: /open-chrome-profile-icon.png
 ---
 
