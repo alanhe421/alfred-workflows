@@ -243,12 +243,14 @@
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>&gt; Read authentication code in your recent messages or current clipboard
+	<string># 2FA-Read Code
+
+&gt; Read authentication code in your recent messages or current clipboard
 
 1. Type `2fa` to trigger workflow
 2. Type`⌘ C` or `⏎` to copy captcha
 
-## requirement
+## Requirement
 
 1. `brew install node`
 2. Alfred has permission to `Full Disk Access`
@@ -330,7 +332,7 @@ update sqlite by brew</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.13</string>
+	<string>1.14</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/2fa-read-code</string>
 </dict>
