@@ -4,7 +4,7 @@ import { workflowMetaInfos } from '../init-md.mjs';
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: 'Alfred-Workflows',
-  base: '/alfred-workflows',
+  base: '/',
   description: 'workflows for alfred',
   lang: 'en-US',
   outDir: '../docs',
