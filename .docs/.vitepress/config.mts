@@ -47,7 +47,7 @@ export default defineConfig({
       { icon: 'x', link: 'https://x.com/alanhe421' },
     ],
     footer: {
-      copyright: `Copyright © 2024-present <a href="https://1991421.cn">Alan He</a>`,
+      copyright: `Copyright © 2024-present <a href="https://1991421.cn" target="_blank">Alan He</a>`,
     },
   },
   lastUpdated: true,
