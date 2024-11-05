@@ -158,7 +158,7 @@ async function buildBadgeContent({version}, folderName, filename) {
     console.log('response-error:', e, folderName);
   }
   return `
-![](https://img.shields.io/badge/version-v${version}-green?style=for-the-badge)
+[![](https://img.shields.io/badge/version-v${version}-green?style=for-the-badge)]()
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/${process.env.GITHUB_REPOSITORY}/raw/${process.env.GITHUB_REF_NAME}/${folderName}/${(filename)})
 ${inGallery ? `[![](https://img.shields.io/badge/Install%20In%20Alfred-8A2BE2?style=for-the-badge)](https://alfred.app/workflows/alanhe/${folderName}/install/)` : ''}
 `
