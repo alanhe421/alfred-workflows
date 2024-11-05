@@ -1,4 +1,4 @@
-name: Deploy Docs
+name: Deploy Docs to VPS
 
 on:
   push:
