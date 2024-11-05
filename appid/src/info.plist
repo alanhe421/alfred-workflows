@@ -245,11 +245,20 @@
 require 'open3'
 require 'pathname'
 
-apps = Pathname('/Applications').children
-         .concat(Pathname('/Applications/Utilities').children)
-         .map(&amp;:to_path)
-         .sort_by { |p| File.basename(p).downcase }
-         .select { |e| e.end_with?('.app') }
+# Add your custom paths here
+paths = [
+  '/Applications',
+  '/Applications/Utilities',
+  "#{ENV['HOME']}/Applications/JetBrains Toolbox"
+]
+
+apps = paths.flat_map do |path|
+  Pathname(path).children
+end
+
+apps = apps.map(&amp;:to_path)
+            .sort_by { |p| File.basename(p).downcase }
+            .select { |e| e.end_with?('.app') }
 
 script_filter_items = []
 
@@ -260,7 +269,8 @@ apps.each do |app|
   script_filter_items.push(title: name, subtitle: appId, arg: appId, type:'file:skipcheck',icon: { type: 'fileicon', path: app },action:{ file:app})
 end
 
-puts({ items: script_filter_items }.to_json)</string>
+puts({ items: script_filter_items }.to_json)
+</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -629,7 +639,8 @@ puts({ items: script_filter_items }.to_json)</string>
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>&gt; Getting Bundle ID, Release Version Number, App icon of apps
+	<string># AppID
+&gt; Getting Bundle ID, Release Version Number, App icon of apps
 
 ## Requirement
 
@@ -782,7 +793,7 @@ puts({ items: script_filter_items }.to_json)</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.11</string>
+	<string>1.12</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/appid</string>
 </dict>
