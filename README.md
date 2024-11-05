@@ -54,7 +54,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 ### 4. [AppID](https://github.com/alanhg/alfred-workflows/tree/master/appid)
 > Show ID, Version, Icon of installed apps
 
-[![](https://img.shields.io/badge/version-v1.11-green?style=for-the-badge)](https://img.shields.io/badge/version-v1.11-green?style=for-the-badge)
+[![](https://img.shields.io/badge/version-v1.12-green?style=for-the-badge)](https://img.shields.io/badge/version-v1.12-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/appid/AppID.alfredworkflow)
 [![](https://img.shields.io/badge/Install%20In%20Alfred-8A2BE2?style=for-the-badge)](https://alfred.app/workflows/alanhe/appid/install/)
 
