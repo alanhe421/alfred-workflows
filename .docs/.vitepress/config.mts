@@ -54,4 +54,7 @@ export default defineConfig({
   async transformHead(context) {
     return handleHeadMeta(context)
   },
+  sitemap: {
+    hostname: 'https://alfred.1991421.cn',
+  }
 });
