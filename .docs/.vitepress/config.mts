@@ -1,5 +1,6 @@
 import { defineConfig } from 'vitepress';
 import { workflowMetaInfos } from '../init-md.mjs';
+import { handleHeadMeta } from './theme/handleHeadMeta';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -13,6 +14,7 @@ export default defineConfig({
       rel: 'shortcut icon',
       href: 'https://content.invisioncic.com/r229491/monthly_2017_07/favicon.ico.25cb7af4f019e1868fe63bd83ed0d40c.ico',
     }],
+
   ],
   themeConfig: {
     logo: '/appicon.png',
@@ -49,4 +51,7 @@ export default defineConfig({
     },
   },
   lastUpdated: true,
+  async transformHead(context) {
+    return handleHeadMeta(context)
+  },
 });
