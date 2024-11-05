@@ -52,7 +52,7 @@ jobs:
       - name: Deploy VPS
         run: |
           ssh-keyscan 1991421.cn >> ~/.ssh/known_hosts
-          rsync -az -vv --delete -e 'ssh -p ${{ secrets.BLOG_DEPLOY_PORT }}' docs root@1991421.cn:/var/www/alfred
+          rsync -az -vv --delete -e 'ssh -p ${{ secrets.BLOG_DEPLOY_PORT }}' .docs/.vitepress/dist root@1991421.cn:/var/www/alfred
       - name: Notify
         uses: appleboy/telegram-action@master
         with:

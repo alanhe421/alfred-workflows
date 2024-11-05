@@ -8,7 +8,7 @@ export default defineConfig({
   base: '/',
   description: 'workflows for alfred',
   lang: 'en-US',
-  outDir: '../docs',
+  // outDir: '../docs',
   head: [
     ['link', {
       rel: 'shortcut icon',
