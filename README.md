@@ -139,7 +139,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 ### 15. [Eudic Tools](https://github.com/alanhg/alfred-workflows/tree/master/eudic-tools)
 > Enhance Eudic
 
-[![](https://img.shields.io/badge/version-v1.2-green?style=for-the-badge)](https://img.shields.io/badge/version-v1.2-green?style=for-the-badge)
+[![](https://img.shields.io/badge/version-v1.3-green?style=for-the-badge)](https://img.shields.io/badge/version-v1.3-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/eudic-tools/Eudic%20Tools.alfredworkflow)
 
 
