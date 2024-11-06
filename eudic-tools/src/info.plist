@@ -190,7 +190,7 @@ end tell</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
-				<integer>0</integer>
+				<integer>2</integer>
 				<key>relatedApps</key>
 				<array>
 					<string>com.eusoft.eudic</string>
@@ -224,7 +224,8 @@ end alfred_script</string>
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>&gt; Hotkeys for triggering some operations in Eudic.
+	<string># Eudic Tools
+&gt; Hotkeys for triggering some operations in Eudic.
 
 ## Requirement
 
@@ -233,9 +234,12 @@ install eudic app
 https://www.eudic.net/v4/en/app/download
 
 ## Usage
-1. Use `⌥ ⌘ e` after selecting a word to look it up.If it's a sentence, it will automatically enter the Eduic translation.This is the processing logic of the Eudic and cannot be changed.
-2. Use `⌘ ⇧ s` after selecting a word to speak it.
-3. Type keyword `eudic` and word to look it up.</string>
+
+1. support type keyword `eudic` to search word
+2. suport hotkey to search selected word. Recommend set `⌥ ⌘ e`.
+3. support hotkey to speak selected word. Recommend set `⌘ ⇧ s`
+
+For search feat. If it's a sentence, it will automatically enter the Eduic translation.This is the processing logic of the Eudic and cannot be changed.</string>
 	<key>uidata</key>
 	<dict>
 		<key>1D4602C0-5DDC-4744-B79A-68E9A436D2BA</key>
@@ -291,7 +295,7 @@ https://www.eudic.net/v4/en/app/download
 			<key>config</key>
 			<dict>
 				<key>default</key>
-				<string>eudic</string>
+				<string></string>
 				<key>placeholder</key>
 				<string></string>
 				<key>required</key>
@@ -300,7 +304,7 @@ https://www.eudic.net/v4/en/app/download
 				<true/>
 			</dict>
 			<key>description</key>
-			<string></string>
+			<string>recommend set eudic as keyword</string>
 			<key>label</key>
 			<string>keyword</string>
 			<key>type</key>
@@ -312,7 +316,7 @@ https://www.eudic.net/v4/en/app/download
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.2</string>
+	<string>1.3</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/eudic-tools</string>
 </dict>
