@@ -4,12 +4,16 @@ on:
   push:
     branches: [ master ]
     paths:
-      - '**/*.md'
+      - '*/*.md'
       - '.docs/**/*'
   workflow_dispatch:
     inputs:
       message:
         description: 'Test scenario tags'
+  workflow_run:
+    workflows: ["Update Workflow Version"]
+    types:
+      - completed
 jobs:
   build:
 
