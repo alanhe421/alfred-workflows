@@ -991,7 +991,8 @@
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>&gt; 腾讯工蜂项目检索
+	<string># Git Code
+&gt; 腾讯工蜂项目检索
 
 
 ## Requirement
@@ -1269,17 +1270,17 @@ example:{{title}},{{state}},{{description}}</string>
 	</dict>
 	<key>variablesdontexport</key>
 	<array>
-		<string>base_url_3</string>
+		<string>access_token_2</string>
 		<string>base_url_2</string>
 		<string>base_url_1</string>
 		<string>access_token_3</string>
 		<string>access_token_1</string>
 		<string>score_2</string>
 		<string>score_1</string>
-		<string>access_token_2</string>
+		<string>base_url_3</string>
 	</array>
 	<key>version</key>
-	<string>1.20</string>
+	<string>1.21</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/git-code</string>
 </dict>
