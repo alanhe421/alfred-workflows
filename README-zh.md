@@ -352,7 +352,7 @@ P.S.: 使用这些Workflow的前提是已购买[Powerpack](https://www.alfredapp
 ### 42. [Alfred Remote](https://github.com/alanhg/alfred-workflows/tree/master/remote)
 > remote enhancer
 
-[![](https://img.shields.io/badge/version-v0.1-green?style=for-the-badge)](https://img.shields.io/badge/version-v0.1-green?style=for-the-badge)
+[![](https://img.shields.io/badge/version-v0.2-green?style=for-the-badge)](https://img.shields.io/badge/version-v0.2-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/remote/Alfred%20Remote.alfredworkflow)
 
 
