@@ -99,7 +99,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>/usr/local/bin/node ./index.js {query}</string>
+				<string>node ./index.js {query}</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -118,7 +118,7 @@
 			<key>config</key>
 			<dict>
 				<key>acceptsmulti</key>
-				<true/>
+				<integer>1</integer>
 				<key>filetypes</key>
 				<array>
 					<string>public.folder</string>
@@ -155,6 +155,8 @@
 				</array>
 				<key>elselabel</key>
 				<string>else</string>
+				<key>hideelse</key>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.conditional</string>
@@ -186,7 +188,8 @@
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>Select the folder and import workflows in batches
+	<string># Batch Import Workflows
+Select the folder and import workflows in batches
 
 ## install
 - NodeJS</string>
@@ -195,44 +198,46 @@
 		<key>550EA28F-31DD-4515-92F3-D0F1CB621FF2</key>
 		<dict>
 			<key>xpos</key>
-			<integer>665</integer>
+			<real>665</real>
 			<key>ypos</key>
-			<integer>50</integer>
+			<real>50</real>
 		</dict>
 		<key>567637F0-9619-4E50-AA44-2044687F3FF2</key>
 		<dict>
 			<key>xpos</key>
-			<integer>505</integer>
+			<real>505</real>
 			<key>ypos</key>
-			<integer>80</integer>
+			<real>80</real>
 		</dict>
 		<key>6C2FA6A1-84B1-4037-8C84-63A20AA61FAA</key>
 		<dict>
 			<key>xpos</key>
-			<integer>75</integer>
+			<real>75</real>
 			<key>ypos</key>
-			<integer>65</integer>
+			<real>65</real>
 		</dict>
 		<key>724E6A67-A811-4F5D-9F6B-443291C62660</key>
 		<dict>
 			<key>xpos</key>
-			<integer>665</integer>
+			<real>665</real>
 			<key>ypos</key>
-			<integer>225</integer>
+			<real>225</real>
 		</dict>
 		<key>DF84B031-B90D-47EC-B51D-C4BB7CE88AFF</key>
 		<dict>
 			<key>xpos</key>
-			<integer>335</integer>
+			<real>335</real>
 			<key>ypos</key>
-			<integer>60</integer>
+			<real>60</real>
 		</dict>
 	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.0.0</string>
+	<string>1.1</string>
 	<key>webaddress</key>
-	<string>https://1991421.cn</string>
+	<string>https://github.com/alanhe421/alfred-workflows/tree/master/batch-import-workflows</string>
 </dict>
 </plist>

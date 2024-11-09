@@ -1,3 +1,4 @@
+# Batch Import Workflows
 Select the folder and import workflows in batches
 
 ## install
@@ -5,7 +6,7 @@ Select the folder and import workflows in batches
 
 
 
-[![](https://img.shields.io/badge/version-v1.0.0-green?style=for-the-badge)](https://img.shields.io/badge/version-v1.0.0-green?style=for-the-badge)
+[![](https://img.shields.io/badge/version-v1.1-green?style=for-the-badge)](https://img.shields.io/badge/version-v1.1-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/batch-import-workflows/Batch%20Import%20Workflows.alfredworkflow)
 
 
