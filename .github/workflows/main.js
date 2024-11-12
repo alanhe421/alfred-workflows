@@ -46,12 +46,14 @@ async function updateHomeReadme(items) {
       ...map];
     const workflowsListStr = workflowList.join('\n');
 
-    console.log('discussionCount',discussionCount);
+    console.log('discussionCount', discussionCount);
 
+
+    console.log('readmeContent-before', readmeContent);
     const newReadmeContent = readmeContent
       .replace(/(?<=<!--workflow-start-->)[\s\S]*(?=<!--workflow-end-->)/, workflowsListStr)
       .replace(/(?<=<!--readme:discussionCount-start-->)[\s\S]+(?=<!--readme:discussionCount-end-->)/, `${discussionCount}`);
-
+    console.log('readmeContent-after', newReadmeContent);
     fs.writeFileSync(filePath, newReadmeContent);
   }
 }
