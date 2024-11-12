@@ -50,7 +50,7 @@ async function updateHomeReadme(items) {
 
     const newReadmeContent = readmeContent
       .replace(/(?<=<!--workflow-start-->)[\s\S]*(?=<!--workflow-end-->)/, workflowsListStr)
-      .replace(/(?<=<!--readme:discussionCount-start-->)[\s\S]+(?=<!--readme:discussionCount-end-->)/, `${Numbers.toEmoji(discussionCount)}`);
+      .replace(/(?<=<!--readme:discussionCount-start-->)[\s\S]+(?=<!--readme:discussionCount-end-->)/, `${discussionCount}`);
 
     fs.writeFileSync(filePath, newReadmeContent);
   }
