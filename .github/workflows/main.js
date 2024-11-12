@@ -5,6 +5,7 @@ const plist = require('plist');
 const Numbers = require('number-to-emoji');
 const [, , action] = process.argv;
 const querystring = require('querystring');
+const {discussionCount} = process.env;
 
 /**
  * 输出workflow-name到固定文件，CI需要,之后走CI解析yaml，做到动态更新
@@ -22,6 +23,7 @@ function writeWorkflowNameOptions(items) {
  * https://docs.github.com/en/enterprise-cloud@latest/actions/learn-github-actions/environment-variables#default-environment-variables
  *
  * @param {{name,path}[]} items
+ * @return {Promise<void>}
  */
 async function updateHomeReadme(items) {
   const docs = ['README.md', 'README-zh.md'];
@@ -43,7 +45,13 @@ async function updateHomeReadme(items) {
     const workflowList = [isEn ? `There are ${Numbers.toEmoji(items.length)} workflows` : `共${Numbers.toEmoji(items.length)}个`,
       ...map];
     const workflowsListStr = workflowList.join('\n');
-    const newReadmeContent = readmeContent.replace(/(?<=<!--workflow-start-->)[\s\S]*(?=<!--workflow-end-->)/, workflowsListStr)
+
+    console.log('discussionCount',discussionCount);
+
+    const newReadmeContent = readmeContent
+      .replace(/(?<=<!--workflow-start-->)[\s\S]*(?=<!--workflow-end-->)/, workflowsListStr)
+      .replace(/(?<=<!--readme:discussionCount-start-->)[\s\S]+(?=<!--readme:discussionCount-end-->)/, `${Numbers.toEmoji(111)}`);
+
     fs.writeFileSync(filePath, newReadmeContent);
   }
 }

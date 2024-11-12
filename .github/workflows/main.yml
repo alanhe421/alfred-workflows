@@ -67,8 +67,15 @@ jobs:
       #          TIMEZONE: "Asia/Shanghai"
       #          SHOW_TOTAL_CONTRIBUTIONS: "True"
       - run: npm install plist
+      - name: Discussion Count
+        id: repo-discussion
+        uses: alanhe421/repo-discussion-count-action@master
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
       - name: Refresh Workflow Version
         run:  node .github/workflows/main.js updateHomePage
+        env:
+          discussionCount: ${{ steps.repo-discussion.outputs.discussionCount }}
       - name: Build
         run: |
           git add .
