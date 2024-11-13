@@ -477,7 +477,18 @@ P.S.: 使用这些Workflow的前提是已购买[Powerpack](https://www.alfredapp
 这里我记录了平时遇到的一些小技巧，小问题。
 
 欢迎到 ➡️ [Discussion](https://github.com/alanhg/alfred-workflows/discussions)🔥
-<!--readme:discussionCount-start-->142<!--readme:discussionCount-end-->
+<!-- readme:discussionCount-start -->
+<table>
+<tr>
+    <td align="center">
+        <a href="https://github.com/discussioncount">
+            <img src="" width="100;" alt="discussioncount"/>
+            <br />
+            <sub><b>Discussioncount</b></sub>
+        </a>
+    </td></tr>
+</table>
+<!-- readme:discussionCount-end -->
 交流
 
 ## 赞助
