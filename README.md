@@ -477,7 +477,18 @@ I developed the following SDK to improve workflow development efficiency.
 ## FAQ
 
 Welcome ➡️ [Discussion](https://github.com/alanhg/alfred-workflows/discussions)🔥
-<!--readme:discussionCount-start-->142<!--readme:discussionCount-end-->
+<!-- readme:discussionCount-start -->
+<table>
+<tr>
+    <td align="center">
+        <a href="https://github.com/discussioncount">
+            <img src="" width="100;" alt="discussioncount"/>
+            <br />
+            <sub><b>Discussioncount</b></sub>
+        </a>
+    </td></tr>
+</table>
+<!-- readme:discussionCount-end -->
 
 ## Sponsor
 
