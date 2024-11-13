@@ -26,378 +26,441 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 
 ## Workflows
 
-<!--workflow-start-->There are 5️⃣5️⃣ workflows
+<!--workflow-start-->There are 5️⃣6️⃣ workflows
 
 ### 1. [2FA-Read Code](https://github.com/alanhg/alfred-workflows/tree/master/2fa-read-code)
-
 > Read authentication code in your recent messages or current clipboard
 
 [![](https://img.shields.io/badge/version-v1.14-green?style=for-the-badge)](https://img.shields.io/badge/version-v1.14-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/2fa-read-code/2FA-Read%20Code.alfredworkflow)
 [![](https://img.shields.io/badge/Install%20In%20Alfred-8A2BE2?style=for-the-badge)](https://alfred.app/workflows/alanhe/2fa-read-code/install/)
 
-### 2. [About Mac](https://github.com/alanhg/alfred-workflows/tree/master/about-mac)
 
+### 2. [About Mac](https://github.com/alanhg/alfred-workflows/tree/master/about-mac)
 > About This Mac
 
 [![](https://img.shields.io/badge/version-v1.23-green?style=for-the-badge)](https://img.shields.io/badge/version-v1.23-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/about-mac/About%20Mac.alfredworkflow)
 [![](https://img.shields.io/badge/Install%20In%20Alfred-8A2BE2?style=for-the-badge)](https://alfred.app/workflows/alanhe/about-mac/install/)
 
-### 3. [Airdrop](https://github.com/alanhg/alfred-workflows/tree/master/airdrop)
 
+### 3. [Airdrop](https://github.com/alanhg/alfred-workflows/tree/master/airdrop)
 > Share Files With AirDrop
 
 [![](https://img.shields.io/badge/version-v1.9-green?style=for-the-badge)](https://img.shields.io/badge/version-v1.9-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/airdrop/Airdrop.alfredworkflow)
 
-### 4. [AppID](https://github.com/alanhg/alfred-workflows/tree/master/appid)
 
+
+### 4. [AppID](https://github.com/alanhg/alfred-workflows/tree/master/appid)
 > Show ID, Version, Icon of installed apps
 
 [![](https://img.shields.io/badge/version-v1.12-green?style=for-the-badge)](https://img.shields.io/badge/version-v1.12-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/appid/AppID.alfredworkflow)
 [![](https://img.shields.io/badge/Install%20In%20Alfred-8A2BE2?style=for-the-badge)](https://alfred.app/workflows/alanhe/appid/install/)
 
+
 ### 5. [AppleScript Tools](https://github.com/alanhg/alfred-workflows/tree/master/apple-script)
 
 [![](https://img.shields.io/badge/version-v0.1.0-green?style=for-the-badge)](https://img.shields.io/badge/version-v0.1.0-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/apple-script/AppleScript%20Tools.alfredworkflow)
 
-### 6. [Batch Import Workflows](https://github.com/alanhg/alfred-workflows/tree/master/batch-import-workflows)
 
+
+### 6. [Batch Import Workflows](https://github.com/alanhg/alfred-workflows/tree/master/batch-import-workflows)
 > import workflows
 
 [![](https://img.shields.io/badge/version-v1.1-green?style=for-the-badge)](https://img.shields.io/badge/version-v1.1-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/batch-import-workflows/Batch%20Import%20Workflows.alfredworkflow)
 
-### 7. [Bluetooth Manager](https://github.com/alanhg/alfred-workflows/tree/master/bluetooth-manager)
 
+
+### 7. [Bluetooth Manager](https://github.com/alanhg/alfred-workflows/tree/master/bluetooth-manager)
 > Connect and disconnect a bluetooth device easily
 
 [![](https://img.shields.io/badge/version-v1.0.1-green?style=for-the-badge)](https://img.shields.io/badge/version-v1.0.1-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/bluetooth-manager/Bluetooth%20Manager.alfredworkflow)
 
-### 8. [Brightness Control](https://github.com/alanhg/alfred-workflows/tree/master/brightness-control)
 
+
+### 8. [Brightness Control](https://github.com/alanhg/alfred-workflows/tree/master/brightness-control)
 > Brightness down or up
 
 [![](https://img.shields.io/badge/version-v0.6-green?style=for-the-badge)](https://img.shields.io/badge/version-v0.6-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/brightness-control/Brightness%20Control.alfredworkflow)
 
-### 9. [ChatGPT Enhancer](https://github.com/alanhg/alfred-workflows/tree/master/chatgpt-enhancer)
 
+
+### 9. [ChatGPT Enhancer](https://github.com/alanhg/alfred-workflows/tree/master/chatgpt-enhancer)
 > Make ChatGPT App more productive
 
 [![](https://img.shields.io/badge/version-v0.4-green?style=for-the-badge)](https://img.shields.io/badge/version-v0.4-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/chatgpt-enhancer/ChatGPT%20Enhancer.alfredworkflow)
 
-### 10. [Clipboard History](https://github.com/alanhg/alfred-workflows/tree/master/clipboard-history)
 
+
+### 10. [Clipboard History](https://github.com/alanhg/alfred-workflows/tree/master/clipboard-history)
 > clear clipboard history
 
 [![](https://img.shields.io/badge/version-v0.2-green?style=for-the-badge)](https://img.shields.io/badge/version-v0.2-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/clipboard-history/Clipboard%20History.alfredworkflow)
 
-### 11. [Compress](https://github.com/alanhg/alfred-workflows/tree/master/compress-gif)
 
+
+### 11. [Compress](https://github.com/alanhg/alfred-workflows/tree/master/compress-gif)
 > Compress GIF, WebP, JPEG and PNG Size
 
 [![](https://img.shields.io/badge/version-v3.0-green?style=for-the-badge)](https://img.shields.io/badge/version-v3.0-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/compress-gif/Compress.alfredworkflow)
+
+
 
 ### 12. [ConvertIO](https://github.com/alanhg/alfred-workflows/tree/master/convertio)
 
 [![](https://img.shields.io/badge/version-v0.4-green?style=for-the-badge)](https://img.shields.io/badge/version-v0.4-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/convertio/ConvertIO.alfredworkflow)
 
+
+
 ### 13. [Copy Files to The frontmost Finder](https://github.com/alanhg/alfred-workflows/tree/master/copy-files-to-frontmost-finder)
 
 [![](https://img.shields.io/badge/version-v0.1-green?style=for-the-badge)](https://img.shields.io/badge/version-v0.1-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/copy-files-to-frontmost-finder/Copy%20Files%20to%20The%20frontmost%20Finder.alfredworkflow)
 
-### 14. [DO NOT DISTURB](https://github.com/alanhg/alfred-workflows/tree/master/do-not-disturb)
 
+
+### 14. [DO NOT DISTURB](https://github.com/alanhg/alfred-workflows/tree/master/do-not-disturb)
 > dnd
 
 [![](https://img.shields.io/badge/version-v1.2-green?style=for-the-badge)](https://img.shields.io/badge/version-v1.2-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/do-not-disturb/DO%20NOT%20DISTURB.alfredworkflow)
 
-### 15. [Eudic Tools](https://github.com/alanhg/alfred-workflows/tree/master/eudic-tools)
 
+
+### 15. [Eudic Tools](https://github.com/alanhg/alfred-workflows/tree/master/eudic-tools)
 > Enhance Eudic
 
 [![](https://img.shields.io/badge/version-v1.3-green?style=for-the-badge)](https://img.shields.io/badge/version-v1.3-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/eudic-tools/Eudic%20Tools.alfredworkflow)
 
-### 16. [File Enhancer](https://github.com/alanhg/alfred-workflows/tree/master/file-enhancer)
 
+
+### 16. [File Enhancer](https://github.com/alanhg/alfred-workflows/tree/master/file-enhancer)
 > Copy your file details—name, size, and data conversion.
 
 [![](https://img.shields.io/badge/version-v1.6-green?style=for-the-badge)](https://img.shields.io/badge/version-v1.6-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/file-enhancer/File%20Enhancer.alfredworkflow)
+
+
 
 ### 17. [Find iPhone](https://github.com/alanhg/alfred-workflows/tree/master/find-my-iphone)
 
 [![](https://img.shields.io/badge/version-v0.4-green?style=for-the-badge)](https://img.shields.io/badge/version-v0.4-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/find-my-iphone/Find%20iPhone.alfredworkflow)
 
-### 18. [Giphy](https://github.com/alanhg/alfred-workflows/tree/master/giphy)
 
+
+### 18. [Giphy](https://github.com/alanhg/alfred-workflows/tree/master/giphy)
 > Search Giphy for animated gifs
 
 [![](https://img.shields.io/badge/version-v1.2-green?style=for-the-badge)](https://img.shields.io/badge/version-v1.2-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/giphy/Giphy.alfredworkflow)
 
-### 19. [Git Code](https://github.com/alanhg/alfred-workflows/tree/master/git-code)
 
+
+### 19. [Git Code](https://github.com/alanhg/alfred-workflows/tree/master/git-code)
 > TGit Search
 
 [![](https://img.shields.io/badge/version-v1.21-green?style=for-the-badge)](https://img.shields.io/badge/version-v1.21-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/git-code/Git%20Code.alfredworkflow)
 
-### 20. [Resize Image](https://github.com/alanhg/alfred-workflows/tree/master/img-resize)
 
+
+### 20. [Resize Image](https://github.com/alanhg/alfred-workflows/tree/master/img-resize)
 > resize according to specified resolution
 
 [![](https://img.shields.io/badge/version-v0.2-green?style=for-the-badge)](https://img.shields.io/badge/version-v0.2-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/img-resize/Resize%20Image.alfredworkflow)
 
-### 21. [IP Tools](https://github.com/alanhg/alfred-workflows/tree/master/ip-tools)
 
+
+### 21. [IP Tools](https://github.com/alanhg/alfred-workflows/tree/master/ip-tools)
 > IP lookup
 
 [![](https://img.shields.io/badge/version-v0.1-green?style=for-the-badge)](https://img.shields.io/badge/version-v0.1-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/ip-tools/IP%20Tools.alfredworkflow)
 
-### 22. [JSON View](https://github.com/alanhg/alfred-workflows/tree/master/json-view)
 
+
+### 22. [JSON View](https://github.com/alanhg/alfred-workflows/tree/master/json-view)
 > Pretty JSON
 
 [![](https://img.shields.io/badge/version-v0.2-green?style=for-the-badge)](https://img.shields.io/badge/version-v0.2-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/json-view/JSON%20View.alfredworkflow)
 
-### 23. [Json2TS](https://github.com/alanhg/alfred-workflows/tree/master/json2Ts)
 
+
+### 23. [Json2TS](https://github.com/alanhg/alfred-workflows/tree/master/json2Ts)
 > generate TypeScript interfaces from JSON
 
 [![](https://img.shields.io/badge/version-v1.3-green?style=for-the-badge)](https://img.shields.io/badge/version-v1.3-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/json2Ts/Json2TS.alfredworkflow)
 
-### 24. [Local Network](https://github.com/alanhg/alfred-workflows/tree/master/local-network)
 
+
+### 24. [Local Network](https://github.com/alanhg/alfred-workflows/tree/master/local-network)
 > display local network info
 
 [![](https://img.shields.io/badge/version-v0.3-green?style=for-the-badge)](https://img.shields.io/badge/version-v0.3-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/local-network/Local%20Network.alfredworkflow)
 
-### 25. [Mac Enhancer](https://github.com/alanhg/alfred-workflows/tree/master/mac-enhancer)
 
+
+### 25. [Mac Enhancer](https://github.com/alanhg/alfred-workflows/tree/master/mac-enhancer)
 > enhance Mac
 
 [![](https://img.shields.io/badge/version-v1.11-green?style=for-the-badge)](https://img.shields.io/badge/version-v1.11-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/mac-enhancer/Mac%20Enhancer.alfredworkflow)
 
-### 26. [Medium Tools](https://github.com/alanhg/alfred-workflows/tree/master/medium-publisher)
 
+
+### 26. [Medium Tools](https://github.com/alanhg/alfred-workflows/tree/master/medium-publisher)
 > using Medium’s API
 
 [![](https://img.shields.io/badge/version-v1.8-green?style=for-the-badge)](https://img.shields.io/badge/version-v1.8-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/medium-publisher/Medium%20Tools.alfredworkflow)
 
-### 27. [Meeting](https://github.com/alanhg/alfred-workflows/tree/master/meeting)
 
+
+### 27. [Meeting](https://github.com/alanhg/alfred-workflows/tree/master/meeting)
 > quick to meeting
 
 [![](https://img.shields.io/badge/version-v0.9-green?style=for-the-badge)](https://img.shields.io/badge/version-v0.9-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/meeting/Meeting.alfredworkflow)
 
-### 28. [Mount Volume](https://github.com/alanhg/alfred-workflows/tree/master/mount-volume)
 
+
+### 28. [Mount Volume](https://github.com/alanhg/alfred-workflows/tree/master/mount-volume)
 > connect to server quickly
 
 [![](https://img.shields.io/badge/version-v1.3-green?style=for-the-badge)](https://img.shields.io/badge/version-v1.3-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/mount-volume/Mount%20Volume.alfredworkflow)
 
-### 29. [Multimedia Convert](https://github.com/alanhg/alfred-workflows/tree/master/multimedia-convert)
 
+
+### 29. [Multimedia Convert](https://github.com/alanhg/alfred-workflows/tree/master/multimedia-convert)
 > MOV,MP4
 
 [![](https://img.shields.io/badge/version-v0.2-green?style=for-the-badge)](https://img.shields.io/badge/version-v0.2-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/multimedia-convert/Multimedia%20Convert.alfredworkflow)
 
-### 30. [My iPhones](https://github.com/alanhg/alfred-workflows/tree/master/my-iphones)
 
+
+### 30. [My iPhones](https://github.com/alanhg/alfred-workflows/tree/master/my-iphones)
 > display history
 
 [![](https://img.shields.io/badge/version-v0.1-green?style=for-the-badge)](https://img.shields.io/badge/version-v0.1-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/my-iphones/My%20iPhones.alfredworkflow)
 
-### 31. [New File](https://github.com/alanhg/alfred-workflows/tree/master/new-file)
 
+
+### 31. [New File](https://github.com/alanhg/alfred-workflows/tree/master/new-file)
 > Quickly create file
 
 [![](https://img.shields.io/badge/version-v1.2-green?style=for-the-badge)](https://img.shields.io/badge/version-v1.2-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/new-file/New%20File.alfredworkflow)
 
-### 32. [OCR](https://github.com/alanhg/alfred-workflows/tree/master/ocr)
 
+
+### 32. [OCR](https://github.com/alanhg/alfred-workflows/tree/master/ocr)
 > Get the text in the screenshot to the clipboard
 
 [![](https://img.shields.io/badge/version-v3.0-green?style=for-the-badge)](https://img.shields.io/badge/version-v3.0-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/ocr/OCR.alfredworkflow)
 [![](https://img.shields.io/badge/Install%20In%20Alfred-8A2BE2?style=for-the-badge)](https://alfred.app/workflows/alanhe/ocr/install/)
 
-### 33. [Open Chrome Profile](https://github.com/alanhg/alfred-workflows/tree/master/open-chrome-profile)
 
+### 33. [Open Chrome Profile](https://github.com/alanhg/alfred-workflows/tree/master/open-chrome-profile)
 > Get all available chrome profiles and open the selected
 
 [![](https://img.shields.io/badge/version-v0.11-green?style=for-the-badge)](https://img.shields.io/badge/version-v0.11-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/open-chrome-profile/Open%20Chrome%20Profile.alfredworkflow)
 [![](https://img.shields.io/badge/Install%20In%20Alfred-8A2BE2?style=for-the-badge)](https://alfred.app/workflows/alanhe/open-chrome-profile/install/)
 
-### 34. [OpenConnect VPN](https://github.com/alanhg/alfred-workflows/tree/master/openconnect-vpn)
 
+### 34. [Open with Application](https://github.com/alanhg/alfred-workflows/tree/master/open-with-application)
+> Hotkey trigger
+
+[![](https://img.shields.io/badge/version-v0.1-green?style=for-the-badge)](https://img.shields.io/badge/version-v0.1-green?style=for-the-badge)
+[![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/open-with-application/Open%20with%20Application.alfredworkflow)
+
+
+
+### 35. [OpenConnect VPN](https://github.com/alanhg/alfred-workflows/tree/master/openconnect-vpn)
 > Connect to VPN
 
 [![](https://img.shields.io/badge/version-v1.3-green?style=for-the-badge)](https://img.shields.io/badge/version-v1.3-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/openconnect-vpn/OpenConnect%20VPN.alfredworkflow)
 
-### 35. [Paste into files](https://github.com/alanhg/alfred-workflows/tree/master/paste-into-files)
+
+
+### 36. [Paste into files](https://github.com/alanhg/alfred-workflows/tree/master/paste-into-files)
 
 [![](https://img.shields.io/badge/version-v1.2-green?style=for-the-badge)](https://img.shields.io/badge/version-v1.2-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/paste-into-files/Paste%20into%20files.alfredworkflow)
 
-### 36. [PDF Converter](https://github.com/alanhg/alfred-workflows/tree/master/pdf-converter)
 
+
+### 37. [PDF Converter](https://github.com/alanhg/alfred-workflows/tree/master/pdf-converter)
 > convert pdf to docx
 
 [![](https://img.shields.io/badge/version-v0.1-green?style=for-the-badge)](https://img.shields.io/badge/version-v0.1-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/pdf-converter/PDF%20Converter.alfredworkflow)
 
-### 37. [Pic Uploader](https://github.com/alanhg/alfred-workflows/tree/master/pic-uploader)
 
+
+### 38. [Pic Uploader](https://github.com/alanhg/alfred-workflows/tree/master/pic-uploader)
 > upload pic
 
 [![](https://img.shields.io/badge/version-v2.8-green?style=for-the-badge)](https://img.shields.io/badge/version-v2.8-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/pic-uploader/Pic%20Uploader.alfredworkflow)
 
-### 38. [Process](https://github.com/alanhg/alfred-workflows/tree/master/process)
 
+
+### 39. [Process](https://github.com/alanhg/alfred-workflows/tree/master/process)
 > List All Process
 
 [![](https://img.shields.io/badge/version-v0.2-green?style=for-the-badge)](https://img.shields.io/badge/version-v0.2-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/process/Process.alfredworkflow)
 
-### 39. [ProgressBar](https://github.com/alanhg/alfred-workflows/tree/master/progress-bar)
 
+
+### 40. [ProgressBar](https://github.com/alanhg/alfred-workflows/tree/master/progress-bar)
 > shows you exactly how much of the life, year, month and day has progressed
 
 [![](https://img.shields.io/badge/version-v1.1-green?style=for-the-badge)](https://img.shields.io/badge/version-v1.1-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/progress-bar/ProgressBar.alfredworkflow)
 
-### 40. [QR Reader](https://github.com/alanhg/alfred-workflows/tree/master/qr-reader)
 
+
+### 41. [QR Reader](https://github.com/alanhg/alfred-workflows/tree/master/qr-reader)
 > Read QR Code
 
 [![](https://img.shields.io/badge/version-v0.6-green?style=for-the-badge)](https://img.shields.io/badge/version-v0.6-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/qr-reader/QR%20Reader.alfredworkflow)
 [![](https://img.shields.io/badge/Install%20In%20Alfred-8A2BE2?style=for-the-badge)](https://alfred.app/workflows/alanhe/qr-reader/install/)
 
-### 41. [Generate Image](https://github.com/alanhg/alfred-workflows/tree/master/ray-so)
 
+### 42. [Generate Image](https://github.com/alanhg/alfred-workflows/tree/master/ray-so)
 > Create beautiful images of your code using ray.so
 
 [![](https://img.shields.io/badge/version-v0.4-green?style=for-the-badge)](https://img.shields.io/badge/version-v0.4-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/ray-so/Generate%20Image.alfredworkflow)
 
-### 42. [Alfred Remote](https://github.com/alanhg/alfred-workflows/tree/master/remote)
 
+
+### 43. [Alfred Remote](https://github.com/alanhg/alfred-workflows/tree/master/remote)
 > remote enhancer
 
 [![](https://img.shields.io/badge/version-v0.2-green?style=for-the-badge)](https://img.shields.io/badge/version-v0.2-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/remote/Alfred%20Remote.alfredworkflow)
 
-### 43. [RGB-Hex converter](https://github.com/alanhg/alfred-workflows/tree/master/rgb-hex-converter)
 
+
+### 44. [RGB-Hex converter](https://github.com/alanhg/alfred-workflows/tree/master/rgb-hex-converter)
 > convert color format
 
 [![](https://img.shields.io/badge/version-v1.0-green?style=for-the-badge)](https://img.shields.io/badge/version-v1.0-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/rgb-hex-converter/RGB-Hex%20converter.alfredworkflow)
 
-### 44. [SQL Formatter](https://github.com/alanhg/alfred-workflows/tree/master/sql-formatter)
 
+
+### 45. [SQL Formatter](https://github.com/alanhg/alfred-workflows/tree/master/sql-formatter)
 > pretty-printing SQL queries
 
 [![](https://img.shields.io/badge/version-v0.1-green?style=for-the-badge)](https://img.shields.io/badge/version-v0.1-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/sql-formatter/SQL%20Formatter.alfredworkflow)
 
-### 45. [SSH Utils](https://github.com/alanhg/alfred-workflows/tree/master/ssh-utils)
+
+
+### 46. [SSH Utils](https://github.com/alanhg/alfred-workflows/tree/master/ssh-utils)
 
 [![](https://img.shields.io/badge/version-v0.2-green?style=for-the-badge)](https://img.shields.io/badge/version-v0.2-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/ssh-utils/SSH%20Utils.alfredworkflow)
 
-### 46. [String Manipulation](https://github.com/alanhg/alfred-workflows/tree/master/string-manipulation)
 
+
+### 47. [String Manipulation](https://github.com/alanhg/alfred-workflows/tree/master/string-manipulation)
 > Case switching
 
 [![](https://img.shields.io/badge/version-v0.9-green?style=for-the-badge)](https://img.shields.io/badge/version-v0.9-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/string-manipulation/String%20Manipulation.alfredworkflow)
 
-### 47. [Surge](https://github.com/alanhg/alfred-workflows/tree/master/surge)
 
+
+### 48. [Surge](https://github.com/alanhg/alfred-workflows/tree/master/surge)
 > Quick to Surge
 
 [![](https://img.shields.io/badge/version-v1.25-green?style=for-the-badge)](https://img.shields.io/badge/version-v1.25-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/surge/Surge.alfredworkflow)
 
-### 48. [Switch Audio](https://github.com/alanhg/alfred-workflows/tree/master/switch-audio)
 
+
+### 49. [Switch Audio](https://github.com/alanhg/alfred-workflows/tree/master/switch-audio)
 > Quickly switch sound output or input
 
 [![](https://img.shields.io/badge/version-v2.3-green?style=for-the-badge)](https://img.shields.io/badge/version-v2.3-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/switch-audio/Switch%20Audio.alfredworkflow)
 
-### 49. [System Settings](https://github.com/alanhg/alfred-workflows/tree/master/system-settings)
 
+
+### 50. [System Settings](https://github.com/alanhg/alfred-workflows/tree/master/system-settings)
 > Open macOS System Settings Panes
 
 [![](https://img.shields.io/badge/version-v1.0-green?style=for-the-badge)](https://img.shields.io/badge/version-v1.0-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/system-settings/System%20Settings.alfredworkflow)
 
-### 50. [Translate](https://github.com/alanhg/alfred-workflows/tree/master/translate)
+
+
+### 51. [Translate](https://github.com/alanhg/alfred-workflows/tree/master/translate)
 
 [![](https://img.shields.io/badge/version-v1.0-green?style=for-the-badge)](https://img.shields.io/badge/version-v1.0-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/translate/Translate.alfredworkflow)
 
-### 51. [Type Search](https://github.com/alanhg/alfred-workflows/tree/master/type-search)
+
+
+### 52. [Type Search](https://github.com/alanhg/alfred-workflows/tree/master/type-search)
 
 [![](https://img.shields.io/badge/version-v0.2-green?style=for-the-badge)](https://img.shields.io/badge/version-v0.2-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/type-search/Type%20Search.alfredworkflow)
 
-### 52. [UAParser](https://github.com/alanhg/alfred-workflows/tree/master/ua-parser)
 
+
+### 53. [UAParser](https://github.com/alanhg/alfred-workflows/tree/master/ua-parser)
 > User Agent Parser
 
 [![](https://img.shields.io/badge/version-v0.1-green?style=for-the-badge)](https://img.shields.io/badge/version-v0.1-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/ua-parser/UAParser.alfredworkflow)
 
-### 53. [video](https://github.com/alanhg/alfred-workflows/tree/master/video-tools)
 
+
+### 54. [video](https://github.com/alanhg/alfred-workflows/tree/master/video-tools)
 > tools for video
 
 [![](https://img.shields.io/badge/version-v0.1-green?style=for-the-badge)](https://img.shields.io/badge/version-v0.1-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/video-tools/video.alfredworkflow)
 
-### 54. [Whistle](https://github.com/alanhg/alfred-workflows/tree/master/whistle)
 
+
+### 55. [Whistle](https://github.com/alanhg/alfred-workflows/tree/master/whistle)
 > select rules
 
 [![](https://img.shields.io/badge/version-v2.16-green?style=for-the-badge)](https://img.shields.io/badge/version-v2.16-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/whistle/Whistle.alfredworkflow)
 
-### 55. [印象笔记](https://github.com/alanhg/alfred-workflows/tree/master/印象笔记)
 
+
+### 56. [印象笔记](https://github.com/alanhg/alfred-workflows/tree/master/印象笔记)
 > Use Evernote with Alfred
 
 [![](https://img.shields.io/badge/version-v1.0.2-green?style=for-the-badge)](https://img.shields.io/badge/version-v1.0.2-green?style=for-the-badge)
@@ -414,7 +477,7 @@ I developed the following SDK to improve workflow development efficiency.
 ## FAQ
 
 Welcome ➡️ [Discussion](https://github.com/alanhg/alfred-workflows/discussions)🔥
-<!--readme:discussionCount-start-->0<!--readme:discussionCount-end-->
+<!--readme:discussionCount-start-->142<!--readme:discussionCount-end-->
 
 ## Sponsor
 
