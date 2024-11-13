@@ -35,6 +35,23 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>jumpto</key>
+				<string>alfred.action.openwith</string>
+				<key>path</key>
+				<string>{query}</string>
+				<key>type</key>
+				<integer>100</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.actioninalfred</string>
+			<key>uid</key>
+			<string>017C26A2-F7FD-441C-8FC5-53FB279A1090</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -67,26 +84,11 @@
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>jumpto</key>
-				<string>alfred.action.openwith</string>
-				<key>path</key>
-				<string>{query}</string>
-				<key>type</key>
-				<integer>100</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.actioninalfred</string>
-			<key>uid</key>
-			<string>017C26A2-F7FD-441C-8FC5-53FB279A1090</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 	</array>
 	<key>readme</key>
-	<string>&gt; Select any file in Finder, and with a single click, access the “Open With” option to choose any application for opening the file.
+	<string># Open with Application
+
+&gt; Select any file in Finder, and with a single click, access the “Open With” option to choose any application for opening the file.
 
 
 ## Usage

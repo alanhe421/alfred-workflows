@@ -1,3 +1,5 @@
+# Open with Application
+
 > Select any file in Finder, and with a single click, access the “Open With” option to choose any application for opening the file.
 
 
