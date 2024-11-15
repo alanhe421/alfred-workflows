@@ -55,7 +55,7 @@ jobs:
           ssh-private-key: ${{ secrets.BLOG_DEPLOY_KEY }}
       - name: Deploy VPS
         run: |
-          ssh-keyscan 1991421.cn >> ~/.ssh/known_hosts
+          ssh-keyscan alfred.1991421.cn >> ~/.ssh/known_hosts
           rsync -az -vv --delete -e 'ssh -p ${{ secrets.BLOG_DEPLOY_PORT }}' .docs/.vitepress/dist root@1991421.cn:/var/www/alfred
       - name: Notify
         uses: appleboy/telegram-action@master
