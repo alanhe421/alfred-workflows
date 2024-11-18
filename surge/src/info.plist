@@ -670,6 +670,23 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>paths</key>
+				<array>
+					<string>/Applications/Surge.app</string>
+				</array>
+				<key>toggle</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.launchfiles</string>
+			<key>uid</key>
+			<string>B53E08CC-23B2-4106-BDA3-E59F7963BB1C</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -689,23 +706,6 @@
 			<string>D7FC2694-B93F-4F59-A2DF-BB59ACDA7200</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>paths</key>
-				<array>
-					<string>/Applications/Surge.app</string>
-				</array>
-				<key>toggle</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.launchfiles</string>
-			<key>uid</key>
-			<string>B53E08CC-23B2-4106-BDA3-E59F7963BB1C</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1277,30 +1277,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>node ./toggle-rule.js '{query}'
-echo -n '{query}'</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>A8B7F4BE-AC75-4422-824F-24CE3504A736</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -1344,6 +1320,30 @@ echo -n '{query}'</string>
 			<string>E78945D3-3452-4A45-A0B8-2A46BACB37B7</string>
 			<key>version</key>
 			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>node ./toggle-rule.js '{query}'
+echo -n '{query}'</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>A8B7F4BE-AC75-4422-824F-24CE3504A736</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1413,7 +1413,9 @@ echo -n '{query}'</string>
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>&gt; Surge Mac 4.0提供了HTTP API支持，因此终于可以打通外部App调用了。这里实现了Alfred的打通，比如快速切换代理模式等。
+	<string># Surge
+
+&gt; Surge Mac 4.0提供了HTTP API支持，因此终于可以打通外部App调用了。这里实现了Alfred的打通，比如快速切换代理模式等。
 
 ## 功能
 
@@ -1753,7 +1755,7 @@ Surge Mac 4.0.0、Surge iOS 4.4.0开始提供HTTP API, 即该版本之前的均�
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.25</string>
+	<string>1.26</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/surge</string>
 </dict>
