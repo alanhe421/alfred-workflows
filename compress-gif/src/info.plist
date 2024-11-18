@@ -305,7 +305,7 @@ file_name="${full_path##*/}"
 file="${file_name%.*}"
 target="$pth/$file-opt.gif"
 
-/usr/local/bin/gifsicle -i $full_path -O3 --colors $colors --scale $scale -o $target
+gifsicle -i "$full_path" -O3 --colors $colors --scale $scale -o "$target"
 
 echo $target</string>
 				<key>scriptargtype</key>
@@ -769,7 +769,8 @@ target="$pth/$file-opt.$suffix"
 
 crf=$(echo "($scale * 51 + 0.5) / 1" | bc -l | xargs printf "%.0f")
 
-ffmpeg -i "$filepath" -c:v libx264 -crf $crf -c:a copy -loglevel error "$target"
+# ffmpeg -i "$filepath" -c:v libx264 -crf $crf -c:a copy -loglevel error "$target"
+ffmpeg -i "$filepath" -c:v libx264 -crf $crf -c:a copy "$target"
 
 echo -n $?</string>
 				<key>scriptargtype</key>
@@ -882,7 +883,9 @@ echo -n $?</string>
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>&gt; Compress your GIF/Mov/MP4, support scale to convert compress ratio
+	<string># Compress
+
+&gt; Compress your GIF/Mov/MP4, support scale to convert compress ratio
 
 
 ## requirement
@@ -962,6 +965,8 @@ tinypng pricing
 		</dict>
 		<key>36314461-8FEE-479B-97F5-C9EFC23E8329</key>
 		<dict>
+			<key>note</key>
+			<string>gifsicle</string>
 			<key>xpos</key>
 			<real>715</real>
 			<key>ypos</key>
@@ -1132,7 +1137,7 @@ tinypng pricing
 			<key>config</key>
 			<dict>
 				<key>default</key>
-				<string>0.4</string>
+				<string>0.8</string>
 				<key>placeholder</key>
 				<string></string>
 				<key>required</key>
@@ -1153,7 +1158,7 @@ tinypng pricing
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>3.0</string>
+	<string>3.1</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/compress-gif</string>
 </dict>
