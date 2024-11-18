@@ -481,7 +481,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>open "https://chatgpt.com/?q={query}&amp;hints=search&amp;ref=ext"</string>
+				<string>open "https://chatgpt.com/?q={query}&amp;hints=search"</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -1093,7 +1093,8 @@
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>&gt; Make ChatGPT more productive by providing quick access and enhanced functionality.
+	<string># ChatGPT Enhancer
+&gt; Make ChatGPT more productive by providing quick access and enhanced functionality.
 
 ## Requirement
 
@@ -1377,7 +1378,7 @@ link: https://persistent.oaistatic.com/sidekick/public/ChatGPT_Desktop_public_la
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>0.4</string>
+	<string>0.5</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/chatgpt-enhancer</string>
 </dict>
