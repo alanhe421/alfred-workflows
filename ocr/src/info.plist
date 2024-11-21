@@ -47,8 +47,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>9C46ACFB-7D7B-4A4E-8650-7CFDCB0E25AC</key>
-		<array/>
 		<key>A2E6CA5F-BA54-489F-A6E2-A97F223F3F72</key>
 		<array>
 			<dict>
@@ -339,23 +337,6 @@ echo -n "$tempFile"</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>acceptsmulti</key>
-				<integer>0</integer>
-				<key>filetypes</key>
-				<array/>
-				<key>name</key>
-				<string>OCR</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.action</string>
-			<key>uid</key>
-			<string>9C46ACFB-7D7B-4A4E-8650-7CFDCB0E25AC</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string># OCR
@@ -391,13 +372,6 @@ Use the built-in OCR, no need to install dependencies.
 			<real>210</real>
 			<key>ypos</key>
 			<real>50</real>
-		</dict>
-		<key>9C46ACFB-7D7B-4A4E-8650-7CFDCB0E25AC</key>
-		<dict>
-			<key>xpos</key>
-			<real>40</real>
-			<key>ypos</key>
-			<real>435</real>
 		</dict>
 		<key>A2E6CA5F-BA54-489F-A6E2-A97F223F3F72</key>
 		<dict>
