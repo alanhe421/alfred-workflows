@@ -52,7 +52,7 @@ async function updateHomeReadme(items) {
     console.log('readmeContent-before', readmeContent);
     const newReadmeContent = readmeContent
       .replace(/(?<=<!--workflow-start-->)[\s\S]*(?=<!--workflow-end-->)/, workflowsListStr)
-      .replace(/(?<=<!--readme:discussionCount-start-->)[\s\S]+(?=<!--readme:discussionCount-end-->)/, `${discussionCount}`);
+      .replace(/(?<=<!--discussionCount-start-->)[\s\S]+(?=<!--discussionCount-end-->)/, `${Numbers.toEmoji(discussionCount)}`);
     console.log('readmeContent-after', newReadmeContent);
     fs.writeFileSync(filePath, newReadmeContent);
   }
