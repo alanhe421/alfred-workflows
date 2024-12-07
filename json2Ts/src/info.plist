@@ -371,7 +371,9 @@
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>&gt; generate TypeScript interfaces from JSON. you can choose prefer interface instead of type.
+	<string># Json2TS
+
+&gt; generate TypeScript interfaces from JSON. you can choose prefer interface instead of type.
 
 
 thanks json-ts package.
@@ -470,7 +472,7 @@ JSON text select and trigger json2ts universal action.</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.3</string>
+	<string>1.4</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhe421/alfred-workflows/tree/master/json2Ts</string>
 </dict>
