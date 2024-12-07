@@ -203,7 +203,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 ### 23. [Json2TS](https://github.com/alanhg/alfred-workflows/tree/master/json2Ts)
 > generate TypeScript interfaces from JSON
 
-[![](https://img.shields.io/badge/version-v1.3-green?style=for-the-badge)](https://img.shields.io/badge/version-v1.3-green?style=for-the-badge)
+[![](https://img.shields.io/badge/version-v1.4-green?style=for-the-badge)](https://img.shields.io/badge/version-v1.4-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/json2Ts/Json2TS.alfredworkflow)
 
 
