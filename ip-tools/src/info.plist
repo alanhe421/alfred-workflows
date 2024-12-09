@@ -21,6 +21,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>82A418D8-DBBE-4BDA-B453-0D39FFFC53C0</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>0E574114-26EE-4B9E-8DE3-DBB55C1E5969</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>95FD5173-AED4-43BA-A887-741C1FD17A4B</key>
 		<array>
 			<dict>
@@ -94,7 +107,7 @@
 				<key>runningsubtext</key>
 				<string>waiting</string>
 				<key>script</key>
-				<string>/usr/local/bin/node ./index.js {query}</string>
+				<string>node ./index.js {query}</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -137,6 +150,8 @@
 				</array>
 				<key>elselabel</key>
 				<string>else</string>
+				<key>hideelse</key>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.conditional</string>
@@ -145,37 +160,96 @@
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsfiles</key>
+				<false/>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>acceptstext</key>
+				<true/>
+				<key>acceptsurls</key>
+				<false/>
+				<key>name</key>
+				<string>IP Tools</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.universalaction</string>
+			<key>uid</key>
+			<string>82A418D8-DBBE-4BDA-B453-0D39FFFC53C0</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>ip {query}</string>
+				<key>leftcursor</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.showalfred</string>
+			<key>uid</key>
+			<string>0E574114-26EE-4B9E-8DE3-DBB55C1E5969</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
-	<string>1. check ip is cn or not
+	<string># IP Tools
+
+1. check ip is cn or not
 2. display local ip address
-3. support domain check</string>
+3. support domain check
+
+
+## Requirement
+
+brew install node</string>
 	<key>uidata</key>
 	<dict>
+		<key>0E574114-26EE-4B9E-8DE3-DBB55C1E5969</key>
+		<dict>
+			<key>xpos</key>
+			<real>335</real>
+			<key>ypos</key>
+			<real>385</real>
+		</dict>
 		<key>1A58D9E9-FAB5-40AB-9E11-75646D475204</key>
 		<dict>
 			<key>xpos</key>
-			<integer>100</integer>
+			<real>100</real>
 			<key>ypos</key>
-			<integer>200</integer>
+			<real>200</real>
+		</dict>
+		<key>82A418D8-DBBE-4BDA-B453-0D39FFFC53C0</key>
+		<dict>
+			<key>xpos</key>
+			<real>100</real>
+			<key>ypos</key>
+			<real>355</real>
 		</dict>
 		<key>95FD5173-AED4-43BA-A887-741C1FD17A4B</key>
 		<dict>
 			<key>note</key>
 			<string>not null</string>
 			<key>xpos</key>
-			<integer>335</integer>
+			<real>335</real>
 			<key>ypos</key>
-			<integer>215</integer>
+			<real>215</real>
 		</dict>
 		<key>D4C4A5B7-A2D0-404F-9FBC-C4646FBBCEAE</key>
 		<dict>
 			<key>xpos</key>
-			<integer>505</integer>
+			<real>505</real>
 			<key>ypos</key>
-			<integer>195</integer>
+			<real>195</real>
 		</dict>
 	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
 	<key>variables</key>
 	<dict>
 		<key>cache_lifetime</key>
@@ -186,8 +260,8 @@
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>0.1</string>
+	<string>0.2</string>
 	<key>webaddress</key>
-	<string>https://1991421.cn</string>
+	<string>https://github.com/alanhe421/alfred-workflows/tree/master/ip-tools</string>
 </dict>
 </plist>
