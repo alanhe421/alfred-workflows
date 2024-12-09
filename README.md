@@ -187,7 +187,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 ### 21. [IP Tools](https://github.com/alanhg/alfred-workflows/tree/master/ip-tools)
 > IP lookup
 
-[![](https://img.shields.io/badge/version-v0.1-green?style=for-the-badge)](https://img.shields.io/badge/version-v0.1-green?style=for-the-badge)
+[![](https://img.shields.io/badge/version-v0.2-green?style=for-the-badge)](https://img.shields.io/badge/version-v0.2-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/ip-tools/IP%20Tools.alfredworkflow)
 
 
