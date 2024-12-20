@@ -28,10 +28,10 @@ async function main() {
           }
         },
         {
-          title: versionRes.showUpdate
-            ? `Latest Version:${versionRes.latestVersion}`
+          title: versionRes.version!=versionRes.latestVersion
+            ? `Latest Version: ${versionRes.latestVersion}`
             : 'Up to date',
-          subtitle: `Version:${versionRes.version}`,
+          subtitle: `Local Version: ${versionRes.version}`,
           arg: 'installNewVersion',
           text: {
             copy: `v${versionRes.version}`,

@@ -1118,7 +1118,7 @@ If you need SOCKS proxy, configure SOCKS_PORT.</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>2.16</string>
+	<string>2.17</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/whistle</string>
 </dict>

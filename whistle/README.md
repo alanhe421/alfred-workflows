@@ -25,7 +25,7 @@ If you need SOCKS proxy, configure SOCKS_PORT.
 
 
 
-[![](https://img.shields.io/badge/version-v2.16-green?style=for-the-badge)](https://img.shields.io/badge/version-v2.16-green?style=for-the-badge)
+[![](https://img.shields.io/badge/version-v2.17-green?style=for-the-badge)](https://img.shields.io/badge/version-v2.17-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/whistle/Whistle.alfredworkflow)
 
 
