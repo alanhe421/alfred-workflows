@@ -1,5 +1,5 @@
 const path = require("path");
-const {readFileSync} = require("fs");
+const { readFileSync } = require("fs");
 
 function escapeRegexMeta(str) {
   return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
@@ -11,14 +11,14 @@ function escapeRegexMeta(str) {
  * @returns {Promise<string>}
  */
 async function readConfFromLocal(profileName) {
-  const file = path.join(process.env.CONF_FILE_LOCATION, profileName);
-  let profileCnt = readFileSync(file, {encoding: 'utf8'});
+  let profileCnt = readFileSync(path.join(process.env.CONF_FILE_LOCATION, profileName), { encoding: 'utf8' });
   let detachedRuleProfileName = profileCnt.match(/(?<=\[Rule]\n+#!include\s+).+/)?.[0];
   if (detachedRuleProfileName) {
-    return readConfFromLocal(detachedRuleProfileName)
+    return readConfFromLocal(detachedRuleProfileName);
   }
   return {
-    name: profileName, content: profileCnt
+    name: profileName,
+    content: profileCnt
   };
 }
 

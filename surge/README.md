@@ -22,6 +22,7 @@
 
 1. brew install node
 2. 开启Surge API支持
+3. 注意如果是连接的本地Surge 127.0.0.1服务，需要skip-proxy中配置127.0.0.1
 
 ##  如何开启Surge API支持
 
@@ -46,7 +47,7 @@ Surge Mac 4.0.0、Surge iOS 4.4.0开始提供HTTP API, 即该版本之前的均�
 
 
 
-[![](https://img.shields.io/badge/version-v1.26-green?style=for-the-badge)](https://img.shields.io/badge/version-v1.26-green?style=for-the-badge)
+[![](https://img.shields.io/badge/version-v1.27-green?style=for-the-badge)](https://img.shields.io/badge/version-v1.27-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/surge/Surge.alfredworkflow)
 
 

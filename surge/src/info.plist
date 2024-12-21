@@ -1327,9 +1327,10 @@
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
-				<integer>102</integer>
+				<integer>0</integer>
 				<key>script</key>
 				<string>node ./toggle-rule.js '{query}'
+
 echo -n '{query}'</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
@@ -1437,6 +1438,7 @@ echo -n '{query}'</string>
 
 1. brew install node
 2. 开启Surge API支持
+3. 注意如果是连接的本地Surge 127.0.0.1服务，需要skip-proxy中配置127.0.0.1
 
 ##  如何开启Surge API支持
 
@@ -1755,7 +1757,7 @@ Surge Mac 4.0.0、Surge iOS 4.4.0开始提供HTTP API, 即该版本之前的均�
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.26</string>
+	<string>1.27</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/surge</string>
 </dict>

@@ -1,7 +1,6 @@
 const [, , query] = process.argv;
-const {utils, Workflow,} = require('@stacker/alfred-utils');
-const {escapeRegexMeta, readConfFromLocal} = require("./utils");
-
+const { utils, Workflow, } = require('@stacker/alfred-utils');
+const { escapeRegexMeta, readConfFromLocal } = require("./utils");
 const instance = require('./axios').createHttpClient(process.env.HTTP_API);
 const wf = new Workflow();
 
@@ -19,15 +18,20 @@ async function main() {
     const profileName = await instance
       .get('/v1/profiles/current')
       .then((res) => res.data.name);
-    let {content} = await readConfFromLocal(profileName + '.conf');
+    let { content } = await readConfFromLocal(profileName + '.conf');
     cnfContent = content;
   }
   rules.forEach((item) => {
+    const isSelected = isSelectedRule(item, cnfContent);
     wf.addWorkflowItem({
       item: {
+        uid: item,
         title: item,
-        subtitle: (isSelectedRule(item, cnfContent) ? utils.emoji.checked : '') + item,
+        subtitle: (isSelected ? utils.emoji.checked : '') + item,
         arg: item,
+        variables: {
+          isSelected,
+        },
         text: {
           copy: item, largetype: item
         }
@@ -36,8 +40,8 @@ async function main() {
   });
   wf.filterWorkflowItemsBy(query, ['title', 'subtitle']);
   wf.run({
-    variables:{
-      keyword:query
+    variables: {
+      keyword: query
     }
   });
 }
