@@ -11,7 +11,7 @@
 - Compress
 - ConvertIO
 - Copy Files to The frontmost Finder
-- DO NOT DISTURB
+- Do Not Disturb
 - Eudic Tools
 - File Enhancer
 - Find iPhone
