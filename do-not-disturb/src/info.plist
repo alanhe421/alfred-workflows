@@ -93,7 +93,7 @@
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>DO NOT DISTURB</string>
+	<string>Do Not Disturb</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -125,7 +125,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>/usr/local/bin/node ./disturb-toggle.js</string>
+				<string>node ./disturb-toggle.js</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -187,7 +187,7 @@
 				<key>runningsubtext</key>
 				<string></string>
 				<key>script</key>
-				<string>/usr/local/bin/node ./disturb.js</string>
+				<string>node ./disturb.js</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -195,7 +195,7 @@
 				<key>subtext</key>
 				<string>Toggle it</string>
 				<key>title</key>
-				<string>DO NOT DISTURB</string>
+				<string>Do Not Disturb</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -270,7 +270,9 @@
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>&gt; Mac enhancer，toggle dnd
+	<string># Do Not Disturb
+
+&gt; Mac enhancer，toggle dnd
 
 ## usage
 
@@ -285,57 +287,59 @@ input `dnd` to toggle it.
 		<key>02C2ED12-F0F8-4AAB-8872-C744E53A50A0</key>
 		<dict>
 			<key>xpos</key>
-			<integer>55</integer>
+			<real>55</real>
 			<key>ypos</key>
-			<integer>170</integer>
+			<real>170</real>
 		</dict>
 		<key>0969E78A-5979-437E-96AC-33E7ABFFA076</key>
 		<dict>
 			<key>xpos</key>
-			<integer>755</integer>
+			<real>755</real>
 			<key>ypos</key>
-			<integer>90</integer>
+			<real>90</real>
 		</dict>
 		<key>BD1EBEE6-9664-42AB-BB4C-50A678D753BA</key>
 		<dict>
 			<key>xpos</key>
-			<integer>255</integer>
+			<real>255</real>
 			<key>ypos</key>
-			<integer>195</integer>
+			<real>195</real>
 		</dict>
 		<key>C93E806C-998E-49EA-B64A-4AB9F71D4135</key>
 		<dict>
 			<key>xpos</key>
-			<integer>580</integer>
+			<real>580</real>
 			<key>ypos</key>
-			<integer>165</integer>
+			<real>165</real>
 		</dict>
 		<key>E0D82BB3-C7FA-4C9D-81A4-6BE51462D7AE</key>
 		<dict>
 			<key>xpos</key>
-			<integer>760</integer>
+			<real>760</real>
 			<key>ypos</key>
-			<integer>265</integer>
+			<real>265</real>
 		</dict>
 		<key>EE9117B4-59ED-4F95-9F7E-1D228850C451</key>
 		<dict>
 			<key>xpos</key>
-			<integer>580</integer>
+			<real>580</real>
 			<key>ypos</key>
-			<integer>280</integer>
+			<real>280</real>
 		</dict>
 		<key>F9AB4BBF-0B9B-4DAA-A599-2AE6E4DC7271</key>
 		<dict>
 			<key>xpos</key>
-			<integer>370</integer>
+			<real>370</real>
 			<key>ypos</key>
-			<integer>165</integer>
+			<real>165</real>
 		</dict>
 	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.2</string>
+	<string>1.3</string>
 	<key>webaddress</key>
 	<string>https://1991421.cn</string>
 </dict>

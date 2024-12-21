@@ -4,7 +4,7 @@ doNotDisturb.isEnabled().then((status) => {
   const res = {
     items: [
       {
-        title: 'DO NOT DISTURB',
+        title: 'Do Not Disturb',
         subtitle: status ? 'enabled' : 'disabled',
         arg: String(!status)
       }
