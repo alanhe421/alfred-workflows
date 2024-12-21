@@ -209,9 +209,9 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 
 
 ### 24. [Local Network](https://github.com/alanhg/alfred-workflows/tree/master/local-network)
-> display local network info
+> Display local network info
 
-[![](https://img.shields.io/badge/version-v0.3-green?style=for-the-badge)](https://img.shields.io/badge/version-v0.3-green?style=for-the-badge)
+[![](https://img.shields.io/badge/version-v0.4-green?style=for-the-badge)](https://img.shields.io/badge/version-v0.4-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/local-network/Local%20Network.alfredworkflow)
 
 
@@ -455,7 +455,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 ### 55. [Whistle](https://github.com/alanhg/alfred-workflows/tree/master/whistle)
 > select rules
 
-[![](https://img.shields.io/badge/version-v2.16-green?style=for-the-badge)](https://img.shields.io/badge/version-v2.16-green?style=for-the-badge)
+[![](https://img.shields.io/badge/version-v2.17-green?style=for-the-badge)](https://img.shields.io/badge/version-v2.17-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/whistle/Whistle.alfredworkflow)
 
 
