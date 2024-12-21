@@ -102,7 +102,19 @@
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>&gt; Display local network info, like HTTP Proxy、Public IP Address.</string>
+	<string># Local Network
+
+&gt; Display local network info, like HTTP Proxy、Public IP Address.
+
+
+## Requirement
+
+
+brew install node
+
+## Usage
+
+1. enter to copy info.</string>
 	<key>uidata</key>
 	<dict>
 		<key>B0B2C729-66ED-45E0-940B-2F72D781565A</key>

@@ -1,4 +1,16 @@
+# Local Network
+
 > Display local network info, like HTTP Proxy、Public IP Address.
+
+
+## Requirement
+
+
+brew install node
+
+## Usage
+
+1. enter to copy info.
 
 
 
