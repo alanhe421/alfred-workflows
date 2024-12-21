@@ -342,7 +342,8 @@
 				<key>escaping</key>
 				<integer>0</integer>
 				<key>script</key>
-				<string>npm i whistle@latest -g</string>
+				<string>npm i whistle@latest -g
+w2 restart</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.terminalcommand</string>

@@ -7,17 +7,50 @@
 	<key>category</key>
 	<string>Self-Dev</string>
 	<key>connections</key>
-	<dict/>
+	<dict>
+		<key>ED50F1E8-F086-41E8-A156-B4C052DD1AA4</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B0B2C729-66ED-45E0-940B-2F72D781565A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
 	<key>createdby</key>
 	<string>Alan He</string>
 	<key>description</key>
-	<string>display local network info</string>
+	<string>Display local network info</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
 	<string>Local Network</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>B0B2C729-66ED-45E0-940B-2F72D781565A</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -46,7 +79,7 @@
 				<key>runningsubtext</key>
 				<string>waiting</string>
 				<key>script</key>
-				<string>/usr/local/bin/node ./index.js</string>
+				<string>node ./index.js</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -69,9 +102,16 @@
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>&gt; display local network info, like HTTP Proxy</string>
+	<string>&gt; Display local network info, like HTTP Proxy、Public IP Address.</string>
 	<key>uidata</key>
 	<dict>
+		<key>B0B2C729-66ED-45E0-940B-2F72D781565A</key>
+		<dict>
+			<key>xpos</key>
+			<real>555</real>
+			<key>ypos</key>
+			<real>130</real>
+		</dict>
 		<key>ED50F1E8-F086-41E8-A156-B4C052DD1AA4</key>
 		<dict>
 			<key>xpos</key>
@@ -85,7 +125,7 @@
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>0.3</string>
+	<string>0.4</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/local-network</string>
 </dict>
