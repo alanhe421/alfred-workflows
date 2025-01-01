@@ -144,7 +144,7 @@ Contains UserName、Model、HostName、Primary Ethernet Address、IPv4 Address�
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.23</string>
+	<string>1.24</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/about-mac</string>
 </dict>
