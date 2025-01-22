@@ -38,7 +38,7 @@
 				<key>alfredfiltersresults</key>
 				<true/>
 				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
+				<integer>2</integer>
 				<key>argumenttreatemptyqueryasnil</key>
 				<true/>
 				<key>argumenttrimmode</key>
@@ -89,7 +89,13 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>$EDITOR $1</string>
+				<string>if [ "$EDITOR" = "code" ] || [ "$EDITOR" = "vscode" ]; then
+    open "vscode://file/$1"
+elif [ "$EDITOR" = "cursor" ]; then
+    open "cursor://file/$1"
+else
+    $EDITOR "$1"
+fi</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -170,7 +176,7 @@ type keyword to search recent projects, enter to open.</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>0.1</string>
+	<string>0.2</string>
 	<key>webaddress</key>
 	<string>https://1991421.cn</string>
 </dict>
