@@ -52,5 +52,6 @@
 - Type Search
 - UAParser
 - video
+- VSCode - Open Project
 - Whistle
 - 印象笔记
