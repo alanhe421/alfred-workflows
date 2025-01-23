@@ -25,4 +25,5 @@ type keyword to search recent projects, enter to open.
 <!-- more -->
 
 ## Screenshots
-![screenshot1.png](screenshots/screenshot1.png)
+
+![screenshot1.gif](screenshots/screenshot1.gif)
