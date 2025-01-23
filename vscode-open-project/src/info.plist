@@ -36,7 +36,7 @@
 			<key>config</key>
 			<dict>
 				<key>alfredfiltersresults</key>
-				<true/>
+				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>2</integer>
 				<key>argumenttreatemptyqueryasnil</key>
@@ -176,7 +176,7 @@ type keyword to search recent projects, enter to open.</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>0.2</string>
+	<string>0.3</string>
 	<key>webaddress</key>
 	<string>https://1991421.cn</string>
 </dict>

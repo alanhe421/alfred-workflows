@@ -1,4 +1,5 @@
 #!/bin/bash
+query="$1"
 
 editor=$(if [[ "$EDITOR" == "cursor" ]]; then echo "Cursor"; else echo "Code"; fi)
 
@@ -33,6 +34,14 @@ OUTPUT='{"items": ['
 IFS=$'\n'
 for PROJECT in $PROJECTS; do
   PROJECT_NAME=$(basename "$PROJECT")
+  
+  # 如果 query 不为空，则进行筛选
+  if [[ -n "$query" ]]; then
+    # 将 PROJECT_NAME 和 query 都转换为小写进行比较
+    if ! echo "${PROJECT_NAME}" | tr '[:upper:]' '[:lower:]' | grep -q "$(echo "$query" | tr '[:upper:]' '[:lower:]')"; then
+      continue
+    fi
+  fi
   
   OUTPUT+=$(cat <<EOF
     {
