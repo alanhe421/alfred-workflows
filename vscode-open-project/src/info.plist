@@ -25,7 +25,7 @@
 	<key>createdby</key>
 	<string>Alan He</string>
 	<key>description</key>
-	<string>Code</string>
+	<string>easily open your projects</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
@@ -58,7 +58,7 @@
 				<key>queuemode</key>
 				<integer>1</integer>
 				<key>runningsubtext</key>
-				<string>searching project</string>
+				<string>Searching project</string>
 				<key>script</key>
 				<string>./main.sh "{query}"</string>
 				<key>scriptargtype</key>
@@ -66,13 +66,13 @@
 				<key>scriptfile</key>
 				<string></string>
 				<key>subtext</key>
-				<string>Open Project</string>
+				<string>Easily open your projects</string>
 				<key>title</key>
 				<string>Open Project</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.scriptfilter</string>
@@ -112,9 +112,9 @@ fi</string>
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>&gt; This Alfred workflow allows you to quickly search and open recently accessed projects in Code or Cursor with a single keystroke, streamlining your workflow and boosting productivity.
+	<string># VSCode - Open Project
 
-
+&gt; This Alfred workflow allows you to quickly search and open recently accessed projects in Code or Cursor with a single keystroke, streamlining your workflow and boosting productivity.
 
 no any dependency.
 
@@ -176,7 +176,7 @@ type keyword to search recent projects, enter to open.</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>0.3</string>
+	<string>0.4</string>
 	<key>webaddress</key>
 	<string>https://1991421.cn</string>
 </dict>
