@@ -41,7 +41,7 @@ OUTPUT='{"items": ['
 # 遍历项目路径，生成 Alfred 格式的 JSON
 IFS=$'\n'
 for PROJECT in $PROJECTS; do
-  PROJECT_NAME=$(basename "$PROJECT")
+  PROJECT_NAME=$(basename "$PROJECT" | ruby -ruri -e 'puts URI.decode_www_form_component(STDIN.read.chomp)')
   
   # 如果 query 不为空，则进行筛选
   if [[ -n "$query" ]]; then
