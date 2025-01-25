@@ -453,7 +453,7 @@ P.S.: 使用这些Workflow的前提是已购买[Powerpack](https://www.alfredapp
 ### 55. [VSCode - Open Project](https://github.com/alanhg/alfred-workflows/tree/master/vscode-open-project)
 > easily open your projects
 
-[![](https://img.shields.io/badge/version-v0.4-green?style=for-the-badge)](https://img.shields.io/badge/version-v0.4-green?style=for-the-badge)
+[![](https://img.shields.io/badge/version-v0.5-green?style=for-the-badge)](https://img.shields.io/badge/version-v0.5-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/vscode-open-project/VSCode%20-%20Open%20Project.alfredworkflow)
 
 
