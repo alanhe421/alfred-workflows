@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>cn.alanhe.ffmpeg</string>
+	<key>category</key>
+	<string>Self-Dev</string>
+	<key>connections</key>
+	<dict>
+		<key>2E3CF269-8610-470E-89B7-35F75137ED97</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>C2936869-CAD0-49F2-AA64-EDBEC43A724B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>C2936869-CAD0-49F2-AA64-EDBEC43A724B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>18785316-3770-4BB9-B136-ABF9DEAFA21A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Alan He</string>
+	<key>description</key>
+	<string></string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>ffmpeg</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>eval "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>18785316-3770-4BB9-B136-ABF9DEAFA21A</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>118</integer>
+				<key>script</key>
+				<string>#!/bin/bash
+
+# 获取传递进来的query参数
+query="{query}"
+
+# 使用制表符分割query成数组
+IFS=$'\t' read -r -a file_array &lt;&lt;&lt; "$query"
+
+# 初始化输入参数部分
+input_params=""
+
+# 遍历文件路径数组，拼接-i参数
+for theFile in "${file_array[@]}"; do
+  # 确保每个路径都加上引号以处理空格
+  input_params+="-i \"$theFile\" "
+done
+
+# 获取第一个文件的目录，用来保存输出文件
+output_dir=$(dirname "${file_array[0]}")
+
+# 构造输出文件的路径
+output_file="${output_dir}/output.mp4"
+
+# 打印最终的ffmpeg命令，以便调试
+echo "ffmpeg $input_params -c:v copy -c:a aac -strict experimental \"$output_file\""</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>C2936869-CAD0-49F2-AA64-EDBEC43A724B</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsmulti</key>
+				<integer>2</integer>
+				<key>filetypes</key>
+				<array>
+					<string>com.apple.m4a-audio</string>
+					<string>public.mpeg-4</string>
+				</array>
+				<key>name</key>
+				<string>Merge Video Or Audio</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.action</string>
+			<key>uid</key>
+			<string>2E3CF269-8610-470E-89B7-35F75137ED97</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string># ffmpeg
+
+&gt; Support Merge MP4 And Audio
+
+## Requirement
+
+```shell
+
+brew install ffmpeg
+
+```</string>
+	<key>uidata</key>
+	<dict>
+		<key>18785316-3770-4BB9-B136-ABF9DEAFA21A</key>
+		<dict>
+			<key>xpos</key>
+			<real>650</real>
+			<key>ypos</key>
+			<real>150</real>
+		</dict>
+		<key>2E3CF269-8610-470E-89B7-35F75137ED97</key>
+		<dict>
+			<key>xpos</key>
+			<real>130</real>
+			<key>ypos</key>
+			<real>155</real>
+		</dict>
+		<key>C2936869-CAD0-49F2-AA64-EDBEC43A724B</key>
+		<dict>
+			<key>xpos</key>
+			<real>395</real>
+			<key>ypos</key>
+			<real>150</real>
+		</dict>
+	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
+	<key>variablesdontexport</key>
+	<array/>
+	<key>version</key>
+	<string>0.1</string>
+	<key>webaddress</key>
+	<string>https://1991421.cn</string>
+</dict>
+</plist>
