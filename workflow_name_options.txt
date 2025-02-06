@@ -13,6 +13,7 @@
 - Copy Files to The frontmost Finder
 - Do Not Disturb
 - Eudic Tools
+- ffmpeg
 - File Enhancer
 - Find iPhone
 - Giphy
