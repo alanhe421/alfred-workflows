@@ -16,7 +16,7 @@ type keyword to search recent projects, enter to open.
 
 
 
-[![](https://img.shields.io/badge/version-v0.5-green?style=for-the-badge)](https://img.shields.io/badge/version-v0.5-green?style=for-the-badge)
+[![](https://img.shields.io/badge/version-v0.6-green?style=for-the-badge)](https://img.shields.io/badge/version-v0.6-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/vscode-open-project/VSCode%20-%20Open%20Project.alfredworkflow)
 
 
