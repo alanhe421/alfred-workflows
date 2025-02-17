@@ -575,6 +575,7 @@ P.S.: 使用这些Workflow的前提是已购买[Powerpack](https://www.alfredapp
 1. [alfred-currency-conversion](https://github.com/jeppestaerk/alfred-currency-conversion#readme)
 2. [GitHub for Alfred](https://github.com/gharlan/alfred-github-workflow)
 3. [JetBrains - Open Project](https://github.com/bchatard/alfred-jetbrains)
+4. [Share with AirDrop](https://github.com/alfredapp/share-with-airdrop-workflow/)
 
 ## 特别感谢 JetBrains
 这个项目由[JetBrains IDE](https://www.jetbrains.com)助力开发

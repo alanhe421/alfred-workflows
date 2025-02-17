@@ -573,6 +573,7 @@ Thanks goes to these wonderful people:
 1. [alfred-currency-conversion](https://github.com/jeppestaerk/alfred-currency-conversion#readme)
 2. [GitHub for Alfred](https://github.com/gharlan/alfred-github-workflow)
 3. [JetBrains - Open Project](https://github.com/bchatard/alfred-jetbrains)
+4. [Share with AirDrop](https://github.com/alfredapp/share-with-airdrop-workflow/)
 
 ## Special Thanks to JetBrains
 
