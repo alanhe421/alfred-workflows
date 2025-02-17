@@ -17,6 +17,7 @@ P.S.: 使用这些Workflow的前提是已购买[Powerpack](https://www.alfredapp
 - [Star历史](#star%E5%8E%86%E5%8F%B2)
 - [订阅&交流](#%E8%AE%A2%E9%98%85%E4%BA%A4%E6%B5%81)
 - [贡献者](#%E8%B4%A1%E7%8C%AE%E8%80%85)
+- [活动](#%E6%B4%BB%E5%8A%A8)
 - [其他Workflows推荐](#%E5%85%B6%E4%BB%96workflows%E6%8E%A8%E8%8D%90)
 - [特别感谢 JetBrains](#%E7%89%B9%E5%88%AB%E6%84%9F%E8%B0%A2-jetbrains)
 

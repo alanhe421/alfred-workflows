@@ -19,6 +19,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 - [Star History](#star-history)
 - [Subscribe & Communication](#subscribe--communication)
 - [Contributors](#contributors)
+- [Activity](#activity)
 - [Workflows developed by others](#workflows-developed-by-others)
 - [Special Thanks to JetBrains](#special-thanks-to-jetbrains)
 
