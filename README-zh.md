@@ -565,6 +565,10 @@ P.S.: 使用这些Workflow的前提是已购买[Powerpack](https://www.alfredapp
 </table>
 <!-- readme: collaborators,contributors -end -->
 
+
+## 活动
+![Alt](https://repobeats.axiom.co/api/embed/3bde49fa6eac5feadd884949a872be992e4e8392.svg "Repobeats analytics image")
+
 ## 其他Workflows推荐
 
 1. [alfred-currency-conversion](https://github.com/jeppestaerk/alfred-currency-conversion#readme)

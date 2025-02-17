@@ -564,6 +564,9 @@ Thanks goes to these wonderful people:
 </table>
 <!-- readme: collaborators,contributors -end -->
 
+## Activity
+![Alt](https://repobeats.axiom.co/api/embed/3bde49fa6eac5feadd884949a872be992e4e8392.svg "Repobeats analytics image")
+
 ## Workflows developed by others
 
 1. [alfred-currency-conversion](https://github.com/jeppestaerk/alfred-currency-conversion#readme)
