@@ -8,6 +8,19 @@
 	<string>Self-Dev</string>
 	<key>connections</key>
 	<dict>
+		<key>1DCBD89F-F3F1-4C2E-97A5-D2E0476B698F</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>DD5F34BA-7620-4083-9A2C-668EE3B9C0E8</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>8427B879-3650-4C0D-A81E-D8203A82CB02</key>
 		<array>
 			<dict>
@@ -110,6 +123,27 @@ fi</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsfiles</key>
+				<true/>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>acceptstext</key>
+				<false/>
+				<key>acceptsurls</key>
+				<false/>
+				<key>name</key>
+				<string>Open With {var:EDITOR}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.universalaction</string>
+			<key>uid</key>
+			<string>1DCBD89F-F3F1-4C2E-97A5-D2E0476B698F</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string># VSCode - Open Project
@@ -126,15 +160,23 @@ no any dependency.
 
 ## Usage
 
-type keyword to search recent projects, enter to open.</string>
+1. type keyword to search recent projects, enter to open.
+2. Open With File Action for any fille.</string>
 	<key>uidata</key>
 	<dict>
+		<key>1DCBD89F-F3F1-4C2E-97A5-D2E0476B698F</key>
+		<dict>
+			<key>xpos</key>
+			<real>125</real>
+			<key>ypos</key>
+			<real>340</real>
+		</dict>
 		<key>8427B879-3650-4C0D-A81E-D8203A82CB02</key>
 		<dict>
 			<key>xpos</key>
-			<real>150</real>
+			<real>125</real>
 			<key>ypos</key>
-			<real>145</real>
+			<real>140</real>
 		</dict>
 		<key>DD5F34BA-7620-4083-9A2C-668EE3B9C0E8</key>
 		<dict>
@@ -176,7 +218,7 @@ type keyword to search recent projects, enter to open.</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>0.6</string>
+	<string>0.7</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhe421/alfred-workflows/tree/master/vscode-open-project</string>
 </dict>

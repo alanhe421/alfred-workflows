@@ -1,7 +1,7 @@
 #!/bin/bash
-# Trim query string
-query=$(echo "$1" | sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//')
 
+# 获取查询字符串和编辑器信息
+query="$1"
 editor=$(if [[ "$EDITOR" == "cursor" ]]; then echo "Cursor"; else echo "Code"; fi)
 
 # 定义 state.vscdb 文件路径
@@ -13,66 +13,66 @@ if [[ ! -f "$STATE_DB" ]]; then
   exit 1
 fi
 
-# 使用 SQLite 查询提取最近打开的项目
-JSON_DATA=$(sqlite3 "$STATE_DB" "SELECT value FROM ItemTable WHERE key = 'history.recentlyOpenedPathsList'")
+# 使用单个 Ruby 脚本处理所有逻辑
+# 1. 获取 SQLite 数据
+# 2. 解析 JSON
+# 3. 处理路径
+# 4. 生成输出
+ruby -e '
+require "json"
+require "uri"
+require "open3"
 
-# 检查是否成功提取数据
-if [[ -z "$JSON_DATA" ]]; then
-  echo '{"items": []}'
-  exit 1
-fi
-
-# 使用 Ruby 解析 JSON 数据并提取项目路径
-PROJECTS=$(echo "$JSON_DATA" | ruby -rjson -e '
-  begin
-    data = JSON.parse(STDIN.read)
-    data["entries"].each do |entry|
-      uri = entry["folderUri"] || entry["fileUri"]
-      puts uri.sub("file://", "") if uri
-    end
-  rescue => e
-    exit 1
+begin
+  # 获取参数
+  query = ARGV[0].to_s.downcase
+  db_path = ARGV[1]
+  
+  # 执行 SQLite 查询
+  sql = "SELECT value FROM ItemTable WHERE key = '\''history.recentlyOpenedPathsList'\''"
+  stdout, stderr, status = Open3.capture3("sqlite3", db_path, sql)
+  
+  if !status.success? || stdout.empty?
+    puts JSON.generate({items: []})
+    exit 0
   end
-' | sed 's|%20| |g')
-
-# 初始化 Alfred 的 JSON 输出
-OUTPUT='{"items": ['
-
-# 遍历项目路径，生成 Alfred 格式的 JSON
-IFS=$'\n'
-for PROJECT in $PROJECTS; do
-  # 对 PROJECT 进行 URL 解码
-  PROJECT=$(echo "$PROJECT" | ruby -ruri -e 'puts URI.decode_www_form_component(STDIN.read.chomp)')
-  PROJECT_NAME=$(basename "$PROJECT")
   
-  # 如果 query 不为空，则进行筛选
-  if [[ -n "$query" ]]; then
-    # 将 PROJECT_NAME 和 query 都转换为小写进行比较
-    if ! echo "${PROJECT_NAME}" | tr '[:upper:]' '[:lower:]' | grep -q "$(echo "$query" | tr '[:upper:]' '[:lower:]')"; then
-      continue
-    fi
-  fi
+  # 解析 JSON 数据
+  data = JSON.parse(stdout)
   
-  OUTPUT+=$(cat <<EOF
-    {
-        "uid": "$PROJECT",
-        "type": "file",
-        "title": "$PROJECT_NAME",
-        "subtitle": "$PROJECT",
-        "arg": "$PROJECT",
-        "autocomplete": "$PROJECT_NAME",
-        "icon": {
-            "type": "fileicon",
-            "path": "$PROJECT"
-        }
-    },
-EOF
-)
-done
-
-# 移除最后一个逗号并闭合 JSON
-OUTPUT=${OUTPUT%,}
-OUTPUT+=']}'
-
-# 输出结果
-echo "$OUTPUT"
+  # 处理项目并生成输出
+  items = []
+  
+  data["entries"].each do |entry|
+    uri = entry["folderUri"] || entry["fileUri"]
+    next unless uri
+    
+    # 处理路径
+    path = URI.decode_www_form_component(uri.sub("file://", ""))
+    name = File.basename(path)
+    
+    # 如果有查询词，进行过滤
+    next if !query.empty? && !name.downcase.include?(query)
+    
+    # 添加到结果
+    items << {
+      uid: path,
+      type: "file",
+      title: name,
+      subtitle: path,
+      arg: path,
+      autocomplete: name,
+      icon: {
+        type: "fileicon",
+        path: path
+      }
+    }
+  end
+  
+  # 输出结果
+  puts JSON.generate({items: items})
+rescue => e
+  # 出错时返回空结果
+  puts JSON.generate({items: []})
+end
+' "$query" "$STATE_DB"
