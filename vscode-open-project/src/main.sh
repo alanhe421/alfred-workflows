@@ -25,7 +25,7 @@ require "open3"
 
 begin
   # 获取参数
-  query = ARGV[0].to_s.downcase
+  query = ARGV[0].to_s.strip.downcase
   db_path = ARGV[1]
   
   # 执行 SQLite 查询

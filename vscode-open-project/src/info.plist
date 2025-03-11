@@ -218,7 +218,7 @@ no any dependency.
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>0.7</string>
+	<string>0.8</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhe421/alfred-workflows/tree/master/vscode-open-project</string>
 </dict>
