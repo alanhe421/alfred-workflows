@@ -103,9 +103,17 @@
 				<integer>102</integer>
 				<key>script</key>
 				<string>if [ "$EDITOR" = "code" ] || [ "$EDITOR" = "vscode" ]; then
-    open "vscode://file/$1"
+    if [ "$NEW_WINDOW" = "1" ]; then
+        open "vscode://file/$1?windowId=_blank"
+    else
+        open "vscode://file/$1"
+    fi
 elif [ "$EDITOR" = "cursor" ]; then
-    open "cursor://file/$1"
+    if [ "$NEW_WINDOW" = "1" ]; then
+        open "cursor://file/$1?windowId=_blank"
+    else
+        open "cursor://file/$1"
+    fi
 else
     $EDITOR "$1"
 fi</string>
@@ -160,8 +168,9 @@ no any dependency.
 
 ## Usage
 
-1. type keyword to search recent projects, enter to open.
-2. Open With File Action for any fille.</string>
+1. Type keyword to search recent projects, enter to open.
+2. Open With File Action for any fille.
+3. Support whether to open project in a new window.</string>
 	<key>uidata</key>
 	<dict>
 		<key>1DCBD89F-F3F1-4C2E-97A5-D2E0476B698F</key>
@@ -214,11 +223,30 @@ no any dependency.
 			<key>variable</key>
 			<string>EDITOR</string>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<false/>
+				<key>required</key>
+				<false/>
+				<key>text</key>
+				<string></string>
+			</dict>
+			<key>description</key>
+			<string></string>
+			<key>label</key>
+			<string>Open in New Window</string>
+			<key>type</key>
+			<string>checkbox</string>
+			<key>variable</key>
+			<string>NEW_WINDOW</string>
+		</dict>
 	</array>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>0.8</string>
+	<string>0.9</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhe421/alfred-workflows/tree/master/vscode-open-project</string>
 </dict>
