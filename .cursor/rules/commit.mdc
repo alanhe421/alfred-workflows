@@ -1,0 +1,10 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+
+# Commit Message
+
+- 如果提交的文件是*.workflow，那么commit内容是feat:update {修改的workflow文件名}，举个例子fix: Update VSCode - Open Project.alfredworkflow
+- 如果是其它类型文件，遵从semver规范，生成对应的commit message
