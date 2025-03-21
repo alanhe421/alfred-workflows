@@ -10,10 +10,10 @@ P.S.: 使用这些Workflow的前提是已购买[Powerpack](https://www.alfredapp
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
+- [赞助](#%E8%B5%9E%E5%8A%A9)
 - [Workflow集](#workflow%E9%9B%86)
 - [开发工具](#%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7)
 - [常见问题](#%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98)
-- [赞助](#%E8%B5%9E%E5%8A%A9)
 - [Star历史](#star%E5%8E%86%E5%8F%B2)
 - [订阅&交流](#%E8%AE%A2%E9%98%85%E4%BA%A4%E6%B5%81)
 - [贡献者](#%E8%B4%A1%E7%8C%AE%E8%80%85)

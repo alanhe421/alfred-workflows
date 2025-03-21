@@ -12,10 +12,10 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
+- [Sponsor](#sponsor)
 - [Workflows](#workflows)
 - [Dependency](#dependency)
 - [FAQ](#faq)
-- [Sponsor](#sponsor)
 - [Star History](#star-history)
 - [Subscribe & Communication](#subscribe--communication)
 - [Contributors](#contributors)
