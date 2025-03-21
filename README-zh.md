@@ -23,6 +23,14 @@ P.S.: 使用这些Workflow的前提是已购买[Powerpack](https://www.alfredapp
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
+
+## 赞助
+**维护这个项目需要大量时间。**
+- [Paypal](https://www.paypal.com/paypalme/alanhe421)
+- [微信打赏](./.github/wechat-award.jpg)
+
+<a href="https://www.buymeacoffee.com/alanhg" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" >
+
 ## Workflow集
 
 <!--workflow-start-->共5️⃣8️⃣个
@@ -495,12 +503,6 @@ P.S.: 使用这些Workflow的前提是已购买[Powerpack](https://www.alfredapp
 欢迎到 ➡️ [Discussion](https://github.com/alanhg/alfred-workflows/discussions)🔥<!--discussionCount-start-->1️⃣4️⃣3️⃣<!--discussionCount-end-->
 交流
 
-## 赞助
-
-- [Paypal](https://www.paypal.com/paypalme/alanhe421)
-- [微信打赏](./.github/wechat-award.jpg)
-
-<a href="https://www.buymeacoffee.com/alanhg" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" >
 
 ## Star历史
 
