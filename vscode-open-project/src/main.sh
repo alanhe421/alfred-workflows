@@ -56,7 +56,7 @@ begin
     
     # 添加到结果
     items << {
-      uid: path,
+      uid: name,
       type: "file",
       title: name,
       subtitle: path,
