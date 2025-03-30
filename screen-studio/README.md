@@ -11,3 +11,5 @@ Thanks to https://www.raycast.com/screen-studio/screen-studio
 
 
 <!-- more -->
+
+![screenshot1.png](screenshots/screenshot1.png)
