@@ -43,6 +43,7 @@
 - Generate Image
 - Alfred Remote
 - RGB-Hex converter
+- Screen Studio
 - SQL Formatter
 - SSH Utils
 - String Manipulation
