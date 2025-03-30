@@ -65,7 +65,7 @@
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
-				<integer>2</integer>
+				<integer>1</integer>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
@@ -91,7 +91,7 @@
 				<key>title</key>
 				<string></string>
 				<key>type</key>
-				<integer>11</integer>
+				<integer>0</integer>
 				<key>withspace</key>
 				<false/>
 			</dict>
@@ -151,8 +151,8 @@ Thanks to https://www.raycast.com/screen-studio/screen-studio</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>0.1</string>
+	<string>0.3</string>
 	<key>webaddress</key>
-	<string>https://1991421.cn</string>
+	<string>https://github.com/alanhe421/alfred-workflows/tree/master/screen-studio</string>
 </dict>
 </plist>
