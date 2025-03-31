@@ -106,7 +106,13 @@
 	<key>readme</key>
 	<string>&gt; Alfred Workflow that allows controlling the Screen Studio app easily.
 
-Thanks to https://www.raycast.com/screen-studio/screen-studio</string>
+Thanks to https://www.raycast.com/screen-studio/screen-studio
+
+## Requirements:
+- No dependencies
+
+## Usage
+- Customizable trigger keyword (default: `screenstudio`)</string>
 	<key>uidata</key>
 	<dict>
 		<key>12292669-CE73-4454-BA17-E7F28B8B0229</key>
@@ -151,7 +157,7 @@ Thanks to https://www.raycast.com/screen-studio/screen-studio</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>0.3</string>
+	<string>0.4</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhe421/alfred-workflows/tree/master/screen-studio</string>
 </dict>
