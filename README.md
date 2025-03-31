@@ -394,7 +394,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 
 
 ### 46. [Screen Studio](https://github.com/alanhg/alfred-workflows/tree/master/screen-studio)
-> Allows controlling the Screen Studio app easily  Raycast extension that allows controlling the Screen Studio app easily
+> Allows controlling the Screen Studio app easily
 
 [![](https://img.shields.io/badge/version-v0.4-green?style=for-the-badge)](https://img.shields.io/badge/version-v0.4-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/screen-studio/Screen%20Studio.alfredworkflow)
