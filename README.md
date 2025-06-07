@@ -587,7 +587,7 @@ Thanks goes to these wonderful people:
 3. [JetBrains - Open Project](https://github.com/bchatard/alfred-jetbrains)
 4. [Share with AirDrop](https://github.com/alfredapp/share-with-airdrop-workflow/)
 
-## Special Thanks to JetBrains
+## Special Thanks to JetBrains / DartNode
 
 The project is develop by [JetBrains IDE](https://www.jetbrains.com)
 
@@ -596,3 +596,6 @@ The project is develop by [JetBrains IDE](https://www.jetbrains.com)
 <img src="https://resources.jetbrains.com/storage/products/company/brand/logos/jb_beam.png" alt="JetBrains Logo (Main) logo." height="200">
 </a>
 </div>
+
+
+[![Powered by DartNode](https://dartnode.com/branding/DN-Open-Source-sm.png)](https://dartnode.com "Powered by DartNode - Free VPS for Open Source")
