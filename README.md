@@ -540,6 +540,13 @@ Thanks goes to these wonderful people:
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/AlanHg">
+            <img src="https://avatars.githubusercontent.com/u/206284315?v=4" width="100;" alt="AlanHg"/>
+            <br />
+            <sub><b>Null</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/simschla">
             <img src="https://avatars.githubusercontent.com/u/71494?v=4" width="100;" alt="simschla"/>
             <br />
