@@ -520,11 +520,6 @@ P.S.: 使用这些Workflow的前提是已购买[Powerpack](https://www.alfredapp
 <img src="https://img.shields.io/badge/Twitter-%23000000.svg?style=for-the-badge&logo=X&logoColor=white">
 </a>
 
-<a href="https://medium.com/@alanhe421">
-<img src="https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white">
-</a>
-
-
 ## 贡献者
 谢谢大佬们
 <!-- readme: collaborators,contributors -start -->
