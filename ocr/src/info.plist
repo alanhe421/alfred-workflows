@@ -8,6 +8,31 @@
 	<string>Self-Dev</string>
 	<key>connections</key>
 	<dict>
+		<key>2A85F8E1-DAA6-483D-AD5B-0504337ACEAB</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>AA0423C1-49A1-451D-B54B-6BF8E74ADD8B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>FEF07418-1D3E-4D7C-B971-72F9CC798740</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>C0F55B7B-E2B9-4FF2-972C-E1E1FEC24322</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>4048A283-459F-41D6-8536-FB4A566BA632</key>
 		<array>
 			<dict>
@@ -60,6 +85,8 @@
 				<false/>
 			</dict>
 		</array>
+		<key>AA0423C1-49A1-451D-B54B-6BF8E74ADD8B</key>
+		<array/>
 		<key>D5973360-B453-4F19-BEC6-695832FF1756</key>
 		<array>
 			<dict>
@@ -104,7 +131,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>C0F55B7B-E2B9-4FF2-972C-E1E1FEC24322</string>
+				<string>2A85F8E1-DAA6-483D-AD5B-0504337ACEAB</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -271,6 +298,44 @@ echo -n "$tempFile"</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>inputmode</key>
+				<integer>1</integer>
+				<key>outputmode</key>
+				<integer>1</integer>
+				<key>shortcut</key>
+				<string>OCR-v3</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.automation.runshortcut</string>
+			<key>uid</key>
+			<string>E9A9E33F-4D94-4AF5-BC40-38C018B27927</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>No text was extracted by OCR.</string>
+				<key>title</key>
+				<string>OCR to clipboard</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>AA0423C1-49A1-451D-B54B-6BF8E74ADD8B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -302,6 +367,38 @@ echo -n "$tempFile"</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string></string>
+						<key>outputlabel</key>
+						<string></string>
+						<key>uid</key>
+						<string>FEF07418-1D3E-4D7C-B971-72F9CC798740</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+				<key>hideelse</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>2A85F8E1-DAA6-483D-AD5B-0504337ACEAB</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
@@ -320,23 +417,6 @@ echo -n "$tempFile"</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>inputmode</key>
-				<integer>1</integer>
-				<key>outputmode</key>
-				<integer>1</integer>
-				<key>shortcut</key>
-				<string>OCR-v3</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.automation.runshortcut</string>
-			<key>uid</key>
-			<string>E9A9E33F-4D94-4AF5-BC40-38C018B27927</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string># OCR
@@ -348,14 +428,21 @@ Use the built-in OCR, no need to install dependencies.
 2. type keyword `ocr` to trigger</string>
 	<key>uidata</key>
 	<dict>
+		<key>2A85F8E1-DAA6-483D-AD5B-0504337ACEAB</key>
+		<dict>
+			<key>xpos</key>
+			<real>990</real>
+			<key>ypos</key>
+			<real>405</real>
+		</dict>
 		<key>4048A283-459F-41D6-8536-FB4A566BA632</key>
 		<dict>
 			<key>note</key>
 			<string>move screenshot</string>
 			<key>xpos</key>
-			<real>780</real>
+			<real>790</real>
 			<key>ypos</key>
-			<real>195</real>
+			<real>190</real>
 		</dict>
 		<key>763B39BE-E24D-4449-A0E3-C2E2021623EC</key>
 		<dict>
@@ -380,12 +467,21 @@ Use the built-in OCR, no need to install dependencies.
 			<key>ypos</key>
 			<real>175</real>
 		</dict>
+		<key>AA0423C1-49A1-451D-B54B-6BF8E74ADD8B</key>
+		<dict>
+			<key>note</key>
+			<string>nothing</string>
+			<key>xpos</key>
+			<real>1240</real>
+			<key>ypos</key>
+			<real>230</real>
+		</dict>
 		<key>C0F55B7B-E2B9-4FF2-972C-E1E1FEC24322</key>
 		<dict>
 			<key>xpos</key>
-			<real>1215</real>
+			<real>1240</real>
 			<key>ypos</key>
-			<real>335</real>
+			<real>405</real>
 		</dict>
 		<key>D1CABD85-A795-45F0-B22D-BE7AB8B76884</key>
 		<dict>
@@ -415,9 +511,9 @@ Use the built-in OCR, no need to install dependencies.
 		<key>E9A9E33F-4D94-4AF5-BC40-38C018B27927</key>
 		<dict>
 			<key>xpos</key>
-			<real>990</real>
+			<real>970</real>
 			<key>ypos</key>
-			<real>345</real>
+			<real>195</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
@@ -425,7 +521,7 @@ Use the built-in OCR, no need to install dependencies.
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>3.1</string>
+	<string>3.2</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/ocr</string>
 </dict>
