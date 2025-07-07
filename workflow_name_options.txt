@@ -12,6 +12,7 @@
 - ConvertIO
 - Copy Files to The frontmost Finder
 - Do Not Disturb
+- Doc Converter
 - Eudic Tools
 - ffmpeg
 - File Enhancer
