@@ -296,7 +296,7 @@ P.S.: 使用这些Workflow的前提是已购买[Powerpack](https://www.alfredapp
 ### 34. [OCR](https://github.com/alanhg/alfred-workflows/tree/master/ocr)
 > Get the text in the screenshot to the clipboard
 
-[![](https://img.shields.io/badge/version-v3.2-green?style=for-the-badge)](https://img.shields.io/badge/version-v3.2-green?style=for-the-badge)
+[![](https://img.shields.io/badge/version-v3.3-green?style=for-the-badge)](https://img.shields.io/badge/version-v3.3-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/ocr/OCR.alfredworkflow)
 [![](https://img.shields.io/badge/Install%20In%20Alfred-8A2BE2?style=for-the-badge)](https://alfred.app/workflows/alanhe/ocr/install/)
 
