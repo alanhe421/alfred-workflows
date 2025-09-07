@@ -173,7 +173,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 ### 18. [File Enhancer](https://github.com/alanhg/alfred-workflows/tree/master/file-enhancer)
 > Copy your file details—name, size, and data conversion.
 
-[![](https://img.shields.io/badge/version-v1.6-green?style=for-the-badge)](https://img.shields.io/badge/version-v1.6-green?style=for-the-badge)
+[![](https://img.shields.io/badge/version-v1.7-green?style=for-the-badge)](https://img.shields.io/badge/version-v1.7-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/file-enhancer/File%20Enhancer.alfredworkflow)
 
 
