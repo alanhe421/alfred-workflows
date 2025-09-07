@@ -22,7 +22,7 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
-				<string>7BC96501-D9E1-4A51-926A-A4D2B7866FC3</string>
+				<string>EA49DADA-EF81-46A2-9510-55A9D5DBCFA8</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -97,7 +97,7 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
-				<string>7BC96501-D9E1-4A51-926A-A4D2B7866FC3</string>
+				<string>EA49DADA-EF81-46A2-9510-55A9D5DBCFA8</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -131,6 +131,16 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>EA49DADA-EF81-46A2-9510-55A9D5DBCFA8</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
 		</array>
 		<key>CCCE1D1B-E013-441F-901B-62013D2A7A53</key>
 		<array>
@@ -141,6 +151,21 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>EA49DADA-EF81-46A2-9510-55A9D5DBCFA8</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>7BC96501-D9E1-4A51-926A-A4D2B7866FC3</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>3E740A95-B6A2-4999-9DDB-30644373004E</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -198,27 +223,6 @@
 				<key>matchmode</key>
 				<integer>1</integer>
 				<key>matchstring</key>
-				<string>.+\/</string>
-				<key>regexcaseinsensitive</key>
-				<false/>
-				<key>regexmultiline</key>
-				<false/>
-				<key>replacestring</key>
-				<string></string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.replace</string>
-			<key>uid</key>
-			<string>399B3A4B-008F-4212-B706-043EB7BD6DB6</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>matchmode</key>
-				<integer>1</integer>
-				<key>matchstring</key>
 				<string>(\..[a-z]+)$</string>
 				<key>regexcaseinsensitive</key>
 				<false/>
@@ -231,6 +235,27 @@
 			<string>alfred.workflow.utility.replace</string>
 			<key>uid</key>
 			<string>1C678B7F-4E6E-4468-AA63-3C242326C99B</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>matchmode</key>
+				<integer>1</integer>
+				<key>matchstring</key>
+				<string>.+\/</string>
+				<key>regexcaseinsensitive</key>
+				<false/>
+				<key>regexmultiline</key>
+				<false/>
+				<key>replacestring</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.replace</string>
+			<key>uid</key>
+			<string>399B3A4B-008F-4212-B706-043EB7BD6DB6</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -266,6 +291,23 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>filetypes</key>
+				<array/>
+				<key>name</key>
+				<string>Copy FileSize to Clipboard</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.action</string>
+			<key>uid</key>
+			<string>CCCE1D1B-E013-441F-901B-62013D2A7A53</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -291,17 +333,32 @@ echo -n "${filesize}B"</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>acceptsmulti</key>
-				<integer>0</integer>
-				<key>filetypes</key>
-				<array/>
-				<key>name</key>
-				<string>Copy FileSize to Clipboard</string>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:use_large_type}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>5</integer>
+						<key>matchstring</key>
+						<string></string>
+						<key>outputlabel</key>
+						<string></string>
+						<key>uid</key>
+						<string>3E740A95-B6A2-4999-9DDB-30644373004E</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+				<key>hideelse</key>
+				<false/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.trigger.action</string>
+			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
-			<string>CCCE1D1B-E013-441F-901B-62013D2A7A53</string>
+			<string>EA49DADA-EF81-46A2-9510-55A9D5DBCFA8</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -412,9 +469,9 @@ brew install imagemagick
 			<key>note</key>
 			<string>remove suffix</string>
 			<key>xpos</key>
-			<real>370</real>
+			<real>390</real>
 			<key>ypos</key>
-			<real>175</real>
+			<real>170</real>
 		</dict>
 		<key>23E50046-334E-4CB2-9FDE-96C0CC8239D4</key>
 		<dict>
@@ -463,9 +520,9 @@ brew install imagemagick
 		<key>7BC96501-D9E1-4A51-926A-A4D2B7866FC3</key>
 		<dict>
 			<key>xpos</key>
-			<real>615</real>
+			<real>655</real>
 			<key>ypos</key>
-			<real>375</real>
+			<real>395</real>
 		</dict>
 		<key>8A29FF84-B010-4C62-A11E-8E6232F98D27</key>
 		<dict>
@@ -477,7 +534,7 @@ brew install imagemagick
 		<key>BD056944-2D4C-4E3D-BF5D-EF96F3E4AE39</key>
 		<dict>
 			<key>xpos</key>
-			<real>685</real>
+			<real>635</real>
 			<key>ypos</key>
 			<real>585</real>
 		</dict>
@@ -488,13 +545,40 @@ brew install imagemagick
 			<key>ypos</key>
 			<real>400</real>
 		</dict>
+		<key>EA49DADA-EF81-46A2-9510-55A9D5DBCFA8</key>
+		<dict>
+			<key>xpos</key>
+			<real>570</real>
+			<key>ypos</key>
+			<real>425</real>
+		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
-	<array/>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<true/>
+				<key>required</key>
+				<false/>
+				<key>text</key>
+				<string></string>
+			</dict>
+			<key>description</key>
+			<string></string>
+			<key>label</key>
+			<string>Large Type</string>
+			<key>type</key>
+			<string>checkbox</string>
+			<key>variable</key>
+			<string>use_large_type</string>
+		</dict>
+	</array>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.6</string>
+	<string>1.7</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/file-enhancer</string>
 </dict>
