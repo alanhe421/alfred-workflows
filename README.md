@@ -37,7 +37,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 
 ## Workflows
 
-<!--workflow-start-->There are 5️⃣9️⃣ workflows
+<!--workflow-start-->There are 6️⃣0️⃣ workflows
 
 ### 1. [2FA-Read Code](https://github.com/alanhg/alfred-workflows/tree/master/2fa-read-code)
 > Read authentication code in your recent messages or current clipboard
@@ -485,7 +485,14 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 
 
 
-### 58. [Whistle](https://github.com/alanhg/alfred-workflows/tree/master/whistle)
+### 58. [wakatime](https://github.com/alanhg/alfred-workflows/tree/master/wakatime)
+
+[![](https://img.shields.io/badge/version-v0.1-green?style=for-the-badge)](https://img.shields.io/badge/version-v0.1-green?style=for-the-badge)
+[![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/wakatime/wakatime.alfredworkflow)
+
+
+
+### 59. [Whistle](https://github.com/alanhg/alfred-workflows/tree/master/whistle)
 > select rules
 
 [![](https://img.shields.io/badge/version-v2.17-green?style=for-the-badge)](https://img.shields.io/badge/version-v2.17-green?style=for-the-badge)
@@ -493,7 +500,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 
 
 
-### 59. [印象笔记](https://github.com/alanhg/alfred-workflows/tree/master/印象笔记)
+### 60. [印象笔记](https://github.com/alanhg/alfred-workflows/tree/master/印象笔记)
 > Use Evernote with Alfred
 
 [![](https://img.shields.io/badge/version-v1.0.2-green?style=for-the-badge)](https://img.shields.io/badge/version-v1.0.2-green?style=for-the-badge)
