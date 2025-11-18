@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="projGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFB75E"/>
+      <stop offset="100%" style="stop-color:#ED8F03"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Rounded square background -->
+  <rect width="128" height="128" rx="28" fill="url(#projGradient)"/>
+
+  <!-- Folder -->
+  <path d="M 28 42 C 28 38 30 36 34 36 L 52 36 L 58 42 L 94 42 C 98 42 100 44 100 48 L 100 88 C 100 92 98 94 94 94 L 34 94 C 30 94 28 92 28 88 Z" fill="white" opacity="0.95"/>
+
+  <!-- Folder tab accent -->
+  <path d="M 28 42 L 28 48 L 100 48 L 100 46 C 100 44 98 42 94 42 L 58 42 L 52 36 L 34 36 C 30 36 28 38 28 42 Z" fill="white" opacity="0.3"/>
+
+  <!-- File icons inside folder -->
+  <rect x="40" y="58" width="18" height="24" rx="2" fill="url(#projGradient)" opacity="0.3"/>
+  <line x1="44" y1="64" x2="54" y2="64" stroke="url(#projGradient)" stroke-width="2" opacity="0.5"/>
+  <line x1="44" y1="69" x2="54" y2="69" stroke="url(#projGradient)" stroke-width="2" opacity="0.5"/>
+  <line x1="44" y1="74" x2="52" y2="74" stroke="url(#projGradient)" stroke-width="2" opacity="0.5"/>
+
+  <rect x="64" y="58" width="18" height="24" rx="2" fill="url(#projGradient)" opacity="0.3"/>
+  <line x1="68" y1="64" x2="78" y2="64" stroke="url(#projGradient)" stroke-width="2" opacity="0.5"/>
+  <line x1="68" y1="69" x2="78" y2="69" stroke="url(#projGradient)" stroke-width="2" opacity="0.5"/>
+  <line x1="68" y1="74" x2="76" y2="74" stroke="url(#projGradient)" stroke-width="2" opacity="0.5"/>
+</svg>

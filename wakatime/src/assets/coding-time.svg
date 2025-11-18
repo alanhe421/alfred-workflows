@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="timeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00C6FB"/>
+      <stop offset="100%" style="stop-color:#005BEA"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Rounded square background -->
+  <rect width="128" height="128" rx="28" fill="url(#timeGradient)"/>
+
+  <!-- Clock circle background -->
+  <circle cx="64" cy="64" r="42" fill="white" opacity="0.2"/>
+
+  <!-- Hour dots -->
+  <circle cx="64" cy="26" r="2.5" fill="white" opacity="0.9"/>
+  <circle cx="87.5" cy="33.5" r="2.5" fill="white" opacity="0.6"/>
+  <circle cx="102" cy="64" r="2.5" fill="white" opacity="0.9"/>
+  <circle cx="87.5" cy="94.5" r="2.5" fill="white" opacity="0.6"/>
+  <circle cx="64" cy="102" r="2.5" fill="white" opacity="0.9"/>
+  <circle cx="40.5" cy="94.5" r="2.5" fill="white" opacity="0.6"/>
+  <circle cx="26" cy="64" r="2.5" fill="white" opacity="0.9"/>
+  <circle cx="40.5" cy="33.5" r="2.5" fill="white" opacity="0.6"/>
+
+  <!-- Hour hand -->
+  <line x1="64" y1="64" x2="64" y2="42" stroke="white" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Minute hand -->
+  <line x1="64" y1="64" x2="84" y2="64" stroke="white" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Center circle -->
+  <circle cx="64" cy="64" r="4" fill="white"/>
+</svg>

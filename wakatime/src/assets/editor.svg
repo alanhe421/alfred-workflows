@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="editorGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea"/>
+      <stop offset="100%" style="stop-color:#764ba2"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Rounded square background -->
+  <rect width="128" height="128" rx="28" fill="url(#editorGradient)"/>
+
+  <!-- Terminal window -->
+  <rect x="20" y="32" width="88" height="64" rx="8" fill="white" opacity="0.95"/>
+
+  <!-- Window controls -->
+  <circle cx="30" cy="42" r="3" fill="#FF5F56"/>
+  <circle cx="40" cy="42" r="3" fill="#FFBD2E"/>
+  <circle cx="50" cy="42" r="3" fill="#27C93F"/>
+
+  <!-- Terminal prompt lines -->
+  <path d="M 28 56 L 34 60 L 28 64" stroke="url(#editorGradient)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+  <line x1="40" y1="60" x2="56" y2="60" stroke="url(#editorGradient)" stroke-width="3" stroke-linecap="round"/>
+
+  <path d="M 28 72 L 34 76 L 28 80" stroke="url(#editorGradient)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+  <line x1="40" y1="76" x2="64" y2="76" stroke="url(#editorGradient)" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Cursor -->
+  <rect x="68" y="74" width="3" height="6" fill="url(#editorGradient)" rx="1"/>
+</svg>

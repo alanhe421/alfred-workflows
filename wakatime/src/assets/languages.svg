@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="langGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6A88"/>
+      <stop offset="100%" style="stop-color:#FF2E4C"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Rounded square background -->
+  <rect width="128" height="128" rx="28" fill="url(#langGradient)"/>
+
+  <!-- Code brackets -->
+  <path d="M 38 44 L 28 54 L 28 74 L 38 84" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path d="M 90 44 L 100 54 L 100 74 L 90 84" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+  <!-- Forward slash -->
+  <line x1="72" y1="42" x2="56" y2="86" stroke="white" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Decorative dots -->
+  <circle cx="64" cy="102" r="3" fill="white" opacity="0.6"/>
+  <circle cx="54" cy="102" r="3" fill="white" opacity="0.4"/>
+  <circle cx="74" cy="102" r="3" fill="white" opacity="0.4"/>
+</svg>
