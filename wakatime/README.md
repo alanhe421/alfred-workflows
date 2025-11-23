@@ -1,3 +1,10 @@
+> WakaTime Code time
+
+
+## Requirement
+
+brew install node
+
 ## API Docs
 
 - https://wakatime.com/developers

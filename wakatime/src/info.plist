@@ -7,7 +7,21 @@
 	<key>category</key>
 	<string>Self-Dev</string>
 	<key>connections</key>
-	<dict/>
+	<dict>
+		<key>00880C2D-D118-4483-B293-CD1CC9A1E47E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>26CD4024-DEEF-4C82-AD58-57A507E91188</string>
+				<key>modifiers</key>
+				<integer>524288</integer>
+				<key>modifiersubtext</key>
+				<string>View Dashboard</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
 	<key>createdby</key>
 	<string>Alan He</string>
 	<key>description</key>
@@ -67,9 +81,37 @@
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://wakatime.com/dashboard</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>26CD4024-DEEF-4C82-AD58-57A507E91188</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
-	<string>## API Docs
+	<string>&gt; WakaTime Code time
+
+
+## Requirement
+
+brew install node
+
+## API Docs
 
 - https://wakatime.com/developers
 - https://wakatime.com/settings/api-key</string>
@@ -81,6 +123,13 @@
 			<real>255</real>
 			<key>ypos</key>
 			<real>295</real>
+		</dict>
+		<key>26CD4024-DEEF-4C82-AD58-57A507E91188</key>
+		<dict>
+			<key>xpos</key>
+			<real>575</real>
+			<key>ypos</key>
+			<real>300</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
@@ -112,6 +161,6 @@
 	<key>version</key>
 	<string>0.1</string>
 	<key>webaddress</key>
-	<string>https://1991421.cn</string>
+	<string>https://github.com/alanhe421/alfred-workflows/tree/master/wakatime</string>
 </dict>
 </plist>
