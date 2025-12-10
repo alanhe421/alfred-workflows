@@ -7,7 +7,9 @@ no any dependency.
 ## Support IDE
 
 1. VSCode
-2. Cursor
+2. VSCode - Insiders
+3. Cursor
+4. Antigravity
 
 
 ## Usage
@@ -15,10 +17,11 @@ no any dependency.
 1. Type keyword to search recent projects, enter to open.
 2. Open With File Action for any fille.
 3. Support whether to open project in a new window.
+4. option to open with second editor
 
 
 
-[![](https://img.shields.io/badge/version-v1.0-green?style=for-the-badge)](https://img.shields.io/badge/version-v1.0-green?style=for-the-badge)
+[![](https://img.shields.io/badge/version-v1.2-green?style=for-the-badge)](https://img.shields.io/badge/version-v1.2-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/vscode-open-project/VSCode%20-%20Open%20Project.alfredworkflow)
 
 

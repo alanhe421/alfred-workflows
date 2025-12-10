@@ -25,7 +25,53 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
+				<string>5B4F2643-30BA-42FB-A37F-C3E467F74B0B</string>
+				<key>modifiers</key>
+				<integer>524288</integer>
+				<key>modifiersubtext</key>
+				<string>Open With {var:SECOND_EDITOR}</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>C4EB4532-8D68-457E-817F-9F70B295599D</string>
+				<key>modifiers</key>
+				<integer>262144</integer>
+				<key>modifiersubtext</key>
+				<string>Open With {var:EDITOR}</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
 				<string>DD5F34BA-7620-4083-9A2C-668EE3B9C0E8</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>8EEA47D0-9D7C-43E4-96AD-82300F50BA2A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>DD5F34BA-7620-4083-9A2C-668EE3B9C0E8</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>A3A37933-E2FF-4A51-8973-156CAB90567B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>5B4F2643-30BA-42FB-A37F-C3E467F74B0B</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -45,6 +91,50 @@
 	<string>VSCode - Open Project</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsfiles</key>
+				<true/>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>acceptstext</key>
+				<false/>
+				<key>acceptsurls</key>
+				<false/>
+				<key>name</key>
+				<string>Open With {VAR:SECOND_EDITOR}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.universalaction</string>
+			<key>uid</key>
+			<string>A3A37933-E2FF-4A51-8973-156CAB90567B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>./open.sh "$1" "$SECOND_EDITOR"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>5B4F2643-30BA-42FB-A37F-C3E467F74B0B</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -97,26 +187,31 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>externaltriggerid</key>
+				<string>vscode.open.project</string>
+				<key>passinputasargument</key>
+				<true/>
+				<key>passvariables</key>
+				<true/>
+				<key>workflowbundleid</key>
+				<string>self</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.callexternaltrigger</string>
+			<key>uid</key>
+			<string>C4EB4532-8D68-457E-817F-9F70B295599D</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>if [ "$EDITOR" = "code" ] || [ "$EDITOR" = "vscode" ]; then
-    if [ "$NEW_WINDOW" = "1" ]; then
-        open "vscode://file/$1?windowId=_blank"
-    else
-        open "vscode://file/$1"
-    fi
-elif [ "$EDITOR" = "cursor" ]; then
-    if [ "$NEW_WINDOW" = "1" ]; then
-        open "cursor://file/$1?windowId=_blank"
-    else
-        open "cursor://file/$1"
-    fi
-else
-    $EDITOR "$1"
-fi</string>
+				<string>./open.sh "$1" "$EDITOR"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -152,6 +247,21 @@ fi</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>availableviaurlhandler</key>
+				<false/>
+				<key>triggerid</key>
+				<string>vscode.open.project</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.external</string>
+			<key>uid</key>
+			<string>8EEA47D0-9D7C-43E4-96AD-82300F50BA2A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string># VSCode - Open Project
@@ -163,36 +273,71 @@ no any dependency.
 ## Support IDE
 
 1. VSCode
-2. Cursor
+2. VSCode - Insiders
+3. Cursor
+4. Antigravity
 
 
 ## Usage
 
 1. Type keyword to search recent projects, enter to open.
 2. Open With File Action for any fille.
-3. Support whether to open project in a new window.</string>
+3. Support whether to open project in a new window.
+4. option to open with second editor</string>
 	<key>uidata</key>
 	<dict>
 		<key>1DCBD89F-F3F1-4C2E-97A5-D2E0476B698F</key>
 		<dict>
 			<key>xpos</key>
-			<real>125</real>
+			<real>110</real>
 			<key>ypos</key>
-			<real>340</real>
+			<real>370</real>
+		</dict>
+		<key>5B4F2643-30BA-42FB-A37F-C3E467F74B0B</key>
+		<dict>
+			<key>note</key>
+			<string>open with second editor</string>
+			<key>xpos</key>
+			<real>410</real>
+			<key>ypos</key>
+			<real>45</real>
 		</dict>
 		<key>8427B879-3650-4C0D-A81E-D8203A82CB02</key>
 		<dict>
 			<key>xpos</key>
-			<real>125</real>
+			<real>105</real>
 			<key>ypos</key>
-			<real>140</real>
+			<real>185</real>
+		</dict>
+		<key>8EEA47D0-9D7C-43E4-96AD-82300F50BA2A</key>
+		<dict>
+			<key>xpos</key>
+			<real>115</real>
+			<key>ypos</key>
+			<real>540</real>
+		</dict>
+		<key>A3A37933-E2FF-4A51-8973-156CAB90567B</key>
+		<dict>
+			<key>xpos</key>
+			<real>100</real>
+			<key>ypos</key>
+			<real>25</real>
+		</dict>
+		<key>C4EB4532-8D68-457E-817F-9F70B295599D</key>
+		<dict>
+			<key>xpos</key>
+			<real>405</real>
+			<key>ypos</key>
+			<real>200</real>
 		</dict>
 		<key>DD5F34BA-7620-4083-9A2C-668EE3B9C0E8</key>
 		<dict>
+			<key>note</key>
+			<string>open with main editor</string>
 			<key>xpos</key>
-			<real>425</real>
+			<real>405</real>
 			<key>ypos</key>
-			<real>150</real>
+			<real>335</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
@@ -205,23 +350,65 @@ no any dependency.
 				<key>pairs</key>
 				<array>
 					<array>
+						<string>Cursor</string>
+						<string>cursor</string>
+					</array>
+					<array>
 						<string>Code</string>
 						<string>code</string>
 					</array>
 					<array>
-						<string>Cursor</string>
-						<string>cursor</string>
+						<string>Code - Insiders</string>
+						<string>code-insiders</string>
+					</array>
+					<array>
+						<string>Antigravity</string>
+						<string>antigravity</string>
 					</array>
 				</array>
 			</dict>
 			<key>description</key>
-			<string>support any Code like IDE</string>
+			<string>support any Code like IDE, enter to open with</string>
 			<key>label</key>
-			<string>Editor</string>
+			<string>Main Editor</string>
 			<key>type</key>
 			<string>popupbutton</string>
 			<key>variable</key>
 			<string>EDITOR</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>code</string>
+				<key>pairs</key>
+				<array>
+					<array>
+						<string>Cursor</string>
+						<string>cursor</string>
+					</array>
+					<array>
+						<string>Code</string>
+						<string>code</string>
+					</array>
+					<array>
+						<string>Code - Insiders</string>
+						<string>code-insiders</string>
+					</array>
+					<array>
+						<string>Antigravity</string>
+						<string>antigravity</string>
+					</array>
+				</array>
+			</dict>
+			<key>description</key>
+			<string></string>
+			<key>label</key>
+			<string>Second Editor</string>
+			<key>type</key>
+			<string>popupbutton</string>
+			<key>variable</key>
+			<string>SECOND_EDITOR</string>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -246,7 +433,7 @@ no any dependency.
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.0</string>
+	<string>1.2</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhe421/alfred-workflows/tree/master/vscode-open-project</string>
 </dict>
