@@ -480,7 +480,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 ### 57. [VSCode - Open Project](https://github.com/alanhg/alfred-workflows/tree/master/vscode-open-project)
 > easily open your projects
 
-[![](https://img.shields.io/badge/version-v1.0-green?style=for-the-badge)](https://img.shields.io/badge/version-v1.0-green?style=for-the-badge)
+[![](https://img.shields.io/badge/version-v1.2-green?style=for-the-badge)](https://img.shields.io/badge/version-v1.2-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/vscode-open-project/VSCode%20-%20Open%20Project.alfredworkflow)
 
 
