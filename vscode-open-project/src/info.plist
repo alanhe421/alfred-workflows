@@ -103,7 +103,7 @@
 				<key>acceptsurls</key>
 				<false/>
 				<key>name</key>
-				<string>Open With {VAR:SECOND_EDITOR}</string>
+				<string>Open With {var:SECOND_EDITOR}</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.universalaction</string>
@@ -433,7 +433,7 @@ no any dependency.
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.2</string>
+	<string>1.3</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhe421/alfred-workflows/tree/master/vscode-open-project</string>
 </dict>
