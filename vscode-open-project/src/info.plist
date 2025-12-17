@@ -266,7 +266,7 @@
 	<key>readme</key>
 	<string># VSCode - Open Project
 
-&gt; This Alfred workflow allows you to quickly search and open recently accessed projects in Code or Cursor with a single keystroke, streamlining your workflow and boosting productivity.
+&gt; This Alfred workflow allows you to quickly search and open recently accessed projects in Code or Cursor or any IDE with a single keystroke, streamlining your workflow and boosting productivity.
 
 no any dependency.
 
@@ -283,7 +283,8 @@ no any dependency.
 1. Type keyword to search recent projects, enter to open.
 2. Open With File Action for any fille.
 3. Support whether to open project in a new window.
-4. option to open with second editor</string>
+4. option to open with second editor
+5. read more editor support webstorm|phpstorm|idea|pycharm|goland|rider|clion|rubymine|appcode</string>
 	<key>uidata</key>
 	<dict>
 		<key>1DCBD89F-F3F1-4C2E-97A5-D2E0476B698F</key>
@@ -429,11 +430,32 @@ no any dependency.
 			<key>variable</key>
 			<string>NEW_WINDOW</string>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string></string>
+				<key>required</key>
+				<false/>
+				<key>trim</key>
+				<true/>
+				<key>verticalsize</key>
+				<integer>3</integer>
+			</dict>
+			<key>description</key>
+			<string>split with ,  eg: webstorm,idea</string>
+			<key>label</key>
+			<string>Read More Editor Projects History</string>
+			<key>type</key>
+			<string>textarea</string>
+			<key>variable</key>
+			<string>READ_MORE_EDITOR</string>
+		</dict>
 	</array>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.3</string>
+	<string>1.4</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhe421/alfred-workflows/tree/master/vscode-open-project</string>
 </dict>
