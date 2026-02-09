@@ -61,7 +61,18 @@
 			</dict>
 		</array>
 		<key>19447271-B75B-485D-98B1-F46B39B99B9E</key>
-		<array/>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>4353EB98-12EC-4D7B-ABC9-17BCF862F755</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>1D2B0594-5614-4057-96C7-D77E0ED863E4</key>
 		<array>
 			<dict>
@@ -558,11 +569,14 @@ end run</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>query=$(echo {query} | sed -e 's/\r//g')
+				<string>query="$1"
 
-curl --user api:$api_key --data-binary "@$query" "https://api.tinify.com/shrink" | /usr/local/bin/jq -r '.output.url'</string>
+curl -s --user api:$api_key \
+     --data-binary "@$query" \
+     https://api.tinify.com/shrink \
+| jq -r '.output.url'</string>
 				<key>scriptargtype</key>
-				<integer>0</integer>
+				<integer>1</integer>
 				<key>scriptfile</key>
 				<string></string>
 				<key>type</key>
@@ -615,6 +629,7 @@ curl --user api:$api_key --data-binary "@$query" "https://api.tinify.com/shrink"
 				<key>filetypes</key>
 				<array>
 					<string>org.webmproject.webp</string>
+					<string>public.avif</string>
 					<string>public.jpeg</string>
 					<string>public.png</string>
 				</array>
@@ -636,16 +651,22 @@ curl --user api:$api_key --data-binary "@$query" "https://api.tinify.com/shrink"
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>full_path=$filename
-pth=$( echo ${full_path%/*} )
+				<string>query=$(printf "%s" "{query}")
+
+full_path="$filename"
+pth="${full_path%/*}"
 file_name="${full_path##*/}"
-file_extension="${full_path##*.}"
+file_extension="${file_name##*.}"
 file="${file_name%.*}"
+
 target="$pth/$file-opt.$file_extension"
 
-curl -o $target {query}
+curl -fLsS \
+  --user api:$api_key \
+  -o "$target" \
+  "$query"
 
-echo {query}</string>
+echo -n $target</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -659,6 +680,21 @@ echo {query}</string>
 			<string>19447271-B75B-485D-98B1-F46B39B99B9E</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>leftcursor</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.showalfred</string>
+			<key>uid</key>
+			<string>4353EB98-12EC-4D7B-ABC9-17BCF862F755</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -979,6 +1015,13 @@ tinypng pricing
 			<key>ypos</key>
 			<real>90</real>
 		</dict>
+		<key>4353EB98-12EC-4D7B-ABC9-17BCF862F755</key>
+		<dict>
+			<key>xpos</key>
+			<real>1335</real>
+			<key>ypos</key>
+			<real>735</real>
+		</dict>
 		<key>4A80E415-C55B-459A-8FF8-6372696BD8D8</key>
 		<dict>
 			<key>note</key>
@@ -986,7 +1029,7 @@ tinypng pricing
 			<key>xpos</key>
 			<real>265</real>
 			<key>ypos</key>
-			<real>440</real>
+			<real>455</real>
 		</dict>
 		<key>52EB62D9-B694-490C-99F7-B16141A2550D</key>
 		<dict>
@@ -1056,7 +1099,7 @@ tinypng pricing
 		<key>CBD383F3-AEDA-4416-B5EC-E0A6984147D4</key>
 		<dict>
 			<key>xpos</key>
-			<real>65</real>
+			<real>60</real>
 			<key>ypos</key>
 			<real>660</real>
 		</dict>
@@ -1158,7 +1201,7 @@ tinypng pricing
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>3.1</string>
+	<string>3.2</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/compress-gif</string>
 </dict>

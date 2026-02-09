@@ -26,7 +26,7 @@ tinypng pricing
 
 
 
-[![](https://img.shields.io/badge/version-v3.1-green?style=for-the-badge)](https://img.shields.io/badge/version-v3.1-green?style=for-the-badge)
+[![](https://img.shields.io/badge/version-v3.2-green?style=for-the-badge)](https://img.shields.io/badge/version-v3.2-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/compress-gif/Compress.alfredworkflow)
 
 
