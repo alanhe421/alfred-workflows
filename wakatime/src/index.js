@@ -82,7 +82,12 @@ async function fetchWakaTimeData() {
           subtitle: `${todayData.grand_total.text}`,
           icon: {
             path: 'assets/coding-time.svg'
-          }
+          },
+          text: {
+            copy: totalTime,
+            largetype: totalTime
+          },
+          arg: `Today's Coding Time: ${totalTime}`
         }
       });
 
@@ -99,7 +104,12 @@ async function fetchWakaTimeData() {
             subtitle: topLanguages,
             icon: {
               path: 'assets/languages.svg'
-            }
+            },
+            text: {
+              copy: `Top Languages: ${topLanguages}`,
+              largetype: `Top Languages: ${topLanguages}`
+            },
+            arg: `Top Languages: ${topLanguages}`
           }
         });
       }
@@ -117,7 +127,12 @@ async function fetchWakaTimeData() {
             subtitle: topProjects,
             icon: {
               path: 'assets/projects.svg'
-            }
+            },
+            text: {
+              copy: `Top Projects: ${topProjects}`,
+              largetype: `Top Projects: ${topProjects}`
+            },
+            arg: `Top Projects: ${topProjects}`
           }
         });
       }
@@ -125,13 +140,19 @@ async function fetchWakaTimeData() {
       // Add editor info
       if (todayData.editors && todayData.editors.length > 0) {
         const editor = todayData.editors[0];
+        const editorTime = formatDuration(editor.total_seconds);
         wf.addWorkflowItem({
           item: {
             title: `Editor: ${editor.name}`,
-            subtitle: `${formatDuration(editor.total_seconds)}`,
+            subtitle: editorTime,
             icon: {
               path: 'assets/editor.svg'
-            }
+            },
+            text: {
+              copy: `Editor: ${editor.name} - ${editorTime}`,
+              largetype: `Editor: ${editor.name} - ${editorTime}`
+            },
+            arg: `Editor: ${editor.name} - ${editorTime}`
           }
         });
       }

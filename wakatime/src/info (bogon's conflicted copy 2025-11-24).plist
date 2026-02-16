@@ -20,16 +20,6 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>0828D886-1263-4F0D-B97C-C9E6289D0E51</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
 		</array>
 	</dict>
 	<key>createdby</key>
@@ -112,35 +102,9 @@
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>autopaste</key>
-				<false/>
-				<key>clipboardtext</key>
-				<string>{query}</string>
-				<key>ignoredynamicplaceholders</key>
-				<false/>
-				<key>transient</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
-			<key>uid</key>
-			<string>0828D886-1263-4F0D-B97C-C9E6289D0E51</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
 	</array>
 	<key>readme</key>
-	<string>&gt; WakaTime Code time
-
-
-## Requirement
-
-brew install node
-
-## API Docs
+	<string>## API Docs
 
 - https://wakatime.com/developers
 - https://wakatime.com/settings/api-key</string>
@@ -152,13 +116,6 @@ brew install node
 			<real>255</real>
 			<key>ypos</key>
 			<real>295</real>
-		</dict>
-		<key>0828D886-1263-4F0D-B97C-C9E6289D0E51</key>
-		<dict>
-			<key>xpos</key>
-			<real>575</real>
-			<key>ypos</key>
-			<real>495</real>
 		</dict>
 		<key>26CD4024-DEEF-4C82-AD58-57A507E91188</key>
 		<dict>
@@ -195,8 +152,8 @@ brew install node
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>0.3</string>
+	<string>0.1</string>
 	<key>webaddress</key>
-	<string>https://github.com/alanhe421/alfred-workflows/tree/master/wakatime</string>
+	<string>https://1991421.cn</string>
 </dict>
 </plist>

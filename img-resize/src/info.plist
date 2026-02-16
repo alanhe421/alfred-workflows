@@ -962,8 +962,8 @@ support png,jpeg
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>0.2</string>
+	<string>0.3</string>
 	<key>webaddress</key>
-	<string>https://1991421.cn</string>
+	<string>https://github.com/alanhe421/alfred-workflows/tree/master/img-resize</string>
 </dict>
 </plist>
