@@ -55,6 +55,6 @@
 - Type Search
 - UAParser
 - VSCode - Open Project
-- wakatime
+- WakaTime
 - Whistle
 - 印象笔记

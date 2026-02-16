@@ -50,7 +50,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 ### 2. [About Mac](https://github.com/alanhg/alfred-workflows/tree/master/about-mac)
 > About This Mac
 
-[![](https://img.shields.io/badge/version-v1.25-green?style=for-the-badge)](https://img.shields.io/badge/version-v1.25-green?style=for-the-badge)
+[![](https://img.shields.io/badge/version-v1.3-green?style=for-the-badge)](https://img.shields.io/badge/version-v1.3-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/about-mac/About%20Mac.alfredworkflow)
 [![](https://img.shields.io/badge/Install%20In%20Alfred-8A2BE2?style=for-the-badge)](https://alfred.app/workflows/alanhe/about-mac/install/)
 
@@ -204,7 +204,7 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 ### 22. [Resize Image](https://github.com/alanhg/alfred-workflows/tree/master/img-resize)
 > resize according to specified resolution
 
-[![](https://img.shields.io/badge/version-v0.2-green?style=for-the-badge)](https://img.shields.io/badge/version-v0.2-green?style=for-the-badge)
+[![](https://img.shields.io/badge/version-v0.3-green?style=for-the-badge)](https://img.shields.io/badge/version-v0.3-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/img-resize/Resize%20Image.alfredworkflow)
 
 
@@ -485,9 +485,9 @@ P.S.: You need to buy the [Powerpack](https://www.alfredapp.com/powerpack/) to u
 
 
 
-### 58. [wakatime](https://github.com/alanhg/alfred-workflows/tree/master/wakatime)
+### 58. [WakaTime](https://github.com/alanhg/alfred-workflows/tree/master/wakatime)
 
-[![](https://img.shields.io/badge/version-v0.1-green?style=for-the-badge)](https://img.shields.io/badge/version-v0.1-green?style=for-the-badge)
+[![](https://img.shields.io/badge/version-v0.3-green?style=for-the-badge)](https://img.shields.io/badge/version-v0.3-green?style=for-the-badge)
 [![](https://img.shields.io/badge/download-click-blue?style=for-the-badge)](https://github.com/alanhe421/alfred-workflows/raw/master/wakatime/wakatime.alfredworkflow)
 
 
