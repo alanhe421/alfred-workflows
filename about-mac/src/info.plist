@@ -117,7 +117,7 @@ end tell</string>
 	<key>readme</key>
 	<string># About Mac
 &gt; Displays system information about your Mac.
-Contains UserName、Model、HostName、Primary Ethernet Address、IPv4 Address、MacOS、CPU Type、Physical Memory、Storage、Locale、Display Resolution、Display System Uptime、Serial Number、Battery Health, System Power Consumption.
+Contains UserName、Model、HostName、Primary Ethernet Address、IPv4 Address、MacOS、CPU Type、Physical Memory、Storage、Locale、Display Resolution、Display System Uptime、Serial Number、Battery Health.
 
 1. Type `about` to trigger
 2. Type `⏎` to copy info
@@ -144,7 +144,7 @@ Contains UserName、Model、HostName、Primary Ethernet Address、IPv4 Address�
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.3</string>
+	<string>1.4</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/about-mac</string>
 </dict>

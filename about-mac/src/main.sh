@@ -26,7 +26,6 @@ displayResolution=$(system_profiler SPDisplaysDataType | awk '
 serialNumber=$(system_profiler SPHardwareDataType | grep "Serial Number (system)" | awk '{print $NF}'| tr \d '\n' )
 upsnnumbertime=$(uptime)
 systemUptime=$(uptime | awk -F' up |, [0-9]+ user' '{print $2}' | xargs)
-systemPower=$(./power_read 2>/dev/null || echo "N/A")
 batteryHealthCapacity=$(system_profiler SPPowerDataType | grep "Maximum Capacity:" | tr -d '\n'| tr -d ' ')
 batteryHealthCondition=$(system_profiler SPPowerDataType | grep "Condition:"| tr -d '\n'| tr -d ' ')
 
@@ -72,8 +71,7 @@ cat << EOF
 {"title":"Locale / Language","subtitle":"${arrIN[12]}","icon":{"path":"./icons/locale.png"},"arg":"${arrIN[12]}","uid":"locale_language","text":{"copy":"${arrIN[12]}","largetype":"${arrIN[12]}"}},
 {"title":"Display Resolution","subtitle":"${displayResolution}","icon":{"path":"./icons/display-resolution.png"},"arg":"${displayResolution}","uid":"display_resolution","text":{"copy":"${displayResolution}","largetype":"${displayResolution}"},"match":"display resolution ${displayResolution} screen"},
 {"title":"${systemUptime} (Uptime)","subtitle":"${uptime}","icon":{"path":"./icons/uptime.png"},"arg":"${uptime}","uid":"systemUptime","text":{"copy":"${uptime}","largetype":"${uptime}"},"match":"system time uptime ${uptime}"},
-{"title":"${serialNumber}","subtitle":"Serial Number","icon":{"path":"./icons/serial-number.png"},"arg":"${serialNumber}","uid":"serialNumber","text":{"copy":"${serialNumber}","largetype":"${serialNumber}"},"match":"serial number sn  ${serialNumber}"},
-{"title":"${systemPower} W","subtitle":"System Power Consumption","icon":{"path":"./icons/power.png"},"arg":"${systemPower} W","uid":"system_power","text":{"copy":"${systemPower} W","largetype":"${systemPower} W"},"match":"power watt energy"}${batteryLine}
+{"title":"${serialNumber}","subtitle":"Serial Number","icon":{"path":"./icons/serial-number.png"},"arg":"${serialNumber}","uid":"serialNumber","text":{"copy":"${serialNumber}","largetype":"${serialNumber}"},"match":"serial number sn  ${serialNumber}"}${batteryLine}
  ]
 }
 EOF
