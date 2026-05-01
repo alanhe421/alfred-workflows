@@ -135,6 +135,34 @@ function preProcessMessage(msg) {
 }
 
 /**
+ * Extract plain text from attributedBody hex string.
+ * Since macOS Ventura, some messages store text only in the attributedBody
+ * blob (typedstream format) instead of the text column.
+ * Structure: ...NSString\x01\x95\x84\x01\x2B<lenByte><UTF-8 text>\x86\x84...
+ */
+function extractTextFromAttributedBody(hexStr) {
+  if (!hexStr) return null;
+  try {
+    const buf = Buffer.from(hexStr, 'hex');
+    // Find marker: 0x01 0x2B (the '+' after NSString class definition)
+    const marker = Buffer.from([0x01, 0x2B]);
+    const markerIdx = buf.indexOf(marker);
+    if (markerIdx === -1) return null;
+
+    // Skip marker (2 bytes) + length prefix (1 byte)
+    const textStart = markerIdx + 3;
+    // Text ends at 0x86 0x84
+    const endMarker = Buffer.from([0x86, 0x84]);
+    const endIdx = buf.indexOf(endMarker, textStart);
+    if (endIdx === -1) return null;
+
+    return buf.subarray(textStart, endIdx).toString('utf-8');
+  } catch {
+    return null;
+  }
+}
+
+/**
  * Read SMS verification code
  * Digit 3-7 digits
  * Prefer longer codes, skip dates and currencies.
@@ -170,7 +198,7 @@ function readCaptchaFromMessage(msg) {
  */
 function readSubjectFromMessage(msg) {
   try {
-    return msg.match(/【.+】/)[0];
+    return msg.match(/【.+?】/)[0];
   } catch {
     return null;
   }
@@ -186,6 +214,7 @@ function readLatestMessage() {
             message.service,
             datetime(message.date / 1000000000 + 978307200, 'unixepoch', 'localtime') AS message_date,
             message.text,
+            hex(message.attributedBody) as attributedBodyHex,
             is_read
         from
             message
@@ -197,23 +226,23 @@ function readLatestMessage() {
                         on message.handle_id = handle.ROWID
         where
             message.is_from_me = 0
-            and message.text is not null
-            and length(message.text) > 0
-            and (
-                message.text glob '*[0-9][0-9][0-9][0-9]*'
-                or message.text glob '*[0-9][0-9][0-9][0-9][0-9]*'
-                or message.text glob '*[0-9][0-9][0-9][0-9][0-9][0-9]*'
-                or message.text glob '*[0-9][0-9][0-9]-[0-9][0-9][0-9]*'
-                or message.text glob '*[0-9][0-9][0-9][0-9][0-9][0-9][0-9]*'
-                or message.text glob '*[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]*'
-            )
+            and (message.text is not null or message.attributedBody is not null)
             and datetime(message.date / 1000000000 + strftime('%s', '2001-01-01'), 'unixepoch', 'localtime')
                     >= datetime('now', '-${lookBackMinutes} minutes', 'localtime')
         order by
             message.date desc
         limit 100`);
 
-    resolve(res);
+    // For rows where text is null, extract text from attributedBody
+    const processed = res.map(row => {
+      if (!row.text && row.attributedBodyHex) {
+        row.text = extractTextFromAttributedBody(row.attributedBodyHex);
+      }
+      delete row.attributedBodyHex;
+      return row;
+    }).filter(row => row.text && row.text.length > 0);
+
+    resolve(processed);
   });
 }
 
