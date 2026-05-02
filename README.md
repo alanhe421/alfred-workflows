@@ -564,13 +564,6 @@ Thanks goes to these wonderful people:
         </a>
     </td>
     <td align="center">
-        <a href="https://github.com/eliericha">
-            <img src="https://avatars.githubusercontent.com/u/3911549?v=4" width="100;" alt="eliericha"/>
-            <br />
-            <sub><b>Elie Richa</b></sub>
-        </a>
-    </td>
-    <td align="center">
         <a href="https://github.com/psychopasss">
             <img src="https://avatars.githubusercontent.com/u/11738089?v=4" width="100;" alt="psychopasss"/>
             <br />
@@ -582,6 +575,13 @@ Thanks goes to these wonderful people:
             <img src="https://avatars.githubusercontent.com/u/80471221?v=4" width="100;" alt="adriansprk"/>
             <br />
             <sub><b>Adrian_cares</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/pstanton237">
+            <img src="https://avatars.githubusercontent.com/u/4250687?v=4" width="100;" alt="pstanton237"/>
+            <br />
+            <sub><b>Pstanton237</b></sub>
         </a>
     </td></tr>
 </table>
