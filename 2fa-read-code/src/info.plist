@@ -332,7 +332,7 @@ update sqlite by brew</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.14</string>
+	<string>1.15</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/2fa-read-code</string>
 </dict>
