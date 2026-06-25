@@ -279,6 +279,8 @@ puts({ items: script_filter_items }.to_json)
 				<string>Show App ID of installed apps</string>
 				<key>title</key>
 				<string>App ID</string>
+				<key>treatInputAsUniversalAction</key>
+				<false/>
 				<key>type</key>
 				<integer>2</integer>
 				<key>withspace</key>
@@ -490,6 +492,8 @@ puts({ items: script_filter_items }.to_json)
 				<string>Show version number of installed apps</string>
 				<key>title</key>
 				<string>App Version</string>
+				<key>treatInputAsUniversalAction</key>
+				<false/>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
