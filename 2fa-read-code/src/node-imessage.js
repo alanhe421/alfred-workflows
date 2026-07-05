@@ -1,10 +1,11 @@
 const path = require('path');
 const childProcess = require('child_process');
 const fs = require('fs');
+const os = require('os');
 
 const HOME = getUserHome();
 const DB_PATH = path.join(HOME, '/Library/Messages/chat.db');
-const SQL_PATH = path.join(process.env.alfred_workflow_cache, 'select.sql');
+const SQL_PATH = path.join(process.env.alfred_workflow_cache || os.tmpdir(), 'select.sql');
 
 class iMessage {
   constructor() {
