@@ -5,7 +5,7 @@
  * /usr/local/bin/node ./index.js {query}
  */
 const {Workflow, utils} = require('@stacker/alfred-utils');
-const {execSync} = require('child_process');
+const {execFileSync} = require('child_process');
 const path = require('path');
 const fs = require('fs');
 const plist = require('plist');
@@ -15,36 +15,91 @@ const wf = new Workflow();
 (function () {
   if (action === 'av') {
     listAppVersions();
+  } else if (action === 'appversion') {
+    getAppVersion(query);
   } else if (action === 'appicon') {
     getAppIconPath(query);
   }
 })();
 
 function listAppVersions() {
-  const apps = convertToApps(execSync('ls /Applications ', {encoding: 'utf-8'}), '/Applications').concat(convertToApps(execSync('ls /Applications/Utilities', {encoding: 'utf-8'}), '/Applications/Utilities'));
-  for (let index = 0; index < apps.length; index++) {
-    const command = `mdls -raw -name kMDItemVersion  -name kMDItemAppStoreHasReceipt "${apps[index].path}"`;
-    const [receipt, version] = execSync(command, {
-      encoding: 'utf-8'
-    }).split('\x00');
+  const apps = getApplicationDirs().flatMap(listAppsInDirectory)
+    .sort((a, b) => a.name.localeCompare(b.name));
+
+  for (const app of apps) {
+    const version = resolveAppVersion(app.path);
+    const receipt = readMetadataValue(app.path, 'kMDItemAppStoreHasReceipt');
     wf.addWorkflowItem({
       item: {
-        title: apps[index].name, icon: {
-          type: 'fileicon', path: apps[index].path
+        title: app.name, icon: {
+          type: 'fileicon', path: app.path
         }, subtitle: version + (receipt === '1' ? '（from App Store）' : ''), arg: version,
-        action:{ file:apps[index].path}
+        action:{ file:app.path}
       }
     });
   }
   wf.run();
 }
 
-function convertToApps(ouputstr, basePath) {
-  return ouputstr
-    .split('\n')
-    .filter((item) => item.match(/\.app$/))
-    .map((app) => ({
-      name: app, path: path.join(basePath, app)
+function getAppVersion(appPath) {
+  utils.log(resolveAppVersion(appPath));
+}
+
+function resolveAppVersion(appPath) {
+  return readMetadataValue(appPath, 'kMDItemVersion')
+    || readInfoPlistValue(appPath, 'CFBundleShortVersionString')
+    || readInfoPlistValue(appPath, 'CFBundleVersion')
+    || 'Unknown';
+}
+
+function readMetadataValue(appPath, key) {
+  try {
+    return normalizeValue(execFileSync('/usr/bin/mdls', ['-raw', '-name', key, appPath], {
+      encoding: 'utf-8',
+      stdio: ['ignore', 'pipe', 'ignore']
+    }));
+  } catch (_) {
+    return '';
+  }
+}
+
+function readInfoPlistValue(appPath, key) {
+  try {
+    return normalizeValue(execFileSync('/usr/bin/plutil', [
+      '-extract',
+      key,
+      'raw',
+      '-o',
+      '-',
+      path.join(appPath, 'Contents/Info.plist')
+    ], {
+      encoding: 'utf-8',
+      stdio: ['ignore', 'pipe', 'ignore']
+    }));
+  } catch (_) {
+    return '';
+  }
+}
+
+function normalizeValue(value) {
+  const normalized = String(value || '').trim();
+  return normalized && normalized !== '(null)' && normalized !== 'null' ? normalized : '';
+}
+
+function getApplicationDirs() {
+  return [
+    '/Applications',
+    '/Applications/Utilities',
+    path.join(process.env.HOME, 'Applications'),
+    path.join(process.env.HOME, 'Applications/JetBrains Toolbox')
+  ].filter((directory) => fs.existsSync(directory) && fs.statSync(directory).isDirectory());
+}
+
+function listAppsInDirectory(basePath) {
+  return fs.readdirSync(basePath, {withFileTypes: true})
+    .filter((entry) => entry.name.endsWith('.app'))
+    .map((entry) => ({
+      name: entry.name, path: path.join(basePath, entry.name)
     }));
 }
 

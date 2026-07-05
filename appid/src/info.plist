@@ -249,11 +249,13 @@ require 'pathname'
 paths = [
   '/Applications',
   '/Applications/Utilities',
+  "#{ENV['HOME']}/Applications",
   "#{ENV['HOME']}/Applications/JetBrains Toolbox"
 ]
 
 apps = paths.flat_map do |path|
-  Pathname(path).children
+  directory = Pathname(path)
+  directory.directory? ? directory.children : []
 end
 
 apps = apps.map(&amp;:to_path)
@@ -275,6 +277,8 @@ puts({ items: script_filter_items }.to_json)
 				<integer>1</integer>
 				<key>scriptfile</key>
 				<string></string>
+				<key>skipuniversalaction</key>
+				<true/>
 				<key>subtext</key>
 				<string>Show App ID of installed apps</string>
 				<key>title</key>
@@ -486,6 +490,8 @@ puts({ items: script_filter_items }.to_json)
 				<integer>1</integer>
 				<key>scriptfile</key>
 				<string></string>
+				<key>skipuniversalaction</key>
+				<true/>
 				<key>subtext</key>
 				<string>Show version number of installed apps</string>
 				<key>title</key>
@@ -565,9 +571,9 @@ puts({ items: script_filter_items }.to_json)
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>mdls -raw -name kMDItemVersion "${1}"</string>
+				<string>node ./index.js appversion "{query}"</string>
 				<key>scriptargtype</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>scriptfile</key>
 				<string></string>
 				<key>type</key>
@@ -793,7 +799,7 @@ puts({ items: script_filter_items }.to_json)
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.12</string>
+	<string>1.13</string>
 	<key>webaddress</key>
 	<string>https://github.com/alanhg/alfred-workflows/tree/master/appid</string>
 </dict>
