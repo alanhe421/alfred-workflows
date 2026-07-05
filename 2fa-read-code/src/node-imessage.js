@@ -25,32 +25,9 @@ class iMessage {
   exec(dbStr) {
     fs.writeFileSync(this.sqlPath, dbStr);
     let command = `sqlite3 "${this.path}" < "${this.sqlPath}" -json`;
-    let resStr;
-    try {
-      resStr = childProcess.execSync(command, { encoding: 'utf8' });
-    } catch (e) {
-      if (isDatabaseAuthorizationError(e)) {
-        throw new Error(buildDatabasePermissionError());
-      }
-      throw e;
-    }
+    const resStr = childProcess.execSync(command, { encoding: 'utf8' });
     return resStr ? JSON.parse(resStr) : [];
   }
-}
-
-function isDatabaseAuthorizationError(error) {
-  const stderr = error?.stderr?.toString?.() || '';
-  const message = error?.message || '';
-  return /authorization denied|operation not permitted|permission denied/i.test(`${stderr}\n${message}`)
-    && /Library\/Messages\/chat\.db|Messages\/chat\.db/i.test(`${stderr}\n${message}`);
-}
-
-function buildDatabasePermissionError() {
-  return [
-    'Cannot open Messages database.',
-    'Grant Full Disk Access to Alfred in System Settings > Privacy & Security > Full Disk Access,',
-    'then restart Alfred and run 2FA-Read Code again.'
-  ].join(' ');
 }
 
 function getUserHome() {

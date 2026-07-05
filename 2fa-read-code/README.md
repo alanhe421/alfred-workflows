@@ -11,8 +11,6 @@
 2. Grant `Full Disk Access` to Alfred in `System Settings > Privacy & Security > Full Disk Access`, then restart Alfred
 3. sqlite3 >=v3.33.0
 
-If the workflow reports `authorization denied` for `~/Library/Messages/chat.db`, macOS is blocking Alfred from reading the Messages database. Re-check the Full Disk Access setting above.
-
 
 ## Big Sur Issue
 
