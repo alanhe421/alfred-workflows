@@ -565,9 +565,9 @@ puts({ items: script_filter_items }.to_json)
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>mdls -raw -name kMDItemVersion "${1}"</string>
+				<string>node ./index.js appversion '{query}'</string>
 				<key>scriptargtype</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>scriptfile</key>
 				<string></string>
 				<key>type</key>
